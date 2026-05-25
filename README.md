@@ -1,37 +1,59 @@
-# Smart Sentry Sales Intelligence MVP
+# SentryScraperModule
 
-A local-first Next.js MVP for high-quality Smart Sentry prospect research and reviewed outreach drafting.
+> **Status:** Phase 0 — repo skeleton.
+>
+> Deep-Context AI Profiling Scraper API. Builds high-fidelity, contextualised
+> profiles of target individuals to power hyper-personalised cold outreach.
 
-## Run locally
+The full requirements, architecture, and phased implementation plan live in
+`docs/`:
+
+- [`docs/PRD.md`](docs/PRD.md) — product requirements (source of truth).
+- [`docs/DESIGN.md`](docs/DESIGN.md) — architecture, agent graph, anti-bot,
+  compliance, decision log.
+- [`docs/PLAN.md`](docs/PLAN.md) — phased delivery (Phase 0 → Phase 5).
+
+## Quick start (Phase 0)
+
+Requires Python 3.11+.
 
 ```bash
-npm install
-npm run dev
+python -m venv .venv
+source .venv/bin/activate
+pip install -e ".[dev]"
+
+# lint, type-check, test
+ruff check .
+ruff format --check .
+mypy
+pytest
+
+# run the API
+uvicorn sentry_scraper_module.api.main:app --reload
+curl http://127.0.0.1:8000/healthz
+# => {"ok":true,"version":"0.0.1","env":"dev"}
 ```
 
-Open `http://localhost:5173`.
+## Layout
 
-## Environment
-
-Copy `.env.example` to `.env.local`.
-
-```bash
-OPENAI_API_KEY=
+```
+src/sentry_scraper_module/
+├── api/         FastAPI app factory + routes
+└── core/        config, structured logging, error hierarchy
+tests/           pytest suites mirroring src/
+docs/            PRD + DESIGN + PLAN
 ```
 
-When `OPENAI_API_KEY` is absent, the app runs in demo mode and returns high-quality mock research, contact scoring, and outreach drafts. No keys are hardcoded.
+Subsequent phases will add `agents/`, `providers/`, `compliance/`, and
+`persistence/` packages per `docs/DESIGN.md §2`.
 
-## Storage
+## Configuration
 
-This MVP uses a local JSON store at `data/db.json`, created automatically on first use. It is intentionally small and easy to migrate.
+Copy `.env.example` to `.env` and fill in the variables required by the
+phase you are working on. Phase 0 only needs `APP_ENV`, `LOG_LEVEL`, and
+`LOG_FORMAT`; later phases add LLM, SERP, proxy, browser, and database
+credentials.
 
-To migrate to Supabase:
+## License
 
-1. Create tables matching the TypeScript models in `lib/data/types.ts`.
-2. Replace the functions in `lib/data/store.ts` with Supabase client calls.
-3. Keep server actions in `app/actions.ts` unchanged where possible.
-4. Add row-level security and user ownership before production use.
-
-## Compliance Notes
-
-Smart Sentry does not send automated email from this app. Contacts are manual or placeholder records, unverified emails are labelled, and drafts require review before copy/export.
+Proprietary. Not for redistribution.

@@ -1,0 +1,107 @@
+"""Semantic chunking + retrieval.
+
+Pages whose token estimate exceeds `page_token_threshold` are split into
+overlapping windows; everything else is passed through whole. The combined
+candidate set is then ranked against a query string (target name + role)
+using cosine similarity over L2-normalised embeddings, and the top-k
+chunks are returned.
+
+This stage is a hard gate for token efficiency: the extractor only ever
+sees the chunks that survive selection.
+"""
+
+from __future__ import annotations
+
+from collections.abc import Sequence
+
+import numpy as np
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+
+from sentry_scraper_module.agents.types import Chunk, DistilledPage
+from sentry_scraper_module.providers.embeddings import EmbeddingProvider
+
+# A pragmatic char-to-token rule of thumb. Real LLM token counters live in
+# `litellm.token_counter`; this estimator is only used for the local
+# threshold decision and an off-by-2x error is harmless here.
+_CHARS_PER_TOKEN = 4
+
+DEFAULT_CHUNK_CHARS = 2000
+DEFAULT_CHUNK_OVERLAP = 200
+DEFAULT_PAGE_TOKEN_THRESHOLD = 3000
+DEFAULT_TOP_K = 3
+
+
+def select_relevant_chunks(
+    pages: Sequence[DistilledPage],
+    query: str,
+    *,
+    embeddings: EmbeddingProvider,
+    top_k: int = DEFAULT_TOP_K,
+    page_token_threshold: int = DEFAULT_PAGE_TOKEN_THRESHOLD,
+    chunk_chars: int = DEFAULT_CHUNK_CHARS,
+    chunk_overlap: int = DEFAULT_CHUNK_OVERLAP,
+) -> list[Chunk]:
+    """Return up to `top_k` chunks best matching `query`."""
+    candidates = _build_candidates(
+        pages,
+        page_token_threshold=page_token_threshold,
+        chunk_chars=chunk_chars,
+        chunk_overlap=chunk_overlap,
+    )
+    if not candidates:
+        return []
+
+    if len(candidates) <= top_k:
+        return [Chunk(page_url=url, text=text, similarity=1.0) for url, text in candidates]
+
+    query_vec = embeddings.embed([query])[0]
+    chunk_vecs = embeddings.embed([text for _, text in candidates])
+    sims = chunk_vecs @ query_vec  # both sides are L2-normalised
+
+    ranked_idx = np.argsort(-sims)[:top_k]
+    return [
+        Chunk(
+            page_url=candidates[i][0],
+            text=candidates[i][1],
+            similarity=float(sims[i]),
+        )
+        for i in ranked_idx
+    ]
+
+
+def _build_candidates(
+    pages: Sequence[DistilledPage],
+    *,
+    page_token_threshold: int,
+    chunk_chars: int,
+    chunk_overlap: int,
+) -> list[tuple[str, str]]:
+    splitter = RecursiveCharacterTextSplitter(
+        chunk_size=chunk_chars,
+        chunk_overlap=chunk_overlap,
+        length_function=len,
+        separators=["\n\n", "\n", ". ", " ", ""],
+    )
+    candidates: list[tuple[str, str]] = []
+    for page in pages:
+        if _estimated_tokens(page.markdown) <= page_token_threshold:
+            candidates.append((page.url, page.markdown))
+            continue
+        for piece in splitter.split_text(page.markdown):
+            piece = piece.strip()
+            if piece:
+                candidates.append((page.url, piece))
+    return candidates
+
+
+def _estimated_tokens(text: str) -> int:
+    return len(text) // _CHARS_PER_TOKEN
+
+
+__all__ = [
+    "DEFAULT_CHUNK_CHARS",
+    "DEFAULT_CHUNK_OVERLAP",
+    "DEFAULT_PAGE_TOKEN_THRESHOLD",
+    "DEFAULT_TOP_K",
+    "select_relevant_chunks",
+]
