@@ -106,9 +106,7 @@ class InMemoryRateLimiter:
                 self._buckets[tenant_id] = bucket
             else:
                 elapsed = max(0.0, now - bucket.last_refill)
-                bucket.tokens = min(
-                    self._capacity, bucket.tokens + elapsed * self._refill_per_sec
-                )
+                bucket.tokens = min(self._capacity, bucket.tokens + elapsed * self._refill_per_sec)
                 bucket.last_refill = now
             if bucket.tokens >= 1.0:
                 bucket.tokens -= 1.0
@@ -136,7 +134,8 @@ class RedisRateLimiter:
             raise ValueError("per_minute must be > 0; use NoopRateLimiter to disable.")
         from redis.asyncio import Redis, from_url
 
-        self._client: Redis = from_url(url, decode_responses=True)
+        # `redis.asyncio.from_url` is untyped in the stub package.
+        self._client: Redis = from_url(url, decode_responses=True)  # type: ignore[no-untyped-call]
         self._capacity = float(burst if burst > 0 else per_minute * 2)
         self._refill_per_sec = per_minute / 60.0
         self._prefix = key_prefix

@@ -9,7 +9,7 @@ Conventions (per Prometheus naming style):
 - Counters end in `_total` and have an `app="sentry_scraper_module"`
   base label.
 - Latency is in seconds (Prometheus convention), exposed as a
-  histogram with sane bucket boundaries for 1s–60s pipeline runs.
+  histogram with sane bucket boundaries for 1s-60s pipeline runs.
 - All metrics are no-ops when `Settings.metrics_enabled=False` — the
   `/metrics` endpoint just isn't mounted, and the `metric_*` helpers
   remain functional but their data is never scraped.
@@ -29,7 +29,7 @@ from prometheus_client import (
     generate_latest,
 )
 
-# Buckets: profile builds typically resolve in 5–30s. Cap at 120s so we
+# Buckets: profile builds typically resolve in 5-30s. Cap at 120s so we
 # can spot stuck jobs without ballooning histogram cardinality.
 _LATENCY_BUCKETS = (0.5, 1.0, 2.5, 5.0, 10.0, 20.0, 30.0, 60.0, 120.0)
 

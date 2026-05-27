@@ -60,6 +60,9 @@ packages = ["src/sentry_scraper_module"]
 line-length = 100
 target-version = "py311"
 src = ["src", "tests"]
+# Auto-generated Alembic revisions follow the project's `script.py.mako`
+# template; they don't go through our normal style passes.
+extend-exclude = ["migrations/versions"]
 
 [tool.ruff.lint]
 select = [

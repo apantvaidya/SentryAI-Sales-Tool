@@ -81,7 +81,9 @@ class RedisCache:
         from redis.asyncio import Redis, from_url
 
         self._url = url
-        self._client: Redis = from_url(url, decode_responses=True)
+        # `redis.asyncio.from_url` is untyped in the stub package; the
+        # decoded Redis client we wrap is fully typed below.
+        self._client: Redis = from_url(url, decode_responses=True)  # type: ignore[no-untyped-call]
 
     async def get(self, key: str) -> str | None:
         value = await self._client.get(key)

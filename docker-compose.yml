@@ -1,0 +1,107 @@
+# SentryScraperModule local production-like stack. Phase 5.
+#
+# Brings up the full server-side topology against real Postgres + Redis
+# so we can validate the same wiring we deploy to Fly. Fakes still kick
+# in for unset provider keys (Serper / OpenAI / Smartproxy / etc.) so
+# you can run end-to-end smoke tests without any external accounts.
+#
+# Usage:
+#   cp .env.example .env  # then fill in any keys you want exercised
+#   docker compose up --build
+#   curl -H 'X-API-Key: <key from BOOTSTRAP_API_KEYS>' \
+#        http://localhost:8000/healthz
+#
+# Tear down + reset state:
+#   docker compose down -v
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: sentry
+      POSTGRES_PASSWORD: sentry
+      POSTGRES_DB: sentry
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sentry -d sentry"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # One-shot migration runner. Blocks `api` + `worker` until the schema
+  # is at head. Use `docker compose run --rm migrate` for ad-hoc revisions
+  # in dev.
+  migrate:
+    build: .
+    command:
+      - alembic
+      - upgrade
+      - head
+    environment:
+      DATABASE_URL: postgresql+asyncpg://sentry:sentry@postgres:5432/sentry
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: "no"
+
+  api:
+    build: .
+    environment:
+      APP_ENV: dev
+      LOG_FORMAT: json
+      LOG_LEVEL: INFO
+      DATABASE_URL: postgresql+asyncpg://sentry:sentry@postgres:5432/sentry
+      REDIS_URL: redis://redis:6379/0
+      AUTO_CREATE_TABLES: "false"
+      RATE_LIMIT_PER_MINUTE: "60"
+      RATE_LIMIT_BURST: "120"
+      METRICS_ENABLED: "true"
+      # Provider keys + bootstrap auth come from `.env` so secrets
+      # don't sit in compose state.
+    env_file:
+      - path: .env
+        required: false
+    ports:
+      - "8000:8000"
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      redis:
+        condition: service_healthy
+
+  worker:
+    build: .
+    command:
+      - arq
+      - sentry_scraper_module.worker.arq_worker.WorkerSettings
+    environment:
+      APP_ENV: dev
+      LOG_FORMAT: json
+      LOG_LEVEL: INFO
+      DATABASE_URL: postgresql+asyncpg://sentry:sentry@postgres:5432/sentry
+      REDIS_URL: redis://redis:6379/0
+      AUTO_CREATE_TABLES: "false"
+    env_file:
+      - path: .env
+        required: false
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      redis:
+        condition: service_healthy
+
+volumes:
+  postgres_data:

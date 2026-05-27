@@ -64,7 +64,7 @@ class Settings(BaseSettings):
 
     # Phase 5 — per-tenant rate limiting (token bucket).
     # `rate_limit_per_minute=0` disables the limiter entirely (default in
-    # tests). `rate_limit_burst` is the bucket size; defaults to 2× the
+    # tests). `rate_limit_burst` is the bucket size; defaults to 2x the
     # per-minute rate so short bursts don't get clipped.
     rate_limit_per_minute: int = 0
     rate_limit_burst: int = 0

@@ -14,6 +14,8 @@
 - **Phase 2 — Orchestration + async API: COMPLETE.**
 - **Phase 3 — Anti-bot infrastructure: COMPLETE.**
 - **Phase 4 — Compliance + hashed API keys: COMPLETE.**
+- **Phase 5 — Hardening + deploy: ~95% COMPLETE** (code + infra files
+  shipped; remaining: live `fly deploy` smoke + optional OpenTelemetry).
 - All Phase 4 exit criteria from `docs/PLAN.md §Phase 4` met:
   - `persistence/models.py` — `ApiKey` (sha256 `key_hash`, `label`,
     `last_used_at`, `revoked_at`), `Suppression` (sha256 `target_hash`,
@@ -98,17 +100,125 @@
     `test_worker_providers.py` (7), plus +2 fingerprint tests in
     `test_scraper.py` and +2 in `test_config.py`. `ruff`, `ruff format
     --check`, `mypy --strict` all clean across 66 source files.
-- Next phase queued: **Phase 5 — Deployment + observability.**
-  See `docs/PLAN.md §Phase 5`. Adds `Dockerfile`, `docker-compose.yml`
-  (Postgres + Redis), `fly.toml` (api + worker apps), Alembic
-  migrations to replace `create_all`, RUNBOOK.md, and OTLP metrics +
-  trace plumbing for structlog.
+- All Phase 5 exit criteria from `docs/PLAN.md §Phase 5` met (except
+  live deploy smoke — see Open items):
+  - `core/cache.py` — `Cache` Protocol + `InMemoryCache` (lock-guarded
+    dict with monotonic-time TTLs) + `RedisCache` (lazy `redis.asyncio`
+    import, `decode_responses=True`, SETEX with min-1s clamp). Selector
+    `build_cache(redis_url)` picks in-memory when URL is falsy.
+  - `core/rate_limit.py` — `RateLimiter` Protocol + three impls:
+    `NoopRateLimiter` (admits everything), `InMemoryRateLimiter`
+    (asyncio-locked per-tenant token bucket), `RedisRateLimiter`
+    (atomic Lua script `_REDIS_LUA` registered once via `EVALSHA`,
+    bucket TTL = `capacity/refill + 60s`). `build_rate_limiter`
+    selector: `per_minute<=0 -> Noop`, `redis_url -> Redis`, else
+    `InMemory`.
+  - `core/metrics.py` — private `CollectorRegistry` so tests stay
+    isolated. Counters: `sentry_jobs_submitted_total{tenant_slug}`,
+    `sentry_jobs_completed_total{status}`,
+    `sentry_suppression_rejects_total{stage}`,
+    `sentry_pii_redactions_total{category}`,
+    `sentry_rate_limit_rejects_total{tenant_slug}`. Histograms:
+    `sentry_job_duration_seconds{status}` (job-level wall clock),
+    `sentry_pipeline_stage_duration_seconds{stage}`. Helper
+    `time_stage(stage)` is a `contextmanager` that records on both
+    success and exception. `render_metrics()` returns
+    `(body, CONTENT_TYPE_LATEST)` for the FastAPI route.
+  - `api/main.py` — lifespan now builds + tears down `cache` and
+    `rate_limiter` on `app.state`. Mounts `GET /metrics` only when
+    `metrics_enabled=True`. Honours `auto_create_tables=False` (prod)
+    by skipping the `create_all` step so Alembic owns schema.
+  - `api/dependencies.py` — `get_rate_limiter` + `enforce_rate_limit`
+    (admits or raises `RateLimitedError(429)`). Suppression check
+    runs *before* the rate limit so a suppressed-and-rate-limited
+    caller still gets the 451 (better feedback, no info leak).
+  - `api/routes/profiles.py::create_profile_job` — order of work is
+    `auth -> suppression(check + audit + 451) -> rate_limit(429) ->
+    enqueue + JOB_SUBMITTED_TOTAL`. GET / DELETE intentionally NOT
+    rate-limited (cheap polls).
+  - `core/errors.py::RateLimitedError` — `code=RATE_LIMITED`, `429`,
+    `retryable=True`. Same envelope shape as every other domain error
+    so clients catch on `error.code` not status.
+  - `worker/runner.execute_job` — wraps each LangGraph stage in
+    `time_stage(stage)`, records `JOB_DURATION_SECONDS` + bumps
+    `JOB_COMPLETED_TOTAL{status}` on terminal transitions, increments
+    `PII_REDACTION_TOTAL{category}` per redaction, and bumps
+    `SUPPRESSION_REJECT_TOTAL{stage="post_extract"}` for the
+    erasure-mid-flight branch.
+  - `worker/arq_worker.py::redis_settings_from_env` now raises if
+    `REDIS_URL` is unset (was silently using the SQLite default).
+  - `core/config.py` — `redis_url: str | None = None` (was always-set);
+    new `auto_create_tables`, `rate_limit_per_minute`,
+    `rate_limit_burst`, `cache_serp_ttl_seconds`,
+    `cache_profile_ttl_seconds`, `metrics_enabled` settings.
+  - **Migrations** — `migrations/env.py` + first revision
+    `70aeb72c1be2_phase4_baseline.py` capture all 5 tables (jobs,
+    tenants, api_keys, suppressions, audit_entries). Alembic now
+    owns prod schema; `alembic.ini` configured for async URLs.
+  - **Deploy artefacts** — `Dockerfile` (multi-stage,
+    `python:3.13-slim`, non-root uid 1001 user, single image used by
+    both `api` and `worker` via CMD override), `docker-compose.yml`
+    (Postgres + Redis + one-shot `migrate` service blocks `api` +
+    `worker`), `fly.toml` (`api` + `worker` process groups, `[deploy]
+    release_command = "alembic upgrade head"`, `[metrics]` for `/metrics`
+    scrape, separate VM sizing per group).
+  - **Runbook** — `docs/RUNBOOK.md` covers env tables, secret
+    provisioning, migration generate/apply/rollback, day-2 ops
+    (logs, metrics, tenant + key + suppression provisioning), scaling,
+    and the 5xx / queue-backlog / 429 incident playbooks.
+  - **Tests** — 4 new files:
+    - `test_cache.py` (11): in-memory round-trip, TTL expiry, zero-TTL
+      semantics, delete idempotency, overwrite resets TTL, concurrent
+      writers, `build_cache` selector for None / "" / Redis URL,
+      `RedisCache` constructor is connect-free.
+    - `test_rate_limit.py` (10): Noop admits everything, in-memory
+      admits up to burst then rejects, per-tenant isolation, refill
+      over time, default burst is `2 * per_minute`, `per_minute=0`
+      raises in both InMemory and Redis adapters, `build_rate_limiter`
+      selector for all three branches.
+    - `test_metrics.py` (5): `render_metrics` emits Prometheus text
+      with HELP / TYPE comments, `time_stage` records on success and
+      on exception (re-raises unchanged), `/metrics` mounted when
+      enabled / 404 when disabled.
+    - `test_rate_limit_api.py` (2): third POST returns
+      429 + `RATE_LIMITED` envelope under `per_minute=1, burst=2`;
+      unauthenticated requests don't drain the bucket (auth gate
+      runs first).
+  - **Phase 5 verification suite.** `ruff check`, `ruff format
+    --check`, `mypy` (80 source files, two `from_url` calls
+    annotated `# type: ignore[no-untyped-call]`), and `pytest` (220
+    passed, +28 from Phase 4) all green.
+- **Phase 5 design notes worth remembering.**
+  - `migrations/versions/` is excluded from ruff in `pyproject.toml`;
+    Alembic's auto-generated template doesn't follow our style and
+    re-formatting it would diverge from upstream tooling.
+  - `RedisRateLimiter._REDIS_LUA` is a single round-trip Lua script
+    (refill → check → decrement) so the bucket math is atomic across
+    replicas. Falling back to GETSET would race under concurrent
+    requests from the same tenant.
+  - The `/metrics` endpoint is **unauthenticated** by design —
+    Prometheus scrapers don't carry per-tenant API keys. Network
+    isolation (Fly internal network) is the gate.
+  - We did NOT wire OpenTelemetry. The PLAN listed `opentelemetry-*`
+    as a dep; on review it adds collector + exporter complexity that
+    isn't needed yet. Prometheus + structured JSON logs cover the
+    "what's happening" question in prod. Revisit when we want
+    distributed tracing across the worker → upstream call graph.
 
 ## Open items
 
-- Repo directory is still `/Users/aran/code/SentryAI`. User may rename to
-  `SentryScraperModule` at any time; nothing inside the repo depends on the
-  directory name.
+- Repo directory was renamed `/Users/aran/code/SentryAI` →
+  `/Users/aran/code/SentryAI-Sales-Tool` between sessions; the user
+  also nukes `.venv/` periodically. Recreate with
+  `python3 -m venv .venv && .venv/bin/pip install -e ".[dev]"`.
+  CorpusName: `apantvaidya/SentryAI-Sales-Tool`. Branch: `scraper`.
+- **Phase 5 live deploy is unproven.** The compose stack and `fly.toml`
+  are wired but neither has been brought up end-to-end; the exit
+  criterion ("p50 < 15s on 20-request synthetic load") still needs a
+  staging run. Order to verify:
+  1. `docker compose up --build` and POST a fixture build.
+  2. `fly deploy` to a staging app, repeat the POST.
+  3. Capture latency from `sentry_job_duration_seconds`.
 - `LiteLLMProvider` (real LLM adapter) is wired but never exercised against
   a live API. Future work: an env-gated live call to confirm OpenAI
   structured-output works end-to-end.
@@ -131,11 +241,10 @@
 - `LocalPlaywrightProvider` lazy-imports `playwright` — requires
   `pip install playwright && playwright install chromium` and is meant
   only for the gated live test. Not covered by unit tests.
-- Alembic migrations not wired yet — Phase 2 uses `SQLModel.metadata.
-  create_all` on startup, which is fine for SQLite/Postgres dev but must
-  be replaced before prod (`docs/PLAN.md §Phase 2 / Phase 5`). Phase 4
-  added three more tables (`api_keys`, `suppressions`, `audit_entries`);
-  the first Alembic baseline will need to capture all five.
+- ~~Alembic migrations not wired yet~~ → **DONE in Phase 5.**
+  Baseline revision `70aeb72c1be2_phase4_baseline.py` covers all 5
+  tables; production sets `auto_create_tables=false` and runs
+  `alembic upgrade head` on deploy.
 - **PII categories are conservative regex-based.** `compliance/pii_filter`
   catches health / family / religion / government_id / financial_personal
   via curated keyword + pattern lists. False positives are acceptable

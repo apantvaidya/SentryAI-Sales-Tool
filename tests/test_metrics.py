@@ -45,10 +45,7 @@ def _stage_observation_count(stage: str) -> float:
 
     for metric in PIPELINE_STAGE_DURATION_SECONDS.collect():
         for sample in metric.samples:
-            if (
-                sample.name.endswith("_count")
-                and sample.labels.get("stage") == stage
-            ):
+            if sample.name.endswith("_count") and sample.labels.get("stage") == stage:
                 return float(sample.value)
     return 0.0
 
@@ -65,9 +62,8 @@ def test_time_stage_records_observation() -> None:
 def test_time_stage_records_on_exception() -> None:
     """Failures inside the block still get timed (then re-raised)."""
     before = _stage_observation_count("probe-err")
-    with pytest.raises(RuntimeError, match="boom"):
-        with time_stage("probe-err"):
-            raise RuntimeError("boom")
+    with pytest.raises(RuntimeError, match="boom"), time_stage("probe-err"):
+        raise RuntimeError("boom")
     after = _stage_observation_count("probe-err")
     assert after == before + 1
 
@@ -82,9 +78,11 @@ async def metrics_app() -> AsyncIterator[httpx.AsyncClient]:
     )
     app = create_app(settings=settings)
     transport = httpx.ASGITransport(app=app)
-    async with httpx.AsyncClient(transport=transport, base_url="http://test") as client:
-        async with app.router.lifespan_context(app):
-            yield client
+    async with (
+        httpx.AsyncClient(transport=transport, base_url="http://test") as client,
+        app.router.lifespan_context(app),
+    ):
+        yield client
 
 
 async def test_metrics_endpoint_serves_prometheus_text(
