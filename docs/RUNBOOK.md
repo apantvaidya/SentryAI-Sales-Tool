@@ -25,12 +25,36 @@ The same image (`Dockerfile`) is used for compose and Fly. Differences are env-o
 ```bash
 python3 -m venv .venv
 .venv/bin/pip install -e ".[dev]"
-cp .env.example .env  # add BOOTSTRAP_API_KEYS at minimum
+cp .env.example .env  # leave provider keys commented out for fakes-only
 .venv/bin/uvicorn sentry_scraper_module.api.main:app --reload
 ```
 
 In this mode `DATABASE_URL` is unset → SQLite, `REDIS_URL` is unset →
 in-memory cache + rate limiter, no `arq` worker required.
+
+**`.env` parser gotcha.** `pydantic-settings` does NOT strip inline
+comments — `FOO=bar # note` becomes literal `bar # note`. And setting
+`FOO=` to empty overrides the in-code default with the empty string,
+which breaks validation for several settings (notably `DATABASE_URL`).
+Keep comments on their own lines and leave optional vars
+**commented out** unless you're overriding the default. The shipped
+`.env.example` follows this convention.
+
+### 2.1.1 Smoke verification
+
+After uvicorn is up, prove the request → enqueue → worker → poll →
+done loop with the bundled smoke script:
+
+```bash
+.venv/bin/python scripts/smoke.py --api-key dev-key
+```
+
+Exits 0 on a structurally-valid `done` response. The default mode
+accepts an empty `Profile()` (which is what fakes-only deployments
+produce by design); pass `--strict` once you've wired real provider
+keys to additionally require a non-empty name, confidence > 0, and
+≥ 1 source. The script is stdlib-only and works against the local
+API, the compose stack, and any Fly app.
 
 ### 2.2 Local prod-like (compose)
 

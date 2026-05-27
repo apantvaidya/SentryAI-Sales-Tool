@@ -15,7 +15,9 @@
 - **Phase 3 — Anti-bot infrastructure: COMPLETE.**
 - **Phase 4 — Compliance + hashed API keys: COMPLETE.**
 - **Phase 5 — Hardening + deploy: ~95% COMPLETE** (code + infra files
-  shipped; remaining: live `fly deploy` smoke + optional OpenTelemetry).
+  shipped; remaining: docker-compose smoke + live `fly deploy` smoke +
+  optional OpenTelemetry). Tier 2 (uvicorn + fakes) verified
+  end-to-end via `scripts/smoke.py`.
 - All Phase 4 exit criteria from `docs/PLAN.md §Phase 4` met:
   - `persistence/models.py` — `ApiKey` (sha256 `key_hash`, `label`,
     `last_used_at`, `revoked_at`), `Suppression` (sha256 `target_hash`,
