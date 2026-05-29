@@ -73,6 +73,15 @@ class Settings(BaseSettings):
     cache_serp_ttl_seconds: int = 60 * 60 * 24  # 24h
     cache_profile_ttl_seconds: int = 60 * 60 * 24 * 7  # 7d
 
+    # Scrape-mode budgets. "surface" is the fast/cheap default path;
+    # "deep" widens the candidate set and adds pain-point / blog-archive
+    # SERP queries. `max_candidates` caps how many distinct pages are
+    # fetched; `results_per_query` caps SERP hits pulled per query.
+    surface_max_candidates: int = 5
+    surface_results_per_query: int = 5
+    deep_max_candidates: int = 12
+    deep_results_per_query: int = 10
+
     # Phase 5 — observability.
     # `metrics_enabled=True` mounts a Prometheus exporter at `/metrics`.
     # OTel exporter is opt-in via `otel_exporter_endpoint` (e.g.

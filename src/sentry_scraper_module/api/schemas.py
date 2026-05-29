@@ -13,6 +13,8 @@ from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field, HttpUrl
 
+ScrapeMode = Literal["surface", "deep"]
+
 
 class ProfileRequest(BaseModel):
     """Inbound payload for `POST /v1/profiles` (see `docs/PRD.md §2.1`)."""
@@ -23,6 +25,12 @@ class ProfileRequest(BaseModel):
     company_name: str | None = None
     seed_urls: list[HttpUrl] = Field(default_factory=list)
     context_goal: str | None = None
+    # Scrape depth. "surface" (default) is the fast/cheap path: a handful
+    # of high-authority pages and opportunistic pain points. "deep" widens
+    # the candidate set, adds blog-archive + "problems we solve" SERP
+    # queries, and instructs the extractor to deliberately hunt for pain
+    # points. See `agents.planner` for the per-mode budgets.
+    mode: ScrapeMode = "surface"
 
 
 # ---------------------------------------------------------------------------

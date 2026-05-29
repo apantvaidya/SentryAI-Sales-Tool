@@ -77,3 +77,32 @@ def test_below_threshold_skips_splitting(hash_embeddings: HashEmbeddings) -> Non
     )
     assert len(chunks) == 1
     assert chunks[0].text == text
+
+
+def test_multi_query_selection_surfaces_identity_and_challenge_evidence(
+    hash_embeddings: HashEmbeddings,
+) -> None:
+    pages = [
+        _short_page(
+            "u-role",
+            "Jane Smith is VP of Engineering at Acme Corp and owns the platform roadmap.",
+        ),
+        _short_page(
+            "u-challenges",
+            "Acme Corp says handoff costs, shipping delays, and platform "
+            "bottlenecks are top priorities.",
+        ),
+        _short_page("u-noise", "Gardening tools and backyard irrigation trends."),
+    ]
+    chunks = select_relevant_chunks(
+        pages,
+        [
+            "Jane Smith Acme Corp responsibilities roadmap",
+            "Acme Corp challenges bottlenecks priorities",
+        ],
+        embeddings=hash_embeddings,
+        top_k=2,
+    )
+
+    urls = {chunk.page_url for chunk in chunks}
+    assert urls == {"u-role", "u-challenges"}

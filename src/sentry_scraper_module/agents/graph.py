@@ -26,7 +26,11 @@ from sentry_scraper_module.agents.chunker import select_relevant_chunks
 from sentry_scraper_module.agents.confidence import compute_confidence
 from sentry_scraper_module.agents.distiller import distill
 from sentry_scraper_module.agents.extractor import extract_profile
-from sentry_scraper_module.agents.planner import plan_candidates
+from sentry_scraper_module.agents.planner import (
+    build_retrieval_queries,
+    plan_candidates,
+    resolve_plan_budget,
+)
 from sentry_scraper_module.agents.scraper import (
     fetch_static_many,
     needs_escalation,
@@ -34,6 +38,7 @@ from sentry_scraper_module.agents.scraper import (
 from sentry_scraper_module.agents.state import ProfileState
 from sentry_scraper_module.agents.types import DistilledPage, FetchedPage
 from sentry_scraper_module.api.schemas import BuildMetadata
+from sentry_scraper_module.core.config import Settings, get_settings
 from sentry_scraper_module.core.fingerprint import Fingerprint, build_fingerprint
 from sentry_scraper_module.providers.browser import BrowserProvider, StubBrowser
 from sentry_scraper_module.providers.embeddings import EmbeddingProvider
@@ -51,6 +56,8 @@ NODE_NAMES = (
     "extract",
     "finalize",
 )
+SURFACE_CHUNK_TOP_K = 3
+DEEP_CHUNK_TOP_K = 5
 
 
 @dataclass(frozen=True)
@@ -75,6 +82,7 @@ class PipelineDeps:
     browser: BrowserProvider | None = None
     proxy_session: ProxySession | None = None
     fingerprint: Fingerprint | None = None
+    settings: Settings | None = None
 
 
 async def _emit_stage(deps: PipelineDeps, stage: str) -> None:
@@ -87,20 +95,25 @@ async def _emit_stage(deps: PipelineDeps, stage: str) -> None:
 # ---------------------------------------------------------------------------
 
 
-def _build_query(state: ProfileState) -> str:
-    request = state["request"]
-    parts = [request.target_name]
-    if request.company_name:
-        parts.append(request.company_name)
-    if request.context_goal:
-        parts.append(request.context_goal)
-    return " ".join(parts)
+def _resolve_settings(deps: PipelineDeps) -> Settings:
+    return deps.settings or get_settings()
+
+
+def _chunk_top_k(state: ProfileState) -> int:
+    return DEEP_CHUNK_TOP_K if state["request"].mode == "deep" else SURFACE_CHUNK_TOP_K
 
 
 def _make_plan_node(deps: PipelineDeps) -> Callable[[ProfileState], Awaitable[dict[str, Any]]]:
     async def plan_node(state: ProfileState) -> dict[str, Any]:
         await _emit_stage(deps, "plan")
-        queries, candidates = await plan_candidates(state["request"], serp=deps.serp)
+        request = state["request"]
+        budget = resolve_plan_budget(request.mode, _resolve_settings(deps))
+        queries, candidates = await plan_candidates(
+            request,
+            serp=deps.serp,
+            max_candidates=budget.max_candidates,
+            results_per_query=budget.results_per_query,
+        )
         return {"plan": queries, "candidates": candidates}
 
     return plan_node
@@ -200,8 +213,9 @@ def _make_chunk_node(
         await _emit_stage(deps, "chunk")
         chunks = select_relevant_chunks(
             state["distilled"],
-            _build_query(state),
+            build_retrieval_queries(state["request"]),
             embeddings=deps.embeddings,
+            top_k=_chunk_top_k(state),
         )
         return {"chunks": chunks}
 

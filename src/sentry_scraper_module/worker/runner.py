@@ -28,6 +28,7 @@ from sentry_scraper_module.compliance import (
     log_suppression_reject,
     redact_pii,
 )
+from sentry_scraper_module.core.config import Settings
 from sentry_scraper_module.core.errors import (
     InternalError,
     ProfilingError,
@@ -74,6 +75,7 @@ class RunDeps:
     embeddings: EmbeddingProvider
     proxy: ProxyProvider | None = None
     browser: BrowserProvider | None = None
+    settings: Settings | None = None
 
 
 # Factories yield `RunDeps` from an async context manager so resources
@@ -151,6 +153,7 @@ async def execute_job(
                 browser=browser,
                 proxy_session=proxy_session,
                 fingerprint=fingerprint,
+                settings=deps.settings,
             )
             final = await run_profile_pipeline(
                 initial_state(request),

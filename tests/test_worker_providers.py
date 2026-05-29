@@ -15,7 +15,14 @@ from sentry_scraper_module.worker.providers import build_run_deps
 
 
 async def test_build_run_deps_uses_fakes_when_no_credentials() -> None:
-    settings = Settings()
+    settings = Settings(
+        serper_api_key=None,
+        openai_api_key=None,
+        anthropic_api_key=None,
+        smartproxy_username=None,
+        smartproxy_password=None,
+        browserless_token=None,
+    )
 
     async with build_run_deps(settings) as deps:
         assert isinstance(deps.serp, FakeSerp)

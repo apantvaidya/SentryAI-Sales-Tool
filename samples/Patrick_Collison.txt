@@ -1,0 +1,45 @@
+{
+  "profile": {
+    "personal": {
+      "name": "Patrick Collison",
+      "exact_location": "",
+      "interests": []
+    },
+    "professional": {
+      "title": "Co-founder and CEO",
+      "company": "Stripe",
+      "responsibilities": [
+        "Developing financial infrastructure for the internet economy",
+        "Leading product and engineering teams",
+        "Strategizing for enterprise-wide market opportunities",
+        "Overseeing technological improvements and innovations"
+      ],
+      "reports_to": "",
+      "oversees": [
+        "Product development",
+        "Engineering teams"
+      ],
+      "cost_metrics": ""
+    },
+    "contact": {
+      "best_channels": [],
+      "emails": [],
+      "social_links": []
+    },
+    "outreach_strategy": {
+      "pain_points": [],
+      "how_we_benefit_them": ""
+    }
+  },
+  "metadata": {
+    "sources_used": [
+      "https://www.linkedin.com/in/patrickcollison",
+      "https://www.linkedin.com/posts/a16z_patrick-collison-co-founder-and-ceo-of-stripe-activity-7424903251222749184-msGr",
+      "https://www.linkedin.com/posts/y-combinator_were-proud-to-announce-patrick-collison-activity-7463680086735626240-ldWR",
+      "https://www.linkedin.com/posts/blainevess_patrick-collison-has-a-page-on-his-website-activity-7434273852601311232-jWi9",
+      "https://www.linkedin.com/posts/grantslee_patrick-collison-grew-up-in-a-village-of-activity-7406362911704739840-twWF"
+    ],
+    "confidence_score": 0.61,
+    "low_confidence": false
+  }
+}

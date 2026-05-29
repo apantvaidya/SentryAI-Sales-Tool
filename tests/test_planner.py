@@ -6,10 +6,13 @@ from pydantic import HttpUrl
 
 from sentry_scraper_module.agents.planner import (
     build_queries,
+    build_retrieval_queries,
     merge_and_rank,
     plan_candidates,
+    resolve_plan_budget,
 )
 from sentry_scraper_module.api.schemas import ProfileRequest
+from sentry_scraper_module.core.config import Settings
 from sentry_scraper_module.providers.serp import FakeSerp, SerpResult
 
 # ---------------------------------------------------------------------------
@@ -33,6 +36,68 @@ def test_build_queries_skips_company_variants_without_company() -> None:
     assert not any("responsibilities" in q for q in queries)
     # Always at least linkedin + the bare-name fallback.
     assert len(queries) >= 2
+
+
+def test_build_queries_deep_mode_adds_pain_point_and_blog_queries() -> None:
+    surface = ProfileRequest(target_name="Jane Smith", company_name="Acme Corp")
+    deep = ProfileRequest(target_name="Jane Smith", company_name="Acme Corp", mode="deep")
+    surface_queries = build_queries(surface)
+    deep_queries = build_queries(deep)
+    # Deep mode is a strict superset that adds pain-point + blog refiners.
+    assert set(surface_queries).issubset(set(deep_queries))
+    assert any("blog" in q for q in deep_queries)
+    assert any("challenges" in q or "problems" in q for q in deep_queries)
+    assert len(deep_queries) > len(surface_queries)
+    # No accidental duplicates.
+    assert len(deep_queries) == len(set(deep_queries))
+
+
+def test_build_queries_deep_mode_folds_in_context_goal() -> None:
+    deep = ProfileRequest(
+        target_name="Jane Smith",
+        company_name="Acme Corp",
+        context_goal="reduce cloud spend",
+        mode="deep",
+    )
+    queries = build_queries(deep)
+    assert any("reduce cloud spend" in q for q in queries)
+
+
+def test_resolve_plan_budget_maps_mode_to_settings() -> None:
+    settings = Settings(
+        surface_max_candidates=3,
+        surface_results_per_query=4,
+        deep_max_candidates=15,
+        deep_results_per_query=10,
+    )
+    surface = resolve_plan_budget("surface", settings)
+    deep = resolve_plan_budget("deep", settings)
+    assert (surface.max_candidates, surface.results_per_query) == (3, 4)
+    assert (deep.max_candidates, deep.results_per_query) == (15, 10)
+
+
+def test_build_retrieval_queries_prioritizes_role_and_company_pains() -> None:
+    request = ProfileRequest(
+        target_name="Jane Smith",
+        company_name="Acme Corp",
+        context_goal="reduce incident-response toil",
+    )
+    queries = build_retrieval_queries(request)
+    assert queries
+    assert any("responsibilities priorities initiatives roadmap" in q for q in queries)
+    assert any("challenges pain points priorities bottlenecks initiatives" in q for q in queries)
+    assert any("reduce incident-response toil" in q for q in queries)
+
+
+def test_build_retrieval_queries_deep_mode_adds_interview_and_strategy_passes() -> None:
+    request = ProfileRequest(
+        target_name="Jane Smith",
+        company_name="Acme Corp",
+        mode="deep",
+    )
+    queries = build_retrieval_queries(request)
+    assert any("interview blog strategy" in q for q in queries)
+    assert any("efficiency risks hiring roadmap" in q for q in queries)
 
 
 # ---------------------------------------------------------------------------

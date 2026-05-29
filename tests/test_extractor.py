@@ -46,12 +46,35 @@ def test_render_user_prompt_handles_empty_chunks() -> None:
     assert "No source excerpts" in prompt
 
 
+def test_render_user_prompt_adds_deep_mode_focus() -> None:
+    deep = ProfileRequest(target_name="Jane Smith", mode="deep")
+    surface = ProfileRequest(target_name="Jane Smith")
+    deep_prompt = render_user_prompt(deep, [])
+    surface_prompt = render_user_prompt(surface, [])
+    assert "deep mode" in deep_prompt
+    assert "pain_points" in deep_prompt
+    assert "deep mode" not in surface_prompt
+
+
 def test_system_prompt_enforces_b2b_and_grounding() -> None:
     # Compliance/grounding guarantees we want the prompt to keep stating.
     assert "B2B" in SYSTEM_PROMPT
-    assert "speculate" in SYSTEM_PROMPT.lower()
+    assert "fabricate" in SYSTEM_PROMPT.lower()
     assert "cost_metrics" in SYSTEM_PROMPT
     assert "how_we_benefit_them" in SYSTEM_PROMPT
+
+
+def test_system_prompt_prioritizes_outreach_strategy() -> None:
+    # The outreach section is the headline deliverable; keep it emphasized.
+    assert "PRIMARY deliverable" in SYSTEM_PROMPT
+    assert "pain_points" in SYSTEM_PROMPT
+
+
+def test_render_user_prompt_always_emphasizes_outreach() -> None:
+    surface = ProfileRequest(target_name="Jane Smith")
+    prompt = render_user_prompt(surface, [])
+    assert "outreach_strategy" in prompt
+    assert "Priority" in prompt
 
 
 async def test_extract_profile_invokes_llm_with_expected_payload() -> None:

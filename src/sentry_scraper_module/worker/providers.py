@@ -81,6 +81,7 @@ async def build_run_deps(settings: Settings) -> AsyncIterator[RunDeps]:
             embeddings=default_embeddings(),
             proxy=_build_proxy(settings),
             browser=_build_browser(settings, client),
+            settings=settings,
         )
 
 

@@ -26,6 +26,7 @@ from sentry_scraper_module.agents.chunker import select_relevant_chunks
 from sentry_scraper_module.agents.confidence import compute_confidence
 from sentry_scraper_module.agents.distiller import distill
 from sentry_scraper_module.agents.extractor import extract_profile
+from sentry_scraper_module.agents.planner import build_retrieval_queries
 from sentry_scraper_module.agents.types import DistilledPage
 from sentry_scraper_module.api.schemas import (
     BuildMetadata,
@@ -53,6 +54,15 @@ def _build_arg_parser() -> argparse.ArgumentParser:
     parser.add_argument("--target-name", required=True)
     parser.add_argument("--company-name", default=None)
     parser.add_argument("--context-goal", default=None)
+    parser.add_argument(
+        "--mode",
+        choices=("surface", "deep"),
+        default="surface",
+        help=(
+            "Retrieval depth. `deep` widens planning/retrieval toward pain points "
+            "and initiatives."
+        ),
+    )
     parser.add_argument(
         "--fixtures-dir",
         type=Path,
@@ -112,14 +122,11 @@ async def run(args: argparse.Namespace) -> ProfileResult:
         target_name=args.target_name,
         company_name=args.company_name,
         context_goal=args.context_goal,
+        mode=args.mode,
     )
-    query = " ".join(
-        part for part in [request.target_name, request.company_name, request.context_goal] if part
-    )
-
     chunks = select_relevant_chunks(
         pages,
-        query,
+        build_retrieval_queries(request),
         embeddings=default_embeddings(),
         top_k=args.top_k,
     )
