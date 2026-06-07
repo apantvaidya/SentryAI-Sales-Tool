@@ -1,0 +1,3 @@
+people at {{company_name}} with responsibilities similar to {{person_name}}, especially in asset protection, loss prevention, physical security, district leadership, or store operations
+
+Prefer profiles where the current role, company, tenure, and location are clearly visible.
