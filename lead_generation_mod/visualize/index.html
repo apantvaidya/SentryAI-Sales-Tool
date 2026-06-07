@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lead Graph</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="sidebar-section">
+          <div class="eyebrow">Visualization</div>
+          <h1>Lead Graph</h1>
+          <p class="intro">
+            Obsidian-style graph view for one seed person, the seven Exa query vectors, and the people returned from
+            those searches.
+          </p>
+        </div>
+
+        <div class="sidebar-section controls">
+          <label for="run-select">Run</label>
+          <select id="run-select"></select>
+          <button id="reload-button" type="button">Reload graph</button>
+        </div>
+
+        <div class="sidebar-section legend">
+          <div class="legend-row"><span class="swatch seed"></span> Seed person</div>
+          <div class="legend-row"><span class="swatch query"></span> Query node</div>
+          <div class="legend-row"><span class="swatch accepted"></span> Accepted person</div>
+          <div class="legend-row"><span class="swatch review"></span> Needs review</div>
+          <div class="legend-row"><span class="swatch dropped"></span> Dropped</div>
+        </div>
+
+        <div class="sidebar-section stats">
+          <div class="stats-grid" id="stats-grid"></div>
+        </div>
+
+        <div class="sidebar-section details">
+          <div class="eyebrow">Selected Node</div>
+          <div id="detail-panel" class="detail-panel">
+            <div class="placeholder">Click a node to inspect it.</div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="canvas-wrap">
+        <div class="canvas-toolbar">
+          <div class="run-meta" id="run-meta">Loading latest run…</div>
+          <div class="zoom-controls">
+            <button id="zoom-out" type="button">-</button>
+            <button id="zoom-reset" type="button">Reset</button>
+            <button id="zoom-in" type="button">+</button>
+          </div>
+        </div>
+        <svg id="graph" viewBox="0 0 1600 1100" aria-label="Lead graph visualization">
+          <defs>
+            <filter id="softGlow">
+              <feGaussianBlur stdDeviation="5" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+          <g id="viewport">
+            <g id="edges"></g>
+            <g id="nodes"></g>
+          </g>
+        </svg>
+      </main>
+    </div>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
