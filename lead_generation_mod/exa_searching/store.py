@@ -19,6 +19,10 @@ def write_json(path: Path, payload: Any) -> None:
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=True) + "\n", encoding="utf-8")
 
 
+def run_artifact_dir(data_dir: Path, run_id: str) -> Path:
+    return data_dir / "runs" / run_id
+
+
 def load_leads(leads_file: Path) -> list[PersonaLeadRecord]:
     ensure_leads_file(leads_file)
     payload = json.loads(leads_file.read_text(encoding="utf-8"))
@@ -67,9 +71,10 @@ def write_run_artifacts(
     run_id: str,
     artifacts: dict[str, Any],
 ) -> dict[str, str]:
+    target_dir = run_artifact_dir(data_dir, run_id)
     artifact_paths: dict[str, str] = {}
     for artifact_name, payload in artifacts.items():
-        artifact_path = data_dir / f"{run_id}_{artifact_name}.json"
+        artifact_path = target_dir / f"{artifact_name}.json"
         write_json(artifact_path, payload)
         artifact_paths[artifact_name] = str(artifact_path)
     return artifact_paths

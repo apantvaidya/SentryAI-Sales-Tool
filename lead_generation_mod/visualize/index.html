@@ -13,41 +13,60 @@
           <div class="eyebrow">Visualization</div>
           <h1>Lead Graph</h1>
           <p class="intro">
-            Obsidian-style graph view for one seed person, the seven Exa query vectors, and the people returned from
-            those searches.
+            Obsidian-style graph views for seed personas, the active query templates used by each run, and the people
+            those searches discovered.
           </p>
         </div>
 
         <div class="sidebar-section controls">
+          <label for="view-select">View</label>
+          <select id="view-select">
+            <option value="graph">Graph view</option>
+            <option value="aggregate" selected>All searches</option>
+            <option value="overlap">Overlap view</option>
+          </select>
+
           <label for="run-select">Run</label>
           <select id="run-select"></select>
           <button id="reload-button" type="button">Reload graph</button>
         </div>
 
-        <div class="sidebar-section legend">
+        <div class="sidebar-section legend" id="graph-legend">
           <div class="legend-row"><span class="swatch seed"></span> Seed person</div>
           <div class="legend-row"><span class="swatch query"></span> Query node</div>
           <div class="legend-row"><span class="swatch accepted"></span> Accepted person</div>
-          <div class="legend-row"><span class="swatch review"></span> Needs review</div>
           <div class="legend-row"><span class="swatch dropped"></span> Dropped</div>
+          <div class="legend-row"><span class="swatch recursive"></span> Seed lineage</div>
+          <div class="legend-row"><span class="legend-line seed-origin"></span> Producing query → later seed</div>
+          <div class="legend-row"><span class="legend-line query-overlap"></span> Shared query results</div>
+        </div>
+
+        <div class="sidebar-section legend" id="run-color-legend">
+          <div class="eyebrow">Search Colors · Seed / Queries</div>
+          <div id="run-color-list"></div>
+        </div>
+
+        <div class="sidebar-section legend hidden" id="overlap-legend">
+          <div class="legend-row"><span class="swatch overlap-focus"></span> Focus query</div>
+          <div class="legend-row"><span class="swatch overlap-peer"></span> Other query</div>
+          <div class="legend-row"><span class="swatch overlap-db"></span> Database</div>
+        </div>
+
+        <div class="sidebar-section controls hidden" id="overlap-controls">
+          <label for="overlap-focus-select">Focus Query</label>
+          <select id="overlap-focus-select"></select>
         </div>
 
         <div class="sidebar-section stats">
           <div class="stats-grid" id="stats-grid"></div>
         </div>
 
-        <div class="sidebar-section details">
-          <div class="eyebrow">Selected Node</div>
-          <div id="detail-panel" class="detail-panel">
-            <div class="placeholder">Click a node to inspect it.</div>
-          </div>
-        </div>
       </aside>
 
       <main class="canvas-wrap">
         <div class="canvas-toolbar">
           <div class="run-meta" id="run-meta">Loading latest run…</div>
-          <div class="zoom-controls">
+          <div class="zoom-controls" id="graph-zoom-controls">
             <button id="zoom-out" type="button">-</button>
             <button id="zoom-reset" type="button">Reset</button>
             <button id="zoom-in" type="button">+</button>
@@ -62,13 +81,40 @@
                 <feMergeNode in="SourceGraphic" />
               </feMerge>
             </filter>
+            <marker id="lineageArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="#f1a96b"></path>
+            </marker>
           </defs>
           <g id="viewport">
             <g id="edges"></g>
             <g id="nodes"></g>
           </g>
         </svg>
+        <div id="overlap-view" class="overlap-view hidden">
+          <div class="overlap-stage-wrap">
+            <svg id="overlap-stage" viewBox="0 0 1600 980" aria-label="Query overlap visualization"></svg>
+          </div>
+          <div class="overlap-tables">
+            <section class="overlap-panel">
+              <div class="eyebrow">Pairwise Overlap</div>
+              <div id="pairwise-list" class="overlap-list"></div>
+            </section>
+            <section class="overlap-panel">
+              <div class="eyebrow">Database Overlap</div>
+              <div id="database-list" class="overlap-list"></div>
+            </section>
+          </div>
+        </div>
       </main>
+
+      <aside class="inspector-panel">
+        <div class="sidebar-section inspector-section">
+          <div class="eyebrow">Inspector</div>
+          <div id="detail-panel" class="detail-panel">
+            <div class="placeholder">Click a node to inspect it. Click the background to clear the selection.</div>
+          </div>
+        </div>
+      </aside>
     </div>
 
     <script src="./app.js" type="module"></script>

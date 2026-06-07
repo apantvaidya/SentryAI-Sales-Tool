@@ -137,14 +137,14 @@ lead_generation_mod/
 - initialize project structure
 - add dependency management, linting, and formatting
 - define config strategy and environment variable contract
-- add query template files for all seven Exa vectors
+- add the initial Exa query template files
 - use `exa_searching/` as the code folder and `data/` as the output folder
 
 ### Phase 1: Core Domain and Query Layer
 
 - implement seed persona schema
 - implement final output schema
-- implement seven-vector query builder
+- implement a query builder that discovers active templates dynamically
 - load query templates from `exa_payload_templates/*.txt`
 
 ### Phase 2: Exa Retrieval and Mapping

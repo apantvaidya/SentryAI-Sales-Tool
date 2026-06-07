@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from datetime import datetime, timezone
+import re
 from typing import Any
 
 from .config import Settings
@@ -10,11 +11,19 @@ from .filters import filter_candidate
 from .mapper import map_result_node
 from .models import MappedCandidate, PersonaLeadBatch, RunResult, SeedPersona
 from .queries import build_queries
-from .store import persist_leads, write_run_artifacts
+from .store import load_leads, persist_leads, write_run_artifacts
 
 
-def build_run_id() -> str:
-    return datetime.now(timezone.utc).strftime("exa_run_%Y%m%dT%H%M%SZ")
+def slugify(value: str, max_length: int = 28) -> str:
+    slug = re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
+    return slug[:max_length].strip("-") or "unknown"
+
+
+def build_run_id(seed_persona: SeedPersona) -> str:
+    timestamp = datetime.now().astimezone().strftime("%Y-%m-%d_%H%M")
+    person_slug = slugify(seed_persona.person_name)
+    company_slug = slugify(seed_persona.company_name)
+    return f"exa_{timestamp}_{company_slug}_{person_slug}"
 
 
 class LeadGenerationRunner:
@@ -29,7 +38,7 @@ class LeadGenerationRunner:
 
     def run(self, seed_persona: SeedPersona) -> RunResult:
         self.settings.ensure_runtime_paths()
-        run_id = build_run_id()
+        run_id = build_run_id(seed_persona)
 
         rendered_queries = build_queries(seed_persona, self.settings.template_dir)
         raw_search_artifacts: list[dict[str, Any]] = []
@@ -60,10 +69,8 @@ class LeadGenerationRunner:
         accepted_candidates = dedupe_records(
             [decision.candidate for decision in filter_decisions if decision.status == "accepted"]
         )
-        review_candidates = dedupe_records(
-            [decision.candidate for decision in filter_decisions if decision.status == "needs_review"]
-        )
         dropped_decisions = [decision for decision in filter_decisions if decision.status == "dropped"]
+        accepted_with_flags_count = sum(1 for decision in filter_decisions if decision.status == "accepted" and decision.reasons)
 
         same_company_matches = []
         similar_company_matches = []
@@ -80,15 +87,15 @@ class LeadGenerationRunner:
             similar_company_matches=similar_company_matches,
         )
 
+        pre_run_database = load_leads(self.settings.leads_file)
         storage_summary = persist_leads(self.settings.leads_file, batch.all_records())
 
         artifacts = {
             "queries": [query.to_dict() for query in rendered_queries],
-            "exa_results": raw_search_artifacts,
             "mapped_candidates": [candidate.to_dict() for candidate in mapped_candidates],
-            "unmapped_results": unmapped_results,
+            "unmapped_candidates": unmapped_results,
             "filter_decisions": [decision.to_dict() for decision in filter_decisions],
-            "review_candidates": [candidate.to_dict() for candidate in review_candidates],
+            "pre_run_database": [record.to_dict() for record in pre_run_database],
             "batch": batch.to_dict(),
         }
         artifact_paths = write_run_artifacts(self.settings.data_dir, run_id, artifacts)
@@ -101,7 +108,7 @@ class LeadGenerationRunner:
             "mapped_count": len(mapped_candidates),
             "unmapped_count": len(unmapped_results),
             "accepted_count": len(accepted_candidates),
-            "needs_review_count": len(review_candidates),
+            "accepted_with_flags_count": accepted_with_flags_count,
             "dropped_count": len(dropped_decisions),
             "same_company_count": len(same_company_matches),
             "similar_company_count": len(similar_company_matches),

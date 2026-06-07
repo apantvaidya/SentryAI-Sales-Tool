@@ -53,7 +53,7 @@ For the current phase, keep `public_business_email` in the output schema but alw
 
 Create query-loading and rendering logic in `exa_searching/queries.py` that:
 
-- renders the seven PRD vectors
+- discovers and renders every active `.txt` query template
 - appends the shared suffix
 - skips LinkedIn-based vectors when `linkedin_url` is missing
 - labels each query with its vector type for downstream traceability

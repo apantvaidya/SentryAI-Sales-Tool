@@ -10,8 +10,12 @@
   --accepted: #9fd77b;
   --review: #ffc66d;
   --dropped: #8a94a8;
+  --overlap-focus: #88b7ff;
+  --overlap-peer: #7ce0c2;
+  --overlap-db: #f18f6b;
   --line: rgba(164, 188, 228, 0.18);
   --line-strong: rgba(164, 188, 228, 0.36);
+  --recursive: #f1a96b;
   --shadow: 0 16px 48px rgba(0, 0, 0, 0.36);
 }
 
@@ -46,7 +50,7 @@ body::before {
 .app-shell {
   position: relative;
   display: grid;
-  grid-template-columns: 360px 1fr;
+  grid-template-columns: 320px 1fr 360px;
   min-height: 100vh;
 }
 
@@ -61,12 +65,30 @@ body::before {
   backdrop-filter: blur(18px);
 }
 
+.inspector-panel {
+  position: relative;
+  z-index: 2;
+  padding: 24px 18px;
+  background: linear-gradient(180deg, rgba(12, 17, 25, 0.92), rgba(10, 14, 22, 0.96));
+  border-left: 1px solid var(--panel-border);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  backdrop-filter: blur(18px);
+}
+
 .sidebar-section {
   margin-bottom: 22px;
   padding: 18px;
   background: var(--panel);
   border: 1px solid var(--panel-border);
   border-radius: 18px;
+}
+
+.inspector-section {
+  height: calc(100vh - 48px);
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .eyebrow {
@@ -124,12 +146,47 @@ button:hover {
   margin-top: 10px;
 }
 
+.controls select + label,
+.controls button + label {
+  margin-top: 12px;
+}
+
 .legend-row {
   display: flex;
   align-items: center;
   gap: 10px;
   color: var(--muted);
   margin-bottom: 10px;
+}
+
+.run-color-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 9px;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.run-color-pair {
+  display: inline-flex;
+  align-items: center;
+  min-width: 22px;
+}
+
+.run-color-pair .swatch {
+  width: 11px;
+  height: 11px;
+}
+
+.run-color-pair .query-color {
+  margin-left: -3px;
+  border: 1px solid #0d1219;
+}
+
+.run-color-more {
+  color: var(--muted);
+  font-size: 0.8rem;
 }
 
 .swatch {
@@ -144,6 +201,25 @@ button:hover {
 .swatch.accepted { background: var(--accepted); color: var(--accepted); }
 .swatch.review { background: var(--review); color: var(--review); }
 .swatch.dropped { background: var(--dropped); color: var(--dropped); }
+.swatch.overlap-focus { background: var(--overlap-focus); color: var(--overlap-focus); }
+.swatch.overlap-peer { background: var(--overlap-peer); color: var(--overlap-peer); }
+.swatch.overlap-db { background: var(--overlap-db); color: var(--overlap-db); }
+.swatch.recursive { background: var(--recursive); color: var(--recursive); }
+
+.legend-line {
+  width: 24px;
+  height: 0;
+  border-top: 2px solid currentColor;
+}
+
+.legend-line.query-overlap {
+  color: rgba(117, 216, 255, 0.27);
+}
+
+.legend-line.seed-origin {
+  color: rgba(241, 169, 107, 0.9);
+  border-top-style: dashed;
+}
 
 .stats-grid {
   display: grid;
@@ -174,6 +250,38 @@ button:hover {
   font-size: 1.05rem;
 }
 
+.detail-panel {
+  overflow-y: auto;
+  min-height: 0;
+  padding-right: 6px;
+}
+
+.query-people-block strong {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.query-people-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.query-people-list li {
+  margin-bottom: 8px;
+}
+
+.query-person-name {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.query-person-meta {
+  display: block;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
 .detail-chip-row {
   display: flex;
   flex-wrap: wrap;
@@ -194,6 +302,7 @@ button:hover {
 .chip.dropped { background: rgba(138, 148, 168, 0.18); color: #c8cfdb; }
 .chip.same-company { background: rgba(136, 183, 255, 0.16); color: var(--seed); }
 .chip.similar-company { background: rgba(124, 224, 194, 0.16); color: var(--query); }
+.chip.lineage { background: rgba(241, 169, 107, 0.16); color: var(--recursive); }
 
 .canvas-wrap {
   position: relative;
@@ -236,11 +345,16 @@ button:hover {
   width: 100%;
   height: 100vh;
   display: block;
+  background: #0d1219;
   cursor: grab;
 }
 
 #graph.dragging {
   cursor: grabbing;
+}
+
+.hidden {
+  display: none !important;
 }
 
 .edge {
@@ -254,18 +368,39 @@ button:hover {
   stroke-width: 2;
 }
 
+.edge.query-seed-origin {
+  stroke: rgba(241, 169, 107, 0.82);
+  stroke-width: 2.4;
+  stroke-dasharray: 7 5;
+  vector-effect: non-scaling-stroke;
+}
+
+.edge.query-overlap {
+  stroke: rgba(117, 216, 255, 0.27);
+  cursor: pointer;
+  pointer-events: stroke;
+  vector-effect: non-scaling-stroke;
+}
+
+.edge.query-overlap:hover {
+  stroke: rgba(255, 221, 158, 0.96);
+}
+
 .edge.active {
   stroke: var(--line-strong);
   stroke-width: 2.6;
 }
 
+.edge.query-overlap.active {
+  stroke: rgba(255, 221, 158, 1);
+}
+
 .node {
-  cursor: pointer;
+  cursor: move;
 }
 
 .node circle {
-  filter: url(#softGlow);
-  transition: transform 140ms ease, stroke-width 140ms ease, opacity 140ms ease;
+  transition: transform 140ms ease, stroke-width 140ms ease, opacity 140ms ease, fill 140ms ease;
 }
 
 .node text {
@@ -281,30 +416,71 @@ button:hover {
 }
 
 .node.seed circle {
-  fill: rgba(136, 183, 255, 0.18);
+  fill: #16273f;
   stroke: var(--seed);
   stroke-width: 2.4;
 }
 
 .node.query circle {
-  fill: rgba(124, 224, 194, 0.12);
+  fill: #112b29;
   stroke: var(--query);
-  stroke-width: 1.8;
+  stroke-width: 2;
+}
+
+.node.run-colored.seed circle,
+.node.run-colored.query circle {
+  stroke: var(--run-color);
+}
+
+.node.run-colored.seed .subtext,
+.node.run-colored.query .subtext {
+  fill: var(--run-color);
 }
 
 .node.person.accepted circle {
-  fill: rgba(159, 215, 123, 0.1);
+  fill: #1d2c19;
   stroke: var(--accepted);
 }
 
 .node.person.needs_review circle {
-  fill: rgba(255, 198, 109, 0.1);
+  fill: #332713;
   stroke: var(--review);
 }
 
 .node.person.dropped circle {
-  fill: rgba(138, 148, 168, 0.08);
+  fill: #1a212b;
   stroke: var(--dropped);
+}
+
+.node.person.seed-linked circle {
+  stroke: var(--recursive);
+  stroke-width: 2.4;
+}
+
+.node .lineage-ring {
+  fill: none;
+  stroke: rgba(241, 169, 107, 0.9);
+  stroke-width: 1.8;
+  stroke-dasharray: 4 3;
+}
+
+.node .lineage-badge {
+  fill: #3b211a;
+  stroke: var(--recursive);
+  stroke-width: 1.5;
+}
+
+.node .lineage-badge-text {
+  fill: var(--recursive);
+  font-size: 9px;
+  font-weight: 700;
+  text-anchor: middle;
+}
+
+.node.seed .seed-lineage-note {
+  fill: var(--recursive);
+  font-size: 9px;
+  font-weight: 600;
 }
 
 .node.dimmed {
@@ -320,6 +496,191 @@ button:hover {
   transform: scale(1.04);
 }
 
+#graph.dense-graph .node circle {
+  transition: none;
+}
+
+#graph.dense-graph .edge.query-person {
+  opacity: 0.42;
+}
+
+.overlap-view {
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  padding: 86px 24px 24px;
+}
+
+.overlap-stage-wrap {
+  border: 1px solid rgba(139, 162, 196, 0.12);
+  background: #0d1219;
+  border-radius: 26px;
+  min-height: 540px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+
+#overlap-stage {
+  width: 100%;
+  height: 60vh;
+  min-height: 540px;
+  display: block;
+}
+
+.overlap-circle {
+  stroke-width: 2.2;
+}
+
+.overlap-circle.focus {
+  fill: #16273f;
+  stroke: var(--overlap-focus);
+}
+
+.overlap-circle.peer {
+  fill: #112b29;
+  stroke: var(--overlap-peer);
+}
+
+.overlap-circle.database {
+  fill: #3b211a;
+  stroke: var(--overlap-db);
+}
+
+.overlap-label {
+  fill: var(--text);
+  font-size: 18px;
+  font-weight: 600;
+  text-anchor: middle;
+}
+
+.overlap-subtext {
+  fill: var(--muted);
+  font-size: 13px;
+  text-anchor: middle;
+}
+
+.overlap-count {
+  fill: var(--text);
+  font-size: 30px;
+  font-weight: 700;
+  text-anchor: middle;
+}
+
+.overlap-tables {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.overlap-panel {
+  padding: 18px;
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 18px;
+}
+
+.overlap-list {
+  display: grid;
+  gap: 12px;
+}
+
+.overlap-card {
+  padding: 14px;
+  background: rgba(12, 17, 25, 0.7);
+  border: 1px solid rgba(139, 162, 196, 0.12);
+  border-radius: 16px;
+}
+
+.overlap-card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: baseline;
+}
+
+.overlap-card-title {
+  font-size: 0.96rem;
+  font-weight: 600;
+}
+
+.overlap-card-metric {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.overlap-card-meta {
+  margin-top: 8px;
+  color: var(--muted);
+  line-height: 1.45;
+  font-size: 0.88rem;
+}
+
+.overlap-card-muted {
+  opacity: 0.74;
+}
+
+.overlap-kicker {
+  fill: var(--text);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.overlap-note {
+  fill: var(--muted);
+  font-size: 13px;
+}
+
+.similarity-edge {
+  stroke: rgba(136, 183, 255, 0.3);
+}
+
+.similarity-edge.ghost {
+  stroke: rgba(136, 183, 255, 0.08);
+}
+
+.similarity-edge.peer-link {
+  stroke: rgba(124, 224, 194, 0.22);
+}
+
+.similarity-edge-label {
+  fill: rgba(236, 243, 255, 0.8);
+  font-size: 12px;
+  text-anchor: middle;
+}
+
+.database-edge {
+  stroke: rgba(241, 143, 107, 0.35);
+}
+
+.database-edge.ghost {
+  stroke: rgba(241, 143, 107, 0.08);
+}
+
+.similarity-node {
+  cursor: move;
+}
+
+.similarity-node circle {
+  transition: transform 140ms ease, opacity 140ms ease, stroke-width 140ms ease;
+}
+
+.similarity-node:hover circle {
+  transform: scale(1.04);
+}
+
+.similarity-node.ghost {
+  opacity: 0.1;
+}
+
+.similarity-node.focus circle {
+  stroke-width: 3.2;
+}
+
+.overlap-ghost-label {
+  fill: rgba(143, 162, 192, 0.4);
+}
+
 @media (max-width: 1080px) {
   .app-shell {
     grid-template-columns: 1fr;
@@ -331,7 +692,22 @@ button:hover {
     border-bottom: 1px solid var(--panel-border);
   }
 
+  .inspector-panel {
+    border-left: 0;
+    border-top: 1px solid var(--panel-border);
+    padding-top: 0;
+  }
+
+  .inspector-section {
+    height: 32vh;
+    margin-top: 18px;
+  }
+
   #graph {
     height: 58vh;
+  }
+
+  .overlap-tables {
+    grid-template-columns: 1fr;
   }
 }

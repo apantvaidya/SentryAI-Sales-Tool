@@ -42,7 +42,7 @@ Optional field:
 
 - `linkedin_url`
 
-If `linkedin_url` is missing, query vectors 6 and 7 will be skipped automatically.
+If `linkedin_url` is missing, any active query template containing `{{linkedin_url}}` is skipped automatically.
 
 ## 3. Run The CLI
 

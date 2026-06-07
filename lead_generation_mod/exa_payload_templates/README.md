@@ -1,12 +1,25 @@
 # Exa Payload Templates
 
-This folder stores one plain-text query template per Exa retrieval vector from the PRD.
+This folder stores one plain-text query template per Exa retrieval strategy.
 
 ## Purpose
 
 - keeps search prompts outside runtime code
 - makes retrieval logic easier to review and tune
 - lets the query builder load templates by file name and fill placeholders at runtime
+- makes adding or removing queries a file-only change
+
+## File Naming
+
+Every active `.txt` file is discovered automatically. Use:
+
+```text
+<stable_id>_<descriptive_name>.txt
+```
+
+The stable ID can be numeric or textual, but it must be unique. Existing run artifacts keep their saved query definitions, so renaming or removing a template only affects future runs.
+
+Names beginning with `same_company` are assigned to the `same_company` bucket. All other names use `similar_company`. Templates containing `{{linkedin_url}}` are automatically skipped when the seed has no LinkedIn URL.
 
 ## Placeholders
 
@@ -15,7 +28,7 @@ This folder stores one plain-text query template per Exa retrieval vector from t
 - `{{person_name}}`
 - `{{linkedin_url}}`
 
-The query builder should replace these placeholders with the current seed persona values and skip the LinkedIn-based templates when no LinkedIn URL is available.
+The query builder replaces these placeholders with the current seed persona values and skips LinkedIn-based templates when no LinkedIn URL is available.
 
 ## File Guide
 

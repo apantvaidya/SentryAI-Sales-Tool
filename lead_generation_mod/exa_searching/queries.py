@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
+import re
 
 from .models import RenderedQuery, SeedPersona
 
@@ -15,52 +16,42 @@ class QueryTemplateSpec:
     requires_linkedin: bool = False
 
 
-QUERY_TEMPLATE_SPECS: tuple[QueryTemplateSpec, ...] = (
-    QueryTemplateSpec(
-        vector_id="01",
-        vector_name="same_company_exact_or_near_role",
-        template_file="01_same_company_exact_or_near_role.txt",
-        target_bucket="same_company",
-    ),
-    QueryTemplateSpec(
-        vector_id="02",
-        vector_name="same_company_adjacent_leadership",
-        template_file="02_same_company_adjacent_leadership.txt",
-        target_bucket="same_company",
-    ),
-    QueryTemplateSpec(
-        vector_id="03",
-        vector_name="same_company_person_anchored_similarity",
-        template_file="03_same_company_person_anchored_similarity.txt",
-        target_bucket="same_company",
-    ),
-    QueryTemplateSpec(
-        vector_id="04",
-        vector_name="similar_company_exact_or_near_role",
-        template_file="04_similar_company_exact_or_near_role.txt",
-        target_bucket="similar_company",
-    ),
-    QueryTemplateSpec(
-        vector_id="05",
-        vector_name="similar_company_adjacent_role_family",
-        template_file="05_similar_company_adjacent_role_family.txt",
-        target_bucket="similar_company",
-    ),
-    QueryTemplateSpec(
-        vector_id="06",
-        vector_name="linkedin_anchored_similarity",
-        template_file="06_linkedin_anchored_similarity.txt",
-        target_bucket="similar_company",
-        requires_linkedin=True,
-    ),
-    QueryTemplateSpec(
-        vector_id="07",
-        vector_name="linkedin_anchored_similarity_with_company_expansion",
-        template_file="07_linkedin_anchored_similarity_with_company_expansion.txt",
-        target_bucket="similar_company",
-        requires_linkedin=True,
-    ),
-)
+QUERY_FILE_PATTERN = re.compile(r"^(?P<id>[^_]+)_(?P<name>.+)\.txt$")
+
+
+def discover_query_templates(template_dir: Path) -> list[QueryTemplateSpec]:
+    specs: list[QueryTemplateSpec] = []
+    seen_ids: set[str] = set()
+
+    for path in sorted(template_dir.glob("*.txt")):
+        match = QUERY_FILE_PATTERN.match(path.name)
+        if not match:
+            raise ValueError(
+                f"Query template filenames must use '<id>_<name>.txt': {path.name}"
+            )
+
+        vector_id = match.group("id")
+        vector_name = match.group("name")
+        if vector_id in seen_ids:
+            raise ValueError(f"Duplicate query template id '{vector_id}' in {template_dir}")
+
+        template = load_template(template_dir, path.name)
+        target_bucket = "same_company" if vector_name.startswith("same_company") else "similar_company"
+        specs.append(
+            QueryTemplateSpec(
+                vector_id=vector_id,
+                vector_name=vector_name,
+                template_file=path.name,
+                target_bucket=target_bucket,
+                requires_linkedin="{{linkedin_url}}" in template,
+            )
+        )
+        seen_ids.add(vector_id)
+
+    if not specs:
+        raise FileNotFoundError(f"No query templates found in {template_dir}")
+
+    return specs
 
 
 def load_template(template_dir: Path, template_file: str) -> str:
@@ -83,7 +74,7 @@ def render_query_text(template: str, seed_persona: SeedPersona) -> str:
 def build_queries(seed_persona: SeedPersona, template_dir: Path) -> list[RenderedQuery]:
     rendered_queries: list[RenderedQuery] = []
 
-    for spec in QUERY_TEMPLATE_SPECS:
+    for spec in discover_query_templates(template_dir):
         if spec.requires_linkedin and not seed_persona.linkedin_url:
             continue
 

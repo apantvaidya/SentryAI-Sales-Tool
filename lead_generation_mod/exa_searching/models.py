@@ -177,7 +177,7 @@ class FilterDecision:
     candidate: MappedCandidate
 
     def __post_init__(self) -> None:
-        if self.status not in {"accepted", "needs_review", "dropped"}:
+        if self.status not in {"accepted", "dropped"}:
             raise ValueError(f"Unsupported filter status: {self.status}")
 
     def to_dict(self) -> dict[str, Any]:

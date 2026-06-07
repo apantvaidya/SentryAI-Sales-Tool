@@ -79,19 +79,12 @@ def filter_candidate(candidate: MappedCandidate, seed_persona: SeedPersona) -> F
             candidate=candidate,
         )
 
-    review_reasons: list[str] = []
+    auto_approved_reasons: list[str] = []
     if candidate.current_role_count > 1:
-        review_reasons.append("multiple_current_roles")
+        auto_approved_reasons.append("multiple_current_roles")
     if candidate.used_recent_role_fallback:
-        review_reasons.append("used_recent_role_fallback")
+        auto_approved_reasons.append("used_recent_role_fallback")
     if is_borderline_title(title_lc):
-        review_reasons.append("borderline_title")
+        auto_approved_reasons.append("borderline_title")
 
-    if review_reasons:
-        return FilterDecision(
-            status="needs_review",
-            reasons=review_reasons,
-            candidate=candidate,
-        )
-
-    return FilterDecision(status="accepted", reasons=[], candidate=candidate)
+    return FilterDecision(status="accepted", reasons=auto_approved_reasons, candidate=candidate)
