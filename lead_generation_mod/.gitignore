@@ -3,8 +3,8 @@ __pycache__/
 *.py[cod]
 
 # Local runtime outputs
-data/*.json
-!data/leads.json
+# data/*.json
+# !data/leads.json
 
 # macOS
 .DS_Store
