@@ -1,0 +1,85 @@
+{
+  "lead": {
+    "name": "Diego Flores",
+    "email": "sample@tesla.com",
+    "company": "Tesla",
+    "location": "Bay Area",
+    "linkedin": "https://www.linkedin.com/in/sample-diego-flores",
+    "role": "Staff Construction Manager",
+    "years_at_role": "2"
+  },
+  "persona": {
+    "persona_type": "construction",
+    "role_relevance": "high",
+    "likely_site_types": [
+      "service centers",
+      "charging sites",
+      "active construction projects"
+    ],
+    "likely_security_use_cases": [
+      "after-hours monitoring",
+      "trespass detection",
+      "equipment and vehicle protection",
+      "incident review"
+    ],
+    "bad_angles_to_avoid": [
+      "retail shrink framing",
+      "unsupported claims about Tesla incidents"
+    ],
+    "reasoning_summary": "The role is tied to physical site operations and construction environments where visibility and incident response are relevant.",
+    "confidence": "high"
+  },
+  "queries": {
+    "company_context_queries": [
+      "Tesla service centers charging sites facilities construction operations",
+      "Tesla physical locations service centers facilities operations"
+    ],
+    "local_crime_queries": [
+      "Bay Area police crime data theft burglary vehicle theft",
+      "Santa Clara County crime dashboard property crime vehicle theft burglary"
+    ],
+    "role_specific_risk_queries": [
+      "construction site theft trespassing equipment theft after hours security",
+      "auto service center lot security vehicle break-ins after hours monitoring"
+    ]
+  },
+  "search_results": [
+    {
+      "query": "Tesla physical locations service centers facilities operations",
+      "title": "Tesla Find Us",
+      "url": "https://www.tesla.com/findus",
+      "snippet": "Find Tesla stores, service centers and Superchargers.",
+      "raw_content": null,
+      "source_type": "official_company",
+      "confidence": "medium"
+    }
+  ],
+  "evidence_summary": {
+    "safe_claims": [
+      "Tesla publicly operates service centers and other physical locations.",
+      "Construction and distributed site teams often care about after-hours visibility and incident review."
+    ],
+    "unsafe_claims_to_avoid": [
+      "Do not claim Tesla specifically experienced crime.",
+      "Do not claim a Bay Area Tesla site is unsafe."
+    ],
+    "best_email_angle": "Tie SmartSentryAI to site visibility, incident review, and response workflows across physical sites.",
+    "geographic_confidence": "medium",
+    "source_urls": [
+      "https://www.tesla.com/findus"
+    ],
+    "confidence": "medium"
+  },
+  "email": {
+    "subject": "Quick idea for Tesla site visibility",
+    "body": "Hi Diego, I saw you're Staff Construction Manager at Tesla. Teams managing active sites often want better after-hours visibility and faster incident review across facilities. SmartSentryAI helps teams use existing cameras to improve visibility, review, and response workflows across physical sites. Open to a quick compare on whether that's relevant for your environment?"
+  },
+  "validation": {
+    "passes_word_count": true,
+    "forbidden_phrases_found": [],
+    "has_source_urls": true,
+    "needs_review": false,
+    "recommendation": "approve",
+    "notes": []
+  }
+}

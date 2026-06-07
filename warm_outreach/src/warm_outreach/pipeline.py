@@ -1,0 +1,133 @@
+from __future__ import annotations
+
+import csv
+import json
+from pathlib import Path
+
+from .config import settings
+from .llm import call_json
+from .prompts import (
+    classify_lead_prompt,
+    generate_research_queries_prompt,
+    summarize_evidence_prompt,
+    write_email_prompt,
+)
+from .schemas import (
+    EmailDraft,
+    EvidenceSummary,
+    Lead,
+    PersonaClassification,
+    PipelineOutput,
+    ResearchQueries,
+)
+from .search import run_searches
+from .validators import validate_email
+
+
+def _normalize_row(row: dict[str, str]) -> dict[str, str | None]:
+    normalized: dict[str, str | None] = {}
+    for key, value in row.items():
+        if value is None:
+            normalized[key] = None
+            continue
+        stripped = value.strip()
+        normalized[key] = stripped or None
+    return normalized
+
+
+def classify_lead(lead: Lead) -> PersonaClassification:
+    return call_json(classify_lead_prompt(lead), PersonaClassification)
+
+
+def generate_research_queries(lead: Lead, persona: PersonaClassification) -> ResearchQueries:
+    return call_json(generate_research_queries_prompt(lead, persona), ResearchQueries)
+
+
+def summarize_evidence(
+    lead: Lead,
+    persona: PersonaClassification,
+    search_results,
+) -> EvidenceSummary:
+    return call_json(
+        summarize_evidence_prompt(lead, persona, search_results),
+        EvidenceSummary,
+    )
+
+
+def write_email(
+    lead: Lead,
+    persona: PersonaClassification,
+    evidence: EvidenceSummary,
+) -> EmailDraft:
+    return call_json(write_email_prompt(lead, persona, evidence), EmailDraft)
+
+
+def run_pipeline_for_lead(
+    lead: Lead,
+    *,
+    max_results: int | None = None,
+    include_raw_content: bool = False,
+) -> PipelineOutput:
+    persona = classify_lead(lead)
+    queries = generate_research_queries(lead, persona)
+    search_results = run_searches(
+        queries,
+        max_results=max_results or settings.tavily_max_results,
+        include_raw_content=include_raw_content,
+    )
+    evidence_summary = summarize_evidence(lead, persona, search_results)
+    email = write_email(lead, persona, evidence_summary)
+    validation = validate_email(email, evidence_summary)
+
+    return PipelineOutput(
+        lead=lead,
+        persona=persona,
+        queries=queries,
+        search_results=search_results,
+        evidence_summary=evidence_summary,
+        email=email,
+        validation=validation,
+    )
+
+
+def prepare_queries_for_lead(lead: Lead) -> dict[str, object]:
+    persona = classify_lead(lead)
+    queries = generate_research_queries(lead, persona)
+    return {
+        "lead": lead.model_dump(mode="json"),
+        "persona": persona.model_dump(mode="json"),
+        "queries": queries.model_dump(mode="json"),
+    }
+
+
+def run_pipeline_for_csv(
+    input_csv: str,
+    output_jsonl: str,
+    *,
+    max_results: int | None = None,
+    include_raw_content: bool = False,
+) -> None:
+    input_path = Path(input_csv)
+    output_path = Path(output_jsonl)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    with input_path.open("r", encoding="utf-8", newline="") as infile:
+        reader = csv.DictReader(infile)
+        leads = [Lead.model_validate(_normalize_row(row)) for row in reader]
+
+    with output_path.open("w", encoding="utf-8") as outfile:
+        for lead in leads:
+            result = run_pipeline_for_lead(
+                lead,
+                max_results=max_results,
+                include_raw_content=include_raw_content,
+            )
+            outfile.write(json.dumps(result.model_dump(mode="json")) + "\n")
+
+
+def prepare_queries_for_csv(input_csv: str) -> list[dict[str, object]]:
+    input_path = Path(input_csv)
+    with input_path.open("r", encoding="utf-8", newline="") as infile:
+        reader = csv.DictReader(infile)
+        leads = [Lead.model_validate(_normalize_row(row)) for row in reader]
+    return [prepare_queries_for_lead(lead) for lead in leads]
