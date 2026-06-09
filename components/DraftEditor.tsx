@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Check, Clipboard, FileDown } from "lucide-react";
+import { Check, Clipboard, ExternalLink, FileDown, ShieldAlert } from "lucide-react";
 import { approveOutreachDraft, updateOutreachDraft } from "@/app/actions";
 import type { Contact, OutreachDraft } from "@/lib/data/types";
 
@@ -35,6 +35,7 @@ export function DraftEditor({
     <div className="grid gap-5">
       {drafts.map((draft) => {
         const contact = contacts.find((item) => item.id === draft.contactId);
+        const needsHumanReview = draft.validationRecommendation === "human_review" || draft.validationRecommendation === "reject";
         return (
           <article key={draft.id} className="surface p-5">
             <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
@@ -42,8 +43,42 @@ export function DraftEditor({
                 <p className="text-xs font-bold uppercase tracking-wide text-slate-500">{contact?.name || "Persona draft"}</p>
                 <h3 className="text-lg font-bold text-ink">{draft.subject}</h3>
               </div>
-              <span className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-bold capitalize text-slate-700">{draft.status}</span>
+              <div className="flex flex-wrap gap-2">
+                {draft.validationRecommendation ? (
+                  <span className="rounded-full bg-amber-50 px-2.5 py-1 text-xs font-bold capitalize text-amber-700">
+                    {draft.validationRecommendation.replace("_", " ")}
+                  </span>
+                ) : null}
+                <span className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-bold capitalize text-slate-700">{draft.status}</span>
+              </div>
             </div>
+            {needsHumanReview ? (
+              <div className="mb-4 flex gap-2 rounded-md border border-amber-200 bg-amber-50 p-3 text-sm leading-6 text-amber-900">
+                <ShieldAlert size={18} className="mt-0.5 shrink-0" />
+                This draft needs human review before approval because validation returned {draft.validationRecommendation?.replace("_", " ")}.
+              </div>
+            ) : null}
+            {draft.evidenceSummarySnippet || draft.sourceUrls?.length ? (
+              <div className="mb-4 rounded-md bg-slate-50 p-3 text-sm text-slate-700">
+                {draft.evidenceSummarySnippet ? (
+                  <>
+                    <p className="font-bold text-ink">Evidence Summary</p>
+                    <p className="mt-1 leading-6">{draft.evidenceSummarySnippet}</p>
+                  </>
+                ) : null}
+                {draft.sourceUrls?.length ? (
+                  <div className="mt-3 grid gap-1">
+                    <p className="font-bold text-ink">Sources</p>
+                    {draft.sourceUrls.map((url) => (
+                      <a key={url} href={url} target="_blank" className="inline-flex items-center gap-2 break-all text-xs font-semibold text-sentry-700">
+                        <ExternalLink size={13} />
+                        {url}
+                      </a>
+                    ))}
+                  </div>
+                ) : null}
+              </div>
+            ) : null}
             <form action={updateOutreachDraft.bind(null, draft.id, prospectId)} className="grid gap-3">
               <div className="grid gap-2 md:grid-cols-[1fr_180px]">
                 <input className="field" name="subject" defaultValue={draft.subject} aria-label="Subject" />

@@ -4,6 +4,7 @@ import { ArrowLeft } from "lucide-react";
 import { createContact } from "@/app/actions";
 import { AppShell } from "@/components/AppShell";
 import { ContactTable } from "@/components/ContactTable";
+import { WorkspaceTabs } from "@/components/WorkspaceTabs";
 import { getProspectById } from "@/lib/data/store";
 
 export default async function ContactsPage({ params }: { params: Promise<{ id: string }> }) {
@@ -25,6 +26,7 @@ export default async function ContactsPage({ params }: { params: Promise<{ id: s
           Add likely decision-makers manually. The app scores relevance, but email verification must be confirmed by the user.
         </p>
       </div>
+      <WorkspaceTabs prospectId={id} active="contacts" />
 
       <div className="grid gap-6 xl:grid-cols-[380px_1fr]">
         <form action={createContactAction} className="surface grid content-start gap-4 p-5">

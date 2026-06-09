@@ -7,6 +7,7 @@ import { AppShell } from "@/components/AppShell";
 import { FitScoreBadge } from "@/components/FitScoreBadge";
 import { PersonaCard } from "@/components/PersonaCard";
 import { ResearchChecklist } from "@/components/ResearchChecklist";
+import { WorkspaceTabs } from "@/components/WorkspaceTabs";
 import { getProspectById } from "@/lib/data/store";
 
 export default async function ProspectDetailPage({ params }: { params: Promise<{ id: string }> }) {
@@ -24,11 +25,13 @@ export default async function ProspectDetailPage({ params }: { params: Promise<{
         Back to dashboard
       </Link>
 
-      <section className="mb-6 rounded-lg border border-slate-200 bg-white p-6 shadow-soft">
+      <section className="mb-6 overflow-hidden rounded-lg border border-slate-200/80 bg-white/90 shadow-soft backdrop-blur">
+        <div className="h-px bg-slate-200/90" />
+        <div className="p-6">
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div>
-            <p className="text-sm font-bold uppercase tracking-wide text-sentry-700">Prospect workspace</p>
-            <h1 className="mt-2 text-3xl font-bold text-ink">{prospect.companyName}</h1>
+            <p className="page-kicker">Prospect Workspace</p>
+            <h1 className="mt-2 text-3xl font-bold tracking-tight text-ink">{prospect.companyName}</h1>
             <p className="mt-2 text-slate-600">
               {[prospect.industry, prospect.segment, prospect.companySize].filter(Boolean).join(" · ") || "Company details can be enriched manually."}
             </p>
@@ -63,12 +66,15 @@ export default async function ProspectDetailPage({ params }: { params: Promise<{
             </button>
           </form>
         </div>
+        </div>
       </section>
+
+      <WorkspaceTabs prospectId={prospect.id} active="overview" />
 
       <div className="grid gap-6 xl:grid-cols-[1fr_360px]">
         <div className="grid gap-6">
           <section className="surface p-5">
-            <h2 className="text-xl font-bold text-ink">Company Intelligence</h2>
+            <h2 className="section-title">Company Intelligence</h2>
             <p className="mt-3 leading-7 text-slate-700">{prospect.summary || "Generate a research brief to populate company intelligence."}</p>
             {prospect.website ? (
               <a href={prospect.website} target="_blank" className="mt-3 inline-block text-sm font-semibold text-sentry-700">
@@ -78,7 +84,7 @@ export default async function ProspectDetailPage({ params }: { params: Promise<{
           </section>
 
           <section className="surface p-5">
-            <h2 className="text-xl font-bold text-ink">Pain Points</h2>
+            <h2 className="section-title">Pain Points</h2>
             <div className="mt-4 grid gap-3 md:grid-cols-2">
               {(prospect.painPoints.length ? prospect.painPoints : ["No pain points generated yet."]).map((point) => (
                 <div key={point} className="rounded-md bg-slate-50 p-3 text-sm leading-6 text-slate-700">
@@ -89,7 +95,7 @@ export default async function ProspectDetailPage({ params }: { params: Promise<{
           </section>
 
           <section className="surface p-5">
-            <h2 className="text-xl font-bold text-ink">Smart Sentry Fit</h2>
+            <h2 className="section-title">Smart Sentry Fit</h2>
             <p className="mt-3 leading-7 text-slate-700">{prospect.securityRelevance || "Security relevance will appear after research generation."}</p>
             {prospect.fitRationale ? <p className="mt-3 rounded-md bg-sentry-50 p-3 text-sm text-sentry-900">{prospect.fitRationale}</p> : null}
           </section>

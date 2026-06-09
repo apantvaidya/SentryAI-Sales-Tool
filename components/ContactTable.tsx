@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { CheckCircle2, Pencil, ShieldAlert } from "lucide-react";
 import type { Contact } from "@/lib/data/types";
-import { scoreContact, updateContact } from "@/app/actions";
+import { runContactOutreach, scoreContact, updateContact } from "@/app/actions";
 
 export function ContactTable({ contacts, prospectId }: { contacts: Contact[]; prospectId: string }) {
   const [editing, setEditing] = useState<string | null>(null);
@@ -79,6 +79,11 @@ export function ContactTable({ contacts, prospectId }: { contacts: Contact[]; pr
                         <form action={scoreContact.bind(null, contact.id, prospectId)}>
                           <button className="button-secondary" type="submit">
                             Score Contact
+                          </button>
+                        </form>
+                        <form action={runContactOutreach.bind(null, prospectId, contact.id)}>
+                          <button className="button-secondary" type="submit">
+                            Run Outreach
                           </button>
                         </form>
                       </div>

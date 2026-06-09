@@ -16,7 +16,9 @@ export function prospectWorkspaceCsv(workspace: ProspectWorkspace) {
     contact.linkedinUrl || "",
     contact.confidenceScore,
     contact.relevanceReason || "",
-    contact.notes || ""
+    contact.notes || "",
+    "",
+    ""
   ]);
 
   const draftRows = workspace.drafts.map((draft) => {
@@ -31,7 +33,9 @@ export function prospectWorkspaceCsv(workspace: ProspectWorkspace) {
       "",
       "",
       draft.subject,
-      draft.body
+      draft.body,
+      draft.validationRecommendation || "",
+      draft.sourceUrls || []
     ];
   });
 
@@ -46,7 +50,9 @@ export function prospectWorkspaceCsv(workspace: ProspectWorkspace) {
       "linkedinUrl",
       "score",
       "reasonOrSubject",
-      "notesOrBody"
+      "notesOrBody",
+      "validationRecommendation",
+      "sourceUrls"
     ],
     ...contactRows,
     ...draftRows

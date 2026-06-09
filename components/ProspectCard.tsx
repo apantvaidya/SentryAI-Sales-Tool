@@ -1,15 +1,17 @@
 import Link from "next/link";
-import { Building2, Clock3 } from "lucide-react";
+import { Building2, Clock3, Users } from "lucide-react";
 import type { Prospect } from "@/lib/data/types";
 import { formatDate } from "@/lib/utils";
 import { FitScoreBadge } from "./FitScoreBadge";
 
 export function ProspectCard({ prospect }: { prospect: Prospect }) {
   return (
-    <Link href={`/prospects/${prospect.id}`} className="surface block p-5 transition hover:-translate-y-0.5 hover:border-sentry-500">
+    <Link href={`/prospects/${prospect.id}`} className="surface block overflow-hidden transition hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-lg">
+      <div className="h-px bg-slate-300" />
+      <div className="p-5">
       <div className="flex items-start justify-between gap-4">
         <div className="flex items-start gap-3">
-          <span className="mt-0.5 flex h-10 w-10 items-center justify-center rounded-md bg-slate-100 text-slate-700">
+          <span className="mt-0.5 flex h-10 w-10 items-center justify-center rounded-lg border border-slate-300 bg-slate-100 text-slate-800 shadow-apple-control">
             <Building2 size={20} />
           </span>
           <div>
@@ -22,12 +24,16 @@ export function ProspectCard({ prospect }: { prospect: Prospect }) {
       <p className="mt-4 line-clamp-2 min-h-10 text-sm leading-5 text-slate-600">
         {prospect.summary || "Research brief has not been generated yet."}
       </p>
-      <div className="mt-5 flex items-center justify-between text-xs font-medium text-slate-500">
-        <span className="rounded-full bg-slate-100 px-2 py-1 capitalize">{prospect.status}</span>
+      <div className="mt-5 grid grid-cols-2 gap-2 border-t border-slate-100 pt-4 text-xs font-medium text-slate-500">
+        <span className="inline-flex items-center gap-1 rounded-md bg-slate-100 px-2 py-1 capitalize text-slate-700">
+          <Users size={13} />
+          {prospect.status}
+        </span>
         <span className="flex items-center gap-1">
           <Clock3 size={14} />
           {formatDate(prospect.updatedAt)}
         </span>
+      </div>
       </div>
     </Link>
   );

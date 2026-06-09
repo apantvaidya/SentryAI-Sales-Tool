@@ -6,16 +6,24 @@ import { generateCompanyResearch, generatePersonalizedEmail, scoreContactRelevan
 import {
   createContact as storeCreateContact,
   createOutreachDraft,
+  createOutreachResearch,
   createProspect as storeCreateProspect,
   deleteProspect as storeDeleteProspect,
+  getContactById,
+  getLeadCandidateById,
   getProspectById,
+  importLeadCandidateAsContact as storeImportLeadCandidateAsContact,
   replaceResearchBrief,
   updateContact as storeUpdateContact,
   updateContactScore,
   updateOutreachDraft as storeUpdateOutreachDraft,
-  updateProspect as storeUpdateProspect
+  updateProspect as storeUpdateProspect,
+  upsertImportedLeadGenRun
 } from "@/lib/data/store";
-import type { DraftTone } from "@/lib/data/types";
+import { importLeadGenArtifacts } from "@/lib/leadgen/import";
+import { runLeadGeneration } from "@/lib/leadgen/service";
+import { evidenceSummaryText, runWarmOutreachForContact, sourceUrls } from "@/lib/outreach/service";
+import type { DraftTone, OutreachResearch, ValidationRecommendation } from "@/lib/data/types";
 
 function value(formData: FormData, key: string) {
   const raw = formData.get(key);
@@ -151,4 +159,153 @@ export async function approveOutreachDraft(draftId: string, prospectId: string) 
   await storeUpdateOutreachDraft(draftId, { status: "approved" });
   revalidatePath(`/prospects/${prospectId}`);
   revalidatePath(`/prospects/${prospectId}/drafts`);
+}
+
+export async function registerExistingLeadGenRun(prospectId: string, formData: FormData) {
+  const artifactRunId = value(formData, "artifactRunId");
+  if (!artifactRunId) throw new Error("Artifact run is required");
+  const imported = await importLeadGenArtifacts(prospectId, artifactRunId);
+  const run = await upsertImportedLeadGenRun(imported);
+  revalidatePath(`/prospects/${prospectId}`);
+  revalidatePath(`/prospects/${prospectId}/candidates`);
+  redirect(`/prospects/${prospectId}/candidates?runId=${run.id}`);
+}
+
+export async function createLeadGenRun(prospectId: string, formData: FormData) {
+  const personName = value(formData, "seedPersonName");
+  const companyName = value(formData, "seedCompanyName");
+  if (!personName || !companyName) throw new Error("Seed person name and company are required");
+  const execution = await runLeadGeneration({
+    person_name: personName,
+    role: value(formData, "seedRole"),
+    company_name: companyName,
+    linkedin_url: value(formData, "seedLinkedinUrl")
+  });
+  if (!execution.runId) {
+    throw new Error(execution.errorMessage || execution.stderrSnippet || "Lead generation failed before returning a run id.");
+  }
+  const imported = await importLeadGenArtifacts(prospectId, execution.runId);
+  imported.run.command = execution.command;
+  imported.run.exitCode = execution.exitCode;
+  imported.run.stdoutSnippet = execution.stdoutSnippet;
+  imported.run.stderrSnippet = execution.stderrSnippet;
+  const run = await upsertImportedLeadGenRun(imported);
+  revalidatePath(`/prospects/${prospectId}`);
+  revalidatePath(`/prospects/${prospectId}/candidates`);
+  redirect(`/prospects/${prospectId}/candidates?runId=${run.id}`);
+}
+
+export async function importLeadCandidateAsContact(prospectId: string, candidateId: string) {
+  await storeImportLeadCandidateAsContact(prospectId, candidateId);
+  revalidatePath(`/prospects/${prospectId}`);
+  revalidatePath(`/prospects/${prospectId}/contacts`);
+  revalidatePath(`/prospects/${prospectId}/candidates`);
+}
+
+export async function importSelectedLeadCandidates(prospectId: string, formData: FormData) {
+  const candidateIds = formData.getAll("candidateIds").filter((item): item is string => typeof item === "string" && Boolean(item));
+  for (const candidateId of candidateIds) {
+    await storeImportLeadCandidateAsContact(prospectId, candidateId);
+  }
+  revalidatePath(`/prospects/${prospectId}`);
+  revalidatePath(`/prospects/${prospectId}/contacts`);
+  revalidatePath(`/prospects/${prospectId}/candidates`);
+}
+
+async function persistOutreachExecution(
+  prospectId: string,
+  contactId: string,
+  candidateId: string | undefined,
+  execution: Awaited<ReturnType<typeof runWarmOutreachForContact>>
+) {
+  const timestamp = new Date().toISOString();
+  const output = execution.output;
+  const recommendation = (output?.validation.recommendation || "human_review") as ValidationRecommendation;
+  const researchInput: Omit<OutreachResearch, "id" | "createdAt" | "updatedAt"> = {
+    prospectId,
+    contactId,
+    candidateId,
+    linkedinUrl: output?.lead.linkedin || undefined,
+    company: output?.lead.company || "Unknown company",
+    location: output?.lead.location || undefined,
+    role: output?.lead.role || undefined,
+    personaType: output?.persona.persona_type,
+    status: output ? "completed" : "failed",
+    model: process.env.OPENAI_MODEL || "gpt-4o-mini",
+    pipelineVersion: "warm-outreach-v1",
+    querySet: output?.queries || {},
+    searchResults: output?.search_results || [],
+    evidenceSummary: output ? evidenceSummaryText(output) : "Warm outreach pipeline failed before producing evidence.",
+    validation: output?.validation || {},
+    sourceUrls: output ? sourceUrls(output) : [],
+    validationRecommendation: recommendation,
+    startedAt: timestamp,
+    completedAt: timestamp,
+    errorMessage: execution.errorMessage,
+    command: execution.command,
+    exitCode: execution.exitCode,
+    stdoutSnippet: execution.stdoutSnippet,
+    stderrSnippet: execution.stderrSnippet
+  };
+  const research = await createOutreachResearch(researchInput);
+
+  if (output) {
+    await createOutreachDraft(prospectId, {
+      contactId,
+      candidateId,
+      outreachResearchId: research.id,
+      subject: output.email.subject,
+      body: output.email.body,
+      tone: "warm",
+      personalizationNotes: [
+        `Persona: ${output.persona.persona_type || "unknown"}`,
+        `Validation: ${recommendation}`,
+        `Evidence sources: ${research.sourceUrls.length}`
+      ],
+      riskFlags: output.validation.notes || output.evidence_summary.unsafe_claims_to_avoid || [],
+      sourceUrls: research.sourceUrls,
+      validationRecommendation: recommendation,
+      evidenceSummarySnippet: research.evidenceSummary.slice(0, 500)
+    });
+  }
+
+  return research;
+}
+
+export async function runCandidateOutreach(prospectId: string, candidateId: string) {
+  const workspace = await getProspectById(prospectId);
+  if (!workspace) throw new Error("Prospect not found");
+  let candidate = await getLeadCandidateById(prospectId, candidateId);
+  if (!candidate) throw new Error("Lead candidate not found");
+  const contactId = candidate.importedContactId || (await storeImportLeadCandidateAsContact(prospectId, candidateId));
+  const contact = await getContactById(prospectId, contactId);
+  if (!contact) throw new Error("Contact not found");
+  candidate = await getLeadCandidateById(prospectId, candidateId);
+  const execution = await runWarmOutreachForContact(workspace, contact, candidate || undefined);
+  await persistOutreachExecution(prospectId, contactId, candidateId, execution);
+  revalidatePath(`/prospects/${prospectId}`);
+  revalidatePath(`/prospects/${prospectId}/candidates`);
+  revalidatePath(`/prospects/${prospectId}/crime-research`);
+  revalidatePath(`/prospects/${prospectId}/drafts`);
+}
+
+export async function runContactOutreach(prospectId: string, contactId: string) {
+  const workspace = await getProspectById(prospectId);
+  if (!workspace) throw new Error("Prospect not found");
+  const contact = workspace.contacts.find((item) => item.id === contactId);
+  if (!contact) throw new Error("Contact not found");
+  const candidate = workspace.leadCandidates.find((item) => item.importedContactId === contactId);
+  const execution = await runWarmOutreachForContact(workspace, contact, candidate);
+  await persistOutreachExecution(prospectId, contactId, candidate?.id, execution);
+  revalidatePath(`/prospects/${prospectId}`);
+  revalidatePath(`/prospects/${prospectId}/crime-research`);
+  revalidatePath(`/prospects/${prospectId}/drafts`);
+}
+
+export async function runBatchCandidateOutreach(prospectId: string, formData: FormData) {
+  const candidateIds = formData.getAll("candidateIds").filter((item): item is string => typeof item === "string" && Boolean(item));
+  if (candidateIds.length > 10) throw new Error("Batch outreach is capped at 10 selected candidates.");
+  for (const candidateId of candidateIds) {
+    await runCandidateOutreach(prospectId, candidateId);
+  }
 }

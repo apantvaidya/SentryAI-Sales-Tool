@@ -5,6 +5,7 @@ import { generateOutreachDraft } from "@/app/actions";
 import { AppShell } from "@/components/AppShell";
 import { DraftEditor } from "@/components/DraftEditor";
 import { ResearchChecklist } from "@/components/ResearchChecklist";
+import { WorkspaceTabs } from "@/components/WorkspaceTabs";
 import { getProspectById } from "@/lib/data/store";
 
 export default async function DraftsPage({ params }: { params: Promise<{ id: string }> }) {
@@ -32,6 +33,7 @@ export default async function DraftsPage({ params }: { params: Promise<{ id: str
           Export CSV
         </a>
       </div>
+      <WorkspaceTabs prospectId={id} active="drafts" />
 
       <div className="grid gap-6 xl:grid-cols-[380px_1fr]">
         <aside className="grid content-start gap-5">
