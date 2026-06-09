@@ -1,0 +1,885 @@
+{
+  "seed_person": {
+    "person_name": "Jose Escobar",
+    "role": "Asset Protection Manager",
+    "company_name": "Bloomingdale's",
+    "linkedin_url": "https://www.linkedin.com/in/jose-escobar-139992204/"
+  },
+  "same_company_matches": [
+    {
+      "full_name": "Brandon Decker",
+      "current_title": "Regional Director Of Asset Protection",
+      "current_company": "Bloomingdale's",
+      "years_at_current_role": 1.34,
+      "resolved_location": "West Palm Beach, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/brandon-decker-4b010b29",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Fred Becker",
+      "current_title": "Trade Area Director Of Asset Protection - NYC",
+      "current_company": "Bloomingdale's",
+      "years_at_current_role": 10.35,
+      "resolved_location": "New York, New York, United States",
+      "linkedin_url": "https://linkedin.com/in/fred-becker-18403a8",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Lisa Caccomo",
+      "current_title": "Regional Director Of Asset Protection",
+      "current_company": "Bloomingdale's",
+      "years_at_current_role": 1.34,
+      "resolved_location": "New York, NY, US",
+      "linkedin_url": "https://linkedin.com/in/lisa-caccomo-cfi-lpc-07a88239",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Mary Kelly",
+      "current_title": "Senior Manager AP Operations & Risk Management",
+      "current_company": "Bloomingdale's",
+      "years_at_current_role": 13.68,
+      "resolved_location": "Greater New York City Area",
+      "linkedin_url": "https://linkedin.com/in/mary-kelly-cfi-6089637",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Shea Ledbetter",
+      "current_title": "Director, Operations & Asset Protection",
+      "current_company": "Bloomingdale's",
+      "years_at_current_role": 4.27,
+      "resolved_location": "Southern California & Hawai\u2019i",
+      "linkedin_url": "https://linkedin.com/in/shea-ledbetter-5a45416a",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Peter Chie",
+      "current_title": "Operating Vice President, Asset Protection And Risk Management",
+      "current_company": "Bloomingdale's",
+      "years_at_current_role": 11.43,
+      "resolved_location": "Greater New York City Area",
+      "linkedin_url": "https://linkedin.com/in/peter-chie-cfi-8246574",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Severin Peck",
+      "current_title": "National Director - Asset Protection, Bloomingdale's The Outlet",
+      "current_company": "Bloomingdale's",
+      "years_at_current_role": 1.34,
+      "resolved_location": "Los Angeles Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/severin-peck-15a79125",
+      "public_business_email": null
+    },
+    {
+      "full_name": "LPQ Jetmir Hoxha",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Bloomingdale's",
+      "years_at_current_role": 3.02,
+      "resolved_location": "Short Hills, New Jersey",
+      "linkedin_url": "https://linkedin.com/in/jetmir-hoxha",
+      "public_business_email": null
+    },
+    {
+      "full_name": "James Feil",
+      "current_title": "Manager - Asset Protection",
+      "current_company": "Bloomingdale's",
+      "years_at_current_role": 2.68,
+      "resolved_location": "New York City Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/james-feil-lpc-a4990663",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Brian Jones",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Bloomingdale's",
+      "years_at_current_role": 0.34,
+      "resolved_location": "Chicago, IL",
+      "linkedin_url": "https://linkedin.com/in/brian-jones-197b8912",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Robert Taylor",
+      "current_title": "Manager, Asset Protection",
+      "current_company": "Bloomingdale's",
+      "years_at_current_role": 0.43,
+      "resolved_location": "Tysons Corner, Virginia, United States",
+      "linkedin_url": "https://linkedin.com/in/robert-taylor-81662052",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Amanda Beller",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Bloomingdale's",
+      "years_at_current_role": 1.18,
+      "resolved_location": "Miami, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/amanda-beller-1a57b4162",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Jose Escobar",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Bloomingdale's",
+      "years_at_current_role": 1.76,
+      "resolved_location": "Los Angeles, California, United States",
+      "linkedin_url": "https://linkedin.com/in/jose-escobar-139992204",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Obi Uwakwe",
+      "current_title": "Asset Protection Supervisor",
+      "current_company": "Bloomingdale's",
+      "years_at_current_role": 19.18,
+      "resolved_location": "Greater Chicago Area",
+      "linkedin_url": "https://linkedin.com/in/obi-uwakwe-04058165",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Frank Fuentes",
+      "current_title": "Senior Manager Of Operations",
+      "current_company": "Bloomingdale's",
+      "years_at_current_role": 1.18,
+      "resolved_location": "McLean, Virginia, United States",
+      "linkedin_url": "https://linkedin.com/in/frank-fuentes-46910a82",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Kevyn Ruiz",
+      "current_title": "Asset Protection Supervisor",
+      "current_company": "Bloomingdale's",
+      "years_at_current_role": 0.76,
+      "resolved_location": "Pasadena, California, United States",
+      "linkedin_url": "https://linkedin.com/in/kevyn-ruiz-6b1431264",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Maxim Bouloute",
+      "current_title": "Asset Protection Supervisor",
+      "current_company": "Bloomingdale's",
+      "years_at_current_role": 7.76,
+      "resolved_location": "Mclean, Virginia",
+      "linkedin_url": "https://linkedin.com/in/maxim-bouloute-71b5b0167",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Alexis Gonzalez",
+      "current_title": "Asset Protection Supervisor",
+      "current_company": "Bloomingdale's",
+      "years_at_current_role": 0.68,
+      "resolved_location": "Middletown, New York, United States",
+      "linkedin_url": "https://linkedin.com/in/alexis-gonzalez-609157195",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Jose Mondragon",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Bloomingdale's",
+      "years_at_current_role": 0.51,
+      "resolved_location": "San Diego, CA",
+      "linkedin_url": "https://linkedin.com/in/jose-mondragon-76a16899",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Justin Wade",
+      "current_title": "Executive Loss Prevention Manager",
+      "current_company": "Bloomingdale's",
+      "years_at_current_role": 1.43,
+      "resolved_location": "Tyson's Corner Center, McLean, VA",
+      "linkedin_url": "https://linkedin.com/in/justin-wade-48961b30",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Brett Harris",
+      "current_title": "Senior Operations Manager",
+      "current_company": "Bloomingdale's",
+      "years_at_current_role": 10.85,
+      "resolved_location": "Chicago, Illinois",
+      "linkedin_url": "https://linkedin.com/in/brettharris23",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Michael Martinez",
+      "current_title": "Asset Protection Supervisor",
+      "current_company": "Bloomingdale's",
+      "years_at_current_role": 0.34,
+      "resolved_location": "Newport Beach, California, United States",
+      "linkedin_url": "https://linkedin.com/in/michael-martinez-81112317a",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Argyle Nelson",
+      "current_title": "Vice President, Divisional Merchandise Manager",
+      "current_company": "Bloomingdale's",
+      "years_at_current_role": 5.93,
+      "resolved_location": "New York, New York, United States",
+      "linkedin_url": "https://linkedin.com/in/argylenelson",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Rochelle Holt",
+      "current_title": "Security Supervisor Asset Protection Lead",
+      "current_company": "Bloomingdale's",
+      "years_at_current_role": 5.27,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/rochelle-holt-a61029167",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Araceli Luna",
+      "current_title": "Asset Protection Supervisor",
+      "current_company": "Bloomingdale's",
+      "years_at_current_role": 0.85,
+      "resolved_location": "New York, NY, US",
+      "linkedin_url": "https://linkedin.com/in/araceli-luna-24731117b",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Amanda De La Torre",
+      "current_title": "Asset Protection Supervisor",
+      "current_company": "Bloomingdale's",
+      "years_at_current_role": 2.85,
+      "resolved_location": "New Jersey, United States",
+      "linkedin_url": "https://linkedin.com/in/amanda-de-la-torre-448199239",
+      "public_business_email": null
+    }
+  ],
+  "similar_company_matches": [
+    {
+      "full_name": "Roger Decker",
+      "current_title": "Loss Prevention And Safety Manager",
+      "current_company": "Lowe's Companies, Inc.",
+      "years_at_current_role": 8.51,
+      "resolved_location": "Miami/Fort Lauderdale Area",
+      "linkedin_url": "https://linkedin.com/in/roger-decker-a5b37830",
+      "public_business_email": null
+    },
+    {
+      "full_name": "LPQ Sami Shaikh",
+      "current_title": "Senior Manager, Security, Safety, Loss Prevention - North America",
+      "current_company": "Cainiao Network",
+      "years_at_current_role": 2.35,
+      "resolved_location": "North America",
+      "linkedin_url": "https://linkedin.com/in/samishaikh79",
+      "public_business_email": null
+    },
+    {
+      "full_name": "DeAndre Moore",
+      "current_title": "Senior Retail Asset Protection Manager",
+      "current_company": "REI",
+      "years_at_current_role": 3.93,
+      "resolved_location": "San Francisco Bay Area",
+      "linkedin_url": "https://linkedin.com/in/deandre-moore-147009210",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Phil Ageh",
+      "current_title": "Associate Director, Asset Protection & Inventory Control",
+      "current_company": "Crate and Barrel",
+      "years_at_current_role": 5.1,
+      "resolved_location": "Corporate Headquarters, Chicago",
+      "linkedin_url": "https://linkedin.com/in/phil-ageh-cfi-3851b257",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Cameron Maurer",
+      "current_title": "Regional Asset Protection Manager - Coastal",
+      "current_company": "Bass Pro Shops",
+      "years_at_current_role": 1.27,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/cameron-maurer",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Brian Gray",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Ralphs Grocery Company",
+      "years_at_current_role": 14.18,
+      "resolved_location": "Southern California",
+      "linkedin_url": "https://linkedin.com/in/brian-gray-ba717123",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Mike Limauro",
+      "current_title": "Head Of Asset Protection, Amazon Worldwide Grocery Stores VP Global Asset Protection, Whole Foods",
+      "current_company": "Amazon",
+      "years_at_current_role": 0.51,
+      "resolved_location": "Seattle, WA, US",
+      "linkedin_url": "https://linkedin.com/in/mikelimauro",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Ron Foss",
+      "current_title": "Director, Asset Protection",
+      "current_company": "Albertsons Companies, SOCAL Division",
+      "years_at_current_role": 3.43,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/ron-foss-cfi-lpc-1855037",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Kaylee Paradowski",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Northeast Grocery",
+      "years_at_current_role": 0.68,
+      "resolved_location": "Greater Tampa Bay Area",
+      "linkedin_url": "https://linkedin.com/in/kaylee-paradowski-87a489268",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Todd Sheehan",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 7.85,
+      "resolved_location": "Savannah, Georgia, United States",
+      "linkedin_url": "https://linkedin.com/in/todd-sheehan-cfi-536b9912",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Dale Fowler",
+      "current_title": "Senior Director - Field Asset Protection Operations",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.43,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/dale-fowler-cfe-46154b6",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Ever Aguirre",
+      "current_title": "Asset Protection Department Manager",
+      "current_company": "Wegmans Food Markets",
+      "years_at_current_role": 2.1,
+      "resolved_location": "Woodbridge, Virginia, United States",
+      "linkedin_url": "https://linkedin.com/in/ever-aguirre-89584b102",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Matthew VanEmon",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Walgreens",
+      "years_at_current_role": 8.34,
+      "resolved_location": "Raleigh, North Carolina",
+      "linkedin_url": "https://linkedin.com/in/matthew-vanemon-8a271211",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Andrew Babcock",
+      "current_title": "Field Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 3.85,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/andrewbabcock",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Carlos Perez",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Busch's Fresh Food Market",
+      "years_at_current_role": 4.34,
+      "resolved_location": "Michigan, United States",
+      "linkedin_url": "https://linkedin.com/in/carlosperez8",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Bernard Peterson",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 3.18,
+      "resolved_location": "Murfreesboro, Tennessee, United States",
+      "linkedin_url": "https://linkedin.com/in/bernard-peterson-cfi-lsa-18840379",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Samuel A. Velazquez",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Dollar General",
+      "years_at_current_role": 1.18,
+      "resolved_location": "Dallas-Fort Worth Metroplex",
+      "linkedin_url": "https://linkedin.com/in/samuel-a-velazquez-811375b4",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Adam Ruiz",
+      "current_title": "Division Asset Protection Manager - Loss Prevention - Texas",
+      "current_company": "Kroger",
+      "years_at_current_role": 0.6,
+      "resolved_location": "Cincinnati, OH",
+      "linkedin_url": "https://linkedin.com/in/adam-ruiz-lpc-320a8440",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Tony Kuisle",
+      "current_title": "Director Of Asset Protection Operations",
+      "current_company": "Casey's",
+      "years_at_current_role": 5.34,
+      "resolved_location": "Ankeny, Iowa, US",
+      "linkedin_url": "https://linkedin.com/in/anthonykuisle",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Seth Paquin",
+      "current_title": "Multi Unit Asset Protection Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 2.35,
+      "resolved_location": "North Shore Massachusetts",
+      "linkedin_url": "https://linkedin.com/in/sethpaquin",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Anthony T. White",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Lowe's Companies, Inc.",
+      "years_at_current_role": 0.85,
+      "resolved_location": "New York, New York, United States",
+      "linkedin_url": "https://linkedin.com/in/anthony-t-white-lpc-0767a8120",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Brian Zimmerman",
+      "current_title": "Sr. Manager Marketplace Asset Protection And Safety",
+      "current_company": "Best Buy",
+      "years_at_current_role": 3.18,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/brianpzimmerman",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Briana Cooke",
+      "current_title": "Area Loss Prevention Manager",
+      "current_company": "101 Travel Plaza",
+      "years_at_current_role": 3.27,
+      "resolved_location": "Nutley, New Jersey, United States",
+      "linkedin_url": "https://linkedin.com/in/briana-cooke-9a6105a5",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Adam Gilvin",
+      "current_title": "Director, Asset Protection",
+      "current_company": "Bass Pro Shops",
+      "years_at_current_role": 1.76,
+      "resolved_location": "Springfield, MO, US",
+      "linkedin_url": "https://linkedin.com/in/adamgilvin",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Courtney S.",
+      "current_title": "Area Asset Protection Manager",
+      "current_company": "Gap Inc.",
+      "years_at_current_role": 3.85,
+      "resolved_location": "Eastern Washington, Montana, Idaho",
+      "linkedin_url": "https://linkedin.com/in/courtney-s-24091111b",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Adam Amado",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "SEPHORA",
+      "years_at_current_role": 1.68,
+      "resolved_location": "Greater Phoenix Area",
+      "linkedin_url": "https://linkedin.com/in/adam-amado-574b62250",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Joe Bleyer",
+      "current_title": "Director, Asset Protection",
+      "current_company": "Ralph Lauren",
+      "years_at_current_role": 12.34,
+      "resolved_location": "Chicago, IL",
+      "linkedin_url": "https://linkedin.com/in/jsbleyer",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Ruben Berroa",
+      "current_title": "District Assets Protection Manager",
+      "current_company": "Burlington Stores, Inc.",
+      "years_at_current_role": 0.85,
+      "resolved_location": "Lawrenceville, New Jersey, United States",
+      "linkedin_url": "https://linkedin.com/in/ruben-berroa-843b5a120",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Arkadiusz Mosakowski",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Burlington Stores, Inc.",
+      "years_at_current_role": 6.68,
+      "resolved_location": "Chicago",
+      "linkedin_url": "https://linkedin.com/in/arkadiusz-mosakowski",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Dominick Cargill",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Nordstrom",
+      "years_at_current_role": 1.85,
+      "resolved_location": "Philadelphia, Pennsylvania, United States",
+      "linkedin_url": "https://linkedin.com/in/dominick-cargill-bb8511134",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Jorge Vega",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Nordstrom",
+      "years_at_current_role": 0.93,
+      "resolved_location": "Delray Beach, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/jorge-vega-1a103459",
+      "public_business_email": null
+    },
+    {
+      "full_name": "April Kegu",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Burlington Stores, Inc.",
+      "years_at_current_role": 0.76,
+      "resolved_location": "Burlington, NJ, US",
+      "linkedin_url": "https://linkedin.com/in/april-kegu-96ba14356",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Felipe Escalera",
+      "current_title": "Area Asset Protection Manager",
+      "current_company": "Nordstrom",
+      "years_at_current_role": 3.6,
+      "resolved_location": "San Diego, California, United States",
+      "linkedin_url": "https://linkedin.com/in/felipe-escalera-9853745b",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Victoria Redding",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Burlington Stores, Inc.",
+      "years_at_current_role": 0.93,
+      "resolved_location": "Clayton, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/victoria-redding-assetprotection",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Greg Brumley",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Nordstrom",
+      "years_at_current_role": 3.27,
+      "resolved_location": "Seattle, Washington, US",
+      "linkedin_url": "https://linkedin.com/in/gregbrumley",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Alexandra Alexis",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Burlington Stores, Inc.",
+      "years_at_current_role": 5.18,
+      "resolved_location": "North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/alexandra-alexis-0300a4112",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Jos\u00e9 Escobar",
+      "current_title": "CTO",
+      "current_company": "Fluid",
+      "years_at_current_role": 0.34,
+      "resolved_location": "Mesa Geitonia, Limassol, CY",
+      "linkedin_url": "https://linkedin.com/in/jaescobar",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Jos\u00e9 Daniel Escobar",
+      "current_title": "Operational Excellence, Continuous Improvement And Supply Chain Projects Sr Manager I Pfizer Global",
+      "current_company": "Pfizer",
+      "years_at_current_role": 4.85,
+      "resolved_location": "Panam\u00e1, Panam\u00e1",
+      "linkedin_url": "https://linkedin.com/in/jos%C3%A9-daniel-escobar-certified-black-belt-lean-6%CF%83-and-scrum-master-b5b29456",
+      "public_business_email": null
+    },
+    {
+      "full_name": "JoseC Escobar G",
+      "current_title": "Sr Manager Solution Architecture",
+      "current_company": "DXC Technology",
+      "years_at_current_role": 1.34,
+      "resolved_location": "Lerma, M\u00e9xico, Mexico",
+      "linkedin_url": "https://linkedin.com/in/josec-escobar-g-44a0b126",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Jos\u00e9 Manuel Escobar Delgado",
+      "current_title": "Senior Data Scientist",
+      "current_company": "Minsait",
+      "years_at_current_role": 0.43,
+      "resolved_location": "Alcobendas, Madrid, ES",
+      "linkedin_url": "https://linkedin.com/in/jose-manuel-escobar-delgado-2a3a4160",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Jose Escobar",
+      "current_title": "VP Of Operations",
+      "current_company": "haku",
+      "years_at_current_role": 12.93,
+      "resolved_location": "Miami",
+      "linkedin_url": "https://linkedin.com/in/escobarj",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Jos\u00e9 Escobar Escudero",
+      "current_title": "COO Hogarth Spain",
+      "current_company": "WPP Production",
+      "years_at_current_role": 3.02,
+      "resolved_location": "Madrid, Community of Madrid, Spain",
+      "linkedin_url": "https://linkedin.com/in/joseescobarescudero",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Jose Rodrigo Escobar",
+      "current_title": "Principal CSM, CSS Customer Success Mgmt",
+      "current_company": "Oracle",
+      "years_at_current_role": 1.34,
+      "resolved_location": "Bogot\u00e1, Distrito Capital, Colombia",
+      "linkedin_url": "https://linkedin.com/in/jose-rodrigo-escobar-20058064",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Joseph Escobar",
+      "current_title": "Investment Analyst",
+      "current_company": "Renewa",
+      "years_at_current_role": 2.93,
+      "resolved_location": "Houston, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/joseph-escobar-63b1aa166",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Joseph Escobar",
+      "current_title": "Manager Medicare Case Management",
+      "current_company": "Excellus BCBS",
+      "years_at_current_role": 4.1,
+      "resolved_location": "Churchville, New York, United States",
+      "linkedin_url": "https://linkedin.com/in/joseph-escobar-685949149",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Jose Rodrigo Escobar",
+      "current_title": "Transformation Manager CBC - Beliv",
+      "current_company": "cbc",
+      "years_at_current_role": 0.93,
+      "resolved_location": "Guatemala City, Guatemala, Guatemala",
+      "linkedin_url": "https://linkedin.com/in/joserodrigoescobar",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Jose Escobar",
+      "current_title": "Chief Executive Officer",
+      "current_company": "Connected Leaders Academy",
+      "years_at_current_role": 4.43,
+      "resolved_location": "Silver Spring, Maryland, United States",
+      "linkedin_url": "https://linkedin.com/in/jaesco25",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Jose Escobar",
+      "current_title": "Director Of Operations Strategy",
+      "current_company": "Real Elite Contracting LLC",
+      "years_at_current_role": 0.76,
+      "resolved_location": "Martinsburg, West Virginia, United States",
+      "linkedin_url": "https://linkedin.com/in/josecescobar",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Jose Escobar",
+      "current_title": "Senior Human Resources Analyst",
+      "current_company": "Arizona Department of Economic Security",
+      "years_at_current_role": 1.1,
+      "resolved_location": "Phoenix, Arizona, United States",
+      "linkedin_url": "https://linkedin.com/in/jose-escobar-3a6944223",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Jose Ramon Escobar Maria",
+      "current_title": "Director Del Proyecto Acero",
+      "current_company": "PA Peru SAC",
+      "years_at_current_role": 2.18,
+      "resolved_location": "Lima, Per\u00fa",
+      "linkedin_url": "https://linkedin.com/in/jose-escobar-maria",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Carlos Escobar",
+      "current_title": "Senior Director COE Global Technical Services",
+      "current_company": "Johnson & Johnson",
+      "years_at_current_role": 11.68,
+      "resolved_location": "Puerto Rico",
+      "linkedin_url": "https://linkedin.com/in/carlos-escobar-0b085617",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Shan Escobar",
+      "current_title": "Director Talent Management",
+      "current_company": "Signal Energy",
+      "years_at_current_role": 0.76,
+      "resolved_location": "Houston, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/shantell-escobar",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Jose Escamilla",
+      "current_title": "GTM Ops",
+      "current_company": "OpenAI",
+      "years_at_current_role": 1.1,
+      "resolved_location": "San Francisco, CA, US",
+      "linkedin_url": "https://linkedin.com/in/jlescamilla",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Joseph Escobar",
+      "current_title": "National Category Director -Beverages",
+      "current_company": "Albertsons Companies",
+      "years_at_current_role": 2.43,
+      "resolved_location": "Itasca, Illinois, United States",
+      "linkedin_url": "https://linkedin.com/in/joseph-escobar-091678159",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Tony Crumpton",
+      "current_title": "Chief Merchandising Officer",
+      "current_company": "United Supermarkets, LLC",
+      "years_at_current_role": 6.18,
+      "resolved_location": "Lubbock, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/tony-crumpton-51964b2",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Jos\u00e9 Luis Escobar Hern\u00e1ndez",
+      "current_title": "Director De Tienda",
+      "current_company": "CADENA COMERCIO OXXO SA DE CV",
+      "years_at_current_role": 14.02,
+      "resolved_location": "Poza Rica, Veracruz, Mexico",
+      "linkedin_url": "https://linkedin.com/in/jos%C3%A9-luis-escobar-hern%C3%A1ndez-59996b236",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Jose Escobar",
+      "current_title": "Jefe De Organizaci\u00f3n",
+      "current_company": "Mercadona",
+      "years_at_current_role": null,
+      "resolved_location": "Greater Barcelona Metropolitan Area",
+      "linkedin_url": "https://",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Jos\u00e9 Carlos Gracia Ambroj",
+      "current_title": "Director",
+      "current_company": "Auchan Retail Espa\u00f1a",
+      "years_at_current_role": 9.27,
+      "resolved_location": "Huesca, Espa\u00f1a",
+      "linkedin_url": "https://linkedin.com/in/jos%C3%A9-carlos-gracia-ambroj-09722a54",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Carlos Escobar",
+      "current_title": "District Manager",
+      "current_company": "The TJX Companies, Inc.",
+      "years_at_current_role": 9.02,
+      "resolved_location": "Southern California",
+      "linkedin_url": "https://linkedin.com/in/carlos-escobar-5536b714",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Tony Jorges",
+      "current_title": "Director Of Food And Beverage",
+      "current_company": "Target",
+      "years_at_current_role": 7.43,
+      "resolved_location": "Minneapolis, MN, US",
+      "linkedin_url": "https://linkedin.com/in/tony-jorges-3705867",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Ricardo Escobar",
+      "current_title": "Divisional Retail Facilities Director",
+      "current_company": "Lowe's Companies, Inc.",
+      "years_at_current_role": 2.1,
+      "resolved_location": "Mooresville, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/ricardo-escobar-5600484",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Jose Aguayo",
+      "current_title": "Chief People Officer",
+      "current_company": "Vallarta Supermarkets",
+      "years_at_current_role": 2.77,
+      "resolved_location": "Los Angeles Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/jose-aguayo-68a715203",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Jose Loredo",
+      "current_title": "Store Director",
+      "current_company": "Target",
+      "years_at_current_role": 2.02,
+      "resolved_location": "Algonquin, Illinois, United States",
+      "linkedin_url": "https://linkedin.com/in/jose-loredo-b0492720",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Jose Ortega",
+      "current_title": "Senior Director Facilities Services",
+      "current_company": "Walmart",
+      "years_at_current_role": 3.52,
+      "resolved_location": "Arkansas, United States",
+      "linkedin_url": "https://linkedin.com/in/jose-ortega-66496b1a",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Oscar Escajeda",
+      "current_title": "Senior Manager Of Automation",
+      "current_company": "Albertsons Companies",
+      "years_at_current_role": 2.52,
+      "resolved_location": "Boise, Idaho, US",
+      "linkedin_url": "https://linkedin.com/in/oscar-escajeda",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Sal Esquer",
+      "current_title": "Senior Director Of Operations",
+      "current_company": "El Super",
+      "years_at_current_role": 10.68,
+      "resolved_location": "Southern California",
+      "linkedin_url": "https://linkedin.com/in/sal-esquer-75a51a12",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Errick Escandor",
+      "current_title": "Director",
+      "current_company": "Loblaw Companies Limited",
+      "years_at_current_role": 28.34,
+      "resolved_location": "Brampton, Ontario, Canada",
+      "linkedin_url": "https://linkedin.com/in/errick-escandor-3888b57b",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Carla Farrell",
+      "current_title": "Retail Cashier",
+      "current_company": "SPAR Ireland",
+      "years_at_current_role": 3.6,
+      "resolved_location": "Dublin, Republic of Ireland, IE",
+      "linkedin_url": "https://linkedin.com/in/carla-farrell-466870359",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Simon Bott",
+      "current_title": "Senior Product Manager",
+      "current_company": "Tesco",
+      "years_at_current_role": 8.68,
+      "resolved_location": "Welwyn Garden City",
+      "linkedin_url": "https://linkedin.com/in/simon-bott-8b150b1",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Krist\u00f3f M\u00e9cs",
+      "current_title": "Vice President Of Retail Operations, Worldwide",
+      "current_company": "ESCO Retail Services",
+      "years_at_current_role": 6.43,
+      "resolved_location": "Newport Beach, California, United States",
+      "linkedin_url": "https://linkedin.com/in/krist%C3%B3f-m%C3%A9cs-1984817",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Ernest Escobar",
+      "current_title": "Space Technologist Manager",
+      "current_company": "Acosta Sales and Marketing Co",
+      "years_at_current_role": 10.18,
+      "resolved_location": "Modesto, California Area",
+      "linkedin_url": "https://linkedin.com/in/ernest-escobar-076ba568",
+      "public_business_email": null
+    }
+  ]
+}
