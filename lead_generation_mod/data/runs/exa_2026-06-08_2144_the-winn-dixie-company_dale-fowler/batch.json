@@ -1,0 +1,66 @@
+{
+  "seed_person": {
+    "person_name": "Dale Fowler",
+    "role": "Senior Director - Field Asset Protection Operations",
+    "company_name": "The Winn-Dixie Company",
+    "linkedin_url": "https://www.linkedin.com/in/dale-fowler-cfe-46154b6/"
+  },
+  "same_company_matches": [
+    {
+      "full_name": "Richard Brenner",
+      "current_title": "Director, Field AP Operations",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 1.19,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/richard-brenner-09029110",
+      "public_business_email": null
+    },
+    {
+      "full_name": "PI-LPP Nicholas Johnston",
+      "current_title": "Regional Manager, Asset Protection",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/nick-johnston-pi-lpp",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Dale Fowler",
+      "current_title": "Senior Director - Field Asset Protection Operations",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/dale-fowler-cfe-46154b6",
+      "public_business_email": null
+    }
+  ],
+  "similar_company_matches": [
+    {
+      "full_name": "Joe Laufenberg",
+      "current_title": "Senior Director Of Asset Protection",
+      "current_company": "Festival Foods",
+      "years_at_current_role": 11.02,
+      "resolved_location": "Green Bay, Wisconsin Area",
+      "linkedin_url": "https://linkedin.com/in/joe-laufenberg-lpc",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Joe Oliveira",
+      "current_title": "Global Leader Of Loss Prevention, Compliance, Risk Management And Corportate Security",
+      "current_company": "VSP Vision",
+      "years_at_current_role": 2.69,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/joe-oliveira-cfi-6b756411",
+      "public_business_email": null
+    },
+    {
+      "full_name": "Robert Fowler",
+      "current_title": "Director, Head Of Corporate FP A",
+      "current_company": "Nucor Corporation",
+      "years_at_current_role": 1.43,
+      "resolved_location": "Charlotte, NC",
+      "linkedin_url": "https://linkedin.com/in/robert-fowler-cfa-0475804b",
+      "public_business_email": null
+    }
+  ]
+}
