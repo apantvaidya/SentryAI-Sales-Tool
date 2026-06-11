@@ -12,6 +12,7 @@ from .graph_data import (
     build_overlap_payload,
     build_query_overlap_detail_from_node_ids,
     build_query_results_payload,
+    build_seed_searches_payload,
     latest_run_id,
     run_ids,
 )
@@ -38,6 +39,9 @@ class VisualizeHandler(SimpleHTTPRequestHandler):
             return
         if parsed.path == "/api/aggregate":
             self._write_json(build_aggregate_graph_payload(DATA_DIR))
+            return
+        if parsed.path == "/api/seed-searches":
+            self._write_json(build_seed_searches_payload(DATA_DIR))
             return
         if parsed.path == "/api/query-results":
             params = parse_qs(parsed.query)

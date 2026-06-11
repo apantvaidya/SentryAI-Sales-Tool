@@ -147,6 +147,9 @@ function buildLayout(graph) {
   if (graph.mode === "aggregate") {
     return buildAggregateLayout(graph);
   }
+  if (graph.mode === "seed_searches") {
+    return buildSeedSearchesLayout(graph);
+  }
   return buildSingleRunLayout(graph);
 }
 
@@ -284,12 +287,41 @@ function buildAggregateLayout(graph) {
   return positioned;
 }
 
+function buildSeedSearchesLayout(graph) {
+  const positioned = new Map();
+  const seedNodes = graph.nodes.filter((node) => node.type === "seed");
+  const columns = Math.max(1, Math.ceil(Math.sqrt(seedNodes.length * 1.45)));
+  const rows = Math.max(1, Math.ceil(seedNodes.length / columns));
+  const horizontalSpacing = Math.min(520, 1320 / Math.max(1, columns - 1));
+  const verticalSpacing = Math.min(420, 820 / Math.max(1, rows - 1));
+  const gridWidth = horizontalSpacing * Math.max(0, columns - 1);
+  const gridHeight = verticalSpacing * Math.max(0, rows - 1);
+  const gridOriginX = center.x - gridWidth / 2;
+  const gridOriginY = center.y - gridHeight / 2;
+
+  seedNodes.forEach((seedNode, index) => {
+    const col = index % columns;
+    const row = Math.floor(index / columns);
+    const seedOverride = nodePositionOverrides.get(seedNode.id);
+    const seedX = seedOverride?.x ?? (gridOriginX + col * horizontalSpacing);
+    const seedY = seedOverride?.y ?? (gridOriginY + row * verticalSpacing);
+    positioned.set(seedNode.id, { ...seedNode, x: seedX, y: seedY, r: 44 });
+  });
+
+  return positioned;
+}
+
 function renderRunColorLegend(graph) {
-  const isAggregate = graph.mode === "aggregate";
-  runColorLegend.classList.toggle("hidden", !isAggregate);
-  if (!isAggregate) {
+  const isAggregateLike = graph.mode === "aggregate" || graph.mode === "seed_searches";
+  runColorLegend.classList.toggle("hidden", !isAggregateLike);
+  if (!isAggregateLike) {
     runColorList.innerHTML = "";
     return;
+  }
+
+  const eyebrow = runColorLegend.querySelector(".eyebrow");
+  if (eyebrow) {
+    eyebrow.textContent = graph.mode === "seed_searches" ? "Search Colors" : "Search Colors · Seed / Queries";
   }
 
   const runs = graph.summary.runs || [];
@@ -298,10 +330,16 @@ function renderRunColorLegend(graph) {
     .map(
       (run) => `
         <div class="run-color-row">
-          <span class="run-color-pair" title="Seed color / query color">
-            <span class="swatch" style="background:${run.run_color};color:${run.run_color}"></span>
-            <span class="swatch query-color" style="background:${run.query_color};color:${run.query_color}"></span>
-          </span>
+          ${
+            graph.mode === "seed_searches"
+              ? `<span class="swatch" style="background:${run.run_color};color:${run.run_color}" title="Search color"></span>`
+              : `
+                <span class="run-color-pair" title="Seed color / query color">
+                  <span class="swatch" style="background:${run.run_color};color:${run.run_color}"></span>
+                  <span class="swatch query-color" style="background:${run.query_color};color:${run.query_color}"></span>
+                </span>
+              `
+          }
           <span title="${escapeHtml(run.run_id)}">${escapeHtml(truncate(run.run_label, 34))}</span>
         </div>
       `
@@ -316,7 +354,7 @@ function renderRunColorLegend(graph) {
 }
 
 function hydrateAggregateRunMetadata(graph) {
-  if (graph.mode !== "aggregate" || graph.run_metadata_hydrated) return;
+  if ((graph.mode !== "aggregate" && graph.mode !== "seed_searches") || graph.run_metadata_hydrated) return;
   const runMetadata = new Map((graph.summary.runs || []).map((run) => [run.run_index, run]));
   graph.nodes.forEach((node) => {
     const run = runMetadata.get(node.run_index);
@@ -345,16 +383,25 @@ function renderStats(graph) {
         ["Recursive", summary.recursive_seed_link_count],
         ["Query overlaps", stats.positive_query_overlap_count ?? stats.query_overlap_edge_count ?? 0],
       ]
-    : [
-        ["Queries", stats.query_count],
-        ["People", stats.person_count],
-        ["Nodes", stats.node_count],
-        ["Edges", stats.edge_count],
-        ["Accepted", summary.accepted_count],
-        ["Flagged", summary.accepted_with_flags_count ?? 0],
-        ["Dropped", summary.dropped_count],
-        ["Stored", storage.stored_total ?? 0],
-      ];
+    : graph.mode === "seed_searches"
+      ? [
+          ["Searches", summary.run_count],
+          ["Seeds", stats.seed_count],
+          ["Later seeds", summary.derived_seed_count],
+          ["Roots", summary.root_seed_count],
+          ["Lineage links", summary.seed_lineage_edge_count],
+          ["Producing queries", stats.producing_query_link_count],
+        ]
+      : [
+          ["Queries", stats.query_count],
+          ["People", stats.person_count],
+          ["Nodes", stats.node_count],
+          ["Edges", stats.edge_count],
+          ["Accepted", summary.accepted_count],
+          ["Flagged", summary.accepted_with_flags_count ?? 0],
+          ["Dropped", summary.dropped_count],
+          ["Stored", storage.stored_total ?? 0],
+        ];
   statsGrid.innerHTML = "";
   cards.forEach(([label, value]) => {
     const card = document.createElement("div");
@@ -431,6 +478,12 @@ function renderDetails(node) {
   }
   if (node.derived_from_query_titles?.length) {
     lines.push(`<div class="detail-line">This seed was previously discovered in: ${node.derived_from_query_titles.join(", ")}</div>`);
+  }
+  if (node.lineage_source_labels?.length) {
+    lines.push(`<div class="detail-line">Earlier searches that found this seed: ${node.lineage_source_labels.join(", ")}</div>`);
+  }
+  if (node.produced_seed_titles?.length) {
+    lines.push(`<div class="detail-line">Later seeds produced from this search: ${node.produced_seed_titles.join(", ")}</div>`);
   }
   if (node.run_id && node.type !== "person") {
     lines.push(`<div class="detail-line">Run: ${node.run_id}</div>`);
@@ -540,6 +593,47 @@ async function loadQueryOverlapDetails(edge) {
   }
 }
 
+function renderLineageDetails(edge) {
+  const sourceNode = currentGraph?.nodes.find((node) => node.id === edge.source);
+  const targetNode = currentGraph?.nodes.find((node) => node.id === edge.target);
+  const producingQueries = edge.producing_queries?.length
+    ? edge.producing_queries
+    : sourceNode?.type === "query"
+      ? [
+          {
+            title: sourceNode.title || sourceNode.label,
+            query_text: sourceNode.query_text,
+            target_bucket: sourceNode.target_bucket,
+          },
+        ]
+      : [];
+
+  const queryItems = producingQueries.length
+    ? producingQueries
+        .map((query) => {
+          const meta = [query.target_bucket?.replace("_", " "), query.query_id].filter(Boolean).join(" • ");
+          const metaHtml = meta ? `<span class="query-person-meta">${escapeHtml(meta)}</span>` : "";
+          const textHtml = query.query_text
+            ? `<span class="query-person-meta">${escapeHtml(query.query_text).replace(/\n/g, "<br />")}</span>`
+            : "";
+          return `<li><span class="query-person-name">${escapeHtml(query.title || "Producing query")}</span>${metaHtml}${textHtml}</li>`;
+        })
+        .join("")
+    : `<li><span class="query-person-name">No producing query details available.</span></li>`;
+
+  detailPanel.innerHTML = `
+    <div class="eyebrow">seed lineage</div>
+    <h2 class="detail-title">${escapeHtml(targetNode?.title || targetNode?.label || edge.target_run_label || "Later seed")}</h2>
+    <div class="detail-chip-row">
+      <span class="chip lineage">later seed</span>
+      <span class="chip">${producingQueries.length} producing ${producingQueries.length === 1 ? "query" : "queries"}</span>
+    </div>
+    <div class="detail-line">From search: ${escapeHtml(edge.source_run_label || sourceNode?.run_label || sourceNode?.title || sourceNode?.label || edge.source_run_id || "")}</div>
+    <div class="detail-line">To seed: ${escapeHtml(edge.target_run_label || targetNode?.run_label || targetNode?.title || targetNode?.label || edge.target_run_id || "")}</div>
+    <div class="detail-line query-people-block"><strong>Producing queries</strong><ul class="query-people-list">${queryItems}</ul></div>
+  `;
+}
+
 function renderOverlapDetails(focusQuery, overlap) {
   const topPairs = overlap.pairwise
     .filter((item) => pairMatchesFocus(item, focusQuery.vector_id))
@@ -632,7 +726,9 @@ function renderGraph(graph) {
   svg.classList.toggle("dense-graph", denseGraph);
   runMeta.textContent = graph.mode === "aggregate"
     ? `${graph.summary.run_count} searches • ${graph.stats.unique_people_count ?? graph.stats.person_count} people discovered • ${graph.summary.cross_run_people_count} shared across runs`
-    : `${graph.run_id} • ${graph.summary.search_result_count} raw results • ${graph.summary.accepted_count} accepted`;
+    : graph.mode === "seed_searches"
+      ? `${graph.summary.run_count} searches • ${graph.summary.seed_lineage_edge_count} lineage links • ${graph.summary.recursive_seed_link_count} producing queries mapped`
+      : `${graph.run_id} • ${graph.summary.search_result_count} raw results • ${graph.summary.accepted_count} accepted`;
 
   const layout = buildLayout(graph);
   edgesLayer.innerHTML = "";
@@ -658,11 +754,11 @@ function renderGraph(graph) {
       "data-target": edge.target,
       "data-edge-id": edge.id,
       style: edge.run_color ? `stroke:${edge.run_color}` : "",
-      "stroke-opacity": edge.run_color ? "0.48" : "",
+      "stroke-opacity": edge.run_color ? (edge.type === "seed-lineage" ? "0.82" : "0.48") : "",
       "stroke-width": edge.type === "query-overlap"
         ? clamp(1.4 + Math.log2((edge.intersection_count || 1) + 1), 1.4, 7)
         : "",
-      "marker-end": edge.type === "query-seed-origin" ? "url(#lineageArrow)" : "",
+      "marker-end": edge.type === "query-seed-origin" || edge.type === "seed-lineage" ? "url(#lineageArrow)" : "",
     });
     if (edge.type === "query-overlap") {
       line.addEventListener("click", (event) => {
@@ -672,6 +768,14 @@ function renderGraph(graph) {
         renderQueryOverlapDetails(edge);
         highlightEdgeSelection(edge);
         loadQueryOverlapDetails(edge);
+      });
+    } else if (edge.type === "query-seed-origin" || edge.type === "seed-lineage") {
+      line.addEventListener("click", (event) => {
+        event.stopPropagation();
+        currentSelection = null;
+        currentEdgeSelection = edge.id;
+        renderLineageDetails(edge);
+        highlightEdgeSelection(edge);
       });
     }
     edgesLayer.appendChild(line);
@@ -723,7 +827,9 @@ function renderGraph(graph) {
 
     if (node.type === "seed") {
       const subtext = createSvgElement("text", { y: "16", class: "subtext" });
-      subtext.textContent = graph.mode === "aggregate" ? truncate(node.run_label, 28) : truncate(node.company, 22);
+      subtext.textContent = graph.mode === "aggregate" || graph.mode === "seed_searches"
+        ? truncate(node.run_label, 28)
+        : truncate(node.company, 22);
       group.appendChild(subtext);
       if (node.derived_from_search) {
         const lineageNote = createSvgElement("text", { y: "30", class: "seed-lineage-note" });
@@ -781,9 +887,14 @@ function renderGraph(graph) {
     ? graph.edges.find((edge) => edge.id === currentEdgeSelection)
     : null;
   if (selectedEdge) {
-    renderQueryOverlapDetails(selectedEdge);
-    highlightEdgeSelection(selectedEdge);
-    loadQueryOverlapDetails(selectedEdge);
+    if (selectedEdge.type === "query-overlap") {
+      renderQueryOverlapDetails(selectedEdge);
+      highlightEdgeSelection(selectedEdge);
+      loadQueryOverlapDetails(selectedEdge);
+    } else if (selectedEdge.type === "query-seed-origin" || selectedEdge.type === "seed-lineage") {
+      renderLineageDetails(selectedEdge);
+      highlightEdgeSelection(selectedEdge);
+    }
   } else if (selectedNode) {
     renderDetails(selectedNode);
     highlightSelection(selectedNode.id);
@@ -1276,6 +1387,18 @@ async function loadAggregate() {
   renderGraph(graph);
 }
 
+async function loadSeedSearches() {
+  const graph = await fetchJson("/api/seed-searches");
+  currentSelection = null;
+  currentEdgeSelection = null;
+  nodePositionOverrides = new Map();
+  queryResultsCache.clear();
+  queryOverlapCache.clear();
+  autoSelectGraphNode = true;
+  resetViewport();
+  renderGraph(graph);
+}
+
 async function loadOverlap(runId = null) {
   const url = runId ? `/api/overlap?run_id=${encodeURIComponent(runId)}` : "/api/overlap/latest";
   const overlap = await fetchJson(url);
@@ -1289,14 +1412,16 @@ async function loadOverlap(runId = null) {
 function applyViewMode() {
   const isGraph = activeView() === "graph";
   const isAggregate = activeView() === "aggregate";
-  svg.classList.toggle("hidden", !(isGraph || isAggregate));
-  overlapView.classList.toggle("hidden", isGraph || isAggregate);
-  graphZoomControls.classList.toggle("hidden", !(isGraph || isAggregate));
-  graphLegend.classList.toggle("hidden", !(isGraph || isAggregate));
-  overlapLegend.classList.toggle("hidden", isGraph || isAggregate);
-  overlapControls.classList.toggle("hidden", isGraph || isAggregate);
-  runSelect.disabled = isAggregate;
-  if (!(isGraph || isAggregate)) {
+  const isSeedSearches = activeView() === "seed-searches";
+  const isGraphView = isGraph || isAggregate || isSeedSearches;
+  svg.classList.toggle("hidden", !isGraphView);
+  overlapView.classList.toggle("hidden", isGraphView);
+  graphZoomControls.classList.toggle("hidden", !isGraphView);
+  graphLegend.classList.toggle("hidden", !isGraphView);
+  overlapLegend.classList.toggle("hidden", isGraphView);
+  overlapControls.classList.toggle("hidden", isGraphView);
+  runSelect.disabled = isAggregate || isSeedSearches;
+  if (!isGraphView) {
     runColorLegend.classList.add("hidden");
   }
 }
@@ -1367,7 +1492,9 @@ function initPanAndZoom() {
 
 reloadButton.addEventListener("click", async () => {
   await loadRuns();
-  if (activeView() === "graph") {
+  if (activeView() === "seed-searches") {
+    await loadSeedSearches();
+  } else if (activeView() === "graph") {
     await loadGraph(runSelect.value);
   } else if (activeView() === "aggregate") {
     await loadAggregate();
@@ -1377,7 +1504,9 @@ reloadButton.addEventListener("click", async () => {
 });
 
 runSelect.addEventListener("change", async () => {
-  if (activeView() === "graph") {
+  if (activeView() === "seed-searches") {
+    await loadSeedSearches();
+  } else if (activeView() === "graph") {
     await loadGraph(runSelect.value);
   } else if (activeView() === "aggregate") {
     await loadAggregate();
@@ -1389,7 +1518,9 @@ runSelect.addEventListener("change", async () => {
 viewSelect.addEventListener("change", async () => {
   resetViewport();
   applyViewMode();
-  if (activeView() === "graph") {
+  if (activeView() === "seed-searches") {
+    await loadSeedSearches();
+  } else if (activeView() === "graph") {
     await loadGraph(runSelect.value);
   } else if (activeView() === "aggregate") {
     await loadAggregate();
@@ -1420,7 +1551,9 @@ async function main() {
   applyViewportTransform();
   applyViewMode();
   await loadRuns();
-  if (activeView() === "graph") {
+  if (activeView() === "seed-searches") {
+    await loadSeedSearches();
+  } else if (activeView() === "graph") {
     await loadGraph(runSelect.value);
   } else if (activeView() === "aggregate") {
     await loadAggregate();

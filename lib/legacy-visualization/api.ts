@@ -9,6 +9,7 @@ type LegacyFunction =
   | "runs"
   | "graph"
   | "aggregate"
+  | "seed_searches"
   | "overlap"
   | "query_results"
   | "query_overlap";
@@ -25,6 +26,7 @@ from visualize.graph_data import (
     build_overlap_payload,
     build_query_overlap_detail_from_node_ids,
     build_query_results_payload,
+    build_seed_searches_payload,
     latest_run_id,
     run_ids,
 )
@@ -39,6 +41,8 @@ elif fn == "graph":
     payload = build_graph_payload(data_dir, params.get("run_id"))
 elif fn == "aggregate":
     payload = build_aggregate_graph_payload(data_dir)
+elif fn == "seed_searches":
+    payload = build_seed_searches_payload(data_dir)
 elif fn == "overlap":
     payload = build_overlap_payload(data_dir, params.get("run_id"))
 elif fn == "query_results":

@@ -335,6 +335,7 @@ def build_aggregate_graph_payload(data_dir: Path) -> dict[str, Any]:
                     "type": "query",
                     "label": query_short_label(query),
                     "title": query_display_label(query),
+                    "query_text": query["query_text"],
                     "target_bucket": query["target_bucket"],
                     "template_file": query["template_file"],
                     "vector_id": query["vector_id"],
@@ -547,6 +548,209 @@ def build_aggregate_graph_payload(data_dir: Path) -> dict[str, Any]:
             "omitted_query_overlap_count": len(query_overlap_counts) - len(visible_query_overlaps),
             "query_overlap_edge_limit": MAX_AGGREGATE_QUERY_OVERLAP_EDGES,
             "query_breakdown": query_stats,
+        },
+        "nodes": nodes,
+        "edges": edges,
+    }
+
+
+def build_seed_searches_payload(data_dir: Path) -> dict[str, Any]:
+    resolved_run_ids = sorted(run_ids(data_dir))
+    if not resolved_run_ids:
+        raise FileNotFoundError(f"No run artifacts found in {data_dir / 'runs'}")
+
+    nodes: list[dict[str, Any]] = []
+    edges: list[dict[str, Any]] = []
+    run_summaries: list[dict[str, Any]] = []
+    seed_node_index: dict[str, dict[str, Any]] = {}
+    seed_person_keys: dict[str, str] = {}
+    seed_node_ids: dict[str, str] = {}
+    discovery_sources: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    run_indexes = {run_id: index for index, run_id in enumerate(resolved_run_ids)}
+
+    for run_id in resolved_run_ids:
+        queries = load_artifact(data_dir, run_id, "queries")
+        filter_decisions = load_artifact(data_dir, run_id, "filter_decisions")
+        batch = load_artifact(data_dir, run_id, "batch")
+        seed_person = batch["seed_person"]
+        run_index = run_indexes[run_id]
+        seed_id = f"s:{run_index}"
+        search_label = run_display_label(seed_person)
+
+        seed_node_ids[run_id] = seed_id
+        seed_person_keys[run_id] = person_key(
+            {
+                "full_name": seed_person.get("person_name"),
+                "current_company": seed_person.get("company_name"),
+                "linkedin_url": seed_person.get("linkedin_url"),
+            }
+        )
+        run_summaries.append(
+            {
+                "run_id": run_id,
+                "run_index": run_index,
+                "run_label": search_label,
+                "run_color": run_color(run_id),
+                "query_color": query_color(run_id),
+            }
+        )
+
+        nodes.append(
+            {
+                "id": seed_id,
+                "type": "seed",
+                "label": seed_person["person_name"],
+                "title": seed_person["person_name"],
+                "subtitle": f"{seed_person['role']} @ {seed_person['company_name']}",
+                "role": seed_person["role"],
+                "company": seed_person["company_name"],
+                "linkedin_url": seed_person.get("linkedin_url"),
+                "run_id": run_id,
+                "run_index": run_index,
+                "derived_from_search": False,
+                "derived_from_query_titles": [],
+                "lineage_source_run_ids": [],
+                "lineage_source_labels": [],
+                "produced_seed_run_ids": [],
+                "produced_seed_labels": [],
+            }
+        )
+        seed_node_index[run_id] = nodes[-1]
+
+        query_map = {str(query["vector_id"]): query for query in queries}
+        for decision in filter_decisions:
+            candidate = decision["candidate"]
+            vector_id = str(candidate["source_vector_id"])
+            query = query_map.get(vector_id)
+            if query is None:
+                continue
+            discovery_sources[person_key(candidate)].append(
+                {
+                    "source_run_id": run_id,
+                    "source_run_index": run_index,
+                    "source_seed_id": seed_id,
+                    "source_run_label": search_label,
+                    "query_id": f"q:{run_index}:{vector_id}",
+                    "query_title": query_display_label(query),
+                    "query_text": query["query_text"],
+                    "target_bucket": query["target_bucket"],
+                }
+            )
+
+    producing_query_links = 0
+    derived_seed_count = 0
+    seed_lineage_edge_count = 0
+
+    for target_run_id in resolved_run_ids:
+        target_seed_key = seed_person_keys[target_run_id]
+        target_run_index = run_indexes[target_run_id]
+        target_seed_id = seed_node_ids[target_run_id]
+        target_seed_node = seed_node_index[target_run_id]
+        grouped_sources: dict[str, dict[str, Any]] = {}
+
+        for source in discovery_sources.get(target_seed_key, []):
+            if source["source_run_index"] >= target_run_index:
+                continue
+            source_run_id = source["source_run_id"]
+            existing = grouped_sources.get(source_run_id)
+            if existing is None:
+                grouped_sources[source_run_id] = {
+                    "source_run_id": source_run_id,
+                    "source_run_index": source["source_run_index"],
+                    "source_seed_id": source["source_seed_id"],
+                    "source_run_label": source["source_run_label"],
+                    "producing_queries": [source],
+                }
+                continue
+            seen_query_ids = {item["query_id"] for item in existing["producing_queries"]}
+            if source["query_id"] not in seen_query_ids:
+                existing["producing_queries"].append(source)
+
+        if not grouped_sources:
+            continue
+
+        derived_seed_count += 1
+        target_seed_node["derived_from_search"] = True
+
+        derived_query_titles: set[str] = set()
+        lineage_source_labels: set[str] = set()
+        lineage_source_run_ids: set[str] = set()
+
+        for source_run_id in sorted(grouped_sources, key=lambda value: grouped_sources[value]["source_run_index"]):
+            group = grouped_sources[source_run_id]
+            source_seed_node = seed_node_index[source_run_id]
+            producing_queries = sorted(group["producing_queries"], key=lambda item: item["query_id"])
+            query_titles = [query["query_title"] for query in producing_queries]
+
+            edges.append(
+                {
+                    "id": f"edge:{group['source_seed_id']}:{target_seed_id}:seed-lineage",
+                    "source": group["source_seed_id"],
+                    "target": target_seed_id,
+                    "type": "seed-lineage",
+                    "run_index": group["source_run_index"],
+                    "source_run_id": source_run_id,
+                    "source_run_label": group["source_run_label"],
+                    "target_run_id": target_run_id,
+                    "target_run_label": run_display_label(
+                        {
+                            "person_name": target_seed_node["label"],
+                            "company_name": target_seed_node["company"],
+                        }
+                    ),
+                    "producing_query_count": len(producing_queries),
+                    "producing_query_titles": query_titles,
+                    "producing_queries": [
+                        {
+                            "query_id": query["query_id"],
+                            "title": query["query_title"],
+                            "query_text": query["query_text"],
+                            "target_bucket": query["target_bucket"],
+                        }
+                        for query in producing_queries
+                    ],
+                }
+            )
+            seed_lineage_edge_count += 1
+            producing_query_links += len(producing_queries)
+
+            source_seed_node["produced_seed_run_ids"].append(target_run_id)
+            source_seed_node["produced_seed_labels"].append(target_seed_node["title"])
+
+            derived_query_titles.update(query_titles)
+            lineage_source_labels.add(group["source_run_label"])
+            lineage_source_run_ids.add(source_run_id)
+
+        target_seed_node["derived_from_query_titles"] = sorted(derived_query_titles)
+        target_seed_node["lineage_source_labels"] = sorted(lineage_source_labels)
+        target_seed_node["lineage_source_run_ids"] = sorted(lineage_source_run_ids)
+
+    for node in nodes:
+        node["produced_seed_run_ids"] = sorted(set(node["produced_seed_run_ids"]))
+        node["produced_seed_labels"] = sorted(set(node["produced_seed_labels"]))
+        node["produced_seed_count"] = len(node["produced_seed_run_ids"])
+        node["lineage_source_count"] = len(node["lineage_source_run_ids"])
+
+    root_seed_count = len(nodes) - derived_seed_count
+
+    return {
+        "run_id": "seed_searches",
+        "mode": "seed_searches",
+        "summary": {
+            "run_count": len(resolved_run_ids),
+            "recursive_seed_link_count": producing_query_links,
+            "seed_lineage_edge_count": seed_lineage_edge_count,
+            "derived_seed_count": derived_seed_count,
+            "root_seed_count": root_seed_count,
+            "runs": run_summaries,
+        },
+        "stats": {
+            "node_count": len(nodes),
+            "edge_count": len(edges),
+            "seed_count": len(nodes),
+            "derived_seed_count": derived_seed_count,
+            "root_seed_count": root_seed_count,
+            "producing_query_link_count": producing_query_links,
         },
         "nodes": nodes,
         "edges": edges,
