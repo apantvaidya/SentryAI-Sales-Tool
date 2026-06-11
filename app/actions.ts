@@ -8,7 +8,9 @@ import {
   createOutreachDraft,
   createOutreachResearch,
   createProspect as storeCreateProspect,
+  deleteOutreachDraft as storeDeleteOutreachDraft,
   deleteProspect as storeDeleteProspect,
+  getAllCandidates,
   getContactById,
   getLeadCandidateById,
   getProspectById,
@@ -165,6 +167,12 @@ export async function approveOutreachDraft(draftId: string, prospectId: string) 
   revalidatePath(`/prospects/${prospectId}/drafts`);
 }
 
+export async function deleteOutreachDraft(draftId: string, prospectId: string) {
+  await storeDeleteOutreachDraft(draftId);
+  revalidatePath(`/prospects/${prospectId}`);
+  revalidatePath(`/prospects/${prospectId}/drafts`);
+}
+
 export async function registerExistingLeadGenRun(prospectId: string, formData: FormData) {
   const artifactRunId = value(formData, "artifactRunId");
   if (!artifactRunId) throw new Error("Artifact run is required");
@@ -313,14 +321,14 @@ async function persistOutreachExecution(
 }
 
 export async function runCandidateOutreach(prospectId: string, candidateId: string) {
-  const workspace = await getProspectById(prospectId);
-  if (!workspace) throw new Error("Prospect not found");
   let candidate = await getLeadCandidateById(prospectId, candidateId);
   if (!candidate) throw new Error("Lead candidate not found");
   const contactId = candidate.importedContactId || (await storeImportLeadCandidateAsContact(prospectId, candidateId));
   const contact = await getContactById(prospectId, contactId);
   if (!contact) throw new Error("Contact not found");
   candidate = await getLeadCandidateById(prospectId, candidateId);
+  const workspace = await getProspectById(prospectId);
+  if (!workspace) throw new Error("Prospect not found");
   const execution = await runWarmOutreachForContact(workspace, contact, candidate || undefined);
   await persistOutreachExecution(prospectId, contactId, candidateId, execution);
   revalidatePath(`/prospects/${prospectId}`);
@@ -348,4 +356,27 @@ export async function runBatchCandidateOutreach(prospectId: string, formData: Fo
   for (const candidateId of candidateIds) {
     await runCandidateOutreach(prospectId, candidateId);
   }
+}
+
+export async function runPeopleBatchCandidateOutreach(formData: FormData) {
+  const candidateIds = Array.from(
+    new Set(formData.getAll("candidateIds").filter((item): item is string => typeof item === "string" && Boolean(item)))
+  );
+  if (candidateIds.length === 0) return;
+  if (candidateIds.length > 1) throw new Error("Generate email from People is limited to one selected person at a time.");
+
+  const candidates = await getAllCandidates();
+  const candidateById = new Map(candidates.map((candidate) => [candidate.id, candidate]));
+  const selectedCandidates = candidateIds.map((candidateId) => {
+    const candidate = candidateById.get(candidateId);
+    if (!candidate) throw new Error(`Lead candidate not found: ${candidateId}`);
+    return candidate;
+  });
+
+  for (const candidate of selectedCandidates) {
+    await runCandidateOutreach(candidate.prospectId, candidate.id);
+  }
+
+  revalidatePath("/people");
+  redirect(`/prospects/${selectedCandidates[0].prospectId}/drafts`);
 }

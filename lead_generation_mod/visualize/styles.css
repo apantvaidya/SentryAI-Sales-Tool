@@ -368,11 +368,14 @@ button:hover {
   stroke-width: 2;
 }
 
-.edge.query-seed-origin {
+.edge.query-seed-origin,
+.edge.seed-lineage {
   stroke: rgba(241, 169, 107, 0.82);
   stroke-width: 2.4;
   stroke-dasharray: 7 5;
   vector-effect: non-scaling-stroke;
+  cursor: pointer;
+  pointer-events: stroke;
 }
 
 .edge.query-overlap {
@@ -384,6 +387,11 @@ button:hover {
 
 .edge.query-overlap:hover {
   stroke: rgba(255, 221, 158, 0.96);
+}
+
+.edge.query-seed-origin:hover,
+.edge.seed-lineage:hover {
+  stroke: rgba(255, 214, 148, 1);
 }
 
 .edge.active {

@@ -1,9 +1,11 @@
 "use client";
 
 import { useState, useCallback } from "react";
+import { useFormStatus } from "react-dom";
 import Link from "next/link";
 import { Mail } from "lucide-react";
 import type { LeadCandidateStatus } from "@/lib/data/types";
+import { runPeopleBatchCandidateOutreach } from "@/app/actions";
 
 type CandidateRow = {
   id: string;
@@ -32,11 +34,23 @@ function StatusBadge({ status }: { status: LeadCandidateStatus }) {
   return <span className={`rounded-md px-2 py-0.5 text-xs font-semibold ${cls}`}>{label}</span>;
 }
 
+function GenerateEmailButton({ disabled }: { disabled: boolean }) {
+  const { pending } = useFormStatus();
+  return (
+    <button className="button-primary" disabled={disabled || pending} type="submit">
+      <Mail size={15} />
+      {pending ? "Generating..." : "Generate email"}
+    </button>
+  );
+}
+
 export function PeopleTable({ candidates }: { candidates: CandidateRow[] }) {
   const [selected, setSelected] = useState<Set<string>>(new Set());
 
   const allSelected = candidates.length > 0 && selected.size === candidates.length;
   const someSelected = selected.size > 0 && !allSelected;
+  const selectedIds = Array.from(selected);
+  const needsSingleSelection = selected.size > 1;
 
   const toggleAll = useCallback(() => {
     setSelected(allSelected ? new Set() : new Set(candidates.map((c) => c.id)));
@@ -45,26 +59,33 @@ export function PeopleTable({ candidates }: { candidates: CandidateRow[] }) {
   const toggleOne = useCallback((id: string) => {
     setSelected((prev) => {
       const next = new Set(prev);
-      next.has(id) ? next.delete(id) : next.add(id);
+      if (next.has(id)) {
+        next.delete(id);
+      } else {
+        next.add(id);
+      }
       return next;
     });
   }, []);
 
   return (
     <div>
-      <div className="mb-4 flex items-center justify-between gap-4">
-        <p className="text-sm text-slate-500">
-          {selected.size > 0 ? `${selected.size} selected` : `${candidates.length} people`}
-        </p>
-        <button
-          className="button-primary"
-          disabled={selected.size === 0}
-          onClick={() => {}}
-        >
-          <Mail size={15} />
-          Generate emails for selected
-        </button>
-      </div>
+      <form action={runPeopleBatchCandidateOutreach} className="mb-4 flex items-center justify-between gap-4">
+        {selectedIds.map((candidateId) => (
+          <input key={candidateId} type="hidden" name="candidateIds" value={candidateId} />
+        ))}
+        <div>
+          <p className="text-sm text-slate-500">
+            {selected.size > 0 ? `${selected.size} selected` : "1728 people"}
+          </p>
+          {needsSingleSelection ? (
+            <p className="mt-1 text-xs font-semibold text-amber-700">Select one person at a time to generate an email from this page.</p>
+          ) : selected.size === 1 ? (
+            <p className="mt-1 text-xs text-slate-500">This can take 30-90 seconds while search and OpenAI run.</p>
+          ) : null}
+        </div>
+        <GenerateEmailButton disabled={selected.size !== 1} />
+      </form>
 
       <div className="surface overflow-hidden">
         <div className="overflow-x-auto">

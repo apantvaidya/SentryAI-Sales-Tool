@@ -21,8 +21,9 @@
         <div class="sidebar-section controls">
           <label for="view-select">View</label>
           <select id="view-select">
+            <option value="seed-searches" selected>Seed searches</option>
             <option value="graph">Graph view</option>
-            <option value="aggregate" selected>All searches</option>
+            <option value="aggregate">All searches</option>
             <option value="overlap">Overlap view</option>
           </select>
 
@@ -37,7 +38,7 @@
           <div class="legend-row"><span class="swatch accepted"></span> Accepted person</div>
           <div class="legend-row"><span class="swatch dropped"></span> Dropped</div>
           <div class="legend-row"><span class="swatch recursive"></span> Seed lineage</div>
-          <div class="legend-row"><span class="legend-line seed-origin"></span> Producing query → later seed</div>
+          <div class="legend-row"><span class="legend-line seed-origin"></span> Producing search / query → later seed</div>
           <div class="legend-row"><span class="legend-line query-overlap"></span> Shared query results</div>
         </div>
 

@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Check, Clipboard, ExternalLink, FileDown, ShieldAlert } from "lucide-react";
-import { approveOutreachDraft, updateOutreachDraft } from "@/app/actions";
+import { Check, Clipboard, ExternalLink, FileDown, ShieldAlert, Trash2 } from "lucide-react";
+import { approveOutreachDraft, deleteOutreachDraft, updateOutreachDraft } from "@/app/actions";
 import type { Contact, OutreachDraft } from "@/lib/data/types";
 
 export function DraftEditor({
@@ -111,6 +111,18 @@ export function DraftEditor({
                 </button>
                 <button className="button-primary" formAction={approveOutreachDraft.bind(null, draft.id, prospectId)}>
                   Approve Draft
+                </button>
+                <button
+                  className="button-secondary border-red-200 text-red-700 hover:border-red-300 hover:bg-red-50"
+                  formAction={deleteOutreachDraft.bind(null, draft.id, prospectId)}
+                  onClick={(event) => {
+                    if (!window.confirm("Delete this draft? This cannot be undone.")) {
+                      event.preventDefault();
+                    }
+                  }}
+                >
+                  <Trash2 size={16} />
+                  Delete
                 </button>
                 <a className="button-secondary" href={`/prospects/${prospectId}/export`}>
                   <FileDown size={16} />

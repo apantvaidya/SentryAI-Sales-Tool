@@ -29,6 +29,8 @@ The UI loads the latest run from `data/` by default, and you can switch between 
 
 ## Views
 
+- `Seed searches`
+  Default aggregate view showing only search/seed personas, with lineage edges that preserve the producing queries that led to later seeds.
 - `Graph view`
   Obsidian-inspired network layout with the seed person in the center.
 - `All searches`
@@ -40,6 +42,7 @@ The UI loads the latest run from `data/` by default, and you can switch between 
 ## Scaling Behavior
 
 - historical runs use their saved `queries.json`, so removing a current template does not break old visualizations
+- the default seed-searches view keeps only seed personas on the canvas while preserving producing-query provenance in the inspector
 - aggregate query result lists are fetched only when selected
 - aggregate query-overlap details are fetched only when an overlap line is selected
 - aggregate person nodes are limited to people appearing in at least three queries, always preserving seed lineage

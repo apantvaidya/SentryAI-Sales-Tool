@@ -8,7 +8,8 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "data:dedupe-names": "node scripts/dedupe-lead-candidate-names.mjs",
-    "data:remove-irrelevant": "node scripts/remove-irrelevant-lead-candidates.mjs"
+    "data:remove-irrelevant": "node scripts/remove-irrelevant-lead-candidates.mjs",
+    "data:dedupe-drafts": "node scripts/dedupe-outreach-drafts.mjs"
   },
   "dependencies": {
     "@types/node": "^22.15.21",

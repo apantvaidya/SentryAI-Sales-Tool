@@ -259,6 +259,34 @@ export async function createOutreachDraft(
 ) {
   const db = await readDb();
   const timestamp = now();
+  const existingDraft = db.drafts
+    .filter(
+      (item) =>
+        item.prospectId === prospectId &&
+        item.status !== "approved" &&
+        ((input.contactId && item.contactId === input.contactId) ||
+          (input.candidateId && item.candidateId === input.candidateId) ||
+          (input.outreachResearchId && item.outreachResearchId === input.outreachResearchId))
+    )
+    .sort((a, b) => new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime())[0];
+
+  if (existingDraft) {
+    Object.assign(existingDraft, {
+      ...input,
+      status: "draft" as const,
+      updatedAt: timestamp
+    });
+    db.activities.push({
+      id: id(),
+      prospectId,
+      type: "draft_updated",
+      message: "Updated the existing outreach draft for this contact.",
+      createdAt: timestamp
+    });
+    await writeDb(db);
+    return existingDraft;
+  }
+
   const draft: OutreachDraft = {
     id: id(),
     prospectId,
@@ -293,6 +321,21 @@ export async function createOutreachDraft(
   });
   await writeDb(db);
   return draft;
+}
+
+export async function deleteOutreachDraft(draftId: string) {
+  const db = await readDb();
+  const draft = db.drafts.find((item) => item.id === draftId);
+  if (!draft) throw new Error("Draft not found");
+  db.drafts = db.drafts.filter((item) => item.id !== draftId);
+  db.activities.push({
+    id: id(),
+    prospectId: draft.prospectId,
+    type: "draft_deleted",
+    message: "Deleted an outreach draft.",
+    createdAt: now()
+  });
+  await writeDb(db);
 }
 
 export async function updateOutreachDraft(
