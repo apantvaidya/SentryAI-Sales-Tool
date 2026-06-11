@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BarChart3, Network, Plus, ShieldCheck, Users, ContactRound } from "lucide-react";
+import { Network, Plus, ShieldCheck, Users, ContactRound } from "lucide-react";
 import { DemoModeBanner } from "./DemoModeBanner";
 
 export function AppShell({ children }: { children: React.ReactNode }) {
@@ -17,10 +17,6 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             </span>
           </Link>
           <nav className="hidden items-center gap-1 md:flex" aria-label="Primary navigation">
-            <Link href="/" className="inline-flex items-center gap-2 rounded-md px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-white/80 hover:text-ink">
-              <BarChart3 size={16} />
-              Pipeline
-            </Link>
             <Link href="/" className="inline-flex items-center gap-2 rounded-md px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-white/80 hover:text-ink">
               <Users size={16} />
               Workspaces

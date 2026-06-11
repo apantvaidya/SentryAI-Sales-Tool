@@ -26,6 +26,9 @@ const databaseList = document.getElementById("database-list");
 const viewBox = { width: 1600, height: 1100 };
 const center = { x: viewBox.width / 2, y: viewBox.height / 2 };
 const DENSE_GRAPH_THRESHOLD = 1500;
+const DENSE_PERSON_THRESHOLD = 140;
+const DENSE_SEED_LABEL_LIMIT = 24;
+const DENSE_QUERY_LABEL_LIMIT = 36;
 
 let currentGraph = null;
 let currentOverlap = null;
@@ -628,7 +631,12 @@ function renderGraph(graph) {
   hydrateAggregateRunMetadata(graph);
   renderStats(graph);
   renderRunColorLegend(graph);
-  const denseGraph = graph.mode === "aggregate" && graph.nodes.length > DENSE_GRAPH_THRESHOLD;
+  const denseGraph =
+    graph.mode === "aggregate" &&
+    (
+      graph.nodes.length > DENSE_GRAPH_THRESHOLD ||
+      (graph.stats.person_count || 0) > DENSE_PERSON_THRESHOLD
+    );
   svg.classList.toggle("dense-graph", denseGraph);
   runMeta.textContent = graph.mode === "aggregate"
     ? `${graph.summary.run_count} searches • ${graph.stats.unique_people_count ?? graph.stats.person_count} people discovered • ${graph.summary.cross_run_people_count} shared across runs`
@@ -637,6 +645,17 @@ function renderGraph(graph) {
   const layout = buildLayout(graph);
   edgesLayer.innerHTML = "";
   nodesLayer.innerHTML = "";
+
+  const emphasizedNodeIds = new Set();
+  if (currentSelection) {
+    emphasizedNodeIds.add(currentSelection);
+    graph.edges.forEach((edge) => {
+      if (edge.source === currentSelection || edge.target === currentSelection) {
+        emphasizedNodeIds.add(edge.source);
+        emphasizedNodeIds.add(edge.target);
+      }
+    });
+  }
 
   graph.edges.forEach((edge) => {
     if (edge.type === "query-person") {
@@ -702,6 +721,10 @@ function renderGraph(graph) {
     const circle = createSvgElement("circle", { r: pos.r });
     group.appendChild(circle);
 
+    const title = createSvgElement("title");
+    title.textContent = [node.label, node.role, node.company].filter(Boolean).join(" • ");
+    group.appendChild(title);
+
     if (node.type === "person" && node.seed_run_ids?.length) {
       group.appendChild(createSvgElement("circle", { cx: pos.r - 5, cy: -pos.r + 5, r: 10, class: "lineage-badge" }));
       const badgeText = createSvgElement("text", { x: pos.r - 5, y: -pos.r + 8, class: "lineage-badge-text" });
@@ -711,8 +734,9 @@ function renderGraph(graph) {
 
     const showLabel =
       !denseGraph ||
-      node.id === currentSelection ||
-      (node.type === "seed" && graph.stats.seed_count <= 200);
+      emphasizedNodeIds.has(node.id) ||
+      (node.type === "seed" && graph.stats.seed_count <= DENSE_SEED_LABEL_LIMIT) ||
+      (node.type === "query" && graph.stats.query_count <= DENSE_QUERY_LABEL_LIMIT);
     if (showLabel) {
       const label = createSvgElement("text", { y: node.type === "seed" ? "-4" : "3" });
       label.textContent = node.type === "query"
@@ -722,20 +746,26 @@ function renderGraph(graph) {
     }
 
     if (node.type === "seed") {
-      const subtext = createSvgElement("text", { y: "16", class: "subtext" });
-      subtext.textContent = graph.mode === "aggregate" ? truncate(node.run_label, 28) : truncate(node.company, 22);
-      group.appendChild(subtext);
-      if (node.derived_from_search) {
+      const showSeedSubtext = !denseGraph || emphasizedNodeIds.has(node.id) || graph.stats.seed_count <= DENSE_SEED_LABEL_LIMIT;
+      if (showSeedSubtext) {
+        const subtext = createSvgElement("text", { y: "16", class: "subtext" });
+        subtext.textContent = graph.mode === "aggregate" ? truncate(node.run_label, 28) : truncate(node.company, 22);
+        group.appendChild(subtext);
+      }
+      if (node.derived_from_search && showLabel) {
         const lineageNote = createSvgElement("text", { y: "30", class: "seed-lineage-note" });
         lineageNote.textContent = "from prior search";
         group.appendChild(lineageNote);
       }
     } else if (node.type === "query" && showLabel) {
-      const subtext = createSvgElement("text", { y: "18", class: "subtext" });
-      subtext.textContent = graph.mode === "aggregate"
-        ? truncate(node.run_label, 24)
-        : node.target_bucket === "same_company" ? "same company" : "similar company";
-      group.appendChild(subtext);
+      const showQuerySubtext = !denseGraph || emphasizedNodeIds.has(node.id);
+      if (showQuerySubtext) {
+        const subtext = createSvgElement("text", { y: "18", class: "subtext" });
+        subtext.textContent = graph.mode === "aggregate"
+          ? truncate(node.run_label, 24)
+          : node.target_bucket === "same_company" ? "same company" : "similar company";
+        group.appendChild(subtext);
+      }
     }
 
     group.addEventListener("click", () => {
@@ -754,14 +784,12 @@ function renderGraph(graph) {
         scheduleGraphRender();
       }
     });
-    if (!denseGraph) {
-      group.addEventListener("mouseenter", () => {
-        if (!currentSelection) highlightSelection(node.id);
-      });
-      group.addEventListener("mouseleave", () => {
-        if (!currentSelection) highlightSelection(null);
-      });
-    }
+    group.addEventListener("mouseenter", () => {
+      if (!currentSelection) highlightSelection(node.id);
+    });
+    group.addEventListener("mouseleave", () => {
+      if (!currentSelection) highlightSelection(null);
+    });
     group.addEventListener("mousedown", (event) => {
       event.stopPropagation();
       nodeDragState = {

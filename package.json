@@ -6,7 +6,9 @@
     "dev": "next dev -H 0.0.0.0 --port 5173",
     "build": "next build",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "data:dedupe-names": "node scripts/dedupe-lead-candidate-names.mjs",
+    "data:remove-irrelevant": "node scripts/remove-irrelevant-lead-candidates.mjs"
   },
   "dependencies": {
     "@types/node": "^22.15.21",

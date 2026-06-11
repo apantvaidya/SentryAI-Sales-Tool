@@ -408,11 +408,16 @@ button:hover {
   font-size: 12px;
   text-anchor: middle;
   pointer-events: none;
+  paint-order: stroke;
+  stroke: rgba(13, 18, 25, 0.92);
+  stroke-width: 4px;
+  stroke-linejoin: round;
 }
 
 .node .subtext {
   fill: var(--muted);
   font-size: 10px;
+  stroke-width: 3px;
 }
 
 .node.seed circle {
@@ -502,6 +507,14 @@ button:hover {
 
 #graph.dense-graph .edge.query-person {
   opacity: 0.42;
+}
+
+#graph.dense-graph .node.person text {
+  display: none;
+}
+
+#graph.dense-graph .node.person.active text {
+  display: block;
 }
 
 .overlap-view {
