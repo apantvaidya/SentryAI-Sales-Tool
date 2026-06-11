@@ -1,0 +1,14 @@
+[
+  {
+    "vector_id": "02",
+    "vector_name": "same_company_adjacent_leadership",
+    "result_url": "https://linkedin.com/in/larry-hudson-84a1b4105",
+    "reason": "missing_entities_or_current_role"
+  },
+  {
+    "vector_id": "06",
+    "vector_name": "linkedin_anchored_similarity",
+    "result_url": "https://www.linkedin.com/in/michaelkreisel",
+    "reason": "missing_entities_or_current_role"
+  }
+]

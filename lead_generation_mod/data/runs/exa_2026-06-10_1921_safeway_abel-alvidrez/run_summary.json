@@ -1,0 +1,16 @@
+{
+  "query_count": 7,
+  "search_result_count": 140,
+  "mapped_count": 140,
+  "unmapped_count": 0,
+  "accepted_count": 86,
+  "accepted_with_flags_count": 51,
+  "dropped_count": 3,
+  "same_company_count": 18,
+  "similar_company_count": 68,
+  "storage": {
+    "added": 0,
+    "updated": 0,
+    "stored_total": 1048
+  }
+}

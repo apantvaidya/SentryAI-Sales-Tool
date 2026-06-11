@@ -12,7 +12,7 @@ function nodeColor(type: string, status?: string) {
   if (status === "imported") return "#2563eb";
   if (status === "accepted") return "#059669";
   if (status === "needs_review") return "#d97706";
-  return "#64748b";
+  return "#475569";
 }
 
 export default async function LeadGraphPage({

@@ -1,0 +1,8 @@
+[
+  {
+    "vector_id": "07",
+    "vector_name": "linkedin_anchored_similarity_with_company_expansion",
+    "result_url": "https://linkedin.com/in/sulld",
+    "reason": "missing_entities_or_current_role"
+  }
+]

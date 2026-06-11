@@ -1,0 +1,1072 @@
+{
+  "seed_person": {
+    "person_name": "Brian King",
+    "company_name": "The Home Depot",
+    "linkedin_url": "https://linkedin.com/in/brian-king-95b346121",
+    "role": "Asset Protection Specialist"
+  },
+  "same_company_matches": [
+    {
+      "full_name": "Keith Harvey",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 1.69,
+      "resolved_location": "New Jersey, United States",
+      "linkedin_url": "https://linkedin.com/in/keith-harvey-608804aa",
+      "public_business_email": null,
+      "query_hit_count": 3
+    },
+    {
+      "full_name": "Scott Glenn",
+      "current_title": "Vice President, Asset Protection",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 7.95,
+      "resolved_location": "Atlanta, Georgia",
+      "linkedin_url": "https://linkedin.com/in/scottglenn",
+      "public_business_email": null,
+      "query_hit_count": 4
+    },
+    {
+      "full_name": "James Spargo",
+      "current_title": "Corporate Loss Prevention Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 3.36,
+      "resolved_location": "Statesboro, Georgia, United States",
+      "linkedin_url": "https://linkedin.com/in/james-spargo-64040513",
+      "public_business_email": null,
+      "query_hit_count": 3
+    },
+    {
+      "full_name": "Amanda Lucken",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 1.69,
+      "resolved_location": "Denver Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/amanda-lucken-0111391b7",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brian Rhue",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 1.28,
+      "resolved_location": "Savannah, Hilton Head, Charleston",
+      "linkedin_url": "https://linkedin.com/in/brian-rhue-53b0084",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Brandon Goodwin",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 0.94,
+      "resolved_location": "Atlanta, Georgia, US",
+      "linkedin_url": "https://linkedin.com/in/brandon-goodwin-06b06a122",
+      "public_business_email": null,
+      "query_hit_count": 3
+    },
+    {
+      "full_name": "Benjamin Schwartz",
+      "current_title": "Director Of Asset Protection Resources, Technology, And Innovation",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 0.86,
+      "resolved_location": "Atlanta Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/benjamin-schwartz-lpc-ab2b8a96",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "James Ford",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 4.36,
+      "resolved_location": "Memphis Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/james-ford-3074584",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Jay Ivester",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 4.11,
+      "resolved_location": "Atlanta Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/jay-ivester-812a13237",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Kirk Rogers",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 4.19,
+      "resolved_location": "Winnipeg, Manitoba, Canada",
+      "linkedin_url": "https://linkedin.com/in/kirk-rogers-a2a84a133",
+      "public_business_email": null,
+      "query_hit_count": 3
+    },
+    {
+      "full_name": "Andrew Fox",
+      "current_title": "Corporate Asset Protection Intelligence Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 2.28,
+      "resolved_location": "Atlanta, Georgia, United States",
+      "linkedin_url": "https://linkedin.com/in/andrew-fox-78b408a2",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Vetta Lisbon",
+      "current_title": "Senior Manager Asset Protection Programs & Communications",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 22.44,
+      "resolved_location": "Atlanta, Georgia, US",
+      "linkedin_url": "https://linkedin.com/in/vettalisbon",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Valerie Rice",
+      "current_title": "Senior Manager, Asset Protection Merchandising",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 13.52,
+      "resolved_location": "Atlanta, GA",
+      "linkedin_url": "https://linkedin.com/in/valerie-rice-0966724",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Kevin Kraft",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 14.28,
+      "resolved_location": "Nashville, Tennessee, United States",
+      "linkedin_url": "https://linkedin.com/in/kevin-kraft-9b1037134",
+      "public_business_email": null,
+      "query_hit_count": 3
+    },
+    {
+      "full_name": "Tanner Mitchell",
+      "current_title": "Supply Chain Asset Protection Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 2.28,
+      "resolved_location": "San Antonio, Texas Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/tanner-mitchell-076b69180",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Sham Nandlal",
+      "current_title": ", Manager, Asset Protection - Home Depot Supply Chain Logistics, Canadian Division",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 18.44,
+      "resolved_location": "Woodbridge, Ontario, Canada",
+      "linkedin_url": "https://linkedin.com/in/sham-nandlal-1a624711",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Erin Walker-DeCastro",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 1.19,
+      "resolved_location": "Pennsylvania, United States",
+      "linkedin_url": "https://linkedin.com/in/erin-walker-decastro-lpc-170220177",
+      "public_business_email": null,
+      "query_hit_count": 4
+    },
+    {
+      "full_name": "Elias Zavala",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 4.19,
+      "resolved_location": "Atlanta Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/eliaszavala",
+      "public_business_email": null,
+      "query_hit_count": 3
+    },
+    {
+      "full_name": "Gina Powell",
+      "current_title": "Asset Protection Supervisor RDC",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 3.44,
+      "resolved_location": "West Columbia",
+      "linkedin_url": "https://linkedin.com/in/gina-powell-8b1b03107",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Larry Caylor",
+      "current_title": "Divisional Director Of Asset Protection",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 1.86,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/larry-caylor-7aa27372",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Tony Due\u00f1ez",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 1.52,
+      "resolved_location": "El Paso, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/tony-due%C3%B1ez-1841aa11a",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Seth Paquin",
+      "current_title": "Multi Unit Asset Protection Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 2.36,
+      "resolved_location": "North Shore Massachusetts",
+      "linkedin_url": "https://linkedin.com/in/sethpaquin",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Mckenzie V",
+      "current_title": "Multi-Store Asset Protection Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 24.69,
+      "resolved_location": "DFW",
+      "linkedin_url": "https://linkedin.com/in/mckenzie-v-227806b5",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "William Thompson",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 1.69,
+      "resolved_location": "Philadelphia, Pennsylvania, United States",
+      "linkedin_url": "https://linkedin.com/in/william-thompson-b3223b112",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Robert Hurd",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 4.86,
+      "resolved_location": "Tampa, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/robert-hurd-8b575815",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Lindsay Patton",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 1.52,
+      "resolved_location": "Greater Tampa Bay Area",
+      "linkedin_url": "https://linkedin.com/in/lindsay-patton-26422337",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Ryan Wagers",
+      "current_title": "Sr. Asset Protection Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 13.69,
+      "resolved_location": "North East",
+      "linkedin_url": "https://linkedin.com/in/ryan-wagers-cfi-82ba187",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Geoffrey Gurr",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 0.94,
+      "resolved_location": "Montana, United States",
+      "linkedin_url": "https://linkedin.com/in/geoffrey-gurr",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Amber Burklane",
+      "current_title": "Asset Protection Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 18.78,
+      "resolved_location": "Tukwila and Puget Sound",
+      "linkedin_url": "https://linkedin.com/in/amber-burklane-aa6a7116",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Tom Rankin",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 9.69,
+      "resolved_location": "Indanapolis",
+      "linkedin_url": "https://linkedin.com/in/tom-rankin-4562797",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Ron Priester",
+      "current_title": "Multi-Store Asset Protection Manager-(MAPM)",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 11.03,
+      "resolved_location": "Rochester, Michigan, United States",
+      "linkedin_url": "https://linkedin.com/in/ron-priester-b916772b",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "VCT Todd Scott",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 0.77,
+      "resolved_location": "Oklahoma, United States",
+      "linkedin_url": "https://linkedin.com/in/todd-scott-vct-16b77946",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Kenny Hayes",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 0.61,
+      "resolved_location": "Dacula, Georgia, United States",
+      "linkedin_url": "https://linkedin.com/in/kenny-hayes-91502b2a",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Ed Gatti",
+      "current_title": "Territory Operations Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 10.03,
+      "resolved_location": "Austin, Texas Area-Gulf Region",
+      "linkedin_url": "https://linkedin.com/in/ed-gatti-204b4110",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brian Kruse",
+      "current_title": "Supply Chain Asset Protection Mgr",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 6.53,
+      "resolved_location": "Maryland, United States",
+      "linkedin_url": "https://linkedin.com/in/brian-kruse-a568b79",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Page Level",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 1.69,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/page-level-865650118",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Tom Schurdell",
+      "current_title": "Asset Protection Specialist",
+      "current_company": "The Home Depot",
+      "years_at_current_role": 14.86,
+      "resolved_location": "Ohio, United States",
+      "linkedin_url": "https://linkedin.com/in/tom-schurdell-1b6b0b28a",
+      "public_business_email": null,
+      "query_hit_count": 1
+    }
+  ],
+  "similar_company_matches": [
+    {
+      "full_name": "Shawn Ducat",
+      "current_title": "Sr. Asset Protection Regional Manager",
+      "current_company": "The Save Mart Companies",
+      "years_at_current_role": 1.19,
+      "resolved_location": "California, United States",
+      "linkedin_url": "https://linkedin.com/in/shawn-ducat",
+      "public_business_email": null,
+      "query_hit_count": 3
+    },
+    {
+      "full_name": "Sarah Fennimore",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Home Depot",
+      "years_at_current_role": 9.36,
+      "resolved_location": "Waldorf, Maryland, United States",
+      "linkedin_url": "https://linkedin.com/in/sarah-fennimore-3b8287106",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Steve Taylor",
+      "current_title": "Sr Manager - Implementation & Planning Merchant",
+      "current_company": "Home Depot",
+      "years_at_current_role": 18.95,
+      "resolved_location": "Tampa, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/steve-taylor-b7a6734",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "William Scott",
+      "current_title": "District Asset Protection Specialist",
+      "current_company": "Ralphs Grocery Company",
+      "years_at_current_role": 1.77,
+      "resolved_location": "Los Angeles County, California, United States",
+      "linkedin_url": "https://linkedin.com/in/william-scott-7ab382220",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Michael Hayward",
+      "current_title": "Asset Protection Specialist",
+      "current_company": "Giant Food",
+      "years_at_current_role": 5.36,
+      "resolved_location": "Philadelphia, Pennsylvania, United States",
+      "linkedin_url": "https://linkedin.com/in/michael-hayward-3a872b129",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Bernard Peterson",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 3.2,
+      "resolved_location": "Murfreesboro, Tennessee, United States",
+      "linkedin_url": "https://linkedin.com/in/bernard-peterson-cfi-lsa-18840379",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Ever Aguirre",
+      "current_title": "Asset Protection Department Manager",
+      "current_company": "Wegmans Food Markets",
+      "years_at_current_role": 2.11,
+      "resolved_location": "Woodbridge, Virginia, United States",
+      "linkedin_url": "https://linkedin.com/in/ever-aguirre-89584b102",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Todd Sheehan",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 7.86,
+      "resolved_location": "Savannah, Georgia, United States",
+      "linkedin_url": "https://linkedin.com/in/todd-sheehan-cfi-536b9912",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Alecia Camps",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 1.19,
+      "resolved_location": "Columbus, Ohio Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/alecia-camps",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Mike Limauro",
+      "current_title": "Head Of Asset Protection, Amazon Worldwide Grocery Stores VP Global Asset Protection, Whole Foods",
+      "current_company": "Amazon",
+      "years_at_current_role": 0.53,
+      "resolved_location": "Seattle, WA, US",
+      "linkedin_url": "https://linkedin.com/in/mikelimauro",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Andrew Babcock",
+      "current_title": "Field Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 3.86,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/andrewbabcock",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Matthew VanEmon",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Walgreens",
+      "years_at_current_role": 8.36,
+      "resolved_location": "Raleigh, North Carolina",
+      "linkedin_url": "https://linkedin.com/in/matthew-vanemon-8a271211",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Adam Ruiz",
+      "current_title": "Division Asset Protection Manager - Loss Prevention - Texas",
+      "current_company": "Kroger",
+      "years_at_current_role": 0.61,
+      "resolved_location": "Cincinnati, OH",
+      "linkedin_url": "https://linkedin.com/in/adam-ruiz-lpc-320a8440",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Dale Fowler",
+      "current_title": "Senior Director - Field Asset Protection Operations",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/dale-fowler-cfe-46154b6",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Carlos Perez",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Busch's Fresh Food Market",
+      "years_at_current_role": 4.36,
+      "resolved_location": "Michigan, United States",
+      "linkedin_url": "https://linkedin.com/in/carlosperez8",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brandon Cummings",
+      "current_title": "Sr Director - Asset Protection & Safety",
+      "current_company": "Dollar General",
+      "years_at_current_role": 0.53,
+      "resolved_location": "Goodlettsville, TN, US",
+      "linkedin_url": "https://linkedin.com/in/brandon-cummings-lp-cfi",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Bobby P.",
+      "current_title": "DC Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 3.11,
+      "resolved_location": "Dallas-Fort Worth Metroplex",
+      "linkedin_url": "https://linkedin.com/in/bobby-p-007998178",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Kenneth Peschier",
+      "current_title": "Senior Vice President, Asset Protection",
+      "current_company": "Burlington Stores, Inc.",
+      "years_at_current_role": 2.44,
+      "resolved_location": "Burlington, New Jersey, United States",
+      "linkedin_url": "https://linkedin.com/in/kennethpeschier",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brent Smerczynski",
+      "current_title": "Corporate Asset Protection Manager-AP Operations & Supply Chain At 7-Eleven",
+      "current_company": "7-Eleven",
+      "years_at_current_role": 0.61,
+      "resolved_location": "Irving, TX, US",
+      "linkedin_url": "https://linkedin.com/in/brentsmerczynski",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brian Zimmerman",
+      "current_title": "Sr. Manager Marketplace Asset Protection And Safety",
+      "current_company": "Best Buy",
+      "years_at_current_role": 3.2,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/brianpzimmerman",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Jason M Jones",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Lowes",
+      "years_at_current_role": 0.44,
+      "resolved_location": "McKinney, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/jason-m-jones-0686483",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Zachary Goldstein",
+      "current_title": "Senior Asset Protection, Operations, & Safety Manager",
+      "current_company": "Lowe's Companies, Inc.",
+      "years_at_current_role": 2.95,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/zachary-goldstein-lpc-75a28487",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Kevin Peck",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Lowe's Companies, Inc.",
+      "years_at_current_role": 3.53,
+      "resolved_location": "Ocala, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/kevin-peck-290ba728",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Heather Zevallos",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Lowes Home Improvement",
+      "years_at_current_role": 1.11,
+      "resolved_location": "Bradenton, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/heather-zevallos-02460a37b",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Charles Leigh",
+      "current_title": "Asset Protection, Operations And Safety Manager",
+      "current_company": "Lowe's Companies, Inc.",
+      "years_at_current_role": 5.11,
+      "resolved_location": "Washington, District of Columbia, United States",
+      "linkedin_url": "https://linkedin.com/in/charles-leigh-36a224ab",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "David Neer",
+      "current_title": "Supply Chain Asset Protection",
+      "current_company": "Lowe's Companies, Inc.",
+      "years_at_current_role": 2.61,
+      "resolved_location": "Mooresville, NC",
+      "linkedin_url": "https://linkedin.com/in/david-neer-lpc-cfi-96210120",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Amber Santiago",
+      "current_title": "Senior Asset Protection Manager",
+      "current_company": "Lowe's Companies, Inc.",
+      "years_at_current_role": 2.78,
+      "resolved_location": "Helena, Alabama, United States",
+      "linkedin_url": "https://linkedin.com/in/amber-santiago-cfi-lpc-60a41727",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Yajayra Gonzalez",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Lowe's Companies, Inc.",
+      "years_at_current_role": 0.94,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/yajayra-gonzalez-a40b1122",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Byron Wilkins",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Lowe's Companies, Inc.",
+      "years_at_current_role": 1.03,
+      "resolved_location": "Oklahoma City, Oklahoma, United States",
+      "linkedin_url": "https://linkedin.com/in/byronwilkins",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Roger Decker",
+      "current_title": "Loss Prevention And Safety Manager",
+      "current_company": "Lowe's Companies, Inc.",
+      "years_at_current_role": 8.53,
+      "resolved_location": "Miami/Fort Lauderdale Area",
+      "linkedin_url": "https://linkedin.com/in/roger-decker-a5b37830",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Phillip Morales",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Lowe's Companies, Inc.",
+      "years_at_current_role": 3.78,
+      "resolved_location": "Lakeland, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/phillip-morales-92467065",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Chauntez Tyus",
+      "current_title": "District Asset Protection Leader",
+      "current_company": "CVS Health",
+      "years_at_current_role": 2.95,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/chauntez-tyus-lpc-7a61b664",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Richie Waddell",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Walgreens",
+      "years_at_current_role": 23.11,
+      "resolved_location": "Norfolk, Virginia Area",
+      "linkedin_url": "https://linkedin.com/in/richie-waddell-75873818",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Raymundo Barba",
+      "current_title": "Operations Manager",
+      "current_company": "Sonora Grill",
+      "years_at_current_role": 6.86,
+      "resolved_location": "Moreno Valley, California",
+      "linkedin_url": "https://linkedin.com/in/raymundo-barba-595651123",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brian King",
+      "current_title": "Senior Software Development Manager",
+      "current_company": "Red Hat",
+      "years_at_current_role": 6.28,
+      "resolved_location": "Apex, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/brian-king-59736670",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brian King",
+      "current_title": "Partner, General Manager CoPilot AI Platform",
+      "current_company": "Microsoft",
+      "years_at_current_role": 31.03,
+      "resolved_location": "Redmond, Washington, United States",
+      "linkedin_url": "https://linkedin.com/in/bkingms",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brian King",
+      "current_title": "Senior Vice President Operations",
+      "current_company": "Ultranauts Inc (formerly Ultra Testing)",
+      "years_at_current_role": 10.28,
+      "resolved_location": "New York",
+      "linkedin_url": "https://linkedin.com/in/brianjking1",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brian King",
+      "current_title": "Senior Applications Lead And Project Manager",
+      "current_company": "Lineup Systems Ltd",
+      "years_at_current_role": 10.86,
+      "resolved_location": "Boulder, CO",
+      "linkedin_url": "https://linkedin.com/in/brian-king-47785b18",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "J. Brian King",
+      "current_title": "Manager, Product Management - Currency Transaction Reporting Tool",
+      "current_company": "Capital One",
+      "years_at_current_role": 3.44,
+      "resolved_location": "McLean, Va, US",
+      "linkedin_url": "https://linkedin.com/in/j-brian-king-4b8113",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brian King",
+      "current_title": "Chief Of Strategy",
+      "current_company": "Pacific Gas and Electric Company",
+      "years_at_current_role": 18.86,
+      "resolved_location": "San Francisco Bay Area",
+      "linkedin_url": "https://linkedin.com/in/brianzking",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brian King",
+      "current_title": "Distinguished Scientist",
+      "current_company": "EdgeRunner AI",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Bellingham, Washington, United States",
+      "linkedin_url": "https://linkedin.com/in/mrbrianking",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brian King",
+      "current_title": "Director II, Payer Strategy - U.S. Market Access",
+      "current_company": "AbbVie",
+      "years_at_current_role": 1.11,
+      "resolved_location": "Great Lakes Area",
+      "linkedin_url": "https://linkedin.com/in/brian-king-010934129",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brian King",
+      "current_title": "Consumer Chief Risk Officer And Head Of Business Operations, Partner",
+      "current_company": "Goldman Sachs",
+      "years_at_current_role": 5.11,
+      "resolved_location": "Wilmington, Delaware, United States",
+      "linkedin_url": "https://linkedin.com/in/forbrianking",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brian King",
+      "current_title": "Director Of Client Success",
+      "current_company": "apiphani",
+      "years_at_current_role": 0.36,
+      "resolved_location": "Boston, Massachusetts, US",
+      "linkedin_url": "https://linkedin.com/in/brianthomasking",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brian King",
+      "current_title": "CPG Partner",
+      "current_company": "Valor Equity Partners",
+      "years_at_current_role": 5.28,
+      "resolved_location": "Chicago",
+      "linkedin_url": "https://linkedin.com/in/brian-king-43107b1",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brian King",
+      "current_title": "Workday Functional Lead - Benefits",
+      "current_company": "City of Seattle",
+      "years_at_current_role": 2.44,
+      "resolved_location": "Greater Seattle Area",
+      "linkedin_url": "https://linkedin.com/in/brian-o-king",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brian King",
+      "current_title": "Project Manager",
+      "current_company": "Automated Logic Corporation",
+      "years_at_current_role": 10.69,
+      "resolved_location": "Sacramento, California, United States",
+      "linkedin_url": "https://linkedin.com/in/bkbez",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brian King",
+      "current_title": "Vice President, Global Partnerships",
+      "current_company": "RWS Group",
+      "years_at_current_role": 0.36,
+      "resolved_location": "Washington DC-Baltimore Area",
+      "linkedin_url": "https://linkedin.com/in/briankingofip",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brian King",
+      "current_title": "Senior Financial Service Associate",
+      "current_company": "Prudential Financial",
+      "years_at_current_role": 3.11,
+      "resolved_location": "Westlake Village, California, United States",
+      "linkedin_url": "https://linkedin.com/in/brian-king1",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brian King",
+      "current_title": "Senior Internal Auditor",
+      "current_company": "First Citizens Bank",
+      "years_at_current_role": 4.03,
+      "resolved_location": "Morristown, New Jersey, United States",
+      "linkedin_url": "https://linkedin.com/in/trueleader",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Jason Buechel",
+      "current_title": "Vice President, Amazon Worldwide Grocery",
+      "current_company": "Amazon",
+      "years_at_current_role": 1.44,
+      "resolved_location": "Austin, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/jasonbuechel",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brian King",
+      "current_title": "Global Director, Asset Protection",
+      "current_company": "Amazon World Wide Grocery Stores/Wholefoods Market",
+      "years_at_current_role": 7.53,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/brian-king-61243b10",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brian Shillinglaw",
+      "current_title": "Chief Operations Officer",
+      "current_company": "Houchens Food Group",
+      "years_at_current_role": 0.86,
+      "resolved_location": "Bowling Green, Kentucky, United States",
+      "linkedin_url": "https://linkedin.com/in/brian-shillinglaw-63886151",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Jordan E Kelley",
+      "current_title": "Director, Enterprise Retail Initiatives",
+      "current_company": "Sprouts Farmers Market",
+      "years_at_current_role": 3.61,
+      "resolved_location": "Oceanside, California, United States",
+      "linkedin_url": "https://linkedin.com/in/jordanekelley",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Joe Kelley",
+      "current_title": "SVP Of The Retail Divisions At The Kroger Company",
+      "current_company": "Kroger",
+      "years_at_current_role": 1.11,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/joe-kelley",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Frank Kerr",
+      "current_title": "EVP, Chief Store Operations Officer",
+      "current_company": "Grocery Outlet",
+      "years_at_current_role": 0.77,
+      "resolved_location": "Emeryville, California, United States",
+      "linkedin_url": "https://linkedin.com/in/frankiekerr",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Mike Matscherz",
+      "current_title": "GM Operations Performance Management Worldwide Grocery Stores",
+      "current_company": "Amazon",
+      "years_at_current_role": 0.53,
+      "resolved_location": "Austin, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/mike-matscherz-5245a611",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brian McKnight",
+      "current_title": "Division Retail Operations Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 30.36,
+      "resolved_location": "Houston, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/brian-mcknight-06142a98",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Mark McGowan",
+      "current_title": "EVP Of Retail And Chief Merchandising Officer",
+      "current_company": "C&S Wholesale Grocers",
+      "years_at_current_role": 1.77,
+      "resolved_location": "Mechanicsburg, Pennsylvania, United States",
+      "linkedin_url": "https://linkedin.com/in/mark-mcgowan-174687174",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brian Bosworth",
+      "current_title": "Vice President",
+      "current_company": "Rouses Markets",
+      "years_at_current_role": 3.53,
+      "resolved_location": "Houma, Louisiana, United States",
+      "linkedin_url": "https://linkedin.com/in/brian-bosworth-322a0410",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Matt Reeves",
+      "current_title": "Senior Vice President",
+      "current_company": "Grocery Outlet",
+      "years_at_current_role": 1.03,
+      "resolved_location": "Emeryville, CA",
+      "linkedin_url": "https://linkedin.com/in/matt-reeves-leadership",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Tony Crumpton",
+      "current_title": "Chief Merchandising Officer",
+      "current_company": "United Supermarkets, LLC",
+      "years_at_current_role": 6.19,
+      "resolved_location": "Lubbock, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/tony-crumpton-51964b2",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Chris Albi",
+      "current_title": "Group VP King Soopers City Market",
+      "current_company": "King Soopers/City Market",
+      "years_at_current_role": 4.36,
+      "resolved_location": "Denver, Colorado, United States",
+      "linkedin_url": "https://linkedin.com/in/chris-albi-b6078623",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brian King",
+      "current_title": "CRM & Loyalty",
+      "current_company": "World Market",
+      "years_at_current_role": 5.44,
+      "resolved_location": "San Francisco Bay Area",
+      "linkedin_url": "https://linkedin.com/in/briankingmarketing",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Kristine S Petrie",
+      "current_title": "CAO And Process Improvement Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 3.44,
+      "resolved_location": "Bellevue, Washington, United States",
+      "linkedin_url": "https://linkedin.com/in/kristine-s-petrie-877145285",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Simon Bott",
+      "current_title": "Senior Product Manager",
+      "current_company": "Tesco",
+      "years_at_current_role": 8.69,
+      "resolved_location": "Welwyn Garden City",
+      "linkedin_url": "https://linkedin.com/in/simon-bott-8b150b1",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Carla Farrell",
+      "current_title": "Retail Cashier",
+      "current_company": "SPAR Ireland",
+      "years_at_current_role": 3.61,
+      "resolved_location": "Dublin, Republic of Ireland, IE",
+      "linkedin_url": "https://linkedin.com/in/carla-farrell-466870359",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brian Breen",
+      "current_title": "Senior Retail Opertions Manager - Kroger East",
+      "current_company": "Campbell\u2019s Snacks",
+      "years_at_current_role": 6.11,
+      "resolved_location": "Cincinnati, Ohio, United States",
+      "linkedin_url": "https://linkedin.com/in/brian-breen-a96b7859",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brian McCollum",
+      "current_title": "Regional Director",
+      "current_company": "Canteen North America",
+      "years_at_current_role": 1.36,
+      "resolved_location": "Fremont, California, United States",
+      "linkedin_url": "https://linkedin.com/in/briankmccollum",
+      "public_business_email": null,
+      "query_hit_count": 1
+    }
+  ]
+}

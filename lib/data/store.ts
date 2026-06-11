@@ -493,3 +493,11 @@ export async function getLeadCandidateById(prospectId: string, candidateId: stri
   const db = await readDb();
   return db.leadCandidates.find((item) => item.id === candidateId && item.prospectId === prospectId) || null;
 }
+
+export async function getAllCandidates() {
+  const db = await readDb();
+  const prospectMap = new Map(db.prospects.map((p) => [p.id, p.companyName]));
+  return db.leadCandidates
+    .map((c) => ({ ...c, prospectCompanyName: prospectMap.get(c.prospectId) ?? "Unknown" }))
+    .sort((a, b) => a.fullName.localeCompare(b.fullName));
+}

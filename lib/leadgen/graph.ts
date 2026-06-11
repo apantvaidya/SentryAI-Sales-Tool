@@ -92,6 +92,7 @@ export function buildLeadGraphPayload(run: LeadGenRun, candidates: LeadCandidate
     });
   }
   for (const candidate of displayedCandidates) {
+    if (candidate.sourceQueryIds.length <= 2) continue;
     for (const queryId of candidate.sourceQueryIds) {
       if (!displayedIds.has(candidate.id)) continue;
       edges.push({

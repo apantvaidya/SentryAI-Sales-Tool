@@ -639,14 +639,10 @@ function renderGraph(graph) {
   nodesLayer.innerHTML = "";
 
   graph.edges.forEach((edge) => {
-    if (
-      denseGraph &&
-      edge.type === "query-person" &&
-      currentSelection !== edge.source &&
-      currentSelection !== edge.target
-    ) {
-      return;
+    if (edge.type === "query-person") {
+      if (denseGraph && currentSelection !== edge.source && currentSelection !== edge.target) return;
     }
+    if (edge.type === "query-overlap" && (edge.intersection_count || 0) < 5) return;
     const source = layout.get(edge.source);
     const target = layout.get(edge.target);
     if (!source || !target) return;

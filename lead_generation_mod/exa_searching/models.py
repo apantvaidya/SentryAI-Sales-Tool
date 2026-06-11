@@ -28,27 +28,25 @@ def clean_url(value: Any) -> str | None:
 @dataclass(frozen=True)
 class SeedPersona:
     person_name: str
-    role: str
     company_name: str
     linkedin_url: str | None = None
+    role: str | None = None
 
     def __post_init__(self) -> None:
         person_name = clean_string(self.person_name)
-        role = clean_string(self.role)
         company_name = clean_string(self.company_name)
         linkedin_url = clean_url(self.linkedin_url)
+        role = clean_string(self.role)
 
         if not person_name:
             raise ValueError("seed_person.person_name is required")
-        if not role:
-            raise ValueError("seed_person.role is required")
         if not company_name:
             raise ValueError("seed_person.company_name is required")
 
         object.__setattr__(self, "person_name", person_name)
-        object.__setattr__(self, "role", role)
         object.__setattr__(self, "company_name", company_name)
         object.__setattr__(self, "linkedin_url", linkedin_url)
+        object.__setattr__(self, "role", role)
 
     @classmethod
     def from_dict(cls, payload: dict[str, Any]) -> "SeedPersona":
@@ -91,6 +89,7 @@ class PersonaLeadRecord:
     resolved_location: str | None
     linkedin_url: str | None
     public_business_email: str | None = None
+    query_hit_count: int = 1
 
     def __post_init__(self) -> None:
         object.__setattr__(self, "full_name", clean_string(self.full_name))
@@ -114,6 +113,7 @@ class PersonaLeadRecord:
             resolved_location=payload.get("resolved_location"),
             linkedin_url=payload.get("linkedin_url"),
             public_business_email=payload.get("public_business_email"),
+            query_hit_count=int(payload.get("query_hit_count", 1) or 1),
         )
 
     def to_dict(self) -> dict[str, Any]:
@@ -138,6 +138,7 @@ class MappedCandidate:
     current_role_count: int = 0
     used_recent_role_fallback: bool = False
     work_history_count: int = 0
+    query_hit_count: int = 1
     mapping_notes: list[str] = field(default_factory=list)
 
     def __post_init__(self) -> None:
@@ -164,6 +165,7 @@ class MappedCandidate:
             resolved_location=self.resolved_location,
             linkedin_url=self.linkedin_url,
             public_business_email=None,
+            query_hit_count=self.query_hit_count,
         )
 
     def to_dict(self) -> dict[str, Any]:
@@ -218,4 +220,25 @@ class RunResult:
             "summary": self.summary,
             "artifact_paths": self.artifact_paths,
             "batch": self.batch.to_dict(),
+        }
+
+
+@dataclass(frozen=True)
+class ExpansionResult:
+    original_seed: SeedPersona
+    target_count: int
+    hop_results: list[RunResult]  # one per seed pivot
+    pivot_trail: list[SeedPersona]  # seeds used at each hop (including original)
+    total_leads_collected: int
+    stopped_reason: str  # "target_reached" | "no_pivot_found" | "max_hops_reached"
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "original_seed": self.original_seed.to_dict(),
+            "target_count": self.target_count,
+            "total_leads_collected": self.total_leads_collected,
+            "stopped_reason": self.stopped_reason,
+            "hops": len(self.hop_results),
+            "pivot_trail": [seed.to_dict() for seed in self.pivot_trail],
+            "hop_run_ids": [result.run_id for result in self.hop_results],
         }

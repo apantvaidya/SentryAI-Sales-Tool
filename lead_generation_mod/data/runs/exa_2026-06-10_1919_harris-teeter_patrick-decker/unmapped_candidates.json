@@ -1,0 +1,8 @@
+[
+  {
+    "vector_id": "06",
+    "vector_name": "linkedin_anchored_similarity",
+    "result_url": "https://linkedin.com/in/patriley15",
+    "reason": "missing_entities_or_current_role"
+  }
+]

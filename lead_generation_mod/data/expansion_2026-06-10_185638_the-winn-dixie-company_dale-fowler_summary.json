@@ -1,0 +1,23 @@
+{
+  "original_seed": {
+    "person_name": "Dale Fowler",
+    "company_name": "The Winn-Dixie Company",
+    "linkedin_url": "https://www.linkedin.com/in/dale-fowler-cfe-46154b6/",
+    "role": "Senior Director - Field Asset Protection Operations"
+  },
+  "target_count": 200,
+  "total_leads_collected": 274,
+  "stopped_reason": "target_reached",
+  "hops": 1,
+  "pivot_trail": [
+    {
+      "person_name": "Dale Fowler",
+      "company_name": "The Winn-Dixie Company",
+      "linkedin_url": "https://www.linkedin.com/in/dale-fowler-cfe-46154b6/",
+      "role": "Senior Director - Field Asset Protection Operations"
+    }
+  ],
+  "hop_run_ids": [
+    "exa_2026-06-10_1856_the-winn-dixie-company_dale-fowler"
+  ]
+}

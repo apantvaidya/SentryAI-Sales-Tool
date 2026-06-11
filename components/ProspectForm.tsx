@@ -1,15 +1,5 @@
 import { createProspect } from "@/app/actions";
 
-const segments = [
-  "enterprise",
-  "property management",
-  "logistics",
-  "campuses",
-  "retail",
-  "municipalities",
-  "security companies"
-];
-
 export function ProspectForm() {
   return (
     <form action={createProspect} className="surface grid gap-5 p-6">
@@ -21,48 +11,34 @@ export function ProspectForm() {
       </div>
       <div className="grid gap-5 md:grid-cols-2">
         <div className="grid gap-2">
-          <label className="label" htmlFor="website">
-            Website URL
+          <label className="label" htmlFor="firstName">
+            First name
           </label>
-          <input className="field" id="website" name="website" type="url" placeholder="https://example.com" />
+          <input className="field" id="firstName" name="firstName" required placeholder="Jane" />
         </div>
         <div className="grid gap-2">
-          <label className="label" htmlFor="industry">
-            Industry
+          <label className="label" htmlFor="lastName">
+            Last name
           </label>
-          <input className="field" id="industry" name="industry" placeholder="Logistics, retail, education..." />
-        </div>
-      </div>
-      <div className="grid gap-5 md:grid-cols-2">
-        <div className="grid gap-2">
-          <label className="label" htmlFor="companySize">
-            Company size
-          </label>
-          <input className="field" id="companySize" name="companySize" placeholder="500-1000 employees" />
-        </div>
-        <div className="grid gap-2">
-          <label className="label" htmlFor="segment">
-            Target segment
-          </label>
-          <select className="field" id="segment" name="segment" defaultValue="">
-            <option value="">Select segment</option>
-            {segments.map((segment) => (
-              <option key={segment} value={segment}>
-                {segment}
-              </option>
-            ))}
-          </select>
+          <input className="field" id="lastName" name="lastName" required placeholder="Doe" />
         </div>
       </div>
       <div className="grid gap-2">
-        <label className="label" htmlFor="notes">
-          Known pain points or notes
+        <label className="label" htmlFor="role">
+          Role
         </label>
-        <textarea
-          className="field min-h-32"
-          id="notes"
-          name="notes"
-          placeholder="Distributed sites, guard staffing challenges, high camera count..."
+        <input className="field" id="role" name="role" required placeholder="Director of Security" />
+      </div>
+      <div className="grid gap-2">
+        <label className="label" htmlFor="linkedinUrl">
+          LinkedIn URL <span className="text-slate-400 font-normal">(optional)</span>
+        </label>
+        <input
+          className="field"
+          id="linkedinUrl"
+          name="linkedinUrl"
+          type="url"
+          placeholder="https://www.linkedin.com/in/janedoe"
         />
       </div>
       <div className="flex items-center justify-between border-t border-slate-100 pt-5">

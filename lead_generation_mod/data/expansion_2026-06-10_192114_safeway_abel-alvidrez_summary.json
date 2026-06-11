@@ -1,0 +1,128 @@
+{
+  "original_seed": {
+    "person_name": "Abel Alvidrez",
+    "company_name": "Safeway",
+    "linkedin_url": "https://linkedin.com/in/abel-alvidrez-lpc-a0331a6",
+    "role": "Market Asset Protection Investigator - West Coast"
+  },
+  "target_count": 1000,
+  "total_leads_collected": 1048,
+  "stopped_reason": "target_reached",
+  "hops": 16,
+  "pivot_trail": [
+    {
+      "person_name": "Abel Alvidrez",
+      "company_name": "Safeway",
+      "linkedin_url": "https://linkedin.com/in/abel-alvidrez-lpc-a0331a6",
+      "role": "Market Asset Protection Investigator - West Coast"
+    },
+    {
+      "person_name": "Todd Sheehan",
+      "company_name": "Kroger",
+      "linkedin_url": "https://linkedin.com/in/todd-sheehan-cfi-536b9912",
+      "role": "District Asset Protection Manager"
+    },
+    {
+      "person_name": "Caroline Tiffany",
+      "company_name": "Albertsons/Vons/Pavilions",
+      "linkedin_url": "https://linkedin.com/in/caroline-tiffany-9965027",
+      "role": "District Asset Protection Manager"
+    },
+    {
+      "person_name": "Doug Kuripla",
+      "company_name": "Albertsons Companies",
+      "linkedin_url": "https://linkedin.com/in/doug-kuripla-2b133b41",
+      "role": "Senior Director Asset Protection"
+    },
+    {
+      "person_name": "Barry Neff",
+      "company_name": "Albertsons",
+      "linkedin_url": "https://linkedin.com/in/barry-neff-072a67a",
+      "role": "Asset Protection Manager Albertsons Houston District"
+    },
+    {
+      "person_name": "Carlos Perez",
+      "company_name": "Busch's Fresh Food Market",
+      "linkedin_url": "https://linkedin.com/in/carlosperez8",
+      "role": "Asset Protection Manager"
+    },
+    {
+      "person_name": "Frankie Bissell",
+      "company_name": "The Fresh Market",
+      "linkedin_url": "https://linkedin.com/in/frankie-bissell-cfi-569b8255",
+      "role": "Asset Protection & Operations Support Manager"
+    },
+    {
+      "person_name": "Patrick Decker",
+      "company_name": "Harris Teeter",
+      "linkedin_url": "https://linkedin.com/in/patrick-decker-lpc-7860b917b",
+      "role": "Regional Asset Protection Manager"
+    },
+    {
+      "person_name": "Brandon G. Major",
+      "company_name": "Southeastern Grocers",
+      "linkedin_url": "https://linkedin.com/in/brandongmajor",
+      "role": "Senior Manager, Asset Protection & Food And Safety"
+    },
+    {
+      "person_name": "Christine Cunningham",
+      "company_name": "Whole Foods Market",
+      "linkedin_url": "https://linkedin.com/in/christine-cunningham-46932518",
+      "role": "Regional Asset Protection And Safety Manager"
+    },
+    {
+      "person_name": "Brian King",
+      "company_name": "Amazon World Wide Grocery Stores/Wholefoods Market",
+      "linkedin_url": "https://linkedin.com/in/brian-king-61243b10",
+      "role": "Global Director, Asset Protection"
+    },
+    {
+      "person_name": "Brian King",
+      "company_name": "The Home Depot",
+      "linkedin_url": "https://linkedin.com/in/brian-king-95b346121",
+      "role": "Asset Protection Specialist"
+    },
+    {
+      "person_name": "Sarah Fennimore",
+      "company_name": "Home Depot",
+      "linkedin_url": "https://linkedin.com/in/sarah-fennimore-3b8287106",
+      "role": "District Asset Protection Manager"
+    },
+    {
+      "person_name": "Silvana Baxter",
+      "company_name": "Food Lion",
+      "linkedin_url": "https://linkedin.com/in/silvana-baxter-lpc-cfi-4011812b",
+      "role": "Asset Protection Division Manager"
+    },
+    {
+      "person_name": "WVTS Marlund Harvey",
+      "company_name": "Starbucks",
+      "linkedin_url": "https://linkedin.com/in/marlundharvey",
+      "role": "Manager, Partner Asset Protection"
+    },
+    {
+      "person_name": "Matthew VanEmon",
+      "company_name": "Walgreens",
+      "linkedin_url": "https://linkedin.com/in/matthew-vanemon-8a271211",
+      "role": "Asset Protection Manager"
+    }
+  ],
+  "hop_run_ids": [
+    "exa_2026-06-10_1918_safeway_abel-alvidrez",
+    "exa_2026-06-10_1918_kroger_todd-sheehan",
+    "exa_2026-06-10_1919_albertsons-vons-pavilions_caroline-tiffany",
+    "exa_2026-06-10_1919_albertsons-companies_doug-kuripla",
+    "exa_2026-06-10_1919_albertsons_barry-neff",
+    "exa_2026-06-10_1919_busch-s-fresh-food-market_carlos-perez",
+    "exa_2026-06-10_1919_the-fresh-market_frankie-bissell",
+    "exa_2026-06-10_1919_harris-teeter_patrick-decker",
+    "exa_2026-06-10_1919_southeastern-grocers_brandon-g-major",
+    "exa_2026-06-10_1920_whole-foods-market_christine-cunningham",
+    "exa_2026-06-10_1920_amazon-world-wide-grocery-st_brian-king",
+    "exa_2026-06-10_1920_the-home-depot_brian-king",
+    "exa_2026-06-10_1920_home-depot_sarah-fennimore",
+    "exa_2026-06-10_1920_food-lion_silvana-baxter",
+    "exa_2026-06-10_1920_starbucks_wvts-marlund-harvey",
+    "exa_2026-06-10_1921_walgreens_matthew-vanemon"
+  ]
+}

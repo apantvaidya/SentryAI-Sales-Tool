@@ -1,0 +1,3495 @@
+[
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Dennis Smith",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 2.69,
+      "resolved_location": "Charlotte, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/dennis-smith-cfi-lpc-1b77a828",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/czg658qjdyv",
+      "exa_result_url": "https://linkedin.com/in/dennis-smith-cfi-lpc-1b77a828",
+      "exa_entity_id": "https://exa.ai/library/person/czg658qjdyv",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 11,
+      "query_hit_count": 4,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Brooke Cash",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 3.78,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/brooke-cash-b3018414b",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/ls6h97dnj9p",
+      "exa_result_url": "https://linkedin.com/in/brooke-cash-b3018414b",
+      "exa_entity_id": "https://exa.ai/library/person/ls6h97dnj9p",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 4,
+      "query_hit_count": 3,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Justin Maiorana",
+      "current_title": "Senior Manager, Asset Protection",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 5.36,
+      "resolved_location": "Matthews, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/justin-maiorana-cfi-lpc-79668b28",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/c4r5w3wcwmk",
+      "exa_result_url": "https://linkedin.com/in/justin-maiorana-cfi-lpc-79668b28",
+      "exa_entity_id": "https://exa.ai/library/person/c4r5w3wcwmk",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 5,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Patrick Decker",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 20.77,
+      "resolved_location": "Charlotte Metro",
+      "linkedin_url": "https://linkedin.com/in/patrick-decker-lpc-7860b917b",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/446y7zps1my",
+      "exa_result_url": "https://linkedin.com/in/patrick-decker-lpc-7860b917b",
+      "exa_entity_id": "https://exa.ai/library/person/446y7zps1my",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 5,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Tonya Jenkins",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": null,
+      "resolved_location": "Salisbury, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/tonya-jenkins-753b93107",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/z3q85y85ymf",
+      "exa_result_url": "https://linkedin.com/in/tonya-jenkins-753b93107",
+      "exa_entity_id": "https://exa.ai/library/person/z3q85y85ymf",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 3,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "David George",
+      "current_title": "Vice President Of Loss Prevention",
+      "current_company": "Harris Teeter Supermarkets, Inc",
+      "years_at_current_role": null,
+      "resolved_location": "Matthews, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/david-george-13539312",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/1ptw4m4sn1d",
+      "exa_result_url": "https://linkedin.com/in/david-george-13539312",
+      "exa_entity_id": "https://exa.ai/library/person/1ptw4m4sn1d",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 3,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "LeAnn Sek",
+      "current_title": "Regional Operations Manager",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 0.44,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/leann-sek-122ab246",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/x4c0js8sl7r",
+      "exa_result_url": "https://linkedin.com/in/leann-sek-122ab246",
+      "exa_entity_id": "https://exa.ai/library/person/x4c0js8sl7r",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "David Pardue",
+      "current_title": "Vice President Asset Protection - Harris Teeter",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 10.36,
+      "resolved_location": "Huntersville, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/david-pardue-a60824a5",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/zr3b4zhxx0z",
+      "exa_result_url": "https://linkedin.com/in/david-pardue-a60824a5",
+      "exa_entity_id": "https://exa.ai/library/person/zr3b4zhxx0z",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 3,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Alisha Drum",
+      "current_title": "Asset Protection Analyst",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 2.28,
+      "resolved_location": "Matthews, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/alisha-drum-863490181",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/dczlmj31jvn",
+      "exa_result_url": "https://linkedin.com/in/alisha-drum-863490181",
+      "exa_entity_id": "https://exa.ai/library/person/dczlmj31jvn",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 2,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Cameron Dail",
+      "current_title": "Asset Protection Coordinator (Mult-Unit)",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 0.86,
+      "resolved_location": "Summerville, South Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/cameron-dail-a9579a10a",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/7wwk8m7f6k8",
+      "exa_result_url": "https://linkedin.com/in/cameron-dail-a9579a10a",
+      "exa_entity_id": "https://exa.ai/library/person/7wwk8m7f6k8",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 3,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Jon Miller",
+      "current_title": "Asset Protection Coordinator",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 14.28,
+      "resolved_location": "Charlotte, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/mrjonmiller",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/8w2zz3z12bh",
+      "exa_result_url": "https://linkedin.com/in/mrjonmiller",
+      "exa_entity_id": "https://exa.ai/library/person/8w2zz3z12bh",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 3,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles",
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Kevin Hancock",
+      "current_title": "Store Director",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 1.94,
+      "resolved_location": "Rolesville, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/kevin-hancock-b31085263",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/y9c1gy6p4tg",
+      "exa_result_url": "https://linkedin.com/in/kevin-hancock-b31085263",
+      "exa_entity_id": "https://exa.ai/library/person/y9c1gy6p4tg",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 3,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles",
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "James Pisciotta",
+      "current_title": "Store Director-LDP Trainer",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 8.61,
+      "resolved_location": "Charlotte, North Carolina",
+      "linkedin_url": "https://linkedin.com/in/james-pisciotta-46a92813",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/zvll3cncxws",
+      "exa_result_url": "https://linkedin.com/in/james-pisciotta-46a92813",
+      "exa_entity_id": "https://exa.ai/library/person/zvll3cncxws",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 2,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Brandon Marett",
+      "current_title": "Store Manager",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 8.61,
+      "resolved_location": "Raleigh-Durham, North Carolina Area",
+      "linkedin_url": "https://linkedin.com/in/brandon-marett-b5695518a",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/0lwxf4ch6pz",
+      "exa_result_url": "https://linkedin.com/in/brandon-marett-b5695518a",
+      "exa_entity_id": "https://exa.ai/library/person/0lwxf4ch6pz",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Chris Wulff",
+      "current_title": "Store Director",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 9.19,
+      "resolved_location": "Wilmington, North Carolina Area",
+      "linkedin_url": "https://linkedin.com/in/chris-wulff-68629922",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/kb9ldvbnp0k",
+      "exa_result_url": "https://linkedin.com/in/chris-wulff-68629922",
+      "exa_entity_id": "https://exa.ai/library/person/kb9ldvbnp0k",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Kevin Branham",
+      "current_title": "Asset Protection Specialist",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 9.44,
+      "resolved_location": "Charleston, South Carolina Area",
+      "linkedin_url": "https://linkedin.com/in/kevin-branham-03221b72",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/89br3xhdxlg",
+      "exa_result_url": "https://linkedin.com/in/kevin-branham-03221b72",
+      "exa_entity_id": "https://exa.ai/library/person/89br3xhdxlg",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 4,
+      "query_hit_count": 3,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Alexis Broom",
+      "current_title": "Asset Protection Specialist",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 3.78,
+      "resolved_location": "Charlotte Metro",
+      "linkedin_url": "https://linkedin.com/in/alexis-broom-90b565100",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/m9tz2pxcbc3",
+      "exa_result_url": "https://linkedin.com/in/alexis-broom-90b565100",
+      "exa_entity_id": "https://exa.ai/library/person/m9tz2pxcbc3",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 3,
+      "query_hit_count": 2,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Robert P Dworkin",
+      "current_title": "Asset Protection Specialist",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 2.03,
+      "resolved_location": "Charlotte Metro",
+      "linkedin_url": "https://linkedin.com/in/robert-p-dworkin-lpc-2001371b",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/jtxks06yzz6",
+      "exa_result_url": "https://linkedin.com/in/robert-p-dworkin-lpc-2001371b",
+      "exa_entity_id": "https://exa.ai/library/person/jtxks06yzz6",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 14,
+      "query_hit_count": 3,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "David Burnette",
+      "current_title": "Asset Protection Specialist",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 25.69,
+      "resolved_location": "Virginia Beach, Virginia",
+      "linkedin_url": "https://linkedin.com/in/david-burnette-96696935",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/g43jzl8z092",
+      "exa_result_url": "https://linkedin.com/in/david-burnette-96696935",
+      "exa_entity_id": "https://exa.ai/library/person/g43jzl8z092",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 4,
+      "query_hit_count": 2,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Eddie Coker",
+      "current_title": "Senior Director, Global Security Strategy Programs",
+      "current_company": "McKesson",
+      "years_at_current_role": 3.36,
+      "resolved_location": "Charlotte, NC",
+      "linkedin_url": "https://linkedin.com/in/eddie-coker-cpp-cfi-558692110",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/jl3f8k5r5r5",
+      "exa_result_url": "https://linkedin.com/in/eddie-coker-cpp-cfi-558692110",
+      "exa_entity_id": "https://exa.ai/library/person/jl3f8k5r5r5",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Dennis Smith",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 2.69,
+      "resolved_location": "Charlotte, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/dennis-smith-cfi-lpc-1b77a828",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/czg658qjdyv",
+      "exa_result_url": "https://linkedin.com/in/dennis-smith-cfi-lpc-1b77a828",
+      "exa_entity_id": "https://exa.ai/library/person/czg658qjdyv",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 11,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Patrick Decker",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 20.77,
+      "resolved_location": "Charlotte Metro",
+      "linkedin_url": "https://linkedin.com/in/patrick-decker-lpc-7860b917b",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/446y7zps1my",
+      "exa_result_url": "https://linkedin.com/in/patrick-decker-lpc-7860b917b",
+      "exa_entity_id": "https://exa.ai/library/person/446y7zps1my",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Tonya Jenkins",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": null,
+      "resolved_location": "Salisbury, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/tonya-jenkins-753b93107",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/z3q85y85ymf",
+      "exa_result_url": "https://linkedin.com/in/tonya-jenkins-753b93107",
+      "exa_entity_id": "https://exa.ai/library/person/z3q85y85ymf",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Brooke Cash",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 3.78,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/brooke-cash-b3018414b",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/ls6h97dnj9p",
+      "exa_result_url": "https://linkedin.com/in/brooke-cash-b3018414b",
+      "exa_entity_id": "https://exa.ai/library/person/ls6h97dnj9p",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 4,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Justin Maiorana",
+      "current_title": "Senior Manager, Asset Protection",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 5.36,
+      "resolved_location": "Matthews, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/justin-maiorana-cfi-lpc-79668b28",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/c4r5w3wcwmk",
+      "exa_result_url": "https://linkedin.com/in/justin-maiorana-cfi-lpc-79668b28",
+      "exa_entity_id": "https://exa.ai/library/person/c4r5w3wcwmk",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Cameron Dail",
+      "current_title": "Asset Protection Coordinator (Mult-Unit)",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 0.86,
+      "resolved_location": "Summerville, South Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/cameron-dail-a9579a10a",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/7wwk8m7f6k8",
+      "exa_result_url": "https://linkedin.com/in/cameron-dail-a9579a10a",
+      "exa_entity_id": "https://exa.ai/library/person/7wwk8m7f6k8",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Jon Miller",
+      "current_title": "Asset Protection Coordinator",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 14.28,
+      "resolved_location": "Charlotte, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/mrjonmiller",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/8w2zz3z12bh",
+      "exa_result_url": "https://linkedin.com/in/mrjonmiller",
+      "exa_entity_id": "https://exa.ai/library/person/8w2zz3z12bh",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "David George",
+      "current_title": "Vice President Of Loss Prevention",
+      "current_company": "Harris Teeter Supermarkets, Inc",
+      "years_at_current_role": null,
+      "resolved_location": "Matthews, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/david-george-13539312",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/1ptw4m4sn1d",
+      "exa_result_url": "https://linkedin.com/in/david-george-13539312",
+      "exa_entity_id": "https://exa.ai/library/person/1ptw4m4sn1d",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "David Burnette",
+      "current_title": "Asset Protection Specialist",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 25.69,
+      "resolved_location": "Virginia Beach, Virginia",
+      "linkedin_url": "https://linkedin.com/in/david-burnette-96696935",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/g43jzl8z092",
+      "exa_result_url": "https://linkedin.com/in/david-burnette-96696935",
+      "exa_entity_id": "https://exa.ai/library/person/g43jzl8z092",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 4,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "David Pardue",
+      "current_title": "Vice President Asset Protection - Harris Teeter",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 10.36,
+      "resolved_location": "Huntersville, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/david-pardue-a60824a5",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/zr3b4zhxx0z",
+      "exa_result_url": "https://linkedin.com/in/david-pardue-a60824a5",
+      "exa_entity_id": "https://exa.ai/library/person/zr3b4zhxx0z",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Kevin Branham",
+      "current_title": "Asset Protection Specialist",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 9.44,
+      "resolved_location": "Charleston, South Carolina Area",
+      "linkedin_url": "https://linkedin.com/in/kevin-branham-03221b72",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/89br3xhdxlg",
+      "exa_result_url": "https://linkedin.com/in/kevin-branham-03221b72",
+      "exa_entity_id": "https://exa.ai/library/person/89br3xhdxlg",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 4,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Robert P Dworkin",
+      "current_title": "Asset Protection Specialist",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 2.03,
+      "resolved_location": "Charlotte Metro",
+      "linkedin_url": "https://linkedin.com/in/robert-p-dworkin-lpc-2001371b",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/jtxks06yzz6",
+      "exa_result_url": "https://linkedin.com/in/robert-p-dworkin-lpc-2001371b",
+      "exa_entity_id": "https://exa.ai/library/person/jtxks06yzz6",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 14,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Alexis Broom",
+      "current_title": "Asset Protection Specialist",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 3.78,
+      "resolved_location": "Charlotte Metro",
+      "linkedin_url": "https://linkedin.com/in/alexis-broom-90b565100",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/m9tz2pxcbc3",
+      "exa_result_url": "https://linkedin.com/in/alexis-broom-90b565100",
+      "exa_entity_id": "https://exa.ai/library/person/m9tz2pxcbc3",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 3,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "James R. Brock",
+      "current_title": "Retired",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 19.44,
+      "resolved_location": "Hope Mills, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/james-r-brock-68613a76",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/2dptz9txmp3",
+      "exa_result_url": "https://linkedin.com/in/james-r-brock-68613a76",
+      "exa_entity_id": "https://exa.ai/library/person/2dptz9txmp3",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 4,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Erin Dugan",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Giant/Martins",
+      "years_at_current_role": 6.95,
+      "resolved_location": "Carlisle, Pennsylvania",
+      "linkedin_url": "https://linkedin.com/in/erin-dugan-209a977",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/3b55pnhphc4",
+      "exa_result_url": "https://linkedin.com/in/erin-dugan-209a977",
+      "exa_entity_id": "https://exa.ai/library/person/3b55pnhphc4",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 12,
+      "query_hit_count": 3,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "dropped",
+    "reasons": [
+      "blacklisted_title"
+    ],
+    "candidate": {
+      "full_name": "Catherine Wilson",
+      "current_title": "Wine Consultant",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 7.44,
+      "resolved_location": "Charlottesville, Virginia Area",
+      "linkedin_url": "https://linkedin.com/in/catherine-wilson-89667063",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/194kz11yz0b",
+      "exa_result_url": "https://linkedin.com/in/catherine-wilson-89667063",
+      "exa_entity_id": "https://exa.ai/library/person/194kz11yz0b",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 2,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Todd Sheehan",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 7.86,
+      "resolved_location": "Savannah, Georgia, United States",
+      "linkedin_url": "https://linkedin.com/in/todd-sheehan-cfi-536b9912",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/g8704w8df32",
+      "exa_result_url": "https://linkedin.com/in/todd-sheehan-cfi-536b9912",
+      "exa_entity_id": "https://exa.ai/library/person/g8704w8df32",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 4,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Ori Yoran",
+      "current_title": "Research Lead",
+      "current_company": "Ask-AI",
+      "years_at_current_role": 3.61,
+      "resolved_location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "linkedin_url": "https://linkedin.com/in/ori-yoran-8022ba140",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/1hp1dp9t7y5",
+      "exa_result_url": "https://linkedin.com/in/ori-yoran-8022ba140",
+      "exa_entity_id": "https://exa.ai/library/person/1hp1dp9t7y5",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 4,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Bernard Peterson",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 3.2,
+      "resolved_location": "Murfreesboro, Tennessee, United States",
+      "linkedin_url": "https://linkedin.com/in/bernard-peterson-cfi-lsa-18840379",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/z5x0pch766d",
+      "exa_result_url": "https://linkedin.com/in/bernard-peterson-cfi-lsa-18840379",
+      "exa_entity_id": "https://exa.ai/library/person/z5x0pch766d",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 3,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Joe Oliveira",
+      "current_title": "Global Leader Of Loss Prevention, Compliance, Risk Management And Corportate Security",
+      "current_company": "VSP Vision",
+      "years_at_current_role": 2.69,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/joe-oliveira-cfi-6b756411",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/rbcsjdmxt63",
+      "exa_result_url": "https://linkedin.com/in/joe-oliveira-cfi-6b756411",
+      "exa_entity_id": "https://exa.ai/library/person/rbcsjdmxt63",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Dennis Smith",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 2.69,
+      "resolved_location": "Charlotte, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/dennis-smith-cfi-lpc-1b77a828",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/czg658qjdyv",
+      "exa_result_url": "https://linkedin.com/in/dennis-smith-cfi-lpc-1b77a828",
+      "exa_entity_id": "https://exa.ai/library/person/czg658qjdyv",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 11,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Justin Maiorana",
+      "current_title": "Senior Manager, Asset Protection",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 5.36,
+      "resolved_location": "Matthews, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/justin-maiorana-cfi-lpc-79668b28",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/c4r5w3wcwmk",
+      "exa_result_url": "https://linkedin.com/in/justin-maiorana-cfi-lpc-79668b28",
+      "exa_entity_id": "https://exa.ai/library/person/c4r5w3wcwmk",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Patrick Decker",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 20.77,
+      "resolved_location": "Charlotte Metro",
+      "linkedin_url": "https://linkedin.com/in/patrick-decker-lpc-7860b917b",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/446y7zps1my",
+      "exa_result_url": "https://linkedin.com/in/patrick-decker-lpc-7860b917b",
+      "exa_entity_id": "https://exa.ai/library/person/446y7zps1my",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Brooke Cash",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 3.78,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/brooke-cash-b3018414b",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/ls6h97dnj9p",
+      "exa_result_url": "https://linkedin.com/in/brooke-cash-b3018414b",
+      "exa_entity_id": "https://exa.ai/library/person/ls6h97dnj9p",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 4,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Tonya Jenkins",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": null,
+      "resolved_location": "Salisbury, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/tonya-jenkins-753b93107",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/z3q85y85ymf",
+      "exa_result_url": "https://linkedin.com/in/tonya-jenkins-753b93107",
+      "exa_entity_id": "https://exa.ai/library/person/z3q85y85ymf",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "David George",
+      "current_title": "Vice President Of Loss Prevention",
+      "current_company": "Harris Teeter Supermarkets, Inc",
+      "years_at_current_role": null,
+      "resolved_location": "Matthews, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/david-george-13539312",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/1ptw4m4sn1d",
+      "exa_result_url": "https://linkedin.com/in/david-george-13539312",
+      "exa_entity_id": "https://exa.ai/library/person/1ptw4m4sn1d",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Jon Miller",
+      "current_title": "Asset Protection Coordinator",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 14.28,
+      "resolved_location": "Charlotte, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/mrjonmiller",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/8w2zz3z12bh",
+      "exa_result_url": "https://linkedin.com/in/mrjonmiller",
+      "exa_entity_id": "https://exa.ai/library/person/8w2zz3z12bh",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Cameron Dail",
+      "current_title": "Asset Protection Coordinator (Mult-Unit)",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 0.86,
+      "resolved_location": "Summerville, South Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/cameron-dail-a9579a10a",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/7wwk8m7f6k8",
+      "exa_result_url": "https://linkedin.com/in/cameron-dail-a9579a10a",
+      "exa_entity_id": "https://exa.ai/library/person/7wwk8m7f6k8",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Erin Dugan",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Giant/Martins",
+      "years_at_current_role": 6.95,
+      "resolved_location": "Carlisle, Pennsylvania",
+      "linkedin_url": "https://linkedin.com/in/erin-dugan-209a977",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/3b55pnhphc4",
+      "exa_result_url": "https://linkedin.com/in/erin-dugan-209a977",
+      "exa_entity_id": "https://exa.ai/library/person/3b55pnhphc4",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 12,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Lacey Reid",
+      "current_title": "Asset Protection Coordinator",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": null,
+      "resolved_location": "Virginia Beach, Virginia, United States",
+      "linkedin_url": "https://linkedin.com/in/lacey-reid-9643a3252",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/8rn19wxfhtb",
+      "exa_result_url": "https://linkedin.com/in/lacey-reid-9643a3252",
+      "exa_entity_id": "https://exa.ai/library/person/8rn19wxfhtb",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "David Pardue",
+      "current_title": "Vice President Asset Protection - Harris Teeter",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 10.36,
+      "resolved_location": "Huntersville, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/david-pardue-a60824a5",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/zr3b4zhxx0z",
+      "exa_result_url": "https://linkedin.com/in/david-pardue-a60824a5",
+      "exa_entity_id": "https://exa.ai/library/person/zr3b4zhxx0z",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Kamryn Ingold",
+      "current_title": "Loss Prevention Specialist",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 7.44,
+      "resolved_location": "Chapel Hill, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/kamryn-ingold-219a1a268",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/8sxsg8y4vmj",
+      "exa_result_url": "https://linkedin.com/in/kamryn-ingold-219a1a268",
+      "exa_entity_id": "https://exa.ai/library/person/8sxsg8y4vmj",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Gary Jackson",
+      "current_title": "Comanager",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 29.11,
+      "resolved_location": "Jacksonville, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/gary-jackson-729402a0",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/ffk2q7dcxwt",
+      "exa_result_url": "https://linkedin.com/in/gary-jackson-729402a0",
+      "exa_entity_id": "https://exa.ai/library/person/ffk2q7dcxwt",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 2,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles",
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "James Pisciotta",
+      "current_title": "Store Director-LDP Trainer",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 8.61,
+      "resolved_location": "Charlotte, North Carolina",
+      "linkedin_url": "https://linkedin.com/in/james-pisciotta-46a92813",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/zvll3cncxws",
+      "exa_result_url": "https://linkedin.com/in/james-pisciotta-46a92813",
+      "exa_entity_id": "https://exa.ai/library/person/zvll3cncxws",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Michael S.",
+      "current_title": "Harris Teeter Store Director",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 2.78,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/michael-s-7043574a",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/rjg851npw85",
+      "exa_result_url": "https://linkedin.com/in/michael-s-7043574a",
+      "exa_entity_id": "https://exa.ai/library/person/rjg851npw85",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Alisha Drum",
+      "current_title": "Asset Protection Analyst",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 2.28,
+      "resolved_location": "Matthews, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/alisha-drum-863490181",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/dczlmj31jvn",
+      "exa_result_url": "https://linkedin.com/in/alisha-drum-863490181",
+      "exa_entity_id": "https://exa.ai/library/person/dczlmj31jvn",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles",
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Chris Martin",
+      "current_title": "Store Director",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 1.77,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/chris-martin-376734189",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/52lxm8mgzj3",
+      "exa_result_url": "https://linkedin.com/in/chris-martin-376734189",
+      "exa_entity_id": "https://exa.ai/library/person/52lxm8mgzj3",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 4,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Robert P Dworkin",
+      "current_title": "Asset Protection Specialist",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 2.03,
+      "resolved_location": "Charlotte Metro",
+      "linkedin_url": "https://linkedin.com/in/robert-p-dworkin-lpc-2001371b",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/jtxks06yzz6",
+      "exa_result_url": "https://linkedin.com/in/robert-p-dworkin-lpc-2001371b",
+      "exa_entity_id": "https://exa.ai/library/person/jtxks06yzz6",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 14,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Kevin Branham",
+      "current_title": "Asset Protection Specialist",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 9.44,
+      "resolved_location": "Charleston, South Carolina Area",
+      "linkedin_url": "https://linkedin.com/in/kevin-branham-03221b72",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/89br3xhdxlg",
+      "exa_result_url": "https://linkedin.com/in/kevin-branham-03221b72",
+      "exa_entity_id": "https://exa.ai/library/person/89br3xhdxlg",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 4,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Todd Sheehan",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 7.86,
+      "resolved_location": "Savannah, Georgia, United States",
+      "linkedin_url": "https://linkedin.com/in/todd-sheehan-cfi-536b9912",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/g8704w8df32",
+      "exa_result_url": "https://linkedin.com/in/todd-sheehan-cfi-536b9912",
+      "exa_entity_id": "https://exa.ai/library/person/g8704w8df32",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Scott Goodwin",
+      "current_title": "Sr. Regional Asset Protection Manager",
+      "current_company": "Southeastern Grocers",
+      "years_at_current_role": 25.44,
+      "resolved_location": "Charlotte, North Carolina Area",
+      "linkedin_url": "https://linkedin.com/in/scott-goodwin-crt-41b57910",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/1qdhnqxxb8f",
+      "exa_result_url": "https://linkedin.com/in/scott-goodwin-crt-41b57910",
+      "exa_entity_id": "https://exa.ai/library/person/1qdhnqxxb8f",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 2,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Patrick Decker",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 20.77,
+      "resolved_location": "Charlotte Metro",
+      "linkedin_url": "https://linkedin.com/in/patrick-decker-lpc-7860b917b",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/446y7zps1my",
+      "exa_result_url": "https://linkedin.com/in/patrick-decker-lpc-7860b917b",
+      "exa_entity_id": "https://exa.ai/library/person/446y7zps1my",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Patrick Fairley",
+      "current_title": "Region Asset Protection Manager",
+      "current_company": "Southeastern Grocers",
+      "years_at_current_role": 3.2,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/patrick-fairley-cfe-cfi-25755416",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/lyk2j4c9xgt",
+      "exa_result_url": "https://linkedin.com/in/patrick-fairley-cfe-cfi-25755416",
+      "exa_entity_id": "https://exa.ai/library/person/lyk2j4c9xgt",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 2,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Tony Brunetto",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 7.44,
+      "resolved_location": "Florida",
+      "linkedin_url": "https://linkedin.com/in/tony-brunetto-8374632a",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/wqczy7wq276",
+      "exa_result_url": "https://linkedin.com/in/tony-brunetto-8374632a",
+      "exa_entity_id": "https://exa.ai/library/person/wqczy7wq276",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 2,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Jonathan Pierce",
+      "current_title": "Region Asset Protection Manager",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 1.77,
+      "resolved_location": "Jacksonville, FL",
+      "linkedin_url": "https://linkedin.com/in/jonathan-pierce-622baa107",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/688wyyvqr0z",
+      "exa_result_url": "https://linkedin.com/in/jonathan-pierce-622baa107",
+      "exa_entity_id": "https://exa.ai/library/person/688wyyvqr0z",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 2,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "PI-LPP Nicholas Johnston",
+      "current_title": "Regional Manager, Asset Protection",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/nick-johnston-pi-lpp",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/t8k5jmwbnd4",
+      "exa_result_url": "https://linkedin.com/in/nick-johnston-pi-lpp",
+      "exa_entity_id": "https://exa.ai/library/person/t8k5jmwbnd4",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 2,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Justin Maiorana",
+      "current_title": "Senior Manager, Asset Protection",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 5.36,
+      "resolved_location": "Matthews, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/justin-maiorana-cfi-lpc-79668b28",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/c4r5w3wcwmk",
+      "exa_result_url": "https://linkedin.com/in/justin-maiorana-cfi-lpc-79668b28",
+      "exa_entity_id": "https://exa.ai/library/person/c4r5w3wcwmk",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Scott Samuelson",
+      "current_title": "Director, Asset Protection",
+      "current_company": "Albertsons Companies",
+      "years_at_current_role": 2.11,
+      "resolved_location": "Portland, Oregon, United States",
+      "linkedin_url": "https://linkedin.com/in/scott-samuelson-067b964b",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/znc8lntvzxj",
+      "exa_result_url": "https://linkedin.com/in/scott-samuelson-067b964b",
+      "exa_entity_id": "https://exa.ai/library/person/znc8lntvzxj",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Phillip Gregory",
+      "current_title": "Regional Loss Prevention Manager",
+      "current_company": "Publix Super Markets",
+      "years_at_current_role": 4.86,
+      "resolved_location": "Atlanta, Georgia, United States",
+      "linkedin_url": "https://linkedin.com/in/phillip-gregory-a294aa112",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/1zvfcvx04p6",
+      "exa_result_url": "https://linkedin.com/in/phillip-gregory-a294aa112",
+      "exa_entity_id": "https://exa.ai/library/person/1zvfcvx04p6",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 17,
+      "query_hit_count": 2,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Bernard Peterson",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 3.2,
+      "resolved_location": "Murfreesboro, Tennessee, United States",
+      "linkedin_url": "https://linkedin.com/in/bernard-peterson-cfi-lsa-18840379",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/z5x0pch766d",
+      "exa_result_url": "https://linkedin.com/in/bernard-peterson-cfi-lsa-18840379",
+      "exa_entity_id": "https://exa.ai/library/person/z5x0pch766d",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Brandon G. Major",
+      "current_title": "Senior Manager, Asset Protection & Food And Safety",
+      "current_company": "Southeastern Grocers",
+      "years_at_current_role": 7.95,
+      "resolved_location": "Jacksonville, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/brandongmajor",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/9x1r4c208gx",
+      "exa_result_url": "https://linkedin.com/in/brandongmajor",
+      "exa_entity_id": "https://exa.ai/library/person/9x1r4c208gx",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 14,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Todd Sheehan",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 7.86,
+      "resolved_location": "Savannah, Georgia, United States",
+      "linkedin_url": "https://linkedin.com/in/todd-sheehan-cfi-536b9912",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/g8704w8df32",
+      "exa_result_url": "https://linkedin.com/in/todd-sheehan-cfi-536b9912",
+      "exa_entity_id": "https://exa.ai/library/person/g8704w8df32",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Andrew R.",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Dollar Tree Stores",
+      "years_at_current_role": 2.69,
+      "resolved_location": "Greater Boston",
+      "linkedin_url": "https://linkedin.com/in/andrew-r-22303482",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/bzy6v3zqj7v",
+      "exa_result_url": "https://linkedin.com/in/andrew-r-22303482",
+      "exa_entity_id": "https://exa.ai/library/person/bzy6v3zqj7v",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Andrew Babcock",
+      "current_title": "Field Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 3.86,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/andrewbabcock",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/8fz62s1wx6h",
+      "exa_result_url": "https://linkedin.com/in/andrewbabcock",
+      "exa_entity_id": "https://exa.ai/library/person/8fz62s1wx6h",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Octavio Vera",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Burlington Stores, Inc.",
+      "years_at_current_role": 5.94,
+      "resolved_location": "San Juan, Puerto Rico",
+      "linkedin_url": "https://linkedin.com/in/octavio-vera-438091b2",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/02whycj5zvm",
+      "exa_result_url": "https://linkedin.com/in/octavio-vera-438091b2",
+      "exa_entity_id": "https://exa.ai/library/person/02whycj5zvm",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Dale Fowler",
+      "current_title": "Senior Director - Field Asset Protection Operations",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/dale-fowler-cfe-46154b6",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/y49s12myhzr",
+      "exa_result_url": "https://linkedin.com/in/dale-fowler-cfe-46154b6",
+      "exa_entity_id": "https://exa.ai/library/person/y49s12myhzr",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 2,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Mike Limauro",
+      "current_title": "Head Of Asset Protection, Amazon Worldwide Grocery Stores VP Global Asset Protection, Whole Foods",
+      "current_company": "Amazon",
+      "years_at_current_role": 0.53,
+      "resolved_location": "Seattle, WA, US",
+      "linkedin_url": "https://linkedin.com/in/mikelimauro",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/fss0n0x2wdm",
+      "exa_result_url": "https://linkedin.com/in/mikelimauro",
+      "exa_entity_id": "https://exa.ai/library/person/fss0n0x2wdm",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Michael K.",
+      "current_title": "Regional Loss Prevention Manager - Seasonal Position",
+      "current_company": "Spirit Halloween",
+      "years_at_current_role": 1.77,
+      "resolved_location": "Florida",
+      "linkedin_url": "https://linkedin.com/in/michael-k-b710075",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/vc8bzx3ffwn",
+      "exa_result_url": "https://linkedin.com/in/michael-k-b710075",
+      "exa_entity_id": "https://exa.ai/library/person/vc8bzx3ffwn",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 12,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Tony Kuisle",
+      "current_title": "Director Of Asset Protection Operations",
+      "current_company": "Casey's",
+      "years_at_current_role": 5.36,
+      "resolved_location": "Ankeny, Iowa, US",
+      "linkedin_url": "https://linkedin.com/in/anthonykuisle",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/ghlkqlw1rh1",
+      "exa_result_url": "https://linkedin.com/in/anthonykuisle",
+      "exa_entity_id": "https://exa.ai/library/person/ghlkqlw1rh1",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 12,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Dustin Wells",
+      "current_title": "Senior Regional Loss Prevention Manager",
+      "current_company": "Savers | Value Village",
+      "years_at_current_role": 3.28,
+      "resolved_location": "Eastern United States",
+      "linkedin_url": "https://linkedin.com/in/dustin-wells-cfi-ab452548",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/clv51k1shtg",
+      "exa_result_url": "https://linkedin.com/in/dustin-wells-cfi-ab452548",
+      "exa_entity_id": "https://exa.ai/library/person/clv51k1shtg",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Dennis Smith",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 2.69,
+      "resolved_location": "Charlotte, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/dennis-smith-cfi-lpc-1b77a828",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/czg658qjdyv",
+      "exa_result_url": "https://linkedin.com/in/dennis-smith-cfi-lpc-1b77a828",
+      "exa_entity_id": "https://exa.ai/library/person/czg658qjdyv",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 11,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Tony Brunetto",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 7.44,
+      "resolved_location": "Florida",
+      "linkedin_url": "https://linkedin.com/in/tony-brunetto-8374632a",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/wqczy7wq276",
+      "exa_result_url": "https://linkedin.com/in/tony-brunetto-8374632a",
+      "exa_entity_id": "https://exa.ai/library/person/wqczy7wq276",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Patrick Decker",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 20.77,
+      "resolved_location": "Charlotte Metro",
+      "linkedin_url": "https://linkedin.com/in/patrick-decker-lpc-7860b917b",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/446y7zps1my",
+      "exa_result_url": "https://linkedin.com/in/patrick-decker-lpc-7860b917b",
+      "exa_entity_id": "https://exa.ai/library/person/446y7zps1my",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Patrick Fairley",
+      "current_title": "Region Asset Protection Manager",
+      "current_company": "Southeastern Grocers",
+      "years_at_current_role": 3.2,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/patrick-fairley-cfe-cfi-25755416",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/lyk2j4c9xgt",
+      "exa_result_url": "https://linkedin.com/in/patrick-fairley-cfe-cfi-25755416",
+      "exa_entity_id": "https://exa.ai/library/person/lyk2j4c9xgt",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Paul Evans",
+      "current_title": "Multi District Asset Protection Manager",
+      "current_company": "Weis Markets",
+      "years_at_current_role": 7.2,
+      "resolved_location": "Washington DC-Baltimore Area",
+      "linkedin_url": "https://linkedin.com/in/paul-evans-cfi-lpc-639054160",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/0ls0lpfhxnn",
+      "exa_result_url": "https://linkedin.com/in/paul-evans-cfi-lpc-639054160",
+      "exa_entity_id": "https://exa.ai/library/person/0ls0lpfhxnn",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Justin Maiorana",
+      "current_title": "Senior Manager, Asset Protection",
+      "current_company": "Harris Teeter",
+      "years_at_current_role": 5.36,
+      "resolved_location": "Matthews, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/justin-maiorana-cfi-lpc-79668b28",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/c4r5w3wcwmk",
+      "exa_result_url": "https://linkedin.com/in/justin-maiorana-cfi-lpc-79668b28",
+      "exa_entity_id": "https://exa.ai/library/person/c4r5w3wcwmk",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Jonathan Pierce",
+      "current_title": "Region Asset Protection Manager",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 1.77,
+      "resolved_location": "Jacksonville, FL",
+      "linkedin_url": "https://linkedin.com/in/jonathan-pierce-622baa107",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/688wyyvqr0z",
+      "exa_result_url": "https://linkedin.com/in/jonathan-pierce-622baa107",
+      "exa_entity_id": "https://exa.ai/library/person/688wyyvqr0z",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Scott Goodwin",
+      "current_title": "Sr. Regional Asset Protection Manager",
+      "current_company": "Southeastern Grocers",
+      "years_at_current_role": 25.44,
+      "resolved_location": "Charlotte, North Carolina Area",
+      "linkedin_url": "https://linkedin.com/in/scott-goodwin-crt-41b57910",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/1qdhnqxxb8f",
+      "exa_result_url": "https://linkedin.com/in/scott-goodwin-crt-41b57910",
+      "exa_entity_id": "https://exa.ai/library/person/1qdhnqxxb8f",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "PI-LPP Nicholas Johnston",
+      "current_title": "Regional Manager, Asset Protection",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/nick-johnston-pi-lpp",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/t8k5jmwbnd4",
+      "exa_result_url": "https://linkedin.com/in/nick-johnston-pi-lpp",
+      "exa_entity_id": "https://exa.ai/library/person/t8k5jmwbnd4",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Bernard Peterson",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 3.2,
+      "resolved_location": "Murfreesboro, Tennessee, United States",
+      "linkedin_url": "https://linkedin.com/in/bernard-peterson-cfi-lsa-18840379",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/z5x0pch766d",
+      "exa_result_url": "https://linkedin.com/in/bernard-peterson-cfi-lsa-18840379",
+      "exa_entity_id": "https://exa.ai/library/person/z5x0pch766d",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Phillip Gregory",
+      "current_title": "Regional Loss Prevention Manager",
+      "current_company": "Publix Super Markets",
+      "years_at_current_role": 4.86,
+      "resolved_location": "Atlanta, Georgia, United States",
+      "linkedin_url": "https://linkedin.com/in/phillip-gregory-a294aa112",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/1zvfcvx04p6",
+      "exa_result_url": "https://linkedin.com/in/phillip-gregory-a294aa112",
+      "exa_entity_id": "https://exa.ai/library/person/1zvfcvx04p6",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 17,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Erin Dugan",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Giant/Martins",
+      "years_at_current_role": 6.95,
+      "resolved_location": "Carlisle, Pennsylvania",
+      "linkedin_url": "https://linkedin.com/in/erin-dugan-209a977",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/3b55pnhphc4",
+      "exa_result_url": "https://linkedin.com/in/erin-dugan-209a977",
+      "exa_entity_id": "https://exa.ai/library/person/3b55pnhphc4",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 12,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Todd Sheehan",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 7.86,
+      "resolved_location": "Savannah, Georgia, United States",
+      "linkedin_url": "https://linkedin.com/in/todd-sheehan-cfi-536b9912",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/g8704w8df32",
+      "exa_result_url": "https://linkedin.com/in/todd-sheehan-cfi-536b9912",
+      "exa_entity_id": "https://exa.ai/library/person/g8704w8df32",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Brandon Lowery",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 4.11,
+      "resolved_location": "Nashville Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/brandon-lowery-cfi-982647152",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/pvdbbn7wp5l",
+      "exa_result_url": "https://linkedin.com/in/brandon-lowery-cfi-982647152",
+      "exa_entity_id": "https://exa.ai/library/person/pvdbbn7wp5l",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Ever Aguirre",
+      "current_title": "Asset Protection Department Manager",
+      "current_company": "Wegmans Food Markets",
+      "years_at_current_role": 2.11,
+      "resolved_location": "Woodbridge, Virginia, United States",
+      "linkedin_url": "https://linkedin.com/in/ever-aguirre-89584b102",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/pnmpzvvchdc",
+      "exa_result_url": "https://linkedin.com/in/ever-aguirre-89584b102",
+      "exa_entity_id": "https://exa.ai/library/person/pnmpzvvchdc",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Curtis W. Leininger",
+      "current_title": "Division Asset Protection Safety Director",
+      "current_company": "Lowe's Companies, Inc.",
+      "years_at_current_role": 4.11,
+      "resolved_location": "Mooresville, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/curtis-w-leininger-lpc-b8543510",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/dl6m59fhyg4",
+      "exa_result_url": "https://linkedin.com/in/curtis-w-leininger-lpc-b8543510",
+      "exa_entity_id": "https://exa.ai/library/person/dl6m59fhyg4",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "David Patterson",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Dollar Tree Stores",
+      "years_at_current_role": 1.77,
+      "resolved_location": "Illinois, United States",
+      "linkedin_url": "https://linkedin.com/in/david-patterson-jr-53a446231",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/s0gj6tg5nq4",
+      "exa_result_url": "https://linkedin.com/in/david-patterson-jr-53a446231",
+      "exa_entity_id": "https://exa.ai/library/person/s0gj6tg5nq4",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 2,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Dale Fowler",
+      "current_title": "Senior Director - Field Asset Protection Operations",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/dale-fowler-cfe-46154b6",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/y49s12myhzr",
+      "exa_result_url": "https://linkedin.com/in/dale-fowler-cfe-46154b6",
+      "exa_entity_id": "https://exa.ai/library/person/y49s12myhzr",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Cameron Maurer",
+      "current_title": "Regional Asset Protection Manager - Coastal",
+      "current_company": "Bass Pro Shops",
+      "years_at_current_role": 1.28,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/cameron-maurer",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/18h4y6jw8w8",
+      "exa_result_url": "https://linkedin.com/in/cameron-maurer",
+      "exa_entity_id": "https://exa.ai/library/person/18h4y6jw8w8",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Matthew VanEmon",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Walgreens",
+      "years_at_current_role": 8.36,
+      "resolved_location": "Raleigh, North Carolina",
+      "linkedin_url": "https://linkedin.com/in/matthew-vanemon-8a271211",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/y4f46zsgnmk",
+      "exa_result_url": "https://linkedin.com/in/matthew-vanemon-8a271211",
+      "exa_entity_id": "https://exa.ai/library/person/y4f46zsgnmk",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Patrick Revello LPC ACS",
+      "current_title": "Clinical Director",
+      "current_company": "Advance Housing, Inc.",
+      "years_at_current_role": 1.44,
+      "resolved_location": "New York City Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/patrick-revello-lpc-acs-4b33a480",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/vgd4gvczxg9",
+      "exa_result_url": "https://linkedin.com/in/patrick-revello-lpc-acs-4b33a480",
+      "exa_entity_id": "https://exa.ai/library/person/vgd4gvczxg9",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Patrick Decker",
+      "current_title": "Senior Manager - LPM Lead - Litigation, Arbitration & Employment Americas",
+      "current_company": "Hogan Lovells",
+      "years_at_current_role": 3.44,
+      "resolved_location": "Washington, District of Columbia, United States",
+      "linkedin_url": "https://linkedin.com/in/patrick-decker-7640a735",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/vfxmkbfpr5l",
+      "exa_result_url": "https://linkedin.com/in/patrick-decker-7640a735",
+      "exa_entity_id": "https://exa.ai/library/person/vfxmkbfpr5l",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Patrick Decker",
+      "current_title": "Senior Service Delivery Manager",
+      "current_company": "chargecloud",
+      "years_at_current_role": 0.86,
+      "resolved_location": "K\u00f6ln, NRW, DE",
+      "linkedin_url": "https://linkedin.com/in/patrick-decker-b90994176",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/gwr46p92px7",
+      "exa_result_url": "https://linkedin.com/in/patrick-decker-b90994176",
+      "exa_entity_id": "https://exa.ai/library/person/gwr46p92px7",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Patrick Stack",
+      "current_title": "Director Of Counseling Life Development",
+      "current_company": "Webster University",
+      "years_at_current_role": 38.28,
+      "resolved_location": "St. Louis City County, Missouri, United States",
+      "linkedin_url": "https://linkedin.com/in/patrick-stack-71713b12",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/gbrtmbt3t0y",
+      "exa_result_url": "https://linkedin.com/in/patrick-stack-71713b12",
+      "exa_entity_id": "https://exa.ai/library/person/gbrtmbt3t0y",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 2,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "patrick decker",
+      "current_title": "Board Member",
+      "current_company": "Massachusetts Eye and Ear",
+      "years_at_current_role": 1.44,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/patrick-decker-961b9082",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/wfs892ndc51",
+      "exa_result_url": "https://linkedin.com/in/patrick-decker-961b9082",
+      "exa_entity_id": "https://exa.ai/library/person/wfs892ndc51",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 2,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Patrick Deck",
+      "current_title": "Vice President - BM Carbonyl Derivatives Acetylenics Europe BM Global Gas Treatment",
+      "current_company": "BASF",
+      "years_at_current_role": 2.19,
+      "resolved_location": "Ludwigshafen, Rhineland-Palatinate, Germany",
+      "linkedin_url": "https://linkedin.com/in/patrick-deck",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/19rfynyct26",
+      "exa_result_url": "https://linkedin.com/in/patrick-deck",
+      "exa_entity_id": "https://exa.ai/library/person/19rfynyct26",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Patrick DECKER",
+      "current_title": "Responsable Affr\u00e8tement",
+      "current_company": "Kuehne+Nagel",
+      "years_at_current_role": 5.77,
+      "resolved_location": "Holtzheim, Grand Est, France",
+      "linkedin_url": "https://linkedin.com/in/patrick-decker-3122011b6",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/fqr4b07n5hv",
+      "exa_result_url": "https://linkedin.com/in/patrick-decker-3122011b6",
+      "exa_entity_id": "https://exa.ai/library/person/fqr4b07n5hv",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Patrick Decker",
+      "current_title": "Charter Commissioner",
+      "current_company": "Snohomish County, WA",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Everett, WA, US",
+      "linkedin_url": "https://linkedin.com/in/patrick-decker-52b7203",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/k7dgck0m0lk",
+      "exa_result_url": "https://linkedin.com/in/patrick-decker-52b7203",
+      "exa_entity_id": "https://exa.ai/library/person/k7dgck0m0lk",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 15,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Patrick Decker-Tonnesen",
+      "current_title": "Assistant Professor Of Social Work",
+      "current_company": "Mayo Clinic College of Medicine and Science",
+      "years_at_current_role": 1.11,
+      "resolved_location": "Minneapolis, Minnesota, United States",
+      "linkedin_url": "https://linkedin.com/in/plfdecker",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/4pdx1nt4kwl",
+      "exa_result_url": "https://linkedin.com/in/plfdecker",
+      "exa_entity_id": "https://exa.ai/library/person/4pdx1nt4kwl",
+      "current_role_count": 4,
+      "used_recent_role_fallback": false,
+      "work_history_count": 14,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Patrick Knight",
+      "current_title": "Chief Executive Officer",
+      "current_company": "SPECIALIZED HEALTH SERVICES, INC.",
+      "years_at_current_role": 3.69,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/patrick-knight-7b224b1a9",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/8rdn7khjshg",
+      "exa_result_url": "https://linkedin.com/in/patrick-knight-7b224b1a9",
+      "exa_entity_id": "https://exa.ai/library/person/8rdn7khjshg",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 2,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Jason Decker",
+      "current_title": "Clinical Mental Health Therapist",
+      "current_company": "Shulman Psychology Group",
+      "years_at_current_role": 1.77,
+      "resolved_location": "Beachwood, Ohio, United States",
+      "linkedin_url": "https://linkedin.com/in/jasonadecker",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/vs5vcdjs39p",
+      "exa_result_url": "https://linkedin.com/in/jasonadecker",
+      "exa_entity_id": "https://exa.ai/library/person/vs5vcdjs39p",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 17,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "MSN Patrick Schoenecker",
+      "current_title": "Psychiatric Nurse Practitioner",
+      "current_company": "The Remedy",
+      "years_at_current_role": 3.95,
+      "resolved_location": "Vadnais Heights, Minnesota, United States",
+      "linkedin_url": "https://linkedin.com/in/patrick-schoenecker-msn-aprn-pmhnp-bc-phn-400b9111",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/xny3skcrm0k",
+      "exa_result_url": "https://linkedin.com/in/patrick-schoenecker-msn-aprn-pmhnp-bc-phn-400b9111",
+      "exa_entity_id": "https://exa.ai/library/person/xny3skcrm0k",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 2,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Patrick Riecke",
+      "current_title": "Volunteer Ambassador",
+      "current_company": "Dr. Lorna Breen Heroes' Foundation",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Fort Wayne, Indiana, United States",
+      "linkedin_url": "https://linkedin.com/in/patrickriecke",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/sdprw8nx7xv",
+      "exa_result_url": "https://linkedin.com/in/patrickriecke",
+      "exa_entity_id": "https://exa.ai/library/person/sdprw8nx7xv",
+      "current_role_count": 4,
+      "used_recent_role_fallback": false,
+      "work_history_count": 12,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "dropped",
+    "reasons": [
+      "blacklisted_title"
+    ],
+    "candidate": {
+      "full_name": "Patrick Riley",
+      "current_title": "Sales Business Development",
+      "current_company": "Alternative Comp Solutions",
+      "years_at_current_role": 2.11,
+      "resolved_location": "Cincinnati, Ohio, United States",
+      "linkedin_url": "https://linkedin.com/in/patrickjriley",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/2pcr9z2s0md",
+      "exa_result_url": "https://linkedin.com/in/patrickjriley",
+      "exa_entity_id": "https://exa.ai/library/person/2pcr9z2s0md",
+      "current_role_count": 4,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "dropped",
+    "reasons": [
+      "founder_class_mismatch"
+    ],
+    "candidate": {
+      "full_name": "Paul Decker",
+      "current_title": "Director And Co-founder",
+      "current_company": "MRP OMNI",
+      "years_at_current_role": 1.19,
+      "resolved_location": "City Of Peterborough, England, United Kingdom",
+      "linkedin_url": "https://linkedin.com/in/paul-decker-5b27527",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/wx9m3syhzjr",
+      "exa_result_url": "https://linkedin.com/in/paul-decker-5b27527",
+      "exa_entity_id": "https://exa.ai/library/person/wx9m3syhzjr",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Andreas Decker",
+      "current_title": "Chief Product Officer",
+      "current_company": "Solvd Group",
+      "years_at_current_role": 1.94,
+      "resolved_location": "Kerpen, North Rhine-Westphalia, Germany",
+      "linkedin_url": "https://linkedin.com/in/andreas-decker-79974a8a",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/zk5sh5jhb0c",
+      "exa_result_url": "https://linkedin.com/in/andreas-decker-79974a8a",
+      "exa_entity_id": "https://exa.ai/library/person/zk5sh5jhb0c",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "dropped",
+    "reasons": [
+      "blacklisted_title"
+    ],
+    "candidate": {
+      "full_name": "Patrick Batzler",
+      "current_title": "Director Of Sales",
+      "current_company": "Decko Products",
+      "years_at_current_role": null,
+      "resolved_location": "St Paul, Minnesota, United States",
+      "linkedin_url": "https://linkedin.com/in/patrick-batzler-900007a8",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/0rkpyhy3wv3",
+      "exa_result_url": "https://linkedin.com/in/patrick-batzler-900007a8",
+      "exa_entity_id": "https://exa.ai/library/person/0rkpyhy3wv3",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "dropped",
+    "reasons": [
+      "founder_class_mismatch"
+    ],
+    "candidate": {
+      "full_name": "Patrick M.",
+      "current_title": "Teacher Maintenance Technician Business Owner",
+      "current_company": "Freelance and contract",
+      "years_at_current_role": 4.77,
+      "resolved_location": "Wilmington, Delaware, United States",
+      "linkedin_url": "https://linkedin.com/in/patrick-m-5a479b6a",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/9ktdxdhl71d",
+      "exa_result_url": "https://linkedin.com/in/patrick-m-5a479b6a",
+      "exa_entity_id": "https://exa.ai/library/person/9ktdxdhl71d",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Dominik Decker",
+      "current_title": "Professional Development",
+      "current_company": "velpTEC edutainment & Agentur f\u00fcr Arbeit",
+      "years_at_current_role": 0.77,
+      "resolved_location": "Schernfeld, Bavaria, Germany",
+      "linkedin_url": "https://linkedin.com/in/dominik-decker-a2a3b8a",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/df3gyzl7n2f",
+      "exa_result_url": "https://linkedin.com/in/dominik-decker-a2a3b8a",
+      "exa_entity_id": "https://exa.ai/library/person/df3gyzl7n2f",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 20,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "used_recent_role_fallback"
+    ],
+    "candidate": {
+      "full_name": "Patrick Peoples",
+      "current_title": "Ecommerce Specialist",
+      "current_company": "Kroger",
+      "years_at_current_role": 4.53,
+      "resolved_location": "Detroit Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/patrick-peoples-mba-069a6579",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/d1l360mlpnm",
+      "exa_result_url": "https://linkedin.com/in/patrick-peoples-mba-069a6579",
+      "exa_entity_id": "https://exa.ai/library/person/d1l360mlpnm",
+      "current_role_count": 0,
+      "used_recent_role_fallback": true,
+      "work_history_count": 4,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "used_recent_role_fallback"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Jon Decker",
+      "current_title": "SVP, Stores",
+      "current_company": "Grocery Outlet",
+      "years_at_current_role": 3.44,
+      "resolved_location": "Emeryville, California, United States",
+      "linkedin_url": "https://linkedin.com/in/jon-decker-344a2213",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/kzq4x5t140c",
+      "exa_result_url": "https://linkedin.com/in/jon-decker-344a2213",
+      "exa_entity_id": "https://exa.ai/library/person/kzq4x5t140c",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Derek Biesinger",
+      "current_title": "Executive Director Of Retail Operations",
+      "current_company": "Kroger",
+      "years_at_current_role": 1.77,
+      "resolved_location": "Cincinnati, Ohio, United States",
+      "linkedin_url": "https://linkedin.com/in/derekbiesinger",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/bdbcz1nr275",
+      "exa_result_url": "https://linkedin.com/in/derekbiesinger",
+      "exa_entity_id": "https://exa.ai/library/person/bdbcz1nr275",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Patrick Haughton",
+      "current_title": "Director Of Marketing And E-Commerce, Northeast Grocery Inc (Market 32, Price Chopper, Tops Markets)",
+      "current_company": "Northeast Shared Services",
+      "years_at_current_role": 2.44,
+      "resolved_location": "Schenectady, New York, US",
+      "linkedin_url": "https://linkedin.com/in/phaughton",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/905nhrjkr70",
+      "exa_result_url": "https://linkedin.com/in/phaughton",
+      "exa_entity_id": "https://exa.ai/library/person/905nhrjkr70",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Patrick Abouchacra",
+      "current_title": "Executive Team Leader - GM And Food",
+      "current_company": "Target",
+      "years_at_current_role": 5.11,
+      "resolved_location": "Monroe, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/patrick-abouchacra-4a9957162",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/lz3s7p9x5d0",
+      "exa_result_url": "https://linkedin.com/in/patrick-abouchacra-4a9957162",
+      "exa_entity_id": "https://exa.ai/library/person/lz3s7p9x5d0",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Rebecca Lupfer",
+      "current_title": "Senior Vice President Merchandising",
+      "current_company": "The GIANT Company",
+      "years_at_current_role": 1.86,
+      "resolved_location": "Shermans Dale, Pennsylvania, United States",
+      "linkedin_url": "https://linkedin.com/in/rebeccalupfer",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/4s6rgtccz1p",
+      "exa_result_url": "https://linkedin.com/in/rebeccalupfer",
+      "exa_entity_id": "https://exa.ai/library/person/4s6rgtccz1p",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 12,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Frank Kerr",
+      "current_title": "EVP, Chief Store Operations Officer",
+      "current_company": "Grocery Outlet",
+      "years_at_current_role": 0.77,
+      "resolved_location": "Emeryville, California, United States",
+      "linkedin_url": "https://linkedin.com/in/frankiekerr",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/wytn14wcxwy",
+      "exa_result_url": "https://linkedin.com/in/frankiekerr",
+      "exa_entity_id": "https://exa.ai/library/person/wytn14wcxwy",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 13,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Julie Tolliver Auflick",
+      "current_title": "Vice President Of Merchandising",
+      "current_company": "Kroger",
+      "years_at_current_role": 1.86,
+      "resolved_location": "Michigan, United States",
+      "linkedin_url": "https://linkedin.com/in/julie-tolliver-auflick-b55694140",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/7p9dgkhjd5h",
+      "exa_result_url": "https://linkedin.com/in/julie-tolliver-auflick-b55694140",
+      "exa_entity_id": "https://exa.ai/library/person/7p9dgkhjd5h",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Carlo Baldan",
+      "current_title": "Group Vice President Fresh Merchandising And Store Planning & Design At Kroger, General Office",
+      "current_company": "Kroger",
+      "years_at_current_role": 0.28,
+      "resolved_location": "Cincinnati, Ohio, US",
+      "linkedin_url": "https://linkedin.com/in/carlo-baldan-1b99b413",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/916hl5m20yp",
+      "exa_result_url": "https://linkedin.com/in/carlo-baldan-1b99b413",
+      "exa_entity_id": "https://exa.ai/library/person/916hl5m20yp",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 16,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles",
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Mike Matscherz",
+      "current_title": "GM Operations Performance Management Worldwide Grocery Stores",
+      "current_company": "Amazon",
+      "years_at_current_role": 0.53,
+      "resolved_location": "Austin, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/mike-matscherz-5245a611",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/r7xc28qnh4w",
+      "exa_result_url": "https://linkedin.com/in/mike-matscherz-5245a611",
+      "exa_entity_id": "https://exa.ai/library/person/r7xc28qnh4w",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 13,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Glenn Figenholtz",
+      "current_title": "SVP Merchandising",
+      "current_company": "Lowes Foods",
+      "years_at_current_role": 3.86,
+      "resolved_location": "Winston-Salem, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/glenn-figenholtz-3463367",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/lnf4lt9njrw",
+      "exa_result_url": "https://linkedin.com/in/glenn-figenholtz-3463367",
+      "exa_entity_id": "https://exa.ai/library/person/lnf4lt9njrw",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Matt Delly",
+      "current_title": "EVP, Chief Merchandising Officer",
+      "current_company": "Grocery Outlet",
+      "years_at_current_role": 1.03,
+      "resolved_location": "Emeryville, California, US",
+      "linkedin_url": "https://linkedin.com/in/matthewdelly",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/nqb3qmv2b1c",
+      "exa_result_url": "https://linkedin.com/in/matthewdelly",
+      "exa_entity_id": "https://exa.ai/library/person/nqb3qmv2b1c",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 14,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Tony Crumpton",
+      "current_title": "Chief Merchandising Officer",
+      "current_company": "United Supermarkets, LLC",
+      "years_at_current_role": 6.19,
+      "resolved_location": "Lubbock, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/tony-crumpton-51964b2",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/g5ygl6cs37y",
+      "exa_result_url": "https://linkedin.com/in/tony-crumpton-51964b2",
+      "exa_entity_id": "https://exa.ai/library/person/g5ygl6cs37y",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Matt Reeves",
+      "current_title": "Senior Vice President",
+      "current_company": "Grocery Outlet",
+      "years_at_current_role": 1.03,
+      "resolved_location": "Emeryville, CA",
+      "linkedin_url": "https://linkedin.com/in/matt-reeves-leadership",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/c1nqnk6zd5y",
+      "exa_result_url": "https://linkedin.com/in/matt-reeves-leadership",
+      "exa_entity_id": "https://exa.ai/library/person/c1nqnk6zd5y",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "David Ducre",
+      "current_title": "Vice President Supply Chain Operations",
+      "current_company": "Lowe's Companies, Inc.",
+      "years_at_current_role": 1.28,
+      "resolved_location": "Slidell, Louisiana, United States",
+      "linkedin_url": "https://linkedin.com/in/david-ducre-jr-961106140",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/qgggkkgt86n",
+      "exa_result_url": "https://linkedin.com/in/david-ducre-jr-961106140",
+      "exa_entity_id": "https://exa.ai/library/person/qgggkkgt86n",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Sanja Krajnovic",
+      "current_title": "Chief Supply Chain Officer",
+      "current_company": "Ahold Delhaize USA",
+      "years_at_current_role": 1.19,
+      "resolved_location": "Quincy, Massachusetts, US",
+      "linkedin_url": "https://linkedin.com/in/sanjakrajnovic",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/gs2ydmbtgt5",
+      "exa_result_url": "https://linkedin.com/in/sanjakrajnovic",
+      "exa_entity_id": "https://exa.ai/library/person/gs2ydmbtgt5",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 11,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "JP Patton",
+      "current_title": "Store Director",
+      "current_company": "Target",
+      "years_at_current_role": 1.03,
+      "resolved_location": "Owensboro, Kentucky, United States",
+      "linkedin_url": "https://linkedin.com/in/jp-patton-mba-aa200093",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/nwbkyhbgb35",
+      "exa_result_url": "https://linkedin.com/in/jp-patton-mba-aa200093",
+      "exa_entity_id": "https://exa.ai/library/person/nwbkyhbgb35",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Carla Farrell",
+      "current_title": "Retail Cashier",
+      "current_company": "SPAR Ireland",
+      "years_at_current_role": 3.61,
+      "resolved_location": "Dublin, Republic of Ireland, IE",
+      "linkedin_url": "https://linkedin.com/in/carla-farrell-466870359",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/4cbnmgj4871",
+      "exa_result_url": "https://linkedin.com/in/carla-farrell-466870359",
+      "exa_entity_id": "https://exa.ai/library/person/4cbnmgj4871",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 2,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Simon Bott",
+      "current_title": "Senior Product Manager",
+      "current_company": "Tesco",
+      "years_at_current_role": 8.69,
+      "resolved_location": "Welwyn Garden City",
+      "linkedin_url": "https://linkedin.com/in/simon-bott-8b150b1",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/wblylrjy1qn",
+      "exa_result_url": "https://linkedin.com/in/simon-bott-8b150b1",
+      "exa_entity_id": "https://exa.ai/library/person/wblylrjy1qn",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "patrick decker",
+      "current_title": "Board Member",
+      "current_company": "Massachusetts Eye and Ear",
+      "years_at_current_role": 1.44,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/patrick-decker-961b9082",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/wfs892ndc51",
+      "exa_result_url": "https://linkedin.com/in/patrick-decker-961b9082",
+      "exa_entity_id": "https://exa.ai/library/person/wfs892ndc51",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  }
+]

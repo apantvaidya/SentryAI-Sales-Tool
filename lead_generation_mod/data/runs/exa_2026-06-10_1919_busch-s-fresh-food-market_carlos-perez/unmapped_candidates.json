@@ -1,0 +1,14 @@
+[
+  {
+    "vector_id": "06",
+    "vector_name": "linkedin_anchored_similarity",
+    "result_url": "https://linkedin.com/in/carlos-e-perez",
+    "reason": "missing_entities_or_current_role"
+  },
+  {
+    "vector_id": "07",
+    "vector_name": "linkedin_anchored_similarity_with_company_expansion",
+    "result_url": "https://www.linkedin.com/in/carlos-laurel",
+    "reason": "missing_entities_or_current_role"
+  }
+]

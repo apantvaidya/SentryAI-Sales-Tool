@@ -1,0 +1,3578 @@
+[
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Richard Brenner",
+      "current_title": "Director, Field AP Operations",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 1.19,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/richard-brenner-09029110",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/s525gcjrzpr",
+      "exa_result_url": "https://linkedin.com/in/richard-brenner-09029110",
+      "exa_entity_id": "https://exa.ai/library/person/s525gcjrzpr",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 3,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "PI-LPP Nicholas Johnston",
+      "current_title": "Regional Manager, Asset Protection",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/nick-johnston-pi-lpp",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/t8k5jmwbnd4",
+      "exa_result_url": "https://linkedin.com/in/nick-johnston-pi-lpp",
+      "exa_entity_id": "https://exa.ai/library/person/t8k5jmwbnd4",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 5,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Heaven Poirot",
+      "current_title": "Sr. Asset Protection Inventory Operations Manager",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 2.44,
+      "resolved_location": "Metro Jacksonville",
+      "linkedin_url": "https://linkedin.com/in/heaven-poirot-95873879",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/6tsbl6sxdkx",
+      "exa_result_url": "https://linkedin.com/in/heaven-poirot-95873879",
+      "exa_entity_id": "https://exa.ai/library/person/6tsbl6sxdkx",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 12,
+      "query_hit_count": 3,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Sabrina Askew",
+      "current_title": "Region Asset Protection Manager",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 2.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/sabrina-askew-4202a152",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/8t5ssmjzxbs",
+      "exa_result_url": "https://linkedin.com/in/sabrina-askew-4202a152",
+      "exa_entity_id": "https://exa.ai/library/person/8t5ssmjzxbs",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 4,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "James Richey",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Winn-Dixie",
+      "years_at_current_role": 10.36,
+      "resolved_location": "Tampa, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/james-richey-cfi-0319629",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/6rm6sngpnpf",
+      "exa_result_url": "https://linkedin.com/in/james-richey-cfi-0319629",
+      "exa_entity_id": "https://exa.ai/library/person/6rm6sngpnpf",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 5,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Dale Fowler",
+      "current_title": "Senior Director - Field Asset Protection Operations",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/dale-fowler-cfe-46154b6",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/y49s12myhzr",
+      "exa_result_url": "https://linkedin.com/in/dale-fowler-cfe-46154b6",
+      "exa_entity_id": "https://exa.ai/library/person/y49s12myhzr",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 6,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Jonathan Pierce",
+      "current_title": "Region Asset Protection Manager",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 1.77,
+      "resolved_location": "Jacksonville, FL",
+      "linkedin_url": "https://linkedin.com/in/jonathan-pierce-622baa107",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/688wyyvqr0z",
+      "exa_result_url": "https://linkedin.com/in/jonathan-pierce-622baa107",
+      "exa_entity_id": "https://exa.ai/library/person/688wyyvqr0z",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 4,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Corey Berk",
+      "current_title": "Region Asset Protection Manager",
+      "current_company": "Winn-Dixie",
+      "years_at_current_role": 7.95,
+      "resolved_location": "Tampa, Florida",
+      "linkedin_url": "https://linkedin.com/in/corey-berk-cfe-40a7b923",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/krndr9hzpmt",
+      "exa_result_url": "https://linkedin.com/in/corey-berk-cfe-40a7b923",
+      "exa_entity_id": "https://exa.ai/library/person/krndr9hzpmt",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 3,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Emmanuel Burgos",
+      "current_title": "Director, Field AP Operations",
+      "current_company": "Southeastern Grocers",
+      "years_at_current_role": 2.44,
+      "resolved_location": "Miami, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/emmanuel-manny-burgos-865a9817",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/p1st5by0ksr",
+      "exa_result_url": "https://linkedin.com/in/emmanuel-manny-burgos-865a9817",
+      "exa_entity_id": "https://exa.ai/library/person/p1st5by0ksr",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 11,
+      "query_hit_count": 5,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Jeremy Han",
+      "current_title": "Senior Manager Physical Security",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 8.36,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/jeremybhan",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/9sr2jgvw84q",
+      "exa_result_url": "https://linkedin.com/in/jeremybhan",
+      "exa_entity_id": "https://exa.ai/library/person/9sr2jgvw84q",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 3,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Brandon G. Major",
+      "current_title": "Senior Manager, Asset Protection & Food And Safety",
+      "current_company": "Southeastern Grocers",
+      "years_at_current_role": 7.95,
+      "resolved_location": "Jacksonville, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/brandongmajor",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/9x1r4c208gx",
+      "exa_result_url": "https://linkedin.com/in/brandongmajor",
+      "exa_entity_id": "https://exa.ai/library/person/9x1r4c208gx",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 14,
+      "query_hit_count": 3,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Tim Murfin",
+      "current_title": "Vice President - Asset Protection & Safety",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/timmurfin",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/z2xszrbbszh",
+      "exa_result_url": "https://linkedin.com/in/timmurfin",
+      "exa_entity_id": "https://exa.ai/library/person/z2xszrbbszh",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 4,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Keisha McKinnon",
+      "current_title": "Region Safety Manager",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 10.69,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/keisha-mckinnon-a01758355",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/d54h2c6xbzq",
+      "exa_result_url": "https://linkedin.com/in/keisha-mckinnon-a01758355",
+      "exa_entity_id": "https://exa.ai/library/person/d54h2c6xbzq",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 2,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Scott Goodwin",
+      "current_title": "Sr. Regional Asset Protection Manager",
+      "current_company": "Southeastern Grocers",
+      "years_at_current_role": 25.44,
+      "resolved_location": "Charlotte, North Carolina Area",
+      "linkedin_url": "https://linkedin.com/in/scott-goodwin-crt-41b57910",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/1qdhnqxxb8f",
+      "exa_result_url": "https://linkedin.com/in/scott-goodwin-crt-41b57910",
+      "exa_entity_id": "https://exa.ai/library/person/1qdhnqxxb8f",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 2,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Reilly Gallagher",
+      "current_title": "Asset Protection Safety Analyst",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 1.69,
+      "resolved_location": "Jacksonville, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/reilly-gallagher-a13754129",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/lcjkj2lxp8d",
+      "exa_result_url": "https://linkedin.com/in/reilly-gallagher-a13754129",
+      "exa_entity_id": "https://exa.ai/library/person/lcjkj2lxp8d",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 3,
+      "query_hit_count": 2,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Patrick Fairley",
+      "current_title": "Region Asset Protection Manager",
+      "current_company": "Southeastern Grocers",
+      "years_at_current_role": 3.2,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/patrick-fairley-cfe-cfi-25755416",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/lyk2j4c9xgt",
+      "exa_result_url": "https://linkedin.com/in/patrick-fairley-cfe-cfi-25755416",
+      "exa_entity_id": "https://exa.ai/library/person/lyk2j4c9xgt",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 2,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Jessie Silliman",
+      "current_title": "Manager, Asset Protection Systems & Programs",
+      "current_company": "Southeastern Grocers",
+      "years_at_current_role": 2.19,
+      "resolved_location": "Middleburg, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/jessie-silliman-408533231",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/fx7gt0l46sf",
+      "exa_result_url": "https://linkedin.com/in/jessie-silliman-408533231",
+      "exa_entity_id": "https://exa.ai/library/person/fx7gt0l46sf",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 2,
+      "query_hit_count": 2,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Tammy Gooch",
+      "current_title": "District Asset Protection Specialist",
+      "current_company": "Winn Dixie Stores",
+      "years_at_current_role": 21.44,
+      "resolved_location": "Jacksonville Beach, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/tammy-gooch-531470a",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/5402tp1r02t",
+      "exa_result_url": "https://linkedin.com/in/tammy-gooch-531470a",
+      "exa_entity_id": "https://exa.ai/library/person/5402tp1r02t",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 3,
+      "query_hit_count": 3,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "used_recent_role_fallback"
+    ],
+    "candidate": {
+      "full_name": "Gordon Bourne",
+      "current_title": "Zone Asset Protection Director",
+      "current_company": "Dollar Tree Stores",
+      "years_at_current_role": 4.03,
+      "resolved_location": "Mount Dora, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/gordon-bourne-249310155",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/2pmkcg2gs7n",
+      "exa_result_url": "https://linkedin.com/in/gordon-bourne-249310155",
+      "exa_entity_id": "https://exa.ai/library/person/2pmkcg2gs7n",
+      "current_role_count": 0,
+      "used_recent_role_fallback": true,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "used_recent_role_fallback"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Tony Brunetto",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 7.44,
+      "resolved_location": "Florida",
+      "linkedin_url": "https://linkedin.com/in/tony-brunetto-8374632a",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/wqczy7wq276",
+      "exa_result_url": "https://linkedin.com/in/tony-brunetto-8374632a",
+      "exa_entity_id": "https://exa.ai/library/person/wqczy7wq276",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 4,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Richard Brenner",
+      "current_title": "Director, Field AP Operations",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 1.19,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/richard-brenner-09029110",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/s525gcjrzpr",
+      "exa_result_url": "https://linkedin.com/in/richard-brenner-09029110",
+      "exa_entity_id": "https://exa.ai/library/person/s525gcjrzpr",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "PI-LPP Nicholas Johnston",
+      "current_title": "Regional Manager, Asset Protection",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/nick-johnston-pi-lpp",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/t8k5jmwbnd4",
+      "exa_result_url": "https://linkedin.com/in/nick-johnston-pi-lpp",
+      "exa_entity_id": "https://exa.ai/library/person/t8k5jmwbnd4",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Jonathan Pierce",
+      "current_title": "Region Asset Protection Manager",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 1.77,
+      "resolved_location": "Jacksonville, FL",
+      "linkedin_url": "https://linkedin.com/in/jonathan-pierce-622baa107",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/688wyyvqr0z",
+      "exa_result_url": "https://linkedin.com/in/jonathan-pierce-622baa107",
+      "exa_entity_id": "https://exa.ai/library/person/688wyyvqr0z",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Dale Fowler",
+      "current_title": "Senior Director - Field Asset Protection Operations",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/dale-fowler-cfe-46154b6",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/y49s12myhzr",
+      "exa_result_url": "https://linkedin.com/in/dale-fowler-cfe-46154b6",
+      "exa_entity_id": "https://exa.ai/library/person/y49s12myhzr",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Corey Bell",
+      "current_title": "Physical Security Manager",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 2.03,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/corey-bell-27a870102",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/x5pbfdc1ckd",
+      "exa_result_url": "https://linkedin.com/in/corey-bell-27a870102",
+      "exa_entity_id": "https://exa.ai/library/person/x5pbfdc1ckd",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 2,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Jeremy Han",
+      "current_title": "Senior Manager Physical Security",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 8.36,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/jeremybhan",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/9sr2jgvw84q",
+      "exa_result_url": "https://linkedin.com/in/jeremybhan",
+      "exa_entity_id": "https://exa.ai/library/person/9sr2jgvw84q",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "James Richey",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Winn-Dixie",
+      "years_at_current_role": 10.36,
+      "resolved_location": "Tampa, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/james-richey-cfi-0319629",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/6rm6sngpnpf",
+      "exa_result_url": "https://linkedin.com/in/james-richey-cfi-0319629",
+      "exa_entity_id": "https://exa.ai/library/person/6rm6sngpnpf",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Heaven Poirot",
+      "current_title": "Sr. Asset Protection Inventory Operations Manager",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 2.44,
+      "resolved_location": "Metro Jacksonville",
+      "linkedin_url": "https://linkedin.com/in/heaven-poirot-95873879",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/6tsbl6sxdkx",
+      "exa_result_url": "https://linkedin.com/in/heaven-poirot-95873879",
+      "exa_entity_id": "https://exa.ai/library/person/6tsbl6sxdkx",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 12,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Sabrina Askew",
+      "current_title": "Region Asset Protection Manager",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 2.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/sabrina-askew-4202a152",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/8t5ssmjzxbs",
+      "exa_result_url": "https://linkedin.com/in/sabrina-askew-4202a152",
+      "exa_entity_id": "https://exa.ai/library/person/8t5ssmjzxbs",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Corey Berk",
+      "current_title": "Region Asset Protection Manager",
+      "current_company": "Winn-Dixie",
+      "years_at_current_role": 7.95,
+      "resolved_location": "Tampa, Florida",
+      "linkedin_url": "https://linkedin.com/in/corey-berk-cfe-40a7b923",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/krndr9hzpmt",
+      "exa_result_url": "https://linkedin.com/in/corey-berk-cfe-40a7b923",
+      "exa_entity_id": "https://exa.ai/library/person/krndr9hzpmt",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Brandon G. Major",
+      "current_title": "Senior Manager, Asset Protection & Food And Safety",
+      "current_company": "Southeastern Grocers",
+      "years_at_current_role": 7.95,
+      "resolved_location": "Jacksonville, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/brandongmajor",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/9x1r4c208gx",
+      "exa_result_url": "https://linkedin.com/in/brandongmajor",
+      "exa_entity_id": "https://exa.ai/library/person/9x1r4c208gx",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 14,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Emmanuel Burgos",
+      "current_title": "Director, Field AP Operations",
+      "current_company": "Southeastern Grocers",
+      "years_at_current_role": 2.44,
+      "resolved_location": "Miami, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/emmanuel-manny-burgos-865a9817",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/p1st5by0ksr",
+      "exa_result_url": "https://linkedin.com/in/emmanuel-manny-burgos-865a9817",
+      "exa_entity_id": "https://exa.ai/library/person/p1st5by0ksr",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 11,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Tim Murfin",
+      "current_title": "Vice President - Asset Protection & Safety",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/timmurfin",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/z2xszrbbszh",
+      "exa_result_url": "https://linkedin.com/in/timmurfin",
+      "exa_entity_id": "https://exa.ai/library/person/z2xszrbbszh",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Tammy Gooch",
+      "current_title": "District Asset Protection Specialist",
+      "current_company": "Winn Dixie Stores",
+      "years_at_current_role": 21.44,
+      "resolved_location": "Jacksonville Beach, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/tammy-gooch-531470a",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/5402tp1r02t",
+      "exa_result_url": "https://linkedin.com/in/tammy-gooch-531470a",
+      "exa_entity_id": "https://exa.ai/library/person/5402tp1r02t",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 3,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Patrick Fairley",
+      "current_title": "Region Asset Protection Manager",
+      "current_company": "Southeastern Grocers",
+      "years_at_current_role": 3.2,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/patrick-fairley-cfe-cfi-25755416",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/lyk2j4c9xgt",
+      "exa_result_url": "https://linkedin.com/in/patrick-fairley-cfe-cfi-25755416",
+      "exa_entity_id": "https://exa.ai/library/person/lyk2j4c9xgt",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Tony Brunetto",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 7.44,
+      "resolved_location": "Florida",
+      "linkedin_url": "https://linkedin.com/in/tony-brunetto-8374632a",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/wqczy7wq276",
+      "exa_result_url": "https://linkedin.com/in/tony-brunetto-8374632a",
+      "exa_entity_id": "https://exa.ai/library/person/wqczy7wq276",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Scott Goodwin",
+      "current_title": "Sr. Regional Asset Protection Manager",
+      "current_company": "Southeastern Grocers",
+      "years_at_current_role": 25.44,
+      "resolved_location": "Charlotte, North Carolina Area",
+      "linkedin_url": "https://linkedin.com/in/scott-goodwin-crt-41b57910",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/1qdhnqxxb8f",
+      "exa_result_url": "https://linkedin.com/in/scott-goodwin-crt-41b57910",
+      "exa_entity_id": "https://exa.ai/library/person/1qdhnqxxb8f",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Jessie Silliman",
+      "current_title": "Manager, Asset Protection Systems & Programs",
+      "current_company": "Southeastern Grocers",
+      "years_at_current_role": 2.19,
+      "resolved_location": "Middleburg, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/jessie-silliman-408533231",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/fx7gt0l46sf",
+      "exa_result_url": "https://linkedin.com/in/jessie-silliman-408533231",
+      "exa_entity_id": "https://exa.ai/library/person/fx7gt0l46sf",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 2,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Joe Oliveira",
+      "current_title": "Global Leader Of Loss Prevention, Compliance, Risk Management And Corportate Security",
+      "current_company": "VSP Vision",
+      "years_at_current_role": 2.69,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/joe-oliveira-cfi-6b756411",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/rbcsjdmxt63",
+      "exa_result_url": "https://linkedin.com/in/joe-oliveira-cfi-6b756411",
+      "exa_entity_id": "https://exa.ai/library/person/rbcsjdmxt63",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 2,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "dropped",
+    "reasons": [
+      "blacklisted_title"
+    ],
+    "candidate": {
+      "full_name": "Orlando Mccorack",
+      "current_title": "Sales Associate",
+      "current_company": "Winn Dixie Stores",
+      "years_at_current_role": null,
+      "resolved_location": "Miami, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/orlando-mccorack-48522857",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/lt9n5318b6s",
+      "exa_result_url": "https://linkedin.com/in/orlando-mccorack-48522857",
+      "exa_entity_id": "https://exa.ai/library/person/lt9n5318b6s",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "James Richey",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Winn-Dixie",
+      "years_at_current_role": 10.36,
+      "resolved_location": "Tampa, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/james-richey-cfi-0319629",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/6rm6sngpnpf",
+      "exa_result_url": "https://linkedin.com/in/james-richey-cfi-0319629",
+      "exa_entity_id": "https://exa.ai/library/person/6rm6sngpnpf",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "PI-LPP Nicholas Johnston",
+      "current_title": "Regional Manager, Asset Protection",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/nick-johnston-pi-lpp",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/t8k5jmwbnd4",
+      "exa_result_url": "https://linkedin.com/in/nick-johnston-pi-lpp",
+      "exa_entity_id": "https://exa.ai/library/person/t8k5jmwbnd4",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Jonathan Pierce",
+      "current_title": "Region Asset Protection Manager",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 1.77,
+      "resolved_location": "Jacksonville, FL",
+      "linkedin_url": "https://linkedin.com/in/jonathan-pierce-622baa107",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/688wyyvqr0z",
+      "exa_result_url": "https://linkedin.com/in/jonathan-pierce-622baa107",
+      "exa_entity_id": "https://exa.ai/library/person/688wyyvqr0z",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Richard Brenner",
+      "current_title": "Director, Field AP Operations",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 1.19,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/richard-brenner-09029110",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/s525gcjrzpr",
+      "exa_result_url": "https://linkedin.com/in/richard-brenner-09029110",
+      "exa_entity_id": "https://exa.ai/library/person/s525gcjrzpr",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Corey Bell",
+      "current_title": "Physical Security Manager",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 2.03,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/corey-bell-27a870102",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/x5pbfdc1ckd",
+      "exa_result_url": "https://linkedin.com/in/corey-bell-27a870102",
+      "exa_entity_id": "https://exa.ai/library/person/x5pbfdc1ckd",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Emmanuel Burgos",
+      "current_title": "Director, Field AP Operations",
+      "current_company": "Southeastern Grocers",
+      "years_at_current_role": 2.44,
+      "resolved_location": "Miami, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/emmanuel-manny-burgos-865a9817",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/p1st5by0ksr",
+      "exa_result_url": "https://linkedin.com/in/emmanuel-manny-burgos-865a9817",
+      "exa_entity_id": "https://exa.ai/library/person/p1st5by0ksr",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 11,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Jeremy Han",
+      "current_title": "Senior Manager Physical Security",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 8.36,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/jeremybhan",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/9sr2jgvw84q",
+      "exa_result_url": "https://linkedin.com/in/jeremybhan",
+      "exa_entity_id": "https://exa.ai/library/person/9sr2jgvw84q",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Corey Berk",
+      "current_title": "Region Asset Protection Manager",
+      "current_company": "Winn-Dixie",
+      "years_at_current_role": 7.95,
+      "resolved_location": "Tampa, Florida",
+      "linkedin_url": "https://linkedin.com/in/corey-berk-cfe-40a7b923",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/krndr9hzpmt",
+      "exa_result_url": "https://linkedin.com/in/corey-berk-cfe-40a7b923",
+      "exa_entity_id": "https://exa.ai/library/person/krndr9hzpmt",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Sabrina Askew",
+      "current_title": "Region Asset Protection Manager",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 2.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/sabrina-askew-4202a152",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/8t5ssmjzxbs",
+      "exa_result_url": "https://linkedin.com/in/sabrina-askew-4202a152",
+      "exa_entity_id": "https://exa.ai/library/person/8t5ssmjzxbs",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Tim Murfin",
+      "current_title": "Vice President - Asset Protection & Safety",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/timmurfin",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/z2xszrbbszh",
+      "exa_result_url": "https://linkedin.com/in/timmurfin",
+      "exa_entity_id": "https://exa.ai/library/person/z2xszrbbszh",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Heaven Poirot",
+      "current_title": "Sr. Asset Protection Inventory Operations Manager",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 2.44,
+      "resolved_location": "Metro Jacksonville",
+      "linkedin_url": "https://linkedin.com/in/heaven-poirot-95873879",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/6tsbl6sxdkx",
+      "exa_result_url": "https://linkedin.com/in/heaven-poirot-95873879",
+      "exa_entity_id": "https://exa.ai/library/person/6tsbl6sxdkx",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 12,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Dale Fowler",
+      "current_title": "Senior Director - Field Asset Protection Operations",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/dale-fowler-cfe-46154b6",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/y49s12myhzr",
+      "exa_result_url": "https://linkedin.com/in/dale-fowler-cfe-46154b6",
+      "exa_entity_id": "https://exa.ai/library/person/y49s12myhzr",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Keisha McKinnon",
+      "current_title": "Region Safety Manager",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 10.69,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/keisha-mckinnon-a01758355",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/d54h2c6xbzq",
+      "exa_result_url": "https://linkedin.com/in/keisha-mckinnon-a01758355",
+      "exa_entity_id": "https://exa.ai/library/person/d54h2c6xbzq",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "James Albritton",
+      "current_title": "Location Director",
+      "current_company": "Winn Dixie Stores",
+      "years_at_current_role": 13.44,
+      "resolved_location": "Wachula, Fla",
+      "linkedin_url": "https://linkedin.com/in/james-albritton-71919854",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/1wr1k9r0lcf",
+      "exa_result_url": "https://linkedin.com/in/james-albritton-71919854",
+      "exa_entity_id": "https://exa.ai/library/person/1wr1k9r0lcf",
+      "current_role_count": 7,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Rob Richardson",
+      "current_title": "District Manager",
+      "current_company": "Winn-Dixie",
+      "years_at_current_role": null,
+      "resolved_location": "Lynn Haven, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/rob-richardson-a6b36b101",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/k58nzhsgb7y",
+      "exa_result_url": "https://linkedin.com/in/rob-richardson-a6b36b101",
+      "exa_entity_id": "https://exa.ai/library/person/k58nzhsgb7y",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Tammy Gooch",
+      "current_title": "District Asset Protection Specialist",
+      "current_company": "Winn Dixie Stores",
+      "years_at_current_role": 21.44,
+      "resolved_location": "Jacksonville Beach, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/tammy-gooch-531470a",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/5402tp1r02t",
+      "exa_result_url": "https://linkedin.com/in/tammy-gooch-531470a",
+      "exa_entity_id": "https://exa.ai/library/person/5402tp1r02t",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 3,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "David Glass",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Five Below",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Philadelphia, PA, US",
+      "linkedin_url": "https://linkedin.com/in/david-glass-98643076",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/qj1z035hst1",
+      "exa_result_url": "https://linkedin.com/in/david-glass-98643076",
+      "exa_entity_id": "https://exa.ai/library/person/qj1z035hst1",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "used_recent_role_fallback"
+    ],
+    "candidate": {
+      "full_name": "Todd Walker",
+      "current_title": "Process Sustainability Manager",
+      "current_company": "Winn-Dixie",
+      "years_at_current_role": 5.44,
+      "resolved_location": "West Florida",
+      "linkedin_url": "https://linkedin.com/in/todd-walker-baa87379",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/5ylygfhf0m5",
+      "exa_result_url": "https://linkedin.com/in/todd-walker-baa87379",
+      "exa_entity_id": "https://exa.ai/library/person/5ylygfhf0m5",
+      "current_role_count": 0,
+      "used_recent_role_fallback": true,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "used_recent_role_fallback"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Reilly Gallagher",
+      "current_title": "Asset Protection Safety Analyst",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 1.69,
+      "resolved_location": "Jacksonville, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/reilly-gallagher-a13754129",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/lcjkj2lxp8d",
+      "exa_result_url": "https://linkedin.com/in/reilly-gallagher-a13754129",
+      "exa_entity_id": "https://exa.ai/library/person/lcjkj2lxp8d",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 3,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Rick Giordano",
+      "current_title": "Store Director",
+      "current_company": "Winn-Dixie",
+      "years_at_current_role": 15.61,
+      "resolved_location": "Fort Lauderdale, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/rick-giordano-34514783",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/tlmm91xnfjw",
+      "exa_result_url": "https://linkedin.com/in/rick-giordano-34514783",
+      "exa_entity_id": "https://exa.ai/library/person/tlmm91xnfjw",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 2,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Joe Laufenberg",
+      "current_title": "Senior Director Of Asset Protection",
+      "current_company": "Festival Foods",
+      "years_at_current_role": 11.03,
+      "resolved_location": "Green Bay, Wisconsin Area",
+      "linkedin_url": "https://linkedin.com/in/joe-laufenberg-lpc",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/v6qyp9l0lgs",
+      "exa_result_url": "https://linkedin.com/in/joe-laufenberg-lpc",
+      "exa_entity_id": "https://exa.ai/library/person/v6qyp9l0lgs",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "John Carr",
+      "current_title": "Director Of Asset Protection",
+      "current_company": "Hannaford Supermarkets",
+      "years_at_current_role": 8.44,
+      "resolved_location": "Maine",
+      "linkedin_url": "https://linkedin.com/in/john-carr-b8a179145",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/wjtwqf0hd78",
+      "exa_result_url": "https://linkedin.com/in/john-carr-b8a179145",
+      "exa_entity_id": "https://exa.ai/library/person/wjtwqf0hd78",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 2,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Ron Foss",
+      "current_title": "Director, Asset Protection",
+      "current_company": "Albertsons Companies, SOCAL Division",
+      "years_at_current_role": 3.44,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/ron-foss-cfi-lpc-1855037",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/ry86qxfhm67",
+      "exa_result_url": "https://linkedin.com/in/ron-foss-cfi-lpc-1855037",
+      "exa_entity_id": "https://exa.ai/library/person/ry86qxfhm67",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 3,
+      "query_hit_count": 2,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Dale Fowler",
+      "current_title": "Senior Director - Field Asset Protection Operations",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/dale-fowler-cfe-46154b6",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/y49s12myhzr",
+      "exa_result_url": "https://linkedin.com/in/dale-fowler-cfe-46154b6",
+      "exa_entity_id": "https://exa.ai/library/person/y49s12myhzr",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Mike Limauro",
+      "current_title": "Head Of Asset Protection, Amazon Worldwide Grocery Stores VP Global Asset Protection, Whole Foods",
+      "current_company": "Amazon",
+      "years_at_current_role": 0.53,
+      "resolved_location": "Seattle, WA, US",
+      "linkedin_url": "https://linkedin.com/in/mikelimauro",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/fss0n0x2wdm",
+      "exa_result_url": "https://linkedin.com/in/mikelimauro",
+      "exa_entity_id": "https://exa.ai/library/person/fss0n0x2wdm",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 2,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Teresa Tucker",
+      "current_title": "VP Shrink Best Practices AP",
+      "current_company": "Kroger",
+      "years_at_current_role": 1.11,
+      "resolved_location": "Cincinnati, Ohio, United States",
+      "linkedin_url": "https://linkedin.com/in/teresa-tucker-08b82b93",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/9dv3vcn66xx",
+      "exa_result_url": "https://linkedin.com/in/teresa-tucker-08b82b93",
+      "exa_entity_id": "https://exa.ai/library/person/9dv3vcn66xx",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Emmanuel Burgos",
+      "current_title": "Director, Field AP Operations",
+      "current_company": "Southeastern Grocers",
+      "years_at_current_role": 2.44,
+      "resolved_location": "Miami, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/emmanuel-manny-burgos-865a9817",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/p1st5by0ksr",
+      "exa_result_url": "https://linkedin.com/in/emmanuel-manny-burgos-865a9817",
+      "exa_entity_id": "https://exa.ai/library/person/p1st5by0ksr",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 11,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Kenneth Peschier",
+      "current_title": "Senior Vice President, Asset Protection",
+      "current_company": "Burlington Stores, Inc.",
+      "years_at_current_role": 2.44,
+      "resolved_location": "Burlington, New Jersey, United States",
+      "linkedin_url": "https://linkedin.com/in/kennethpeschier",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/4s2b00h3jt5",
+      "exa_result_url": "https://linkedin.com/in/kennethpeschier",
+      "exa_entity_id": "https://exa.ai/library/person/4s2b00h3jt5",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Caroline Tiffany",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Albertsons/Vons/Pavilions",
+      "years_at_current_role": 11.36,
+      "resolved_location": "Southern California",
+      "linkedin_url": "https://linkedin.com/in/caroline-tiffany-9965027",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/9hvfbw7x61g",
+      "exa_result_url": "https://linkedin.com/in/caroline-tiffany-9965027",
+      "exa_entity_id": "https://exa.ai/library/person/9hvfbw7x61g",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 4,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "used_recent_role_fallback"
+    ],
+    "candidate": {
+      "full_name": "Valerie F. Bunn",
+      "current_title": "Sr. Asset Protection Manager",
+      "current_company": "Albertsons",
+      "years_at_current_role": 4.77,
+      "resolved_location": "Western Washington",
+      "linkedin_url": "https://linkedin.com/in/valerie-f-bunn-3b123243",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/8mw9hnf7dpv",
+      "exa_result_url": "https://linkedin.com/in/valerie-f-bunn-3b123243",
+      "exa_entity_id": "https://exa.ai/library/person/8mw9hnf7dpv",
+      "current_role_count": 0,
+      "used_recent_role_fallback": true,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "used_recent_role_fallback"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Carlos Perez",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Busch's Fresh Food Market",
+      "years_at_current_role": 4.36,
+      "resolved_location": "Michigan, United States",
+      "linkedin_url": "https://linkedin.com/in/carlosperez8",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/74p1zy9srq4",
+      "exa_result_url": "https://linkedin.com/in/carlosperez8",
+      "exa_entity_id": "https://exa.ai/library/person/74p1zy9srq4",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 2,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Tim Murfin",
+      "current_title": "Vice President - Asset Protection & Safety",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/timmurfin",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/z2xszrbbszh",
+      "exa_result_url": "https://linkedin.com/in/timmurfin",
+      "exa_entity_id": "https://exa.ai/library/person/z2xszrbbszh",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Brandon G. Major",
+      "current_title": "Senior Manager, Asset Protection & Food And Safety",
+      "current_company": "Southeastern Grocers",
+      "years_at_current_role": 7.95,
+      "resolved_location": "Jacksonville, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/brandongmajor",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/9x1r4c208gx",
+      "exa_result_url": "https://linkedin.com/in/brandongmajor",
+      "exa_entity_id": "https://exa.ai/library/person/9x1r4c208gx",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 14,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Katie Foster",
+      "current_title": "Market Director, Field Asset Protection & Security - West Market",
+      "current_company": "Sysco",
+      "years_at_current_role": 2.78,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/katie-foster-m-s-02077643",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/zkhw1h4tfrc",
+      "exa_result_url": "https://linkedin.com/in/katie-foster-m-s-02077643",
+      "exa_entity_id": "https://exa.ai/library/person/zkhw1h4tfrc",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "used_recent_role_fallback"
+    ],
+    "candidate": {
+      "full_name": "Don Hill",
+      "current_title": "Market Director, Field Asset Protection Security",
+      "current_company": "Sysco",
+      "years_at_current_role": 3.11,
+      "resolved_location": "Houston, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/don-hill-cfe-cfi-6aab9610",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/k0b0zwktqbd",
+      "exa_result_url": "https://linkedin.com/in/don-hill-cfe-cfi-6aab9610",
+      "exa_entity_id": "https://exa.ai/library/person/k0b0zwktqbd",
+      "current_role_count": 0,
+      "used_recent_role_fallback": true,
+      "work_history_count": 8,
+      "query_hit_count": 2,
+      "mapping_notes": [
+        "used_recent_role_fallback"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Tony Brunetto",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 7.44,
+      "resolved_location": "Florida",
+      "linkedin_url": "https://linkedin.com/in/tony-brunetto-8374632a",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/wqczy7wq276",
+      "exa_result_url": "https://linkedin.com/in/tony-brunetto-8374632a",
+      "exa_entity_id": "https://exa.ai/library/person/wqczy7wq276",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "PI-LPP Nicholas Johnston",
+      "current_title": "Regional Manager, Asset Protection",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/nick-johnston-pi-lpp",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/t8k5jmwbnd4",
+      "exa_result_url": "https://linkedin.com/in/nick-johnston-pi-lpp",
+      "exa_entity_id": "https://exa.ai/library/person/t8k5jmwbnd4",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "James Richey",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Winn-Dixie",
+      "years_at_current_role": 10.36,
+      "resolved_location": "Tampa, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/james-richey-cfi-0319629",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/6rm6sngpnpf",
+      "exa_result_url": "https://linkedin.com/in/james-richey-cfi-0319629",
+      "exa_entity_id": "https://exa.ai/library/person/6rm6sngpnpf",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Andrew Babcock",
+      "current_title": "Field Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 3.86,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/andrewbabcock",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/8fz62s1wx6h",
+      "exa_result_url": "https://linkedin.com/in/andrewbabcock",
+      "exa_entity_id": "https://exa.ai/library/person/8fz62s1wx6h",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 2,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Bernard Peterson",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 3.2,
+      "resolved_location": "Murfreesboro, Tennessee, United States",
+      "linkedin_url": "https://linkedin.com/in/bernard-peterson-cfi-lsa-18840379",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/z5x0pch766d",
+      "exa_result_url": "https://linkedin.com/in/bernard-peterson-cfi-lsa-18840379",
+      "exa_entity_id": "https://exa.ai/library/person/z5x0pch766d",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Tony Brunetto",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 7.44,
+      "resolved_location": "Florida",
+      "linkedin_url": "https://linkedin.com/in/tony-brunetto-8374632a",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/wqczy7wq276",
+      "exa_result_url": "https://linkedin.com/in/tony-brunetto-8374632a",
+      "exa_entity_id": "https://exa.ai/library/person/wqczy7wq276",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Mike Limauro",
+      "current_title": "Head Of Asset Protection, Amazon Worldwide Grocery Stores VP Global Asset Protection, Whole Foods",
+      "current_company": "Amazon",
+      "years_at_current_role": 0.53,
+      "resolved_location": "Seattle, WA, US",
+      "linkedin_url": "https://linkedin.com/in/mikelimauro",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/fss0n0x2wdm",
+      "exa_result_url": "https://linkedin.com/in/mikelimauro",
+      "exa_entity_id": "https://exa.ai/library/person/fss0n0x2wdm",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Ron Foss",
+      "current_title": "Director, Asset Protection",
+      "current_company": "Albertsons Companies, SOCAL Division",
+      "years_at_current_role": 3.44,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/ron-foss-cfi-lpc-1855037",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/ry86qxfhm67",
+      "exa_result_url": "https://linkedin.com/in/ron-foss-cfi-lpc-1855037",
+      "exa_entity_id": "https://exa.ai/library/person/ry86qxfhm67",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 3,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Joe Oliveira",
+      "current_title": "Global Leader Of Loss Prevention, Compliance, Risk Management And Corportate Security",
+      "current_company": "VSP Vision",
+      "years_at_current_role": 2.69,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/joe-oliveira-cfi-6b756411",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/rbcsjdmxt63",
+      "exa_result_url": "https://linkedin.com/in/joe-oliveira-cfi-6b756411",
+      "exa_entity_id": "https://exa.ai/library/person/rbcsjdmxt63",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Curtis W. Leininger",
+      "current_title": "Division Asset Protection Safety Director",
+      "current_company": "Lowe's Companies, Inc.",
+      "years_at_current_role": 4.11,
+      "resolved_location": "Mooresville, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/curtis-w-leininger-lpc-b8543510",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/dl6m59fhyg4",
+      "exa_result_url": "https://linkedin.com/in/curtis-w-leininger-lpc-b8543510",
+      "exa_entity_id": "https://exa.ai/library/person/dl6m59fhyg4",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Jason M Jones",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Lowes",
+      "years_at_current_role": 0.44,
+      "resolved_location": "McKinney, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/jason-m-jones-0686483",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/zmgx53xwlvz",
+      "exa_result_url": "https://linkedin.com/in/jason-m-jones-0686483",
+      "exa_entity_id": "https://exa.ai/library/person/zmgx53xwlvz",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Emmanuel Burgos",
+      "current_title": "Director, Field AP Operations",
+      "current_company": "Southeastern Grocers",
+      "years_at_current_role": 2.44,
+      "resolved_location": "Miami, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/emmanuel-manny-burgos-865a9817",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/p1st5by0ksr",
+      "exa_result_url": "https://linkedin.com/in/emmanuel-manny-burgos-865a9817",
+      "exa_entity_id": "https://exa.ai/library/person/p1st5by0ksr",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 11,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Dale Fowler",
+      "current_title": "Senior Director - Field Asset Protection Operations",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/dale-fowler-cfe-46154b6",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/y49s12myhzr",
+      "exa_result_url": "https://linkedin.com/in/dale-fowler-cfe-46154b6",
+      "exa_entity_id": "https://exa.ai/library/person/y49s12myhzr",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Brandon Lowery",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 4.11,
+      "resolved_location": "Nashville Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/brandon-lowery-cfi-982647152",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/pvdbbn7wp5l",
+      "exa_result_url": "https://linkedin.com/in/brandon-lowery-cfi-982647152",
+      "exa_entity_id": "https://exa.ai/library/person/pvdbbn7wp5l",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Carlos Perez",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Busch's Fresh Food Market",
+      "years_at_current_role": 4.36,
+      "resolved_location": "Michigan, United States",
+      "linkedin_url": "https://linkedin.com/in/carlosperez8",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/74p1zy9srq4",
+      "exa_result_url": "https://linkedin.com/in/carlosperez8",
+      "exa_entity_id": "https://exa.ai/library/person/74p1zy9srq4",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Janette Turner",
+      "current_title": "Senior Manager, Field Assets Protection",
+      "current_company": "Bath & Body Works",
+      "years_at_current_role": 3.28,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/janette-turner-64a40531",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/2llkf5q026h",
+      "exa_result_url": "https://linkedin.com/in/janette-turner-64a40531",
+      "exa_entity_id": "https://exa.ai/library/person/2llkf5q026h",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "David Neer",
+      "current_title": "Supply Chain Asset Protection",
+      "current_company": "Lowe's Companies, Inc.",
+      "years_at_current_role": 2.61,
+      "resolved_location": "Mooresville, NC",
+      "linkedin_url": "https://linkedin.com/in/david-neer-lpc-cfi-96210120",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/88dtgzfzq7g",
+      "exa_result_url": "https://linkedin.com/in/david-neer-lpc-cfi-96210120",
+      "exa_entity_id": "https://exa.ai/library/person/88dtgzfzq7g",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Jonathan Pierce",
+      "current_title": "Region Asset Protection Manager",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 1.77,
+      "resolved_location": "Jacksonville, FL",
+      "linkedin_url": "https://linkedin.com/in/jonathan-pierce-622baa107",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/688wyyvqr0z",
+      "exa_result_url": "https://linkedin.com/in/jonathan-pierce-622baa107",
+      "exa_entity_id": "https://exa.ai/library/person/688wyyvqr0z",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Andrew Babcock",
+      "current_title": "Field Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 3.86,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/andrewbabcock",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/8fz62s1wx6h",
+      "exa_result_url": "https://linkedin.com/in/andrewbabcock",
+      "exa_entity_id": "https://exa.ai/library/person/8fz62s1wx6h",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "James Richey",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Winn-Dixie",
+      "years_at_current_role": 10.36,
+      "resolved_location": "Tampa, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/james-richey-cfi-0319629",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/6rm6sngpnpf",
+      "exa_result_url": "https://linkedin.com/in/james-richey-cfi-0319629",
+      "exa_entity_id": "https://exa.ai/library/person/6rm6sngpnpf",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Nicholas Cuciti",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Dollar Tree Stores",
+      "years_at_current_role": 10.03,
+      "resolved_location": "New Jersey/ Pennsylvannia",
+      "linkedin_url": "https://linkedin.com/in/nicholascuciti",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/x92xdb3v20x",
+      "exa_result_url": "https://linkedin.com/in/nicholascuciti",
+      "exa_entity_id": "https://exa.ai/library/person/x92xdb3v20x",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "PI-LPP Nicholas Johnston",
+      "current_title": "Regional Manager, Asset Protection",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/nick-johnston-pi-lpp",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/t8k5jmwbnd4",
+      "exa_result_url": "https://linkedin.com/in/nick-johnston-pi-lpp",
+      "exa_entity_id": "https://exa.ai/library/person/t8k5jmwbnd4",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Sabrina Askew",
+      "current_title": "Region Asset Protection Manager",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 2.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/sabrina-askew-4202a152",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/8t5ssmjzxbs",
+      "exa_result_url": "https://linkedin.com/in/sabrina-askew-4202a152",
+      "exa_entity_id": "https://exa.ai/library/person/8t5ssmjzxbs",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "used_recent_role_fallback"
+    ],
+    "candidate": {
+      "full_name": "Don Hill",
+      "current_title": "Market Director, Field Asset Protection Security",
+      "current_company": "Sysco",
+      "years_at_current_role": 3.11,
+      "resolved_location": "Houston, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/don-hill-cfe-cfi-6aab9610",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/k0b0zwktqbd",
+      "exa_result_url": "https://linkedin.com/in/don-hill-cfe-cfi-6aab9610",
+      "exa_entity_id": "https://exa.ai/library/person/k0b0zwktqbd",
+      "current_role_count": 0,
+      "used_recent_role_fallback": true,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "used_recent_role_fallback"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Cameron Maurer",
+      "current_title": "Regional Asset Protection Manager - Coastal",
+      "current_company": "Bass Pro Shops",
+      "years_at_current_role": 1.28,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/cameron-maurer",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/18h4y6jw8w8",
+      "exa_result_url": "https://linkedin.com/in/cameron-maurer",
+      "exa_entity_id": "https://exa.ai/library/person/18h4y6jw8w8",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Diane Fowler",
+      "current_title": "Executive Vice President & Chief Financial Officer",
+      "current_company": "Furst-McNess Company",
+      "years_at_current_role": 2.86,
+      "resolved_location": "Rockford, Illinois, United States",
+      "linkedin_url": "https://linkedin.com/in/diane-fowler-48810b1a",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/cpnx24hwfp2",
+      "exa_result_url": "https://linkedin.com/in/diane-fowler-48810b1a",
+      "exa_entity_id": "https://exa.ai/library/person/cpnx24hwfp2",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Melissa Schaeffer",
+      "current_title": "CFO Council Member",
+      "current_company": "CNBC CFO Council",
+      "years_at_current_role": 2.03,
+      "resolved_location": "Greater Philadelphia",
+      "linkedin_url": "https://linkedin.com/in/melissa-schaeffer-0109168",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/c308pkph09h",
+      "exa_result_url": "https://linkedin.com/in/melissa-schaeffer-0109168",
+      "exa_entity_id": "https://exa.ai/library/person/c308pkph09h",
+      "current_role_count": 5,
+      "used_recent_role_fallback": false,
+      "work_history_count": 11,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "James Kehoe",
+      "current_title": "Chief Financial Officer",
+      "current_company": "FIS",
+      "years_at_current_role": 2.86,
+      "resolved_location": "Jacksonville, FL, US",
+      "linkedin_url": "https://linkedin.com/in/james-kehoe-90908329",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/5ptd44mj73r",
+      "exa_result_url": "https://linkedin.com/in/james-kehoe-90908329",
+      "exa_entity_id": "https://exa.ai/library/person/5ptd44mj73r",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Nancy K. Buese",
+      "current_title": "Executive Vice President And Chief Financial Officer",
+      "current_company": "CRH",
+      "years_at_current_role": 1.44,
+      "resolved_location": "New York City Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/nancybuese",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/3kzfgpffcxy",
+      "exa_result_url": "https://linkedin.com/in/nancybuese",
+      "exa_entity_id": "https://exa.ai/library/person/3kzfgpffcxy",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Mark Patterson",
+      "current_title": "EVP And Chief Financial Officer",
+      "current_company": "Cisco",
+      "years_at_current_role": 0.94,
+      "resolved_location": "Dallas, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/markpatt1",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/x267x1bxrzq",
+      "exa_result_url": "https://linkedin.com/in/markpatt1",
+      "exa_entity_id": "https://exa.ai/library/person/x267x1bxrzq",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 12,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Patrick Goris",
+      "current_title": "EVP & CFO, Chief Strategy Officer",
+      "current_company": "Carrier",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Palm Beach Gardens, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/patrick-goris-3253089",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/fk5l6414xb5",
+      "exa_result_url": "https://linkedin.com/in/patrick-goris-3253089",
+      "exa_entity_id": "https://exa.ai/library/person/fk5l6414xb5",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Ross Bogenschneider",
+      "current_title": "CFO Electrical Connections Segment",
+      "current_company": "nVent",
+      "years_at_current_role": 0.36,
+      "resolved_location": "St Louis Park, Minnesota, US",
+      "linkedin_url": "https://linkedin.com/in/ross-bogenschneider-42542856",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/4tb156vnpkj",
+      "exa_result_url": "https://linkedin.com/in/ross-bogenschneider-42542856",
+      "exa_entity_id": "https://exa.ai/library/person/4tb156vnpkj",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 13,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "John J. Mackel",
+      "current_title": "Managing Partner And Chief Executive Officer",
+      "current_company": "Weaver",
+      "years_at_current_role": 11.03,
+      "resolved_location": "Houston, Texas Area",
+      "linkedin_url": "https://linkedin.com/in/johnmackelpartneindustryweaver",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/xqrhd766qp6",
+      "exa_result_url": "https://linkedin.com/in/johnmackelpartneindustryweaver",
+      "exa_entity_id": "https://exa.ai/library/person/xqrhd766qp6",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 4,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Peter Matt",
+      "current_title": "President And Chief Executive Officer",
+      "current_company": "Commercial Metals Company",
+      "years_at_current_role": 2.78,
+      "resolved_location": "Dallas, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/petermatt",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/s5h142m8x1q",
+      "exa_result_url": "https://linkedin.com/in/petermatt",
+      "exa_entity_id": "https://exa.ai/library/person/s5h142m8x1q",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Dan Sumner",
+      "current_title": "Chief Executive Officer",
+      "current_company": "Westinghouse Electric Company",
+      "years_at_current_role": 0.19,
+      "resolved_location": "Cranberry Township, PA, US",
+      "linkedin_url": "https://linkedin.com/in/dan-sumner-ba240410",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/cb8frbv8krp",
+      "exa_result_url": "https://linkedin.com/in/dan-sumner-ba240410",
+      "exa_entity_id": "https://exa.ai/library/person/cb8frbv8krp",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 14,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Kevin Jackson",
+      "current_title": "Chief Operating Officer & Vice Chair",
+      "current_company": "KPMG US",
+      "years_at_current_role": 0.94,
+      "resolved_location": "Dallas, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/kevinpjackson1",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/sbsm6nn1gk0",
+      "exa_result_url": "https://linkedin.com/in/kevinpjackson1",
+      "exa_entity_id": "https://exa.ai/library/person/sbsm6nn1gk0",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Donald J. Fussner",
+      "current_title": "Chief Executive Officer",
+      "current_company": "Johnsonville",
+      "years_at_current_role": 2.44,
+      "resolved_location": "Sheboygan Falls, Wisconsin, US",
+      "linkedin_url": "https://linkedin.com/in/donald-j-fussner-87758417",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/yhwp6nz40mr",
+      "exa_result_url": "https://linkedin.com/in/donald-j-fussner-87758417",
+      "exa_entity_id": "https://exa.ai/library/person/yhwp6nz40mr",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 16,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Neng Handayani",
+      "current_title": "Head Of Finance And Administration",
+      "current_company": "PT AUTOSTAR MANDIRI TEKNOTAMA",
+      "years_at_current_role": 5.44,
+      "resolved_location": "Jakarta Utara, Jakarta Raya, Indonesia",
+      "linkedin_url": "https://linkedin.com/in/neng-handayani-90b681169",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/z2j4gh43kkf",
+      "exa_result_url": "https://linkedin.com/in/neng-handayani-90b681169",
+      "exa_entity_id": "https://exa.ai/library/person/z2j4gh43kkf",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "dropped",
+    "reasons": [
+      "founder_class_mismatch"
+    ],
+    "candidate": {
+      "full_name": "Michael Hsu",
+      "current_title": "CEO",
+      "current_company": "Kimberly-Clark",
+      "years_at_current_role": 7.44,
+      "resolved_location": "Irving, TX, US",
+      "linkedin_url": "https://linkedin.com/in/michaelhsu9",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/59nbgdzr44r",
+      "exa_result_url": "https://linkedin.com/in/michaelhsu9",
+      "exa_entity_id": "https://exa.ai/library/person/59nbgdzr44r",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "dropped",
+    "reasons": [
+      "founder_class_mismatch"
+    ],
+    "candidate": {
+      "full_name": "Kevin Blair",
+      "current_title": "President And CEO",
+      "current_company": "Pinnacle Financial Partners",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Atlanta, Georgia, United States",
+      "linkedin_url": "https://linkedin.com/in/kevin-blair-849a767",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/brxm615b9pz",
+      "exa_result_url": "https://linkedin.com/in/kevin-blair-849a767",
+      "exa_entity_id": "https://exa.ai/library/person/brxm615b9pz",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 11,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "dropped",
+    "reasons": [
+      "founder_class_mismatch"
+    ],
+    "candidate": {
+      "full_name": "Dave Foellinger",
+      "current_title": "Co-Founder",
+      "current_company": "Rock Garage",
+      "years_at_current_role": 6.19,
+      "resolved_location": "Indianapolis, Indiana, US",
+      "linkedin_url": "https://linkedin.com/in/dave-foellinger-266a5513",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/gn05w5k7p34",
+      "exa_result_url": "https://linkedin.com/in/dave-foellinger-266a5513",
+      "exa_entity_id": "https://exa.ai/library/person/gn05w5k7p34",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Sameer Wasson",
+      "current_title": "Chief Executive Officer",
+      "current_company": "MIPS",
+      "years_at_current_role": 2.78,
+      "resolved_location": "San Jose, California, US",
+      "linkedin_url": "https://linkedin.com/in/sameer-wasson-a492286",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/n80tp7qc1dz",
+      "exa_result_url": "https://linkedin.com/in/sameer-wasson-a492286",
+      "exa_entity_id": "https://exa.ai/library/person/n80tp7qc1dz",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "dropped",
+    "reasons": [
+      "founder_class_mismatch"
+    ],
+    "candidate": {
+      "full_name": "Carey Boethel",
+      "current_title": "CEO, North America",
+      "current_company": "Applus+",
+      "years_at_current_role": 0.69,
+      "resolved_location": "Madrid, Madrid, ES",
+      "linkedin_url": "https://linkedin.com/in/careyboethel",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/ffmhjnxqry2",
+      "exa_result_url": "https://linkedin.com/in/careyboethel",
+      "exa_entity_id": "https://exa.ai/library/person/ffmhjnxqry2",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 12,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Preston Guy",
+      "current_title": "Chief Executive Officer",
+      "current_company": "FUBU",
+      "years_at_current_role": 7.36,
+      "resolved_location": "Uniej\u00f3w, \u0141\u00f3dzkie, Poland",
+      "linkedin_url": "https://linkedin.com/in/preston-guy-aa58b6287",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/fsp2z8pbrqn",
+      "exa_result_url": "https://linkedin.com/in/preston-guy-aa58b6287",
+      "exa_entity_id": "https://exa.ai/library/person/fsp2z8pbrqn",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 3,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Valerie Jabbar",
+      "current_title": "Senior Vice President, Retail Divisions",
+      "current_company": "Kroger",
+      "years_at_current_role": 4.86,
+      "resolved_location": "Cincinnati, Ohio, United States",
+      "linkedin_url": "https://linkedin.com/in/valerie-jabbar-0048691ab",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/zswd1rtwx8f",
+      "exa_result_url": "https://linkedin.com/in/valerie-jabbar-0048691ab",
+      "exa_entity_id": "https://exa.ai/library/person/zswd1rtwx8f",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "dropped",
+    "reasons": [
+      "founder_class_mismatch"
+    ],
+    "candidate": {
+      "full_name": "Keith Knopf",
+      "current_title": "President And CEO The Raley S Companies",
+      "current_company": "The Raley's Companies",
+      "years_at_current_role": 7.78,
+      "resolved_location": "Sacrmamento, Ca",
+      "linkedin_url": "https://linkedin.com/in/keknopf1",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/0bx2cc4jwmk",
+      "exa_result_url": "https://linkedin.com/in/keknopf1",
+      "exa_entity_id": "https://exa.ai/library/person/0bx2cc4jwmk",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Jason Buechel",
+      "current_title": "Vice President, Amazon Worldwide Grocery",
+      "current_company": "Amazon",
+      "years_at_current_role": 1.44,
+      "resolved_location": "Austin, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/jasonbuechel",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/8m1hmbb19b6",
+      "exa_result_url": "https://linkedin.com/in/jasonbuechel",
+      "exa_entity_id": "https://exa.ai/library/person/8m1hmbb19b6",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Joe Kelley",
+      "current_title": "SVP Of The Retail Divisions At The Kroger Company",
+      "current_company": "Kroger",
+      "years_at_current_role": 1.11,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/joe-kelley",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/tpxrdp91shj",
+      "exa_result_url": "https://linkedin.com/in/joe-kelley",
+      "exa_entity_id": "https://exa.ai/library/person/tpxrdp91shj",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Greg Sparks",
+      "current_title": "Chief Operations Officer",
+      "current_company": "Food City / KVAT Foods Inc.",
+      "years_at_current_role": 10.44,
+      "resolved_location": "Abingdon, VA, US",
+      "linkedin_url": "https://linkedin.com/in/greg-sparks-4598b678",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/csm5jsy35wz",
+      "exa_result_url": "https://linkedin.com/in/greg-sparks-4598b678",
+      "exa_entity_id": "https://exa.ai/library/person/csm5jsy35wz",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Dale Fowler",
+      "current_title": "Senior Director - Field Asset Protection Operations",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/dale-fowler-cfe-46154b6",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/y49s12myhzr",
+      "exa_result_url": "https://linkedin.com/in/dale-fowler-cfe-46154b6",
+      "exa_entity_id": "https://exa.ai/library/person/y49s12myhzr",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Tarik Stewart",
+      "current_title": "Regional Vice President Of Operations",
+      "current_company": "Sprouts Farmers Market",
+      "years_at_current_role": 1.77,
+      "resolved_location": "Phoenix, Arizona, US",
+      "linkedin_url": "https://linkedin.com/in/tarik-stewart-mba-7957a527",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/f6x45xrsj0d",
+      "exa_result_url": "https://linkedin.com/in/tarik-stewart-mba-7957a527",
+      "exa_entity_id": "https://exa.ai/library/person/f6x45xrsj0d",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Frank Kerr",
+      "current_title": "EVP, Chief Store Operations Officer",
+      "current_company": "Grocery Outlet",
+      "years_at_current_role": 0.77,
+      "resolved_location": "Emeryville, California, United States",
+      "linkedin_url": "https://linkedin.com/in/frankiekerr",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/wytn14wcxwy",
+      "exa_result_url": "https://linkedin.com/in/frankiekerr",
+      "exa_entity_id": "https://exa.ai/library/person/wytn14wcxwy",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 13,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Josh Harpole",
+      "current_title": "Louisville Division President",
+      "current_company": "Kroger",
+      "years_at_current_role": 0.86,
+      "resolved_location": "Cincinnati, Ohio, US",
+      "linkedin_url": "https://linkedin.com/in/josh-harpole-7aa41064",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/q754cdx97bz",
+      "exa_result_url": "https://linkedin.com/in/josh-harpole-7aa41064",
+      "exa_entity_id": "https://exa.ai/library/person/q754cdx97bz",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Mary Ellen Adcock",
+      "current_title": "Chief Merchant And Marketing Officer",
+      "current_company": "Kroger",
+      "years_at_current_role": 1.44,
+      "resolved_location": "Cincinnati, Ohio, United States",
+      "linkedin_url": "https://linkedin.com/in/mary-ellen-adcock",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/9g819tsxy78",
+      "exa_result_url": "https://linkedin.com/in/mary-ellen-adcock",
+      "exa_entity_id": "https://exa.ai/library/person/9g819tsxy78",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Glenn Figenholtz",
+      "current_title": "SVP Merchandising",
+      "current_company": "Lowes Foods",
+      "years_at_current_role": 3.86,
+      "resolved_location": "Winston-Salem, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/glenn-figenholtz-3463367",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/lnf4lt9njrw",
+      "exa_result_url": "https://linkedin.com/in/glenn-figenholtz-3463367",
+      "exa_entity_id": "https://exa.ai/library/person/lnf4lt9njrw",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Matt Delly",
+      "current_title": "EVP, Chief Merchandising Officer",
+      "current_company": "Grocery Outlet",
+      "years_at_current_role": 1.03,
+      "resolved_location": "Emeryville, California, US",
+      "linkedin_url": "https://linkedin.com/in/matthewdelly",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/nqb3qmv2b1c",
+      "exa_result_url": "https://linkedin.com/in/matthewdelly",
+      "exa_entity_id": "https://exa.ai/library/person/nqb3qmv2b1c",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 14,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Carlo Baldan",
+      "current_title": "Group Vice President Fresh Merchandising And Store Planning & Design At Kroger, General Office",
+      "current_company": "Kroger",
+      "years_at_current_role": 0.28,
+      "resolved_location": "Cincinnati, Ohio, US",
+      "linkedin_url": "https://linkedin.com/in/carlo-baldan-1b99b413",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/916hl5m20yp",
+      "exa_result_url": "https://linkedin.com/in/carlo-baldan-1b99b413",
+      "exa_entity_id": "https://exa.ai/library/person/916hl5m20yp",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 16,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Tony Crumpton",
+      "current_title": "Chief Merchandising Officer",
+      "current_company": "United Supermarkets, LLC",
+      "years_at_current_role": 6.19,
+      "resolved_location": "Lubbock, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/tony-crumpton-51964b2",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/g5ygl6cs37y",
+      "exa_result_url": "https://linkedin.com/in/tony-crumpton-51964b2",
+      "exa_entity_id": "https://exa.ai/library/person/g5ygl6cs37y",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Matt Reeves",
+      "current_title": "Senior Vice President",
+      "current_company": "Grocery Outlet",
+      "years_at_current_role": 1.03,
+      "resolved_location": "Emeryville, CA",
+      "linkedin_url": "https://linkedin.com/in/matt-reeves-leadership",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/c1nqnk6zd5y",
+      "exa_result_url": "https://linkedin.com/in/matt-reeves-leadership",
+      "exa_entity_id": "https://exa.ai/library/person/c1nqnk6zd5y",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Djouma Barry",
+      "current_title": "EVP & Chief Retail Officer",
+      "current_company": "SpartanNash",
+      "years_at_current_role": 0.69,
+      "resolved_location": "Grand Rapids, MI, US",
+      "linkedin_url": "https://linkedin.com/in/djoumabarry",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/4l1rqtyl31l",
+      "exa_result_url": "https://linkedin.com/in/djoumabarry",
+      "exa_entity_id": "https://exa.ai/library/person/4l1rqtyl31l",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 15,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Pam Burke",
+      "current_title": "Chief Stores Officer",
+      "current_company": "Grocery Outlet",
+      "years_at_current_role": 4.44,
+      "resolved_location": "Emeryville, California, US",
+      "linkedin_url": "https://linkedin.com/in/pam-burke-53b6136",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/gjqfkd8rrdv",
+      "exa_result_url": "https://linkedin.com/in/pam-burke-53b6136",
+      "exa_entity_id": "https://exa.ai/library/person/gjqfkd8rrdv",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Mark McGowan",
+      "current_title": "EVP Of Retail And Chief Merchandising Officer",
+      "current_company": "C&S Wholesale Grocers",
+      "years_at_current_role": 1.77,
+      "resolved_location": "Mechanicsburg, Pennsylvania, United States",
+      "linkedin_url": "https://linkedin.com/in/mark-mcgowan-174687174",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/j4xcn69rs8m",
+      "exa_result_url": "https://linkedin.com/in/mark-mcgowan-174687174",
+      "exa_entity_id": "https://exa.ai/library/person/j4xcn69rs8m",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Carla Farrell",
+      "current_title": "Retail Cashier",
+      "current_company": "SPAR Ireland",
+      "years_at_current_role": 3.61,
+      "resolved_location": "Dublin, Republic of Ireland, IE",
+      "linkedin_url": "https://linkedin.com/in/carla-farrell-466870359",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/4cbnmgj4871",
+      "exa_result_url": "https://linkedin.com/in/carla-farrell-466870359",
+      "exa_entity_id": "https://exa.ai/library/person/4cbnmgj4871",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 2,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "dropped",
+    "reasons": [
+      "blacklisted_title"
+    ],
+    "candidate": {
+      "full_name": "Danica Basmayor",
+      "current_title": "Business Development",
+      "current_company": "ComLinked.",
+      "years_at_current_role": 11.28,
+      "resolved_location": "New York City Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/danica-basmayor-0a4810101",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/v74t74g18k6",
+      "exa_result_url": "https://linkedin.com/in/danica-basmayor-0a4810101",
+      "exa_entity_id": "https://exa.ai/library/person/v74t74g18k6",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  }
+]

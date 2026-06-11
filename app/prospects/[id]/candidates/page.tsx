@@ -90,10 +90,35 @@ export default async function CandidatesPage({
             <input className="field" name="seedRole" placeholder="Seed role" />
             <input className="field" name="seedCompanyName" placeholder="Seed company" defaultValue={workspace.prospect.companyName} required />
             <input className="field" name="seedLinkedinUrl" placeholder="Seed LinkedIn URL" />
+
+            <div className="rounded-md border border-slate-200 bg-slate-50 p-3">
+              <label className="flex items-start gap-2 text-sm font-semibold text-slate-700">
+                <input className="mt-0.5 h-4 w-4 rounded border-slate-300" type="checkbox" name="recursiveExpansion" />
+                <span>
+                  Recursive expansion
+                  <span className="mt-1 block text-xs font-normal leading-5 text-slate-500">
+                    Pivot from each run into a similar-company lead and repeat until the target lead count is reached.
+                  </span>
+                </span>
+              </label>
+              <div className="mt-3 grid grid-cols-2 gap-2">
+                <label className="grid gap-1 text-xs font-semibold text-slate-600">
+                  Target total leads
+                  <input className="field" name="targetTotal" type="number" min={1} placeholder="100" defaultValue={100} />
+                </label>
+                <label className="grid gap-1 text-xs font-semibold text-slate-600">
+                  Max hops
+                  <input className="field" name="maxHops" type="number" min={1} placeholder="20" defaultValue={20} />
+                </label>
+              </div>
+            </div>
+
             <button className="button-primary" type="submit">
               Run Exa Lead Gen
             </button>
-            <p className="text-xs leading-5 text-slate-500">Creates Python artifacts, then imports normalized run/candidate metadata into this workspace.</p>
+            <p className="text-xs leading-5 text-slate-500">
+              Creates Python artifacts, then imports normalized run/candidate metadata into this workspace. Recursive expansion imports one run per hop.
+            </p>
           </form>
 
           <form action={registerRunAction} className="surface grid gap-4 p-5">

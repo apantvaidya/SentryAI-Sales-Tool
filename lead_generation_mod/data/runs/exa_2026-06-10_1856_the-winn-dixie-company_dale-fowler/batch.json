@@ -1,0 +1,802 @@
+{
+  "seed_person": {
+    "person_name": "Dale Fowler",
+    "company_name": "The Winn-Dixie Company",
+    "linkedin_url": "https://www.linkedin.com/in/dale-fowler-cfe-46154b6/",
+    "role": "Senior Director - Field Asset Protection Operations"
+  },
+  "same_company_matches": [
+    {
+      "full_name": "Richard Brenner",
+      "current_title": "Director, Field AP Operations",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 1.19,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/richard-brenner-09029110",
+      "public_business_email": null,
+      "query_hit_count": 3
+    },
+    {
+      "full_name": "PI-LPP Nicholas Johnston",
+      "current_title": "Regional Manager, Asset Protection",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/nick-johnston-pi-lpp",
+      "public_business_email": null,
+      "query_hit_count": 5
+    },
+    {
+      "full_name": "Heaven Poirot",
+      "current_title": "Sr. Asset Protection Inventory Operations Manager",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 2.44,
+      "resolved_location": "Metro Jacksonville",
+      "linkedin_url": "https://linkedin.com/in/heaven-poirot-95873879",
+      "public_business_email": null,
+      "query_hit_count": 3
+    },
+    {
+      "full_name": "Sabrina Askew",
+      "current_title": "Region Asset Protection Manager",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 2.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/sabrina-askew-4202a152",
+      "public_business_email": null,
+      "query_hit_count": 4
+    },
+    {
+      "full_name": "Dale Fowler",
+      "current_title": "Senior Director - Field Asset Protection Operations",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/dale-fowler-cfe-46154b6",
+      "public_business_email": null,
+      "query_hit_count": 6
+    },
+    {
+      "full_name": "Jonathan Pierce",
+      "current_title": "Region Asset Protection Manager",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 1.77,
+      "resolved_location": "Jacksonville, FL",
+      "linkedin_url": "https://linkedin.com/in/jonathan-pierce-622baa107",
+      "public_business_email": null,
+      "query_hit_count": 4
+    },
+    {
+      "full_name": "Jeremy Han",
+      "current_title": "Senior Manager Physical Security",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 8.36,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/jeremybhan",
+      "public_business_email": null,
+      "query_hit_count": 3
+    },
+    {
+      "full_name": "Tim Murfin",
+      "current_title": "Vice President - Asset Protection & Safety",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/timmurfin",
+      "public_business_email": null,
+      "query_hit_count": 4
+    },
+    {
+      "full_name": "Keisha McKinnon",
+      "current_title": "Region Safety Manager",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 10.69,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/keisha-mckinnon-a01758355",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Reilly Gallagher",
+      "current_title": "Asset Protection Safety Analyst",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 1.69,
+      "resolved_location": "Jacksonville, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/reilly-gallagher-a13754129",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Corey Bell",
+      "current_title": "Physical Security Manager",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 2.03,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/corey-bell-27a870102",
+      "public_business_email": null,
+      "query_hit_count": 2
+    }
+  ],
+  "similar_company_matches": [
+    {
+      "full_name": "James Richey",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Winn-Dixie",
+      "years_at_current_role": 10.36,
+      "resolved_location": "Tampa, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/james-richey-cfi-0319629",
+      "public_business_email": null,
+      "query_hit_count": 5
+    },
+    {
+      "full_name": "Corey Berk",
+      "current_title": "Region Asset Protection Manager",
+      "current_company": "Winn-Dixie",
+      "years_at_current_role": 7.95,
+      "resolved_location": "Tampa, Florida",
+      "linkedin_url": "https://linkedin.com/in/corey-berk-cfe-40a7b923",
+      "public_business_email": null,
+      "query_hit_count": 3
+    },
+    {
+      "full_name": "Emmanuel Burgos",
+      "current_title": "Director, Field AP Operations",
+      "current_company": "Southeastern Grocers",
+      "years_at_current_role": 2.44,
+      "resolved_location": "Miami, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/emmanuel-manny-burgos-865a9817",
+      "public_business_email": null,
+      "query_hit_count": 5
+    },
+    {
+      "full_name": "Brandon G. Major",
+      "current_title": "Senior Manager, Asset Protection & Food And Safety",
+      "current_company": "Southeastern Grocers",
+      "years_at_current_role": 7.95,
+      "resolved_location": "Jacksonville, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/brandongmajor",
+      "public_business_email": null,
+      "query_hit_count": 3
+    },
+    {
+      "full_name": "Scott Goodwin",
+      "current_title": "Sr. Regional Asset Protection Manager",
+      "current_company": "Southeastern Grocers",
+      "years_at_current_role": 25.44,
+      "resolved_location": "Charlotte, North Carolina Area",
+      "linkedin_url": "https://linkedin.com/in/scott-goodwin-crt-41b57910",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Patrick Fairley",
+      "current_title": "Region Asset Protection Manager",
+      "current_company": "Southeastern Grocers",
+      "years_at_current_role": 3.2,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/patrick-fairley-cfe-cfi-25755416",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Jessie Silliman",
+      "current_title": "Manager, Asset Protection Systems & Programs",
+      "current_company": "Southeastern Grocers",
+      "years_at_current_role": 2.19,
+      "resolved_location": "Middleburg, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/jessie-silliman-408533231",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Tammy Gooch",
+      "current_title": "District Asset Protection Specialist",
+      "current_company": "Winn Dixie Stores",
+      "years_at_current_role": 21.44,
+      "resolved_location": "Jacksonville Beach, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/tammy-gooch-531470a",
+      "public_business_email": null,
+      "query_hit_count": 3
+    },
+    {
+      "full_name": "Gordon Bourne",
+      "current_title": "Zone Asset Protection Director",
+      "current_company": "Dollar Tree Stores",
+      "years_at_current_role": 4.03,
+      "resolved_location": "Mount Dora, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/gordon-bourne-249310155",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Tony Brunetto",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 7.44,
+      "resolved_location": "Florida",
+      "linkedin_url": "https://linkedin.com/in/tony-brunetto-8374632a",
+      "public_business_email": null,
+      "query_hit_count": 4
+    },
+    {
+      "full_name": "Joe Oliveira",
+      "current_title": "Global Leader Of Loss Prevention, Compliance, Risk Management And Corportate Security",
+      "current_company": "VSP Vision",
+      "years_at_current_role": 2.69,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/joe-oliveira-cfi-6b756411",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "James Albritton",
+      "current_title": "Location Director",
+      "current_company": "Winn Dixie Stores",
+      "years_at_current_role": 13.44,
+      "resolved_location": "Wachula, Fla",
+      "linkedin_url": "https://linkedin.com/in/james-albritton-71919854",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Rob Richardson",
+      "current_title": "District Manager",
+      "current_company": "Winn-Dixie",
+      "years_at_current_role": null,
+      "resolved_location": "Lynn Haven, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/rob-richardson-a6b36b101",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "David Glass",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Five Below",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Philadelphia, PA, US",
+      "linkedin_url": "https://linkedin.com/in/david-glass-98643076",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Todd Walker",
+      "current_title": "Process Sustainability Manager",
+      "current_company": "Winn-Dixie",
+      "years_at_current_role": 5.44,
+      "resolved_location": "West Florida",
+      "linkedin_url": "https://linkedin.com/in/todd-walker-baa87379",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Rick Giordano",
+      "current_title": "Store Director",
+      "current_company": "Winn-Dixie",
+      "years_at_current_role": 15.61,
+      "resolved_location": "Fort Lauderdale, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/rick-giordano-34514783",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Joe Laufenberg",
+      "current_title": "Senior Director Of Asset Protection",
+      "current_company": "Festival Foods",
+      "years_at_current_role": 11.03,
+      "resolved_location": "Green Bay, Wisconsin Area",
+      "linkedin_url": "https://linkedin.com/in/joe-laufenberg-lpc",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "John Carr",
+      "current_title": "Director Of Asset Protection",
+      "current_company": "Hannaford Supermarkets",
+      "years_at_current_role": 8.44,
+      "resolved_location": "Maine",
+      "linkedin_url": "https://linkedin.com/in/john-carr-b8a179145",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Ron Foss",
+      "current_title": "Director, Asset Protection",
+      "current_company": "Albertsons Companies, SOCAL Division",
+      "years_at_current_role": 3.44,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/ron-foss-cfi-lpc-1855037",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Mike Limauro",
+      "current_title": "Head Of Asset Protection, Amazon Worldwide Grocery Stores VP Global Asset Protection, Whole Foods",
+      "current_company": "Amazon",
+      "years_at_current_role": 0.53,
+      "resolved_location": "Seattle, WA, US",
+      "linkedin_url": "https://linkedin.com/in/mikelimauro",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Teresa Tucker",
+      "current_title": "VP Shrink Best Practices AP",
+      "current_company": "Kroger",
+      "years_at_current_role": 1.11,
+      "resolved_location": "Cincinnati, Ohio, United States",
+      "linkedin_url": "https://linkedin.com/in/teresa-tucker-08b82b93",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Kenneth Peschier",
+      "current_title": "Senior Vice President, Asset Protection",
+      "current_company": "Burlington Stores, Inc.",
+      "years_at_current_role": 2.44,
+      "resolved_location": "Burlington, New Jersey, United States",
+      "linkedin_url": "https://linkedin.com/in/kennethpeschier",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Caroline Tiffany",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Albertsons/Vons/Pavilions",
+      "years_at_current_role": 11.36,
+      "resolved_location": "Southern California",
+      "linkedin_url": "https://linkedin.com/in/caroline-tiffany-9965027",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Valerie F. Bunn",
+      "current_title": "Sr. Asset Protection Manager",
+      "current_company": "Albertsons",
+      "years_at_current_role": 4.77,
+      "resolved_location": "Western Washington",
+      "linkedin_url": "https://linkedin.com/in/valerie-f-bunn-3b123243",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Carlos Perez",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Busch's Fresh Food Market",
+      "years_at_current_role": 4.36,
+      "resolved_location": "Michigan, United States",
+      "linkedin_url": "https://linkedin.com/in/carlosperez8",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Katie Foster",
+      "current_title": "Market Director, Field Asset Protection & Security - West Market",
+      "current_company": "Sysco",
+      "years_at_current_role": 2.78,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/katie-foster-m-s-02077643",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Don Hill",
+      "current_title": "Market Director, Field Asset Protection Security",
+      "current_company": "Sysco",
+      "years_at_current_role": 3.11,
+      "resolved_location": "Houston, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/don-hill-cfe-cfi-6aab9610",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Andrew Babcock",
+      "current_title": "Field Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 3.86,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/andrewbabcock",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Bernard Peterson",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 3.2,
+      "resolved_location": "Murfreesboro, Tennessee, United States",
+      "linkedin_url": "https://linkedin.com/in/bernard-peterson-cfi-lsa-18840379",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Curtis W. Leininger",
+      "current_title": "Division Asset Protection Safety Director",
+      "current_company": "Lowe's Companies, Inc.",
+      "years_at_current_role": 4.11,
+      "resolved_location": "Mooresville, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/curtis-w-leininger-lpc-b8543510",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Jason M Jones",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Lowes",
+      "years_at_current_role": 0.44,
+      "resolved_location": "McKinney, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/jason-m-jones-0686483",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brandon Lowery",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 4.11,
+      "resolved_location": "Nashville Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/brandon-lowery-cfi-982647152",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Janette Turner",
+      "current_title": "Senior Manager, Field Assets Protection",
+      "current_company": "Bath & Body Works",
+      "years_at_current_role": 3.28,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/janette-turner-64a40531",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "David Neer",
+      "current_title": "Supply Chain Asset Protection",
+      "current_company": "Lowe's Companies, Inc.",
+      "years_at_current_role": 2.61,
+      "resolved_location": "Mooresville, NC",
+      "linkedin_url": "https://linkedin.com/in/david-neer-lpc-cfi-96210120",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Nicholas Cuciti",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Dollar Tree Stores",
+      "years_at_current_role": 10.03,
+      "resolved_location": "New Jersey/ Pennsylvannia",
+      "linkedin_url": "https://linkedin.com/in/nicholascuciti",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Cameron Maurer",
+      "current_title": "Regional Asset Protection Manager - Coastal",
+      "current_company": "Bass Pro Shops",
+      "years_at_current_role": 1.28,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/cameron-maurer",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Diane Fowler",
+      "current_title": "Executive Vice President & Chief Financial Officer",
+      "current_company": "Furst-McNess Company",
+      "years_at_current_role": 2.86,
+      "resolved_location": "Rockford, Illinois, United States",
+      "linkedin_url": "https://linkedin.com/in/diane-fowler-48810b1a",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Melissa Schaeffer",
+      "current_title": "CFO Council Member",
+      "current_company": "CNBC CFO Council",
+      "years_at_current_role": 2.03,
+      "resolved_location": "Greater Philadelphia",
+      "linkedin_url": "https://linkedin.com/in/melissa-schaeffer-0109168",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "James Kehoe",
+      "current_title": "Chief Financial Officer",
+      "current_company": "FIS",
+      "years_at_current_role": 2.86,
+      "resolved_location": "Jacksonville, FL, US",
+      "linkedin_url": "https://linkedin.com/in/james-kehoe-90908329",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Nancy K. Buese",
+      "current_title": "Executive Vice President And Chief Financial Officer",
+      "current_company": "CRH",
+      "years_at_current_role": 1.44,
+      "resolved_location": "New York City Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/nancybuese",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Mark Patterson",
+      "current_title": "EVP And Chief Financial Officer",
+      "current_company": "Cisco",
+      "years_at_current_role": 0.94,
+      "resolved_location": "Dallas, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/markpatt1",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Patrick Goris",
+      "current_title": "EVP & CFO, Chief Strategy Officer",
+      "current_company": "Carrier",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Palm Beach Gardens, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/patrick-goris-3253089",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Ross Bogenschneider",
+      "current_title": "CFO Electrical Connections Segment",
+      "current_company": "nVent",
+      "years_at_current_role": 0.36,
+      "resolved_location": "St Louis Park, Minnesota, US",
+      "linkedin_url": "https://linkedin.com/in/ross-bogenschneider-42542856",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "John J. Mackel",
+      "current_title": "Managing Partner And Chief Executive Officer",
+      "current_company": "Weaver",
+      "years_at_current_role": 11.03,
+      "resolved_location": "Houston, Texas Area",
+      "linkedin_url": "https://linkedin.com/in/johnmackelpartneindustryweaver",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Peter Matt",
+      "current_title": "President And Chief Executive Officer",
+      "current_company": "Commercial Metals Company",
+      "years_at_current_role": 2.78,
+      "resolved_location": "Dallas, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/petermatt",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Dan Sumner",
+      "current_title": "Chief Executive Officer",
+      "current_company": "Westinghouse Electric Company",
+      "years_at_current_role": 0.19,
+      "resolved_location": "Cranberry Township, PA, US",
+      "linkedin_url": "https://linkedin.com/in/dan-sumner-ba240410",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Kevin Jackson",
+      "current_title": "Chief Operating Officer & Vice Chair",
+      "current_company": "KPMG US",
+      "years_at_current_role": 0.94,
+      "resolved_location": "Dallas, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/kevinpjackson1",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Donald J. Fussner",
+      "current_title": "Chief Executive Officer",
+      "current_company": "Johnsonville",
+      "years_at_current_role": 2.44,
+      "resolved_location": "Sheboygan Falls, Wisconsin, US",
+      "linkedin_url": "https://linkedin.com/in/donald-j-fussner-87758417",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Neng Handayani",
+      "current_title": "Head Of Finance And Administration",
+      "current_company": "PT AUTOSTAR MANDIRI TEKNOTAMA",
+      "years_at_current_role": 5.44,
+      "resolved_location": "Jakarta Utara, Jakarta Raya, Indonesia",
+      "linkedin_url": "https://linkedin.com/in/neng-handayani-90b681169",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Sameer Wasson",
+      "current_title": "Chief Executive Officer",
+      "current_company": "MIPS",
+      "years_at_current_role": 2.78,
+      "resolved_location": "San Jose, California, US",
+      "linkedin_url": "https://linkedin.com/in/sameer-wasson-a492286",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Preston Guy",
+      "current_title": "Chief Executive Officer",
+      "current_company": "FUBU",
+      "years_at_current_role": 7.36,
+      "resolved_location": "Uniej\u00f3w, \u0141\u00f3dzkie, Poland",
+      "linkedin_url": "https://linkedin.com/in/preston-guy-aa58b6287",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Valerie Jabbar",
+      "current_title": "Senior Vice President, Retail Divisions",
+      "current_company": "Kroger",
+      "years_at_current_role": 4.86,
+      "resolved_location": "Cincinnati, Ohio, United States",
+      "linkedin_url": "https://linkedin.com/in/valerie-jabbar-0048691ab",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Jason Buechel",
+      "current_title": "Vice President, Amazon Worldwide Grocery",
+      "current_company": "Amazon",
+      "years_at_current_role": 1.44,
+      "resolved_location": "Austin, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/jasonbuechel",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Joe Kelley",
+      "current_title": "SVP Of The Retail Divisions At The Kroger Company",
+      "current_company": "Kroger",
+      "years_at_current_role": 1.11,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/joe-kelley",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Greg Sparks",
+      "current_title": "Chief Operations Officer",
+      "current_company": "Food City / KVAT Foods Inc.",
+      "years_at_current_role": 10.44,
+      "resolved_location": "Abingdon, VA, US",
+      "linkedin_url": "https://linkedin.com/in/greg-sparks-4598b678",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Tarik Stewart",
+      "current_title": "Regional Vice President Of Operations",
+      "current_company": "Sprouts Farmers Market",
+      "years_at_current_role": 1.77,
+      "resolved_location": "Phoenix, Arizona, US",
+      "linkedin_url": "https://linkedin.com/in/tarik-stewart-mba-7957a527",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Frank Kerr",
+      "current_title": "EVP, Chief Store Operations Officer",
+      "current_company": "Grocery Outlet",
+      "years_at_current_role": 0.77,
+      "resolved_location": "Emeryville, California, United States",
+      "linkedin_url": "https://linkedin.com/in/frankiekerr",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Josh Harpole",
+      "current_title": "Louisville Division President",
+      "current_company": "Kroger",
+      "years_at_current_role": 0.86,
+      "resolved_location": "Cincinnati, Ohio, US",
+      "linkedin_url": "https://linkedin.com/in/josh-harpole-7aa41064",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Mary Ellen Adcock",
+      "current_title": "Chief Merchant And Marketing Officer",
+      "current_company": "Kroger",
+      "years_at_current_role": 1.44,
+      "resolved_location": "Cincinnati, Ohio, United States",
+      "linkedin_url": "https://linkedin.com/in/mary-ellen-adcock",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Glenn Figenholtz",
+      "current_title": "SVP Merchandising",
+      "current_company": "Lowes Foods",
+      "years_at_current_role": 3.86,
+      "resolved_location": "Winston-Salem, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/glenn-figenholtz-3463367",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Matt Delly",
+      "current_title": "EVP, Chief Merchandising Officer",
+      "current_company": "Grocery Outlet",
+      "years_at_current_role": 1.03,
+      "resolved_location": "Emeryville, California, US",
+      "linkedin_url": "https://linkedin.com/in/matthewdelly",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Carlo Baldan",
+      "current_title": "Group Vice President Fresh Merchandising And Store Planning & Design At Kroger, General Office",
+      "current_company": "Kroger",
+      "years_at_current_role": 0.28,
+      "resolved_location": "Cincinnati, Ohio, US",
+      "linkedin_url": "https://linkedin.com/in/carlo-baldan-1b99b413",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Tony Crumpton",
+      "current_title": "Chief Merchandising Officer",
+      "current_company": "United Supermarkets, LLC",
+      "years_at_current_role": 6.19,
+      "resolved_location": "Lubbock, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/tony-crumpton-51964b2",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Matt Reeves",
+      "current_title": "Senior Vice President",
+      "current_company": "Grocery Outlet",
+      "years_at_current_role": 1.03,
+      "resolved_location": "Emeryville, CA",
+      "linkedin_url": "https://linkedin.com/in/matt-reeves-leadership",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Djouma Barry",
+      "current_title": "EVP & Chief Retail Officer",
+      "current_company": "SpartanNash",
+      "years_at_current_role": 0.69,
+      "resolved_location": "Grand Rapids, MI, US",
+      "linkedin_url": "https://linkedin.com/in/djoumabarry",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Pam Burke",
+      "current_title": "Chief Stores Officer",
+      "current_company": "Grocery Outlet",
+      "years_at_current_role": 4.44,
+      "resolved_location": "Emeryville, California, US",
+      "linkedin_url": "https://linkedin.com/in/pam-burke-53b6136",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Mark McGowan",
+      "current_title": "EVP Of Retail And Chief Merchandising Officer",
+      "current_company": "C&S Wholesale Grocers",
+      "years_at_current_role": 1.77,
+      "resolved_location": "Mechanicsburg, Pennsylvania, United States",
+      "linkedin_url": "https://linkedin.com/in/mark-mcgowan-174687174",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Carla Farrell",
+      "current_title": "Retail Cashier",
+      "current_company": "SPAR Ireland",
+      "years_at_current_role": 3.61,
+      "resolved_location": "Dublin, Republic of Ireland, IE",
+      "linkedin_url": "https://linkedin.com/in/carla-farrell-466870359",
+      "public_business_email": null,
+      "query_hit_count": 1
+    }
+  ]
+}

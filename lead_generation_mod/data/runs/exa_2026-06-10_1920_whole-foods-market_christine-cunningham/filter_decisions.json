@@ -1,0 +1,3514 @@
+[
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "LPC. WZ. David Stanley",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 3.95,
+      "resolved_location": "BC Canada. Washington. Oregon",
+      "linkedin_url": "https://linkedin.com/in/david-stanley-lpc-wz-35039b11a",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/gk6t889jxg3",
+      "exa_result_url": "https://linkedin.com/in/david-stanley-lpc-wz-35039b11a",
+      "exa_entity_id": "https://exa.ai/library/person/gk6t889jxg3",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 5,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Leslie Lorquet",
+      "current_title": "Senior Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 6.78,
+      "resolved_location": "New York City Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/leslie-lorquet-lpc-35022368",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/rl1tbhm187z",
+      "exa_result_url": "https://linkedin.com/in/leslie-lorquet-lpc-35022368",
+      "exa_entity_id": "https://exa.ai/library/person/rl1tbhm187z",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 2,
+      "query_hit_count": 5,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Janine Marin",
+      "current_title": "Senior Regional Asset Protection Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 3.03,
+      "resolved_location": "Northeast",
+      "linkedin_url": "https://linkedin.com/in/janine-marin-cfi-0b993b6",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/8yj1trzr2ft",
+      "exa_result_url": "https://linkedin.com/in/janine-marin-cfi-0b993b6",
+      "exa_entity_id": "https://exa.ai/library/person/8yj1trzr2ft",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 2,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Aaron Schryer",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 2.78,
+      "resolved_location": "Denver Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/aaron-schryer-87313094",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/18gnq7wshpx",
+      "exa_result_url": "https://linkedin.com/in/aaron-schryer-87313094",
+      "exa_entity_id": "https://exa.ai/library/person/18gnq7wshpx",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 4,
+      "query_hit_count": 3,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Christine Cunningham",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 6.19,
+      "resolved_location": "Ft. Lauderdale, Fl.",
+      "linkedin_url": "https://linkedin.com/in/christine-cunningham-46932518",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/s92dfyg137t",
+      "exa_result_url": "https://linkedin.com/in/christine-cunningham-46932518",
+      "exa_entity_id": "https://exa.ai/library/person/s92dfyg137t",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 12,
+      "query_hit_count": 7,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Josh Crippen",
+      "current_title": "Regional Director, Asset Protection",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 1.52,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/josh-crippen-1b12ba70",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/wgzzk34j7qg",
+      "exa_result_url": "https://linkedin.com/in/josh-crippen-1b12ba70",
+      "exa_entity_id": "https://exa.ai/library/person/wgzzk34j7qg",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 4,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Eric O.",
+      "current_title": "Region Asset Protection Manager",
+      "current_company": "Whole Foods Market/Amazon",
+      "years_at_current_role": 4.11,
+      "resolved_location": "Chicago, IL",
+      "linkedin_url": "https://linkedin.com/in/eric-o-28a36592",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/r5yy2z3bdxp",
+      "exa_result_url": "https://linkedin.com/in/eric-o-28a36592",
+      "exa_entity_id": "https://exa.ai/library/person/r5yy2z3bdxp",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 4,
+      "query_hit_count": 2,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Bobby Templet",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 7.44,
+      "resolved_location": "Dallas/Fort Worth Area",
+      "linkedin_url": "https://linkedin.com/in/bobby-templet-9b136a6",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/sjjwpkbnjgr",
+      "exa_result_url": "https://linkedin.com/in/bobby-templet-9b136a6",
+      "exa_entity_id": "https://exa.ai/library/person/sjjwpkbnjgr",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 5,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Tony Brunetto",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 7.44,
+      "resolved_location": "Florida",
+      "linkedin_url": "https://linkedin.com/in/tony-brunetto-8374632a",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/wqczy7wq276",
+      "exa_result_url": "https://linkedin.com/in/tony-brunetto-8374632a",
+      "exa_entity_id": "https://exa.ai/library/person/wqczy7wq276",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 5,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Shannon Ansell",
+      "current_title": "Senior Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 7.44,
+      "resolved_location": "California, United States",
+      "linkedin_url": "https://linkedin.com/in/shannon-ansell-052969108",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/mkv2sxksms1",
+      "exa_result_url": "https://linkedin.com/in/shannon-ansell-052969108",
+      "exa_entity_id": "https://exa.ai/library/person/mkv2sxksms1",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 3,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Scott McEntyre",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 7.53,
+      "resolved_location": "Southeast",
+      "linkedin_url": "https://linkedin.com/in/srmcentyre",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/k5mdzltwxqz",
+      "exa_result_url": "https://linkedin.com/in/srmcentyre",
+      "exa_entity_id": "https://exa.ai/library/person/k5mdzltwxqz",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 5,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Jill Ellison",
+      "current_title": "Loss Prevention Specialist IIII",
+      "current_company": "Amazon",
+      "years_at_current_role": 0.53,
+      "resolved_location": "Midwest",
+      "linkedin_url": "https://linkedin.com/in/jill-ellison-lpc-13359356",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/2n99cj4kbpv",
+      "exa_result_url": "https://linkedin.com/in/jill-ellison-lpc-13359356",
+      "exa_entity_id": "https://exa.ai/library/person/2n99cj4kbpv",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 4,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Randy Hall",
+      "current_title": "Regional Asset Protection Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 6.78,
+      "resolved_location": "District Of Columbia",
+      "linkedin_url": "https://linkedin.com/in/randyhallcfi",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/zxdx52tmhqk",
+      "exa_result_url": "https://linkedin.com/in/randyhallcfi",
+      "exa_entity_id": "https://exa.ai/library/person/zxdx52tmhqk",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 3,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Rob Wynn",
+      "current_title": "Senior Director, Asset Protection",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 4.36,
+      "resolved_location": "Austin, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/rob-wynn-8415419",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/yd66p9515nh",
+      "exa_result_url": "https://linkedin.com/in/rob-wynn-8415419",
+      "exa_entity_id": "https://exa.ai/library/person/yd66p9515nh",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 3,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Mike Limauro",
+      "current_title": "Head Of Asset Protection, Amazon Worldwide Grocery Stores VP Global Asset Protection, Whole Foods",
+      "current_company": "Amazon",
+      "years_at_current_role": 0.53,
+      "resolved_location": "Seattle, WA, US",
+      "linkedin_url": "https://linkedin.com/in/mikelimauro",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/fss0n0x2wdm",
+      "exa_result_url": "https://linkedin.com/in/mikelimauro",
+      "exa_entity_id": "https://exa.ai/library/person/fss0n0x2wdm",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 4,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Chris Holmes",
+      "current_title": "Regional Asset Protection Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 1.11,
+      "resolved_location": "United Kingdom, Canada",
+      "linkedin_url": "https://linkedin.com/in/chris-holmes-80a81329",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/nvt5cvrh4t4",
+      "exa_result_url": "https://linkedin.com/in/chris-holmes-80a81329",
+      "exa_entity_id": "https://exa.ai/library/person/nvt5cvrh4t4",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 13,
+      "query_hit_count": 2,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Jason Cody",
+      "current_title": "Sr. Regional Asset Protection And Safety Specialist",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 4.11,
+      "resolved_location": "Greater Chicago Area",
+      "linkedin_url": "https://linkedin.com/in/jason-cody-cfi-lpc-788a0a4",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/vpgyyq3s2nq",
+      "exa_result_url": "https://linkedin.com/in/jason-cody-cfi-lpc-788a0a4",
+      "exa_entity_id": "https://exa.ai/library/person/vpgyyq3s2nq",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 3,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Michael Magrum",
+      "current_title": "Senior Asset Protection Specialist-EHS Operations",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 0.94,
+      "resolved_location": "Charlotte, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/michael-magrum-cfi-lpc-1ba90947",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/05tf4h82cqn",
+      "exa_result_url": "https://linkedin.com/in/michael-magrum-cfi-lpc-1ba90947",
+      "exa_entity_id": "https://exa.ai/library/person/05tf4h82cqn",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 3,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Jessica Nelson",
+      "current_title": "Region Asset Protection Manager",
+      "current_company": "Amazon",
+      "years_at_current_role": 0.53,
+      "resolved_location": "Seattle, WA, US",
+      "linkedin_url": "https://linkedin.com/in/jessica-nelson-9b5296a7",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/pmqkyr8mbj3",
+      "exa_result_url": "https://linkedin.com/in/jessica-nelson-9b5296a7",
+      "exa_entity_id": "https://exa.ai/library/person/pmqkyr8mbj3",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 14,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "used_recent_role_fallback"
+    ],
+    "candidate": {
+      "full_name": "Mike Davis",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "JCPenney",
+      "years_at_current_role": 4.19,
+      "resolved_location": "Denver, Colorado, United States",
+      "linkedin_url": "https://linkedin.com/in/mike-davis-01b18a28",
+      "public_business_email": null,
+      "source_vector_id": "01",
+      "source_vector_name": "same_company_exact_or_near_role",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/8r1m0plcqyk",
+      "exa_result_url": "https://linkedin.com/in/mike-davis-01b18a28",
+      "exa_entity_id": "https://exa.ai/library/person/8r1m0plcqyk",
+      "current_role_count": 0,
+      "used_recent_role_fallback": true,
+      "work_history_count": 4,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "used_recent_role_fallback"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Aaron Schryer",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 2.78,
+      "resolved_location": "Denver Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/aaron-schryer-87313094",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/18gnq7wshpx",
+      "exa_result_url": "https://linkedin.com/in/aaron-schryer-87313094",
+      "exa_entity_id": "https://exa.ai/library/person/18gnq7wshpx",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 4,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Christine Cunningham",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 6.19,
+      "resolved_location": "Ft. Lauderdale, Fl.",
+      "linkedin_url": "https://linkedin.com/in/christine-cunningham-46932518",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/s92dfyg137t",
+      "exa_result_url": "https://linkedin.com/in/christine-cunningham-46932518",
+      "exa_entity_id": "https://exa.ai/library/person/s92dfyg137t",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 12,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles",
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Bradley Zaretsky",
+      "current_title": "Regional Assets Protection Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 2.78,
+      "resolved_location": "Washington DC-Baltimore Area",
+      "linkedin_url": "https://linkedin.com/in/bradley-zaretsky-lpc-6484a029",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/y89pwmnxs86",
+      "exa_result_url": "https://linkedin.com/in/bradley-zaretsky-lpc-6484a029",
+      "exa_entity_id": "https://exa.ai/library/person/y89pwmnxs86",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Leslie Lorquet",
+      "current_title": "Senior Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 6.78,
+      "resolved_location": "New York City Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/leslie-lorquet-lpc-35022368",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/rl1tbhm187z",
+      "exa_result_url": "https://linkedin.com/in/leslie-lorquet-lpc-35022368",
+      "exa_entity_id": "https://exa.ai/library/person/rl1tbhm187z",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 2,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Jill Ellison",
+      "current_title": "Loss Prevention Specialist IIII",
+      "current_company": "Amazon",
+      "years_at_current_role": 0.53,
+      "resolved_location": "Midwest",
+      "linkedin_url": "https://linkedin.com/in/jill-ellison-lpc-13359356",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/2n99cj4kbpv",
+      "exa_result_url": "https://linkedin.com/in/jill-ellison-lpc-13359356",
+      "exa_entity_id": "https://exa.ai/library/person/2n99cj4kbpv",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Bobby Templet",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 7.44,
+      "resolved_location": "Dallas/Fort Worth Area",
+      "linkedin_url": "https://linkedin.com/in/bobby-templet-9b136a6",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/sjjwpkbnjgr",
+      "exa_result_url": "https://linkedin.com/in/bobby-templet-9b136a6",
+      "exa_entity_id": "https://exa.ai/library/person/sjjwpkbnjgr",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Janine Marin",
+      "current_title": "Senior Regional Asset Protection Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 3.03,
+      "resolved_location": "Northeast",
+      "linkedin_url": "https://linkedin.com/in/janine-marin-cfi-0b993b6",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/8yj1trzr2ft",
+      "exa_result_url": "https://linkedin.com/in/janine-marin-cfi-0b993b6",
+      "exa_entity_id": "https://exa.ai/library/person/8yj1trzr2ft",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "LPC. WZ. David Stanley",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 3.95,
+      "resolved_location": "BC Canada. Washington. Oregon",
+      "linkedin_url": "https://linkedin.com/in/david-stanley-lpc-wz-35039b11a",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/gk6t889jxg3",
+      "exa_result_url": "https://linkedin.com/in/david-stanley-lpc-wz-35039b11a",
+      "exa_entity_id": "https://exa.ai/library/person/gk6t889jxg3",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Eric O.",
+      "current_title": "Region Asset Protection Manager",
+      "current_company": "Whole Foods Market/Amazon",
+      "years_at_current_role": 4.11,
+      "resolved_location": "Chicago, IL",
+      "linkedin_url": "https://linkedin.com/in/eric-o-28a36592",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/r5yy2z3bdxp",
+      "exa_result_url": "https://linkedin.com/in/eric-o-28a36592",
+      "exa_entity_id": "https://exa.ai/library/person/r5yy2z3bdxp",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 4,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Tony Brunetto",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 7.44,
+      "resolved_location": "Florida",
+      "linkedin_url": "https://linkedin.com/in/tony-brunetto-8374632a",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/wqczy7wq276",
+      "exa_result_url": "https://linkedin.com/in/tony-brunetto-8374632a",
+      "exa_entity_id": "https://exa.ai/library/person/wqczy7wq276",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Scott McEntyre",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 7.53,
+      "resolved_location": "Southeast",
+      "linkedin_url": "https://linkedin.com/in/srmcentyre",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/k5mdzltwxqz",
+      "exa_result_url": "https://linkedin.com/in/srmcentyre",
+      "exa_entity_id": "https://exa.ai/library/person/k5mdzltwxqz",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Randy Hall",
+      "current_title": "Regional Asset Protection Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 6.78,
+      "resolved_location": "District Of Columbia",
+      "linkedin_url": "https://linkedin.com/in/randyhallcfi",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/zxdx52tmhqk",
+      "exa_result_url": "https://linkedin.com/in/randyhallcfi",
+      "exa_entity_id": "https://exa.ai/library/person/zxdx52tmhqk",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Jason Cody",
+      "current_title": "Sr. Regional Asset Protection And Safety Specialist",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 4.11,
+      "resolved_location": "Greater Chicago Area",
+      "linkedin_url": "https://linkedin.com/in/jason-cody-cfi-lpc-788a0a4",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/vpgyyq3s2nq",
+      "exa_result_url": "https://linkedin.com/in/jason-cody-cfi-lpc-788a0a4",
+      "exa_entity_id": "https://exa.ai/library/person/vpgyyq3s2nq",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Shannon Ansell",
+      "current_title": "Senior Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 7.44,
+      "resolved_location": "California, United States",
+      "linkedin_url": "https://linkedin.com/in/shannon-ansell-052969108",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/mkv2sxksms1",
+      "exa_result_url": "https://linkedin.com/in/shannon-ansell-052969108",
+      "exa_entity_id": "https://exa.ai/library/person/mkv2sxksms1",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Chris Holmes",
+      "current_title": "Regional Asset Protection Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 1.11,
+      "resolved_location": "United Kingdom, Canada",
+      "linkedin_url": "https://linkedin.com/in/chris-holmes-80a81329",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/nvt5cvrh4t4",
+      "exa_result_url": "https://linkedin.com/in/chris-holmes-80a81329",
+      "exa_entity_id": "https://exa.ai/library/person/nvt5cvrh4t4",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 13,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Josh Crippen",
+      "current_title": "Regional Director, Asset Protection",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 1.52,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/josh-crippen-1b12ba70",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/wgzzk34j7qg",
+      "exa_result_url": "https://linkedin.com/in/josh-crippen-1b12ba70",
+      "exa_entity_id": "https://exa.ai/library/person/wgzzk34j7qg",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Robert B.",
+      "current_title": "Senior Region Asset Protection Manager",
+      "current_company": "Amazon",
+      "years_at_current_role": 0.53,
+      "resolved_location": "Sacramento, California, United States",
+      "linkedin_url": "https://linkedin.com/in/robert-b-87a5b868",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/mg1hssqggrd",
+      "exa_result_url": "https://linkedin.com/in/robert-b-87a5b868",
+      "exa_entity_id": "https://exa.ai/library/person/mg1hssqggrd",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Rob Wynn",
+      "current_title": "Senior Director, Asset Protection",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 4.36,
+      "resolved_location": "Austin, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/rob-wynn-8415419",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/yd66p9515nh",
+      "exa_result_url": "https://linkedin.com/in/rob-wynn-8415419",
+      "exa_entity_id": "https://exa.ai/library/person/yd66p9515nh",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Mike Limauro",
+      "current_title": "Head Of Asset Protection, Amazon Worldwide Grocery Stores VP Global Asset Protection, Whole Foods",
+      "current_company": "Amazon",
+      "years_at_current_role": 0.53,
+      "resolved_location": "Seattle, WA, US",
+      "linkedin_url": "https://linkedin.com/in/mikelimauro",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/fss0n0x2wdm",
+      "exa_result_url": "https://linkedin.com/in/mikelimauro",
+      "exa_entity_id": "https://exa.ai/library/person/fss0n0x2wdm",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Frederick Lopez",
+      "current_title": "Cluster Loss Prevention Manager",
+      "current_company": "Amazon",
+      "years_at_current_role": 0.36,
+      "resolved_location": "Oxnard, California, United States",
+      "linkedin_url": "https://linkedin.com/in/frederick-lopez-a62765158",
+      "public_business_email": null,
+      "source_vector_id": "02",
+      "source_vector_name": "same_company_adjacent_leadership",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/m8fknfyjgf4",
+      "exa_result_url": "https://linkedin.com/in/frederick-lopez-a62765158",
+      "exa_entity_id": "https://exa.ai/library/person/m8fknfyjgf4",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "LPC. WZ. David Stanley",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 3.95,
+      "resolved_location": "BC Canada. Washington. Oregon",
+      "linkedin_url": "https://linkedin.com/in/david-stanley-lpc-wz-35039b11a",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/gk6t889jxg3",
+      "exa_result_url": "https://linkedin.com/in/david-stanley-lpc-wz-35039b11a",
+      "exa_entity_id": "https://exa.ai/library/person/gk6t889jxg3",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Aaron Schryer",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 2.78,
+      "resolved_location": "Denver Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/aaron-schryer-87313094",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/18gnq7wshpx",
+      "exa_result_url": "https://linkedin.com/in/aaron-schryer-87313094",
+      "exa_entity_id": "https://exa.ai/library/person/18gnq7wshpx",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 4,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Bobby Templet",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 7.44,
+      "resolved_location": "Dallas/Fort Worth Area",
+      "linkedin_url": "https://linkedin.com/in/bobby-templet-9b136a6",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/sjjwpkbnjgr",
+      "exa_result_url": "https://linkedin.com/in/bobby-templet-9b136a6",
+      "exa_entity_id": "https://exa.ai/library/person/sjjwpkbnjgr",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Leslie Lorquet",
+      "current_title": "Senior Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 6.78,
+      "resolved_location": "New York City Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/leslie-lorquet-lpc-35022368",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/rl1tbhm187z",
+      "exa_result_url": "https://linkedin.com/in/leslie-lorquet-lpc-35022368",
+      "exa_entity_id": "https://exa.ai/library/person/rl1tbhm187z",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 2,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Josh Crippen",
+      "current_title": "Regional Director, Asset Protection",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 1.52,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/josh-crippen-1b12ba70",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/wgzzk34j7qg",
+      "exa_result_url": "https://linkedin.com/in/josh-crippen-1b12ba70",
+      "exa_entity_id": "https://exa.ai/library/person/wgzzk34j7qg",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Tony Brunetto",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 7.44,
+      "resolved_location": "Florida",
+      "linkedin_url": "https://linkedin.com/in/tony-brunetto-8374632a",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/wqczy7wq276",
+      "exa_result_url": "https://linkedin.com/in/tony-brunetto-8374632a",
+      "exa_entity_id": "https://exa.ai/library/person/wqczy7wq276",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Jill Ellison",
+      "current_title": "Loss Prevention Specialist IIII",
+      "current_company": "Amazon",
+      "years_at_current_role": 0.53,
+      "resolved_location": "Midwest",
+      "linkedin_url": "https://linkedin.com/in/jill-ellison-lpc-13359356",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/2n99cj4kbpv",
+      "exa_result_url": "https://linkedin.com/in/jill-ellison-lpc-13359356",
+      "exa_entity_id": "https://exa.ai/library/person/2n99cj4kbpv",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Christine Cunningham",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 6.19,
+      "resolved_location": "Ft. Lauderdale, Fl.",
+      "linkedin_url": "https://linkedin.com/in/christine-cunningham-46932518",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/s92dfyg137t",
+      "exa_result_url": "https://linkedin.com/in/christine-cunningham-46932518",
+      "exa_entity_id": "https://exa.ai/library/person/s92dfyg137t",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 12,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Brian King",
+      "current_title": "Global Director, Asset Protection",
+      "current_company": "Amazon World Wide Grocery Stores/Wholefoods Market",
+      "years_at_current_role": 7.53,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/brian-king-61243b10",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/mqgzmpncc17",
+      "exa_result_url": "https://linkedin.com/in/brian-king-61243b10",
+      "exa_entity_id": "https://exa.ai/library/person/mqgzmpncc17",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 4,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Shannon Ansell",
+      "current_title": "Senior Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 7.44,
+      "resolved_location": "California, United States",
+      "linkedin_url": "https://linkedin.com/in/shannon-ansell-052969108",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/mkv2sxksms1",
+      "exa_result_url": "https://linkedin.com/in/shannon-ansell-052969108",
+      "exa_entity_id": "https://exa.ai/library/person/mkv2sxksms1",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Scott McEntyre",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 7.53,
+      "resolved_location": "Southeast",
+      "linkedin_url": "https://linkedin.com/in/srmcentyre",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/k5mdzltwxqz",
+      "exa_result_url": "https://linkedin.com/in/srmcentyre",
+      "exa_entity_id": "https://exa.ai/library/person/k5mdzltwxqz",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Rob Wynn",
+      "current_title": "Senior Director, Asset Protection",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 4.36,
+      "resolved_location": "Austin, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/rob-wynn-8415419",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/yd66p9515nh",
+      "exa_result_url": "https://linkedin.com/in/rob-wynn-8415419",
+      "exa_entity_id": "https://exa.ai/library/person/yd66p9515nh",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Randy Hall",
+      "current_title": "Regional Asset Protection Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 6.78,
+      "resolved_location": "District Of Columbia",
+      "linkedin_url": "https://linkedin.com/in/randyhallcfi",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/zxdx52tmhqk",
+      "exa_result_url": "https://linkedin.com/in/randyhallcfi",
+      "exa_entity_id": "https://exa.ai/library/person/zxdx52tmhqk",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Mike Limauro",
+      "current_title": "Head Of Asset Protection, Amazon Worldwide Grocery Stores VP Global Asset Protection, Whole Foods",
+      "current_company": "Amazon",
+      "years_at_current_role": 0.53,
+      "resolved_location": "Seattle, WA, US",
+      "linkedin_url": "https://linkedin.com/in/mikelimauro",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/fss0n0x2wdm",
+      "exa_result_url": "https://linkedin.com/in/mikelimauro",
+      "exa_entity_id": "https://exa.ai/library/person/fss0n0x2wdm",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Jason Cody",
+      "current_title": "Sr. Regional Asset Protection And Safety Specialist",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 4.11,
+      "resolved_location": "Greater Chicago Area",
+      "linkedin_url": "https://linkedin.com/in/jason-cody-cfi-lpc-788a0a4",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/vpgyyq3s2nq",
+      "exa_result_url": "https://linkedin.com/in/jason-cody-cfi-lpc-788a0a4",
+      "exa_entity_id": "https://exa.ai/library/person/vpgyyq3s2nq",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Michael Magrum",
+      "current_title": "Senior Asset Protection Specialist-EHS Operations",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 0.94,
+      "resolved_location": "Charlotte, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/michael-magrum-cfi-lpc-1ba90947",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/05tf4h82cqn",
+      "exa_result_url": "https://linkedin.com/in/michael-magrum-cfi-lpc-1ba90947",
+      "exa_entity_id": "https://exa.ai/library/person/05tf4h82cqn",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Joe Oliveira",
+      "current_title": "Global Leader Of Loss Prevention, Compliance, Risk Management And Corportate Security",
+      "current_company": "VSP Vision",
+      "years_at_current_role": 2.69,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/joe-oliveira-cfi-6b756411",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/rbcsjdmxt63",
+      "exa_result_url": "https://linkedin.com/in/joe-oliveira-cfi-6b756411",
+      "exa_entity_id": "https://exa.ai/library/person/rbcsjdmxt63",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "used_recent_role_fallback"
+    ],
+    "candidate": {
+      "full_name": "Mathew Emerson",
+      "current_title": "Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 4.03,
+      "resolved_location": "New York City Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/mathew-emerson-83198b2",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/9sqn8szwy6l",
+      "exa_result_url": "https://linkedin.com/in/mathew-emerson-83198b2",
+      "exa_entity_id": "https://exa.ai/library/person/9sqn8szwy6l",
+      "current_role_count": 0,
+      "used_recent_role_fallback": true,
+      "work_history_count": 13,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "used_recent_role_fallback"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Juan Enriquez",
+      "current_title": "Associate Store Team Leader",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 2.69,
+      "resolved_location": "Dublin, California, United States",
+      "linkedin_url": "https://linkedin.com/in/juan-enriquez-39a697140",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/xrk853yw19c",
+      "exa_result_url": "https://linkedin.com/in/juan-enriquez-39a697140",
+      "exa_entity_id": "https://exa.ai/library/person/xrk853yw19c",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Mike Hill",
+      "current_title": "IT Application Development Engineering Manager III - Workday HCM & Finance For Whole Foods Market",
+      "current_company": "Amazon",
+      "years_at_current_role": 1.44,
+      "resolved_location": "Austin, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/mike-hill-10b89630",
+      "public_business_email": null,
+      "source_vector_id": "03",
+      "source_vector_name": "same_company_person_anchored_similarity",
+      "source_bucket": "same_company",
+      "exa_result_id": "https://exa.ai/library/person/x86rzc8cmjr",
+      "exa_result_url": "https://linkedin.com/in/mike-hill-10b89630",
+      "exa_entity_id": "https://exa.ai/library/person/x86rzc8cmjr",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Ron Foss",
+      "current_title": "Director, Asset Protection",
+      "current_company": "Albertsons Companies, SOCAL Division",
+      "years_at_current_role": 3.44,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/ron-foss-cfi-lpc-1855037",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/ry86qxfhm67",
+      "exa_result_url": "https://linkedin.com/in/ron-foss-cfi-lpc-1855037",
+      "exa_entity_id": "https://exa.ai/library/person/ry86qxfhm67",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 3,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Andrea Buckles",
+      "current_title": "Division Asset Protection & Safety Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 1.19,
+      "resolved_location": "Atlanta Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/andrea-buckles-38403323",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/c3j32g559h3",
+      "exa_result_url": "https://linkedin.com/in/andrea-buckles-38403323",
+      "exa_entity_id": "https://exa.ai/library/person/c3j32g559h3",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 2,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Vincent Cruz",
+      "current_title": "Area Asset Protection & Safety Manager",
+      "current_company": "Amazon",
+      "years_at_current_role": 0.53,
+      "resolved_location": "Seattle, WA, US",
+      "linkedin_url": "https://linkedin.com/in/vincent-cruz-lpc-46bb70b",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/9mqlsfr9c5d",
+      "exa_result_url": "https://linkedin.com/in/vincent-cruz-lpc-46bb70b",
+      "exa_entity_id": "https://exa.ai/library/person/9mqlsfr9c5d",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "LPC. WZ. David Stanley",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 3.95,
+      "resolved_location": "BC Canada. Washington. Oregon",
+      "linkedin_url": "https://linkedin.com/in/david-stanley-lpc-wz-35039b11a",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/gk6t889jxg3",
+      "exa_result_url": "https://linkedin.com/in/david-stanley-lpc-wz-35039b11a",
+      "exa_entity_id": "https://exa.ai/library/person/gk6t889jxg3",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Dale Fowler",
+      "current_title": "Senior Director - Field Asset Protection Operations",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/dale-fowler-cfe-46154b6",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/y49s12myhzr",
+      "exa_result_url": "https://linkedin.com/in/dale-fowler-cfe-46154b6",
+      "exa_entity_id": "https://exa.ai/library/person/y49s12myhzr",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 2,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Scott McEntyre",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 7.53,
+      "resolved_location": "Southeast",
+      "linkedin_url": "https://linkedin.com/in/srmcentyre",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/k5mdzltwxqz",
+      "exa_result_url": "https://linkedin.com/in/srmcentyre",
+      "exa_entity_id": "https://exa.ai/library/person/k5mdzltwxqz",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Bernard Peterson",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 3.2,
+      "resolved_location": "Murfreesboro, Tennessee, United States",
+      "linkedin_url": "https://linkedin.com/in/bernard-peterson-cfi-lsa-18840379",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/z5x0pch766d",
+      "exa_result_url": "https://linkedin.com/in/bernard-peterson-cfi-lsa-18840379",
+      "exa_entity_id": "https://exa.ai/library/person/z5x0pch766d",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Tony Brunetto",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 7.44,
+      "resolved_location": "Florida",
+      "linkedin_url": "https://linkedin.com/in/tony-brunetto-8374632a",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/wqczy7wq276",
+      "exa_result_url": "https://linkedin.com/in/tony-brunetto-8374632a",
+      "exa_entity_id": "https://exa.ai/library/person/wqczy7wq276",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Alecia Camps",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 1.19,
+      "resolved_location": "Columbus, Ohio Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/alecia-camps",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/c096gl1xgnl",
+      "exa_result_url": "https://linkedin.com/in/alecia-camps",
+      "exa_entity_id": "https://exa.ai/library/person/c096gl1xgnl",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Todd Sheehan",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 7.86,
+      "resolved_location": "Savannah, Georgia, United States",
+      "linkedin_url": "https://linkedin.com/in/todd-sheehan-cfi-536b9912",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/g8704w8df32",
+      "exa_result_url": "https://linkedin.com/in/todd-sheehan-cfi-536b9912",
+      "exa_entity_id": "https://exa.ai/library/person/g8704w8df32",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Bobby Templet",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 7.44,
+      "resolved_location": "Dallas/Fort Worth Area",
+      "linkedin_url": "https://linkedin.com/in/bobby-templet-9b136a6",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/sjjwpkbnjgr",
+      "exa_result_url": "https://linkedin.com/in/bobby-templet-9b136a6",
+      "exa_entity_id": "https://exa.ai/library/person/sjjwpkbnjgr",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Christine Cunningham",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 6.19,
+      "resolved_location": "Ft. Lauderdale, Fl.",
+      "linkedin_url": "https://linkedin.com/in/christine-cunningham-46932518",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/s92dfyg137t",
+      "exa_result_url": "https://linkedin.com/in/christine-cunningham-46932518",
+      "exa_entity_id": "https://exa.ai/library/person/s92dfyg137t",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 12,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Mike Limauro",
+      "current_title": "Head Of Asset Protection, Amazon Worldwide Grocery Stores VP Global Asset Protection, Whole Foods",
+      "current_company": "Amazon",
+      "years_at_current_role": 0.53,
+      "resolved_location": "Seattle, WA, US",
+      "linkedin_url": "https://linkedin.com/in/mikelimauro",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/fss0n0x2wdm",
+      "exa_result_url": "https://linkedin.com/in/mikelimauro",
+      "exa_entity_id": "https://exa.ai/library/person/fss0n0x2wdm",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Josh Crippen",
+      "current_title": "Regional Director, Asset Protection",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 1.52,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/josh-crippen-1b12ba70",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/wgzzk34j7qg",
+      "exa_result_url": "https://linkedin.com/in/josh-crippen-1b12ba70",
+      "exa_entity_id": "https://exa.ai/library/person/wgzzk34j7qg",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Carlos Perez",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Busch's Fresh Food Market",
+      "years_at_current_role": 4.36,
+      "resolved_location": "Michigan, United States",
+      "linkedin_url": "https://linkedin.com/in/carlosperez8",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/74p1zy9srq4",
+      "exa_result_url": "https://linkedin.com/in/carlosperez8",
+      "exa_entity_id": "https://exa.ai/library/person/74p1zy9srq4",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Andrew Babcock",
+      "current_title": "Field Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 3.86,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/andrewbabcock",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/8fz62s1wx6h",
+      "exa_result_url": "https://linkedin.com/in/andrewbabcock",
+      "exa_entity_id": "https://exa.ai/library/person/8fz62s1wx6h",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Amitkumar Das",
+      "current_title": "Loss Prevention Manager",
+      "current_company": "Reliance Retail",
+      "years_at_current_role": 6.03,
+      "resolved_location": "Ahmedabad, Gujarat, India",
+      "linkedin_url": "https://linkedin.com/in/amitkumar-das-3447b643",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/fvc932mv6j8",
+      "exa_result_url": "https://linkedin.com/in/amitkumar-das-3447b643",
+      "exa_entity_id": "https://exa.ai/library/person/fvc932mv6j8",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Leslie Lorquet",
+      "current_title": "Senior Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 6.78,
+      "resolved_location": "New York City Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/leslie-lorquet-lpc-35022368",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/rl1tbhm187z",
+      "exa_result_url": "https://linkedin.com/in/leslie-lorquet-lpc-35022368",
+      "exa_entity_id": "https://exa.ai/library/person/rl1tbhm187z",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 2,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Michael Magrum",
+      "current_title": "Senior Asset Protection Specialist-EHS Operations",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 0.94,
+      "resolved_location": "Charlotte, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/michael-magrum-cfi-lpc-1ba90947",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/05tf4h82cqn",
+      "exa_result_url": "https://linkedin.com/in/michael-magrum-cfi-lpc-1ba90947",
+      "exa_entity_id": "https://exa.ai/library/person/05tf4h82cqn",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Adrienne Costanzo",
+      "current_title": "Chief Stores Officer",
+      "current_company": "Target",
+      "years_at_current_role": 1.36,
+      "resolved_location": "Minneapolis, MN, US",
+      "linkedin_url": "https://linkedin.com/in/adrienne-costanzo-09b98827",
+      "public_business_email": null,
+      "source_vector_id": "04",
+      "source_vector_name": "similar_company_exact_or_near_role",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/9cl9v7658vv",
+      "exa_result_url": "https://linkedin.com/in/adrienne-costanzo-09b98827",
+      "exa_entity_id": "https://exa.ai/library/person/9cl9v7658vv",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Tony Brunetto",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 7.44,
+      "resolved_location": "Florida",
+      "linkedin_url": "https://linkedin.com/in/tony-brunetto-8374632a",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/wqczy7wq276",
+      "exa_result_url": "https://linkedin.com/in/tony-brunetto-8374632a",
+      "exa_entity_id": "https://exa.ai/library/person/wqczy7wq276",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Andrea Buckles",
+      "current_title": "Division Asset Protection & Safety Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 1.19,
+      "resolved_location": "Atlanta Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/andrea-buckles-38403323",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/c3j32g559h3",
+      "exa_result_url": "https://linkedin.com/in/andrea-buckles-38403323",
+      "exa_entity_id": "https://exa.ai/library/person/c3j32g559h3",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Scott Samuelson",
+      "current_title": "Director, Asset Protection",
+      "current_company": "Albertsons Companies",
+      "years_at_current_role": 2.11,
+      "resolved_location": "Portland, Oregon, United States",
+      "linkedin_url": "https://linkedin.com/in/scott-samuelson-067b964b",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/znc8lntvzxj",
+      "exa_result_url": "https://linkedin.com/in/scott-samuelson-067b964b",
+      "exa_entity_id": "https://exa.ai/library/person/znc8lntvzxj",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Leslie Lorquet",
+      "current_title": "Senior Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 6.78,
+      "resolved_location": "New York City Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/leslie-lorquet-lpc-35022368",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/rl1tbhm187z",
+      "exa_result_url": "https://linkedin.com/in/leslie-lorquet-lpc-35022368",
+      "exa_entity_id": "https://exa.ai/library/person/rl1tbhm187z",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 2,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Kimberly Huteson",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Albertsons Companies",
+      "years_at_current_role": 4.77,
+      "resolved_location": "Tacoma, Washington, United States",
+      "linkedin_url": "https://linkedin.com/in/kimberly-huteson-9a69bb169",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/qxb9xzwnyny",
+      "exa_result_url": "https://linkedin.com/in/kimberly-huteson-9a69bb169",
+      "exa_entity_id": "https://exa.ai/library/person/qxb9xzwnyny",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 5,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Bobby Templet",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 7.44,
+      "resolved_location": "Dallas/Fort Worth Area",
+      "linkedin_url": "https://linkedin.com/in/bobby-templet-9b136a6",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/sjjwpkbnjgr",
+      "exa_result_url": "https://linkedin.com/in/bobby-templet-9b136a6",
+      "exa_entity_id": "https://exa.ai/library/person/sjjwpkbnjgr",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "LPC. WZ. David Stanley",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 3.95,
+      "resolved_location": "BC Canada. Washington. Oregon",
+      "linkedin_url": "https://linkedin.com/in/david-stanley-lpc-wz-35039b11a",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/gk6t889jxg3",
+      "exa_result_url": "https://linkedin.com/in/david-stanley-lpc-wz-35039b11a",
+      "exa_entity_id": "https://exa.ai/library/person/gk6t889jxg3",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Dale Fowler",
+      "current_title": "Senior Director - Field Asset Protection Operations",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/dale-fowler-cfe-46154b6",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/y49s12myhzr",
+      "exa_result_url": "https://linkedin.com/in/dale-fowler-cfe-46154b6",
+      "exa_entity_id": "https://exa.ai/library/person/y49s12myhzr",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Christine Cunningham",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 6.19,
+      "resolved_location": "Ft. Lauderdale, Fl.",
+      "linkedin_url": "https://linkedin.com/in/christine-cunningham-46932518",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/s92dfyg137t",
+      "exa_result_url": "https://linkedin.com/in/christine-cunningham-46932518",
+      "exa_entity_id": "https://exa.ai/library/person/s92dfyg137t",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 12,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "David Neer",
+      "current_title": "Supply Chain Asset Protection",
+      "current_company": "Lowe's Companies, Inc.",
+      "years_at_current_role": 2.61,
+      "resolved_location": "Mooresville, NC",
+      "linkedin_url": "https://linkedin.com/in/david-neer-lpc-cfi-96210120",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/88dtgzfzq7g",
+      "exa_result_url": "https://linkedin.com/in/david-neer-lpc-cfi-96210120",
+      "exa_entity_id": "https://exa.ai/library/person/88dtgzfzq7g",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Brandon Lowery",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 4.11,
+      "resolved_location": "Nashville Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/brandon-lowery-cfi-982647152",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/pvdbbn7wp5l",
+      "exa_result_url": "https://linkedin.com/in/brandon-lowery-cfi-982647152",
+      "exa_entity_id": "https://exa.ai/library/person/pvdbbn7wp5l",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Scott McEntyre",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 7.53,
+      "resolved_location": "Southeast",
+      "linkedin_url": "https://linkedin.com/in/srmcentyre",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/k5mdzltwxqz",
+      "exa_result_url": "https://linkedin.com/in/srmcentyre",
+      "exa_entity_id": "https://exa.ai/library/person/k5mdzltwxqz",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Jill Ellison",
+      "current_title": "Loss Prevention Specialist IIII",
+      "current_company": "Amazon",
+      "years_at_current_role": 0.53,
+      "resolved_location": "Midwest",
+      "linkedin_url": "https://linkedin.com/in/jill-ellison-lpc-13359356",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/2n99cj4kbpv",
+      "exa_result_url": "https://linkedin.com/in/jill-ellison-lpc-13359356",
+      "exa_entity_id": "https://exa.ai/library/person/2n99cj4kbpv",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Ryan Clevenger",
+      "current_title": "Corporate Director Of Asset Protection",
+      "current_company": "Albertsons Companies",
+      "years_at_current_role": 2.11,
+      "resolved_location": "Boise, Idaho, United States",
+      "linkedin_url": "https://linkedin.com/in/ryan-clevenger-679a129",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/1gzf09cnd98",
+      "exa_result_url": "https://linkedin.com/in/ryan-clevenger-679a129",
+      "exa_entity_id": "https://exa.ai/library/person/1gzf09cnd98",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 4,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Ruben Berroa",
+      "current_title": "District Assets Protection Manager",
+      "current_company": "Burlington Stores, Inc.",
+      "years_at_current_role": 0.86,
+      "resolved_location": "Lawrenceville, New Jersey, United States",
+      "linkedin_url": "https://linkedin.com/in/ruben-berroa-843b5a120",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/5rkxcpkt2hy",
+      "exa_result_url": "https://linkedin.com/in/ruben-berroa-843b5a120",
+      "exa_entity_id": "https://exa.ai/library/person/5rkxcpkt2hy",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Michelle Wallace",
+      "current_title": "Regional Manager, Asset Protection And Facilities-West",
+      "current_company": "francesca\u2019s\u00ae",
+      "years_at_current_role": 3.03,
+      "resolved_location": "Sheboygan Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/michelle-wallace-lpc-91055432",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/j00qvr7684f",
+      "exa_result_url": "https://linkedin.com/in/michelle-wallace-lpc-91055432",
+      "exa_entity_id": "https://exa.ai/library/person/j00qvr7684f",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Cameron Maurer",
+      "current_title": "Regional Asset Protection Manager - Coastal",
+      "current_company": "Bass Pro Shops",
+      "years_at_current_role": 1.28,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/cameron-maurer",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/18h4y6jw8w8",
+      "exa_result_url": "https://linkedin.com/in/cameron-maurer",
+      "exa_entity_id": "https://exa.ai/library/person/18h4y6jw8w8",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Kevin Goeke",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 16.86,
+      "resolved_location": "Cincinnati Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/kevin-goeke-046033163",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/dflpt3yprg9",
+      "exa_result_url": "https://linkedin.com/in/kevin-goeke-046033163",
+      "exa_entity_id": "https://exa.ai/library/person/dflpt3yprg9",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 4,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Todd Sentner",
+      "current_title": "Sr. Manager, Asset Protection",
+      "current_company": "Publix Super Markets",
+      "years_at_current_role": 1.94,
+      "resolved_location": "Greater Tampa Bay Area",
+      "linkedin_url": "https://linkedin.com/in/todd-sentner-a89b0874",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/zpyzrn9vrh4",
+      "exa_result_url": "https://linkedin.com/in/todd-sentner-a89b0874",
+      "exa_entity_id": "https://exa.ai/library/person/zpyzrn9vrh4",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 4,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Curtis W. Leininger",
+      "current_title": "Division Asset Protection Safety Director",
+      "current_company": "Lowe's Companies, Inc.",
+      "years_at_current_role": 4.11,
+      "resolved_location": "Mooresville, North Carolina, United States",
+      "linkedin_url": "https://linkedin.com/in/curtis-w-leininger-lpc-b8543510",
+      "public_business_email": null,
+      "source_vector_id": "05",
+      "source_vector_name": "similar_company_adjacent_role_family",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/dl6m59fhyg4",
+      "exa_result_url": "https://linkedin.com/in/curtis-w-leininger-lpc-b8543510",
+      "exa_entity_id": "https://exa.ai/library/person/dl6m59fhyg4",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Christine Cunningham",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 6.19,
+      "resolved_location": "Ft. Lauderdale, Fl.",
+      "linkedin_url": "https://linkedin.com/in/christine-cunningham-46932518",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/s92dfyg137t",
+      "exa_result_url": "https://linkedin.com/in/christine-cunningham-46932518",
+      "exa_entity_id": "https://exa.ai/library/person/s92dfyg137t",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 12,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Christine Cunningham",
+      "current_title": "Director Of Project Management",
+      "current_company": "NearU",
+      "years_at_current_role": 1.44,
+      "resolved_location": "Fort Lauderdale, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/christine-cunningham-a68b4620",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/x7knq7c2jc7",
+      "exa_result_url": "https://linkedin.com/in/christine-cunningham-a68b4620",
+      "exa_entity_id": "https://exa.ai/library/person/x7knq7c2jc7",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Christine Cunningham",
+      "current_title": "Practitioner, Organizational Development And Change Management",
+      "current_company": "JetBlue",
+      "years_at_current_role": 2.11,
+      "resolved_location": "New York City Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/christine-cunningham-ma-44908897",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/37ll19vrsfs",
+      "exa_result_url": "https://linkedin.com/in/christine-cunningham-ma-44908897",
+      "exa_entity_id": "https://exa.ai/library/person/37ll19vrsfs",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "dropped",
+    "reasons": [
+      "blacklisted_title"
+    ],
+    "candidate": {
+      "full_name": "Christine Cunningham",
+      "current_title": "Principal Consultant",
+      "current_company": "ACE HR Consulting",
+      "years_at_current_role": 5.44,
+      "resolved_location": "West Palm Beach, Florida, United States",
+      "linkedin_url": "https://linkedin.com/in/ccunninghamtm",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/8fm89p5l0f0",
+      "exa_result_url": "https://linkedin.com/in/ccunninghamtm",
+      "exa_entity_id": "https://exa.ai/library/person/8fm89p5l0f0",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 4,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Christine Cunningham",
+      "current_title": "Chief Curriculum And Learning Officer",
+      "current_company": "Museum of Science",
+      "years_at_current_role": 0.69,
+      "resolved_location": "Boston, Massachusetts, United States",
+      "linkedin_url": "https://linkedin.com/in/christine-cunningham-b42684a",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/7cmct0sc0fh",
+      "exa_result_url": "https://linkedin.com/in/christine-cunningham-b42684a",
+      "exa_entity_id": "https://exa.ai/library/person/7cmct0sc0fh",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Christine Cunningham",
+      "current_title": "Special Education Teacher",
+      "current_company": "Arlington Public Schools",
+      "years_at_current_role": 11.86,
+      "resolved_location": "Arlington, VA",
+      "linkedin_url": "https://linkedin.com/in/christine-cunningham-6240b2bb",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/dhkbzlgt5t3",
+      "exa_result_url": "https://linkedin.com/in/christine-cunningham-6240b2bb",
+      "exa_entity_id": "https://exa.ai/library/person/dhkbzlgt5t3",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "dropped",
+    "reasons": [
+      "blacklisted_title"
+    ],
+    "candidate": {
+      "full_name": "MSIS Christine Cunningham",
+      "current_title": "Independent Consultant (PMO Consulting, Agile, Planning, Technical Delivery, Risk Management)",
+      "current_company": "Cunningham PMO, LLC",
+      "years_at_current_role": 4.44,
+      "resolved_location": "Greater Chicago Area",
+      "linkedin_url": "https://linkedin.com/in/christinecunningham92",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/k9xnljnzcgn",
+      "exa_result_url": "https://linkedin.com/in/christinecunningham92",
+      "exa_entity_id": "https://exa.ai/library/person/k9xnljnzcgn",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "used_recent_role_fallback"
+    ],
+    "candidate": {
+      "full_name": "Christine Cunningham",
+      "current_title": "Community Manager",
+      "current_company": "Allied Residential",
+      "years_at_current_role": 9.19,
+      "resolved_location": "Renton, Washington",
+      "linkedin_url": "https://linkedin.com/in/christine-cunningham-83423215",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/psh0spwr9sh",
+      "exa_result_url": "https://linkedin.com/in/christine-cunningham-83423215",
+      "exa_entity_id": "https://exa.ai/library/person/psh0spwr9sh",
+      "current_role_count": 0,
+      "used_recent_role_fallback": true,
+      "work_history_count": 13,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "used_recent_role_fallback"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "used_recent_role_fallback"
+    ],
+    "candidate": {
+      "full_name": "Christine Cunningham",
+      "current_title": "Professional Driver",
+      "current_company": "WeDriveU",
+      "years_at_current_role": 9.28,
+      "resolved_location": "Menlo Park, CA",
+      "linkedin_url": "https://linkedin.com/in/christine-cunningham-7321194b",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/ktpgn616585",
+      "exa_result_url": "https://linkedin.com/in/christine-cunningham-7321194b",
+      "exa_entity_id": "https://exa.ai/library/person/ktpgn616585",
+      "current_role_count": 0,
+      "used_recent_role_fallback": true,
+      "work_history_count": 4,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "used_recent_role_fallback"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Emily J. Cunningham",
+      "current_title": "Senior Global Program Manager, Go-To-Market Enablement PMO",
+      "current_company": "LinkedIn",
+      "years_at_current_role": 2.19,
+      "resolved_location": "San Francisco Bay Area",
+      "linkedin_url": "https://linkedin.com/in/emilyjcunningham",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/619k7wh0p10",
+      "exa_result_url": "https://linkedin.com/in/emilyjcunningham",
+      "exa_entity_id": "https://exa.ai/library/person/619k7wh0p10",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 15,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Mark Cunningham",
+      "current_title": "Global Chief People Officer",
+      "current_company": "ResultsCX",
+      "years_at_current_role": 4.03,
+      "resolved_location": "Norristown, Pennsylvania, US",
+      "linkedin_url": "https://linkedin.com/in/mark-b-cunningham",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/ybtvrkw7ch2",
+      "exa_result_url": "https://linkedin.com/in/mark-b-cunningham",
+      "exa_entity_id": "https://exa.ai/library/person/ybtvrkw7ch2",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 12,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "MSHEd Christine MacCracken",
+      "current_title": "Executive Driector",
+      "current_company": "Johnson & Johnson Innovative Medicine",
+      "years_at_current_role": 2.03,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/christine-maccracken-mshed-bsn-03832634",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/dm8ndrd5lg5",
+      "exa_result_url": "https://linkedin.com/in/christine-maccracken-mshed-bsn-03832634",
+      "exa_entity_id": "https://exa.ai/library/person/dm8ndrd5lg5",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles",
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Kristina Cunningham",
+      "current_title": "Senior Director Of Legal Disputes, Commercial Operations",
+      "current_company": "Cyncly",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Belfast, Northern Ireland, United Kingdom",
+      "linkedin_url": "https://linkedin.com/in/kristina-cunningham-7a82a555",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/3kgczb9h0pf",
+      "exa_result_url": "https://linkedin.com/in/kristina-cunningham-7a82a555",
+      "exa_entity_id": "https://exa.ai/library/person/3kgczb9h0pf",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles",
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Christine Kwong",
+      "current_title": "Director, NeuroImmunology Operations",
+      "current_company": "Genentech",
+      "years_at_current_role": 0.86,
+      "resolved_location": "South San Francisco, California, US",
+      "linkedin_url": "https://linkedin.com/in/christine-kwong-7a6335b",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/58ntkcmnv16",
+      "exa_result_url": "https://linkedin.com/in/christine-kwong-7a6335b",
+      "exa_entity_id": "https://exa.ai/library/person/58ntkcmnv16",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 13,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "dropped",
+    "reasons": [
+      "founder_class_mismatch"
+    ],
+    "candidate": {
+      "full_name": "Christy Cunningham",
+      "current_title": "Founder CEO",
+      "current_company": "inCioX",
+      "years_at_current_role": 2.44,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/christy-cunningham-b170614",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/swpj415ft1g",
+      "exa_result_url": "https://linkedin.com/in/christy-cunningham-b170614",
+      "exa_entity_id": "https://exa.ai/library/person/swpj415ft1g",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 11,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "dropped",
+    "reasons": [
+      "founder_class_mismatch"
+    ],
+    "candidate": {
+      "full_name": "Stephanie Cunningham",
+      "current_title": "Founder & Principal",
+      "current_company": "NorthStar People Advisory",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Mission Viejo, California, United States",
+      "linkedin_url": "https://linkedin.com/in/cunninghamstephanie",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/h95m4tsxqs9",
+      "exa_result_url": "https://linkedin.com/in/cunninghamstephanie",
+      "exa_entity_id": "https://exa.ai/library/person/h95m4tsxqs9",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Christine Duffy",
+      "current_title": "President",
+      "current_company": "Carnival Cruise Line",
+      "years_at_current_role": 11.36,
+      "resolved_location": "Miami/Fort Lauderdale Area",
+      "linkedin_url": "https://linkedin.com/in/christineduffy",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/rw2lg466g0x",
+      "exa_result_url": "https://linkedin.com/in/christineduffy",
+      "exa_entity_id": "https://exa.ai/library/person/rw2lg466g0x",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 4,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Cindy Dunkle",
+      "current_title": "Chief People Officer",
+      "current_company": "Denali Therapeutics",
+      "years_at_current_role": 11.11,
+      "resolved_location": "California, United States",
+      "linkedin_url": "https://linkedin.com/in/cindy-dunkle-776a8b201",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/wdvtgch3rj1",
+      "exa_result_url": "https://linkedin.com/in/cindy-dunkle-776a8b201",
+      "exa_entity_id": "https://exa.ai/library/person/wdvtgch3rj1",
+      "current_role_count": 4,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Loren Cunningham",
+      "current_title": "Partner",
+      "current_company": "Abacus Search & Staffing, LLC",
+      "years_at_current_role": 22.28,
+      "resolved_location": "Overland Park, Kansas, US",
+      "linkedin_url": "https://linkedin.com/in/lorencunningham",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/wmtcg5y7c7x",
+      "exa_result_url": "https://linkedin.com/in/lorencunningham",
+      "exa_entity_id": "https://exa.ai/library/person/wmtcg5y7c7x",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Kristen Campos",
+      "current_title": "Chief Communications Officer (CCO)",
+      "current_company": "Carnival Cruise Line",
+      "years_at_current_role": 0.36,
+      "resolved_location": "Miami, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/kristen-campos-635a749",
+      "public_business_email": null,
+      "source_vector_id": "06",
+      "source_vector_name": "linkedin_anchored_similarity",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/2gfdv128bnp",
+      "exa_result_url": "https://linkedin.com/in/kristen-campos-635a749",
+      "exa_entity_id": "https://exa.ai/library/person/2gfdv128bnp",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 11,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Valerie Jabbar",
+      "current_title": "Senior Vice President, Retail Divisions",
+      "current_company": "Kroger",
+      "years_at_current_role": 4.86,
+      "resolved_location": "Cincinnati, Ohio, United States",
+      "linkedin_url": "https://linkedin.com/in/valerie-jabbar-0048691ab",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/zswd1rtwx8f",
+      "exa_result_url": "https://linkedin.com/in/valerie-jabbar-0048691ab",
+      "exa_entity_id": "https://exa.ai/library/person/zswd1rtwx8f",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Christine Cunningham",
+      "current_title": "Regional Asset Protection And Safety Manager",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 6.19,
+      "resolved_location": "Ft. Lauderdale, Fl.",
+      "linkedin_url": "https://linkedin.com/in/christine-cunningham-46932518",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/s92dfyg137t",
+      "exa_result_url": "https://linkedin.com/in/christine-cunningham-46932518",
+      "exa_entity_id": "https://exa.ai/library/person/s92dfyg137t",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 12,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Frank Kerr",
+      "current_title": "EVP, Chief Store Operations Officer",
+      "current_company": "Grocery Outlet",
+      "years_at_current_role": 0.77,
+      "resolved_location": "Emeryville, California, United States",
+      "linkedin_url": "https://linkedin.com/in/frankiekerr",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/wytn14wcxwy",
+      "exa_result_url": "https://linkedin.com/in/frankiekerr",
+      "exa_entity_id": "https://exa.ai/library/person/wytn14wcxwy",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 13,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Mary Ellen Adcock",
+      "current_title": "Chief Merchant And Marketing Officer",
+      "current_company": "Kroger",
+      "years_at_current_role": 1.44,
+      "resolved_location": "Cincinnati, Ohio, United States",
+      "linkedin_url": "https://linkedin.com/in/mary-ellen-adcock",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/9g819tsxy78",
+      "exa_result_url": "https://linkedin.com/in/mary-ellen-adcock",
+      "exa_entity_id": "https://exa.ai/library/person/9g819tsxy78",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Anthea Jones",
+      "current_title": "Vice President Of Merchandising",
+      "current_company": "Kroger",
+      "years_at_current_role": 2.28,
+      "resolved_location": "Cincinnati, Ohio, US",
+      "linkedin_url": "https://linkedin.com/in/anthea-jones-2505311",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/rgwyhdxqnfv",
+      "exa_result_url": "https://linkedin.com/in/anthea-jones-2505311",
+      "exa_entity_id": "https://exa.ai/library/person/rgwyhdxqnfv",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Pam Burke",
+      "current_title": "Chief Stores Officer",
+      "current_company": "Grocery Outlet",
+      "years_at_current_role": 4.44,
+      "resolved_location": "Emeryville, California, US",
+      "linkedin_url": "https://linkedin.com/in/pam-burke-53b6136",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/gjqfkd8rrdv",
+      "exa_result_url": "https://linkedin.com/in/pam-burke-53b6136",
+      "exa_entity_id": "https://exa.ai/library/person/gjqfkd8rrdv",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 8,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Julie Tolliver Auflick",
+      "current_title": "Vice President Of Merchandising",
+      "current_company": "Kroger",
+      "years_at_current_role": 1.86,
+      "resolved_location": "Michigan, United States",
+      "linkedin_url": "https://linkedin.com/in/julie-tolliver-auflick-b55694140",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/7p9dgkhjd5h",
+      "exa_result_url": "https://linkedin.com/in/julie-tolliver-auflick-b55694140",
+      "exa_entity_id": "https://exa.ai/library/person/7p9dgkhjd5h",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Tony Crumpton",
+      "current_title": "Chief Merchandising Officer",
+      "current_company": "United Supermarkets, LLC",
+      "years_at_current_role": 6.19,
+      "resolved_location": "Lubbock, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/tony-crumpton-51964b2",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/g5ygl6cs37y",
+      "exa_result_url": "https://linkedin.com/in/tony-crumpton-51964b2",
+      "exa_entity_id": "https://exa.ai/library/person/g5ygl6cs37y",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 7,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Matt Delly",
+      "current_title": "EVP, Chief Merchandising Officer",
+      "current_company": "Grocery Outlet",
+      "years_at_current_role": 1.03,
+      "resolved_location": "Emeryville, California, US",
+      "linkedin_url": "https://linkedin.com/in/matthewdelly",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/nqb3qmv2b1c",
+      "exa_result_url": "https://linkedin.com/in/matthewdelly",
+      "exa_entity_id": "https://exa.ai/library/person/nqb3qmv2b1c",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 14,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Kristina Cunningham",
+      "current_title": "Meat And Produce Team Lead",
+      "current_company": "Walmart",
+      "years_at_current_role": 1.28,
+      "resolved_location": "Mayfield, Kentucky, United States",
+      "linkedin_url": "https://linkedin.com/in/kristina-cunningham-745100119",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/nnfy4zkqb1p",
+      "exa_result_url": "https://linkedin.com/in/kristina-cunningham-745100119",
+      "exa_entity_id": "https://exa.ai/library/person/nnfy4zkqb1p",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 13,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Kristine S Petrie",
+      "current_title": "CAO And Process Improvement Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 3.44,
+      "resolved_location": "Bellevue, Washington, United States",
+      "linkedin_url": "https://linkedin.com/in/kristine-s-petrie-877145285",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/5x6m63zlc6d",
+      "exa_result_url": "https://linkedin.com/in/kristine-s-petrie-877145285",
+      "exa_entity_id": "https://exa.ai/library/person/5x6m63zlc6d",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Matt Reeves",
+      "current_title": "Senior Vice President",
+      "current_company": "Grocery Outlet",
+      "years_at_current_role": 1.03,
+      "resolved_location": "Emeryville, CA",
+      "linkedin_url": "https://linkedin.com/in/matt-reeves-leadership",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/c1nqnk6zd5y",
+      "exa_result_url": "https://linkedin.com/in/matt-reeves-leadership",
+      "exa_entity_id": "https://exa.ai/library/person/c1nqnk6zd5y",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 6,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Mark McGowan",
+      "current_title": "EVP Of Retail And Chief Merchandising Officer",
+      "current_company": "C&S Wholesale Grocers",
+      "years_at_current_role": 1.77,
+      "resolved_location": "Mechanicsburg, Pennsylvania, United States",
+      "linkedin_url": "https://linkedin.com/in/mark-mcgowan-174687174",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/j4xcn69rs8m",
+      "exa_result_url": "https://linkedin.com/in/mark-mcgowan-174687174",
+      "exa_entity_id": "https://exa.ai/library/person/j4xcn69rs8m",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Carla Farrell",
+      "current_title": "Retail Cashier",
+      "current_company": "SPAR Ireland",
+      "years_at_current_role": 3.61,
+      "resolved_location": "Dublin, Republic of Ireland, IE",
+      "linkedin_url": "https://linkedin.com/in/carla-farrell-466870359",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/4cbnmgj4871",
+      "exa_result_url": "https://linkedin.com/in/carla-farrell-466870359",
+      "exa_entity_id": "https://exa.ai/library/person/4cbnmgj4871",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 2,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "used_recent_role_fallback",
+      "borderline_title"
+    ],
+    "candidate": {
+      "full_name": "Kristen Cox",
+      "current_title": "Chief Stores Officer",
+      "current_company": "Big Lots",
+      "years_at_current_role": 2.53,
+      "resolved_location": "Columbus, Ohio, United States",
+      "linkedin_url": "https://linkedin.com/in/kristen-cox-947319b",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/q1nlf9bzd38",
+      "exa_result_url": "https://linkedin.com/in/kristen-cox-947319b",
+      "exa_entity_id": "https://exa.ai/library/person/q1nlf9bzd38",
+      "current_role_count": 0,
+      "used_recent_role_fallback": true,
+      "work_history_count": 9,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "used_recent_role_fallback"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Simon Bott",
+      "current_title": "Senior Product Manager",
+      "current_company": "Tesco",
+      "years_at_current_role": 8.69,
+      "resolved_location": "Welwyn Garden City",
+      "linkedin_url": "https://linkedin.com/in/simon-bott-8b150b1",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/wblylrjy1qn",
+      "exa_result_url": "https://linkedin.com/in/simon-bott-8b150b1",
+      "exa_entity_id": "https://exa.ai/library/person/wblylrjy1qn",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 1,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Christine C.",
+      "current_title": "Manager, Site Merchandising",
+      "current_company": "Sam's Club",
+      "years_at_current_role": 0.86,
+      "resolved_location": "Bentonville, Arkansas, United States",
+      "linkedin_url": "https://linkedin.com/in/christineechenn",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/xyjdwm6r8mk",
+      "exa_result_url": "https://linkedin.com/in/christineechenn",
+      "exa_entity_id": "https://exa.ai/library/person/xyjdwm6r8mk",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 13,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [],
+    "candidate": {
+      "full_name": "Christine Bova",
+      "current_title": "Product Development Manager",
+      "current_company": "Core Home",
+      "years_at_current_role": 0.28,
+      "resolved_location": "New York, New York, US",
+      "linkedin_url": "https://linkedin.com/in/christinebova",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/nzrjprg3yzt",
+      "exa_result_url": "https://linkedin.com/in/christinebova",
+      "exa_entity_id": "https://exa.ai/library/person/nzrjprg3yzt",
+      "current_role_count": 1,
+      "used_recent_role_fallback": false,
+      "work_history_count": 10,
+      "query_hit_count": 1,
+      "mapping_notes": []
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Christine Cui",
+      "current_title": "President",
+      "current_company": "Silipint, Inc.",
+      "years_at_current_role": 0.86,
+      "resolved_location": "Indianapolis, IN, US",
+      "linkedin_url": "https://linkedin.com/in/christineycui",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/5yzr3b75t0q",
+      "exa_result_url": "https://linkedin.com/in/christineycui",
+      "exa_entity_id": "https://exa.ai/library/person/5yzr3b75t0q",
+      "current_role_count": 2,
+      "used_recent_role_fallback": false,
+      "work_history_count": 11,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  },
+  {
+    "status": "accepted",
+    "reasons": [
+      "multiple_current_roles"
+    ],
+    "candidate": {
+      "full_name": "Christine Hill",
+      "current_title": "Head Of Digital Experience, Lifecycle Growth",
+      "current_company": "GSE (Global Sticks Express) - Multi-Brand Travel & Logistics Platform",
+      "years_at_current_role": 2.44,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/christine-n-hill",
+      "public_business_email": null,
+      "source_vector_id": "07",
+      "source_vector_name": "linkedin_anchored_similarity_with_company_expansion",
+      "source_bucket": "similar_company",
+      "exa_result_id": "https://exa.ai/library/person/sbndt836dcw",
+      "exa_result_url": "https://linkedin.com/in/christine-n-hill",
+      "exa_entity_id": "https://exa.ai/library/person/sbndt836dcw",
+      "current_role_count": 3,
+      "used_recent_role_fallback": false,
+      "work_history_count": 20,
+      "query_hit_count": 1,
+      "mapping_notes": [
+        "multiple_current_roles"
+      ]
+    }
+  }
+]

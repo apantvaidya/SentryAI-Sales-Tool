@@ -7,9 +7,9 @@ import os
 
 def load_dotenv(dotenv_path: Path) -> None:
     if not dotenv_path.exists():
-        raise FileNotFoundError(
-            f"Missing environment file: {dotenv_path}. Copy .env.example to .env and fill in EXA_API_KEY."
-        )
+        # Fall back to env vars already present in the process (e.g. forwarded
+        # from Next.js via service.ts's { ...process.env }).
+        return
 
     for raw_line in dotenv_path.read_text(encoding="utf-8").splitlines():
         line = raw_line.strip()

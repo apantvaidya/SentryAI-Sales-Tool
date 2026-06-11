@@ -133,6 +133,32 @@ def are_probable_duplicates(left: Any, right: Any) -> bool:
     return same_name and same_company and same_title_family
 
 
+def _hit_count(record: Any) -> int:
+    value = getattr(record, "query_hit_count", None)
+    if value is None:
+        return 1
+    try:
+        return max(int(value), 1)
+    except (TypeError, ValueError):
+        return 1
+
+
+def _accumulate_hit_count(winner: Any, existing: Any, incoming: Any) -> None:
+    """Sum the vector hit counts of both duplicates onto the winning record.
+
+    PersonaLeadRecord is frozen, so use object.__setattr__; MappedCandidate is a
+    plain dataclass and supports normal assignment. Records without the field
+    (older payloads) are left untouched.
+    """
+    if not hasattr(winner, "query_hit_count"):
+        return
+    total = _hit_count(existing) + _hit_count(incoming)
+    try:
+        object.__setattr__(winner, "query_hit_count", total)
+    except (AttributeError, TypeError):
+        winner.query_hit_count = total
+
+
 def dedupe_records(records: list[T]) -> list[T]:
     deduped: list[T] = []
 
@@ -144,6 +170,9 @@ def dedupe_records(records: list[T]) -> list[T]:
         if match_index is None:
             deduped.append(record)
             continue
-        deduped[match_index] = choose_more_complete(deduped[match_index], record)
+        existing = deduped[match_index]
+        winner = choose_more_complete(existing, record)
+        _accumulate_hit_count(winner, existing, record)
+        deduped[match_index] = winner
 
     return deduped

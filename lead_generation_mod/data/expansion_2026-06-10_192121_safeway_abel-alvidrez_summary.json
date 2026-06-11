@@ -1,0 +1,23 @@
+{
+  "original_seed": {
+    "person_name": "Abel Alvidrez",
+    "company_name": "Safeway",
+    "linkedin_url": "https://linkedin.com/in/abel-alvidrez-lpc-a0331a6",
+    "role": "Market Asset Protection Investigator - West Coast"
+  },
+  "target_count": 1000,
+  "total_leads_collected": 1048,
+  "stopped_reason": "target_reached",
+  "hops": 1,
+  "pivot_trail": [
+    {
+      "person_name": "Abel Alvidrez",
+      "company_name": "Safeway",
+      "linkedin_url": "https://linkedin.com/in/abel-alvidrez-lpc-a0331a6",
+      "role": "Market Asset Protection Investigator - West Coast"
+    }
+  ],
+  "hop_run_ids": [
+    "exa_2026-06-10_1921_safeway_abel-alvidrez"
+  ]
+}

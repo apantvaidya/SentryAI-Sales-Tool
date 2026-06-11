@@ -63,7 +63,7 @@ def filter_candidate(candidate: MappedCandidate, seed_persona: SeedPersona) -> F
         return FilterDecision(status="dropped", reasons=reasons, candidate=candidate)
 
     title_lc = candidate.current_title.lower()
-    seed_title_lc = seed_persona.role.lower()
+    seed_title_lc = (seed_persona.role or "").lower()
 
     if any(term in title_lc for term in BLACKLIST_TERMS):
         return FilterDecision(

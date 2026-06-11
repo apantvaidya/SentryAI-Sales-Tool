@@ -1,0 +1,51 @@
+[
+  {
+    "vector_id": "01",
+    "vector_name": "same_company_exact_or_near_role",
+    "template_file": "01_same_company_exact_or_near_role.txt",
+    "target_bucket": "same_company",
+    "query_text": "people at Kroger with current roles similar to District Asset Protection Manager, including managers, directors, district, regional, and senior asset protection, loss prevention, physical security, and store operations roles\n\nPrefer profiles where the current role, company, tenure, and location are clearly visible."
+  },
+  {
+    "vector_id": "02",
+    "vector_name": "same_company_adjacent_leadership",
+    "template_file": "02_same_company_adjacent_leadership.txt",
+    "target_bucket": "same_company",
+    "query_text": "current employees at Kroger in asset protection, loss prevention, physical security, district security, regional operations, facilities, or store leadership roles related to District Asset Protection Manager\n\nPrefer profiles where the current role, company, tenure, and location are clearly visible."
+  },
+  {
+    "vector_id": "03",
+    "vector_name": "same_company_person_anchored_similarity",
+    "template_file": "03_same_company_person_anchored_similarity.txt",
+    "target_bucket": "same_company",
+    "query_text": "people at Kroger with responsibilities similar to Todd Sheehan, especially in asset protection, loss prevention, physical security, district leadership, or store operations\n\nPrefer profiles where the current role, company, tenure, and location are clearly visible."
+  },
+  {
+    "vector_id": "04",
+    "vector_name": "similar_company_exact_or_near_role",
+    "template_file": "04_similar_company_exact_or_near_role.txt",
+    "target_bucket": "similar_company",
+    "query_text": "people at companies similar to Kroger with current roles similar to District Asset Protection Manager, especially in grocery, supermarket, retail, or other multi-site physical operations businesses\n\nPrefer profiles where the current role, company, tenure, and location are clearly visible."
+  },
+  {
+    "vector_id": "05",
+    "vector_name": "similar_company_adjacent_role_family",
+    "template_file": "05_similar_company_adjacent_role_family.txt",
+    "target_bucket": "similar_company",
+    "query_text": "current employees at companies similar to Kroger in asset protection, loss prevention, physical security, district operations, facilities, or store leadership roles related to District Asset Protection Manager\n\nPrefer profiles where the current role, company, tenure, and location are clearly visible."
+  },
+  {
+    "vector_id": "06",
+    "vector_name": "linkedin_anchored_similarity",
+    "template_file": "06_linkedin_anchored_similarity.txt",
+    "target_bucket": "similar_company",
+    "query_text": "people similar to this profile in current role, seniority, and responsibilities: https://linkedin.com/in/todd-sheehan-cfi-536b9912\n\nPrefer profiles where the current role, company, tenure, and location are clearly visible."
+  },
+  {
+    "vector_id": "07",
+    "vector_name": "linkedin_anchored_similarity_with_company_expansion",
+    "template_file": "07_linkedin_anchored_similarity_with_company_expansion.txt",
+    "target_bucket": "similar_company",
+    "query_text": "people similar to this profile, including same-company peers and comparable leaders at similar multi-site retail or grocery companies: https://linkedin.com/in/todd-sheehan-cfi-536b9912\n\nPrefer profiles where the current role, company, tenure, and location are clearly visible."
+  }
+]

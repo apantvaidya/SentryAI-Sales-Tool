@@ -1,0 +1,8 @@
+[
+  {
+    "vector_id": "06",
+    "vector_name": "linkedin_anchored_similarity",
+    "result_url": "https://www.linkedin.com/in/mark-lindsay-fowler",
+    "reason": "missing_entities_or_current_role"
+  }
+]

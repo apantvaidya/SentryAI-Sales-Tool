@@ -21,7 +21,7 @@ import {
   upsertImportedLeadGenRun
 } from "@/lib/data/store";
 import { importLeadGenArtifacts } from "@/lib/leadgen/import";
-import { runLeadGeneration } from "@/lib/leadgen/service";
+import { runLeadGeneration, runLeadGenerationExpansion } from "@/lib/leadgen/service";
 import { evidenceSummaryText, runWarmOutreachForContact, sourceUrls } from "@/lib/outreach/service";
 import type { DraftTone, OutreachResearch, ValidationRecommendation } from "@/lib/data/types";
 
@@ -33,13 +33,17 @@ function value(formData: FormData, key: string) {
 export async function createProspect(formData: FormData) {
   const companyName = value(formData, "companyName");
   if (!companyName) throw new Error("Company name is required");
-  const prospect = await storeCreateProspect({
-    companyName,
-    website: value(formData, "website"),
-    industry: value(formData, "industry"),
-    companySize: value(formData, "companySize"),
-    segment: value(formData, "segment"),
-    notes: value(formData, "notes")
+  const firstName = value(formData, "firstName");
+  const lastName = value(formData, "lastName");
+  const role = value(formData, "role");
+  if (!firstName || !lastName) throw new Error("First and last name are required");
+  if (!role) throw new Error("Role is required");
+  const prospect = await storeCreateProspect({ companyName });
+  await storeCreateContact(prospect.id, {
+    name: `${firstName} ${lastName}`,
+    title: role,
+    linkedinUrl: value(formData, "linkedinUrl"),
+    source: "Manual"
   });
   const brief = await generateCompanyResearch(prospect);
   await replaceResearchBrief(prospect.id, brief);
@@ -175,12 +179,48 @@ export async function createLeadGenRun(prospectId: string, formData: FormData) {
   const personName = value(formData, "seedPersonName");
   const companyName = value(formData, "seedCompanyName");
   if (!personName || !companyName) throw new Error("Seed person name and company are required");
-  const execution = await runLeadGeneration({
+
+  const seed = {
     person_name: personName,
     role: value(formData, "seedRole"),
     company_name: companyName,
     linkedin_url: value(formData, "seedLinkedinUrl")
-  });
+  };
+
+  const recursive = value(formData, "recursiveExpansion") === "on";
+
+  if (recursive) {
+    const targetTotal = Number.parseInt(value(formData, "targetTotal") || "", 10);
+    if (!Number.isFinite(targetTotal) || targetTotal < 1) {
+      throw new Error("Target total leads must be a positive number for recursive expansion.");
+    }
+    const maxHopsRaw = Number.parseInt(value(formData, "maxHops") || "", 10);
+    const maxHops = Number.isFinite(maxHopsRaw) && maxHopsRaw > 0 ? maxHopsRaw : undefined;
+
+    const execution = await runLeadGenerationExpansion(seed, { total: targetTotal, maxHops });
+    if (execution.hopRunIds.length === 0) {
+      throw new Error(
+        execution.errorMessage || execution.stderrSnippet || "Recursive expansion failed before producing any hops."
+      );
+    }
+
+    let firstRunId: string | undefined;
+    for (const hopRunId of execution.hopRunIds) {
+      const imported = await importLeadGenArtifacts(prospectId, hopRunId);
+      imported.run.command = execution.command;
+      imported.run.exitCode = execution.exitCode;
+      imported.run.stdoutSnippet = execution.stdoutSnippet;
+      imported.run.stderrSnippet = execution.stderrSnippet;
+      const run = await upsertImportedLeadGenRun(imported);
+      if (!firstRunId) firstRunId = run.id;
+    }
+
+    revalidatePath(`/prospects/${prospectId}`);
+    revalidatePath(`/prospects/${prospectId}/candidates`);
+    redirect(`/prospects/${prospectId}/candidates?runId=${firstRunId}`);
+  }
+
+  const execution = await runLeadGeneration(seed);
   if (!execution.runId) {
     throw new Error(execution.errorMessage || execution.stderrSnippet || "Lead generation failed before returning a run id.");
   }

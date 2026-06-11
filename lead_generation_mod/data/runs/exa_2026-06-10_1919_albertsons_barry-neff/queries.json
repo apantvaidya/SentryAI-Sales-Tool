@@ -1,0 +1,51 @@
+[
+  {
+    "vector_id": "01",
+    "vector_name": "same_company_exact_or_near_role",
+    "template_file": "01_same_company_exact_or_near_role.txt",
+    "target_bucket": "same_company",
+    "query_text": "people at Albertsons with current roles similar to Asset Protection Manager Albertsons Houston District, including managers, directors, district, regional, and senior asset protection, loss prevention, physical security, and store operations roles\n\nPrefer profiles where the current role, company, tenure, and location are clearly visible."
+  },
+  {
+    "vector_id": "02",
+    "vector_name": "same_company_adjacent_leadership",
+    "template_file": "02_same_company_adjacent_leadership.txt",
+    "target_bucket": "same_company",
+    "query_text": "current employees at Albertsons in asset protection, loss prevention, physical security, district security, regional operations, facilities, or store leadership roles related to Asset Protection Manager Albertsons Houston District\n\nPrefer profiles where the current role, company, tenure, and location are clearly visible."
+  },
+  {
+    "vector_id": "03",
+    "vector_name": "same_company_person_anchored_similarity",
+    "template_file": "03_same_company_person_anchored_similarity.txt",
+    "target_bucket": "same_company",
+    "query_text": "people at Albertsons with responsibilities similar to Barry Neff, especially in asset protection, loss prevention, physical security, district leadership, or store operations\n\nPrefer profiles where the current role, company, tenure, and location are clearly visible."
+  },
+  {
+    "vector_id": "04",
+    "vector_name": "similar_company_exact_or_near_role",
+    "template_file": "04_similar_company_exact_or_near_role.txt",
+    "target_bucket": "similar_company",
+    "query_text": "people at companies similar to Albertsons with current roles similar to Asset Protection Manager Albertsons Houston District, especially in grocery, supermarket, retail, or other multi-site physical operations businesses\n\nPrefer profiles where the current role, company, tenure, and location are clearly visible."
+  },
+  {
+    "vector_id": "05",
+    "vector_name": "similar_company_adjacent_role_family",
+    "template_file": "05_similar_company_adjacent_role_family.txt",
+    "target_bucket": "similar_company",
+    "query_text": "current employees at companies similar to Albertsons in asset protection, loss prevention, physical security, district operations, facilities, or store leadership roles related to Asset Protection Manager Albertsons Houston District\n\nPrefer profiles where the current role, company, tenure, and location are clearly visible."
+  },
+  {
+    "vector_id": "06",
+    "vector_name": "linkedin_anchored_similarity",
+    "template_file": "06_linkedin_anchored_similarity.txt",
+    "target_bucket": "similar_company",
+    "query_text": "people similar to this profile in current role, seniority, and responsibilities: https://linkedin.com/in/barry-neff-072a67a\n\nPrefer profiles where the current role, company, tenure, and location are clearly visible."
+  },
+  {
+    "vector_id": "07",
+    "vector_name": "linkedin_anchored_similarity_with_company_expansion",
+    "template_file": "07_linkedin_anchored_similarity_with_company_expansion.txt",
+    "target_bucket": "similar_company",
+    "query_text": "people similar to this profile, including same-company peers and comparable leaders at similar multi-site retail or grocery companies: https://linkedin.com/in/barry-neff-072a67a\n\nPrefer profiles where the current role, company, tenure, and location are clearly visible."
+  }
+]

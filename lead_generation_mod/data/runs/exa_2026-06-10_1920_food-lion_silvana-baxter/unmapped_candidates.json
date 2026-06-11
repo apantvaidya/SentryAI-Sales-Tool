@@ -1,0 +1,14 @@
+[
+  {
+    "vector_id": "06",
+    "vector_name": "linkedin_anchored_similarity",
+    "result_url": "https://www.psychologytoday.com/us/therapists/teresa-nguyen-keller-tx/1419908",
+    "reason": "missing_entities_or_current_role"
+  },
+  {
+    "vector_id": "06",
+    "vector_name": "linkedin_anchored_similarity",
+    "result_url": "https://www.staffingindustry.com/lists/40-under-40/2026-40-under-40/entrants/brittaney-jackson",
+    "reason": "missing_entities_or_current_role"
+  }
+]

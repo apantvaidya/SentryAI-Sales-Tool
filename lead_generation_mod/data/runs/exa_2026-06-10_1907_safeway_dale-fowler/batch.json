@@ -1,0 +1,562 @@
+{
+  "seed_person": {
+    "person_name": "Dale Fowler",
+    "company_name": "Safeway",
+    "linkedin_url": null,
+    "role": "Senior Director Asset Protection"
+  },
+  "same_company_matches": [
+    {
+      "full_name": "Tom Harris",
+      "current_title": "Asset Protection Director - Eastern Division - Safeway Inc",
+      "current_company": "Safeway",
+      "years_at_current_role": 28.44,
+      "resolved_location": "Lanham, MD",
+      "linkedin_url": "https://linkedin.com/in/tom-harris-5aa09014",
+      "public_business_email": null,
+      "query_hit_count": 5
+    },
+    {
+      "full_name": "Graham T.",
+      "current_title": "Division Asset Protection Manager",
+      "current_company": "Safeway",
+      "years_at_current_role": 0.44,
+      "resolved_location": "US",
+      "linkedin_url": "https://linkedin.com/in/grahamtwidale",
+      "public_business_email": null,
+      "query_hit_count": 3
+    },
+    {
+      "full_name": "Anthony Chittum",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Safeway",
+      "years_at_current_role": 4.36,
+      "resolved_location": "Denver Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/anthony-chittum-7a5198218",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Dennis Powell",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Safeway",
+      "years_at_current_role": 3.69,
+      "resolved_location": "Mount Airy, Maryland, United States",
+      "linkedin_url": "https://linkedin.com/in/dennis-powell-0394b0134",
+      "public_business_email": null,
+      "query_hit_count": 3
+    },
+    {
+      "full_name": "Kevin Richardson",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Safeway",
+      "years_at_current_role": 24.36,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/kevin-richardson-ab363972",
+      "public_business_email": null,
+      "query_hit_count": 4
+    },
+    {
+      "full_name": "Daniel Murphy",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Safeway",
+      "years_at_current_role": 2.19,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/danielmurphy703",
+      "public_business_email": null,
+      "query_hit_count": 3
+    },
+    {
+      "full_name": "Jim Stein",
+      "current_title": "Loss Prevention Manager",
+      "current_company": "Safeway",
+      "years_at_current_role": null,
+      "resolved_location": "Englewood, Colorado, United States",
+      "linkedin_url": "https://linkedin.com/in/jim-stein-98208a15",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Elizabeth Vallejo-Vega",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Safeway",
+      "years_at_current_role": 2.78,
+      "resolved_location": "Campbell, California, United States",
+      "linkedin_url": "https://linkedin.com/in/elizabeth-vallejo-vega-74256687",
+      "public_business_email": null,
+      "query_hit_count": 3
+    },
+    {
+      "full_name": "Kathie Carter",
+      "current_title": "Organized Retail Crime Manager",
+      "current_company": "Safeway",
+      "years_at_current_role": 0.86,
+      "resolved_location": "Greater Seattle Area",
+      "linkedin_url": "https://linkedin.com/in/kathie-carter-6140a821",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Matt Hammond",
+      "current_title": "Asset Protection Specialist Supervisor Leader Of Undercover Teams",
+      "current_company": "Safeway",
+      "years_at_current_role": 2.11,
+      "resolved_location": "US",
+      "linkedin_url": "https://linkedin.com/in/matt-hammond-ba56511a9",
+      "public_business_email": null,
+      "query_hit_count": 3
+    },
+    {
+      "full_name": "Terell Thompson",
+      "current_title": "Asset Protection Specialist Manager",
+      "current_company": "Safeway",
+      "years_at_current_role": null,
+      "resolved_location": "Clayton, California, United States",
+      "linkedin_url": "https://linkedin.com/in/terell-thompson-73636a219",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Melinda Quintanilla",
+      "current_title": "Loss Prevention Specialist",
+      "current_company": "Safeway",
+      "years_at_current_role": null,
+      "resolved_location": "San Francisco, California, United States",
+      "linkedin_url": "https://linkedin.com/in/melinda-quintanilla-98141729b",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "William Dorsey",
+      "current_title": "Loss Prevention",
+      "current_company": "Safeway",
+      "years_at_current_role": null,
+      "resolved_location": "Walnut Creek, California, United States",
+      "linkedin_url": "https://linkedin.com/in/william-dorsey-5881a720",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Andrea Payne",
+      "current_title": "Asset Protection Specialist",
+      "current_company": "Safeway",
+      "years_at_current_role": 30.44,
+      "resolved_location": "Safeway",
+      "linkedin_url": "https://linkedin.com/in/andrea-payne-2a466544",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Steven Bond",
+      "current_title": "Director-Asset Protection",
+      "current_company": "Safeway",
+      "years_at_current_role": 1.44,
+      "resolved_location": "NorCal Division",
+      "linkedin_url": "https://linkedin.com/in/steven-bond-82156137",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Alan Tlusty",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Safeway",
+      "years_at_current_role": 22.03,
+      "resolved_location": "Baltimore, Maryland, United States",
+      "linkedin_url": "https://linkedin.com/in/alan-tlusty-cfi-2623649b",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Dale A. Olson",
+      "current_title": "Senior Retail Manager",
+      "current_company": "Safeway",
+      "years_at_current_role": 21.94,
+      "resolved_location": "Salinas, California Area",
+      "linkedin_url": "https://linkedin.com/in/dale-a-olson-672014106",
+      "public_business_email": null,
+      "query_hit_count": 1
+    }
+  ],
+  "similar_company_matches": [
+    {
+      "full_name": "CPP - Raphael Villanes",
+      "current_title": "Eastern Division Loss Prevention Manager",
+      "current_company": "Safeway Inc",
+      "years_at_current_role": 14.44,
+      "resolved_location": "Lanham, Maryland, United States",
+      "linkedin_url": "https://linkedin.com/in/raphael-villanes-cpp-cfi-5705257",
+      "public_business_email": null,
+      "query_hit_count": 3
+    },
+    {
+      "full_name": "Valerie F. Bunn",
+      "current_title": "Sr. Asset Protection Manager",
+      "current_company": "Albertsons",
+      "years_at_current_role": 4.77,
+      "resolved_location": "Western Washington",
+      "linkedin_url": "https://linkedin.com/in/valerie-f-bunn-3b123243",
+      "public_business_email": null,
+      "query_hit_count": 4
+    },
+    {
+      "full_name": "Magali LaFont",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Albertsons/Safeway",
+      "years_at_current_role": 15.86,
+      "resolved_location": "Metro & Eastern Washington",
+      "linkedin_url": "https://linkedin.com/in/magali-lafont-7265a110b",
+      "public_business_email": null,
+      "query_hit_count": 4
+    },
+    {
+      "full_name": "Mike Davis",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "JCPenney",
+      "years_at_current_role": 4.19,
+      "resolved_location": "Denver, Colorado, United States",
+      "linkedin_url": "https://linkedin.com/in/mike-davis-01b18a28",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Chris Pierson",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Sportsman's Warehouse",
+      "years_at_current_role": 4.69,
+      "resolved_location": "Parker, Colorado, United States",
+      "linkedin_url": "https://linkedin.com/in/chris-pierson-102b45122",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Trevor Campbell",
+      "current_title": "Asset Protection Specialist",
+      "current_company": "Albertsons Companies",
+      "years_at_current_role": 3.78,
+      "resolved_location": "Boise, Idaho, United States",
+      "linkedin_url": "https://linkedin.com/in/trevor-campbell-049868201",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Ron Foss",
+      "current_title": "Director, Asset Protection",
+      "current_company": "Albertsons Companies, SOCAL Division",
+      "years_at_current_role": 3.44,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/ron-foss-cfi-lpc-1855037",
+      "public_business_email": null,
+      "query_hit_count": 4
+    },
+    {
+      "full_name": "Scott Samuelson",
+      "current_title": "Director, Asset Protection",
+      "current_company": "Albertsons Companies",
+      "years_at_current_role": 2.11,
+      "resolved_location": "Portland, Oregon, United States",
+      "linkedin_url": "https://linkedin.com/in/scott-samuelson-067b964b",
+      "public_business_email": null,
+      "query_hit_count": 3
+    },
+    {
+      "full_name": "Caroline Tiffany",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Albertsons/Vons/Pavilions",
+      "years_at_current_role": 11.36,
+      "resolved_location": "Southern California",
+      "linkedin_url": "https://linkedin.com/in/caroline-tiffany-9965027",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Joe Oliveira",
+      "current_title": "Global Leader Of Loss Prevention, Compliance, Risk Management And Corportate Security",
+      "current_company": "VSP Vision",
+      "years_at_current_role": 2.69,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/joe-oliveira-cfi-6b756411",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Michelle Wallace",
+      "current_title": "Regional Manager, Asset Protection And Facilities-West",
+      "current_company": "francesca\u2019s\u00ae",
+      "years_at_current_role": 3.03,
+      "resolved_location": "Sheboygan Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/michelle-wallace-lpc-91055432",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Dale Fowler",
+      "current_title": "Senior Director - Field Asset Protection Operations",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/dale-fowler-cfe-46154b6",
+      "public_business_email": null,
+      "query_hit_count": 4
+    },
+    {
+      "full_name": "Abel Alvidrez",
+      "current_title": "Market Asset Protection Investigator - West Coast",
+      "current_company": "RITE AID",
+      "years_at_current_role": 1.36,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/abel-alvidrez-lpc-a0331a6",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Tina Sellers",
+      "current_title": "Vice President Of Asset Protection",
+      "current_company": "UNFI",
+      "years_at_current_role": 1.03,
+      "resolved_location": "United States, Canada",
+      "linkedin_url": "https://linkedin.com/in/tina-sellers",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Cameron Maurer",
+      "current_title": "Regional Asset Protection Manager - Coastal",
+      "current_company": "Bass Pro Shops",
+      "years_at_current_role": 1.28,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/cameron-maurer",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Joe Laufenberg",
+      "current_title": "Senior Director Of Asset Protection",
+      "current_company": "Festival Foods",
+      "years_at_current_role": 11.03,
+      "resolved_location": "Green Bay, Wisconsin Area",
+      "linkedin_url": "https://linkedin.com/in/joe-laufenberg-lpc",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Mike Limauro",
+      "current_title": "Head Of Asset Protection, Amazon Worldwide Grocery Stores VP Global Asset Protection, Whole Foods",
+      "current_company": "Amazon",
+      "years_at_current_role": 0.53,
+      "resolved_location": "Seattle, WA, US",
+      "linkedin_url": "https://linkedin.com/in/mikelimauro",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Brian King",
+      "current_title": "Global Director, Asset Protection",
+      "current_company": "Amazon World Wide Grocery Stores/Wholefoods Market",
+      "years_at_current_role": 7.53,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/brian-king-61243b10",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "John Carr",
+      "current_title": "Director Of Asset Protection",
+      "current_company": "Hannaford Supermarkets",
+      "years_at_current_role": 8.44,
+      "resolved_location": "Maine",
+      "linkedin_url": "https://linkedin.com/in/john-carr-b8a179145",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Tim Murfin",
+      "current_title": "Vice President - Asset Protection & Safety",
+      "current_company": "The Winn-Dixie Company",
+      "years_at_current_role": 0.44,
+      "resolved_location": "Jacksonville, Florida, US",
+      "linkedin_url": "https://linkedin.com/in/timmurfin",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Rob Wynn",
+      "current_title": "Senior Director, Asset Protection",
+      "current_company": "Whole Foods Market",
+      "years_at_current_role": 4.36,
+      "resolved_location": "Austin, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/rob-wynn-8415419",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Andrea M.",
+      "current_title": "Director, Retail Loss Preventon",
+      "current_company": "Giant Eagle, Inc.",
+      "years_at_current_role": 0.86,
+      "resolved_location": "Columbus, Ohio, United States",
+      "linkedin_url": "https://linkedin.com/in/andrea-m-99512610b",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Jason Griffin",
+      "current_title": "Director Corporate Asset Protection",
+      "current_company": "Albertsons Companies",
+      "years_at_current_role": 1.94,
+      "resolved_location": "Clackamas, Oregon, United States",
+      "linkedin_url": "https://linkedin.com/in/jason-griffin-181b087b",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Mark Stinde",
+      "current_title": "Vice President, Asset Protection",
+      "current_company": "Casey's",
+      "years_at_current_role": 3.53,
+      "resolved_location": "Des Moines Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/mark-stinde-mba-lpc-4725457",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Willie Wright",
+      "current_title": "Assistant Asset Protection Risk Management Director",
+      "current_company": "Kroger",
+      "years_at_current_role": 11.44,
+      "resolved_location": "Los Angeles, California",
+      "linkedin_url": "https://linkedin.com/in/willie-wright-1a10ba16",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Matthew VanEmon",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Walgreens",
+      "years_at_current_role": 8.36,
+      "resolved_location": "Raleigh, North Carolina",
+      "linkedin_url": "https://linkedin.com/in/matthew-vanemon-8a271211",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Adam Gilvin",
+      "current_title": "Director, Asset Protection",
+      "current_company": "Bass Pro Shops",
+      "years_at_current_role": 1.77,
+      "resolved_location": "Springfield, MO, US",
+      "linkedin_url": "https://linkedin.com/in/adamgilvin",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Carlos Perez",
+      "current_title": "Asset Protection Manager",
+      "current_company": "Busch's Fresh Food Market",
+      "years_at_current_role": 4.36,
+      "resolved_location": "Michigan, United States",
+      "linkedin_url": "https://linkedin.com/in/carlosperez8",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Emma Gomez",
+      "current_title": "Corporate Asset Protection Manager",
+      "current_company": "Albertsons Companies",
+      "years_at_current_role": 1.94,
+      "resolved_location": "Hayward, California, United States",
+      "linkedin_url": "https://linkedin.com/in/emma-gomez-523a9074",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Bernard Peterson",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 3.2,
+      "resolved_location": "Murfreesboro, Tennessee, United States",
+      "linkedin_url": "https://linkedin.com/in/bernard-peterson-cfi-lsa-18840379",
+      "public_business_email": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Kenneth Peschier",
+      "current_title": "Senior Vice President, Asset Protection",
+      "current_company": "Burlington Stores, Inc.",
+      "years_at_current_role": 2.44,
+      "resolved_location": "Burlington, New Jersey, United States",
+      "linkedin_url": "https://linkedin.com/in/kennethpeschier",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Ryan Clevenger",
+      "current_title": "Corporate Director Of Asset Protection",
+      "current_company": "Albertsons Companies",
+      "years_at_current_role": 2.11,
+      "resolved_location": "Boise, Idaho, United States",
+      "linkedin_url": "https://linkedin.com/in/ryan-clevenger-679a129",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Chris Brown",
+      "current_title": "Director Of Asset Protection",
+      "current_company": "The Kroger Co.",
+      "years_at_current_role": 3.95,
+      "resolved_location": "Cincinnati, Ohio, United States",
+      "linkedin_url": "https://linkedin.com/in/chris-brown-92a37310",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Shawn Preister",
+      "current_title": "Store Director",
+      "current_company": "Target",
+      "years_at_current_role": 3.2,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/shawn-preister-982499128",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Holly DeArmond Andrews",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 8.94,
+      "resolved_location": "San Diego, California",
+      "linkedin_url": "https://linkedin.com/in/holly-dearmond-andrews-lpc-1537997",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brandon Lowery",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 4.11,
+      "resolved_location": "Nashville Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/brandon-lowery-cfi-982647152",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Alecia Camps",
+      "current_title": "District Asset Protection Manager",
+      "current_company": "Kroger",
+      "years_at_current_role": 1.19,
+      "resolved_location": "Columbus, Ohio Metropolitan Area",
+      "linkedin_url": "https://linkedin.com/in/alecia-camps",
+      "public_business_email": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Robert Redman",
+      "current_title": "Territory Director Asset Protection West",
+      "current_company": "Burlington Stores, Inc.",
+      "years_at_current_role": 2.11,
+      "resolved_location": "Los Angeles County, California, United States",
+      "linkedin_url": "https://linkedin.com/in/robert-redman-52b4ab231",
+      "public_business_email": null,
+      "query_hit_count": 1
+    }
+  ]
+}

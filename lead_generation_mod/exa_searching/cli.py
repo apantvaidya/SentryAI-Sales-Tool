@@ -38,6 +38,39 @@ def build_parser() -> argparse.ArgumentParser:
         help="Include the final batch payload in stdout.",
     )
 
+    run_expand_parser = subparsers.add_parser(
+        "run-expand",
+        help="Recursively expand from a seed persona until N unique leads are collected.",
+    )
+    run_expand_parser.add_argument(
+        "--input",
+        required=True,
+        help="Path to a JSON file with person_name, role, company_name, and optional linkedin_url.",
+    )
+    run_expand_parser.add_argument(
+        "--total",
+        type=int,
+        required=True,
+        help="Target number of unique leads to collect across all hops.",
+    )
+    run_expand_parser.add_argument(
+        "--max-hops",
+        type=int,
+        default=20,
+        help="Safety ceiling on recursion depth (default 20).",
+    )
+    run_expand_parser.add_argument(
+        "--num-results",
+        type=int,
+        default=None,
+        help="Override the EXA_NUM_RESULTS setting for each hop.",
+    )
+    run_expand_parser.add_argument(
+        "--print-batch",
+        action="store_true",
+        help="Include every hop batch payload in stdout.",
+    )
+
     return parser
 
 
@@ -62,6 +95,31 @@ def handle_run_seed(args: argparse.Namespace) -> int:
     return 0
 
 
+def handle_run_expand(args: argparse.Namespace) -> int:
+    settings = Settings.load()
+    if args.num_results is not None:
+        settings = settings.with_overrides(num_results=args.num_results)
+
+    original_seed = SeedPersona.from_file(args.input)
+    runner = LeadGenerationRunner.create(settings)
+    expansion = runner.run_expansion(
+        original_seed,
+        target_count=args.total,
+        max_hops=args.max_hops,
+    )
+
+    output = expansion.to_dict()
+    output["hop_summaries"] = [
+        {"run_id": result.run_id, "summary": result.summary}
+        for result in expansion.hop_results
+    ]
+    if args.print_batch:
+        output["hop_batches"] = [result.batch.to_dict() for result in expansion.hop_results]
+
+    print(json.dumps(output, indent=2))
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
@@ -69,6 +127,8 @@ def main(argv: list[str] | None = None) -> int:
     try:
         if args.command == "run-seed":
             return handle_run_seed(args)
+        if args.command == "run-expand":
+            return handle_run_expand(args)
     except (ExaAPIError, OSError, ValueError, json.JSONDecodeError) as exc:
         print(f"Error: {exc}", file=sys.stderr)
         return 1
