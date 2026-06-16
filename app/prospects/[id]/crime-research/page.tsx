@@ -12,9 +12,21 @@ function recommendationClass(value?: string) {
   return "bg-amber-50 text-amber-700";
 }
 
+function statusClass(value: string) {
+  if (value === "completed") return "bg-emerald-50 text-emerald-700";
+  if (value === "failed") return "bg-red-50 text-red-700";
+  return "bg-slate-100 text-slate-600";
+}
+
 function renderJsonPreview(value: unknown) {
   const text = JSON.stringify(value, null, 2);
   return text.length > 1200 ? `${text.slice(0, 1200)}...` : text;
+}
+
+function renderFailureMessage(errorMessage?: string, stderrSnippet?: string) {
+  const text = errorMessage || stderrSnippet;
+  if (!text) return null;
+  return text.length > 1500 ? `${text.slice(0, 1500)}...` : text;
 }
 
 export default async function CrimeResearchPage({ params }: { params: Promise<{ id: string }> }) {
@@ -77,10 +89,29 @@ export default async function CrimeResearchPage({ params }: { params: Promise<{ 
                         {[research.company, research.location, candidate?.fullName].filter(Boolean).join(" · ")}
                       </p>
                     </div>
-                    <span className={`rounded-md px-3 py-1 text-xs font-bold capitalize ${recommendationClass(research.validationRecommendation)}`}>
-                      {research.validationRecommendation.replace("_", " ")}
-                    </span>
+                    <div className="flex flex-wrap gap-2">
+                      <span className={`rounded-md px-3 py-1 text-xs font-bold capitalize ${statusClass(research.status)}`}>
+                        {research.status}
+                      </span>
+                      <span className={`rounded-md px-3 py-1 text-xs font-bold capitalize ${recommendationClass(research.validationRecommendation)}`}>
+                        {research.validationRecommendation.replace("_", " ")}
+                      </span>
+                    </div>
                   </div>
+
+                  {research.status === "failed" ? (
+                    <div className="mt-4 rounded-md border border-red-200 bg-red-50 p-4">
+                      <h3 className="font-bold text-red-800">Pipeline Failed Before Evidence Was Collected</h3>
+                      <p className="mt-2 text-sm leading-6 text-red-700">
+                        The outreach run did not reach public search or draft generation. The error below is the saved failure from the pipeline.
+                      </p>
+                      {renderFailureMessage(research.errorMessage, research.stderrSnippet) ? (
+                        <pre className="mt-3 max-h-64 overflow-auto whitespace-pre-wrap rounded-md bg-white p-3 text-xs leading-5 text-red-900">
+                          {renderFailureMessage(research.errorMessage, research.stderrSnippet)}
+                        </pre>
+                      ) : null}
+                    </div>
+                  ) : null}
 
                   <div className="mt-5 grid gap-4 lg:grid-cols-2">
                     <div className="rounded-md bg-slate-50 p-4">

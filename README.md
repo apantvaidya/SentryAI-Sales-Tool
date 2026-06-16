@@ -17,9 +17,18 @@ Copy `.env.example` to `.env.local`.
 
 ```bash
 OPENAI_API_KEY=
+TAVILY_API_KEY=
 ```
 
 When `OPENAI_API_KEY` is absent, the app runs in demo mode and returns high-quality mock research, contact scoring, and outreach drafts. No keys are hardcoded.
+
+The People tab's warm outreach pipeline is a separate Python package under [warm_outreach](/Users/aran/code/SentryAI-Sales-Tool/warm_outreach). For live crime research and email generation, it also needs a local virtualenv and the Tavily key:
+
+```bash
+cd warm_outreach
+python3 -m venv .venv
+./.venv/bin/pip install -e .[dev]
+```
 
 ## Storage
 

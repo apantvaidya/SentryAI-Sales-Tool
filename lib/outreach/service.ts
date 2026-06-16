@@ -1,3 +1,4 @@
+import { existsSync } from "fs";
 import { execFile } from "child_process";
 import path from "path";
 import { promisify } from "util";
@@ -5,6 +6,11 @@ import type { Contact, LeadCandidate, ProspectWorkspace } from "@/lib/data/types
 
 const execFileAsync = promisify(execFile);
 const warmOutreachRoot = path.join(process.cwd(), "warm_outreach");
+const warmOutreachPythonCandidates = [
+  path.join(warmOutreachRoot, ".venv", "bin", "python"),
+  path.join(warmOutreachRoot, ".venv", "bin", "python3"),
+  "python3"
+] as const;
 
 export type WarmOutreachPipelineOutput = {
   lead: {
@@ -63,6 +69,40 @@ function yearsAtRole(candidate?: LeadCandidate) {
   return typeof candidate?.yearsAtCurrentRole === "number" ? `${candidate.yearsAtCurrentRole} years` : undefined;
 }
 
+function warmOutreachPython() {
+  return warmOutreachPythonCandidates.find((candidate) => candidate === "python3" || existsSync(candidate)) || "python3";
+}
+
+function warmOutreachSetupHint() {
+  return [
+    "Warm outreach Python dependencies are not installed for this app yet.",
+    `From ${warmOutreachRoot}, run:`,
+    "python3 -m venv .venv",
+    "./.venv/bin/pip install -e .[dev]"
+  ].join("\n");
+}
+
+function warmOutreachConfigHint(variableName: string) {
+  return [
+    `${variableName} is not set for the warm outreach pipeline.`,
+    "Set it in the app environment or create warm_outreach/.env with the required keys."
+  ].join("\n");
+}
+
+function augmentWarmOutreachError(errorMessage: string, stderr?: string) {
+  const combined = `${errorMessage}\n${stderr || ""}`;
+  if (/No module named '([^']+)'/.test(combined)) {
+    return `${errorMessage}\n\n${warmOutreachSetupHint()}`;
+  }
+  if (combined.includes("TAVILY_API_KEY is not set.")) {
+    return `${errorMessage}\n\n${warmOutreachConfigHint("TAVILY_API_KEY")}`;
+  }
+  if (combined.includes("OPENAI_API_KEY is not set.")) {
+    return `${errorMessage}\n\n${warmOutreachConfigHint("OPENAI_API_KEY")}`;
+  }
+  return errorMessage;
+}
+
 export function contactToWarmOutreachLead(workspace: ProspectWorkspace, contact: Contact, candidate?: LeadCandidate) {
   return {
     name: contact.name || "Unknown contact",
@@ -82,6 +122,7 @@ export async function runWarmOutreachForContact(
   options: { maxResults?: number; includeRawContent?: boolean } = {}
 ): Promise<WarmOutreachExecution> {
   const lead = contactToWarmOutreachLead(workspace, contact, candidate);
+  const pythonExecutable = warmOutreachPython();
   const args = [
     "-m",
     "warm_outreach.cli",
@@ -93,9 +134,9 @@ export async function runWarmOutreachForContact(
   ];
   if (options.includeRawContent) args.push("--include-raw-content");
 
-  const command = `python3 ${args.map((arg) => (arg.includes(" ") ? JSON.stringify(arg) : arg)).join(" ")}`;
+  const command = `${pythonExecutable} ${args.map((arg) => (arg.includes(" ") ? JSON.stringify(arg) : arg)).join(" ")}`;
   try {
-    const { stdout, stderr } = await execFileAsync("python3", args, {
+    const { stdout, stderr } = await execFileAsync(pythonExecutable, args, {
       cwd: warmOutreachRoot,
       env: {
         ...process.env,
@@ -112,12 +153,13 @@ export async function runWarmOutreachForContact(
     };
   } catch (error) {
     const execError = error as Error & { code?: number; stdout?: string; stderr?: string };
+    const stderr = execError.stderr || "";
     return {
       command,
       exitCode: typeof execError.code === "number" ? execError.code : 1,
       stdoutSnippet: snippet(execError.stdout || ""),
-      stderrSnippet: snippet(execError.stderr || ""),
-      errorMessage: execError.message
+      stderrSnippet: snippet(stderr),
+      errorMessage: augmentWarmOutreachError(execError.message, stderr)
     };
   }
 }

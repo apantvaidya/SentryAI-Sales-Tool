@@ -320,7 +320,7 @@ async function persistOutreachExecution(
   return research;
 }
 
-export async function runCandidateOutreach(prospectId: string, candidateId: string) {
+async function executeCandidateOutreach(prospectId: string, candidateId: string) {
   let candidate = await getLeadCandidateById(prospectId, candidateId);
   if (!candidate) throw new Error("Lead candidate not found");
   const contactId = candidate.importedContactId || (await storeImportLeadCandidateAsContact(prospectId, candidateId));
@@ -330,31 +330,42 @@ export async function runCandidateOutreach(prospectId: string, candidateId: stri
   const workspace = await getProspectById(prospectId);
   if (!workspace) throw new Error("Prospect not found");
   const execution = await runWarmOutreachForContact(workspace, contact, candidate || undefined);
-  await persistOutreachExecution(prospectId, contactId, candidateId, execution);
+  const research = await persistOutreachExecution(prospectId, contactId, candidateId, execution);
   revalidatePath(`/prospects/${prospectId}`);
   revalidatePath(`/prospects/${prospectId}/candidates`);
+  revalidatePath(`/prospects/${prospectId}/contacts`);
   revalidatePath(`/prospects/${prospectId}/crime-research`);
   revalidatePath(`/prospects/${prospectId}/drafts`);
+  return research;
 }
 
-export async function runContactOutreach(prospectId: string, contactId: string) {
+export async function runCandidateOutreach(prospectId: string, candidateId: string) {
+  await executeCandidateOutreach(prospectId, candidateId);
+}
+
+async function executeContactOutreach(prospectId: string, contactId: string) {
   const workspace = await getProspectById(prospectId);
   if (!workspace) throw new Error("Prospect not found");
   const contact = workspace.contacts.find((item) => item.id === contactId);
   if (!contact) throw new Error("Contact not found");
   const candidate = workspace.leadCandidates.find((item) => item.importedContactId === contactId);
   const execution = await runWarmOutreachForContact(workspace, contact, candidate);
-  await persistOutreachExecution(prospectId, contactId, candidate?.id, execution);
+  const research = await persistOutreachExecution(prospectId, contactId, candidate?.id, execution);
   revalidatePath(`/prospects/${prospectId}`);
   revalidatePath(`/prospects/${prospectId}/crime-research`);
   revalidatePath(`/prospects/${prospectId}/drafts`);
+  return research;
+}
+
+export async function runContactOutreach(prospectId: string, contactId: string) {
+  await executeContactOutreach(prospectId, contactId);
 }
 
 export async function runBatchCandidateOutreach(prospectId: string, formData: FormData) {
   const candidateIds = formData.getAll("candidateIds").filter((item): item is string => typeof item === "string" && Boolean(item));
   if (candidateIds.length > 10) throw new Error("Batch outreach is capped at 10 selected candidates.");
   for (const candidateId of candidateIds) {
-    await runCandidateOutreach(prospectId, candidateId);
+    await executeCandidateOutreach(prospectId, candidateId);
   }
 }
 
@@ -373,10 +384,13 @@ export async function runPeopleBatchCandidateOutreach(formData: FormData) {
     return candidate;
   });
 
-  for (const candidate of selectedCandidates) {
-    await runCandidateOutreach(candidate.prospectId, candidate.id);
-  }
+  const [candidate] = selectedCandidates;
+  const research = await executeCandidateOutreach(candidate.prospectId, candidate.id);
 
   revalidatePath("/people");
-  redirect(`/prospects/${selectedCandidates[0].prospectId}/drafts`);
+  redirect(
+    research.status === "completed"
+      ? `/prospects/${candidate.prospectId}/drafts`
+      : `/prospects/${candidate.prospectId}/crime-research`
+  );
 }
