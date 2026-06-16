@@ -26,18 +26,18 @@
       "id": "256ea813-0db2-426d-a9b6-1202970cf1e4",
       "companyName": "tesla socal",
       "painPoints": [
-        "Security teams may be reviewing too much passive footage after incidents occur.",
-        "Distributed locations can make consistent monitoring and escalation difficult.",
-        "Guard teams and operators can experience alert fatigue during long monitoring windows.",
-        "Leadership may need clearer operational evidence before expanding security spend."
+        "Potential threats to high-value assets and intellectual property",
+        "Increased need for real-time surveillance across extensive and distributed sites",
+        "Dependence on security personnel and risks of monitoring fatigue",
+        "Integration challenges with existing security infrastructure"
       ],
-      "smartSentryFitScore": 82,
+      "smartSentryFitScore": 85,
       "status": "drafting",
       "createdAt": "2026-05-26T16:27:01.830Z",
-      "updatedAt": "2026-05-26T16:27:01.832Z",
-      "summary": "tesla socal appears to be a strong Smart Sentry research target in distributed operations. Based on the provided inputs, the most relevant conversation is around improving visibility across physical sites without replacing existing camera investments.",
-      "securityRelevance": "Smart Sentry is relevant because it can layer AI-assisted threat detection and human-in-the-loop escalation onto existing camera infrastructure for distributed operations environments.",
-      "fitRationale": "High fit when the organization has physical sites, camera coverage, and a need to move from reactive review to proactive incident response."
+      "updatedAt": "2026-06-11T04:50:57.863Z",
+      "summary": "Tesla SoCal operates within the automotive industry, focusing on sustainable energy and electric vehicles. Given its expansive facilities and operations, it faces unique security challenges that necessitate advanced security solutions to monitor and prevent incidents effectively.",
+      "securityRelevance": "With numerous distributed facilities and operations, Tesla SoCal requires a robust, intelligent system for threat detection that not only enhances security but also reduces operational risks and reliance on human monitoring.",
+      "fitRationale": "Smart Sentry's AI-powered monitoring platform is well-suited for Tesla's distributed sites and aligns with its need for proactive incident prevention and operational risk reduction. The technology can complement existing systems, improving response times and efficiency."
     },
     {
       "id": "d5fc2afa-1e58-457d-88cf-a254e9e613e1",
@@ -45,11 +45,20 @@
       "industry": "Imported lead generation sample",
       "segment": "Lead generation",
       "notes": "Created from existing lead generation artifact for seed Sabrina Jasso-Aguilar.",
-      "painPoints": [],
-      "smartSentryFitScore": 0,
-      "status": "researching",
+      "painPoints": [
+        "Managing security across multiple construction sites",
+        "Reducing incidents of theft and vandalism",
+        "Minimizing the reliance on security personnel",
+        "Dealing with monitoring fatigue from existing surveillance systems",
+        "Ensuring real-time response to security threats"
+      ],
+      "smartSentryFitScore": 85,
+      "status": "drafting",
       "createdAt": "2026-06-08T01:44:46.501Z",
-      "updatedAt": "2026-06-08T01:44:46.501Z"
+      "updatedAt": "2026-06-11T04:50:34.919Z",
+      "summary": "Blach Construction Company operates within the construction industry, potentially managing numerous sites and a large workforce, making security a paramount concern. The need for effective monitoring solutions becomes critical as the company may face challenges associated with onsite safety, theft prevention, and incident response across various construction sites.",
+      "securityRelevance": "In the construction sector, ensuring safety and security across various locations is crucial. The use of Smart Sentry can enhance overall site security by providing real-time monitoring and reducing the burden on security staff. This can help Blach Construction Company effectively deploy their resources and respond swiftly to any security incidents.",
+      "fitRationale": "Smart Sentry aligns well with the needs of Blach Construction Company as it offers a solution that integrates with existing camera systems, reducing the need for additional hardware. Its AI-driven insights and human escalation process can significantly improve security across various job sites, enhancing operational safety and risk management."
     },
     {
       "id": "6ce7c6fe-92c6-47c5-91c9-e689d6990ccb",
@@ -74,18 +83,18 @@
       "id": "010e3235-28d8-4230-ae43-a1568df455fb",
       "companyName": "Safeway",
       "painPoints": [
-        "High dependency on security personnel for threat detection",
-        "Monitoring fatigue among security teams",
-        "Need for reliable and timely incident response",
-        "Challenges in securing distributed locations effectively"
+        "Need for efficient monitoring and incident response across multiple retail locations.",
+        "Dependence on traditional security guard presence leading to increased costs.",
+        "Challenges in managing security in real-time, especially in large open spaces.",
+        "Potential for security breaches leading to loss of inventory and trust."
       ],
       "smartSentryFitScore": 85,
       "status": "drafting",
       "createdAt": "2026-06-11T01:41:53.528Z",
-      "updatedAt": "2026-06-11T04:36:58.117Z",
-      "summary": "Safeway, operating in the retail sector, likely faces challenges related to security management across its multiple locations, including grocery stores and distribution centers. Smart Sentry's AI-powered security monitoring platform can enhance Safeway's security posture by providing real-time threat detection and utilizing existing camera infrastructure, thereby optimizing resource allocation and improving incident response time.",
-      "securityRelevance": "With various distribution centers and retail locations, Safeway must ensure the safety of employees and customers. The implementation of a proactive AI-driven security solution can significantly reduce risks and enhance overall safety measures in their operations.",
-      "fitRationale": "Smart Sentry's solution addresses the needs of Safeway for real-time threat detection while leveraging existing security infrastructure. Its features align well with the operational requirements of a multi-site retail operation managing both in-store and logistic security."
+      "updatedAt": "2026-06-11T04:57:19.900Z",
+      "summary": "Safeway is a retail organization that could benefit from Smart Sentry's AI-powered security monitoring platform to enhance their security measures and protect their assets effectively.",
+      "securityRelevance": "In the retail industry, effective security measures are crucial to prevent theft, ensure customer safety, and maintain operational efficiency. Smart Sentry's capabilities align well with these needs.",
+      "fitRationale": "Safeway operates in the retail sector with multiple locations that would benefit from real-time threat detection and reduced reliance on personnel. The adaptability of Smart Sentry to existing camera infrastructure fits well with Safeway's likely operational setup."
     }
   ],
   "personas": [
@@ -147,77 +156,6 @@
       "personaName": "Security Director",
       "roleTitles": [
         "Director of Security",
-        "Head of Corporate Security",
-        "Physical Security Manager"
-      ],
-      "painPoints": [
-        "Reducing incident response time",
-        "Improving monitoring coverage",
-        "Avoiding unreliable alerts"
-      ],
-      "valueProposition": "Turn existing cameras into a proactive detection and escalation layer without forcing a rip-and-replace project.",
-      "objectionHandling": "Start with a focused pilot on high-risk cameras and measure escalation quality before broader rollout.",
-      "priorityScore": 94,
-      "id": "07bf3862-b58b-42ed-a347-373caf50e045",
-      "prospectId": "256ea813-0db2-426d-a9b6-1202970cf1e4"
-    },
-    {
-      "personaName": "Operations Leader",
-      "roleTitles": [
-        "VP Operations",
-        "Regional Operations Director",
-        "Facilities Director"
-      ],
-      "painPoints": [
-        "Site consistency",
-        "Operational disruptions",
-        "Labor constraints"
-      ],
-      "valueProposition": "Reduce operational risk across multiple sites by detecting issues earlier and escalating only meaningful events.",
-      "objectionHandling": "Position Smart Sentry as operational risk reduction, not another tool for the security team to babysit.",
-      "priorityScore": 86,
-      "id": "145660c8-f4f8-496e-a252-b3852a4d3872",
-      "prospectId": "256ea813-0db2-426d-a9b6-1202970cf1e4"
-    },
-    {
-      "personaName": "IT / Infrastructure Owner",
-      "roleTitles": [
-        "IT Director",
-        "Infrastructure Manager",
-        "Systems Administrator"
-      ],
-      "painPoints": [
-        "Integration burden",
-        "Vendor security",
-        "Camera infrastructure complexity"
-      ],
-      "valueProposition": "Use current camera infrastructure while keeping deployment scope clear, reviewable, and operationally reliable.",
-      "objectionHandling": "Lead with compatibility discovery, access controls, and a staged deployment plan.",
-      "priorityScore": 73,
-      "id": "3ac749ef-96da-46d1-a49e-05c4aa4d6327",
-      "prospectId": "256ea813-0db2-426d-a9b6-1202970cf1e4"
-    },
-    {
-      "personaName": "Security Director",
-      "roleTitles": [
-        "Director of Security",
-        "Head of Corporate Security"
-      ],
-      "painPoints": [
-        "Need for effective threat detection without increasing personnel costs",
-        "Desire to reduce reliance on guards through technology",
-        "Addressing the challenge of fatigue and oversight in monitoring"
-      ],
-      "valueProposition": "Smart Sentry provides a powerful tool for real-time threat detection that enhances the efficacy of security operations while utilizing existing resources, thus reducing operational risks and improving safety outcomes.",
-      "objectionHandling": "Emphasize the ability to integrate with existing systems and present case studies demonstrating the effectiveness of AI in improving security measures and reducing incident response times.",
-      "priorityScore": 90,
-      "id": "dfaf8422-45f8-41c5-8aab-6ca3315f5097",
-      "prospectId": "010e3235-28d8-4230-ae43-a1568df455fb"
-    },
-    {
-      "personaName": "Security Director",
-      "roleTitles": [
-        "Director of Security",
         "Head of Corporate Security"
       ],
       "painPoints": [
@@ -230,6 +168,57 @@
       "priorityScore": 90,
       "id": "8d5375c8-f65d-420c-885f-99ebb80f70e1",
       "prospectId": "6ce7c6fe-92c6-47c5-91c9-e689d6990ccb"
+    },
+    {
+      "personaName": "Security Director",
+      "roleTitles": [
+        "Director of Security",
+        "Head of Corporate Security"
+      ],
+      "painPoints": [
+        "Overseeing security across multiple locations efficiently.",
+        "Mitigating risks associated with heavy reliance on traditional security methods.",
+        "Improving the effectiveness of security personnel through technology."
+      ],
+      "valueProposition": "Utilize AI-powered monitoring to enhance threat detection capabilities and optimize security operations across retail locations.",
+      "objectionHandling": "Address concerns regarding technology integration by emphasizing compatibility with existing systems and provide case studies from similar organizations.",
+      "priorityScore": 90,
+      "id": "d060c4ee-a6d8-4756-9b4c-99eb239276ca",
+      "prospectId": "010e3235-28d8-4230-ae43-a1568df455fb"
+    },
+    {
+      "personaName": "Security Director",
+      "roleTitles": [
+        "Director of Security",
+        "Head of Corporate Security"
+      ],
+      "painPoints": [
+        "The need for effective monitoring across multiple construction locations",
+        "Challenges of incident response and reporting",
+        "Striving to minimize security operational costs while enhancing safety"
+      ],
+      "valueProposition": "Smart Sentry provides advanced, AI-assisted threat detection that can work seamlessly with existing infrastructure, facilitating proactive security measures rather than reactive ones, which is essential for dynamic construction environments.",
+      "objectionHandling": "Address concerns about implementation by highlighting the ease of integration with existing camera systems and the reduction in operational fatigue for security teams. Emphasize the cost-effectiveness and efficiency of AI monitoring over traditional methods.",
+      "priorityScore": 90,
+      "id": "43544074-1b53-41f7-87d2-15d26cd6c41c",
+      "prospectId": "d5fc2afa-1e58-457d-88cf-a254e9e613e1"
+    },
+    {
+      "personaName": "Security Director",
+      "roleTitles": [
+        "Director of Security",
+        "Head of Corporate Security"
+      ],
+      "painPoints": [
+        "Need for enhanced security measures against potential threats",
+        "Challenges in maintaining an effective monitoring strategy with existing resources",
+        "Desire to reduce personnel costs while improving incident response"
+      ],
+      "valueProposition": "Smart Sentry provides real-time, AI-assisted detection that works with existing infrastructure, reducing dependence on security personnel and enhancing overall incident management.",
+      "objectionHandling": "Address concerns about system integration by highlighting Smart Sentry's compatibility with existing camera setups and ease of use with a human-in-the-loop approach for reliability.",
+      "priorityScore": 90,
+      "id": "13188f3f-bece-4194-b3aa-8c0edf8aeed0",
+      "prospectId": "256ea813-0db2-426d-a9b6-1202970cf1e4"
     }
   ],
   "contacts": [
@@ -575,6 +564,58 @@
       "evidenceSummarySnippet": "In 2022, Phoenix reported an average of 64,889 crimes per year, with a significant portion being property crimes such as theft and burglary. Recent efforts by Phoenix PD include working with businesses to address shoplifting incidents, indicating a focus on retail theft prevention.",
       "createdAt": "2026-06-11T04:43:21.587Z",
       "updatedAt": "2026-06-11T04:43:21.587Z"
+    },
+    {
+      "id": "15d4ab49-dca8-4f93-bd4b-44a87b042ef3",
+      "prospectId": "010e3235-28d8-4230-ae43-a1568df455fb",
+      "contactId": "b46a8f56-05dc-4183-afc7-66a91d238964",
+      "candidateId": "7c306d57-cbdd-42fd-bc8d-9deefb21b864",
+      "outreachResearchId": "3f165411-11a0-4a0c-a8ee-3c11110eba6f",
+      "subject": "Exploring Operational Efficiency in Food Distribution",
+      "body": "Hi Aaron,\n\nI saw you're Category Operations Manager at US Foods and have been in the role for 1 yr 6 m.\n\nIn California, organized retail theft has been a significant concern, impacting logistics and distribution facilities.\n\nSmartSentryAI is a computer vision physical security company with a simple mission: make solving crime cheaper and easier for organizations with real-world locations. We're trying to better understand how leaders like you think about operational efficiency, supply chain security, and inventory management both at companies like US Foods and in the broader Corona area.\n\nGiven your role in operations, I thought your perspective would be especially valuable. Would you be open to a quick chat next week? I'd mainly love to hear how you're thinking about these problems and see if what we're building could be useful.\n\nBest,\nSmartSentryAI",
+      "tone": "warm",
+      "status": "draft",
+      "personalizationNotes": [
+        "Persona: operations",
+        "Validation: human_review",
+        "Evidence sources: 27"
+      ],
+      "riskFlags": [
+        "Email body exceeds 119 words (136)."
+      ],
+      "sourceUrls": [
+        "https://www.gov.ca.gov/2026/06/04/california-continues-aggressive-fight-against-organized-retail-theft-recovering-nearly-260-million-in-stolen-merchandise",
+        "https://www.sandiegocounty.gov/content/dam/sdc/deh/fhd/food/pdf/publications_wholesaleworkbook.pdf",
+        "https://corstat.coronaca.gov/stories/s/Police-Department-Dashboard/iqm2-meak",
+        "https://www.coronaca.gov/departments/police",
+        "https://careers.usfoods.com/us/en/c/transportation-logistics-jobs",
+        "https://www.usfoods.com",
+        "https://careers.usfoods.com/us/en/c/warehouse-operations-jobs",
+        "https://supplychaindigital.com/digital-supply-chain/us-foods-driving-sustainability-its-supply-chain",
+        "https://www.usfoods.com/about-us-foods/associate-experience/support-and-partnership",
+        "https://www.usfoods.com/products-we-offer/exclusive-brands/cross-valley-farms/farm-to-fork",
+        "https://www.usfoods.com/for-investors-media-and-suppliers/supplier-info",
+        "https://www.asisonline.org/security-management-magazine/articles/2026/04/warehouse-and-distribution-center-security/scanner-theft",
+        "https://clui.org/ludb/site/us-foods-allentown-distribution-center",
+        "https://www.supplychainbrain.com/articles/41470-modernizing-the-mile-us-foods-builds-a-smarter-future-for-daily-planning",
+        "https://en.wikipedia.org/wiki/US_Foods",
+        "https://statisnostics.com/crime-statistics/CA/Corona",
+        "https://cocpublicwebsite.blob.core.windows.net/publicwebsite/Documents/Police%20Department/2024%20Corona%20PD%20Annual%20Report.pdf",
+        "https://experience.arcgis.com/experience/cc7641c2e80044a697a9e2a37f19e202",
+        "https://www.wcctv.com/resources/news/how-are-crime-trends-changing-across-california-industries",
+        "https://www.riverplateinc.com/articles/warehouse-security",
+        "https://www.rfgen.com/blog/key-security-risks-of-legacy-inventory-management-systems-how-to-address-them",
+        "https://www.bayalarm.com/uncategorized/warehouse-security-guide",
+        "https://blog.opendock.com/warehouse-theft-prevention",
+        "https://protossecurity.com/blog/holiday-security-strategies-warehouse-theft-prevention",
+        "https://eliteisi.com/warehouse-security-systems",
+        "https://www.pelco.com/blog/warehouse-loss-prevention",
+        "https://www.scjunction.com/blog/warehouse-theft-prevention-tips-how-to-spot-and-stop-light-fingers"
+      ],
+      "validationRecommendation": "human_review",
+      "evidenceSummarySnippet": "In California, organized retail theft has been a significant concern, with law enforcement conducting numerous operations to combat it, resulting in multiple arrests. This indicates a broader trend of theft that could impact logistics and distribution facilities. A risk control plan for wholesale food warehouses identifies and mitigates security risks, emphasizing the importance of operational efficiency and safety in food distribution contexts.",
+      "createdAt": "2026-06-11T04:57:19.900Z",
+      "updatedAt": "2026-06-11T05:29:50.339Z"
     }
   ],
   "activities": [
@@ -1067,6 +1108,41 @@
       "type": "research_generated",
       "message": "Generated company intelligence, fit score, and buyer personas.",
       "createdAt": "2026-06-11T04:47:52.251Z"
+    },
+    {
+      "id": "4ec235cd-7100-4fb5-a916-5cab0349f2b8",
+      "prospectId": "010e3235-28d8-4230-ae43-a1568df455fb",
+      "type": "research_generated",
+      "message": "Generated company intelligence, fit score, and buyer personas.",
+      "createdAt": "2026-06-11T04:50:20.697Z"
+    },
+    {
+      "id": "45f63360-fff2-4c02-8179-295a1df23aa0",
+      "prospectId": "d5fc2afa-1e58-457d-88cf-a254e9e613e1",
+      "type": "research_generated",
+      "message": "Generated company intelligence, fit score, and buyer personas.",
+      "createdAt": "2026-06-11T04:50:34.919Z"
+    },
+    {
+      "id": "d6412343-4902-4dee-bf1d-132f5ab36db1",
+      "prospectId": "256ea813-0db2-426d-a9b6-1202970cf1e4",
+      "type": "research_generated",
+      "message": "Generated company intelligence, fit score, and buyer personas.",
+      "createdAt": "2026-06-11T04:50:57.863Z"
+    },
+    {
+      "id": "1367cb0a-ff5e-4112-b79b-1b85960555f0",
+      "prospectId": "010e3235-28d8-4230-ae43-a1568df455fb",
+      "type": "draft_created",
+      "message": "Generated a personalized outreach draft for manual review.",
+      "createdAt": "2026-06-11T04:57:19.900Z"
+    },
+    {
+      "id": "6f2a8a19-e19b-44e6-8c7e-f0b96a7179f9",
+      "prospectId": "010e3235-28d8-4230-ae43-a1568df455fb",
+      "type": "draft_updated",
+      "message": "Updated the existing outreach draft for this contact.",
+      "createdAt": "2026-06-11T05:29:50.339Z"
     }
   ],
   "leadGenRuns": [
@@ -35531,6 +35607,638 @@
       "id": "b3948ef3-4b72-4f17-8e56-9f4c23debdb5",
       "createdAt": "2026-06-11T04:44:25.811Z",
       "updatedAt": "2026-06-11T04:44:25.811Z"
+    },
+    {
+      "prospectId": "010e3235-28d8-4230-ae43-a1568df455fb",
+      "contactId": "b46a8f56-05dc-4183-afc7-66a91d238964",
+      "candidateId": "7c306d57-cbdd-42fd-bc8d-9deefb21b864",
+      "linkedinUrl": "https://linkedin.com/in/aaronj-perez",
+      "company": "US Foods",
+      "location": "Corona, California, United States",
+      "role": "Category Operations Manager",
+      "personaType": "operations",
+      "status": "completed",
+      "model": "gpt-4o-mini",
+      "pipelineVersion": "warm-outreach-v1",
+      "querySet": {
+        "company_context_queries": [
+          "US Foods distribution centers operational efficiency logistics management",
+          "US Foods supply chain security inventory management facilities"
+        ],
+        "local_crime_queries": [
+          "Corona California police crime data dashboard property crime statistics",
+          "recent theft incidents at food distribution centers in California"
+        ],
+        "role_specific_risk_queries": [
+          "warehouse inventory theft operational security measures",
+          "logistics facility supply chain disruptions risk management"
+        ]
+      },
+      "searchResults": [
+        {
+          "query": "Corona California police crime data dashboard property crime statistics",
+          "title": "Crime Dashboard",
+          "url": "https://www.sanfranciscopolice.org/stay-safe/crime-data/crime-dashboard",
+          "snippet": "Call 9-1-1 in case of life-threatening emergencies or crimes in progress. ### Text a Tip. Enter TIP411 (847411) in the “To” field and the keyword “SFPD” in the text field, followed by the message. Homicides reflect the number of victims and are not based on the incidents.**** Reporting requirements and definitions for Part I offenses are outlined by the FBI’s Uniform Crime Reporting (UCR) Program and include homicide, rape, robbery, aggravated assault, burglary, larceny, motor vehicle theft, and arson. | Robbery | * The taking or attempting to take anything of value from the care, custody, or control of a person or persons by force or threat of force or violence and/or by putting the victim in fear. The taking or attempting to take anything of value from the care, custody, or control of a person or persons by force or threat of force or violence and/or by putting the victim in fear.",
+          "raw_content": null,
+          "source_type": "official_government",
+          "confidence": "high"
+        },
+        {
+          "query": "Corona California police crime data dashboard property crime statistics",
+          "title": "Corona Police Department",
+          "url": "https://www.coronaca.gov/departments/police",
+          "snippet": "Learn about the Corona Police Department. Access information on services, programs, and public safety initiatives.",
+          "raw_content": null,
+          "source_type": "official_government",
+          "confidence": "high"
+        },
+        {
+          "query": "Corona California police crime data dashboard property crime statistics",
+          "title": "Annual Crime Statistics - UCI Police Department - UC Irvine",
+          "url": "https://www.police.uci.edu/data-dashboards/crime-statistics.php",
+          "snippet": "Larceny/Theft Offenses Assault Destruction/Damage/Vandalism of Property Drug/Narcotic Offenses Fraud Sex Offenses Motor Vehicle Theft Weapon Law Violations",
+          "raw_content": null,
+          "source_type": "official_government",
+          "confidence": "high"
+        },
+        {
+          "query": "Corona California police crime data dashboard property crime statistics",
+          "title": "FBI's Crime Data Explorer (CDE)",
+          "url": "https://cde.ucr.cjis.gov",
+          "snippet": "Examples include, but are not limited to: handling, transporting, or maintaining custody of persons who are in the custodial care of a law enforcement agency subsequent to an arrest and/or while dealing with persons who are being detained in accordance with the law; attending community meetings, crime preventive programs, or other organized functions as an official representative of a law enforcement agency; performing duties and recreational activities associated with agency-sanctioned programs such as D.A.R.E, Boys and Girls Clubs, or other youth programs; serving of writs, notices, summonses, subpoenas, hearing notices, notifications, and other civil processes; transportation of papers, equipment, or persons associated with official agency sanctioned activities, functions, and programs; and on a light-duty assignment. Local, state, and federal law enforcement agencies collect a variety of details about each incident, including the time and location of the crime; the circumstance of the incident; the characteristics of the victim and offender (age, sex, race, and ethnicity); the victim’s relationship to the offender; the involvement of weapons or drugs; property loss; and whether the crime was motivated by bias.",
+          "raw_content": null,
+          "source_type": "official_government",
+          "confidence": "high"
+        },
+        {
+          "query": "US Foods distribution centers operational efficiency logistics management",
+          "title": "US Foods® Food Supplier & Distributor | Restaurant Supply",
+          "url": "https://www.usfoods.com",
+          "snippet": "thumbnail-grid-brunch-with-the-bunch. thumbnail-grid-opeinging-and-expanding. thumbnail-grid-operations-and-management. thumbnail-grid-marketing-and-menu-design. thumbnail-grid-inventory-cost-control. thumbnail-grid-digital-marketing-growth. thumbnail-grid-technology-and-modernization. thumbnail-grid-staffing-and-training. thumbnail-grid-healthcare-and-hospitality. # More Ways to help you make it. With top product portfolios, leading technology solutions and all-around flexibility, we're ready to be your partner in the food business! We're committed to making it easier for customers to get what they need, when they need it, with greater flexibility and more responsive service through a range of delivery options. ## MORE QUALITY. Discover our premium, chef-inspired products crafted for quality and consistency. From MOXē® to full suites of digital solutions such as CHECK® Business Tools and VITALS, we can help you run your business with ease. Streamline operations with our industry-leading digital tools designed to simplify ordering and inventory management. The specialists at US Foods® can help restaurant operators with industry-leading tools to build their brand and bring in more diners. VITALS by US Foods® is a unique business and menu solutions program for healthcare operators facing critical foodservice challenges. ## The Recipe for More Quality.",
+          "raw_content": null,
+          "source_type": "official_company",
+          "confidence": "medium"
+        },
+        {
+          "query": "US Foods supply chain security inventory management facilities",
+          "title": "Fresh Produce Supply Chain & Quality Assurance - US Foods",
+          "url": "https://www.usfoods.com/products-we-offer/exclusive-brands/cross-valley-farms/farm-to-fork",
+          "snippet": "thumbnail-grid-brunch-with-the-bunch. thumbnail-grid-opeinging-and-expanding. thumbnail-grid-operations-and-management. thumbnail-grid-marketing-and-menu-design. thumbnail-grid-technology-and-modernization. US Foods® is committed to produce quality assurance across the board, from the farm to our warehouse to you – and finally, your diners’ plates. US Foods Produce Inspectors review temperatures recorded throughout transportation from the supplier to US Foods warehouses and check temperatures in refrigerated receiving areas upon receipt. ### US Foods® Receiving Upon receipt, US Foods Produce Inspectors check product quality, condition and temperature using modern warehouse-receiving technology, including a proprietary tool called \"Fresh Check\", a product sample inspection process exclusive to US Foods that ties our divisions and inspectors to our suppliers, ensuring quality from field to warehouse to you. Upon receipt, US Foods Produce Inspectors check product quality, condition and temperature using modern warehouse-receiving technology, including a proprietary tool called \"Fresh Check\", a product sample inspection process exclusive to US Foods that ties our divisions and inspectors to our suppliers, ensuring quality from field to warehouse to you.",
+          "raw_content": null,
+          "source_type": "official_company",
+          "confidence": "medium"
+        },
+        {
+          "query": "US Foods supply chain security inventory management facilities",
+          "title": "Inventory Control Manager (100% Onsite) - US Foods",
+          "url": "https://careers.usfoods.com/us/en/job/R276173/Inventory-Control-Manager-100-Onsite",
+          "snippet": "US Foods complies with the California Privacy Rights Act of 2020, and its policy may be found here**.**. If a reasonable accommodation is needed to apply for an open position, participate in the interview process or to peform essential job functions, please contact our US Foods Application Accomodation Line at 866-960-5886. In your message, please include the city & state of the postition you are interested, the specifics of the accomodation needed, your name, phone number and best time to call. Any employment agency, person or entity that submits a résumés into this career site or to a hiring manager does so with the understanding that the applicant's résumés will become the property of US Foods. US Foods will have the right to hire that applicant at its discretion without any fee owed to the submitting employment agency, person or entity.",
+          "raw_content": null,
+          "source_type": "official_company",
+          "confidence": "medium"
+        },
+        {
+          "query": "US Foods supply chain security inventory management facilities",
+          "title": "Explore Purchasing & Replenishment Opportunities at US Foods",
+          "url": "https://careers.usfoods.com/us/en/c/purchasing-replenishment-jobs",
+          "snippet": "## WHY JOIN OUR PURCHASING & REPLENISHMENT TEAM? To help ensure our customers receive the product they need, when they need it, our purchasing and replenishment team oversees every aspect of inventory management, forecasted usage, on-time delivery, and supplier costs. US Foods complies with the California Privacy Rights Act of 2020, and its policy may be found here**.**. If a reasonable accommodation is needed to apply for an open position, participate in the interview process or to peform essential job functions, please contact our US Foods Application Accomodation Line at 866-960-5886. Any employment agency, person or entity that submits a résumés into this career site or to a hiring manager does so with the understanding that the applicant's résumés will become the property of US Foods. US Foods will have the right to hire that applicant at its discretion without any fee owed to the submitting employment agency, person or entity.",
+          "raw_content": null,
+          "source_type": "official_company",
+          "confidence": "medium"
+        },
+        {
+          "query": "recent theft incidents at food distribution centers in California",
+          "title": "When Food Becomes A Target: Understanding Cargo Theft",
+          "url": "https://blog.foodshippers.org/when-food-becomes-a-target-understanding-cargo-theft",
+          "snippet": "In 2023, state-level available data indicate that 41% of domestic total cargo thefts were reported to have occurred in California. An additional",
+          "raw_content": null,
+          "source_type": "official_company",
+          "confidence": "medium"
+        },
+        {
+          "query": "logistics facility supply chain disruptions risk management",
+          "title": "Supply Chain Risk Management: Definition, Examples, and Strategies",
+          "url": "https://www.inboundlogistics.com/articles/supply-chain-risk-management",
+          "snippet": "# Supply Chain Risk Management: Definition, Examples, and Strategies. Supply Chain Risk Management: Definition, Examples, and Strategies. Supply chain risk management is a strategic approach to identify, assess, and mitigate risks in the supply chain, ensuring business continuity and competitive advantage. ## What Is Supply Chain Risk Management? These risk factors, stemming from internal and external sources, can cause significant supply chain disruption if not appropriately managed. ## Strategies for Supply Chain Risk Management. Implementing comprehensive risk management strategies can enable businesses to anticipate, respond, and navigate supply chain challenges more effectively. ## What Are Other Supply Chain Risk Management Strategies? Apart from the traditional measures and frameworks, there are several innovative strategies businesses can adopt to enhance their supply chain risk management:. ## Supply Chain Risk Management Software: Benefits and Drawbacks. ## Supply Chain Risk Management Tools. Beyond software, there are various tools that businesses can employ to manage and mitigate supply chain risks:.",
+          "raw_content": null,
+          "source_type": "official_company",
+          "confidence": "medium"
+        },
+        {
+          "query": "US Foods distribution centers operational efficiency logistics management",
+          "title": "US Foods improves efficiency with Descartes' cloud-based solution",
+          "url": "https://www.refrigeratedfrozenfood.com/articles/91742-us-foods-improves-efficiency-with-descartes-cloud-based-solution",
+          "snippet": "# US Foods improves efficiency with Descartes’ cloud-based solution. ## As US Foods continued to grow its customer base—expanding to more than 60 distribution centers and 25,000 associates nationwide—it needed to improve upon the ways its operations were run. In the search for an easier, more efficient method for managing increasing order volumes, US Foods turned to *Descartes Perform* solutions, produced by Descartes Systems Group, Canada, to help improve food distribution operations. *Descartes Perform* *for Food* is a cloud-based solution that enables customers to reduce paper and paper processes across every step of the food distribution process, which limits overages, shortages and damages while lowering customer service costs. While the solution provides the tools to correct any overages, shortages and damages issues directly from drivers’ mobile devices in the field, US Foods has also been able to improve upon its overages, shortages and damages through better management at the distribution center.",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "US Foods distribution centers operational efficiency logistics management",
+          "title": "US Foods Builds a Smarter Future for Daily Planning",
+          "url": "https://www.supplychainbrain.com/articles/41470-modernizing-the-mile-us-foods-builds-a-smarter-future-for-daily-planning",
+          "snippet": "# Modernizing the Mile: US Foods Builds a Smarter Future for Daily Planning. US Foods operates one of the largest private fleets in the country, delivering to more than 250,000 customers—from independent restaurants to hospitals and hotels. Now, they’re leading a major initiative to modernize daily route planning across a decentralized network of 70+ distribution centers. In this session, you’ll hear how US Foods is streamlining operations, reducing complexity, and building a smarter, more agile routing model. # The AI Exchange: Inside the Last Mile - AI, delivery engagement, and the new standard for on time and in full. THE OUTLINE OF A HUMAN HEAD EMERGES FROM A COMPUTER KEYBOARD. A group of students standing in front of a blue stage, and holding a large check. A digital shield with a lock over the top of a purple background. A GRAPHIC SHOWING MULTIPLE FORMS OF SHIPPING, WITH A HUMAN STANDING AT THE CENTER, TOUCHING A SYMBOLIC MAP OF THE WORLD.",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "US Foods supply chain security inventory management facilities",
+          "title": "[PDF] us food supply chain security: a network analysis | mitre",
+          "url": "https://www.mitre.org/sites/default/files/2021-10/pr-21-1826-us-food-supply-chain-security-a-network-analysis.pdf",
+          "snippet": "The county-level network analysis was conducted with publicly available data,¹ although many details about the U.S. food supply chain are proprietary and siloed within industry. Our analysis identified five key hubs in the U.S. food supply chain for the distribution of meat. (See map) Top Five Meat and Poultry Supply Chain Hubs 4 JULY 2021 U.S. FOOD SUPPLY CHAIN SECURITY: A NETWORK ANALYSIS These hubs reflect areas of high meat production, cold storage, and transport. Fourth-Largest Hub – Douglas County, NE 5 JULY 2021 U.S. FOOD SUPPLY CHAIN SECURITY: A NETWORK ANALYSIS Super Embedded Hubs in Meat Supply Chain4 Additional Study Findings As MITRE performed deeper analysis into the key hub locations, the surrounding counties, and origin-to-destination links, the following additional information was gleaned from the study.",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "Corona California police crime data dashboard property crime statistics",
+          "title": "[PDF] Crime in California during the COVID-19 Pandemic",
+          "url": "https://www.capolicylab.org/wp-content/uploads/2021/09/Crime-in-California-During-the-Covid-19-Pandemic.pdf",
+          "snippet": "Crime rates per 100,000 in California and the rest of the United States for 2019 and 2020 CALIFORNIA REST OF THE US 2019 2020 PERCENT CHANGE 2019 2020 PERCENT CHANGE Violent 433.5 437.0 0.8% 357.4 370.9 3.8% Homicide 4.2 5.5 31.0% 5.1 6.3 23.5% Rape 36.8 33.8 -8.1% 43.4 36.9 -15.0% Robbery 130.3 112.3 -13.8% 74.8 67.8 -9.4% Aggravated Assault 262.2 285.4 8.8% 248.5 275.3 10.8% Property 2,290.3 2,114.4 -7.7% 2,084.9 1,919.9 -7.9% Burglary 379.4 365.4 -3.7% 335.1 304.6 -9.1% Larceny 1,558.8 1,326.6 -14.9% 1,548.2 1,395.0 -9.9% Motor vehicle theft 352.2 422.4 20.0% 201.6 218.5 8.4% Source: Crime in California, 2020, California Department of Justice, 2019 Crime in the United States, Federal Bureau of Investigation, and 2020 Census data Despite these changes, crime rates in California remain at historic lows.",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "recent theft incidents at food distribution centers in California",
+          "title": "Organized Retail Crime Monthly News Recap: April 2026",
+          "url": "https://losspreventionmedia.com/organized-retail-crime-monthly-news-recap-april-2026",
+          "snippet": "Nearly $100K in Stolen Computers Recovered after Cargo Theft An early-morning cargo theft at the CDW Distribution Center in Vernon Hills",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "recent theft incidents at food distribution centers in California",
+          "title": "The Great Food Bank Robbery: Hungry Californians Face Losing ...",
+          "url": "https://capitalandmain.com/the-great-food-bank-robbery-hungry-californians-face-losing-their-daily-bread",
+          "snippet": "The Great Food Bank Robbery: Hungry Californians Face Losing Their Daily Bread. A new landscape of scarcity is threatening even the state's food basket regions.",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "recent theft incidents at food distribution centers in California",
+          "title": "Cargo theft, led by food and beverage, is surging across the U.S.",
+          "url": "https://www.cnbc.com/2023/03/25/cargo-theft-led-by-food-and-beverage-is-surging-across-the-us.html",
+          "snippet": "Food and beverage products are the top targets for freight theft in 2023, with an average loss of $214,000. Los Angeles is the top national",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "warehouse inventory theft operational security measures",
+          "title": "Warehouse Security: Top Strategies for Enhancing Protection",
+          "url": "https://spherewms.com/blog/warehouse-security",
+          "snippet": "Seamless integrations to your current systems and applications including accounting/ERP, Ecommerce, shipping, and Amazon to streamline processes and visibility across your warehouse operations. # Warehouse Security: Top Strategies to Prevent Theft and Enhance Protection. Is your warehouse an easy target for theft? We’ll detail essential security components, from CCTV to physical barriers and personnel training, offering a blueprint to safeguard your operations. * Warehouse security is multifaceted, requiring constant vigilance against internal theft, external theft, and organized crime, which together contribute to a massive global loss in inventory theft each year. * A comprehensive warehouse security system hinges on integrated components such as CCTV surveillance, access control systems, and alarm systems, that work in tandem to detect, deter, and document security breaches. * Robust physical security measures, including adequate lighting, fencing and perimeter security, secure entry and exit points, alongside trained security personnel and collaborations with local law enforcement, are indispensable for maintaining a secure warehouse environment.",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "warehouse inventory theft operational security measures",
+          "title": "Best Practices for Security for Warehouse | ProdataKey Blog",
+          "url": "https://www.prodatakey.com/single-post/security-for-warehouse",
+          "snippet": "Securing your warehouse against theft and unauthorized access is crucial for ensuring security for warehouse operations. * A comprehensive warehouse security system should include access control, surveillance cameras, alarm systems, and motion detection to effectively prevent theft and unauthorized access. * Proactive measures, such as implementing strict access policies and utilizing data analytics, are essential for identifying and mitigating potential security threats in warehouses. Warehouses, by their very nature, are susceptible to warehouse theft and unauthorized access due to the high value of goods stored within them. The need for a robust warehouse security system is pivotal not only to safeguard inventory but also to ensure the safety of personnel. A comprehensive warehouse security system minimizes risks such as theft and unauthorized access by incorporating various security devices and protocols. Key elements of a comprehensive security system include access control systems, surveillance cameras, alarm systems, and motion detection technology. Access control systems are vital for limiting entry to authorized personnel, thereby reducing the risk of theft and unauthorized access.",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "warehouse inventory theft operational security measures",
+          "title": "The Future of Safety Measures for Warehouse Theft ...",
+          "url": "https://blog.opendock.com/warehouse-theft-prevention",
+          "snippet": "# The Future of Safety Measures for Warehouse Theft Prevention. Theft incidents are on the rise. Leaders in logistics know the only way to increase safety is strategy, and here are some of the challenges their interventions must be prepared to address. ## Why Warehouse Theft Prevention Is Entering a New Era. As online ordering and purchasing trends shift, concentrations of product and orders continue to attract the attention of threats. Losses are increasing as theft becomes both more organized and more aggressive. Data consistently shows that internal theft accounts for a significant share of warehouse losses. When access controls rely heavily on manual verification, gaps in documentation and oversight can create risk. ### What Are the Most Effective Safety Measures for Warehouse Theft Prevention? This includes physical security like perimeter fencing, surveillance systems, and operational controls such as SmartGate technology that verifies access, standardizes entry and exit documentation, and provides real-time visibility into gate and dock activity.",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "warehouse inventory theft operational security measures",
+          "title": "Warehouse Security Best Practices to Protect Your Facility - Omnilert",
+          "url": "https://www.omnilert.com/blog/warehouse-security-best-practices",
+          "snippet": "# Warehouse Security Best Practices: Complete Guide to Protecting Your Facility and Inventory. Today’s warehouse security plans must create multiple layers of protection, including advanced technology, access control, skilled security personnel, and monitoring. Understanding how to defend your facility against both internal and external threats is crucial, regardless of how big or small your operation is. * Effective warehouse security begins with thorough risk assessments, staff training programs, and frequent security audits to find weaknesses and improve defense strategies. * Key security measures include CCTV surveillance systems, access control technologies, perimeter fencing, alarm systems, and inventory tracking solutions like RFID tags. * Comprehensive warehouse security measures are essential for ensuring warehouse safety for both personnel and assets. Warehouse security refers to the measures that are taken to protect inventory, equipment, facilities, and personnel from internal and external threats. It is essential to safeguard all areas of the warehouse premises to ensure comprehensive protection. This includes evaluating perimeter security, access control systems, surveillance, inventory protection, and employee security procedures.",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "warehouse inventory theft operational security measures",
+          "title": "How Warehouse Security Protects Against Theft, Vandalism, and ...",
+          "url": "https://www.twincitysecurityal.com/news/109-how-warehouse-security-protects-against-theft-vandalism-and-insider-threats",
+          "snippet": "You can publish whatever you want in the Offcanvas Section. By default, the available module positions are **offcanvas-a** and **offcanvas-b** but you can add as many module positions as you want from the Layout Manager. You can also add the **hidden-phone** module class suffix to your modules so they do not appear in the Offcanvas Section when the site is loaded on a mobile device. ## How Warehouse Security Protects Against Theft, Vandalism, and Insider Threats. Warehouses serve as critical hubs for storing goods, making them prime targets for theft, vandalism, and insider threats. A well-planned security strategy, including trained personnel and advanced surveillance systems, is essential for protecting valuable inventory. ### The Growing Threat of Warehouse Theft. Warehouse theft is a major concern, with criminals often targeting storage facilities due to their high-value inventory and sometimes lax security measures. Professional security personnel can help identify suspicious activity, enforce strict inventory controls, and deter both internal and external theft.",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "logistics facility supply chain disruptions risk management",
+          "title": "Supply Chain Risk Management: Always Stay Ahead | InsureShield",
+          "url": "https://www.insureshield.com/us/en/resources/insights/supply-chain-risk-mitigation-tips.html",
+          "snippet": "# **Supply Chain Risk Management: Always Stay Ahead**. Tips for mitigating risks and protecting your business against global supply chain challenges. Male wearing a mask and using a laptop in a warehouse full of boxes. Supply chain disruptions can occur anytime, leaving businesses scrambling to recover. With a good business strategy and the right tools, you can turn potential drawbacks into opportunities for growth. Let's explore building a supply chain risk management plan that keeps your operations strong and your customers happy. ## What Are Supply Chain Disruptions? Supply chain disruptions are interruptions in the flow of goods or services that impact production, transportation, or delivery. ## The Impact of Supply Chain Disruptions. Supply chain disruptions can ripple through every part of a business. Recognizing and acting against these risks is the first step toward a reliable supply chain risk management strategy. * **Protect Your Shipments with Insurance:** InsureShield Shipping Insurance acts as a safeguard, covering loss, damage, and theft. ## Quick Tips to Avoid Supply Chain Disruptions.",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "logistics facility supply chain disruptions risk management",
+          "title": "Supply Chain Risk - Prevent Disruptions | Certa",
+          "url": "https://www.certa.ai/blogs/supply-chain-risk-management-safeguard-your-operations-against-disruptions",
+          "snippet": "# Supply Chain Risk Management: Safeguard Your Operations Against Disruptions. Supply chain risk management has become a must-have strategy for organizations of all sizes. Companies must prepare for the unexpected and ensure operations continue even when the supply chain is stressed. In today’s interconnected business world, safeguarding a supply chain requires a deep understanding of the diverse risks that can affect profitability. Below are key risk categories that can impact supply chains:. * **Operational Risks:** These risks include equipment failures that interrupt production lines, labor strikes that halt operations, and delays in raw material deliveries that ripple through the manufacturing process. Effective management of these operational risks requires a multifaceted approach, including regular maintenance schedules, contingency plans for labor issues, and diversified supplier networks to ensure a steady flow of materials. * **Geopolitical Risks:** These risks contain a broad range of external factors that can significantly affect supply chains, from government-imposed trade restrictions to conflicts and shifting global policies.",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "logistics facility supply chain disruptions risk management",
+          "title": "Supply Chain Risk Management (SCRM): Complete Guide 2026",
+          "url": "https://www.ivalua.com/blog/supply-chain-risk-management",
+          "snippet": "Supply chain risk management has become a core priority as global volatility continues to disrupt sourcing, logistics, and supplier ecosystems.",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "logistics facility supply chain disruptions risk management",
+          "title": "Global Risk Management and Resiliency in the Supply Chain - iGPS",
+          "url": "https://igps.net/global-risk-management-and-resiliency-in-the-supply-chain",
+          "snippet": "Global supply chain risk management is the process of identifying, assessing, and mitigating risks that could disrupt the flow of goods and",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        }
+      ],
+      "evidenceSummary": "In 2023, 41% of domestic total cargo thefts were reported to have occurred in California, indicating a significant risk for logistics and distribution operations. The Corona Police Department provides resources and information on public safety initiatives, which may include addressing property crime risks.",
+      "validation": {
+        "passes_word_count": false,
+        "forbidden_phrases_found": [],
+        "has_source_urls": true,
+        "needs_review": true,
+        "recommendation": "human_review",
+        "notes": [
+          "Email body exceeds 119 words (145)."
+        ]
+      },
+      "sourceUrls": [
+        "https://blog.foodshippers.org/when-food-becomes-a-target-understanding-cargo-theft",
+        "https://www.coronaca.gov/departments/police",
+        "https://www.sanfranciscopolice.org/stay-safe/crime-data/crime-dashboard",
+        "https://www.police.uci.edu/data-dashboards/crime-statistics.php",
+        "https://cde.ucr.cjis.gov",
+        "https://www.usfoods.com",
+        "https://www.usfoods.com/products-we-offer/exclusive-brands/cross-valley-farms/farm-to-fork",
+        "https://careers.usfoods.com/us/en/job/R276173/Inventory-Control-Manager-100-Onsite",
+        "https://careers.usfoods.com/us/en/c/purchasing-replenishment-jobs",
+        "https://www.inboundlogistics.com/articles/supply-chain-risk-management",
+        "https://www.refrigeratedfrozenfood.com/articles/91742-us-foods-improves-efficiency-with-descartes-cloud-based-solution",
+        "https://www.supplychainbrain.com/articles/41470-modernizing-the-mile-us-foods-builds-a-smarter-future-for-daily-planning",
+        "https://www.mitre.org/sites/default/files/2021-10/pr-21-1826-us-food-supply-chain-security-a-network-analysis.pdf",
+        "https://www.capolicylab.org/wp-content/uploads/2021/09/Crime-in-California-During-the-Covid-19-Pandemic.pdf",
+        "https://losspreventionmedia.com/organized-retail-crime-monthly-news-recap-april-2026",
+        "https://capitalandmain.com/the-great-food-bank-robbery-hungry-californians-face-losing-their-daily-bread",
+        "https://www.cnbc.com/2023/03/25/cargo-theft-led-by-food-and-beverage-is-surging-across-the-us.html",
+        "https://spherewms.com/blog/warehouse-security",
+        "https://www.prodatakey.com/single-post/security-for-warehouse",
+        "https://blog.opendock.com/warehouse-theft-prevention",
+        "https://www.omnilert.com/blog/warehouse-security-best-practices",
+        "https://www.twincitysecurityal.com/news/109-how-warehouse-security-protects-against-theft-vandalism-and-insider-threats",
+        "https://www.insureshield.com/us/en/resources/insights/supply-chain-risk-mitigation-tips.html",
+        "https://www.certa.ai/blogs/supply-chain-risk-management-safeguard-your-operations-against-disruptions",
+        "https://www.ivalua.com/blog/supply-chain-risk-management",
+        "https://igps.net/global-risk-management-and-resiliency-in-the-supply-chain"
+      ],
+      "validationRecommendation": "human_review",
+      "startedAt": "2026-06-11T04:57:19.858Z",
+      "completedAt": "2026-06-11T04:57:19.858Z",
+      "command": "python3 -m warm_outreach.cli run-one --lead-json \"{\\\"name\\\":\\\"Aaron Perez\\\",\\\"email\\\":null,\\\"company\\\":\\\"US Foods\\\",\\\"location\\\":\\\"Corona, California, United States\\\",\\\"linkedin\\\":\\\"https://linkedin.com/in/aaronj-perez\\\",\\\"role\\\":\\\"Category Operations Manager\\\",\\\"years_at_role\\\":\\\"1.52 years\\\"}\" --max-results 5",
+      "exitCode": 0,
+      "stdoutSnippet": "{\n  \"lead\": {\n    \"name\": \"Aaron Perez\",\n    \"email\": null,\n    \"company\": \"US Foods\",\n    \"location\": \"Corona, California, United States\",\n    \"linkedin\": \"https://linkedin.com/in/aaronj-perez\",\n    \"role\": \"Category Operations Manager\",\n    \"years_at_role\": \"1.52 years\"\n  },\n  \"persona\": {\n    \"persona_type\": \"operations\",\n    \"role_relevance\": \"high\",\n    \"likely_site_types\": [\n      \"food distribution centers\",\n      \"warehouses\",\n      \"logistics facilities\"\n    ],\n    \"likely_security_use_cases\": [\n      \"inventory management\",\n      \"operational efficiency\",\n      \"supply chain security\"\n    ],\n    \"bad_angles_to_avoid\": [\n      \"retail environments\",\n      \"non-operational roles\"\n    ],\n    \"reasoning_summary\": \"The lead's role as a Category Operations Manager at US Foods suggests a focus on operational processes within a logistics or distribution context, making them relevant for operations-related security solutions.\",\n    \"confidence\": \"high\"\n  },\n  \"queries\": {\n    \"company_context_queries\": [\n      \"US Foods distribution centers operational efficiency logistics management\",\n      \"US Foods supply chain security inventory management facilities\"\n    ],\n    \"local_crime_queries\": [\n      \"Corona California police crime data dashboard property crime statistics\",\n      \"recent theft incidents at food distribution centers in California\"\n    ],\n    \"role_specific_risk_queries\": [\n      \"warehouse inventory theft operational security measures\",\n      \"logistics facility supply chain disruptions risk management\"\n    ]\n  },\n  \"search_results\": [\n    {\n      \"query\": \"Corona California police crime data dashboard property crime statistics\",\n      \"title\": \"Crime Dashboard\",\n      \"url\": \"https://www.sanfranciscopolice.org/stay-safe/crime-data/crime-dashboard\",\n      \"snippet\": \"Call 9-1-1 in case of life-threatening emergencies or crimes in progress. ### Text a Tip. Enter TIP411 (847411) in the “To” field and the keyword “SFPD” in the text field, followed by the m...",
+      "id": "c1ddd085-60bb-410b-a995-d6ac9a0afeb8",
+      "createdAt": "2026-06-11T04:57:19.866Z",
+      "updatedAt": "2026-06-11T04:57:19.866Z"
+    },
+    {
+      "prospectId": "010e3235-28d8-4230-ae43-a1568df455fb",
+      "contactId": "b46a8f56-05dc-4183-afc7-66a91d238964",
+      "candidateId": "7c306d57-cbdd-42fd-bc8d-9deefb21b864",
+      "linkedinUrl": "https://linkedin.com/in/aaronj-perez",
+      "company": "US Foods",
+      "location": "Corona, California, United States",
+      "role": "Category Operations Manager",
+      "personaType": "operations",
+      "status": "completed",
+      "model": "gpt-4o-mini",
+      "pipelineVersion": "warm-outreach-v1",
+      "querySet": {
+        "company_context_queries": [
+          "US Foods distribution centers operations logistics",
+          "US Foods supply chain management facilities overview"
+        ],
+        "local_crime_queries": [
+          "Corona California police department crime statistics dashboard",
+          "Recent theft incidents reported in Corona California affecting warehouses"
+        ],
+        "role_specific_risk_queries": [
+          "food distribution center inventory management security risks",
+          "logistics facility operational efficiency theft prevention measures"
+        ]
+      },
+      "searchResults": [
+        {
+          "query": "Corona California police department crime statistics dashboard",
+          "title": "Police Department Dashboard - Corona Open Performance",
+          "url": "https://corstat.coronaca.gov/stories/s/Police-Department-Dashboard/iqm2-meak",
+          "snippet": "Dashboard showing statistics and metrics for Homeless Calls for Service. ... Corona Solutions, Crime View, and other applicable systems on continuous basis.",
+          "raw_content": null,
+          "source_type": "official_government",
+          "confidence": "high"
+        },
+        {
+          "query": "Corona California police department crime statistics dashboard",
+          "title": "Corona Police Department",
+          "url": "https://www.coronaca.gov/departments/police",
+          "snippet": "Corona Police Department's Strategic Plan Dashboard, where you can track our progress. Contact: (951) 736-2288",
+          "raw_content": null,
+          "source_type": "official_government",
+          "confidence": "high"
+        },
+        {
+          "query": "Recent theft incidents reported in Corona California affecting warehouses",
+          "title": "California continues aggressive fight against organized retail theft ...",
+          "url": "https://www.gov.ca.gov/2026/06/04/california-continues-aggressive-fight-against-organized-retail-theft-recovering-nearly-260-million-in-stolen-merchandise",
+          "snippet": "The San Jose Police Department conducted 29 organized retail theft enforcement operations during the reporting period, resulting in 72 arrests",
+          "raw_content": null,
+          "source_type": "official_government",
+          "confidence": "high"
+        },
+        {
+          "query": "food distribution center inventory management security risks",
+          "title": "[PDF] WHOLESALE FOOD WAREHOUSE RISK CONTROL PLAN ...",
+          "url": "https://www.sandiegocounty.gov/content/dam/sdc/deh/fhd/food/pdf/publications_wholesaleworkbook.pdf",
+          "snippet": "A risk control plan helps to identify and mitigate food safety and security risks. It also helps to prepare wholesale food warehouse operators to quickly.",
+          "raw_content": null,
+          "source_type": "official_government",
+          "confidence": "high"
+        },
+        {
+          "query": "US Foods distribution centers operations logistics",
+          "title": "Exciting Transportation & Logistics Job Opportunities at US Foods",
+          "url": "https://careers.usfoods.com/us/en/c/transportation-logistics-jobs",
+          "snippet": "#### Great drivers are crucial to the US Foods® team – the final link in our distribution chain, and one of many important faces of our organization. Whether you're a professional CDL Driver, specialize in Routing and Logistics Planning or excel in Managing Transportation Teams, we have the right opportunity for you! US Foods complies with the California Privacy Rights Act of 2020, and its policy may be found here**.**. If a reasonable accommodation is needed to apply for an open position, participate in the interview process or to peform essential job functions, please contact our US Foods Application Accomodation Line at 866-960-5886. Any employment agency, person or entity that submits a résumés into this career site or to a hiring manager does so with the understanding that the applicant's résumés will become the property of US Foods. US Foods will have the right to hire that applicant at its discretion without any fee owed to the submitting employment agency, person or entity.",
+          "raw_content": null,
+          "source_type": "official_company",
+          "confidence": "medium"
+        },
+        {
+          "query": "US Foods distribution centers operations logistics",
+          "title": "US Foods® Food Supplier & Distributor | Restaurant Supply",
+          "url": "https://www.usfoods.com",
+          "snippet": "thumbnail-grid-brunch-with-the-bunch. thumbnail-grid-opeinging-and-expanding. thumbnail-grid-operations-and-management. thumbnail-grid-marketing-and-menu-design. thumbnail-grid-inventory-cost-control. thumbnail-grid-digital-marketing-growth. thumbnail-grid-technology-and-modernization. thumbnail-grid-staffing-and-training. thumbnail-grid-healthcare-and-hospitality. # More Ways to help you make it. With top product portfolios, leading technology solutions and all-around flexibility, we're ready to be your partner in the food business! We're committed to making it easier for customers to get what they need, when they need it, with greater flexibility and more responsive service through a range of delivery options. ## MORE QUALITY. Discover our premium, chef-inspired products crafted for quality and consistency. From MOXē® to full suites of digital solutions such as CHECK® Business Tools and VITALS, we can help you run your business with ease. Streamline operations with our industry-leading digital tools designed to simplify ordering and inventory management. The specialists at US Foods® can help restaurant operators with industry-leading tools to build their brand and bring in more diners. VITALS by US Foods® is a unique business and menu solutions program for healthcare operators facing critical foodservice challenges. ## The Recipe for More Quality.",
+          "raw_content": null,
+          "source_type": "official_company",
+          "confidence": "medium"
+        },
+        {
+          "query": "US Foods distribution centers operations logistics",
+          "title": "Explore Warehouse & Operations Jobs at US Foods",
+          "url": "https://careers.usfoods.com/us/en/c/warehouse-operations-jobs",
+          "snippet": "## WHY JOIN OUR WAREHOUSE & OPERATIONS TEAM? US Foods complies with the California Privacy Rights Act of 2020, and its policy may be found here**.**. If a reasonable accommodation is needed to apply for an open position, participate in the interview process or to peform essential job functions, please contact our US Foods Application Accomodation Line at 866-960-5886. In your message, please include the city & state of the postition you are interested, the specifics of the accomodation needed, your name, phone number and best time to call. Any employment agency, person or entity that submits a résumés into this career site or to a hiring manager does so with the understanding that the applicant's résumés will become the property of US Foods. US Foods will have the right to hire that applicant at its discretion without any fee owed to the submitting employment agency, person or entity.",
+          "raw_content": null,
+          "source_type": "official_company",
+          "confidence": "medium"
+        },
+        {
+          "query": "US Foods supply chain management facilities overview",
+          "title": "US Foods: driving sustainability in its supply chain",
+          "url": "https://supplychaindigital.com/digital-supply-chain/us-foods-driving-sustainability-its-supply-chain",
+          "snippet": "# US Foods: driving sustainability in its supply chain. US Foods is a leading foodservice distributor in the United States. It partners with around 300,000 restaurants and foodservice operators to help their... It partners with around 300,000 restaurants and foodservice operators to help their businesses succeed. The company provides customers with a comprehensive food offering and an in-depth suite of e-commerce, technology and business solutions. US Foods are centred around improving the efficiency of its facilities and fleet, while decreasing its environmental footprint. US Foods works tirelessly to reduce the energy intensity of its business, having achieved an over 12% improvement in its broadline business since 2015. * There has been a 10% reduction in Scope 1 and Scope 2 emissions intensity since 2015. Customers with a broad interest in where their food comes from and how they’re made, US Foods has several programmes and policies in place to provide a thorough portfolio of innovative products.",
+          "raw_content": null,
+          "source_type": "official_company",
+          "confidence": "medium"
+        },
+        {
+          "query": "US Foods supply chain management facilities overview",
+          "title": "Diverse Communities and Businesses | US Foods",
+          "url": "https://www.usfoods.com/about-us-foods/associate-experience/support-and-partnership",
+          "snippet": "thumbnail-grid-brunch-with-the-bunch. thumbnail-grid-opeinging-and-expanding. thumbnail-grid-operations-and-management. thumbnail-grid-marketing-and-menu-design. thumbnail-grid-digital-marketing-growth. thumbnail-grid-technology-and-modernization. thumbnail-grid-staffing-and-training. thumbnail-grid-healthcare-and-hospitality. US Foods partners with diverse and small businesses to strengthen our supply chain and support community growth. US Foods® continues to evolve our sourcing strategies by enhancing our network of vendor partnerships with small businesses and companies that are owned and operated by a diverse spectrum of people to support our customer and supply chain demands. By utilizing a range of resources in our sourcing strategy, we can have an innovative and competitively priced product assortment that meets the evolving needs of our customers and their menus. 2.  Figure represents spend with certified diverse suppliers only; however, US Foods continues to track self-certification in support of customers’  business classification reporting needs. Additional positive economic impacts in our supply chain and in communities are associated with our small and diverse suppliers and the people they employ, along with the purchases they make from other suppliers, as well as the spending that takes place in their communities.",
+          "raw_content": null,
+          "source_type": "official_company",
+          "confidence": "medium"
+        },
+        {
+          "query": "US Foods supply chain management facilities overview",
+          "title": "Fresh Produce Supply Chain & Quality Assurance - US Foods",
+          "url": "https://www.usfoods.com/products-we-offer/exclusive-brands/cross-valley-farms/farm-to-fork",
+          "snippet": "thumbnail-grid-brunch-with-the-bunch. thumbnail-grid-opeinging-and-expanding. thumbnail-grid-operations-and-management. thumbnail-grid-marketing-and-menu-design. thumbnail-grid-technology-and-modernization. US Foods® is committed to produce quality assurance across the board, from the farm to our warehouse to you – and finally, your diners’ plates. US Foods Produce Inspectors review temperatures recorded throughout transportation from the supplier to US Foods warehouses and check temperatures in refrigerated receiving areas upon receipt. ### US Foods® Receiving Upon receipt, US Foods Produce Inspectors check product quality, condition and temperature using modern warehouse-receiving technology, including a proprietary tool called \"Fresh Check\", a product sample inspection process exclusive to US Foods that ties our divisions and inspectors to our suppliers, ensuring quality from field to warehouse to you. Upon receipt, US Foods Produce Inspectors check product quality, condition and temperature using modern warehouse-receiving technology, including a proprietary tool called \"Fresh Check\", a product sample inspection process exclusive to US Foods that ties our divisions and inspectors to our suppliers, ensuring quality from field to warehouse to you.",
+          "raw_content": null,
+          "source_type": "official_company",
+          "confidence": "medium"
+        },
+        {
+          "query": "US Foods supply chain management facilities overview",
+          "title": "Supplier Information - US Foods",
+          "url": "https://www.usfoods.com/for-investors-media-and-suppliers/supplier-info",
+          "snippet": "* [Food Fanatics](/search-results#q=Food%2520Fanatics). * [Become A Customer](/search-results#q=Become%2520A%2520Customer). * [Invoices](/search-results#q=Invoices). [Bison Meatloaf](https://www.usfoods.com/tools-tips-and-ideas/recipes/recipe.bison-meatloaf.html). [Indian Curry Chicken Rice Bowl](https://www.usfoods.com/tools-tips-and-ideas/recipes/recipe.indian-curry-chicken-rice-bowl.html). + [Careers](https://careers.usfoods.com/us/en). [Browse Products](https://order.usfoods.com/). * [My Profile](https://order.usfoods.com/desktop/profile). * [Support Center](https://order.usfoods.com/touch/support-center). * [Preference Center](https://upc.a0.usfoods.com/AlertpreferencesComponent). ## Log in to Suppliers.usfoods.com. * [US Foods Supply Chain Collaboration Policy](https://suppliers.usfood.com/) (Select the drop-down menu in Quick Links to access the Supply Chain Collaboration Policy.). * [US Foods New Item Setup Policy and Requirements](https://www.usfoods.com/content/dam/dce/pdfs/supplier-information/New_Item_Setup_FAQ.pdf). * [New Item Setup FAQ.pdf](https://www.usfoods.com/content/dam/dce/pdfs/supplier-information/New_Item_Setup_Policy_and_Required_Information.pdf) Frequently Asked Questions and Helpful Hints for US Foods New Item Setup Form. * [US Foods Data Synchronization Implementation Guide](https://www.usfoods.com/content/dam/dce/pdfs/supplier-information/Supplier_Product_Tab.pdf) A complete guide to getting product information updated through the GS1 Standard of Global Data Sync. * [GS1 Image Style Guide for Foodservice](https://www.usfoods.com/content/dam/dce/pdfs/supplier-information/GS1_Image_Style_Guide.pdf) Download the industry standard guidelines for capturing and sharing images in Foodservice. * [Purchase Order Terms and Conditions](https://www.usfoods.com/content/dam/usf/pdf/Policies/usf_purchase_order_terms_and_conditions.pdf). * [US Foods Product Content Specification Guidelines](https://www.usfoods.com/content/dam/usf/pdf/general/USF_ProductContentSpecification_Guidelines.pdf). * [Corporate Credit Letter/Bill to Address/Contact Information](https://www.usfoods.com/content/dam/us-foods/platforms/www/pdf/Credit_Letter_2-23-26V2.pdf). * [US Foods W9](https://www.usfoods.com/content/dam/dce/pdfs/USF-W9-2024.pdf). * [Trans-Porte W9](https://www.usfoods.com/content/dam/usf/pdf/dce/supporting_materials/trans-porte-w9.pdf). * [Responsible Sourcing Policy and Supplier Code of Conduct](https://www.usfoods.com/content/dam/usf/pdf/code-of-conduct/US-Foods-Responsible-Sourcing-Policy-and-Supplier-Code-of-Conduct-20221231.pdf).",
+          "raw_content": null,
+          "source_type": "official_company",
+          "confidence": "medium"
+        },
+        {
+          "query": "food distribution center inventory management security risks",
+          "title": "Scan Here for Security",
+          "url": "https://www.asisonline.org/security-management-magazine/articles/2026/04/warehouse-and-distribution-center-security/scanner-theft",
+          "snippet": "A 2024 survey of warehouse managers found that inventory management is the top bottleneck in order fulfillment, with order picking and processing not far behind. When these devices are broken, lost, or stolen, the warehouse or retailer not only loses the cost of the machine—it loses the productivity, insight, and efficiency that the scanners provide, says Brian Davidson, business development director for retail and distribution at Traka USA. “These devices are needed to keep track of inventory, help the business flow; the operational processes to do what they need to do rely on a single device that goes missing. Unmanaged or unmonitored devices make easier targets for theft, he says, “especially when these employees who are getting paid $15 an hour realize that ‘I can just put one of these in my pocket and go sell it on eBay for $500.’”. And then you multiply that by 100,000 stores, well, all of a sudden, that starts to add up very quickly when you don’t have those devices available.”.",
+          "raw_content": null,
+          "source_type": "industry_source",
+          "confidence": "medium"
+        },
+        {
+          "query": "US Foods distribution centers operations logistics",
+          "title": "U.S. Foods Allentown Distribution Center, Pennsylvania",
+          "url": "https://clui.org/ludb/site/us-foods-allentown-distribution-center",
+          "snippet": "The Center for Land Use Interpretation. Dedicated to the increase and diffusion of knowledge about how the nation's lands are apportioned, utilized, and perceived. ## Main Nav. ## Breadcrumb. # U.S. Foods Allentown Distribution Center, Pennsylvania. U.S. Foods is the second largest food service industry company in the USA. Like its chief competitor, Sysco, which is twice as large, it supplies food to restaurants, hotels, schools, hospitals, and government facilities. US Foods has around 60 locations in the USA, including this one in Allentown, Pennsylvania, which is similar to the others in form and function. It provides food preparation, storage, and logistics for the region. Sysco attempted to buy US Foods in 2013, but the merger was denied by federal regulators on anti-trust grounds, as the combined company would control three quarters of the food service industry.",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "US Foods distribution centers operations logistics",
+          "title": "US Foods Builds a Smarter Future for Daily Planning",
+          "url": "https://www.supplychainbrain.com/articles/41470-modernizing-the-mile-us-foods-builds-a-smarter-future-for-daily-planning",
+          "snippet": "# Modernizing the Mile: US Foods Builds a Smarter Future for Daily Planning. US Foods operates one of the largest private fleets in the country, delivering to more than 250,000 customers—from independent restaurants to hospitals and hotels. Now, they’re leading a major initiative to modernize daily route planning across a decentralized network of 70+ distribution centers. In this session, you’ll hear how US Foods is streamlining operations, reducing complexity, and building a smarter, more agile routing model. # The AI Exchange: Inside the Last Mile - AI, delivery engagement, and the new standard for on time and in full. THE OUTLINE OF A HUMAN HEAD EMERGES FROM A COMPUTER KEYBOARD. A group of students standing in front of a blue stage, and holding a large check. A digital shield with a lock over the top of a purple background. A GRAPHIC SHOWING MULTIPLE FORMS OF SHIPPING, WITH A HUMAN STANDING AT THE CENTER, TOUCHING A SYMBOLIC MAP OF THE WORLD.",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "US Foods supply chain management facilities overview",
+          "title": "US Foods - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/US_Foods",
+          "snippet": "The company supplies 250,000 locations including independent restaurants, chain restaurants, healthcare, hospitality, and educational institutions. ... management",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "Corona California police department crime statistics dashboard",
+          "title": "Corona, CA Crime Statistics and Data | StatisNostics",
+          "url": "https://statisnostics.com/crime-statistics/CA/Corona",
+          "snippet": "# Corona, CA Crime Statistics. ### Crime Score. ### Violent Crimes. ### Violent Crimes by Area. Violent Crimes Per Sq Mile. ### Violent Crime Probability. Chances of Being a Victim. Corona - 30 Years of Data. # Loading... ### Crime Details. | Larceny/Theft Offenses - Theft From Motor Vehicle | 356 |. | Burglary/Breaking And Entering | 307 |. | Destruction/Damage/Vandalism Of Property | 298 |. | Larceny/Theft Offenses - All Other Larceny | 225 |. | Assault Offenses - Simple Assault | 221 |. | Larceny/Theft Offenses - Theft Of Motor Vehicle Parts/Accessories | 197 |. | Larceny/Theft Offenses - Shoplifting | 170 |. | Drug/Narcotic Offenses - Drug/Narcotic Violations | 167 |. | Drug/Narcotic Offenses - Drug Equipment Violations | 126 |. ### Median Victim Age. Median victim age based on availble data. ### Median Offender Age. Median offender age based on availble data. Corona, CAincludes the following zip codes:.",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "Corona California police department crime statistics dashboard",
+          "title": "[PDF] 2024 Corona PD Annual Report",
+          "url": "https://cocpublicwebsite.blob.core.windows.net/publicwebsite/Documents/Police%20Department/2024%20Corona%20PD%20Annual%20Report.pdf",
+          "snippet": "CORONA POLICE 2024 ANNUAL REPORT AT YOUR SERVICE A MESSAGE FROM THE CHIEF As we begin a new year, I am filled with gratitude for the continued trust and collaboration between the Corona Police Department and our community. Your commitment to public safety inspires us to strive for excellence in every facet of policing. Highlights of our progress include: Community-Centered Policing Initiatives: We strengthened relationships with local businesses through the Business Liaison Program, prioritized the safety of our children in schools, and built upon the tremendous community support and trust by implementing strategies to enhance the quality of life across the city. Find your zone at www.CoronaCA.gov/Police OUR CITY 1 4 2 3 WE RESPONDED TO 103,704 CALLS FOR SERVICE WE FILED 11,485 POLICE REPORTS AND PROCESSED 8,293 ITEMS AS EVIDENCE PROPERTY CRIME LESS INCIDENTS VS.",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "Corona California police department crime statistics dashboard",
+          "title": "PD Calls Map Experience",
+          "url": "https://experience.arcgis.com/experience/cc7641c2e80044a697a9e2a37f19e202",
+          "snippet": "Welcome to the City of Corona Crime Map ... This application can be used by the public to view selected calls received by the City of Corona Police Department.",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "Recent theft incidents reported in Corona California affecting warehouses",
+          "title": "How Crime Trends Are Changing Across California Industries",
+          "url": "https://www.wcctv.com/resources/news/how-are-crime-trends-changing-across-california-industries",
+          "snippet": "California has the highest number of construction theft reports in the nation, with crime costing up to $1 billions each year and fewer than 25%",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "food distribution center inventory management security risks",
+          "title": "Warehouse Security Guide for Distribution and Fulfillment Centers",
+          "url": "https://www.riverplateinc.com/articles/warehouse-security",
+          "snippet": "# Warehouse Security Guide for Distribution and Fulfillment Centers. Whether you manage a single storage facility or oversee a network of distribution centres, understanding the most common warehouse security vulnerabilities is the first step toward protecting your inventory, your employees, and your bottom line. In this article, we explore the key security system weak points that warehouse operators should be aware of and offer practical insights on how to address them before they become costly problems. One of the most frequently overlooked vulnerabilities in warehouse environments is poor access control. A warehouse’s perimeter is its first line of defense, yet it is often the weakest. This is why a growing number of warehouse operators are choosing to partner with professional security service companies that can install and monitor 24/7 CCTV systems or provide physical security guards to patrol the premises. When evaluating your own warehouse security posture or choosing a fulfilment partner, the presence of professional surveillance and on-site security should be a non-negotiable requirement.",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "food distribution center inventory management security risks",
+          "title": "Security Risks of Legacy Inventory Systems and How to Fix Them",
+          "url": "https://www.rfgen.com/blog/key-security-risks-of-legacy-inventory-management-systems-how-to-address-them",
+          "snippet": "Mobile Unity Platform gives you the tools to empower your workforce with mobile apps that work across locations, devices, and environ. Print anywhere in no time with a secure, mobile-ready labeling solution built on the RFgen platform you already trust. #### Inventory Management. cloud-erp-security-concerns-best-practices-for-a-secure-future. # Security Risks in Legacy Inventory Systems & Solutions. Inventory management is the lifeblood of any business. In this article, we’ll shed light on the key security risks of legacy inventory management systems and how to address them to ensure smooth sailing for your business. The key security risks of legacy inventory management systems can have severe implications for your business. By keeping your software up to date, conducting regular security audits, training your employees on security best practices, and embracing a next-gen mobile platform with the latest security protocols, you can mitigate these risks and ensure a secure and efficient inventory management system. What are the key security risks of legacy inventory management systems?**.",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "food distribution center inventory management security risks",
+          "title": "Essential warehouse security measures to protect your inventory  - Bay Alarm",
+          "url": "https://www.bayalarm.com/uncategorized/warehouse-security-guide",
+          "snippet": "# Essential warehouse security measures to protect your inventory. Home > Blog > Essential warehouse security measures to protect your inventory. In this blog, we’ll explore key security measures, from risk assessments to advanced surveillance technologies, to help you safeguard your warehouse operations and maintain business continuity. Poor security can lead to significant financial losses due to theft, damage, and disruptions in your supply chain. Whether from internal oversights or external attacks, the consequences of a security breach can be devastating. A thorough risk assessment distinguishes between internal threats (such as employee theft or operational errors) and external threats (like trespassing or targeted warehouse break-ins). Modern warehouse CCTV systems offer comprehensive monitoring that can prevent a crime from ever happening in the first place. By adopting these essential warehouse security measures, businesses can protect their inventory, ensure regulatory compliance, and create a secure environment for both employees and assets.",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "logistics facility operational efficiency theft prevention measures",
+          "title": "The Future of Safety Measures for Warehouse Theft ...",
+          "url": "https://blog.opendock.com/warehouse-theft-prevention",
+          "snippet": "# The Future of Safety Measures for Warehouse Theft Prevention. Theft incidents are on the rise. Leaders in logistics know the only way to increase safety is strategy, and here are some of the challenges their interventions must be prepared to address. ## Why Warehouse Theft Prevention Is Entering a New Era. As online ordering and purchasing trends shift, concentrations of product and orders continue to attract the attention of threats. Losses are increasing as theft becomes both more organized and more aggressive. Data consistently shows that internal theft accounts for a significant share of warehouse losses. When access controls rely heavily on manual verification, gaps in documentation and oversight can create risk. ### What Are the Most Effective Safety Measures for Warehouse Theft Prevention? This includes physical security like perimeter fencing, surveillance systems, and operational controls such as SmartGate technology that verifies access, standardizes entry and exit documentation, and provides real-time visibility into gate and dock activity.",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "logistics facility operational efficiency theft prevention measures",
+          "title": "Holiday Warehouse Security: Theft Prevention & Logistics Protection ...",
+          "url": "https://protossecurity.com/blog/holiday-security-strategies-warehouse-theft-prevention",
+          "snippet": "Cargo theft prevention requires disciplined operational protocols. Drivers' identities should always be verified before any loading or unloading",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "logistics facility operational efficiency theft prevention measures",
+          "title": "Warehouse and Logistics Security Systems - Elite",
+          "url": "https://eliteisi.com/warehouse-security-systems",
+          "snippet": "Elite Named TMA's 2026 Monitoring Center of the Year! # Warehouse and Logistics Security Systems: Prevent Crime, Reduce Thefts. /Articles, Blogs/Crime prevention, Elite Interactive Solutions, Logistics security, monitoring services, remote guarding, security management, security surveillance system, Warehouse security/by hellobrilliantseo-art. Elite Interactive presents you with security solutions and best practices to prevent crime, reduce theft, and enhance overall safety in warehouses and Logistics centers. By recognizing these risks, warehouse and logistics companies can implement targeted strategies to mitigate them and enhance the overall security and safety of their facilities. ## Protect your Warehouse From Theft and Crime by Implementing a Security System. To safeguard your warehouse from theft and crime, it’s crucial to implement a comprehensive security system that combines advanced technology, effective policies, and employee awareness, ensuring a secure and efficient operation environment. * **Why It Matters:** Controlling who enters and exits the warehouse is critical to prevent unauthorized access and potential security breaches.",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "logistics facility operational efficiency theft prevention measures",
+          "title": "Warehouse Loss Prevention: 11 Strategies To Implement - Pelco",
+          "url": "https://www.pelco.com/blog/warehouse-loss-prevention",
+          "snippet": "+ Calipsa Leverage AI video analytics to reduce false alarms and enhance security. Strengthen your physical security with the newest strategies, measures and technologies. * Guide to Warehouse Loss Prevention. # Warehouse loss prevention: 11 tips to protect your inventory. Warehouse loss prevention is a strategy designed to protect inventory where shrinkage is a growing concern. Organizations implement various measures and procedures to help minimize stock theft, damage and discrepancies in an increasingly complex operating environment. Despite rising inventory shrinkage, there are effective methods that can help mitigate warehouse loss. This guide will explain the causes, signs of theft and loss prevention strategies you can implement. Administrators and managers consistently use common causes to help form strategies that minimize inventory discrepancies. Some of the most common causes of warehouse loss are:. * **Theft:** Both internal and external warehouse theft are among the leading causes of loss. Smart warehouse security camera systems with AI-assisted analytics can help theft prevention by improving operational visibility.",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        },
+        {
+          "query": "logistics facility operational efficiency theft prevention measures",
+          "title": "Warehouse Theft Prevention: 8 Tips to spot it and stop it",
+          "url": "https://www.scjunction.com/blog/warehouse-theft-prevention-tips-how-to-spot-and-stop-light-fingers",
+          "snippet": "Most businesses with warehouse components suffer a great deal loss due to inventory shrinkage caused by theft within the warehouse, by their own internal employees. This goes with the territory in all regions, including the Middle East and Africa, and reducing the cost of these losses is entirely possible with the right tools and processes. It takes a combination of strong processes, security systems, warehouse management software and excellent hiring criteria to reduce theft in your business. Ensure that your inventory is correctly tracked so that you can tell the difference between the types of losses you may suffer, by combining stock takes and cycle counts to accurately assess your inventory on the books. cycle counting, and how they help to prevent warehouse theft. Your WMS allows you to be more flexible in your warehouse, moving from traditional stock take methods to cycle counting. The best way to identify theft in your warehouse is to conduct regular stock takes.",
+          "raw_content": null,
+          "source_type": "general_web",
+          "confidence": "low"
+        }
+      ],
+      "evidenceSummary": "In California, organized retail theft has been a significant concern, with law enforcement conducting numerous operations to combat it, resulting in multiple arrests. This indicates a broader trend of theft that could impact logistics and distribution facilities. A risk control plan for wholesale food warehouses identifies and mitigates security risks, emphasizing the importance of operational efficiency and safety in food distribution contexts.",
+      "validation": {
+        "passes_word_count": false,
+        "forbidden_phrases_found": [],
+        "has_source_urls": true,
+        "needs_review": true,
+        "recommendation": "human_review",
+        "notes": [
+          "Email body exceeds 119 words (136)."
+        ]
+      },
+      "sourceUrls": [
+        "https://www.gov.ca.gov/2026/06/04/california-continues-aggressive-fight-against-organized-retail-theft-recovering-nearly-260-million-in-stolen-merchandise",
+        "https://www.sandiegocounty.gov/content/dam/sdc/deh/fhd/food/pdf/publications_wholesaleworkbook.pdf",
+        "https://corstat.coronaca.gov/stories/s/Police-Department-Dashboard/iqm2-meak",
+        "https://www.coronaca.gov/departments/police",
+        "https://careers.usfoods.com/us/en/c/transportation-logistics-jobs",
+        "https://www.usfoods.com",
+        "https://careers.usfoods.com/us/en/c/warehouse-operations-jobs",
+        "https://supplychaindigital.com/digital-supply-chain/us-foods-driving-sustainability-its-supply-chain",
+        "https://www.usfoods.com/about-us-foods/associate-experience/support-and-partnership",
+        "https://www.usfoods.com/products-we-offer/exclusive-brands/cross-valley-farms/farm-to-fork",
+        "https://www.usfoods.com/for-investors-media-and-suppliers/supplier-info",
+        "https://www.asisonline.org/security-management-magazine/articles/2026/04/warehouse-and-distribution-center-security/scanner-theft",
+        "https://clui.org/ludb/site/us-foods-allentown-distribution-center",
+        "https://www.supplychainbrain.com/articles/41470-modernizing-the-mile-us-foods-builds-a-smarter-future-for-daily-planning",
+        "https://en.wikipedia.org/wiki/US_Foods",
+        "https://statisnostics.com/crime-statistics/CA/Corona",
+        "https://cocpublicwebsite.blob.core.windows.net/publicwebsite/Documents/Police%20Department/2024%20Corona%20PD%20Annual%20Report.pdf",
+        "https://experience.arcgis.com/experience/cc7641c2e80044a697a9e2a37f19e202",
+        "https://www.wcctv.com/resources/news/how-are-crime-trends-changing-across-california-industries",
+        "https://www.riverplateinc.com/articles/warehouse-security",
+        "https://www.rfgen.com/blog/key-security-risks-of-legacy-inventory-management-systems-how-to-address-them",
+        "https://www.bayalarm.com/uncategorized/warehouse-security-guide",
+        "https://blog.opendock.com/warehouse-theft-prevention",
+        "https://protossecurity.com/blog/holiday-security-strategies-warehouse-theft-prevention",
+        "https://eliteisi.com/warehouse-security-systems",
+        "https://www.pelco.com/blog/warehouse-loss-prevention",
+        "https://www.scjunction.com/blog/warehouse-theft-prevention-tips-how-to-spot-and-stop-light-fingers"
+      ],
+      "validationRecommendation": "human_review",
+      "startedAt": "2026-06-11T05:29:49.632Z",
+      "completedAt": "2026-06-11T05:29:49.632Z",
+      "command": "python3 -m warm_outreach.cli run-one --lead-json \"{\\\"name\\\":\\\"Aaron Perez\\\",\\\"email\\\":null,\\\"company\\\":\\\"US Foods\\\",\\\"location\\\":\\\"Corona, California, United States\\\",\\\"linkedin\\\":\\\"https://linkedin.com/in/aaronj-perez\\\",\\\"role\\\":\\\"Category Operations Manager\\\",\\\"years_at_role\\\":\\\"1.52 years\\\"}\" --max-results 5",
+      "exitCode": 0,
+      "stdoutSnippet": "{\n  \"lead\": {\n    \"name\": \"Aaron Perez\",\n    \"email\": null,\n    \"company\": \"US Foods\",\n    \"location\": \"Corona, California, United States\",\n    \"linkedin\": \"https://linkedin.com/in/aaronj-perez\",\n    \"role\": \"Category Operations Manager\",\n    \"years_at_role\": \"1.52 years\"\n  },\n  \"persona\": {\n    \"persona_type\": \"operations\",\n    \"role_relevance\": \"high\",\n    \"likely_site_types\": [\n      \"food distribution centers\",\n      \"warehouses\",\n      \"logistics facilities\"\n    ],\n    \"likely_security_use_cases\": [\n      \"inventory management\",\n      \"operational efficiency\",\n      \"supply chain security\"\n    ],\n    \"bad_angles_to_avoid\": [\n      \"retail-focused security solutions\",\n      \"consumer behavior analytics\"\n    ],\n    \"reasoning_summary\": \"The role of Category Operations Manager at US Foods indicates a focus on operational processes within a food distribution context, making this lead relevant for operations-related security solutions rather than retail loss prevention.\",\n    \"confidence\": \"high\"\n  },\n  \"queries\": {\n    \"company_context_queries\": [\n      \"US Foods distribution centers operations logistics\",\n      \"US Foods supply chain management facilities overview\"\n    ],\n    \"local_crime_queries\": [\n      \"Corona California police department crime statistics dashboard\",\n      \"Recent theft incidents reported in Corona California affecting warehouses\"\n    ],\n    \"role_specific_risk_queries\": [\n      \"food distribution center inventory management security risks\",\n      \"logistics facility operational efficiency theft prevention measures\"\n    ]\n  },\n  \"search_results\": [\n    {\n      \"query\": \"Corona California police department crime statistics dashboard\",\n      \"title\": \"Police Department Dashboard - Corona Open Performance\",\n      \"url\": \"https://corstat.coronaca.gov/stories/s/Police-Department-Dashboard/iqm2-meak\",\n      \"snippet\": \"Dashboard showing statistics and metrics for Homeless Calls for Service. ... Corona Solutions, Crime View, and other applicable syst...",
+      "id": "3f165411-11a0-4a0c-a8ee-3c11110eba6f",
+      "createdAt": "2026-06-11T05:29:50.005Z",
+      "updatedAt": "2026-06-11T05:29:50.005Z"
     }
   ]
 }
