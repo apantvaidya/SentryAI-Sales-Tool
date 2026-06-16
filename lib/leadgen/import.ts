@@ -1,11 +1,30 @@
 import { promises as fs } from "fs";
 import path from "path";
-import type { LeadCandidate, LeadCandidateStatus, LeadGenRun, LeadQueryStats, QueryPairOverlap } from "@/lib/data/types";
+import type { CandidateIdentityKeyType, LeadGenRun, LeadQueryStats, Person, QueryPairOverlap } from "@/lib/data/types";
 import { candidateIdentity } from "./identity";
 
 const dataRoot = path.join(process.cwd(), "lead_generation_mod", "data");
 const runsRoot = path.join(dataRoot, "runs");
 const importerVersion = "leadgen-import-v1" as const;
+
+export type ArtifactCandidateStatus = "accepted" | "dropped" | "needs_review" | "imported";
+
+export type ArtifactCandidate = {
+  identityKey: string;
+  identityKeyType: CandidateIdentityKeyType;
+  linkedinUrl?: string;
+  fullName: string;
+  currentTitle?: string;
+  currentCompany?: string;
+  resolvedLocation?: string;
+  yearsAtCurrentRole?: number;
+  sourceQueryIds: string[];
+  sourceQueryNames?: string[];
+  sourceBuckets?: string[];
+  overlapCount: number;
+  status: ArtifactCandidateStatus;
+  artifactRefs: Person["artifactRefs"];
+};
 
 type QueryArtifact = {
   vector_id: string;
@@ -14,7 +33,7 @@ type QueryArtifact = {
 };
 
 type FilterDecisionArtifact = {
-  status: LeadCandidateStatus;
+  status: ArtifactCandidateStatus;
   reasons?: string[];
   candidate: {
     full_name?: string;
@@ -49,7 +68,7 @@ export async function listArtifactRunIds() {
   }
 }
 
-export async function importLeadGenArtifacts(prospectId: string, artifactRunId: string) {
+export async function importLeadGenArtifacts(artifactRunId: string) {
   const runDir = path.join(runsRoot, artifactRunId);
   const [queries, filterDecisions, batch, runSummary] = await Promise.all([
     readJson<QueryArtifact[]>(path.join(runDir, "queries.json")),
@@ -62,11 +81,11 @@ export async function importLeadGenArtifacts(prospectId: string, artifactRunId: 
   const personByIdentity = new Map<
     string,
     {
-      base: Omit<LeadCandidate, "id" | "leadGenRunId" | "prospectId" | "createdAt" | "updatedAt">;
+      base: ArtifactCandidate;
       queryIds: Set<string>;
       queryNames: Set<string>;
       buckets: Set<string>;
-      statuses: Set<LeadCandidateStatus>;
+      statuses: Set<ArtifactCandidateStatus>;
       mappedRefs: Set<string>;
       filterRefs: Set<string>;
     }
@@ -131,7 +150,7 @@ export async function importLeadGenArtifacts(prospectId: string, artifactRunId: 
     record.filterRefs.add(String(index));
   });
 
-  const statusPriority: Record<LeadCandidateStatus, number> = {
+  const statusPriority: Record<ArtifactCandidateStatus, number> = {
     imported: 4,
     accepted: 3,
     needs_review: 2,
@@ -208,7 +227,6 @@ export async function importLeadGenArtifacts(prospectId: string, artifactRunId: 
   const needsReviewCandidates = candidates.filter((candidate) => candidate.status === "needs_review").length;
 
   const run: Omit<LeadGenRun, "id" | "createdAt" | "updatedAt"> = {
-    prospectId,
     seedPersonName: batch.seed_person.person_name,
     seedRole: clean(batch.seed_person.role),
     seedCompanyName: batch.seed_person.company_name,

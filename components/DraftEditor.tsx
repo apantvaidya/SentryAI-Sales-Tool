@@ -3,17 +3,9 @@
 import { useState } from "react";
 import { Check, Clipboard, ExternalLink, FileDown, ShieldAlert, Trash2 } from "lucide-react";
 import { approveOutreachDraft, deleteOutreachDraft, updateOutreachDraft } from "@/app/actions";
-import type { Contact, OutreachDraft } from "@/lib/data/types";
+import type { OutreachDraft } from "@/lib/data/types";
 
-export function DraftEditor({
-  drafts,
-  contacts,
-  prospectId
-}: {
-  drafts: OutreachDraft[];
-  contacts: Contact[];
-  prospectId: string;
-}) {
+export function DraftEditor({ drafts, personId }: { drafts: OutreachDraft[]; personId: string }) {
   const [copiedId, setCopiedId] = useState<string | null>(null);
 
   async function copyDraft(draft: OutreachDraft) {
@@ -26,7 +18,7 @@ export function DraftEditor({
     return (
       <div className="rounded-lg border border-dashed border-slate-300 bg-slate-50 p-8 text-center">
         <p className="font-semibold text-ink">No outreach drafts yet</p>
-        <p className="mt-1 text-sm text-slate-500">Generate a draft from a contact and persona, then review before copy or export.</p>
+        <p className="mt-1 text-sm text-slate-500">Generate a draft from a persona, then review before copy or export.</p>
       </div>
     );
   }
@@ -34,13 +26,11 @@ export function DraftEditor({
   return (
     <div className="grid gap-5">
       {drafts.map((draft) => {
-        const contact = contacts.find((item) => item.id === draft.contactId);
         const needsHumanReview = draft.validationRecommendation === "human_review" || draft.validationRecommendation === "reject";
         return (
           <article key={draft.id} className="surface p-5">
             <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
               <div>
-                <p className="text-xs font-bold uppercase tracking-wide text-slate-500">{contact?.name || "Persona draft"}</p>
                 <h3 className="text-lg font-bold text-ink">{draft.subject}</h3>
               </div>
               <div className="flex flex-wrap gap-2">
@@ -79,7 +69,7 @@ export function DraftEditor({
                 ) : null}
               </div>
             ) : null}
-            <form action={updateOutreachDraft.bind(null, draft.id, prospectId)} className="grid gap-3">
+            <form action={updateOutreachDraft.bind(null, draft.id, personId)} className="grid gap-3">
               <div className="grid gap-2 md:grid-cols-[1fr_180px]">
                 <input className="field" name="subject" defaultValue={draft.subject} aria-label="Subject" />
                 <select className="field" name="tone" defaultValue={draft.tone} aria-label="Tone">
@@ -109,12 +99,12 @@ export function DraftEditor({
                   {copiedId === draft.id ? <Check size={16} /> : <Clipboard size={16} />}
                   Copy Email
                 </button>
-                <button className="button-primary" formAction={approveOutreachDraft.bind(null, draft.id, prospectId)}>
+                <button className="button-primary" formAction={approveOutreachDraft.bind(null, draft.id, personId)}>
                   Approve Draft
                 </button>
                 <button
                   className="button-secondary border-red-200 text-red-700 hover:border-red-300 hover:bg-red-50"
-                  formAction={deleteOutreachDraft.bind(null, draft.id, prospectId)}
+                  formAction={deleteOutreachDraft.bind(null, draft.id, personId)}
                   onClick={(event) => {
                     if (!window.confirm("Delete this draft? This cannot be undone.")) {
                       event.preventDefault();
@@ -124,7 +114,7 @@ export function DraftEditor({
                   <Trash2 size={16} />
                   Delete
                 </button>
-                <a className="button-secondary" href={`/prospects/${prospectId}/export`}>
+                <a className="button-secondary" href={`/people/${personId}/export`}>
                   <FileDown size={16} />
                   Export CSV
                 </a>

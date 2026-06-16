@@ -1,4 +1,4 @@
-import type { BuyerPersona, Contact, Prospect, ProspectWorkspace } from "@/lib/data/types";
+import type { BuyerPersona, Person } from "@/lib/data/types";
 
 export const smartSentryContext = `
 Smart Sentry is an AI-powered security monitoring platform that helps organizations detect threats in real time using existing camera infrastructure and human-in-the-loop escalation. It moves teams from passive recording to proactive incident prevention.
@@ -52,17 +52,17 @@ Return strict JSON:
 `;
 }
 
-export function contactScoringPrompt(input: {
-  prospect: Prospect;
-  contactTitle: string;
+export function personScoringPrompt(input: {
+  person: Person;
+  title: string;
   personas: BuyerPersona[];
 }) {
   return `
-Score this contact for relevance to a Smart Sentry sales conversation.
+Score this person for relevance to a Smart Sentry sales conversation.
 
-Company: ${input.prospect.companyName}
-Industry: ${input.prospect.industry || "Unknown"}
-Contact title: ${input.contactTitle}
+Company: ${input.person.companyName}
+Industry: ${input.person.companyIndustry || "Unknown"}
+Title: ${input.title}
 Buyer personas: ${input.personas.map((p) => `${p.personaName}: ${p.roleTitles.join(", ")}`).join(" | ")}
 
 Return strict JSON:
@@ -75,30 +75,29 @@ Return strict JSON:
 }
 
 export function emailGenerationPrompt(input: {
-  workspace: ProspectWorkspace;
-  contact?: Contact;
+  person: Person;
   persona?: BuyerPersona;
   tone: string;
   notes?: string;
 }) {
-  const { prospect } = input.workspace;
+  const { person } = input;
   return `
 Write one high-quality, concise, manually reviewed B2B outreach email for Smart Sentry.
 
 ${smartSentryContext}
 
 Company brief:
-- Company: ${prospect.companyName}
-- Website: ${prospect.website || "Not provided"}
-- Industry: ${prospect.industry || "Not provided"}
-- Summary: ${prospect.summary || "Not generated"}
-- Pain points: ${prospect.painPoints.join("; ") || "Not generated"}
-- Security relevance: ${prospect.securityRelevance || "Not generated"}
+- Company: ${person.companyName}
+- Website: ${person.companyWebsite || "Not provided"}
+- Industry: ${person.companyIndustry || "Not provided"}
+- Summary: ${person.companySummary || "Not generated"}
+- Pain points: ${person.companyPainPoints.join("; ") || "Not generated"}
+- Security relevance: ${person.companySecurityRelevance || "Not generated"}
 
 Recipient:
-- Name: ${input.contact?.name || "Unknown"}
-- Title: ${input.contact?.title || "Unknown"}
-- Email verified: ${input.contact?.emailVerified ? "Yes" : "No"}
+- Name: ${person.name || "Unknown"}
+- Title: ${person.title || "Unknown"}
+- Email verified: ${person.emailVerified ? "Yes" : "No"}
 - Persona: ${input.persona?.personaName || "Unknown"}
 - Persona value proposition: ${input.persona?.valueProposition || "Not provided"}
 - User notes: ${input.notes || "None"}

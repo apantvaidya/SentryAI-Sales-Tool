@@ -1,4 +1,4 @@
-import type { LeadCandidate, LeadGenRun } from "@/lib/data/types";
+import type { LeadGenRun, Person } from "@/lib/data/types";
 
 export type LeadGraphNode = {
   id: string;
@@ -31,12 +31,12 @@ function shortQueryName(value: string) {
   return value.replace(/^same_company_/i, "same company ").replace(/^similar_company_/i, "similar company ").replace(/_/g, " ");
 }
 
-export function buildLeadGraphPayload(run: LeadGenRun, candidates: LeadCandidate[], options: { maxPeople?: number } = {}): LeadGraphPayload {
+export function buildLeadGraphPayload(run: LeadGenRun, candidates: Person[], options: { maxPeople?: number } = {}): LeadGraphPayload {
   const maxPeople = options.maxPeople || 80;
   const queryStats = run.queryStats || [];
   const displayedCandidates = candidates
     .slice()
-    .sort((a, b) => b.overlapCount - a.overlapCount || a.fullName.localeCompare(b.fullName))
+    .sort((a, b) => (b.overlapCount ?? 0) - (a.overlapCount ?? 0) || a.name.localeCompare(b.name))
     .slice(0, maxPeople);
 
   const nodes: LeadGraphNode[] = [
@@ -72,8 +72,8 @@ export function buildLeadGraphPayload(run: LeadGenRun, candidates: LeadCandidate
     nodes.push({
       id: `person:${candidate.id}`,
       type: "person",
-      label: candidate.fullName,
-      subtitle: candidate.currentTitle || candidate.currentCompany,
+      label: candidate.name,
+      subtitle: candidate.title || candidate.companyName,
       status: candidate.status,
       x: peopleXStart + column * 210,
       y: 45 + row * peopleYStep,
@@ -92,8 +92,8 @@ export function buildLeadGraphPayload(run: LeadGenRun, candidates: LeadCandidate
     });
   }
   for (const candidate of displayedCandidates) {
-    if (candidate.sourceQueryIds.length <= 2) continue;
-    for (const queryId of candidate.sourceQueryIds) {
+    if ((candidate.sourceQueryIds?.length || 0) <= 2) continue;
+    for (const queryId of candidate.sourceQueryIds || []) {
       if (!displayedIds.has(candidate.id)) continue;
       edges.push({
         id: `${queryId}:${candidate.id}`,

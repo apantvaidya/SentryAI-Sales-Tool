@@ -1,32 +1,55 @@
-export type ProspectStatus = "researching" | "drafting" | "approved" | "contacted";
+export type PersonStatus = "candidate" | "new" | "drafting" | "approved" | "contacted";
 export type DraftTone = "concise" | "executive" | "technical" | "warm";
 export type DraftStatus = "draft" | "approved" | "sent_manually";
 export type PipelineStatus = "queued" | "running" | "completed" | "failed";
 export type CandidateIdentityKeyType = "linkedinUrl" | "nameCompany";
-export type LeadCandidateStatus = "accepted" | "dropped" | "needs_review" | "imported";
 export type ValidationRecommendation = "approve" | "human_review" | "reject";
 
-export type Prospect = {
+export type Person = {
   id: string;
-  companyName: string;
-  website?: string;
-  industry?: string;
-  companySize?: string;
-  segment?: string;
+  status: PersonStatus;
+  name: string;
+  title?: string;
+  email?: string;
+  emailVerified: boolean;
+  linkedinUrl?: string;
+  location?: string;
+  yearsAtCurrentRole?: number;
+  source?: string;
   notes?: string;
-  summary?: string;
-  painPoints: string[];
-  securityRelevance?: string;
-  smartSentryFitScore: number;
-  fitRationale?: string;
-  status: ProspectStatus;
+  confidenceScore: number;
+  relevanceReason?: string;
+  bestPersonaMatch?: string;
+  companyName: string;
+  companyWebsite?: string;
+  companyIndustry?: string;
+  companySize?: string;
+  companySegment?: string;
+  companyNotes?: string;
+  companySummary?: string;
+  companyPainPoints: string[];
+  companySecurityRelevance?: string;
+  companyFitScore: number;
+  companyFitRationale?: string;
+  leadGenRunId?: string;
+  identityKey?: string;
+  identityKeyType?: CandidateIdentityKeyType;
+  sourceQueryIds?: string[];
+  sourceQueryNames?: string[];
+  sourceBuckets?: string[];
+  overlapCount?: number;
+  artifactRefs?: {
+    mappedCandidateIds?: string[];
+    filterDecisionIds?: string[];
+    queryIds: string[];
+  };
   createdAt: string;
   updatedAt: string;
 };
 
 export type BuyerPersona = {
   id: string;
-  prospectId: string;
+  personId: string;
   personaName: string;
   roleTitles: string[];
   painPoints: string[];
@@ -35,28 +58,9 @@ export type BuyerPersona = {
   priorityScore: number;
 };
 
-export type Contact = {
-  id: string;
-  prospectId: string;
-  name: string;
-  title: string;
-  email?: string;
-  linkedinUrl?: string;
-  source?: string;
-  confidenceScore: number;
-  relevanceReason?: string;
-  bestPersonaMatch?: string;
-  notes?: string;
-  emailVerified: boolean;
-  createdAt: string;
-  updatedAt: string;
-};
-
 export type OutreachDraft = {
   id: string;
-  prospectId: string;
-  contactId?: string;
-  candidateId?: string;
+  personId: string;
   personaId?: string;
   outreachResearchId?: string;
   subject: string;
@@ -74,32 +78,44 @@ export type OutreachDraft = {
 
 export type Activity = {
   id: string;
-  prospectId: string;
+  personId: string;
   type: string;
   message: string;
   createdAt: string;
 };
 
-export type ProspectWorkspace = {
-  prospect: Prospect;
+export type PersonDetail = {
+  person: Person;
   personas: BuyerPersona[];
-  contacts: Contact[];
   drafts: OutreachDraft[];
   activities: Activity[];
-  leadGenRuns: LeadGenRun[];
-  leadCandidates: LeadCandidate[];
   outreachResearch: OutreachResearch[];
 };
 
+export type OutreachJobItemStatus = "pending" | "running" | "completed" | "failed";
+
+export type OutreachJobItem = {
+  personId: string;
+  name: string;
+  status: OutreachJobItemStatus;
+  errorMessage?: string;
+};
+
+export type OutreachJob = {
+  id: string;
+  items: OutreachJobItem[];
+  createdAt: string;
+  updatedAt: string;
+};
+
 export type Database = {
-  prospects: Prospect[];
+  people: Person[];
   personas: BuyerPersona[];
-  contacts: Contact[];
   drafts: OutreachDraft[];
   activities: Activity[];
   leadGenRuns: LeadGenRun[];
-  leadCandidates: LeadCandidate[];
   outreachResearch: OutreachResearch[];
+  outreachJobs: OutreachJob[];
 };
 
 export type LeadQueryStats = {
@@ -119,7 +135,6 @@ export type QueryPairOverlap = {
 
 export type LeadGenRun = {
   id: string;
-  prospectId: string;
   seedPersonName: string;
   seedRole?: string;
   seedCompanyName: string;
@@ -148,38 +163,9 @@ export type LeadGenRun = {
   queryPairOverlaps?: QueryPairOverlap[];
 };
 
-export type LeadCandidate = {
-  id: string;
-  leadGenRunId: string;
-  prospectId: string;
-  identityKey: string;
-  identityKeyType: CandidateIdentityKeyType;
-  linkedinUrl?: string;
-  fullName: string;
-  currentTitle?: string;
-  currentCompany?: string;
-  resolvedLocation?: string;
-  yearsAtCurrentRole?: number;
-  sourceQueryIds: string[];
-  sourceQueryNames?: string[];
-  sourceBuckets?: string[];
-  overlapCount: number;
-  status: LeadCandidateStatus;
-  importedContactId?: string;
-  artifactRefs?: {
-    mappedCandidateIds?: string[];
-    filterDecisionIds?: string[];
-    queryIds: string[];
-  };
-  createdAt: string;
-  updatedAt: string;
-};
-
 export type OutreachResearch = {
   id: string;
-  prospectId: string;
-  contactId: string;
-  candidateId?: string;
+  personId: string;
   linkedinUrl?: string;
   company: string;
   location?: string;

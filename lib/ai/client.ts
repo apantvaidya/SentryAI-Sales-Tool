@@ -1,6 +1,6 @@
-import { companyResearchPrompt, contactScoringPrompt, emailGenerationPrompt } from "./prompts";
-import { mockContactScore, mockEmail, mockResearchBrief } from "./mockResponses";
-import type { BuyerPersona, Contact, Prospect, ProspectWorkspace } from "@/lib/data/types";
+import { companyResearchPrompt, personScoringPrompt, emailGenerationPrompt } from "./prompts";
+import { mockPersonScore, mockEmail, mockResearchBrief } from "./mockResponses";
+import type { BuyerPersona, DraftTone, Person } from "@/lib/data/types";
 
 const model = "gpt-4o-mini";
 
@@ -55,29 +55,19 @@ export async function generateCompanyResearch(input: {
   return requestJson(companyResearchPrompt(input), mockResearchBrief(input));
 }
 
-export async function scoreContactRelevance(input: {
-  prospect: Prospect;
-  contactTitle: string;
+export async function scorePersonRelevance(input: {
+  person: Person;
+  title: string;
   personas: BuyerPersona[];
 }) {
-  return requestJson(contactScoringPrompt(input), mockContactScore(input));
+  return requestJson(personScoringPrompt(input), mockPersonScore(input));
 }
 
 export async function generatePersonalizedEmail(input: {
-  workspace: ProspectWorkspace;
-  contact?: Contact;
+  person: Person;
   persona?: BuyerPersona;
-  tone: "concise" | "executive" | "technical" | "warm";
+  tone: DraftTone;
   notes?: string;
 }) {
-  return requestJson(
-    emailGenerationPrompt(input),
-    mockEmail({
-      workspace: input.workspace,
-      contactName: input.contact?.name,
-      contactTitle: input.contact?.title,
-      personaName: input.persona?.personaName,
-      tone: input.tone
-    })
-  );
+  return requestJson(emailGenerationPrompt(input), mockEmail({ person: input.person, tone: input.tone }));
 }

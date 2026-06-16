@@ -2,14 +2,19 @@ import { existsSync } from "fs";
 import { execFile } from "child_process";
 import path from "path";
 import { promisify } from "util";
-import type { Contact, LeadCandidate, ProspectWorkspace } from "@/lib/data/types";
+import type { Person } from "@/lib/data/types";
 
 const execFileAsync = promisify(execFile);
 const warmOutreachRoot = path.join(process.cwd(), "warm_outreach");
+const isWindows = process.platform === "win32";
+// On Windows, venvs put executables in Scripts/python.exe, not bin/python(3).
+// "python3" also isn't reliable on Windows: it often resolves to the
+// Microsoft Store app-execution-alias stub instead of a real interpreter.
+const systemPython = isWindows ? "python" : "python3";
 const warmOutreachPythonCandidates = [
-  path.join(warmOutreachRoot, ".venv", "bin", "python"),
-  path.join(warmOutreachRoot, ".venv", "bin", "python3"),
-  "python3"
+  path.join(warmOutreachRoot, ".venv", isWindows ? "Scripts" : "bin", isWindows ? "python.exe" : "python"),
+  path.join(warmOutreachRoot, ".venv", isWindows ? "Scripts" : "bin", isWindows ? "python.exe" : "python3"),
+  systemPython
 ] as const;
 
 export type WarmOutreachPipelineOutput = {
@@ -60,25 +65,20 @@ function snippet(value: string) {
   return trimmed.length > 2000 ? `${trimmed.slice(0, 2000)}...` : trimmed || undefined;
 }
 
-function parseLocation(notes?: string) {
-  const match = notes?.match(/Location:\s*([^|]+)/i);
-  return match?.[1]?.trim();
-}
-
-function yearsAtRole(candidate?: LeadCandidate) {
-  return typeof candidate?.yearsAtCurrentRole === "number" ? `${candidate.yearsAtCurrentRole} years` : undefined;
+function yearsAtRole(person: Person) {
+  return typeof person.yearsAtCurrentRole === "number" ? `${person.yearsAtCurrentRole} years` : undefined;
 }
 
 function warmOutreachPython() {
-  return warmOutreachPythonCandidates.find((candidate) => candidate === "python3" || existsSync(candidate)) || "python3";
+  return warmOutreachPythonCandidates.find((candidate) => candidate === systemPython || existsSync(candidate)) || systemPython;
 }
 
 function warmOutreachSetupHint() {
   return [
     "Warm outreach Python dependencies are not installed for this app yet.",
     `From ${warmOutreachRoot}, run:`,
-    "python3 -m venv .venv",
-    "./.venv/bin/pip install -e .[dev]"
+    `${systemPython} -m venv .venv`,
+    isWindows ? ".venv\\Scripts\\pip install -e .[dev]" : "./.venv/bin/pip install -e .[dev]"
   ].join("\n");
 }
 
@@ -103,25 +103,23 @@ function augmentWarmOutreachError(errorMessage: string, stderr?: string) {
   return errorMessage;
 }
 
-export function contactToWarmOutreachLead(workspace: ProspectWorkspace, contact: Contact, candidate?: LeadCandidate) {
+export function personToWarmOutreachLead(person: Person) {
   return {
-    name: contact.name || "Unknown contact",
-    email: contact.email || null,
-    company: candidate?.currentCompany || workspace.prospect.companyName,
-    location: candidate?.resolvedLocation || parseLocation(contact.notes) || workspace.prospect.segment || null,
-    linkedin: contact.linkedinUrl || candidate?.linkedinUrl || null,
-    role: contact.title || candidate?.currentTitle || "Unknown role",
-    years_at_role: yearsAtRole(candidate) || null
+    name: person.name || "Unknown contact",
+    email: person.email || null,
+    company: person.companyName,
+    location: person.location || person.companySegment || null,
+    linkedin: person.linkedinUrl || null,
+    role: person.title || "Unknown role",
+    years_at_role: yearsAtRole(person) || null
   };
 }
 
-export async function runWarmOutreachForContact(
-  workspace: ProspectWorkspace,
-  contact: Contact,
-  candidate?: LeadCandidate,
+export async function runWarmOutreachForPerson(
+  person: Person,
   options: { maxResults?: number; includeRawContent?: boolean } = {}
 ): Promise<WarmOutreachExecution> {
-  const lead = contactToWarmOutreachLead(workspace, contact, candidate);
+  const lead = personToWarmOutreachLead(person);
   const pythonExecutable = warmOutreachPython();
   const args = [
     "-m",
@@ -140,7 +138,10 @@ export async function runWarmOutreachForContact(
       cwd: warmOutreachRoot,
       env: {
         ...process.env,
-        PYTHONPATH: path.join(warmOutreachRoot, "src")
+        PYTHONPATH: path.join(warmOutreachRoot, "src"),
+        // Windows defaults stdout to the system codepage (e.g. cp1252) when piped,
+        // which throws on non-ASCII output (e.g. "‑" U+2011) instead of using UTF-8.
+        PYTHONIOENCODING: "utf-8"
       },
       maxBuffer: 1024 * 1024 * 8
     });

@@ -3,30 +3,30 @@ import path from "path";
 import type {
   Activity,
   BuyerPersona,
-  Contact,
+  CandidateIdentityKeyType,
   Database,
   DraftTone,
-  LeadCandidate,
   LeadGenRun,
   OutreachDraft,
+  OutreachJob,
+  OutreachJobItemStatus,
   OutreachResearch,
-  Prospect,
-  ProspectStatus,
-  ProspectWorkspace
+  Person,
+  PersonDetail,
+  PersonStatus
 } from "./types";
 
 const dataDir = path.join(process.cwd(), "data");
 const dbPath = path.join(dataDir, "db.json");
 
 const emptyDb: Database = {
-  prospects: [],
+  people: [],
   personas: [],
-  contacts: [],
   drafts: [],
   activities: [],
   leadGenRuns: [],
-  leadCandidates: [],
-  outreachResearch: []
+  outreachResearch: [],
+  outreachJobs: []
 };
 
 async function ensureDb() {
@@ -57,128 +57,137 @@ function id() {
   return crypto.randomUUID();
 }
 
-function sortUpdated(a: Prospect, b: Prospect) {
+function sortUpdated(a: { updatedAt: string }, b: { updatedAt: string }) {
   return new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime();
 }
 
-export async function getProspects() {
+export async function getPersons() {
   const db = await readDb();
-  return db.prospects.sort(sortUpdated);
+  return db.people.slice().sort(sortUpdated);
 }
 
-export async function getProspectById(id: string): Promise<ProspectWorkspace | null> {
+export async function getPerson(personId: string) {
   const db = await readDb();
-  const prospect = db.prospects.find((item) => item.id === id);
-  if (!prospect) return null;
+  return db.people.find((item) => item.id === personId) || null;
+}
+
+export async function getPersonById(personId: string): Promise<PersonDetail | null> {
+  const db = await readDb();
+  const person = db.people.find((item) => item.id === personId);
+  if (!person) return null;
   return {
-    prospect,
-    personas: db.personas.filter((item) => item.prospectId === id),
-    contacts: db.contacts.filter((item) => item.prospectId === id),
-    drafts: db.drafts.filter((item) => item.prospectId === id),
-    leadGenRuns: db.leadGenRuns.filter((item) => item.prospectId === id),
-    leadCandidates: db.leadCandidates.filter((item) => item.prospectId === id),
-    outreachResearch: db.outreachResearch.filter((item) => item.prospectId === id),
+    person,
+    personas: db.personas.filter((item) => item.personId === personId),
+    drafts: db.drafts.filter((item) => item.personId === personId),
+    outreachResearch: db.outreachResearch.filter((item) => item.personId === personId),
     activities: db.activities
-      .filter((item) => item.prospectId === id)
+      .filter((item) => item.personId === personId)
       .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
   };
 }
 
-export async function createProspect(input: {
-  companyName: string;
-  website?: string;
-  industry?: string;
-  companySize?: string;
-  segment?: string;
+export async function createPerson(input: {
+  name: string;
+  title?: string;
+  email?: string;
+  linkedinUrl?: string;
+  source?: string;
   notes?: string;
+  companyName: string;
+  companyWebsite?: string;
+  companyIndustry?: string;
+  companySize?: string;
+  companySegment?: string;
+  companyNotes?: string;
 }) {
   const db = await readDb();
   const timestamp = now();
-  const prospect: Prospect = {
+  const person: Person = {
     id: id(),
-    companyName: input.companyName,
-    website: input.website,
-    industry: input.industry,
-    companySize: input.companySize,
-    segment: input.segment,
+    status: "new",
+    name: input.name,
+    title: input.title,
+    email: input.email,
+    emailVerified: false,
+    linkedinUrl: input.linkedinUrl,
+    source: input.source,
     notes: input.notes,
-    painPoints: [],
-    smartSentryFitScore: 0,
-    status: "researching",
+    confidenceScore: 50,
+    companyName: input.companyName,
+    companyWebsite: input.companyWebsite,
+    companyIndustry: input.companyIndustry,
+    companySize: input.companySize,
+    companySegment: input.companySegment,
+    companyNotes: input.companyNotes,
+    companyPainPoints: [],
+    companyFitScore: 0,
     createdAt: timestamp,
     updatedAt: timestamp
   };
-  db.prospects.push(prospect);
+  db.people.push(person);
   db.activities.push({
     id: id(),
-    prospectId: prospect.id,
+    personId: person.id,
     type: "created",
-    message: `Created prospect workspace for ${prospect.companyName}.`,
+    message: `Added ${person.name} at ${person.companyName}.`,
     createdAt: timestamp
   });
   await writeDb(db);
-  return prospect;
+  return person;
 }
 
-export async function updateProspect(
-  prospectId: string,
-  input: Partial<Omit<Prospect, "id" | "createdAt" | "updatedAt">>
-) {
+export async function updatePerson(personId: string, input: Partial<Omit<Person, "id" | "createdAt" | "updatedAt">>) {
   const db = await readDb();
-  const index = db.prospects.findIndex((item) => item.id === prospectId);
-  if (index === -1) throw new Error("Prospect not found");
-  db.prospects[index] = { ...db.prospects[index], ...input, updatedAt: now() };
+  const index = db.people.findIndex((item) => item.id === personId);
+  if (index === -1) throw new Error("Person not found");
+  db.people[index] = { ...db.people[index], ...input, updatedAt: now() };
   await writeDb(db);
-  return db.prospects[index];
+  return db.people[index];
 }
 
-export async function deleteProspect(prospectId: string) {
+export async function deletePerson(personId: string) {
   const db = await readDb();
-  db.prospects = db.prospects.filter((item) => item.id !== prospectId);
-  db.personas = db.personas.filter((item) => item.prospectId !== prospectId);
-  db.contacts = db.contacts.filter((item) => item.prospectId !== prospectId);
-  db.drafts = db.drafts.filter((item) => item.prospectId !== prospectId);
-  db.activities = db.activities.filter((item) => item.prospectId !== prospectId);
-  db.leadGenRuns = db.leadGenRuns.filter((item) => item.prospectId !== prospectId);
-  db.leadCandidates = db.leadCandidates.filter((item) => item.prospectId !== prospectId);
-  db.outreachResearch = db.outreachResearch.filter((item) => item.prospectId !== prospectId);
+  db.people = db.people.filter((item) => item.id !== personId);
+  db.personas = db.personas.filter((item) => item.personId !== personId);
+  db.drafts = db.drafts.filter((item) => item.personId !== personId);
+  db.activities = db.activities.filter((item) => item.personId !== personId);
+  db.outreachResearch = db.outreachResearch.filter((item) => item.personId !== personId);
   await writeDb(db);
 }
 
 export async function replaceResearchBrief(
-  prospectId: string,
+  personId: string,
   brief: {
     summary: string;
     painPoints: string[];
     securityRelevance: string;
     smartSentryFitScore: number;
     fitRationale: string;
-    recommendedPersonas: Array<Omit<BuyerPersona, "id" | "prospectId">>;
+    recommendedPersonas: Array<Omit<BuyerPersona, "id" | "personId">>;
   }
 ) {
   const db = await readDb();
-  const prospect = db.prospects.find((item) => item.id === prospectId);
-  if (!prospect) throw new Error("Prospect not found");
-  Object.assign(prospect, {
-    summary: brief.summary,
-    painPoints: brief.painPoints,
-    securityRelevance: brief.securityRelevance,
-    smartSentryFitScore: brief.smartSentryFitScore,
-    fitRationale: brief.fitRationale,
-    status: "drafting" satisfies ProspectStatus,
+  const person = db.people.find((item) => item.id === personId);
+  if (!person) throw new Error("Person not found");
+  Object.assign(person, {
+    companySummary: brief.summary,
+    companyPainPoints: brief.painPoints,
+    companySecurityRelevance: brief.securityRelevance,
+    companyFitScore: brief.smartSentryFitScore,
+    companyFitRationale: brief.fitRationale,
     updatedAt: now()
   });
-  db.personas = db.personas.filter((item) => item.prospectId !== prospectId);
+  db.personas = db.personas.filter((item) => item.personId !== personId);
   db.personas.push(
     ...brief.recommendedPersonas.map((persona) => ({
       ...persona,
       id: id(),
-      prospectId
+      personId
     }))
   );
   db.activities.push({
     id: id(),
-    prospectId,
+    personId,
     type: "research_generated",
     message: "Generated company intelligence, fit score, and buyer personas.",
     createdAt: now()
@@ -186,65 +195,27 @@ export async function replaceResearchBrief(
   await writeDb(db);
 }
 
-export async function createContact(
-  prospectId: string,
-  input: Omit<Contact, "id" | "prospectId" | "confidenceScore" | "emailVerified" | "createdAt" | "updatedAt">
-) {
-  const db = await readDb();
-  const timestamp = now();
-  const contact: Contact = {
-    ...input,
-    id: id(),
-    prospectId,
-    confidenceScore: 50,
-    emailVerified: false,
-    createdAt: timestamp,
-    updatedAt: timestamp
-  };
-  db.contacts.push(contact);
-  db.activities.push({
-    id: id(),
-    prospectId,
-    type: "contact_created",
-    message: `Added contact ${contact.name || contact.title}. Email remains unverified until manually confirmed.`,
-    createdAt: timestamp
-  });
-  await writeDb(db);
-  return contact;
-}
-
-export async function updateContact(contactId: string, input: Partial<Contact>) {
-  const db = await readDb();
-  const index = db.contacts.findIndex((item) => item.id === contactId);
-  if (index === -1) throw new Error("Contact not found");
-  db.contacts[index] = { ...db.contacts[index], ...input, updatedAt: now() };
-  await writeDb(db);
-  return db.contacts[index];
-}
-
-export async function updateContactScore(
-  contactId: string,
+export async function updatePersonScore(
+  personId: string,
   score: { confidenceScore: number; relevanceReason: string; bestPersonaMatch?: string }
 ) {
   const db = await readDb();
-  const contact = db.contacts.find((item) => item.id === contactId);
-  if (!contact) throw new Error("Contact not found");
-  Object.assign(contact, { ...score, updatedAt: now() });
+  const person = db.people.find((item) => item.id === personId);
+  if (!person) throw new Error("Person not found");
+  Object.assign(person, { ...score, updatedAt: now() });
   db.activities.push({
     id: id(),
-    prospectId: contact.prospectId,
-    type: "contact_scored",
-    message: `Scored ${contact.name || contact.title} at ${score.confidenceScore}/100 for Smart Sentry relevance.`,
+    personId,
+    type: "person_scored",
+    message: `Scored ${person.name} at ${score.confidenceScore}/100 for Smart Sentry relevance.`,
     createdAt: now()
   });
   await writeDb(db);
 }
 
 export async function createOutreachDraft(
-  prospectId: string,
+  personId: string,
   input: {
-    contactId?: string;
-    candidateId?: string;
     personaId?: string;
     outreachResearchId?: string;
     subject: string;
@@ -262,11 +233,9 @@ export async function createOutreachDraft(
   const existingDraft = db.drafts
     .filter(
       (item) =>
-        item.prospectId === prospectId &&
+        item.personId === personId &&
         item.status !== "approved" &&
-        ((input.contactId && item.contactId === input.contactId) ||
-          (input.candidateId && item.candidateId === input.candidateId) ||
-          (input.outreachResearchId && item.outreachResearchId === input.outreachResearchId))
+        (!input.outreachResearchId || item.outreachResearchId === input.outreachResearchId)
     )
     .sort((a, b) => new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime())[0];
 
@@ -278,9 +247,9 @@ export async function createOutreachDraft(
     });
     db.activities.push({
       id: id(),
-      prospectId,
+      personId,
       type: "draft_updated",
-      message: "Updated the existing outreach draft for this contact.",
+      message: "Updated the existing outreach draft for this person.",
       createdAt: timestamp
     });
     await writeDb(db);
@@ -289,9 +258,7 @@ export async function createOutreachDraft(
 
   const draft: OutreachDraft = {
     id: id(),
-    prospectId,
-    contactId: input.contactId,
-    candidateId: input.candidateId,
+    personId,
     personaId: input.personaId,
     outreachResearchId: input.outreachResearchId,
     subject: input.subject,
@@ -307,14 +274,14 @@ export async function createOutreachDraft(
     updatedAt: timestamp
   };
   db.drafts.push(draft);
-  const prospect = db.prospects.find((item) => item.id === prospectId);
-  if (prospect) {
-    prospect.status = "drafting";
-    prospect.updatedAt = timestamp;
+  const person = db.people.find((item) => item.id === personId);
+  if (person) {
+    person.status = "drafting" satisfies PersonStatus;
+    person.updatedAt = timestamp;
   }
   db.activities.push({
     id: id(),
-    prospectId,
+    personId,
     type: "draft_created",
     message: "Generated a personalized outreach draft for manual review.",
     createdAt: timestamp
@@ -330,7 +297,7 @@ export async function deleteOutreachDraft(draftId: string) {
   db.drafts = db.drafts.filter((item) => item.id !== draftId);
   db.activities.push({
     id: id(),
-    prospectId: draft.prospectId,
+    personId: draft.personId,
     type: "draft_deleted",
     message: "Deleted an outreach draft.",
     createdAt: now()
@@ -347,14 +314,14 @@ export async function updateOutreachDraft(
   if (!draft) throw new Error("Draft not found");
   Object.assign(draft, { ...input, updatedAt: now() });
   if (input.status === "approved") {
-    const prospect = db.prospects.find((item) => item.id === draft.prospectId);
-    if (prospect) {
-      prospect.status = "approved";
-      prospect.updatedAt = now();
+    const person = db.people.find((item) => item.id === draft.personId);
+    if (person) {
+      person.status = "approved" satisfies PersonStatus;
+      person.updatedAt = now();
     }
     db.activities.push({
       id: id(),
-      prospectId: draft.prospectId,
+      personId: draft.personId,
       type: "draft_approved",
       message: "Approved outreach draft after manual review.",
       createdAt: now()
@@ -364,35 +331,51 @@ export async function updateOutreachDraft(
   return draft;
 }
 
-export async function addActivity(prospectId: string, type: string, message: string): Promise<Activity> {
+export async function addActivity(personId: string, type: string, message: string): Promise<Activity> {
   const db = await readDb();
-  const activity = { id: id(), prospectId, type, message, createdAt: now() };
+  const activity = { id: id(), personId, type, message, createdAt: now() };
   db.activities.push(activity);
   await writeDb(db);
   return activity;
 }
 
-export async function getLeadGenRuns(prospectId: string) {
+export async function getLeadGenRuns() {
   const db = await readDb();
-  return db.leadGenRuns
-    .filter((item) => item.prospectId === prospectId)
-    .sort((a, b) => new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime());
+  return db.leadGenRuns.slice().sort(sortUpdated);
 }
 
-export async function getLeadCandidatesForRun(prospectId: string, leadGenRunId: string) {
+export async function getLeadGenRun(runId: string) {
   const db = await readDb();
-  return db.leadCandidates.filter((item) => item.prospectId === prospectId && item.leadGenRunId === leadGenRunId);
+  return db.leadGenRuns.find((item) => item.id === runId) || null;
+}
+
+export async function getPeopleForLeadGenRun(leadGenRunId: string) {
+  const db = await readDb();
+  return db.people.filter((item) => item.leadGenRunId === leadGenRunId);
 }
 
 export async function upsertImportedLeadGenRun(input: {
   run: Omit<LeadGenRun, "id" | "createdAt" | "updatedAt">;
-  candidates: Array<Omit<LeadCandidate, "id" | "leadGenRunId" | "prospectId" | "createdAt" | "updatedAt">>;
+  candidates: Array<{
+    identityKey: string;
+    identityKeyType: CandidateIdentityKeyType;
+    linkedinUrl?: string;
+    fullName: string;
+    currentTitle?: string;
+    currentCompany?: string;
+    resolvedLocation?: string;
+    yearsAtCurrentRole?: number;
+    sourceQueryIds: string[];
+    sourceQueryNames?: string[];
+    sourceBuckets?: string[];
+    overlapCount: number;
+    artifactRefs?: Person["artifactRefs"];
+    notes?: string;
+  }>;
 }) {
   const db = await readDb();
   const timestamp = now();
-  const existingRun = db.leadGenRuns.find(
-    (item) => item.prospectId === input.run.prospectId && item.artifactRunId === input.run.artifactRunId
-  );
+  const existingRun = db.leadGenRuns.find((item) => item.artifactRunId === input.run.artifactRunId);
   let run: LeadGenRun;
 
   if (existingRun) {
@@ -408,109 +391,57 @@ export async function upsertImportedLeadGenRun(input: {
     db.leadGenRuns.push(run);
   }
 
-  const nextCandidates = [...db.leadCandidates];
   for (const candidateInput of input.candidates) {
-    const existingIndex = nextCandidates.findIndex(
+    const existingIndex = db.people.findIndex(
       (item) => item.leadGenRunId === run.id && item.identityKey === candidateInput.identityKey
     );
     if (existingIndex === -1) {
-      nextCandidates.push({
-        ...candidateInput,
+      db.people.push({
         id: id(),
+        status: "candidate",
+        name: candidateInput.fullName,
+        title: candidateInput.currentTitle,
+        emailVerified: false,
+        linkedinUrl: candidateInput.linkedinUrl,
+        location: candidateInput.resolvedLocation,
+        yearsAtCurrentRole: candidateInput.yearsAtCurrentRole,
+        source: "Lead generation",
+        notes: candidateInput.notes,
+        confidenceScore: 50,
+        companyName: candidateInput.currentCompany || run.seedCompanyName,
+        companyPainPoints: [],
+        companyFitScore: 0,
         leadGenRunId: run.id,
-        prospectId: run.prospectId,
+        identityKey: candidateInput.identityKey,
+        identityKeyType: candidateInput.identityKeyType,
+        sourceQueryIds: candidateInput.sourceQueryIds,
+        sourceQueryNames: candidateInput.sourceQueryNames,
+        sourceBuckets: candidateInput.sourceBuckets,
+        overlapCount: candidateInput.overlapCount,
+        artifactRefs: candidateInput.artifactRefs,
         createdAt: timestamp,
         updatedAt: timestamp
       });
       continue;
     }
-    const existing = nextCandidates[existingIndex];
-    nextCandidates[existingIndex] = {
+    const existing = db.people[existingIndex];
+    db.people[existingIndex] = {
       ...existing,
-      ...candidateInput,
-      id: existing.id,
-      leadGenRunId: run.id,
-      prospectId: run.prospectId,
-      importedContactId: existing.importedContactId,
-      status: existing.importedContactId ? "imported" : candidateInput.status,
-      createdAt: existing.createdAt,
+      title: candidateInput.currentTitle ?? existing.title,
+      linkedinUrl: existing.linkedinUrl || candidateInput.linkedinUrl,
+      companyName: candidateInput.currentCompany || existing.companyName,
+      location: candidateInput.resolvedLocation ?? existing.location,
+      yearsAtCurrentRole: candidateInput.yearsAtCurrentRole ?? existing.yearsAtCurrentRole,
+      sourceQueryIds: candidateInput.sourceQueryIds,
+      sourceQueryNames: candidateInput.sourceQueryNames,
+      sourceBuckets: candidateInput.sourceBuckets,
+      overlapCount: candidateInput.overlapCount,
+      artifactRefs: candidateInput.artifactRefs,
       updatedAt: timestamp
     };
   }
-  db.leadCandidates = nextCandidates;
-  db.activities.push({
-    id: id(),
-    prospectId: run.prospectId,
-    type: "leadgen_imported",
-    message: `Imported lead generation run ${run.artifactRunId}.`,
-    createdAt: timestamp
-  });
   await writeDb(db);
   return run;
-}
-
-export async function importLeadCandidateAsContact(prospectId: string, candidateId: string) {
-  const db = await readDb();
-  const candidate = db.leadCandidates.find((item) => item.id === candidateId && item.prospectId === prospectId);
-  if (!candidate) throw new Error("Lead candidate not found");
-
-  const normalizedLinkedin = candidate.linkedinUrl?.trim().toLowerCase();
-  const normalizedName = candidate.fullName.trim().toLowerCase();
-  const normalizedCompany = candidate.currentCompany?.trim().toLowerCase();
-  const existingContact = db.contacts.find((contact) => {
-    if (normalizedLinkedin && contact.linkedinUrl?.trim().toLowerCase() === normalizedLinkedin) return true;
-    const contactNotes = contact.notes?.trim().toLowerCase() || "";
-    return (
-      !normalizedLinkedin &&
-      contact.name.trim().toLowerCase() === normalizedName &&
-      (!normalizedCompany || contactNotes.includes(normalizedCompany))
-    );
-  });
-  const timestamp = now();
-  let contactId: string;
-
-  if (existingContact) {
-    contactId = existingContact.id;
-  } else {
-    const contact: Contact = {
-      id: id(),
-      prospectId,
-      name: candidate.fullName,
-      title: candidate.currentTitle || "",
-      email: undefined,
-      linkedinUrl: candidate.linkedinUrl,
-      source: "Lead generation",
-      confidenceScore: candidate.status === "accepted" ? 70 : 50,
-      relevanceReason: candidate.sourceQueryNames?.length
-        ? `Found by ${candidate.sourceQueryNames.join(", ")}.`
-        : "Imported from lead generation.",
-      notes:
-        [
-          candidate.currentCompany ? `Company: ${candidate.currentCompany}` : undefined,
-          candidate.resolvedLocation ? `Location: ${candidate.resolvedLocation}` : undefined
-        ]
-          .filter(Boolean)
-          .join(" | ") || undefined,
-      emailVerified: false,
-      createdAt: timestamp,
-      updatedAt: timestamp
-    };
-    db.contacts.push(contact);
-    contactId = contact.id;
-  }
-
-  db.leadCandidates = db.leadCandidates.map((item) =>
-    item.id === candidate.id ? { ...item, status: "imported", importedContactId: contactId, updatedAt: timestamp } : item
-  );
-  db.activities.push({
-    id: id(),
-    prospectId,
-    type: "candidate_imported",
-    message: `Imported ${candidate.fullName} as a contact.`,
-    createdAt: timestamp
-  });
-  await writeDb(db);
-  return contactId;
 }
 
 export async function createOutreachResearch(input: Omit<OutreachResearch, "id" | "createdAt" | "updatedAt">) {
@@ -527,20 +458,38 @@ export async function createOutreachResearch(input: Omit<OutreachResearch, "id" 
   return record;
 }
 
-export async function getContactById(prospectId: string, contactId: string) {
+export async function createOutreachJob(people: Array<{ id: string; name: string }>): Promise<OutreachJob> {
   const db = await readDb();
-  return db.contacts.find((item) => item.id === contactId && item.prospectId === prospectId) || null;
+  const timestamp = now();
+  const job: OutreachJob = {
+    id: id(),
+    items: people.map((person) => ({ personId: person.id, name: person.name, status: "pending" })),
+    createdAt: timestamp,
+    updatedAt: timestamp
+  };
+  db.outreachJobs.push(job);
+  await writeDb(db);
+  return job;
 }
 
-export async function getLeadCandidateById(prospectId: string, candidateId: string) {
+export async function getOutreachJob(jobId: string) {
   const db = await readDb();
-  return db.leadCandidates.find((item) => item.id === candidateId && item.prospectId === prospectId) || null;
+  return db.outreachJobs.find((item) => item.id === jobId) || null;
 }
 
-export async function getAllCandidates() {
+export async function updateOutreachJobItem(
+  jobId: string,
+  personId: string,
+  status: OutreachJobItemStatus,
+  errorMessage?: string
+) {
   const db = await readDb();
-  const prospectMap = new Map(db.prospects.map((p) => [p.id, p.companyName]));
-  return db.leadCandidates
-    .map((c) => ({ ...c, prospectCompanyName: prospectMap.get(c.prospectId) ?? "Unknown" }))
-    .sort((a, b) => a.fullName.localeCompare(b.fullName));
+  const job = db.outreachJobs.find((item) => item.id === jobId);
+  if (!job) return;
+  const item = job.items.find((entry) => entry.personId === personId);
+  if (!item) return;
+  item.status = status;
+  item.errorMessage = errorMessage;
+  job.updatedAt = now();
+  await writeDb(db);
 }

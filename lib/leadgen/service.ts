@@ -6,6 +6,9 @@ import { promisify } from "util";
 
 const execFileAsync = promisify(execFile);
 const leadGenRoot = path.join(process.cwd(), "lead_generation_mod");
+// "python3" isn't reliable on Windows: it often resolves to the Microsoft
+// Store app-execution-alias stub instead of a real interpreter.
+const systemPython = process.platform === "win32" ? "python" : "python3";
 
 export type LeadGenSeedPayload = {
   person_name: string;
@@ -42,14 +45,17 @@ export async function runLeadGeneration(seed: LeadGenSeedPayload, options: { num
 
   const args = ["-m", "exa_searching.cli", "run-seed", "--input", seedPath];
   if (options.numResults) args.push("--num-results", String(options.numResults));
-  const command = `python3 ${args.map((arg) => (arg.includes(" ") ? JSON.stringify(arg) : arg)).join(" ")}`;
+  const command = `${systemPython} ${args.map((arg) => (arg.includes(" ") ? JSON.stringify(arg) : arg)).join(" ")}`;
 
   try {
-    const { stdout, stderr } = await execFileAsync("python3", args, {
+    const { stdout, stderr } = await execFileAsync(systemPython, args, {
       cwd: leadGenRoot,
       env: {
         ...process.env,
-        PYTHONPATH: leadGenRoot
+        PYTHONPATH: leadGenRoot,
+        // Windows defaults stdout to the system codepage (e.g. cp1252) when piped,
+        // which throws on non-ASCII output instead of using UTF-8.
+        PYTHONIOENCODING: "utf-8"
       },
       maxBuffer: 1024 * 1024 * 8
     });
@@ -86,14 +92,17 @@ export async function runLeadGenerationExpansion(
   const args = ["-m", "exa_searching.cli", "run-expand", "--input", seedPath, "--total", String(options.total)];
   if (options.maxHops) args.push("--max-hops", String(options.maxHops));
   if (options.numResults) args.push("--num-results", String(options.numResults));
-  const command = `python3 ${args.map((arg) => (arg.includes(" ") ? JSON.stringify(arg) : arg)).join(" ")}`;
+  const command = `${systemPython} ${args.map((arg) => (arg.includes(" ") ? JSON.stringify(arg) : arg)).join(" ")}`;
 
   try {
-    const { stdout, stderr } = await execFileAsync("python3", args, {
+    const { stdout, stderr } = await execFileAsync(systemPython, args, {
       cwd: leadGenRoot,
       env: {
         ...process.env,
-        PYTHONPATH: leadGenRoot
+        PYTHONPATH: leadGenRoot,
+        // Windows defaults stdout to the system codepage (e.g. cp1252) when piped,
+        // which throws on non-ASCII output instead of using UTF-8.
+        PYTHONIOENCODING: "utf-8"
       },
       maxBuffer: 1024 * 1024 * 16
     });

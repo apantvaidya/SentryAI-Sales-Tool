@@ -1,4 +1,4 @@
-import type { BuyerPersona, Prospect, ProspectWorkspace } from "@/lib/data/types";
+import type { BuyerPersona, Person } from "@/lib/data/types";
 
 export function mockResearchBrief(input: {
   companyName: string;
@@ -48,8 +48,8 @@ export function mockResearchBrief(input: {
   };
 }
 
-export function mockContactScore(input: { prospect: Prospect; contactTitle: string; personas: BuyerPersona[] }) {
-  const title = input.contactTitle.toLowerCase();
+export function mockPersonScore(input: { person: Person; title: string; personas: BuyerPersona[] }) {
+  const title = input.title.toLowerCase();
   const persona =
     input.personas.find((item) =>
       item.roleTitles.some((role) => title.includes(role.toLowerCase().split(" ")[0]))
@@ -57,28 +57,25 @@ export function mockContactScore(input: { prospect: Prospect; contactTitle: stri
   const score = title.includes("security") ? 92 : title.includes("operations") || title.includes("facilities") ? 84 : 68;
   return {
     confidenceScore: score,
-    relevanceReason: `${input.contactTitle} likely has influence over physical security monitoring, site risk, or operational escalation decisions at ${input.prospect.companyName}.`,
+    relevanceReason: `${input.title} likely has influence over physical security monitoring, site risk, or operational escalation decisions at ${input.person.companyName}.`,
     bestPersonaMatch: persona?.personaName || "Security Director"
   };
 }
 
 export function mockEmail(input: {
-  workspace: ProspectWorkspace;
-  contactName?: string;
-  contactTitle?: string;
-  personaName?: string;
+  person: Person;
   tone: string;
 }) {
-  const company = input.workspace.prospect.companyName;
-  const firstName = input.contactName?.split(" ")[0] || "there";
+  const company = input.person.companyName;
+  const firstName = input.person.name?.split(" ")[0] || "there";
   const angle =
-    input.workspace.prospect.securityRelevance ||
+    input.person.companySecurityRelevance ||
     "Smart Sentry helps teams turn existing cameras into a proactive detection and escalation layer.";
   return {
     subject: `${company} security monitoring idea`,
     body: `Hi ${firstName},\n\nI’m reaching out because ${company} looks like the kind of organization where physical security teams may need more than passive video review. ${angle}\n\nSmart Sentry uses AI-assisted detection with human-in-the-loop escalation, so teams can focus on meaningful incidents while continuing to use existing camera infrastructure.\n\nWould it be useful to compare notes on where proactive monitoring could reduce response time or operator fatigue for your team?\n\nBest,\nSmart Sentry team`,
     personalizationNotes: [
-      `Review whether ${input.contactTitle || "this contact"} owns security monitoring or site operations.`,
+      `Review whether ${input.person.title || "this contact"} owns security monitoring or site operations.`,
       `Add one verified detail about ${company} before sending.`,
       `Confirm the email address manually before export or outreach.`
     ],

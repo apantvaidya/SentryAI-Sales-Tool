@@ -1,43 +1,40 @@
-import type { ProspectWorkspace } from "./data/types";
+import type { OutreachDraft, Person } from "./data/types";
 
 function escape(value: unknown) {
   const text = Array.isArray(value) ? value.join("; ") : String(value ?? "");
   return `"${text.replaceAll('"', '""')}"`;
 }
 
-export function prospectWorkspaceCsv(workspace: ProspectWorkspace) {
-  const contactRows = workspace.contacts.map((contact) => [
-    "contact",
-    workspace.prospect.companyName,
-    contact.name,
-    contact.title,
-    contact.email || "",
-    contact.emailVerified ? "verified" : "unverified",
-    contact.linkedinUrl || "",
-    contact.confidenceScore,
-    contact.relevanceReason || "",
-    contact.notes || "",
+export function personCsv(person: Person, drafts: OutreachDraft[]) {
+  const personRow = [
+    "person",
+    person.companyName,
+    person.name,
+    person.title || "",
+    person.email || "",
+    person.emailVerified ? "verified" : "unverified",
+    person.linkedinUrl || "",
+    person.confidenceScore,
+    person.relevanceReason || "",
+    person.notes || "",
     "",
     ""
-  ]);
+  ];
 
-  const draftRows = workspace.drafts.map((draft) => {
-    const contact = workspace.contacts.find((item) => item.id === draft.contactId);
-    return [
-      "draft",
-      workspace.prospect.companyName,
-      contact?.name || "",
-      contact?.title || "",
-      "",
-      draft.status,
-      "",
-      "",
-      draft.subject,
-      draft.body,
-      draft.validationRecommendation || "",
-      draft.sourceUrls || []
-    ];
-  });
+  const draftRows = drafts.map((draft) => [
+    "draft",
+    person.companyName,
+    person.name,
+    person.title || "",
+    "",
+    draft.status,
+    "",
+    "",
+    draft.subject,
+    draft.body,
+    draft.validationRecommendation || "",
+    draft.sourceUrls || []
+  ]);
 
   const rows = [
     [
@@ -54,7 +51,7 @@ export function prospectWorkspaceCsv(workspace: ProspectWorkspace) {
       "validationRecommendation",
       "sourceUrls"
     ],
-    ...contactRows,
+    personRow,
     ...draftRows
   ];
 
