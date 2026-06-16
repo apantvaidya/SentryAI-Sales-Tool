@@ -48,11 +48,7 @@ source .venv/bin/activate
 pip install -e .[dev]
 ```
 
-2. Copy `.env.example` to `.env`.
-
-```bash
-cp .env.example .env
-```
+2. From the repo root, copy `.env.example` to `.env` and fill in the keys below. `load_dotenv()` walks up from this package to the repo root, so the root `.env` is picked up automatically — no separate `warm_outreach/.env` is needed.
 
 3. Set environment variables:
 
