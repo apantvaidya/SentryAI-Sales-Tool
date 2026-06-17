@@ -13,7 +13,7 @@ import { EnrichResultDialog } from "./EnrichResultDialog";
 type SortKey = "name" | "title" | "companyName" | "campaignId" | "location" | "status" | "confidenceScore";
 type SortDirection = "asc" | "desc";
 
-const PERSON_STATUSES: PersonStatus[] = ["candidate", "new", "drafting", "approved", "contacted"];
+const PERSON_STATUSES: PersonStatus[] = ["candidate", "new", "drafting", "failed", "approved", "contacted"];
 
 // Shared between the header, filter, and virtualized body rows so columns stay aligned.
 const GRID_TEMPLATE_COLUMNS =
@@ -47,6 +47,7 @@ function StatusBadge({ status }: { status: PersonStatus }) {
   const cls =
     status === "approved" ? "bg-emerald-50 text-emerald-700" :
     status === "contacted" ? "bg-blue-50 text-blue-700" :
+    status === "failed" ? "bg-red-50 text-red-700" :
     status === "drafting" ? "bg-amber-50 text-amber-700" :
     status === "new" ? "bg-sentry-50 text-sentry-800" :
     "bg-slate-100 text-slate-600";

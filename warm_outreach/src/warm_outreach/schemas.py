@@ -37,6 +37,7 @@ class PersonaClassification(BaseModel):
 class ResearchQueries(BaseModel):
     company_context_queries: list[str] = Field(default_factory=list)
     local_crime_queries: list[str] = Field(default_factory=list)
+    recent_incident_queries: list[str] = Field(default_factory=list)
     role_specific_risk_queries: list[str] = Field(default_factory=list)
 
 

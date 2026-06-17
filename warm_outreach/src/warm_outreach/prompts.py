@@ -60,6 +60,7 @@ You are generating public web research queries for SmartSentryAI warm outreach.
 Generate exactly:
 - 2 company context queries
 - 2 local crime/public safety queries
+- 2 recent incident queries
 - 2 role-specific risk queries
 
 Rules:
@@ -69,7 +70,13 @@ Rules:
 - Prefer official company, city, county, police, FBI, and reputable sources.
 - For local crime/public safety, make one query target official city/county/police data dashboards or reports with numeric statistics.
 - Make the second local crime/public safety query target a recent relevant incident or pattern in the same area.
+- Recent incident queries must search for specific public incidents from the last few months that match the lead's role and likely sites.
+- For construction/facilities roles, recent incident queries should target construction site theft, equipment theft, copper theft, trespass, burglary, vandalism, or after-hours site access.
+- For asset protection/loss prevention/retail roles, recent incident queries should target retail theft, shoplifting, organized retail theft, robbery, burglary, or store safety incidents.
+- For physical security/operations roles, recent incident queries should target trespass, burglary, vandalism, lot activity, theft, robbery, or public-safety incidents relevant to multi-site operations.
+- Include recency language such as "recent", "last month", "2026", or "past few months" in recent incident queries.
 - If location is missing, use company + role-specific risk queries and set local crime queries to broader company footprint or industry risk.
+- If location is missing, recent incident queries should use the company footprint, metro/state, or industry context without implying a specific local site.
 - Return strict JSON only matching the schema.
 
 Lead:
@@ -87,6 +94,10 @@ Example for Tesla + Staff Construction Manager + Bay Area:
   "local_crime_queries": [
     "Bay Area police crime data theft burglary vehicle theft",
     "Santa Clara County crime dashboard property crime vehicle theft burglary"
+  ],
+  "recent_incident_queries": [
+    "recent Bay Area construction site theft equipment theft copper theft 2026",
+    "recent Santa Clara County commercial burglary construction site trespass theft"
   ],
   "role_specific_risk_queries": [
     "construction site theft trespassing equipment theft after hours security",
@@ -114,7 +125,7 @@ def summarize_evidence_prompt(
             "snippet": _trim_text(result.snippet, 700),
             "raw_content": _trim_text(result.raw_content, 1200),
         }
-        for result in search_results[:12]
+        for result in search_results[:18]
     ]
     return f"""
 You are summarizing retrieved public evidence for SmartSentryAI warm outreach.
@@ -128,11 +139,13 @@ Rules:
 - If evidence is weak, use cautious language.
 - Preserve source URLs in source_urls.
 - When public-safety or crime context exists, prefer including one specific, supported local or regional risk in safe_claims, such as property crime, vehicle theft, burglary, trespassing, or copper theft.
+- Prefer recent, role-relevant incidents from recent_incident_queries when they are source-backed, especially incidents from the past few months.
 - For construction and facilities personas, prefer concrete risks like after-hours access, trespass, equipment theft, material theft, copper theft, or lot activity when supported by sources.
 - Distinguish between company-context claims and public-safety-context claims.
 - Prefer official government sources and reputable local news over generic vendor blogs or social pages.
 - If a numeric local statistic is available, include at least one safe claim with the number and timeframe.
-- If a recent relevant incident is available, include at least one safe claim with the date or year and the incident type.
+- If a recent relevant incident is available, include at least one safe claim with the date/month/year, geography, and incident type.
+- Recent incident claims must be phrased as public local/regional context, not as incidents involving the lead's company unless the source explicitly says so.
 - Do not fabricate numbers, dates, trend direction, or comparisons.
 - Return strict JSON only matching the schema.
 
@@ -168,6 +181,7 @@ Rules:
 - Use tenure only if provided and natural.
 - Be specific and personalized using the lead's actual role, company, tenure, and location or operating scope when available.
 - Use the evidence summary to include a concrete, supported local risk or operational issue.
+- Prefer a recent, source-backed specific incident when one is available and relevant to the person's role.
 - If geography is supported only broadly, say so in broad terms such as "Austin/Travis County reporting" rather than implying the exact site had incidents.
 - You must mention at least one concrete local or regional risk or public-safety issue from evidence.safe_claims when evidence confidence is medium or high.
 - Use "we" voice.
@@ -192,13 +206,13 @@ Best,
 - If no sender name is provided, use "SmartSentryAI".
 
 - Generate `crime_stat_sentence` using public, source-backed crime or security data relevant to the lead's role, company type, and location.
-- Prioritize recent stats.
+- Prioritize recent stats or recent specific incidents from the last few months.
 
 - Role-to-stat matching:
   - Asset Protection / Loss Prevention:
     Use retail theft, shoplifting, organized retail crime, commercial burglary, shrink, repeat theft, robbery, or store safety stats.
   - Construction:
-    Use construction site theft, equipment theft, trespass, burglary, vandalism, after-hours property crime, or commercial theft stats.
+    Use construction site theft, equipment theft, copper theft, material theft, trespass, burglary, vandalism, after-hours property crime, or commercial theft incidents/stats.
   - Facilities:
     Use burglary, vandalism, trespass, after-hours incidents, property crime, or facility security stats.
   - Physical Security / Security Operations:
@@ -226,6 +240,8 @@ Best,
 - Good formats for `crime_stat_sentence`:
   - "Retail theft seems especially relevant for AP teams in {{area}} right now: {{source}} reported {{specific_stat}}, while {{second_source}} found {{specific_stat}}."
   - "For {{industry}} operators in {{area}}, {{crime_category}} is a relevant issue: {{source}} reported {{specific_stat}} in {{time_period}}."
+  - "A recent {{area}} report about {{incident_type}} seemed relevant to {{role_relevance}} teams because it involved {{operational_risk}}."
+  - "Recent local reporting in {{area}} described {{incident_type}}, which maps to practical concerns like {{operational_risk}} and after-hours visibility."
   - "Public safety data in {{area}} points to recurring {{crime_category}} issues, with {{source}} reporting {{specific_stat}}."
   - "At the statewide level, {{source}} reported {{specific_stat}}, which seemed relevant given your work in {{role_relevance}}."
   - "For {{persona_type}} teams, {{crime_category}} is a concrete operating concern: {{source}} reported {{specific_stat}} in {{area_or_scope}}."

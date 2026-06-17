@@ -23139,7 +23139,7 @@
     },
     {
       "id": "07a77303-6708-4994-92a8-7c5079b111dc",
-      "status": "failed",
+      "status": "candidate",
       "name": "Michael Cauraugh",
       "title": "Asset Protection Manager",
       "emailVerified": false,
@@ -23184,7 +23184,7 @@
         ]
       },
       "createdAt": "2026-06-11T02:03:33.691Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T01:57:11.403Z",
       "campaignId": "5561a8b2-a0f5-45a4-acf1-4216477b23ac",
       "email": "michael.cauraugh@safeway.com"
     },
@@ -37691,7 +37691,7 @@
     {
       "id": "b2cb203d-e647-4ef1-b185-bbf6dc9c249e",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Luis Rodriguez",
       "title": "District Asset Protection Manager",
       "email": "luis.rodriguez@albertsons.com",
@@ -37704,7 +37704,7 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "San Diego, California, United States",
       "sourceQueryIds": [],
       "sourceQueryNames": [],
@@ -37714,7 +37714,7 @@
     {
       "id": "9ed46c8e-0b10-431c-a85a-3cf3550e5692",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Christopher Colon",
       "title": "Loss Prevention Supervisor",
       "email": "christopher.colon@wincofoods.com",
@@ -37727,7 +37727,7 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Temecula, California, United States",
       "sourceQueryIds": [],
       "sourceQueryNames": [],
@@ -37737,7 +37737,7 @@
     {
       "id": "a59ad04c-1692-4aa9-8f93-23f3d776a1f3",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Lorena Velazquez Mejia",
       "title": "Regional Loss Prevention Manager",
       "email": "lorena.velazquez@sherwin.com",
@@ -37750,7 +37750,7 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Orange, California, United States",
       "sourceQueryIds": [],
       "sourceQueryNames": [],
@@ -37760,7 +37760,7 @@
     {
       "id": "3080a69c-fc8d-485f-8202-6270acd349c1",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Nick Haynes",
       "title": "District Loss Prevention Manager",
       "email": "nick.haynes@ralphs.com",
@@ -37773,7 +37773,7 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Orange County, California, United States",
       "sourceQueryIds": [],
       "sourceQueryNames": [],
@@ -37806,7 +37806,7 @@
     {
       "id": "4a2bedea-0cdd-4c8a-95f1-05a3367a61f5",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Joseph Cervantes",
       "title": "Asset Protection District Manager",
       "email": "joseph.cervantes@vallartasupermarkets.com",
@@ -37819,7 +37819,7 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Bakersfield, California, United States",
       "sourceQueryIds": [],
       "sourceQueryNames": [],
@@ -37829,7 +37829,7 @@
     {
       "id": "b52ffb22-1ab8-48f6-9688-d3730a170610",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Jason Link",
       "title": "Field Operations and Safety Manager",
       "email": "jason.link@dickssportinggoods.com",
@@ -37842,7 +37842,7 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Laguna Niguel, California, United States",
       "sourceQueryIds": [],
       "sourceQueryNames": [],
@@ -37852,7 +37852,7 @@
     {
       "id": "c4e80a34-214c-43e1-82e6-241f65eda401",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Irene Bonner-Whaley",
       "title": "Asset Protection Associate",
       "email": "irene_whaley@genpt.com",
@@ -37865,7 +37865,7 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Sacramento, California, United States",
       "sourceQueryIds": [],
       "sourceQueryNames": [],
@@ -37875,7 +37875,7 @@
     {
       "id": "b9209dc1-8053-4b56-b45f-de20b37da2d0",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Domingo Palacios",
       "title": "Loss Prevention",
       "email": "domingo.palacios@fashionnova.com",
@@ -37888,7 +37888,7 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Garden Grove, California, United States",
       "sourceQueryIds": [],
       "sourceQueryNames": [],
@@ -37898,7 +37898,7 @@
     {
       "id": "62dffd43-73ef-409e-ad79-18ef4d2e13e7",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Jose Escobar",
       "title": "Asset Protection Manager",
       "email": "jose.escobar@bloomingdales.com",
@@ -37912,7 +37912,7 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "sourceQueryIds": [
         "01",
         "02",
@@ -37938,7 +37938,7 @@
     {
       "id": "5b3af1b4-f716-4720-9751-e118e6326cf8",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Shawn Ducat",
       "title": "Sr. Asset Protection  Manager",
       "email": "shawn.ducat@savemart.com",
@@ -37952,7 +37952,7 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "sourceQueryIds": [
         "02",
         "04",
@@ -37972,7 +37972,7 @@
     {
       "id": "dcc39fb9-0b38-426d-9572-503f7352c9d6",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Vicki Yau",
       "title": "Sr. Manager, Loss Prevention Operations",
       "email": "vyau@williams-sonomainc.com",
@@ -37985,7 +37985,7 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "San Francisco Bay Area",
       "sourceQueryIds": [],
       "sourceQueryNames": [],
@@ -37995,7 +37995,7 @@
     {
       "id": "f1e27813-7e34-408c-a599-a5c72668c9f6",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Chris Yamashita",
       "title": "Regional Loss Prevention Auditor",
       "email": "ccfi@lpinnovations.com",
@@ -38008,7 +38008,7 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Los Angeles, California, United States",
       "sourceQueryIds": [],
       "sourceQueryNames": [],
@@ -38018,7 +38018,7 @@
     {
       "id": "7dce1cc8-4ae2-4478-9b01-f820dd7aedcc",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Stuart Najarro",
       "title": "Operations Manager",
       "email": "stuart@lyonssecurityinc.com",
@@ -38031,13 +38031,13 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Anaheim, California, United States"
     },
     {
       "id": "4fa90004-456c-4a9f-a895-00e9a132d926",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Brian Kennedy",
       "title": "Security / Risk Manager",
       "email": "brian@eliteservicesusa.com",
@@ -38050,13 +38050,13 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "San Diego, California, United States"
     },
     {
       "id": "c831389d-12d1-4586-8c95-a416a1a0c044",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Salvador Sanchez Rios",
       "title": "Security Manager",
       "email": "srios@pscsite.com",
@@ -38069,7 +38069,7 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Artesia, California, United States",
       "sourceQueryIds": [],
       "sourceQueryNames": [],
@@ -38079,7 +38079,7 @@
     {
       "id": "9a6530a0-c6a1-4ab8-bfea-c74f1eaeea34",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "David Rivera",
       "title": "Security Group Lead",
       "email": "david.rivera@point1.com",
@@ -38092,13 +38092,13 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Livermore, California, United States"
     },
     {
       "id": "8c47c89b-5068-4d45-94af-1e15641863ce",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Adrian Aguirre",
       "title": "District Loss Prevention Specialist",
       "email": "aaguirre@superiorgrocers.com",
@@ -38112,7 +38112,7 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "sourceQueryIds": [
         "04",
         "05"
@@ -38129,7 +38129,7 @@
     {
       "id": "74fa0430-6bd2-41b4-8861-8a7120ec713d",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "David Bollington",
       "title": "Loss Prevention Officer",
       "email": "dboll@acehardware.com",
@@ -38142,7 +38142,7 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Lincoln, California, United States",
       "sourceQueryIds": [],
       "sourceQueryNames": [],
@@ -38152,7 +38152,7 @@
     {
       "id": "8f818e51-472f-46a9-90a8-9a1a517f5be1",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Chad Gundlach",
       "title": "Senior Solutions Manager, Inventory Intelligence and Loss Prevention",
       "email": "cgundlach@tycoint.com",
@@ -38165,7 +38165,7 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Ladera Ranch, California, United States",
       "sourceQueryIds": [],
       "sourceQueryNames": [],
@@ -38175,7 +38175,7 @@
     {
       "id": "00e95dc0-e447-4d4c-9195-d90151bab355",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Joseph Rivera",
       "title": "Corporate Investigator",
       "email": "joseph.rivera@staterbros.com",
@@ -38187,13 +38187,13 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Temecula, California, United States"
     },
     {
       "id": "eb543457-0966-4c31-87ef-4cd436d26f96",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Rey Rodriguez",
       "title": "Zone Director of Asset Protection",
       "email": "rrodriguez@familydollar.com",
@@ -38206,7 +38206,7 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Los Angeles Metropolitan Area",
       "sourceQueryIds": [],
       "sourceQueryNames": [],
@@ -38216,7 +38216,7 @@
     {
       "id": "f2f6c463-5858-4dde-ad59-50ceb38dd07c",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Bobby Sydnor",
       "title": "Director, Asset Protection",
       "email": "robert.sydnor@hdsupply.com",
@@ -38229,7 +38229,7 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Murrieta, California, United States",
       "sourceQueryIds": [],
       "sourceQueryNames": [],
@@ -38239,7 +38239,7 @@
     {
       "id": "f7d6716f-46c1-4325-b824-f7f28084244d",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Christine Wybenga",
       "title": "Business Development Strategist | Fire & Security Specialist",
       "email": "christinew@deltafire-security.com",
@@ -38252,7 +38252,7 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "San Francisco Bay Area",
       "sourceQueryIds": [],
       "sourceQueryNames": [],
@@ -38262,7 +38262,7 @@
     {
       "id": "67b465fe-bc5b-4704-a7ed-4fd5c2e5f1e5",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Christopher Brinkman",
       "title": "Sr. Manager, Asset Protection & Safety",
       "email": "cbrinkman@petsmart.com",
@@ -38275,7 +38275,7 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Lodi, California, United States",
       "sourceQueryIds": [],
       "sourceQueryNames": [],
@@ -38285,7 +38285,7 @@
     {
       "id": "436855e9-8ee8-40f6-97ea-645bdeaa8673",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Arlyn (Nagtalon) Lopez",
       "title": "Fire & Security Alarm Designer",
       "email": "arlyn.l@vfsfire.com",
@@ -38298,13 +38298,13 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Orange, California, United States"
     },
     {
       "id": "053a822b-464e-44de-95e6-610129faaa32",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Michael Mello",
       "title": "Senior Security Consultant/Law Enforcement Liaison",
       "email": "mmello@eliteinteractivesolutions.com",
@@ -38317,13 +38317,13 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Los Angeles, California, United States"
     },
     {
       "id": "d78a5035-0595-4c36-a479-b71115d7103b",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Jason B",
       "title": "Vice President Security Division",
       "email": "jbeardsley@hcisystems.net",
@@ -38336,13 +38336,13 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Pomona, California, United States"
     },
     {
       "id": "b292b410-1f0c-4dab-8ff5-623a86d1ae45",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Emma (Barlow) Doppert",
       "title": "Remote Managed IP & Security Services, Restaurant & Retail Division",
       "email": "emma.doppert@interfacesystems.com",
@@ -38355,13 +38355,13 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Rancho Santa Margarita, California, United States"
     },
     {
       "id": "7e5c75dd-9cae-4ac2-9a80-874894b4d378",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Mike Barton",
       "title": "Director, Loss Prevention",
       "email": "mbarton@hottopic.com",
@@ -38374,7 +38374,7 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Los Angeles Metropolitan Area",
       "sourceQueryIds": [],
       "sourceQueryNames": [],
@@ -38384,7 +38384,7 @@
     {
       "id": "a9413fd9-a121-41db-b66a-122395a70064",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Guillermo Gonzalez",
       "title": "Loss Prevention Auditor/ Brand specialist",
       "email": "gg@dtiq.com",
@@ -38396,7 +38396,7 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Los Angeles, California, United States",
       "sourceQueryIds": [],
       "sourceQueryNames": [],
@@ -38406,7 +38406,7 @@
     {
       "id": "168a4062-b39c-4339-9931-08dd1817fb4f",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Cindy Spurgeon",
       "title": "Director - Corporate Loss Prevention, Safety",
       "email": "cspurgeon@lakeshorelearning.com",
@@ -38419,7 +38419,7 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Los Angeles, California, United States",
       "sourceQueryIds": [],
       "sourceQueryNames": [],
@@ -38429,7 +38429,7 @@
     {
       "id": "dd7b4828-ac9d-4925-83db-d0b7a4f8bb12",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Sohrab Payind",
       "title": "Founder & Security Operations Leader",
       "email": "tommy@englishlanguage.club",
@@ -38442,13 +38442,13 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Calabasas, California, United States"
     },
     {
       "id": "860352e6-21f1-4a76-828a-26ab32f118d7",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Wilman (Willie) Herrera",
       "title": "Security Integrations Manager",
       "email": "wherrera@pyrocomm.systems",
@@ -38461,13 +38461,13 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Winchester, California, United States"
     },
     {
       "id": "39afc265-b446-441d-b28b-f486709edbbc",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Derek Martin",
       "title": "Application Engineer",
       "email": "demartin@everonsolutions.com",
@@ -38480,13 +38480,13 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Fremont, California, United States"
     },
     {
       "id": "7ca135dc-8f4c-46d3-96dc-6981215f79fe",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Kevin Hackie",
       "title": "Private Investigator | Corporate Security Advisor",
       "email": "kevinh@blueknightprotection.com",
@@ -38499,7 +38499,7 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T01:57:11.398Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:17:38.425Z",
       "location": "Los Angeles Metropolitan Area",
       "sourceQueryIds": [],
       "sourceQueryNames": [],
@@ -38509,7 +38509,7 @@
     {
       "id": "21e03a14-1087-4788-b870-7cb0120df196",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Michael S. Riensch",
       "title": "Lead Investigator - Global Security",
       "email": "mr3022@att.com",
@@ -38521,13 +38521,13 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T02:16:04.352Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:22:50.995Z",
       "location": "El Dorado Hills, California, United States"
     },
     {
       "id": "542c20a1-16df-484d-8ebc-558885dc6c65",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Dan Solero",
       "title": "Assistant Vice President, Chief Security Office",
       "email": "ds3874@att.com",
@@ -38539,13 +38539,13 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T02:16:04.352Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:22:52.119Z",
       "location": "Rockwall, Texas, United States"
     },
     {
       "id": "80fe6309-00ca-4fbc-b28c-49aad49f4ad5",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Jean-Claude Rizk",
       "title": "Director of Public Safety Solutions",
       "email": "jr5503@att.com",
@@ -38557,13 +38557,13 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T02:16:04.352Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:22:53.084Z",
       "location": "Nashville Metropolitan Area"
     },
     {
       "id": "b6ca6730-ea13-49a3-82bb-a3203c88f53a",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Brian Trusky, CSP, CHST",
       "title": "Vice President of Loss Prevention",
       "email": "btrusky@coastalconstruction.com",
@@ -38575,13 +38575,13 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T02:16:04.352Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:22:53.889Z",
       "location": "Miami, Florida, United States"
     },
     {
       "id": "f79267e6-8aed-4cee-a433-1c68895823ea",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Scott Barker",
       "title": "Manager of Physical Security",
       "email": "scott.barker@aes.com",
@@ -38593,13 +38593,13 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T02:16:04.352Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:22:54.920Z",
       "location": "Phoenix, Arizona, United States"
     },
     {
       "id": "3605989a-5562-446e-90dc-118238811ce3",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Camille D'Andgerio",
       "title": "Head of Corporate Security- Global Physical Security, Security Investigations, Event Security, and Executive Protection",
       "email": "camille.d-andgerio@amd.com",
@@ -38611,13 +38611,13 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T02:16:04.352Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:22:55.910Z",
       "location": "Paris, Île-de-France, France"
     },
     {
       "id": "33ef2042-f550-4fcd-944a-a09f4a5e3e06",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Curtis Tomlinson",
       "title": "Director Corporate Security Investigations at AMD with expertise in risk mitigation and compliance",
       "email": "curtis.tomlinson@amd.com",
@@ -38629,13 +38629,13 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T02:16:04.352Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:22:57.398Z",
       "location": "Granbury, Texas, United States"
     },
     {
       "id": "4ec94531-c467-4427-b88a-c18a3f818a24",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Matt Frisby",
       "title": "Director Physical Security Northern America",
       "email": "mfrisby@google.com",
@@ -38647,13 +38647,13 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T02:16:04.352Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:22:58.272Z",
       "location": "Morgan Hill, California, United States"
     },
     {
       "id": "cadf861b-a6ef-4c6c-bc48-06451b0cfd9e",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Kevin Kilgore",
       "title": "Senior Physical Security and Investigations Leader | Data Center Security @ Google | Ex-Meta | Ret. Chief Deputy U.S. Marshal | Problem Solver | Risk Advisor |",
       "email": "kkilgore@google.com",
@@ -38665,13 +38665,13 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T02:16:04.352Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:22:59.490Z",
       "location": "Greater Bend Area"
     },
     {
       "id": "1c092bbf-26f6-4bc3-ba5e-9303dd9727c3",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Randall Andrews",
       "title": "Corporate Security Manager",
       "email": "randall.andrews@bestbuy.com",
@@ -38683,13 +38683,13 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T02:16:04.352Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:23:00.515Z",
       "location": "Schererville, Indiana, United States"
     },
     {
       "id": "01577861-0d4a-4894-b3c7-1b68d5c95f99",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Andy T.",
       "title": "Physical Security Management",
       "email": "ndy.tsai@broadcom.com",
@@ -38701,13 +38701,13 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T02:16:04.352Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:23:01.408Z",
       "location": "Orange County, California, United States"
     },
     {
       "id": "6b86ae47-e63a-4bd7-b74b-07b0c1e979df",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Jesus Rosario",
       "title": "Security Officer",
       "email": "jrosario@clevelandclinic.org",
@@ -38719,13 +38719,13 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T02:16:04.352Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:23:02.201Z",
       "location": "Norwalk, Connecticut, United States"
     },
     {
       "id": "30a02c3d-9f8e-4f83-a951-2e88108a9e25",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "William Shelton",
       "title": "Manager Global Security",
       "email": "william_shelton@homedepot.com",
@@ -38737,13 +38737,13 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T02:16:04.352Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:23:03.156Z",
       "location": "United States"
     },
     {
       "id": "1b605b30-011e-43c0-9311-74237426751d",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Sean Dessources",
       "title": "Sr. Manager Asset Protection at The Home Depot",
       "email": "sean_dessources@homedepot.com",
@@ -38755,13 +38755,13 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T02:16:04.352Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:23:04.023Z",
       "location": "Marietta, Georgia, United States"
     },
     {
       "id": "47b3a836-5103-471d-9bac-a0f577809f7f",
       "campaignId": "d4bd82af-b5d8-457a-aeea-00c9c36c982b",
-      "status": "failed",
+      "status": "new",
       "name": "Russell Hiett",
       "title": "Physical Security Manager @ Intel Corporation",
       "email": "russel.hiett@intel.com",
@@ -38773,7 +38773,7 @@
       "companyPainPoints": [],
       "companyFitScore": 0,
       "createdAt": "2026-06-17T02:16:04.352Z",
-      "updatedAt": "2026-06-17T07:31:22.031Z",
+      "updatedAt": "2026-06-17T02:23:04.802Z",
       "location": "Scottsdale, Arizona, United States"
     },
     {
@@ -208808,363 +208808,6 @@
       "type": "outreach_failed",
       "message": "Warm outreach pipeline failed before producing a draft.",
       "createdAt": "2026-06-17T07:16:48.907Z"
-    },
-    {
-      "id": "230b1d2a-a94b-4497-a019-7c789b51f804",
-      "personId": "07a77303-6708-4994-92a8-7c5079b111dc",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "d75bf77a-4e9f-46a4-aa17-0f000ab18032",
-      "personId": "47b3a836-5103-471d-9bac-a0f577809f7f",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "b2f1bbcb-284c-4f48-b834-93069ccfff8b",
-      "personId": "1b605b30-011e-43c0-9311-74237426751d",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "ea2b6cee-d20a-4ffd-bc09-9c344085c927",
-      "personId": "30a02c3d-9f8e-4f83-a951-2e88108a9e25",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "026d5fc9-050a-4356-8101-c5468fc95738",
-      "personId": "6b86ae47-e63a-4bd7-b74b-07b0c1e979df",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "7357d765-87a2-4006-9f7e-e1826c65245b",
-      "personId": "01577861-0d4a-4894-b3c7-1b68d5c95f99",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "f4938fa3-c73a-42f3-b6ec-00f9803d8781",
-      "personId": "1c092bbf-26f6-4bc3-ba5e-9303dd9727c3",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "22e27d12-6444-4083-8685-0fec07846547",
-      "personId": "cadf861b-a6ef-4c6c-bc48-06451b0cfd9e",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "a859f1e3-2d10-4975-8db3-ad926563f825",
-      "personId": "4ec94531-c467-4427-b88a-c18a3f818a24",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "6b170b1d-c255-4d95-8059-7a352a4ab8f6",
-      "personId": "33ef2042-f550-4fcd-944a-a09f4a5e3e06",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "88b3e937-327b-4db0-b155-acfa1578cd8b",
-      "personId": "3605989a-5562-446e-90dc-118238811ce3",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "9cafa859-a12b-496a-b60c-51dfc4e882b0",
-      "personId": "f79267e6-8aed-4cee-a433-1c68895823ea",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "95e578ed-f1bc-4bd4-a7d2-7901d6ad9684",
-      "personId": "b6ca6730-ea13-49a3-82bb-a3203c88f53a",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "7da5fca7-4e05-449c-8433-86919780154c",
-      "personId": "80fe6309-00ca-4fbc-b28c-49aad49f4ad5",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "8037be15-7e13-4657-8ee2-c25785af2df6",
-      "personId": "542c20a1-16df-484d-8ebc-558885dc6c65",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "3a240b7e-677d-4b2c-8083-b4dd45d83d3b",
-      "personId": "21e03a14-1087-4788-b870-7cb0120df196",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "133f2f6a-7e0b-4115-824f-a4d18e49f8b3",
-      "personId": "b2cb203d-e647-4ef1-b185-bbf6dc9c249e",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "7906964d-087e-47e2-99d8-5b22c4cab79c",
-      "personId": "9ed46c8e-0b10-431c-a85a-3cf3550e5692",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "8ccfec51-4e67-4423-9329-8cd1f5b3fb8e",
-      "personId": "a59ad04c-1692-4aa9-8f93-23f3d776a1f3",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "ee2c215e-0e4b-4a46-a4aa-51b5fd039813",
-      "personId": "3080a69c-fc8d-485f-8202-6270acd349c1",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "8c642fb3-40f0-43b4-a2d1-bda6933025b4",
-      "personId": "4a2bedea-0cdd-4c8a-95f1-05a3367a61f5",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "70b28634-1ab3-4e5e-8bb7-bd5d8dc29f99",
-      "personId": "b52ffb22-1ab8-48f6-9688-d3730a170610",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "b2d1df5b-581f-4325-ae7a-2aec306148e3",
-      "personId": "c4e80a34-214c-43e1-82e6-241f65eda401",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "ab130cbb-0d7c-48c8-86e8-073946789e6e",
-      "personId": "b9209dc1-8053-4b56-b45f-de20b37da2d0",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "110a35ea-f9ba-4746-afe1-13cb79188d17",
-      "personId": "62dffd43-73ef-409e-ad79-18ef4d2e13e7",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "2a354de6-9fde-4d1d-969a-07d4ea354d9c",
-      "personId": "5b3af1b4-f716-4720-9751-e118e6326cf8",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "1ed68d0e-3e27-428c-8ed8-4a3bfabf0766",
-      "personId": "dcc39fb9-0b38-426d-9572-503f7352c9d6",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "dfda9aec-7beb-43f3-814a-6202066efac4",
-      "personId": "f1e27813-7e34-408c-a599-a5c72668c9f6",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "73b8f001-beee-4ba7-a8b5-be2511b1447a",
-      "personId": "7dce1cc8-4ae2-4478-9b01-f820dd7aedcc",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "2d870599-ae63-45f0-b1bd-f2eab86545f9",
-      "personId": "4fa90004-456c-4a9f-a895-00e9a132d926",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "31e261c5-a48e-44e9-af1b-61006fca976c",
-      "personId": "c831389d-12d1-4586-8c95-a416a1a0c044",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "060a90d2-7bbf-4ea4-bbab-e1087e92d156",
-      "personId": "9a6530a0-c6a1-4ab8-bfea-c74f1eaeea34",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "287fd695-de84-4cc6-acf2-7d3fb8729d85",
-      "personId": "8c47c89b-5068-4d45-94af-1e15641863ce",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "e0a70f69-0bf6-46b4-b328-bc1bb824d6fe",
-      "personId": "74fa0430-6bd2-41b4-8861-8a7120ec713d",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "eb96b745-eb9d-42cf-98ba-5f874fc2b824",
-      "personId": "8f818e51-472f-46a9-90a8-9a1a517f5be1",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "6969154f-5969-484a-adbd-b50097b2a012",
-      "personId": "00e95dc0-e447-4d4c-9195-d90151bab355",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "a1c305b1-96a4-4396-a4f9-5bc03113e5a4",
-      "personId": "eb543457-0966-4c31-87ef-4cd436d26f96",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "045ed00a-0fba-4ad7-8c26-7707fb6fcd36",
-      "personId": "f2f6c463-5858-4dde-ad59-50ceb38dd07c",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "673d7637-2b03-4a74-a222-c9fe9d69e55b",
-      "personId": "f7d6716f-46c1-4325-b824-f7f28084244d",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "f8d8b8dd-f63e-436b-84f9-2a127bcb4f7f",
-      "personId": "67b465fe-bc5b-4704-a7ed-4fd5c2e5f1e5",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "974704f1-a0e0-4bcd-8175-edca32185273",
-      "personId": "436855e9-8ee8-40f6-97ea-645bdeaa8673",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "9900ff27-cdd2-4a41-93e1-2996bcaa63c9",
-      "personId": "053a822b-464e-44de-95e6-610129faaa32",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "a552edce-408f-42fb-8904-a36b4585c9eb",
-      "personId": "d78a5035-0595-4c36-a479-b71115d7103b",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "69eddde2-2b50-4c2e-bb8f-11c79fdfb46f",
-      "personId": "b292b410-1f0c-4dab-8ff5-623a86d1ae45",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "51bdfa8e-31c8-48c9-bd6b-0b39d5984722",
-      "personId": "7e5c75dd-9cae-4ac2-9a80-874894b4d378",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "09736b58-bbc6-4650-9edc-660afc5fd8db",
-      "personId": "a9413fd9-a121-41db-b66a-122395a70064",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "30227c3a-3514-417c-95bf-5ac2f5671f29",
-      "personId": "168a4062-b39c-4339-9931-08dd1817fb4f",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "6faeef38-bfa9-47c2-801d-614bdafa32ec",
-      "personId": "dd7b4828-ac9d-4925-83db-d0b7a4f8bb12",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "6665d6a4-0b0d-413e-ab5a-ceb66b3b9697",
-      "personId": "860352e6-21f1-4a76-828a-26ab32f118d7",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "2d68722c-ca7d-464d-b484-34824bc6f6ca",
-      "personId": "39afc265-b446-441d-b28b-f486709edbbc",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
-    },
-    {
-      "id": "ea81c881-3d5c-4027-a885-6df63be0350b",
-      "personId": "7ca135dc-8f4c-46d3-96dc-6981215f79fe",
-      "type": "outreach_failed_status",
-      "message": "Retroactively marked as failed because API email generation did not produce a successful draft.",
-      "createdAt": "2026-06-17T07:31:22.031Z"
     }
   ],
   "leadGenRuns": [

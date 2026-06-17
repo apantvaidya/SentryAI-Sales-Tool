@@ -42,26 +42,30 @@ async function ensureDb() {
 
 async function readDb(): Promise<Database> {
   await ensureDb();
-  const raw = await fs.readFile(dbPath, "utf8");
-  try {
-    return { ...emptyDb, ...JSON.parse(raw) };
-  } catch (e) {
-    // "Unexpected non-whitespace character after JSON at position N" means valid
-    // JSON followed by garbage bytes (concurrent copyFile corruption). Recover by
-    // parsing just the clean prefix, then rewrite the file atomically.
-    if (e instanceof SyntaxError) {
-      const posMatch = e.message.match(/position (\d+)/);
-      if (posMatch) {
-        const pos = parseInt(posMatch[1], 10);
-        try {
-          const recovered = { ...emptyDb, ...(JSON.parse(raw.slice(0, pos).trimEnd()) as Partial<Database>) };
-          writeDb(recovered).catch(() => {});
-          return recovered;
-        } catch {}
+  let lastError: unknown;
+
+  for (let attempt = 0; attempt < 6; attempt++) {
+    const raw = await fs.readFile(dbPath, "utf8");
+    try {
+      return { ...emptyDb, ...JSON.parse(raw) };
+    } catch (e) {
+      lastError = e;
+      if (e instanceof SyntaxError) {
+        const posMatch = e.message.match(/position (\d+)/);
+        if (posMatch) {
+          const pos = parseInt(posMatch[1], 10);
+          try {
+            const recovered = { ...emptyDb, ...(JSON.parse(raw.slice(0, pos).trimEnd()) as Partial<Database>) };
+            await writeDb(recovered);
+            return recovered;
+          } catch {}
+        }
       }
+      await new Promise<void>((resolve) => setTimeout(resolve, 30 * (attempt + 1)));
     }
-    throw e;
   }
+
+  throw lastError;
 }
 
 const lockPath = dbPath + ".lock";
@@ -115,8 +119,8 @@ async function writeDb(db: Database): Promise<void> {
         }
       }
       if (!renamed) {
-        await fs.copyFile(tmpPath, dbPath);
         await fs.unlink(tmpPath).catch(() => {});
+        throw new Error("Could not atomically replace db.json after multiple attempts.");
       }
     } finally {
       await releaseLock();
@@ -233,6 +237,36 @@ export async function updatePerson(personId: string, input: Partial<Omit<Person,
   db.people[index] = { ...db.people[index], ...input, updatedAt: now() };
   await writeDb(db);
   return db.people[index];
+}
+
+export async function markPersonFailedIfNoApiDraft(personId: string) {
+  const db = await readDb();
+  const person = db.people.find((item) => item.id === personId);
+  if (!person) return null;
+
+  const completedResearchIds = new Set(
+    db.outreachResearch
+      .filter((research) => research.personId === personId && research.status === "completed")
+      .map((research) => research.id)
+  );
+  const hasSuccessfulApiDraft = db.drafts.some(
+    (draft) => draft.personId === personId && draft.outreachResearchId && completedResearchIds.has(draft.outreachResearchId)
+  );
+
+  if (!hasSuccessfulApiDraft && person.status !== "approved" && person.status !== "contacted") {
+    person.status = "failed";
+    person.updatedAt = now();
+    db.activities.push({
+      id: id(),
+      personId,
+      type: "outreach_failed_status",
+      message: "Marked as failed because API email generation did not produce a successful draft.",
+      createdAt: now()
+    });
+    await writeDb(db);
+  }
+
+  return person;
 }
 
 export async function deletePerson(personId: string) {
@@ -598,6 +632,23 @@ export async function updateOutreachJobItem(
   item.errorMessage = errorMessage;
   job.updatedAt = now();
   await writeDb(db);
+}
+
+export async function cancelOutreachJob(jobId: string) {
+  const db = await readDb();
+  const job = db.outreachJobs.find((item) => item.id === jobId);
+  if (!job) return null;
+  const timestamp = now();
+  job.canceledAt = timestamp;
+  for (const item of job.items) {
+    if (item.status === "pending") {
+      item.status = "canceled";
+      item.errorMessage = "Canceled by user";
+    }
+  }
+  job.updatedAt = timestamp;
+  await writeDb(db);
+  return job;
 }
 
 export async function getCampaigns() {

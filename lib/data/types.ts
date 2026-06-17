@@ -1,4 +1,4 @@
-export type PersonStatus = "candidate" | "new" | "drafting" | "approved" | "contacted";
+export type PersonStatus = "candidate" | "new" | "drafting" | "failed" | "approved" | "contacted";
 export type DraftTone = "concise" | "executive" | "technical" | "warm";
 export type DraftStatus = "draft" | "approved" | "sent_manually";
 export type PipelineStatus = "queued" | "running" | "completed" | "failed";
@@ -100,7 +100,7 @@ export type PersonDetail = {
   outreachResearch: OutreachResearch[];
 };
 
-export type OutreachJobItemStatus = "pending" | "running" | "completed" | "failed";
+export type OutreachJobItemStatus = "pending" | "running" | "completed" | "failed" | "canceled";
 
 export type OutreachJobItem = {
   personId: string;
@@ -112,6 +112,7 @@ export type OutreachJobItem = {
 export type OutreachJob = {
   id: string;
   items: OutreachJobItem[];
+  canceledAt?: string;
   createdAt: string;
   updatedAt: string;
 };

@@ -8,6 +8,7 @@ import {
   addActivity,
   assignCampaign as storeAssignCampaign,
   bulkDeletePeople as storeBulkDeletePeople,
+  cancelOutreachJob as storeCancelOutreachJob,
   createCampaign as storeCreateCampaign,
   createOutreachDraft,
   createOutreachJob,
@@ -17,7 +18,9 @@ import {
   deletePerson as storeDeletePerson,
   getPerson,
   getPersonById,
+  getOutreachJob,
   importPeopleFromCsv as storeImportPeopleFromCsv,
+  markPersonFailedIfNoApiDraft,
   replaceResearchBrief,
   updateOutreachDraft as storeUpdateOutreachDraft,
   updateOutreachJobItem,
@@ -323,6 +326,7 @@ async function persistOutreachExecution(personId: string, execution: Awaited<Ret
     });
   } else {
     await addActivity(personId, "outreach_failed", "Warm outreach pipeline failed before producing a draft.");
+    await markPersonFailedIfNoApiDraft(personId);
   }
 
   return research;
@@ -331,11 +335,18 @@ async function persistOutreachExecution(personId: string, execution: Awaited<Ret
 async function executePersonOutreach(personId: string) {
   const person = await getPerson(personId);
   if (!person) throw new Error("Person not found");
-  const execution = await runWarmOutreachForPerson(person);
-  const research = await persistOutreachExecution(personId, execution);
-  revalidatePath(`/people/${personId}`);
-  revalidatePath("/people");
-  return research;
+  try {
+    const execution = await runWarmOutreachForPerson(person);
+    const research = await persistOutreachExecution(personId, execution);
+    revalidatePath(`/people/${personId}`);
+    revalidatePath("/people");
+    return research;
+  } catch (error) {
+    await markPersonFailedIfNoApiDraft(personId);
+    revalidatePath(`/people/${personId}`);
+    revalidatePath("/people");
+    throw error;
+  }
 }
 
 export async function runPersonOutreach(personId: string) {
@@ -405,6 +416,8 @@ export async function importPeopleCsv(formData: FormData) {
 
 async function runOutreachJobInBackground(jobId: string, personIds: string[]) {
   for (const personId of personIds) {
+    const job = await getOutreachJob(jobId);
+    if (job?.canceledAt) break;
     await updateOutreachJobItem(jobId, personId, "running");
     try {
       await executePersonOutreach(personId);
@@ -413,6 +426,11 @@ async function runOutreachJobInBackground(jobId: string, personIds: string[]) {
       await updateOutreachJobItem(jobId, personId, "failed", error instanceof Error ? error.message : "Unknown error");
     }
   }
+  revalidatePath("/people");
+}
+
+export async function cancelEmailGenerationJob(jobId: string) {
+  await storeCancelOutreachJob(jobId);
   revalidatePath("/people");
 }
 
