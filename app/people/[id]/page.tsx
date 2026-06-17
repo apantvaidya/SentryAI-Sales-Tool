@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, FileDown, Link2, RefreshCw } from "lucide-react";
-import { deletePerson, generateOutreachDraft, scorePerson, updatePerson } from "@/app/actions";
+import { ArrowLeft, FileDown, Link2, Mail, RefreshCw } from "lucide-react";
+import { deletePerson, findEmailForPerson, generateOutreachDraft, scorePerson, updatePerson } from "@/app/actions";
 import { AppShell } from "@/components/AppShell";
 import { ActivityTimeline } from "@/components/ActivityTimeline";
 import { CompanyContextCard } from "@/components/CompanyContextCard";
@@ -23,6 +23,7 @@ export default async function PersonDetailPage({ params }: { params: Promise<{ i
   const updatePersonAction = updatePerson.bind(null, id);
   const deletePersonAction = deletePerson.bind(null, id);
   const scorePersonAction = scorePerson.bind(null, id);
+  const findEmailAction = findEmailForPerson.bind(null, id);
   const generateOutreachDraftAction = generateOutreachDraft.bind(null, id);
 
   return (
@@ -64,6 +65,12 @@ export default async function PersonDetailPage({ params }: { params: Promise<{ i
               <button className="button-secondary" type="submit">
                 <RefreshCw size={16} />
                 Score Person
+              </button>
+            </form>
+            <form action={findEmailAction}>
+              <button className="button-secondary" type="submit" title={person.email ? `Current: ${person.email}` : undefined}>
+                <Mail size={16} />
+                {person.email ? (person.emailVerified ? "Email Verified" : "Re-find Email") : "Find Email"}
               </button>
             </form>
             <a href={`/people/${id}/export`} className="button-secondary">

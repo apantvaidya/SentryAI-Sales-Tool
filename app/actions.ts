@@ -29,6 +29,7 @@ import {
   upsertImportedLeadGenRun
 } from "@/lib/data/store";
 import { parsePeopleCsv } from "@/lib/csv";
+import { extractDomain, findEmailWithHunter, parseName } from "@/lib/hunter/client";
 import { enrichPersonFromLinkedIn } from "@/lib/leadgen/enrich";
 import { importLeadGenArtifacts } from "@/lib/leadgen/import";
 import { createQueryTemplate, deleteQueryTemplate, saveQueryTemplate } from "@/lib/leadgen/queryTemplates";
@@ -138,6 +139,34 @@ export async function scorePerson(personId: string) {
   await updatePersonScore(personId, score);
   revalidatePath(`/people/${personId}`);
   revalidatePath("/people");
+}
+
+export async function findEmailForPerson(personId: string) {
+  const person = await getPerson(personId);
+  if (!person) throw new Error("Person not found");
+  if (!person.companyWebsite) throw new Error("No company website set — add one to enable email lookup");
+
+  const domain = extractDomain(person.companyWebsite);
+  if (!domain) throw new Error("Could not extract a domain from the company website");
+
+  const { firstName, lastName } = parseName(person.name);
+  if (!firstName || !lastName) throw new Error("Need both a first and last name to look up email");
+
+  if (!process.env.HUNTER_API_KEY) throw new Error("HUNTER_API_KEY is not configured");
+
+  const result = await findEmailWithHunter({ firstName, lastName, domain });
+  if (!result) throw new Error("Hunter.io could not find an email for this person");
+
+  await storeUpdatePerson(personId, {
+    email: result.email,
+    emailVerified: result.score >= 90,
+  });
+  await addActivity(
+    personId,
+    "email_found",
+    `Email found via Hunter.io: ${result.email} (confidence: ${result.score}%)`
+  );
+  revalidatePath(`/people/${personId}`);
 }
 
 export async function generateOutreachDraft(personId: string, formData: FormData) {
