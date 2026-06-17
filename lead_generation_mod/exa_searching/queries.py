@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
+import json
 import re
 
 from .models import RenderedQuery, SeedPersona
@@ -17,6 +18,17 @@ class QueryTemplateSpec:
 
 
 QUERY_FILE_PATTERN = re.compile(r"^(?P<id>[^_]+)_(?P<name>.+)\.txt$")
+DEFAULT_QUERY_SUFFIX = "Northern California"
+
+
+def load_query_suffix(template_dir: Path) -> str:
+    config_path = template_dir.parent / "data" / "query_targeting.json"
+    try:
+        data = json.loads(config_path.read_text(encoding="utf-8"))
+        value = str(data.get("querySuffix") or "").strip()
+        return value or DEFAULT_QUERY_SUFFIX
+    except Exception:
+        return DEFAULT_QUERY_SUFFIX
 
 
 def discover_query_templates(template_dir: Path) -> list[QueryTemplateSpec]:
@@ -61,7 +73,7 @@ def load_template(template_dir: Path, template_file: str) -> str:
     return path.read_text(encoding="utf-8").strip()
 
 
-def render_query_text(template: str, seed_persona: SeedPersona) -> str:
+def render_query_text(template: str, seed_persona: SeedPersona, query_suffix: str) -> str:
     base = (
         template.replace("{{company_name}}", seed_persona.company_name)
         .replace("{{role}}", seed_persona.role or "")
@@ -69,11 +81,12 @@ def render_query_text(template: str, seed_persona: SeedPersona) -> str:
         .replace("{{linkedin_url}}", seed_persona.linkedin_url or "")
         .strip()
     )
-    return f"{base} Northern California"
+    return f"{base} {query_suffix}".strip()
 
 
 def build_queries(seed_persona: SeedPersona, template_dir: Path) -> list[RenderedQuery]:
     rendered_queries: list[RenderedQuery] = []
+    query_suffix = load_query_suffix(template_dir)
 
     for spec in discover_query_templates(template_dir):
         if spec.requires_linkedin and not seed_persona.linkedin_url:
@@ -86,7 +99,7 @@ def build_queries(seed_persona: SeedPersona, template_dir: Path) -> list[Rendere
                 vector_name=spec.vector_name,
                 template_file=spec.template_file,
                 target_bucket=spec.target_bucket,
-                query_text=render_query_text(template, seed_persona),
+                query_text=render_query_text(template, seed_persona, query_suffix),
             )
         )
 

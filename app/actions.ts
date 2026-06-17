@@ -28,6 +28,8 @@ import {
 import { parsePeopleCsv } from "@/lib/csv";
 import { enrichPersonFromLinkedIn } from "@/lib/leadgen/enrich";
 import { importLeadGenArtifacts } from "@/lib/leadgen/import";
+import { createQueryTemplate, deleteQueryTemplate, saveQueryTemplate } from "@/lib/leadgen/queryTemplates";
+import { saveQueryTargeting } from "@/lib/leadgen/queryTargeting";
 import { runLeadGeneration, runLeadGenerationExpansion } from "@/lib/leadgen/service";
 import { evidenceSummaryText, runWarmOutreachForPerson, sourceUrls } from "@/lib/outreach/service";
 import type { DraftTone, OutreachResearch, ValidationRecommendation } from "@/lib/data/types";
@@ -493,4 +495,43 @@ export async function enrichSelectedPeople(personIds: string[]): Promise<EnrichR
 
   revalidatePath("/people");
   return result;
+}
+
+export async function updateQueryTemplate(formData: FormData) {
+  const originalFileName = value(formData, "originalFileName");
+  const fileName = value(formData, "fileName");
+  const content = value(formData, "content");
+  if (!fileName) throw new Error("Query file name is required");
+  if (!content) throw new Error("Query content is required");
+
+  await saveQueryTemplate({ originalFileName, fileName, content });
+  revalidatePath("/queries");
+}
+
+export async function addQueryTemplate(formData: FormData) {
+  const fileName = value(formData, "fileName");
+  const content = value(formData, "content");
+  if (!fileName) throw new Error("Query file name is required");
+  if (!content) throw new Error("Query content is required");
+
+  await createQueryTemplate({ fileName, content });
+  revalidatePath("/queries");
+}
+
+export async function removeQueryTemplate(formData: FormData) {
+  const fileName = value(formData, "fileName");
+  if (!fileName) throw new Error("Query file name is required");
+
+  await deleteQueryTemplate(fileName);
+  revalidatePath("/queries");
+}
+
+export async function updateQueryTargeting(formData: FormData) {
+  const querySuffix = value(formData, "querySuffix");
+  const userLocation = value(formData, "userLocation");
+  if (!querySuffix) throw new Error("Query location text is required");
+  if (!userLocation) throw new Error("Exa userLocation is required");
+
+  await saveQueryTargeting({ querySuffix, userLocation });
+  revalidatePath("/queries");
 }

@@ -12,6 +12,18 @@ class ExaAPIError(RuntimeError):
     pass
 
 
+def load_user_location(settings: Settings) -> str:
+    if settings.user_location:
+        return settings.user_location
+    config_path = settings.data_dir / "query_targeting.json"
+    try:
+        data = json.loads(config_path.read_text(encoding="utf-8"))
+        value = str(data.get("userLocation") or "").strip().upper()
+        return value or "US"
+    except Exception:
+        return "US"
+
+
 class ExaClient:
     def __init__(self, settings: Settings) -> None:
         self.settings = settings
@@ -26,7 +38,7 @@ class ExaClient:
             "type": self.settings.search_type,
             "numResults": self.settings.num_results,
         }
-        payload["userLocation"] = self.settings.user_location or "US"
+        payload["userLocation"] = load_user_location(self.settings)
 
         encoded_payload = json.dumps(payload).encode("utf-8")
         api_request = request.Request(

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Network, ShieldCheck, ContactRound } from "lucide-react";
+import { FileText, Network, ShieldCheck, ContactRound } from "lucide-react";
 import { DemoModeBanner } from "./DemoModeBanner";
 
 export function AppShell({ children }: { children: React.ReactNode }) {
@@ -20,6 +20,10 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             <Link href="/people" className="inline-flex items-center gap-2 rounded-md px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-white/80 hover:text-ink">
               <ContactRound size={16} />
               People
+            </Link>
+            <Link href="/queries" className="inline-flex items-center gap-2 rounded-md px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-white/80 hover:text-ink">
+              <FileText size={16} />
+              Queries
             </Link>
             <Link href="/legacy-visualization" className="inline-flex items-center gap-2 rounded-md px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-white/80 hover:text-ink">
               <Network size={16} />
