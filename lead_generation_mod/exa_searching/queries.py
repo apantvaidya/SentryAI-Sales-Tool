@@ -62,13 +62,14 @@ def load_template(template_dir: Path, template_file: str) -> str:
 
 
 def render_query_text(template: str, seed_persona: SeedPersona) -> str:
-    return (
+    base = (
         template.replace("{{company_name}}", seed_persona.company_name)
         .replace("{{role}}", seed_persona.role or "")
         .replace("{{person_name}}", seed_persona.person_name)
         .replace("{{linkedin_url}}", seed_persona.linkedin_url or "")
         .strip()
     )
+    return f"{base} Northern California"
 
 
 def build_queries(seed_persona: SeedPersona, template_dir: Path) -> list[RenderedQuery]:

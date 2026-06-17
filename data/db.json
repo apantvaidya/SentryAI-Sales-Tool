@@ -40881,6 +40881,4203 @@
       "createdAt": "2026-06-17T02:16:04.352Z",
       "updatedAt": "2026-06-17T02:36:02.188Z",
       "location": "League City, Texas, United States"
+    },
+    {
+      "id": "38da7ad9-7106-4284-94ba-95b712ae0966",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Martin Ceballos",
+      "title": "Regional Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/martin-ceballos-a45296b6",
+      "location": "Bakersfield, California, United States",
+      "yearsAtCurrentRole": 0.79,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/martin-ceballos-a45296b6",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "01",
+        "02",
+        "03"
+      ],
+      "sourceQueryNames": [
+        "same_company_adjacent_leadership",
+        "same_company_exact_or_near_role",
+        "same_company_person_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "same_company"
+      ],
+      "overlapCount": 3,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/6q74l85p7jk"
+        ],
+        "filterDecisionIds": [
+          "0",
+          "22",
+          "42"
+        ],
+        "queryIds": [
+          "01",
+          "02",
+          "03"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "c0b41fed-75bf-4449-8591-cedc06b11374",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Eric Moreno",
+      "title": "Regional Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/eric-moreno-85430479",
+      "location": "Central California",
+      "yearsAtCurrentRole": 8.04,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/eric-moreno-85430479",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "01",
+        "02",
+        "03"
+      ],
+      "sourceQueryNames": [
+        "same_company_adjacent_leadership",
+        "same_company_exact_or_near_role",
+        "same_company_person_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "same_company"
+      ],
+      "overlapCount": 3,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/mwss1t8qrxn"
+        ],
+        "filterDecisionIds": [
+          "1",
+          "23",
+          "41"
+        ],
+        "queryIds": [
+          "01",
+          "02",
+          "03"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "078b528b-0f5d-4273-a007-e5292b9d4feb",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Tony Trevino",
+      "title": "Regional Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/tony-trevino-3a482031",
+      "location": "san diego, california",
+      "yearsAtCurrentRole": 12.21,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/tony-trevino-3a482031",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "01",
+        "02",
+        "03",
+        "05"
+      ],
+      "sourceQueryNames": [
+        "same_company_adjacent_leadership",
+        "same_company_exact_or_near_role",
+        "same_company_person_anchored_similarity",
+        "similar_company_adjacent_role_family"
+      ],
+      "sourceBuckets": [
+        "same_company",
+        "similar_company"
+      ],
+      "overlapCount": 4,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/7nwl7jvdm37"
+        ],
+        "filterDecisionIds": [
+          "2",
+          "24",
+          "49",
+          "81"
+        ],
+        "queryIds": [
+          "01",
+          "02",
+          "03",
+          "05"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "a31053e5-c850-4670-a2f3-7f1da624c652",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "ALFRED LUNA",
+      "title": "Regional Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/alfred-luna-a19a2b110",
+      "location": "Los Angeles County, California, United States",
+      "yearsAtCurrentRole": 1.46,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/alfred-luna-a19a2b110",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "01",
+        "02",
+        "03"
+      ],
+      "sourceQueryNames": [
+        "same_company_adjacent_leadership",
+        "same_company_exact_or_near_role",
+        "same_company_person_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "same_company"
+      ],
+      "overlapCount": 3,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/7sh5jm0m8z6"
+        ],
+        "filterDecisionIds": [
+          "21",
+          "3",
+          "40"
+        ],
+        "queryIds": [
+          "01",
+          "02",
+          "03"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "1865df29-3769-47c4-9272-9b83ec692f32",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Lewis Ellgood",
+      "title": "Regional Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/lewis-ellgood-628807146",
+      "location": "Portland Region",
+      "yearsAtCurrentRole": 7.21,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/lewis-ellgood-628807146",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "01",
+        "02",
+        "03",
+        "06"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity",
+        "same_company_adjacent_leadership",
+        "same_company_exact_or_near_role",
+        "same_company_person_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "same_company",
+        "similar_company"
+      ],
+      "overlapCount": 4,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/b8w5zr35mvz"
+        ],
+        "filterDecisionIds": [
+          "100",
+          "27",
+          "4",
+          "58"
+        ],
+        "queryIds": [
+          "01",
+          "02",
+          "03",
+          "06"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "fc302d2f-2c8c-402d-b4e2-afc92162efca",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Larry Zimmerman",
+      "title": "Regional Divisional Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/larry-zimmerman-a6226613",
+      "location": "Kansas City, Kansas, United States",
+      "yearsAtCurrentRole": 30.46,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/larry-zimmerman-a6226613",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "01",
+        "02",
+        "03"
+      ],
+      "sourceQueryNames": [
+        "same_company_adjacent_leadership",
+        "same_company_exact_or_near_role",
+        "same_company_person_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "same_company"
+      ],
+      "overlapCount": 3,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/hyh8gwcgrqy"
+        ],
+        "filterDecisionIds": [
+          "30",
+          "46",
+          "5"
+        ],
+        "queryIds": [
+          "01",
+          "02",
+          "03"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "cf54371b-a97e-4ead-8063-32b0c3558a73",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "James Mullaney",
+      "title": "Regional Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/jamesmullaney",
+      "location": "Atlanta, Georgia, United States",
+      "yearsAtCurrentRole": 2.29,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/jamesmullaney",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "01",
+        "02",
+        "03",
+        "05"
+      ],
+      "sourceQueryNames": [
+        "same_company_adjacent_leadership",
+        "same_company_exact_or_near_role",
+        "same_company_person_anchored_similarity",
+        "similar_company_adjacent_role_family"
+      ],
+      "sourceBuckets": [
+        "same_company",
+        "similar_company"
+      ],
+      "overlapCount": 4,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/06d4fcf2zl2"
+        ],
+        "filterDecisionIds": [
+          "36",
+          "50",
+          "6",
+          "89"
+        ],
+        "queryIds": [
+          "01",
+          "02",
+          "03",
+          "05"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "e949ecf9-f62b-4729-9b72-6dbcab493ee2",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "J. Lavon K.",
+      "title": "Regional Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/j-lavon-k-80966664",
+      "location": "Greater Pittsburgh Area",
+      "yearsAtCurrentRole": 10.63,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/j-lavon-k-80966664",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "01",
+        "03",
+        "04",
+        "05"
+      ],
+      "sourceQueryNames": [
+        "same_company_exact_or_near_role",
+        "same_company_person_anchored_similarity",
+        "similar_company_adjacent_role_family",
+        "similar_company_exact_or_near_role"
+      ],
+      "sourceBuckets": [
+        "same_company",
+        "similar_company"
+      ],
+      "overlapCount": 4,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/g107rpcfbxm"
+        ],
+        "filterDecisionIds": [
+          "44",
+          "7",
+          "75",
+          "87"
+        ],
+        "queryIds": [
+          "01",
+          "03",
+          "04",
+          "05"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "996e126e-2159-4157-9698-2faf4ac2a041",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Tony Lupo",
+      "title": "Regional Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/tony-lupo-95238014",
+      "location": "Gulf Coast",
+      "yearsAtCurrentRole": 3.04,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/tony-lupo-95238014",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "01",
+        "02",
+        "03"
+      ],
+      "sourceQueryNames": [
+        "same_company_adjacent_leadership",
+        "same_company_exact_or_near_role",
+        "same_company_person_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "same_company"
+      ],
+      "overlapCount": 3,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/dv7snpj64qg"
+        ],
+        "filterDecisionIds": [
+          "32",
+          "53",
+          "8"
+        ],
+        "queryIds": [
+          "01",
+          "02",
+          "03"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "1c641fba-0ab4-4bd6-a71d-d3a703e31bfc",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Chad Smith",
+      "title": "Regional Manager Of Loss Prevention",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/chad-smith-143b4a132",
+      "location": "Boise, Idaho, United States",
+      "yearsAtCurrentRole": 15.13,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/chad-smith-143b4a132",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "01",
+        "02"
+      ],
+      "sourceQueryNames": [
+        "same_company_adjacent_leadership",
+        "same_company_exact_or_near_role"
+      ],
+      "sourceBuckets": [
+        "same_company"
+      ],
+      "overlapCount": 2,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/6lhdj2ydx1l"
+        ],
+        "filterDecisionIds": [
+          "33",
+          "9"
+        ],
+        "queryIds": [
+          "01",
+          "02"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "92f9792e-8263-4f30-a5d0-e04cadd86b43",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "James Harris",
+      "title": "Regional Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/james-harris-lpc-799521124",
+      "location": "Memphis, TN, US",
+      "yearsAtCurrentRole": 0.88,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/james-harris-lpc-799521124",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "01",
+        "02",
+        "03"
+      ],
+      "sourceQueryNames": [
+        "same_company_adjacent_leadership",
+        "same_company_exact_or_near_role",
+        "same_company_person_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "same_company"
+      ],
+      "overlapCount": 3,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/1k0836xm55g"
+        ],
+        "filterDecisionIds": [
+          "10",
+          "34",
+          "54"
+        ],
+        "queryIds": [
+          "01",
+          "02",
+          "03"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "94e7ea80-39f0-416c-baf6-ef358a195c49",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Romel Diggs",
+      "title": "Regional Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/romel-diggs-4a9a26317",
+      "location": "Greater Hartford",
+      "yearsAtCurrentRole": 2.54,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/romel-diggs-4a9a26317",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "01",
+        "02",
+        "03"
+      ],
+      "sourceQueryNames": [
+        "same_company_adjacent_leadership",
+        "same_company_exact_or_near_role",
+        "same_company_person_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "same_company"
+      ],
+      "overlapCount": 3,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/k5fxxkx0ym2"
+        ],
+        "filterDecisionIds": [
+          "11",
+          "35",
+          "52"
+        ],
+        "queryIds": [
+          "01",
+          "02",
+          "03"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "18e1aad0-2eb4-4408-ad27-63036b9bffc3",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Caleb Milton",
+      "title": "Regional Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/caleb-milton-173407104",
+      "location": "Memphis, Michigan, United States",
+      "yearsAtCurrentRole": 4.21,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/caleb-milton-173407104",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "01",
+        "02"
+      ],
+      "sourceQueryNames": [
+        "same_company_adjacent_leadership",
+        "same_company_exact_or_near_role"
+      ],
+      "sourceBuckets": [
+        "same_company"
+      ],
+      "overlapCount": 2,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/grjcbp93l3t"
+        ],
+        "filterDecisionIds": [
+          "12",
+          "38"
+        ],
+        "queryIds": [
+          "01",
+          "02"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "29177fd7-0281-4e4a-9935-c2f137723365",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Roger Ribbke",
+      "title": "Regional Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/rogerribbke",
+      "location": "Little Rock, Arkansas Area",
+      "yearsAtCurrentRole": 8.79,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/rogerribbke",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "01",
+        "03",
+        "05"
+      ],
+      "sourceQueryNames": [
+        "same_company_exact_or_near_role",
+        "same_company_person_anchored_similarity",
+        "similar_company_adjacent_role_family"
+      ],
+      "sourceBuckets": [
+        "same_company",
+        "similar_company"
+      ],
+      "overlapCount": 3,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/78n87jvhkyj"
+        ],
+        "filterDecisionIds": [
+          "13",
+          "45",
+          "85"
+        ],
+        "queryIds": [
+          "01",
+          "03",
+          "05"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "963fe0ce-3c83-4513-9b5d-f3d10556ec2f",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Dave Greer",
+      "title": "Regional Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/dave-greer-210982168",
+      "location": "West Michigan",
+      "yearsAtCurrentRole": 5.88,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/dave-greer-210982168",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "01",
+        "03"
+      ],
+      "sourceQueryNames": [
+        "same_company_exact_or_near_role",
+        "same_company_person_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "same_company"
+      ],
+      "overlapCount": 2,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/fk75qnqrwjb"
+        ],
+        "filterDecisionIds": [
+          "14",
+          "51"
+        ],
+        "queryIds": [
+          "01",
+          "03"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "d801b6d2-ab14-4229-b8cb-a8b8e51542e1",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Julie Jorgensen",
+      "title": "Regional Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/julie-jorgensen-6408a223",
+      "location": "Oklahoma City, Oklahoma",
+      "yearsAtCurrentRole": 7.13,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/julie-jorgensen-6408a223",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "01"
+      ],
+      "sourceQueryNames": [
+        "same_company_exact_or_near_role"
+      ],
+      "sourceBuckets": [
+        "same_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/1516rwq8tvk"
+        ],
+        "filterDecisionIds": [
+          "15"
+        ],
+        "queryIds": [
+          "01"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "e9c735b2-ed44-4dea-829e-70abcf600af8",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Tanisha Gonzalez-Wellmann",
+      "title": "Vice President, Loss Prevention, Safety,and Security",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/tanisha-gonzalez-wellmann-b581a61a",
+      "location": "Memphis Metropolitan Area",
+      "yearsAtCurrentRole": 1.54,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/tanisha-gonzalez-wellmann-b581a61a",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "01",
+        "02"
+      ],
+      "sourceQueryNames": [
+        "same_company_adjacent_leadership",
+        "same_company_exact_or_near_role"
+      ],
+      "sourceBuckets": [
+        "same_company"
+      ],
+      "overlapCount": 2,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/gbhxqzrcjxy"
+        ],
+        "filterDecisionIds": [
+          "16",
+          "31"
+        ],
+        "queryIds": [
+          "01",
+          "02"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "a447b3c1-8085-4a2a-99a0-75479fb267ae",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Christina T.",
+      "title": "Supply Chain Operations Manager Loss Prevention",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/christina-t-0875a5274",
+      "location": "Memphis, Tennessee, United States",
+      "yearsAtCurrentRole": 3.13,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/christina-t-0875a5274",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "01"
+      ],
+      "sourceQueryNames": [
+        "same_company_exact_or_near_role"
+      ],
+      "sourceBuckets": [
+        "same_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/rbv5l0trrwc"
+        ],
+        "filterDecisionIds": [
+          "17"
+        ],
+        "queryIds": [
+          "01"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "1903c1a8-b2c8-4677-9ff5-bfe0e00a8d6c",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Thomas Medina",
+      "title": "Distribution Center Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/thomas-medina-65aa14ab",
+      "location": "Ontario, California, United States",
+      "yearsAtCurrentRole": 3.21,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/thomas-medina-65aa14ab",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "01",
+        "02",
+        "03"
+      ],
+      "sourceQueryNames": [
+        "same_company_adjacent_leadership",
+        "same_company_exact_or_near_role",
+        "same_company_person_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "same_company"
+      ],
+      "overlapCount": 3,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/pg3bstv5cdc"
+        ],
+        "filterDecisionIds": [
+          "18",
+          "26",
+          "48"
+        ],
+        "queryIds": [
+          "01",
+          "02",
+          "03"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "29a688ea-ac74-4352-8640-69c90519b678",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Cody Mogus",
+      "title": "Sr Project Manager, Loss Prevention, Cybercrime And ORC",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/cody-mogus-57121b1a5",
+      "location": "Memphis, Tennessee, United States",
+      "yearsAtCurrentRole": 6.29,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/cody-mogus-57121b1a5",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "01",
+        "03"
+      ],
+      "sourceQueryNames": [
+        "same_company_exact_or_near_role",
+        "same_company_person_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "same_company"
+      ],
+      "overlapCount": 2,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/xf0dwz6dsct"
+        ],
+        "filterDecisionIds": [
+          "19",
+          "56"
+        ],
+        "queryIds": [
+          "01",
+          "03"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "daf21276-beb4-4c82-a639-75f701c16982",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Jeff Banyas",
+      "title": "Regional Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/jeff-banyas-b851056b",
+      "location": "Kansas City, Kansas, United States",
+      "yearsAtCurrentRole": 10.96,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AUTOZONE INC",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/jeff-banyas-b851056b",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "02"
+      ],
+      "sourceQueryNames": [
+        "same_company_adjacent_leadership"
+      ],
+      "sourceBuckets": [
+        "same_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/z9wvgyzb4pg"
+        ],
+        "filterDecisionIds": [
+          "20"
+        ],
+        "queryIds": [
+          "02"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "a205debd-08ee-46db-9637-98a84d1ef21c",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Aldo Rodriguez",
+      "title": "Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/aldo-rodriguez-59b524113",
+      "location": "San Fernando, California, United States",
+      "yearsAtCurrentRole": 2.79,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/aldo-rodriguez-59b524113",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "02"
+      ],
+      "sourceQueryNames": [
+        "same_company_adjacent_leadership"
+      ],
+      "sourceBuckets": [
+        "same_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/jyjvhjyykl2"
+        ],
+        "filterDecisionIds": [
+          "25"
+        ],
+        "queryIds": [
+          "02"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "d5094c88-1078-4cd7-805f-177c74b49ee9",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Mark Rohme",
+      "title": "District Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/mark-rohme-98550797",
+      "location": "Sacramento, California Area",
+      "yearsAtCurrentRole": 17.37,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/mark-rohme-98550797",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "02"
+      ],
+      "sourceQueryNames": [
+        "same_company_adjacent_leadership"
+      ],
+      "sourceBuckets": [
+        "same_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/95dczp1hhfv"
+        ],
+        "filterDecisionIds": [
+          "28"
+        ],
+        "queryIds": [
+          "02"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "878e8609-ae35-4899-9cd8-ac28fc80f121",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Robert Poston",
+      "title": "District Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/robert-poston-68815424",
+      "location": "San Diego, California",
+      "yearsAtCurrentRole": 9.46,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/robert-poston-68815424",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "02"
+      ],
+      "sourceQueryNames": [
+        "same_company_adjacent_leadership"
+      ],
+      "sourceBuckets": [
+        "same_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/gmxwcg2jkvk"
+        ],
+        "filterDecisionIds": [
+          "29"
+        ],
+        "queryIds": [
+          "02"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "5a3f91dc-05b0-4558-89ba-42cb96c6abcc",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Jeremy K.",
+      "title": "Regional Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/jeremy-kauffman-lpc-67b70283",
+      "location": "Richmond, VA",
+      "yearsAtCurrentRole": 0.3,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/jeremy-kauffman-lpc-67b70283",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "02"
+      ],
+      "sourceQueryNames": [
+        "same_company_adjacent_leadership"
+      ],
+      "sourceBuckets": [
+        "same_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/7w8r7zdkb38"
+        ],
+        "filterDecisionIds": [
+          "37"
+        ],
+        "queryIds": [
+          "02"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "7b3585c1-e45b-442d-ba62-24273f5cd623",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Abraham De Dios",
+      "title": "Regional Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/abraham-de-dios-89893a283",
+      "location": "Bulverde, Texas, United States",
+      "yearsAtCurrentRole": null,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/abraham-de-dios-89893a283",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "02"
+      ],
+      "sourceQueryNames": [
+        "same_company_adjacent_leadership"
+      ],
+      "sourceBuckets": [
+        "same_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/7fj1l1yhklq"
+        ],
+        "filterDecisionIds": [
+          "39"
+        ],
+        "queryIds": [
+          "02"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "903f9225-d1a4-4ae4-b906-d154f4579110",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Ashlee Gullotta",
+      "title": "Regional Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/ashlee-gullotta-1618a15a",
+      "location": "Forked River, New Jersey, United States",
+      "yearsAtCurrentRole": 5.3,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/ashlee-gullotta-1618a15a",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "03"
+      ],
+      "sourceQueryNames": [
+        "same_company_person_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "same_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/dfx4vb7tsxl"
+        ],
+        "filterDecisionIds": [
+          "43"
+        ],
+        "queryIds": [
+          "03"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "407d02b5-9453-4830-b0aa-956601fb0207",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Michael Warren",
+      "title": "Regional Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/michael-warren-41892a109",
+      "location": "Houston, Texas Area",
+      "yearsAtCurrentRole": 9.21,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/michael-warren-41892a109",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "03"
+      ],
+      "sourceQueryNames": [
+        "same_company_person_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "same_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/k5x51rvnytz"
+        ],
+        "filterDecisionIds": [
+          "47"
+        ],
+        "queryIds": [
+          "03"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "949abbd9-38f7-4cbe-82a6-41e243eb590e",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Ken Kreutz",
+      "title": "Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/ken-kreutz-1a1a45267",
+      "location": "Arlington, Texas, United States",
+      "yearsAtCurrentRole": null,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/ken-kreutz-1a1a45267",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "03"
+      ],
+      "sourceQueryNames": [
+        "same_company_person_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "same_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/m2kg8jplc56"
+        ],
+        "filterDecisionIds": [
+          "55"
+        ],
+        "queryIds": [
+          "03"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "ccde2780-784c-472f-86df-2a2b2fcff586",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Jennie Anderson",
+      "title": "Retired",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/jennie-anderson-91b208149",
+      "location": "Hixson, Tennessee, United States",
+      "yearsAtCurrentRole": 1.62,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/jennie-anderson-91b208149",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "03"
+      ],
+      "sourceQueryNames": [
+        "same_company_person_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "same_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/zf8jd7mh2xj"
+        ],
+        "filterDecisionIds": [
+          "57"
+        ],
+        "queryIds": [
+          "03"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "7bd72ef5-1ccb-41dd-97c1-d0af9f7376c3",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Tony Baudoin",
+      "title": "Director Of Loss Prevention, Supply Chain",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/tonybaudoin",
+      "location": "Memphis, TN",
+      "yearsAtCurrentRole": 13.88,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "AutoZone",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/tonybaudoin",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "03"
+      ],
+      "sourceQueryNames": [
+        "same_company_person_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "same_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/nm3mxxt0ntp"
+        ],
+        "filterDecisionIds": [
+          "59"
+        ],
+        "queryIds": [
+          "03"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "36a9d2a2-42e6-4dbe-84c3-2e8b1518a865",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Brian Riddick",
+      "title": "Regional Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/brian-riddick-060358b3",
+      "location": "Fresno, California Area",
+      "yearsAtCurrentRole": 10.63,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "The Save Mart Companies",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/brian-riddick-060358b3",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "04",
+        "05"
+      ],
+      "sourceQueryNames": [
+        "similar_company_adjacent_role_family",
+        "similar_company_exact_or_near_role"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 2,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/s1zg0hysbyt"
+        ],
+        "filterDecisionIds": [
+          "60",
+          "86"
+        ],
+        "queryIds": [
+          "04",
+          "05"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "d6d8f913-d6c8-4076-8b68-4d23d9f01b80",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Steve Garcia",
+      "title": "Regional Asset Protection And Risk Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/steve-garcia-72025215",
+      "location": "Long Beach, California, United States",
+      "yearsAtCurrentRole": 5.54,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Areas, United States",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/steve-garcia-72025215",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "04"
+      ],
+      "sourceQueryNames": [
+        "similar_company_exact_or_near_role"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/5rspdyjjm7c"
+        ],
+        "filterDecisionIds": [
+          "61"
+        ],
+        "queryIds": [
+          "04"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "47a27cfd-730f-4b1f-966b-dce8fac5fb3a",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Nick Haynes",
+      "title": "District Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/nick-haynes-610a87b6",
+      "location": "Orange County, California, United States",
+      "yearsAtCurrentRole": 29.46,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Ralphs Grocery Company",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/nick-haynes-610a87b6",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "04"
+      ],
+      "sourceQueryNames": [
+        "similar_company_exact_or_near_role"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/g1cbtf2bqvn"
+        ],
+        "filterDecisionIds": [
+          "62"
+        ],
+        "queryIds": [
+          "04"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "89ba8dfe-51b1-4db1-ad5f-5b6728130f9b",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Kevin Richardson",
+      "title": "Asset Protection Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/kevin-richardson-ab363972",
+      "location": "United States",
+      "yearsAtCurrentRole": 24.37,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Safeway",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/kevin-richardson-ab363972",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "04"
+      ],
+      "sourceQueryNames": [
+        "similar_company_exact_or_near_role"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/c4y1cxgc87t"
+        ],
+        "filterDecisionIds": [
+          "63"
+        ],
+        "queryIds": [
+          "04"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "888f2755-ad10-43cd-92c2-e7a12241dbef",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Jolisa Deneiliom",
+      "title": "Regional Asset Protection Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/jolisa-deneiliom-5a2bb4100",
+      "location": "San Francisco Bay Area",
+      "yearsAtCurrentRole": 20.71,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "The Save Mart Companies",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/jolisa-deneiliom-5a2bb4100",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "04",
+        "05"
+      ],
+      "sourceQueryNames": [
+        "similar_company_adjacent_role_family",
+        "similar_company_exact_or_near_role"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 2,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/jk89gymdpsy"
+        ],
+        "filterDecisionIds": [
+          "64",
+          "84"
+        ],
+        "queryIds": [
+          "04",
+          "05"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "dbb7023e-9c32-4e10-a361-c8f79f4dc945",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Pete Hebert",
+      "title": "Regional Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/pete-hebert-b665b1b9",
+      "location": "Southern/ Central California",
+      "yearsAtCurrentRole": 12.04,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Big 5 Sporting Goods",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/pete-hebert-b665b1b9",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "04"
+      ],
+      "sourceQueryNames": [
+        "similar_company_exact_or_near_role"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/bg4g2vcccqx"
+        ],
+        "filterDecisionIds": [
+          "65"
+        ],
+        "queryIds": [
+          "04"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "051de595-5ed7-410b-85ea-118ba60b0e80",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "LPC. WZ. David Stanley",
+      "title": "Regional Asset Protection And Safety Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/david-stanley-lpc-wz-35039b11a",
+      "location": "BC Canada. Washington. Oregon",
+      "yearsAtCurrentRole": 3.96,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Whole Foods Market",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/david-stanley-lpc-wz-35039b11a",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "04"
+      ],
+      "sourceQueryNames": [
+        "similar_company_exact_or_near_role"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/gk6t889jxg3"
+        ],
+        "filterDecisionIds": [
+          "66"
+        ],
+        "queryIds": [
+          "04"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "3ff1d86c-2fc6-4a81-a00f-2486ccef08a4",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Luis De dios",
+      "title": "Security District Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/luis-de-dios-557a21129",
+      "location": "Bakersfield, California, United States",
+      "yearsAtCurrentRole": 0.71,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Vallarta Supermarkets",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/luis-de-dios-557a21129",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "04"
+      ],
+      "sourceQueryNames": [
+        "similar_company_exact_or_near_role"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/t17y78717tp"
+        ],
+        "filterDecisionIds": [
+          "67"
+        ],
+        "queryIds": [
+          "04"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "96988ea7-ab4b-4469-9a87-37068666830d",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Davin Sonaggera",
+      "title": "Director Of Loss Prevention",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/davinsonaggera",
+      "location": "United States",
+      "yearsAtCurrentRole": 1.3,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "PAQ, INC. Food 4 Less and Rancho San Miguel Markets",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/davinsonaggera",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "04"
+      ],
+      "sourceQueryNames": [
+        "similar_company_exact_or_near_role"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/zslw4zw7r2k"
+        ],
+        "filterDecisionIds": [
+          "68"
+        ],
+        "queryIds": [
+          "04"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "22372486-d044-42ff-858e-d7adfdb6882c",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Brian Magallanez",
+      "title": "Manager Of Loss Prevention",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/brian-magallanez-6231631a",
+      "location": "Santa Fe Springs, Ca",
+      "yearsAtCurrentRole": 14.04,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Superior Grocers",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/brian-magallanez-6231631a",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "04"
+      ],
+      "sourceQueryNames": [
+        "similar_company_exact_or_near_role"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/v6rbx8wsp38"
+        ],
+        "filterDecisionIds": [
+          "69"
+        ],
+        "queryIds": [
+          "04"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "a852e4cc-5d2d-404c-9b4f-63ed21e02643",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Rich Stidham",
+      "title": "Senior Regional Loss Prevention Manager - US Western Region",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/rich-stidham-lpc-96281315",
+      "location": "Copperopolis, California, United States",
+      "yearsAtCurrentRole": 1.96,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Savers | Value Village",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/rich-stidham-lpc-96281315",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "04"
+      ],
+      "sourceQueryNames": [
+        "similar_company_exact_or_near_role"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/z19hrxszb51"
+        ],
+        "filterDecisionIds": [
+          "70"
+        ],
+        "queryIds": [
+          "04"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "05c61518-52a6-4958-a63a-df536501fda1",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Kit Becker",
+      "title": "Regional Loss Prevention Manager- West",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/kit-becker-0b6417b",
+      "location": "West Coast",
+      "yearsAtCurrentRole": 0.88,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "DICK'S Sporting Goods",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/kit-becker-0b6417b",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "04",
+        "05"
+      ],
+      "sourceQueryNames": [
+        "similar_company_adjacent_role_family",
+        "similar_company_exact_or_near_role"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 2,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/n3q2s62rj20"
+        ],
+        "filterDecisionIds": [
+          "71",
+          "88"
+        ],
+        "queryIds": [
+          "04",
+          "05"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "dee05351-9e33-495f-8f17-ef8bc0023e50",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Jeff Berk",
+      "title": "Regional Asset Protection Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/jeff-berk-8bb2298",
+      "location": "San Jose California / Portland Oregon",
+      "yearsAtCurrentRole": 18.13,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Orchard Supply Hardware",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/jeff-berk-8bb2298",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "04",
+        "05"
+      ],
+      "sourceQueryNames": [
+        "similar_company_adjacent_role_family",
+        "similar_company_exact_or_near_role"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 2,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/654qm12mz7t"
+        ],
+        "filterDecisionIds": [
+          "72",
+          "82"
+        ],
+        "queryIds": [
+          "04",
+          "05"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "31d529ef-5013-4584-a45c-e0be62e94331",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Dennis Bantugan",
+      "title": "Regional Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/dennis-bantugan-a675876",
+      "location": "Pacific Northwest / Southwest",
+      "yearsAtCurrentRole": 6.96,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "GameStop",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/dennis-bantugan-a675876",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "04",
+        "05"
+      ],
+      "sourceQueryNames": [
+        "similar_company_adjacent_role_family",
+        "similar_company_exact_or_near_role"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 2,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/k3gb2trw72v"
+        ],
+        "filterDecisionIds": [
+          "73",
+          "90"
+        ],
+        "queryIds": [
+          "04",
+          "05"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "fdd5c627-2e8b-4e99-a6fd-cf2cba1aa7f5",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Saul Gomez",
+      "title": "Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/saul-gomez-55617b230",
+      "location": "Northern California",
+      "yearsAtCurrentRole": 1.79,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Heritage Grocers Group",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/saul-gomez-55617b230",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "04"
+      ],
+      "sourceQueryNames": [
+        "similar_company_exact_or_near_role"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/mlntpgsrm5z"
+        ],
+        "filterDecisionIds": [
+          "74"
+        ],
+        "queryIds": [
+          "04"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "d25faacd-253a-4d99-9e9b-4ceb21a0cd84",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Adrian Aguirre",
+      "title": "District Loss Prevention Specialist",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/adrian-aguirre-739b5b132",
+      "location": "United States",
+      "yearsAtCurrentRole": 4.79,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Superior Grocers",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/adrian-aguirre-739b5b132",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "04"
+      ],
+      "sourceQueryNames": [
+        "similar_company_exact_or_near_role"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/p29fxmvg5t2"
+        ],
+        "filterDecisionIds": [
+          "76"
+        ],
+        "queryIds": [
+          "04"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "994d27bb-e1b6-45ce-8ea9-dfd062a5bf2c",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Chad Lindstrom",
+      "title": "Director Of Loss Prevention",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/chad-lindstrom-5515b710",
+      "location": "Medford, Oregon Area",
+      "yearsAtCurrentRole": 13.88,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "C&K Market Inc.",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/chad-lindstrom-5515b710",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "04"
+      ],
+      "sourceQueryNames": [
+        "similar_company_exact_or_near_role"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/2731n5kpnk0"
+        ],
+        "filterDecisionIds": [
+          "77"
+        ],
+        "queryIds": [
+          "04"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "65ec464f-0e4e-4449-8967-4db72c0f209b",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Joshua Keznor",
+      "title": "Senior Regional Manager, Loss Prevention",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/joshua-keznor-7b666583",
+      "location": "Cranberry Township, Pennsylvania, US",
+      "yearsAtCurrentRole": 0.46,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Giant Eagle, Inc.",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/joshua-keznor-7b666583",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "04"
+      ],
+      "sourceQueryNames": [
+        "similar_company_exact_or_near_role"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/sqg3m9mrqkg"
+        ],
+        "filterDecisionIds": [
+          "78"
+        ],
+        "queryIds": [
+          "04"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "47797d7e-d737-4853-8312-aaee7e892112",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Rachelle Espinoza",
+      "title": "Divisional Supervisor Of Loss Prevention",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/rachelle-espinoza-696b61114",
+      "location": "Northern California Division",
+      "yearsAtCurrentRole": 15.79,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "WinCo Foods",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/rachelle-espinoza-696b61114",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "04"
+      ],
+      "sourceQueryNames": [
+        "similar_company_exact_or_near_role"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/cpb51mmrv24"
+        ],
+        "filterDecisionIds": [
+          "79"
+        ],
+        "queryIds": [
+          "04"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "408f53f0-bb5b-4622-89df-077249b400c5",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Brandon Reed",
+      "title": "Regional Asset Protection Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/brandon-reed-1138203b",
+      "location": "Sacramento County, California, United States",
+      "yearsAtCurrentRole": 1.13,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "NAPA Auto Parts",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/brandon-reed-1138203b",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "05"
+      ],
+      "sourceQueryNames": [
+        "similar_company_adjacent_role_family"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/73sh5fwyyyj"
+        ],
+        "filterDecisionIds": [
+          "80"
+        ],
+        "queryIds": [
+          "05"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "503df749-f143-4496-8d96-f483bada1d5f",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Manny Johl",
+      "title": "Manager-Regional Loss Prevention Safety",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/manny-johl-05b945a2",
+      "location": "Stockton, California, United States",
+      "yearsAtCurrentRole": 4.37,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Michaels Stores",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/manny-johl-05b945a2",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "05"
+      ],
+      "sourceQueryNames": [
+        "similar_company_adjacent_role_family"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/9kyrm09cxtl"
+        ],
+        "filterDecisionIds": [
+          "83"
+        ],
+        "queryIds": [
+          "05"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "c126bfad-b40e-42bd-960b-83b964a78c5f",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Cameron Maurer",
+      "title": "Regional Asset Protection Manager - Coastal",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/cameron-maurer",
+      "location": "United States",
+      "yearsAtCurrentRole": 1.3,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Bass Pro Shops",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/cameron-maurer",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "05"
+      ],
+      "sourceQueryNames": [
+        "similar_company_adjacent_role_family"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/18h4y6jw8w8"
+        ],
+        "filterDecisionIds": [
+          "91"
+        ],
+        "queryIds": [
+          "05"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "b9ad3989-5e7b-4f4e-ba45-2dd3d9372732",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Leticia Ruiz Keppy",
+      "title": "Regional Loss Prevention Director",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/leticia-ruiz-keppy-4a101041",
+      "location": "Greater Chicago Area",
+      "yearsAtCurrentRole": 3.62,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Ross Stores, Inc.",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/leticia-ruiz-keppy-4a101041",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "05"
+      ],
+      "sourceQueryNames": [
+        "similar_company_adjacent_role_family"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/kp6s0g6l61b"
+        ],
+        "filterDecisionIds": [
+          "92"
+        ],
+        "queryIds": [
+          "05"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "6c05e25a-6b4b-4f45-bb13-aa452ef13fb4",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Dennis Bautista",
+      "title": "Senior Asset Protection Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/dennis-bautista-8a40a945",
+      "location": "San Francisco Disctrict",
+      "yearsAtCurrentRole": 6.63,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Lowe's Companies, Inc.",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/dennis-bautista-8a40a945",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "05"
+      ],
+      "sourceQueryNames": [
+        "similar_company_adjacent_role_family"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/q333yvcn5q0"
+        ],
+        "filterDecisionIds": [
+          "93"
+        ],
+        "queryIds": [
+          "05"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "dd76d40c-d959-4f6e-af9d-308302d612f5",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Ronnie Rubalcaba",
+      "title": "Area Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/ronnie-rubalcaba-1b531489",
+      "location": "Central Valley, California",
+      "yearsAtCurrentRole": 6.29,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Ross Stores, Inc.",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/ronnie-rubalcaba-1b531489",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "05"
+      ],
+      "sourceQueryNames": [
+        "similar_company_adjacent_role_family"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/5t15jt5k92z"
+        ],
+        "filterDecisionIds": [
+          "94"
+        ],
+        "queryIds": [
+          "05"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "7223a3d5-ddcd-4b2d-bb84-8e06725bd929",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Gary Gravelyn",
+      "title": "Regional Asset Protection Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/gary-gravelyn-77722331",
+      "location": "Raleigh, North Carolina, US",
+      "yearsAtCurrentRole": 4.04,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Victra - Verizon Authorized Retailer",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/gary-gravelyn-77722331",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "05"
+      ],
+      "sourceQueryNames": [
+        "similar_company_adjacent_role_family"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/g13zztcz2xq"
+        ],
+        "filterDecisionIds": [
+          "95"
+        ],
+        "queryIds": [
+          "05"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "04d0e409-d2d3-4846-b7ff-a4b5a72c4445",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Mohammad Khamran Khalil",
+      "title": "Area Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/mohammad-khamran-khalil-6376071b3",
+      "location": "East Bay, California",
+      "yearsAtCurrentRole": 1.71,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Ross Stores, Inc.",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/mohammad-khamran-khalil-6376071b3",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "05"
+      ],
+      "sourceQueryNames": [
+        "similar_company_adjacent_role_family"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/z1mc38xfl22"
+        ],
+        "filterDecisionIds": [
+          "96"
+        ],
+        "queryIds": [
+          "05"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "e15165df-dae7-4936-a572-d4d7d8d6439a",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Scott Phillips",
+      "title": "District Loss Prevention Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/scott-phillips-64b4a98b",
+      "location": "California",
+      "yearsAtCurrentRole": 7.13,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "The TJX Companies, Inc.",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/scott-phillips-64b4a98b",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "05"
+      ],
+      "sourceQueryNames": [
+        "similar_company_adjacent_role_family"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/6lmlcrg1njk"
+        ],
+        "filterDecisionIds": [
+          "97"
+        ],
+        "queryIds": [
+          "05"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "dc3c213e-b69b-405d-922f-c10f494e4559",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Lorenzo L. Martinez",
+      "title": "District Manager",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/lorenzo-l-martinez-24984671",
+      "location": "Nevada, United States",
+      "yearsAtCurrentRole": 2.79,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "BoxLunch",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/lorenzo-l-martinez-24984671",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "05"
+      ],
+      "sourceQueryNames": [
+        "similar_company_adjacent_role_family"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/b8v2wvl4t3j"
+        ],
+        "filterDecisionIds": [
+          "98"
+        ],
+        "queryIds": [
+          "05"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "b75e7e15-0f1a-4149-88bd-27fd74d9e854",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Curtis W. Leininger",
+      "title": "Division Asset Protection Safety Director",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/curtis-w-leininger-lpc-b8543510",
+      "location": "Mooresville, North Carolina, United States",
+      "yearsAtCurrentRole": 4.13,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Lowe's Companies, Inc.",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/curtis-w-leininger-lpc-b8543510",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "05"
+      ],
+      "sourceQueryNames": [
+        "similar_company_adjacent_role_family"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/dl6m59fhyg4"
+        ],
+        "filterDecisionIds": [
+          "99"
+        ],
+        "queryIds": [
+          "05"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "360ac4b1-73de-4e51-81e4-304edf184666",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Nathan Willis",
+      "title": "Director, Corporate FP&A",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/nathan-willis-69801564",
+      "location": "Oakland, California, US",
+      "yearsAtCurrentRole": 0.3,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Pacific Gas and Electric Company",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/nathan-willis-69801564",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "06"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/8svfn52zhm1"
+        ],
+        "filterDecisionIds": [
+          "101"
+        ],
+        "queryIds": [
+          "06"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "e1f488c4-3b01-4980-a0d8-a017a77818dc",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Norris Ng",
+      "title": "Senior Manager, Clinical Supply Chain",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/norris-ng-288a0842",
+      "location": "San Francisco Bay Area",
+      "yearsAtCurrentRole": 0.62,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Kardigan",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/norris-ng-288a0842",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "06"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/qmbcpxbfp37"
+        ],
+        "filterDecisionIds": [
+          "102"
+        ],
+        "queryIds": [
+          "06"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "f6df9c52-4d1e-451c-b6f7-6112d5ebd49d",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Hamin Oh",
+      "title": "Director, Data, Analytics & AI",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/haminoh",
+      "location": "San Francisco Bay Area",
+      "yearsAtCurrentRole": 0.54,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Snowflake",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/haminoh",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "06"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/zv70c1cmlfv"
+        ],
+        "filterDecisionIds": [
+          "103"
+        ],
+        "queryIds": [
+          "06"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "43659782-1d9e-472d-a2d8-69b4e8833595",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Lewis B.",
+      "title": "SDE II, Search",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/lewisbobrow",
+      "location": "Palo Alto, California, United States",
+      "yearsAtCurrentRole": 2.04,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Amazon",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/lewisbobrow",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "06"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/l01zsrzg3gx"
+        ],
+        "filterDecisionIds": [
+          "104"
+        ],
+        "queryIds": [
+          "06"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "89967345-a2cf-408e-838b-eb0cd0c02eb1",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Nadim Hossain",
+      "title": "Vice President Of Product Management",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/nadimhossain",
+      "location": "Mountain View, California, US",
+      "yearsAtCurrentRole": 1.96,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Confluent",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/nadimhossain",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "06"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/5l76vsf4s89"
+        ],
+        "filterDecisionIds": [
+          "105"
+        ],
+        "queryIds": [
+          "06"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "77242493-2a1a-4c8f-abdd-4b4dde055095",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Muhammad Fuzail",
+      "title": "Senior Manager, DAAS",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/muhammadfuzail",
+      "location": "Redwood City, California, US",
+      "yearsAtCurrentRole": 0.37,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Snorkel AI",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/muhammadfuzail",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "06"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/nshj4zvxswr"
+        ],
+        "filterDecisionIds": [
+          "106"
+        ],
+        "queryIds": [
+          "06"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "f0cae977-128d-4f66-8e2b-45a353914bff",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Markus Duran",
+      "title": "Vice President Of Product Leadership",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/markus-duran-242289101",
+      "location": "Watsonville, California, US",
+      "yearsAtCurrentRole": 0.3,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "California Giant Berry Farms",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/markus-duran-242289101",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "06"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/ch5tqvrkfb7"
+        ],
+        "filterDecisionIds": [
+          "107"
+        ],
+        "queryIds": [
+          "06"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "de213412-8550-47c6-afad-55f547ef881a",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Ines Elloumi",
+      "title": "Chief Product Officer",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/ineselloumi",
+      "location": "San Francisco, California, United States",
+      "yearsAtCurrentRole": 1.3,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Grandist",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/ineselloumi",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "06"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/w8z74kkh37b"
+        ],
+        "filterDecisionIds": [
+          "108"
+        ],
+        "queryIds": [
+          "06"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "3cb6b361-4cb7-4bab-a2c2-824167d1cb5e",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Max Good",
+      "title": "UX Researcher, Google Photos",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/maxwellgood",
+      "location": "San Francisco, California, United States",
+      "yearsAtCurrentRole": 1.71,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Google",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/maxwellgood",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "06"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/8csfxjt7hbg"
+        ],
+        "filterDecisionIds": [
+          "109"
+        ],
+        "queryIds": [
+          "06"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "e65f0609-52cd-49ba-8416-00b94f21162a",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Cristin Hubbard",
+      "title": "Chief Commercial Officer",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/cristin-hubbard-08ba881",
+      "location": "San Francisco, California, United States",
+      "yearsAtCurrentRole": 2.29,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "BioMarin Pharmaceutical",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/cristin-hubbard-08ba881",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "06"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/v60521pdj65"
+        ],
+        "filterDecisionIds": [
+          "110"
+        ],
+        "queryIds": [
+          "06"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "d0c65973-f9a2-4676-960a-d71dded26f77",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "James Nicols",
+      "title": "Chief Agentic Success Officer",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/james-nicols-77143199",
+      "location": "San Francisco Bay Area",
+      "yearsAtCurrentRole": 0.62,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "CETDIGIT (Cetrix Cloud Services)",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/james-nicols-77143199",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "06"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/qydtnv30yct"
+        ],
+        "filterDecisionIds": [
+          "111"
+        ],
+        "queryIds": [
+          "06"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "1a029ee2-e434-455a-b81a-371bb768492d",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Alex Lewis",
+      "title": "Software Engineer",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/alex-lewis-036635199",
+      "location": "San Francisco Bay Area",
+      "yearsAtCurrentRole": 1.62,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "CHAOS Industries",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/alex-lewis-036635199",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "06"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/84cldcnk517"
+        ],
+        "filterDecisionIds": [
+          "112"
+        ],
+        "queryIds": [
+          "06"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "e3548b4b-a420-4f38-89fb-05a1b74035be",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Donald Lewis",
+      "title": "Director, Modeling Excellence",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/donaldclewis",
+      "location": "Texas",
+      "yearsAtCurrentRole": 7.71,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "USAA",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/donaldclewis",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "06"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/7m486bppc54"
+        ],
+        "filterDecisionIds": [
+          "113"
+        ],
+        "queryIds": [
+          "06"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "c7a42a01-b873-4798-ac4e-7009d0f2bed2",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Simon Etherington",
+      "title": "Chief Operating Officer",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/simon-etherington-998b3714",
+      "location": "San Francisco Bay Area",
+      "yearsAtCurrentRole": 13.04,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "WILLIS + Co.",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/simon-etherington-998b3714",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "06"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/14bg7jkqf3k"
+        ],
+        "filterDecisionIds": [
+          "116"
+        ],
+        "queryIds": [
+          "06"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "b7f78976-d0ad-46b1-9dc4-ca62890763a1",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "David Ng",
+      "title": "Partner",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/davidng889",
+      "location": "San Leandro, California, United States",
+      "yearsAtCurrentRole": 1.04,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Wellmade",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/davidng889",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "06"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/th849kd2wkb"
+        ],
+        "filterDecisionIds": [
+          "117"
+        ],
+        "queryIds": [
+          "06"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "1d4ead9a-ae5a-4270-ac33-28b4ed7609c3",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Alexis Lewis",
+      "title": "Vice President, Marketing Strategy",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/alexisiveslewis",
+      "location": "San Clemente, California, United States",
+      "yearsAtCurrentRole": 0.71,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Buildertrend",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/alexisiveslewis",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "06"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/x3fwl2klr19"
+        ],
+        "filterDecisionIds": [
+          "118"
+        ],
+        "queryIds": [
+          "06"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "5cbd6396-1661-4b72-9438-45c59f72e802",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Zach Hanauer",
+      "title": "District Director",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/zach-hanauer-1a973647",
+      "location": "San Francisco Bay Area",
+      "yearsAtCurrentRole": 2.37,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Sprouts Farmers Market",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/zach-hanauer-1a973647",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "07"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity_with_company_expansion"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/9g1snw88vwc"
+        ],
+        "filterDecisionIds": [
+          "119"
+        ],
+        "queryIds": [
+          "07"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "ab2c67d3-639c-49a2-98dd-583752b68cc3",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Kelly Mullin",
+      "title": "President - Northern California Division",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/kelly-mullin-29943274",
+      "location": "Boise, Idaho, US",
+      "yearsAtCurrentRole": 0.71,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Albertsons Companies",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/kelly-mullin-29943274",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "07"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity_with_company_expansion"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/rl9pn7hdkmd"
+        ],
+        "filterDecisionIds": [
+          "120"
+        ],
+        "queryIds": [
+          "07"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "7abfcc63-0074-4575-8606-5290336f942e",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Isabella Taylor",
+      "title": "Regional Director In The Retail Industry",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/annalopez00",
+      "location": "San Francisco, California, United States",
+      "yearsAtCurrentRole": 10.88,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Safeway",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/annalopez00",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "07"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity_with_company_expansion"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/7cx46mv8m8t"
+        ],
+        "filterDecisionIds": [
+          "121"
+        ],
+        "queryIds": [
+          "07"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "ba6c806c-2523-4c5a-ad69-dc89dfdc736e",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Felicia Andresen",
+      "title": "Store Director",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/felicia-andresen-677a3a329",
+      "location": "Northern California Bay Area - Marin County, Napa County & Solano County",
+      "yearsAtCurrentRole": 14.04,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Safeway",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/felicia-andresen-677a3a329",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "07"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity_with_company_expansion"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/lfhw5rsdwcb"
+        ],
+        "filterDecisionIds": [
+          "122"
+        ],
+        "queryIds": [
+          "07"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "7cb51a0e-a041-4cb7-aefd-cb1f18023b37",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Karl Schroeder",
+      "title": "President - Northern California Division",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/karl-schroeder-220ba21a",
+      "location": "Pleasanton, California, United States",
+      "yearsAtCurrentRole": 5.3,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Albertsons Companies (Safeway)",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/karl-schroeder-220ba21a",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "07"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity_with_company_expansion"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/zswtjhqpjlm"
+        ],
+        "filterDecisionIds": [
+          "123"
+        ],
+        "queryIds": [
+          "07"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "debcbaab-b731-45cd-a77f-934e80a53285",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Diana DePaepe",
+      "title": "Director Of Grocery Operations",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/diana-depaepe-8b6877142",
+      "location": "Woodland, California, United States",
+      "yearsAtCurrentRole": 2.96,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Nugget Market, Inc.",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/diana-depaepe-8b6877142",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "07"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity_with_company_expansion"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/jzb0866ld01"
+        ],
+        "filterDecisionIds": [
+          "124"
+        ],
+        "queryIds": [
+          "07"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "40bf38d8-972c-4531-8d57-7cfea868777a",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Steve Boyce",
+      "title": "Director Of Store Operations",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/steveboycemba",
+      "location": "Modesto, US",
+      "yearsAtCurrentRole": 6.63,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "The Save Mart Companies",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/steveboycemba",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "07"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity_with_company_expansion"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/vm0ky4v6sn3"
+        ],
+        "filterDecisionIds": [
+          "125"
+        ],
+        "queryIds": [
+          "07"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "8aef9bc3-b9e7-4f66-b24a-9f6d5db28b5a",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Catherine Geras",
+      "title": "Retail Supermarket Regional Director",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/catherine-geras-21903180",
+      "location": "San Francisco",
+      "yearsAtCurrentRole": 7.79,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Safeway",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/catherine-geras-21903180",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "07"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity_with_company_expansion"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/d2h0rp9j29j"
+        ],
+        "filterDecisionIds": [
+          "126"
+        ],
+        "queryIds": [
+          "07"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "187f5b79-6358-4555-bdb7-9a1d36f09197",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Larry Ferguson",
+      "title": "Store Director",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/larry-ferguson-4651a81a",
+      "location": "San Mateo, California, United States",
+      "yearsAtCurrentRole": 4.13,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Draeger's Markets",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/larry-ferguson-4651a81a",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "07"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity_with_company_expansion"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/qqwhnpkwp5g"
+        ],
+        "filterDecisionIds": [
+          "127"
+        ],
+        "queryIds": [
+          "07"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "61c542f9-37a1-409b-8b55-dae0c5053f0a",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Brett Kassell",
+      "title": "Store Team Leader",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/brettkassell",
+      "location": "San Jose, CA",
+      "yearsAtCurrentRole": 16.46,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Whole Foods Market",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/brettkassell",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "07"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity_with_company_expansion"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/fxpdccw1ztn"
+        ],
+        "filterDecisionIds": [
+          "128"
+        ],
+        "queryIds": [
+          "07"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "a7a1cac8-ecd1-4804-9921-9298452985c6",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Matt Reeves",
+      "title": "Senior Vice President",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/matt-reeves-leadership",
+      "location": "Emeryville, CA",
+      "yearsAtCurrentRole": 1.04,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Grocery Outlet",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/matt-reeves-leadership",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "07"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity_with_company_expansion"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/c1nqnk6zd5y"
+        ],
+        "filterDecisionIds": [
+          "129"
+        ],
+        "queryIds": [
+          "07"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "6ec70aba-2eaa-40f5-82f3-6c9ee88851be",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Randy N Anderson",
+      "title": "Division CFO VP Finance Head Of Finance - Safeway Northern California Division",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/randy-n-anderson-02454618",
+      "location": "US",
+      "yearsAtCurrentRole": 24.13,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Safeway",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/randy-n-anderson-02454618",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "07"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity_with_company_expansion"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/lm3wmqk6t5t"
+        ],
+        "filterDecisionIds": [
+          "130"
+        ],
+        "queryIds": [
+          "07"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "9f3a7231-4911-4b1c-9f2a-8f1705e3832f",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Marnie Fields",
+      "title": "Director, Strategic Merchandising",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/marnie-fields-021578152",
+      "location": "California, United States",
+      "yearsAtCurrentRole": 3.13,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Grocery Outlet",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/marnie-fields-021578152",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "07"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity_with_company_expansion"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/rxqh2s2fwhc"
+        ],
+        "filterDecisionIds": [
+          "131"
+        ],
+        "queryIds": [
+          "07"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "0299db3e-6abd-4154-83bd-88642459b188",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Kristina Kleb",
+      "title": "Head Of Department",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/kristina-kleb-848373188",
+      "location": "San Francisco Bay Area",
+      "yearsAtCurrentRole": null,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Grocery Outlet",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/kristina-kleb-848373188",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "07"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity_with_company_expansion"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/sxhlgtdwp09"
+        ],
+        "filterDecisionIds": [
+          "132"
+        ],
+        "queryIds": [
+          "07"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "4b6fd8ac-e1c6-41e4-a2bc-409dbec14616",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Jeanette Rodriguez",
+      "title": "National Category Merchandising Director",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/jeanette-rodriguez-60b0327",
+      "location": "United States",
+      "yearsAtCurrentRole": 5.3,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Albertsons Companies",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/jeanette-rodriguez-60b0327",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "07"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity_with_company_expansion"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/zlqwtympx1z"
+        ],
+        "filterDecisionIds": [
+          "133"
+        ],
+        "queryIds": [
+          "07"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "cf561fec-5c9b-4e11-8d86-abbf2e915768",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Jess A.",
+      "title": "Director, Learning Organizational Effectiveness",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/jess-g-adams",
+      "location": "Emeryville, California, United States",
+      "yearsAtCurrentRole": 1.71,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Grocery Outlet",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/jess-g-adams",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "07"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity_with_company_expansion"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/3j4crdd2f3z"
+        ],
+        "filterDecisionIds": [
+          "134"
+        ],
+        "queryIds": [
+          "07"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "010dc627-842d-4d53-b3d1-2c0b21a56e6e",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Julio Ortiz",
+      "title": "General Merchandise & Food Executive Team Leader",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/juliocesarortiz",
+      "location": "San Francisco Bay Area",
+      "yearsAtCurrentRole": 6.29,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Target",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/juliocesarortiz",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "07"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity_with_company_expansion"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/t6l1g6z5q1d"
+        ],
+        "filterDecisionIds": [
+          "135"
+        ],
+        "queryIds": [
+          "07"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "500925ff-b14c-4d01-90ec-abca5a45b9b0",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Darla Swanson",
+      "title": "Controller",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/darla-swanson-192951a",
+      "location": "Tracy, California, United States",
+      "yearsAtCurrentRole": 19.79,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Source Building Products",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/darla-swanson-192951a",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "07"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity_with_company_expansion"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/zhfwpt2qt9r"
+        ],
+        "filterDecisionIds": [
+          "136"
+        ],
+        "queryIds": [
+          "07"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
+    },
+    {
+      "id": "13978a53-4a15-4e40-831b-dc694eb00b59",
+      "campaignId": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "status": "candidate",
+      "name": "Paul Stephens",
+      "title": "Operations Supervisor",
+      "emailVerified": false,
+      "linkedinUrl": "https://linkedin.com/in/paul-stephens-18387813a",
+      "location": "Salinas, California Area",
+      "yearsAtCurrentRole": 9.04,
+      "source": "Lead generation",
+      "confidenceScore": 50,
+      "companyName": "Turatti North America",
+      "companyPainPoints": [],
+      "companyFitScore": 0,
+      "leadGenRunId": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "identityKey": "https://linkedin.com/in/paul-stephens-18387813a",
+      "identityKeyType": "linkedinUrl",
+      "sourceQueryIds": [
+        "07"
+      ],
+      "sourceQueryNames": [
+        "linkedin_anchored_similarity_with_company_expansion"
+      ],
+      "sourceBuckets": [
+        "similar_company"
+      ],
+      "overlapCount": 1,
+      "artifactRefs": {
+        "mappedCandidateIds": [
+          "https://exa.ai/library/person/mx7cf6n8kzx"
+        ],
+        "filterDecisionIds": [
+          "137"
+        ],
+        "queryIds": [
+          "07"
+        ]
+      },
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
     }
   ],
   "personas": [
@@ -201282,6 +205479,227 @@
       "id": "2cc319e3-5155-44c6-b43d-67db5a402535",
       "createdAt": "2026-06-11T02:21:18.579Z",
       "updatedAt": "2026-06-11T02:21:21.992Z"
+    },
+    {
+      "seedPersonName": "Lewis Ellgood",
+      "seedRole": "Regional Loss Prevention",
+      "seedCompanyName": "AutoZone",
+      "seedLinkedinUrl": "https://www.linkedin.com/in/lewis-ellgood-628807146/",
+      "status": "completed",
+      "artifactRunId": "exa_2026-06-16_2145_autozone_lewis-ellgood",
+      "artifactPath": "D:\\Code\\SentryAI-Sales-Tool\\lead_generation_mod\\data\\runs\\exa_2026-06-16_2145_autozone_lewis-ellgood",
+      "importerVersion": "leadgen-import-v1",
+      "completedAt": "2026-06-17T04:46:12.491Z",
+      "summary": {
+        "totalCandidates": 99,
+        "acceptedCandidates": 96,
+        "droppedCandidates": 3,
+        "needsReviewCandidates": 0
+      },
+      "queryStats": [
+        {
+          "vectorId": "01",
+          "vectorName": "same_company_exact_or_near_role",
+          "resultCount": 20,
+          "uniqueCount": 2,
+          "overlapCount": 18
+        },
+        {
+          "vectorId": "02",
+          "vectorName": "same_company_adjacent_leadership",
+          "resultCount": 20,
+          "uniqueCount": 6,
+          "overlapCount": 14
+        },
+        {
+          "vectorId": "03",
+          "vectorName": "same_company_person_anchored_similarity",
+          "resultCount": 20,
+          "uniqueCount": 5,
+          "overlapCount": 15
+        },
+        {
+          "vectorId": "04",
+          "vectorName": "similar_company_exact_or_near_role",
+          "resultCount": 20,
+          "uniqueCount": 14,
+          "overlapCount": 6
+        },
+        {
+          "vectorId": "05",
+          "vectorName": "similar_company_adjacent_role_family",
+          "resultCount": 20,
+          "uniqueCount": 11,
+          "overlapCount": 9
+        },
+        {
+          "vectorId": "06",
+          "vectorName": "linkedin_anchored_similarity",
+          "resultCount": 19,
+          "uniqueCount": 18,
+          "overlapCount": 1
+        },
+        {
+          "vectorId": "07",
+          "vectorName": "linkedin_anchored_similarity_with_company_expansion",
+          "resultCount": 20,
+          "uniqueCount": 20,
+          "overlapCount": 0
+        }
+      ],
+      "queryPairOverlaps": [
+        {
+          "queryAId": "01",
+          "queryBId": "02",
+          "sharedCandidateIds": [
+            "https://linkedin.com/in/martin-ceballos-a45296b6",
+            "https://linkedin.com/in/eric-moreno-85430479",
+            "https://linkedin.com/in/tony-trevino-3a482031",
+            "https://linkedin.com/in/alfred-luna-a19a2b110",
+            "https://linkedin.com/in/lewis-ellgood-628807146",
+            "https://linkedin.com/in/larry-zimmerman-a6226613",
+            "https://linkedin.com/in/jamesmullaney",
+            "https://linkedin.com/in/tony-lupo-95238014",
+            "https://linkedin.com/in/chad-smith-143b4a132",
+            "https://linkedin.com/in/james-harris-lpc-799521124",
+            "https://linkedin.com/in/romel-diggs-4a9a26317",
+            "https://linkedin.com/in/caleb-milton-173407104",
+            "https://linkedin.com/in/tanisha-gonzalez-wellmann-b581a61a",
+            "https://linkedin.com/in/thomas-medina-65aa14ab"
+          ],
+          "sharedCount": 14
+        },
+        {
+          "queryAId": "01",
+          "queryBId": "03",
+          "sharedCandidateIds": [
+            "https://linkedin.com/in/martin-ceballos-a45296b6",
+            "https://linkedin.com/in/eric-moreno-85430479",
+            "https://linkedin.com/in/tony-trevino-3a482031",
+            "https://linkedin.com/in/alfred-luna-a19a2b110",
+            "https://linkedin.com/in/lewis-ellgood-628807146",
+            "https://linkedin.com/in/larry-zimmerman-a6226613",
+            "https://linkedin.com/in/jamesmullaney",
+            "https://linkedin.com/in/j-lavon-k-80966664",
+            "https://linkedin.com/in/tony-lupo-95238014",
+            "https://linkedin.com/in/james-harris-lpc-799521124",
+            "https://linkedin.com/in/romel-diggs-4a9a26317",
+            "https://linkedin.com/in/rogerribbke",
+            "https://linkedin.com/in/dave-greer-210982168",
+            "https://linkedin.com/in/thomas-medina-65aa14ab",
+            "https://linkedin.com/in/cody-mogus-57121b1a5"
+          ],
+          "sharedCount": 15
+        },
+        {
+          "queryAId": "01",
+          "queryBId": "04",
+          "sharedCandidateIds": [
+            "https://linkedin.com/in/j-lavon-k-80966664"
+          ],
+          "sharedCount": 1
+        },
+        {
+          "queryAId": "01",
+          "queryBId": "05",
+          "sharedCandidateIds": [
+            "https://linkedin.com/in/tony-trevino-3a482031",
+            "https://linkedin.com/in/jamesmullaney",
+            "https://linkedin.com/in/j-lavon-k-80966664",
+            "https://linkedin.com/in/rogerribbke"
+          ],
+          "sharedCount": 4
+        },
+        {
+          "queryAId": "01",
+          "queryBId": "06",
+          "sharedCandidateIds": [
+            "https://linkedin.com/in/lewis-ellgood-628807146"
+          ],
+          "sharedCount": 1
+        },
+        {
+          "queryAId": "02",
+          "queryBId": "03",
+          "sharedCandidateIds": [
+            "https://linkedin.com/in/martin-ceballos-a45296b6",
+            "https://linkedin.com/in/eric-moreno-85430479",
+            "https://linkedin.com/in/tony-trevino-3a482031",
+            "https://linkedin.com/in/alfred-luna-a19a2b110",
+            "https://linkedin.com/in/lewis-ellgood-628807146",
+            "https://linkedin.com/in/larry-zimmerman-a6226613",
+            "https://linkedin.com/in/jamesmullaney",
+            "https://linkedin.com/in/tony-lupo-95238014",
+            "https://linkedin.com/in/james-harris-lpc-799521124",
+            "https://linkedin.com/in/romel-diggs-4a9a26317",
+            "https://linkedin.com/in/thomas-medina-65aa14ab"
+          ],
+          "sharedCount": 11
+        },
+        {
+          "queryAId": "02",
+          "queryBId": "05",
+          "sharedCandidateIds": [
+            "https://linkedin.com/in/tony-trevino-3a482031",
+            "https://linkedin.com/in/jamesmullaney"
+          ],
+          "sharedCount": 2
+        },
+        {
+          "queryAId": "02",
+          "queryBId": "06",
+          "sharedCandidateIds": [
+            "https://linkedin.com/in/lewis-ellgood-628807146"
+          ],
+          "sharedCount": 1
+        },
+        {
+          "queryAId": "03",
+          "queryBId": "04",
+          "sharedCandidateIds": [
+            "https://linkedin.com/in/j-lavon-k-80966664"
+          ],
+          "sharedCount": 1
+        },
+        {
+          "queryAId": "03",
+          "queryBId": "05",
+          "sharedCandidateIds": [
+            "https://linkedin.com/in/tony-trevino-3a482031",
+            "https://linkedin.com/in/jamesmullaney",
+            "https://linkedin.com/in/j-lavon-k-80966664",
+            "https://linkedin.com/in/rogerribbke"
+          ],
+          "sharedCount": 4
+        },
+        {
+          "queryAId": "03",
+          "queryBId": "06",
+          "sharedCandidateIds": [
+            "https://linkedin.com/in/lewis-ellgood-628807146"
+          ],
+          "sharedCount": 1
+        },
+        {
+          "queryAId": "04",
+          "queryBId": "05",
+          "sharedCandidateIds": [
+            "https://linkedin.com/in/j-lavon-k-80966664",
+            "https://linkedin.com/in/brian-riddick-060358b3",
+            "https://linkedin.com/in/jolisa-deneiliom-5a2bb4100",
+            "https://linkedin.com/in/kit-becker-0b6417b",
+            "https://linkedin.com/in/jeff-berk-8bb2298",
+            "https://linkedin.com/in/dennis-bantugan-a675876"
+          ],
+          "sharedCount": 6
+        }
+      ],
+      "stdoutSnippet": "{\r\n  \"original_seed\": {\r\n    \"person_name\": \"Lewis Ellgood\",\r\n    \"company_name\": \"AutoZone\",\r\n    \"linkedin_url\": \"https://www.linkedin.com/in/lewis-ellgood-628807146/\",\r\n    \"role\": \"Regional Loss Prevention\"\r\n  },\r\n  \"target_count\": 300,\r\n  \"total_leads_collected\": 1133,\r\n  \"stopped_reason\": \"target_reached\",\r\n  \"hops\": 1,\r\n  \"pivot_trail\": [\r\n    {\r\n      \"person_name\": \"Lewis Ellgood\",\r\n      \"company_name\": \"AutoZone\",\r\n      \"linkedin_url\": \"https://www.linkedin.com/in/lewis-ellgood-628807146/\",\r\n      \"role\": \"Regional Loss Prevention\"\r\n    }\r\n  ],\r\n  \"hop_run_ids\": [\r\n    \"exa_2026-06-16_2145_autozone_lewis-ellgood\"\r\n  ],\r\n  \"hop_summaries\": [\r\n    {\r\n      \"run_id\": \"exa_2026-06-16_2145_autozone_lewis-ellgood\",\r\n      \"summary\": {\r\n        \"query_count\": 7,\r\n        \"search_result_count\": 140,\r\n        \"mapped_count\": 139,\r\n        \"unmapped_count\": 1,\r\n        \"accepted_count\": 96,\r\n        \"accepted_with_flags_count\": 30,\r\n        \"dropped_count\": 3,\r\n        \"same_company_count\": 30,\r\n        \"similar_company_count\": 66,\r\n        \"storage\": {\r\n          \"added\": 85,\r\n          \"updated\": 0,\r\n          \"stored_total\": 1133\r\n        }\r\n      }\r\n    }\r\n  ]\r\n}",
+      "command": "python -m exa_searching.cli run-expand --input C:\\Users\\AR\\AppData\\Local\\Temp\\smart-sentry-leadgen-IoUfgg\\seed.json --total 300 --max-hops 20",
+      "exitCode": 0,
+      "id": "6617dbeb-9711-4fbe-8a33-ff2ef9f47b32",
+      "createdAt": "2026-06-17T04:46:12.555Z",
+      "updatedAt": "2026-06-17T04:46:12.555Z"
     }
   ],
   "outreachResearch": [
@@ -245838,6 +250256,12 @@
       "name": "Best From SmartSentryCurrent",
       "createdAt": "2026-06-17T02:17:26.002Z",
       "updatedAt": "2026-06-17T02:17:26.002Z"
+    },
+    {
+      "id": "41e2c840-3f9c-464d-9a4c-3e6cd386f00b",
+      "name": "NorCal",
+      "createdAt": "2026-06-17T04:43:01.407Z",
+      "updatedAt": "2026-06-17T04:43:01.407Z"
     }
   ]
 }

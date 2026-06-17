@@ -38,13 +38,14 @@ export async function enrichPersonFromLinkedIn(person: {
   const apiKey = process.env.EXA_API_KEY;
   if (!apiKey) return null;
 
-  const query = `"${person.name}" ${person.companyName}`;
+  const query = `"${person.name}" ${person.companyName} Northern California`;
   const payload: Record<string, unknown> = {
     query,
     category: "people",
     type: "auto",
     numResults: 3,
     includeDomains: ["linkedin.com"],
+    userLocation: "US",
   };
 
   try {

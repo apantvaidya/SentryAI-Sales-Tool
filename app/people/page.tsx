@@ -3,6 +3,7 @@ import { Filter, Megaphone, Upload, UserPlus, X } from "lucide-react";
 import { createCampaign, createLeadGenRun, createPerson, importPeopleCsv, registerExistingLeadGenRun } from "@/app/actions";
 import { AppShell } from "@/components/AppShell";
 import { BatchJobStatus } from "@/components/BatchJobStatus";
+import { PendingButton } from "@/components/PendingButton";
 import { PersistentJobBanner } from "@/components/PersistentJobBanner";
 import { ExportCampaignForm } from "@/components/ExportCampaignForm";
 import { PeopleTable } from "@/components/PeopleTable";
@@ -81,9 +82,9 @@ export default async function PeoplePage({ searchParams }: { searchParams?: Prom
                 </label>
               </div>
             </div>
-            <button className="button-primary" type="submit" disabled={campaigns.length === 0}>
+            <PendingButton className="button-primary" disabled={campaigns.length === 0} pendingText="Running… (may take several minutes)">
               Run Exa Lead Gen
-            </button>
+            </PendingButton>
           </form>
 
           <form action={importPeopleCsv} className="surface grid gap-3 p-5">
@@ -109,10 +110,10 @@ export default async function PeoplePage({ searchParams }: { searchParams?: Prom
             </select>
             <input className="field" name="defaultCompany" placeholder="Default company (if CSV has no company column)" />
             <input className="field" type="file" name="csvFile" accept=".csv,text/csv" required />
-            <button className="button-secondary" type="submit" disabled={campaigns.length === 0}>
+            <PendingButton className="button-secondary" disabled={campaigns.length === 0} pendingText="Importing…">
               <Upload size={16} />
               Import CSV
-            </button>
+            </PendingButton>
           </form>
         </div>
 

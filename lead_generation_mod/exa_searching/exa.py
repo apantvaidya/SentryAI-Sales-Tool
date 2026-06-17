@@ -26,8 +26,7 @@ class ExaClient:
             "type": self.settings.search_type,
             "numResults": self.settings.num_results,
         }
-        if self.settings.user_location:
-            payload["userLocation"] = self.settings.user_location
+        payload["userLocation"] = self.settings.user_location or "US"
 
         encoded_payload = json.dumps(payload).encode("utf-8")
         api_request = request.Request(
