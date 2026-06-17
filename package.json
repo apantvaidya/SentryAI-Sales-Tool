@@ -10,9 +10,11 @@
     "data:dedupe-names": "node scripts/dedupe-lead-candidate-names.mjs",
     "data:remove-irrelevant": "node scripts/remove-irrelevant-lead-candidates.mjs",
     "data:dedupe-drafts": "node scripts/dedupe-outreach-drafts.mjs",
-    "migrate:person-model": "node scripts/migrate-to-person-model.mjs"
+    "migrate:person-model": "node scripts/migrate-to-person-model.mjs",
+    "migrate:add-campaigns": "node scripts/migrate-add-campaigns.mjs"
   },
   "dependencies": {
+    "@tanstack/react-virtual": "^3.14.3",
     "@types/node": "^22.15.21",
     "@types/react": "^19.1.5",
     "@types/react-dom": "^19.1.5",

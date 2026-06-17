@@ -5,8 +5,16 @@ export type PipelineStatus = "queued" | "running" | "completed" | "failed";
 export type CandidateIdentityKeyType = "linkedinUrl" | "nameCompany";
 export type ValidationRecommendation = "approve" | "human_review" | "reject";
 
+export type Campaign = {
+  id: string;
+  name: string;
+  createdAt: string;
+  updatedAt: string;
+};
+
 export type Person = {
   id: string;
+  campaignId: string;
   status: PersonStatus;
   name: string;
   title?: string;
@@ -116,6 +124,7 @@ export type Database = {
   leadGenRuns: LeadGenRun[];
   outreachResearch: OutreachResearch[];
   outreachJobs: OutreachJob[];
+  campaigns: Campaign[];
 };
 
 export type LeadQueryStats = {

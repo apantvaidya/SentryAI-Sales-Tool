@@ -6,6 +6,8 @@ import { after } from "next/server";
 import { generateCompanyResearch, generatePersonalizedEmail, scorePersonRelevance } from "@/lib/ai/client";
 import {
   addActivity,
+  assignCampaign as storeAssignCampaign,
+  createCampaign as storeCreateCampaign,
   createOutreachDraft,
   createOutreachJob,
   createOutreachResearch,
@@ -38,9 +40,12 @@ export async function createPerson(formData: FormData) {
   const firstName = value(formData, "firstName");
   const lastName = value(formData, "lastName");
   const role = value(formData, "role");
+  const campaignId = value(formData, "campaignId");
   if (!firstName || !lastName) throw new Error("First and last name are required");
   if (!role) throw new Error("Role is required");
+  if (!campaignId) throw new Error("Campaign is required");
   const person = await storeCreatePerson({
+    campaignId,
     name: `${firstName} ${lastName}`,
     title: role,
     linkedinUrl: value(formData, "linkedinUrl"),
@@ -54,7 +59,9 @@ export async function createPerson(formData: FormData) {
 }
 
 export async function updatePerson(personId: string, formData: FormData) {
+  const campaignId = value(formData, "campaignId");
   await storeUpdatePerson(personId, {
+    ...(campaignId ? { campaignId } : {}),
     name: value(formData, "name") || "",
     title: value(formData, "title") || "",
     email: value(formData, "email"),
@@ -77,6 +84,24 @@ export async function deletePerson(personId: string) {
   await storeDeletePerson(personId);
   revalidatePath("/people");
   redirect("/people");
+}
+
+export async function createCampaign(formData: FormData) {
+  const name = value(formData, "name");
+  if (!name) throw new Error("Campaign name is required");
+  await storeCreateCampaign(name);
+  revalidatePath("/people");
+}
+
+export async function assignCampaign(formData: FormData) {
+  const personIds = Array.from(
+    new Set(formData.getAll("personIds").filter((item): item is string => typeof item === "string" && Boolean(item)))
+  );
+  const campaignId = value(formData, "campaignId");
+  if (!campaignId) throw new Error("Campaign is required");
+  if (personIds.length === 0) return;
+  await storeAssignCampaign(personIds, campaignId);
+  revalidatePath("/people");
 }
 
 export async function generatePersonResearchBrief(personId: string) {
@@ -175,9 +200,11 @@ function toUpsertCandidates(candidates: ArtifactCandidate[]) {
 
 export async function registerExistingLeadGenRun(formData: FormData) {
   const artifactRunId = value(formData, "artifactRunId");
+  const campaignId = value(formData, "campaignId");
   if (!artifactRunId) throw new Error("Artifact run is required");
+  if (!campaignId) throw new Error("Campaign is required");
   const imported = await importLeadGenArtifacts(artifactRunId);
-  const run = await upsertImportedLeadGenRun({ run: imported.run, candidates: toUpsertCandidates(imported.candidates) });
+  const run = await upsertImportedLeadGenRun({ run: imported.run, campaignId, candidates: toUpsertCandidates(imported.candidates) });
   revalidatePath("/people");
   redirect(`/people?runId=${run.id}`);
 }
@@ -185,7 +212,9 @@ export async function registerExistingLeadGenRun(formData: FormData) {
 export async function createLeadGenRun(formData: FormData) {
   const personName = value(formData, "seedPersonName");
   const companyName = value(formData, "seedCompanyName");
+  const campaignId = value(formData, "campaignId");
   if (!personName || !companyName) throw new Error("Seed person name and company are required");
+  if (!campaignId) throw new Error("Campaign is required");
 
   const seed = {
     person_name: personName,
@@ -218,7 +247,7 @@ export async function createLeadGenRun(formData: FormData) {
       imported.run.exitCode = execution.exitCode;
       imported.run.stdoutSnippet = execution.stdoutSnippet;
       imported.run.stderrSnippet = execution.stderrSnippet;
-      const run = await upsertImportedLeadGenRun({ run: imported.run, candidates: toUpsertCandidates(imported.candidates) });
+      const run = await upsertImportedLeadGenRun({ run: imported.run, campaignId, candidates: toUpsertCandidates(imported.candidates) });
       if (!firstRunId) firstRunId = run.id;
     }
 
@@ -235,7 +264,7 @@ export async function createLeadGenRun(formData: FormData) {
   imported.run.exitCode = execution.exitCode;
   imported.run.stdoutSnippet = execution.stdoutSnippet;
   imported.run.stderrSnippet = execution.stderrSnippet;
-  const run = await upsertImportedLeadGenRun({ run: imported.run, candidates: toUpsertCandidates(imported.candidates) });
+  const run = await upsertImportedLeadGenRun({ run: imported.run, campaignId, candidates: toUpsertCandidates(imported.candidates) });
   revalidatePath("/people");
   redirect(`/people?runId=${run.id}`);
 }

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, FileDown, RefreshCw } from "lucide-react";
+import { ArrowLeft, FileDown, Link2, RefreshCw } from "lucide-react";
 import { deletePerson, generateOutreachDraft, scorePerson, updatePerson } from "@/app/actions";
 import { AppShell } from "@/components/AppShell";
 import { ActivityTimeline } from "@/components/ActivityTimeline";
@@ -10,14 +10,15 @@ import { DraftEditor } from "@/components/DraftEditor";
 import { FitScoreBadge } from "@/components/FitScoreBadge";
 import { LeadGenProvenance } from "@/components/LeadGenProvenance";
 import { PersonaCard } from "@/components/PersonaCard";
-import { ResearchChecklist } from "@/components/ResearchChecklist";
-import { getPersonById } from "@/lib/data/store";
+import { getCampaigns, getPersonById } from "@/lib/data/store";
 
 export default async function PersonDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const detail = await getPersonById(id);
   if (!detail) notFound();
   const { person, personas, drafts, activities, outreachResearch } = detail;
+  const campaigns = await getCampaigns();
+  const campaignName = campaigns.find((c) => c.id === person.campaignId)?.name || "Unknown";
 
   const updatePersonAction = updatePerson.bind(null, id);
   const deletePersonAction = deletePerson.bind(null, id);
@@ -40,10 +41,22 @@ export default async function PersonDetailPage({ params }: { params: Promise<{ i
               <p className="mt-2 text-slate-600">
                 {[person.title, person.companyName].filter(Boolean).join(" · ") || "No title or company set."}
               </p>
+              {person.linkedinUrl ? (
+                <a
+                  href={person.linkedinUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-flex items-center gap-1.5 text-sm font-semibold text-sentry-700 hover:underline"
+                >
+                  <Link2 size={14} />
+                  LinkedIn Profile
+                </a>
+              ) : null}
             </div>
             <div className="flex flex-wrap items-center gap-2">
               <FitScoreBadge score={person.confidenceScore} />
               <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-bold capitalize text-slate-700">{person.status}</span>
+              <span className="rounded-full bg-sentry-50 px-3 py-1 text-xs font-bold text-sentry-800">{campaignName}</span>
             </div>
           </div>
           <div className="mt-5 flex flex-wrap gap-2">
@@ -111,11 +124,16 @@ export default async function PersonDetailPage({ params }: { params: Promise<{ i
         </div>
 
         <aside className="grid content-start gap-5">
-          <ResearchChecklist />
-
           <section className="surface p-5">
             <h2 className="text-lg font-bold text-ink">Edit Person</h2>
             <form action={updatePersonAction} className="mt-4 grid gap-3">
+              <select className="field" name="campaignId" defaultValue={person.campaignId}>
+                {campaigns.map((campaign) => (
+                  <option key={campaign.id} value={campaign.id}>
+                    {campaign.name}
+                  </option>
+                ))}
+              </select>
               <input className="field" name="name" defaultValue={person.name} placeholder="Name" />
               <input className="field" name="title" defaultValue={person.title} placeholder="Title" />
               <input className="field" name="email" type="email" defaultValue={person.email} placeholder="Email" />

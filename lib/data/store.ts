@@ -4,6 +4,7 @@ import type {
   Activity,
   BuyerPersona,
   CandidateIdentityKeyType,
+  Campaign,
   Database,
   DraftTone,
   LeadGenRun,
@@ -26,7 +27,8 @@ const emptyDb: Database = {
   activities: [],
   leadGenRuns: [],
   outreachResearch: [],
-  outreachJobs: []
+  outreachJobs: [],
+  campaigns: []
 };
 
 async function ensureDb() {
@@ -87,6 +89,7 @@ export async function getPersonById(personId: string): Promise<PersonDetail | nu
 }
 
 export async function createPerson(input: {
+  campaignId: string;
   name: string;
   title?: string;
   email?: string;
@@ -104,6 +107,7 @@ export async function createPerson(input: {
   const timestamp = now();
   const person: Person = {
     id: id(),
+    campaignId: input.campaignId,
     status: "new",
     name: input.name,
     title: input.title,
@@ -356,6 +360,7 @@ export async function getPeopleForLeadGenRun(leadGenRunId: string) {
 
 export async function upsertImportedLeadGenRun(input: {
   run: Omit<LeadGenRun, "id" | "createdAt" | "updatedAt">;
+  campaignId: string;
   candidates: Array<{
     identityKey: string;
     identityKeyType: CandidateIdentityKeyType;
@@ -398,6 +403,7 @@ export async function upsertImportedLeadGenRun(input: {
     if (existingIndex === -1) {
       db.people.push({
         id: id(),
+        campaignId: input.campaignId,
         status: "candidate",
         name: candidateInput.fullName,
         title: candidateInput.currentTitle,
@@ -492,4 +498,46 @@ export async function updateOutreachJobItem(
   item.errorMessage = errorMessage;
   job.updatedAt = now();
   await writeDb(db);
+}
+
+export async function getCampaigns() {
+  const db = await readDb();
+  return db.campaigns.slice().sort((a, b) => a.name.localeCompare(b.name));
+}
+
+export async function getCampaign(campaignId: string) {
+  const db = await readDb();
+  return db.campaigns.find((item) => item.id === campaignId) || null;
+}
+
+export async function createCampaign(name: string) {
+  const db = await readDb();
+  const timestamp = now();
+  const campaign: Campaign = { id: id(), name, createdAt: timestamp, updatedAt: timestamp };
+  db.campaigns.push(campaign);
+  await writeDb(db);
+  return campaign;
+}
+
+export async function assignCampaign(personIds: string[], campaignId: string) {
+  const db = await readDb();
+  const idSet = new Set(personIds);
+  const timestamp = now();
+  for (const person of db.people) {
+    if (idSet.has(person.id)) {
+      person.campaignId = campaignId;
+      person.updatedAt = timestamp;
+    }
+  }
+  await writeDb(db);
+}
+
+export async function getPersonsForCampaigns(campaignIds: string[]) {
+  const db = await readDb();
+  const idSet = new Set(campaignIds);
+  const people = db.people.filter((p) => idSet.has(p.campaignId)).slice().sort(sortUpdated);
+  return people.map((person) => ({
+    person,
+    drafts: db.drafts.filter((d) => d.personId === person.id)
+  }));
 }

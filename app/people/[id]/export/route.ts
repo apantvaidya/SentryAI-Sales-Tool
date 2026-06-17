@@ -1,12 +1,13 @@
 import { NextResponse } from "next/server";
 import { personCsv } from "@/lib/csv";
-import { getPersonById } from "@/lib/data/store";
+import { getCampaign, getPersonById } from "@/lib/data/store";
 
 export async function GET(_: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const detail = await getPersonById(id);
   if (!detail) return new NextResponse("Not found", { status: 404 });
-  const csv = personCsv(detail.person, detail.drafts);
+  const campaign = await getCampaign(detail.person.campaignId);
+  const csv = personCsv(detail.person, detail.drafts, campaign?.name || "Unknown");
   return new NextResponse(csv, {
     headers: {
       "Content-Type": "text/csv; charset=utf-8",

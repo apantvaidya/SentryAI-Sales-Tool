@@ -1,34 +1,41 @@
 import Link from "next/link";
-import { Download, UserPlus } from "lucide-react";
-import { createLeadGenRun, createPerson, registerExistingLeadGenRun } from "@/app/actions";
+import { Filter, Megaphone, UserPlus, X } from "lucide-react";
+import { createCampaign, createLeadGenRun, createPerson, registerExistingLeadGenRun } from "@/app/actions";
 import { AppShell } from "@/components/AppShell";
 import { BatchJobStatus } from "@/components/BatchJobStatus";
+import { ExportCampaignForm } from "@/components/ExportCampaignForm";
 import { PeopleTable } from "@/components/PeopleTable";
-import { getPeopleForLeadGenRun, getPersons } from "@/lib/data/store";
-import { listArtifactRunIds } from "@/lib/leadgen/import";
+import { getCampaigns, getLeadGenRun, getPeopleForLeadGenRun, getPersons } from "@/lib/data/store";
+import { listArtifactRuns } from "@/lib/leadgen/import";
 
 export default async function PeoplePage({ searchParams }: { searchParams?: Promise<{ runId?: string; jobId?: string }> }) {
   const query = searchParams ? await searchParams : {};
   const allPeople = await getPersons();
+  const activeRun = query.runId ? await getLeadGenRun(query.runId) : null;
   const people = query.runId ? await getPeopleForLeadGenRun(query.runId) : allPeople;
-  const artifactRunIds = await listArtifactRunIds();
+  const artifactRuns = await listArtifactRuns();
+  const campaigns = await getCampaigns();
 
   return (
     <AppShell>
       <div className="mb-6">
-        <p className="text-sm font-bold uppercase tracking-wide text-sentry-700">CRM</p>
         <h1 className="mt-2 text-3xl font-bold text-ink">People</h1>
-        <p className="mt-2 max-w-3xl text-slate-600">
-          Everyone discovered through lead generation or added manually. Click a person to see their details, drafts, and status.
-        </p>
+
       </div>
 
       {query.jobId ? <BatchJobStatus jobId={query.jobId} /> : null}
 
       {query.runId ? (
-        <p className="mb-4 text-sm text-slate-600">
-          Showing {people.length} people from the most recent run. <Link href="/people" className="font-semibold text-sentry-700">Clear filter</Link>
-        </p>
+        <div className="mb-4 flex flex-wrap items-center gap-3">
+          <p className="flex items-center gap-2 text-sm text-slate-600">
+            <Filter size={14} className="text-sentry-700" />
+            Filtered to {people.length} people from {activeRun ? `${activeRun.seedPersonName} · ${activeRun.seedCompanyName}` : "a run"}.
+          </p>
+          <Link href="/people" className="button-secondary px-3 py-1.5 text-sm">
+            <X size={14} />
+            Reset Filter
+          </Link>
+        </div>
       ) : null}
 
       <div className="mb-6 grid gap-4 md:grid-cols-2">
@@ -41,6 +48,14 @@ export default async function PeoplePage({ searchParams }: { searchParams?: Prom
           <input className="field" name="seedRole" placeholder="Seed role" />
           <input className="field" name="seedCompanyName" placeholder="Seed company" required />
           <input className="field" name="seedLinkedinUrl" placeholder="Seed LinkedIn URL" />
+          <select className="field" name="campaignId" defaultValue={campaigns[0]?.id || ""} required>
+            {campaigns.length === 0 ? <option value="">No campaigns found</option> : null}
+            {campaigns.map((campaign) => (
+              <option key={campaign.id} value={campaign.id}>
+                {campaign.name}
+              </option>
+            ))}
+          </select>
           <div className="rounded-md border border-slate-200 bg-slate-50 p-3">
             <label className="flex items-start gap-2 text-sm font-semibold text-slate-700">
               <input className="mt-0.5 h-4 w-4 rounded border-slate-300" type="checkbox" name="recursiveExpansion" />
@@ -62,13 +77,9 @@ export default async function PeoplePage({ searchParams }: { searchParams?: Prom
               </label>
             </div>
           </div>
-          <button className="button-primary" type="submit">
+          <button className="button-primary" type="submit" disabled={campaigns.length === 0}>
             Run Exa Lead Gen
           </button>
-
-          <div className="mt-2 border-t border-slate-200 pt-3">
-            <p className="text-xs font-semibold text-slate-600">Or import an existing artifact run:</p>
-          </div>
         </form>
 
         <div className="grid gap-4">
@@ -84,30 +95,64 @@ export default async function PeoplePage({ searchParams }: { searchParams?: Prom
             </div>
             <input className="field" name="role" placeholder="Role" required />
             <input className="field" name="linkedinUrl" placeholder="LinkedIn URL" />
-            <button className="button-primary" type="submit">
+            <select className="field" name="campaignId" defaultValue={campaigns[0]?.id || ""} required>
+              {campaigns.length === 0 ? <option value="">No campaigns found</option> : null}
+              {campaigns.map((campaign) => (
+                <option key={campaign.id} value={campaign.id}>
+                  {campaign.name}
+                </option>
+              ))}
+            </select>
+            <button className="button-primary" type="submit" disabled={campaigns.length === 0}>
               <UserPlus size={16} />
               Add Person
             </button>
           </form>
 
           <form action={registerExistingLeadGenRun} className="surface grid gap-3 p-5">
-            <select className="field" name="artifactRunId" defaultValue={artifactRunIds[0] || ""} required>
-              {artifactRunIds.length === 0 ? <option value="">No artifact runs found</option> : null}
-              {artifactRunIds.map((runId) => (
-                <option key={runId} value={runId}>
-                  {runId}
+            <div>
+              <h2 className="section-title">Filter by Run</h2>
+              <p className="muted-copy mt-1">Pick a past run to filter the People list below to just its results.</p>
+            </div>
+            <select className="field" name="artifactRunId" defaultValue={artifactRuns[0]?.id || ""} required>
+              {artifactRuns.length === 0 ? <option value="">No runs found</option> : null}
+              {artifactRuns.map((run) => (
+                <option key={run.id} value={run.id}>
+                  {run.label}
                 </option>
               ))}
             </select>
-            <button className="button-secondary" type="submit" disabled={artifactRunIds.length === 0}>
-              <Download size={16} />
-              Import Run Metadata
+            <select className="field" name="campaignId" defaultValue={campaigns[0]?.id || ""} required>
+              {campaigns.length === 0 ? <option value="">No campaigns found</option> : null}
+              {campaigns.map((campaign) => (
+                <option key={campaign.id} value={campaign.id}>
+                  {campaign.name}
+                </option>
+              ))}
+            </select>
+            <button className="button-secondary" type="submit" disabled={artifactRuns.length === 0 || campaigns.length === 0}>
+              <Filter size={16} />
+              Filter by Run
             </button>
           </form>
+
+          <form action={createCampaign} className="surface grid gap-3 p-5">
+            <div>
+              <h2 className="section-title">Create Campaign</h2>
+              <p className="muted-copy mt-1">Add a new campaign to assign people to.</p>
+            </div>
+            <input className="field" name="name" placeholder="Campaign name" required />
+            <button className="button-secondary" type="submit">
+              <Megaphone size={16} />
+              Create Campaign
+            </button>
+          </form>
+
+          <ExportCampaignForm campaigns={campaigns} />
         </div>
       </div>
 
-      <PeopleTable people={people} />
+      <PeopleTable people={people} campaigns={campaigns} />
     </AppShell>
   );
 }

@@ -68,6 +68,54 @@ export async function listArtifactRunIds() {
   }
 }
 
+export type ArtifactRunSummary = {
+  id: string;
+  personName: string;
+  timestamp?: string;
+  label: string;
+};
+
+const RUN_ID_TIMESTAMP = /^exa_(\d{4})-(\d{2})-(\d{2})_(\d{2})(\d{2})_/;
+
+function deslugify(value: string) {
+  return value
+    .split("-")
+    .map((part) => (part ? part[0].toUpperCase() + part.slice(1) : part))
+    .join(" ");
+}
+
+function formatTimestamp(date: Date) {
+  return new Intl.DateTimeFormat("en-US", { dateStyle: "medium", timeStyle: "short" }).format(date);
+}
+
+export async function listArtifactRuns(): Promise<ArtifactRunSummary[]> {
+  const ids = await listArtifactRunIds();
+  return Promise.all(
+    ids.map(async (runId) => {
+      const match = runId.match(RUN_ID_TIMESTAMP);
+      const date = match
+        ? new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]), Number(match[4]), Number(match[5]))
+        : undefined;
+      const timestamp = date?.toISOString();
+
+      let personName: string | undefined;
+      try {
+        const batch = await readJson<{ seed_person: { person_name: string } }>(path.join(runsRoot, runId, "batch.json"));
+        personName = clean(batch.seed_person?.person_name);
+      } catch {
+        personName = undefined;
+      }
+      if (!personName) {
+        const slugAfterTimestamp = runId.replace(RUN_ID_TIMESTAMP, "").split("_").pop();
+        personName = slugAfterTimestamp ? deslugify(slugAfterTimestamp) : runId;
+      }
+
+      const label = date ? `${personName} · ${formatTimestamp(date)}` : personName;
+      return { id: runId, personName, timestamp, label };
+    })
+  );
+}
+
 export async function importLeadGenArtifacts(artifactRunId: string) {
   const runDir = path.join(runsRoot, artifactRunId);
   const [queries, filterDecisions, batch, runSummary] = await Promise.all([
