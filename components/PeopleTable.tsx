@@ -1,12 +1,14 @@
 "use client";
 
-import { useCallback, useMemo, useRef, useState } from "react";
+import { useCallback, useMemo, useRef, useState, useTransition } from "react";
 import { useFormStatus } from "react-dom";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import Link from "next/link";
-import { ChevronDown, ChevronUp, ChevronsUpDown, FileDown, Mail, Megaphone, Search, X } from "lucide-react";
+import { ChevronDown, ChevronUp, ChevronsUpDown, FileDown, Mail, Megaphone, Search, Sparkles, Trash2, X } from "lucide-react";
 import type { Campaign, Person, PersonStatus } from "@/lib/data/types";
-import { assignCampaign, runPeopleBatchOutreach } from "@/app/actions";
+import { assignCampaign, deleteSelectedPeople, enrichSelectedPeople, runPeopleBatchOutreach } from "@/app/actions";
+import type { EnrichResult } from "@/app/actions";
+import { EnrichResultDialog } from "./EnrichResultDialog";
 
 type SortKey = "name" | "title" | "companyName" | "campaignId" | "location" | "status" | "confidenceScore";
 type SortDirection = "asc" | "desc";
@@ -52,7 +54,6 @@ function StatusBadge({ status }: { status: PersonStatus }) {
   return <span className={`rounded-md px-2 py-0.5 text-xs font-semibold ${cls}`}>{label}</span>;
 }
 
-const MAX_BATCH_OUTREACH = 50;
 
 function GenerateEmailButton({ disabled, count }: { disabled: boolean; count: number }) {
   const { pending } = useFormStatus();
@@ -143,6 +144,27 @@ export function PeopleTable({ people, campaigns }: { people: Person[]; campaigns
   const [sortDirection, setSortDirection] = useState<SortDirection>("asc");
   const [targetCampaignId, setTargetCampaignId] = useState(campaigns[0]?.id || "");
   const scrollParentRef = useRef<HTMLDivElement>(null);
+  const [isDeleting, startDeleteTransition] = useTransition();
+  const [isEnriching, startEnrichTransition] = useTransition();
+  const [enrichResult, setEnrichResult] = useState<EnrichResult | null>(null);
+
+  const handleDelete = useCallback(() => {
+    const ids = Array.from(selected);
+    if (!window.confirm(`Delete ${ids.length} ${ids.length === 1 ? "person" : "people"}? This cannot be undone.`)) return;
+    startDeleteTransition(async () => {
+      await deleteSelectedPeople(ids);
+      setSelected(new Set());
+    });
+  }, [selected]);
+
+  const handleEnrich = useCallback(() => {
+    const ids = Array.from(selected);
+    startEnrichTransition(async () => {
+      const result = await enrichSelectedPeople(ids);
+      setEnrichResult(result);
+      setSelected(new Set());
+    });
+  }, [selected]);
 
   const campaignNameById = useMemo(() => new Map(campaigns.map((c) => [c.id, c.name])), [campaigns]);
 
@@ -204,7 +226,7 @@ export function PeopleTable({ people, campaigns }: { people: Person[]; campaigns
   const allSelected = sorted.length > 0 && sorted.every((p) => selected.has(p.id));
   const someSelected = sorted.some((p) => selected.has(p.id)) && !allSelected;
   const selectedIds = Array.from(selected);
-  const overBatchLimit = selected.size > MAX_BATCH_OUTREACH;
+
 
   const toggleAll = useCallback(() => {
     setSelected((prev) => {
@@ -254,15 +276,35 @@ export function PeopleTable({ people, campaigns }: { people: Person[]; campaigns
           <p className="text-sm text-slate-500">
             {selected.size > 0 ? `${selected.size} selected` : `${sorted.length} of ${people.length} people`}
           </p>
-          {overBatchLimit ? (
-            <p className="mt-1 text-xs font-semibold text-amber-700">Select at most {MAX_BATCH_OUTREACH} people at a time to generate emails from this page.</p>
-          ) : selected.size === 1 ? (
+          {selected.size === 1 ? (
             <p className="mt-1 text-xs text-slate-500">This can take 30-90 seconds while search and OpenAI run.</p>
           ) : selected.size > 1 ? (
             <p className="mt-1 text-xs text-slate-500">Runs in the background — you can keep browsing while it processes.</p>
           ) : null}
         </div>
         <div className="flex flex-wrap items-center gap-2">
+          {selected.size > 0 ? (
+            <button
+              type="button"
+              onClick={handleDelete}
+              disabled={isDeleting || isEnriching}
+              className="button-secondary border-red-200 text-red-600 hover:bg-red-50"
+            >
+              <Trash2 size={14} />
+              {isDeleting ? "Deleting..." : `Delete ${selected.size}`}
+            </button>
+          ) : null}
+          {selected.size > 0 ? (
+            <button
+              type="button"
+              onClick={handleEnrich}
+              disabled={isEnriching || isDeleting}
+              className="button-secondary"
+            >
+              <Sparkles size={14} />
+              {isEnriching ? "Searching LinkedIn…" : "Find missing info"}
+            </button>
+          ) : null}
           {selected.size > 0 ? (
             <form action={assignCampaign} className="flex items-center gap-2">
               {selectedIds.map((personId) => (
@@ -304,7 +346,7 @@ export function PeopleTable({ people, campaigns }: { people: Person[]; campaigns
                 Export selected
               </button>
             )}
-            <GenerateEmailButton disabled={selected.size === 0 || overBatchLimit} count={selected.size} />
+            <GenerateEmailButton disabled={selected.size === 0} count={selected.size} />
           </form>
         </div>
       </div>
@@ -477,6 +519,14 @@ export function PeopleTable({ people, campaigns }: { people: Person[]; campaigns
           </div>
         </div>
       </div>
+
+      {enrichResult ? (
+        <EnrichResultDialog
+          result={enrichResult}
+          campaigns={campaigns}
+          onClose={() => setEnrichResult(null)}
+        />
+      ) : null}
     </div>
   );
 }

@@ -7,6 +7,7 @@ import { generateCompanyResearch, generatePersonalizedEmail, scorePersonRelevanc
 import {
   addActivity,
   assignCampaign as storeAssignCampaign,
+  bulkDeletePeople as storeBulkDeletePeople,
   createCampaign as storeCreateCampaign,
   createOutreachDraft,
   createOutreachJob,
@@ -16,6 +17,7 @@ import {
   deletePerson as storeDeletePerson,
   getPerson,
   getPersonById,
+  importPeopleFromCsv as storeImportPeopleFromCsv,
   replaceResearchBrief,
   updateOutreachDraft as storeUpdateOutreachDraft,
   updateOutreachJobItem,
@@ -23,6 +25,8 @@ import {
   updatePersonScore,
   upsertImportedLeadGenRun
 } from "@/lib/data/store";
+import { parsePeopleCsv } from "@/lib/csv";
+import { enrichPersonFromLinkedIn } from "@/lib/leadgen/enrich";
 import { importLeadGenArtifacts } from "@/lib/leadgen/import";
 import { runLeadGeneration, runLeadGenerationExpansion } from "@/lib/leadgen/service";
 import { evidenceSummaryText, runWarmOutreachForPerson, sourceUrls } from "@/lib/outreach/service";
@@ -336,6 +340,67 @@ export async function runPersonOutreach(personId: string) {
   await executePersonOutreach(personId);
 }
 
+export async function importPeopleCsv(formData: FormData) {
+  const file = formData.get("csvFile") as File | null;
+  const campaignId = value(formData, "campaignId");
+  const defaultCompany = value(formData, "defaultCompany");
+  if (!file || file.size === 0) throw new Error("CSV file is required");
+  if (!campaignId) throw new Error("Campaign is required");
+  if (file.size > 10 * 1024 * 1024) throw new Error("CSV file must be under 10 MB");
+
+  const text = await file.text();
+  const rows = parsePeopleCsv(text);
+
+  function col(row: Record<string, string>, ...keys: string[]): string | undefined {
+    for (const k of keys) {
+      const v = row[k]?.trim();
+      if (v) return v;
+    }
+    return undefined;
+  }
+
+  const entries = rows
+    .map((row) => {
+      // Support split first/last name columns (e.g. LA water contacts CSV)
+      const directName = col(row, "name", "poc identified", "full_name", "fullname", "full name");
+      const firstName = col(row, "first name", "firstname", "first_name");
+      const lastName = col(row, "last name", "lastname", "last_name");
+      const combinedName = firstName && lastName ? `${firstName} ${lastName}` : (firstName || lastName);
+      const name = directName || combinedName;
+
+      // "Linkedln id" is a consistent typo across several source sheets
+      const linkedinUrl = col(
+        row,
+        "linkedinurl", "linkedin_url", "linkedin url", "linkedin",
+        "linkedln id", "linkedln_id", "linkedin id"
+      );
+
+      return {
+        campaignId,
+        name,
+        companyName: col(row, "company", "company name", "company_name", "companyname", "organization", "agency") || defaultCompany,
+        title: col(row, "title", "designation", "position", "role", "job_title", "job title"),
+        email: col(row, "email", "mail id", "email_address", "email address", "customers email"),
+        linkedinUrl,
+        location: col(row, "location", "city"),
+        notes: col(row, "notes", "note", "comments", "company info - notes"),
+        source: col(row, "source") || "CSV import",
+        companyWebsite: col(row, "companywebsite", "company_website", "company website", "website")
+      };
+    })
+    .filter((e): e is typeof e & { name: string; companyName: string } =>
+      Boolean(e.name && e.companyName)
+    );
+
+  if (entries.length === 0)
+    throw new Error(
+      "No valid rows found. CSV must have name and company columns, or set a default company name."
+    );
+
+  await storeImportPeopleFromCsv(entries);
+  revalidatePath("/people");
+}
+
 async function runOutreachJobInBackground(jobId: string, personIds: string[]) {
   for (const personId of personIds) {
     await updateOutreachJobItem(jobId, personId, "running");
@@ -354,10 +419,12 @@ export async function runPeopleBatchOutreach(formData: FormData) {
     new Set(formData.getAll("candidateIds").filter((item): item is string => typeof item === "string" && Boolean(item)))
   );
   if (personIds.length === 0) return;
-  if (personIds.length > 50) throw new Error("Generate email from People is capped at 50 selected people at a time.");
-
   if (personIds.length === 1) {
-    await executePersonOutreach(personIds[0]);
+    try {
+      await executePersonOutreach(personIds[0]);
+    } catch {
+      // Redirect to person page regardless — failed state is persisted via activity log
+    }
     revalidatePath("/people");
     redirect(`/people/${personIds[0]}`);
   }
@@ -373,4 +440,57 @@ export async function runPeopleBatchOutreach(formData: FormData) {
 
   revalidatePath("/people");
   redirect(`/people?jobId=${job.id}`);
+}
+
+export async function deleteSelectedPeople(personIds: string[]) {
+  if (personIds.length === 0) return;
+  await storeBulkDeletePeople(personIds);
+  revalidatePath("/people");
+}
+
+export type EnrichResult = {
+  enriched: number;
+  skipped: number;
+  failed: Array<{ id: string; name: string; reason: string }>;
+};
+
+export async function enrichSelectedPeople(personIds: string[]): Promise<EnrichResult> {
+  const result: EnrichResult = { enriched: 0, skipped: 0, failed: [] };
+
+  for (const personId of personIds) {
+    const person = await getPerson(personId);
+    if (!person) continue;
+
+    if (person.title && person.location) {
+      result.skipped++;
+      continue;
+    }
+
+    if (!person.linkedinUrl) {
+      result.failed.push({ id: personId, name: person.name, reason: "No LinkedIn URL" });
+      continue;
+    }
+
+    const data = await enrichPersonFromLinkedIn(person);
+
+    if (!data) {
+      result.failed.push({ id: personId, name: person.name, reason: "Could not fetch profile" });
+      continue;
+    }
+
+    const update: Partial<{ title: string; location: string }> = {};
+    if (!person.title && data.title) update.title = data.title;
+    if (!person.location && data.location) update.location = data.location;
+
+    if (Object.keys(update).length === 0) {
+      result.failed.push({ id: personId, name: person.name, reason: "No new info found" });
+      continue;
+    }
+
+    await storeUpdatePerson(personId, update);
+    result.enriched++;
+  }
+
+  revalidatePath("/people");
+  return result;
 }

@@ -43,12 +43,89 @@ async function ensureDb() {
 async function readDb(): Promise<Database> {
   await ensureDb();
   const raw = await fs.readFile(dbPath, "utf8");
-  return { ...emptyDb, ...JSON.parse(raw) };
+  try {
+    return { ...emptyDb, ...JSON.parse(raw) };
+  } catch (e) {
+    // "Unexpected non-whitespace character after JSON at position N" means valid
+    // JSON followed by garbage bytes (concurrent copyFile corruption). Recover by
+    // parsing just the clean prefix, then rewrite the file atomically.
+    if (e instanceof SyntaxError) {
+      const posMatch = e.message.match(/position (\d+)/);
+      if (posMatch) {
+        const pos = parseInt(posMatch[1], 10);
+        try {
+          const recovered = { ...emptyDb, ...(JSON.parse(raw.slice(0, pos).trimEnd()) as Partial<Database>) };
+          writeDb(recovered).catch(() => {});
+          return recovered;
+        } catch {}
+      }
+    }
+    throw e;
+  }
 }
 
-async function writeDb(db: Database) {
-  await ensureDb();
-  await fs.writeFile(dbPath, JSON.stringify(db, null, 2));
+const lockPath = dbPath + ".lock";
+
+async function acquireLock(): Promise<void> {
+  const deadline = Date.now() + 15_000;
+  while (Date.now() < deadline) {
+    // Remove stale locks left by crashed processes (older than 30 s)
+    try {
+      const stat = await fs.stat(lockPath);
+      if (Date.now() - stat.mtimeMs > 30_000) await fs.unlink(lockPath).catch(() => {});
+    } catch {}
+    try {
+      // O_EXCL: atomically fail if the file already exists
+      const h = await fs.open(lockPath, fs.constants.O_CREAT | fs.constants.O_EXCL | fs.constants.O_WRONLY);
+      await h.close();
+      return;
+    } catch {
+      await new Promise<void>((r) => setTimeout(r, 10 + Math.random() * 40));
+    }
+  }
+  // Deadline exceeded — force-break the lock so the app isn't stuck forever
+  await fs.unlink(lockPath).catch(() => {});
+}
+
+async function releaseLock(): Promise<void> {
+  await fs.unlink(lockPath).catch(() => {});
+}
+
+// Module-level queue — serialises writes within a single process.
+// The file lock below coordinates across multiple Next.js worker processes.
+let _writeQueue: Promise<void> = Promise.resolve();
+
+async function writeDb(db: Database): Promise<void> {
+  const doWrite = async () => {
+    await acquireLock();
+    try {
+      await ensureDb();
+      const content = JSON.stringify(db, null, 2) + "\n";
+      const tmpPath = dbPath + ".tmp";
+      await fs.writeFile(tmpPath, content, "utf8");
+      // Atomic replace with retries — on Windows the destination may be briefly
+      // locked by a reader, so retry before falling back to non-atomic copyFile.
+      let renamed = false;
+      for (let i = 0; i < 5 && !renamed; i++) {
+        try {
+          await fs.rename(tmpPath, dbPath);
+          renamed = true;
+        } catch {
+          if (i < 4) await new Promise<void>((r) => setTimeout(r, 20 * (i + 1)));
+        }
+      }
+      if (!renamed) {
+        await fs.copyFile(tmpPath, dbPath);
+        await fs.unlink(tmpPath).catch(() => {});
+      }
+    } finally {
+      await releaseLock();
+    }
+  };
+
+  const queued = _writeQueue.then(doWrite);
+  _writeQueue = queued.catch(() => {});
+  await queued;
 }
 
 function now() {
@@ -63,9 +140,18 @@ function sortUpdated(a: { updatedAt: string }, b: { updatedAt: string }) {
   return new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime();
 }
 
+function withDerivedStatus(people: Person[], drafts: { personId: string }[]): Person[] {
+  const hasDraft = new Set(drafts.map((d) => d.personId));
+  return people.map((p) =>
+    (p.status === "new" || p.status === "candidate") && hasDraft.has(p.id)
+      ? { ...p, status: "drafting" as PersonStatus }
+      : p
+  );
+}
+
 export async function getPersons() {
   const db = await readDb();
-  return db.people.slice().sort(sortUpdated);
+  return withDerivedStatus(db.people, db.drafts).sort(sortUpdated);
 }
 
 export async function getPerson(personId: string) {
@@ -156,6 +242,17 @@ export async function deletePerson(personId: string) {
   db.drafts = db.drafts.filter((item) => item.personId !== personId);
   db.activities = db.activities.filter((item) => item.personId !== personId);
   db.outreachResearch = db.outreachResearch.filter((item) => item.personId !== personId);
+  await writeDb(db);
+}
+
+export async function bulkDeletePeople(personIds: string[]) {
+  const db = await readDb();
+  const idSet = new Set(personIds);
+  db.people = db.people.filter((item) => !idSet.has(item.id));
+  db.personas = db.personas.filter((item) => !idSet.has(item.personId));
+  db.drafts = db.drafts.filter((item) => !idSet.has(item.personId));
+  db.activities = db.activities.filter((item) => !idSet.has(item.personId));
+  db.outreachResearch = db.outreachResearch.filter((item) => !idSet.has(item.personId));
   await writeDb(db);
 }
 
@@ -355,7 +452,10 @@ export async function getLeadGenRun(runId: string) {
 
 export async function getPeopleForLeadGenRun(leadGenRunId: string) {
   const db = await readDb();
-  return db.people.filter((item) => item.leadGenRunId === leadGenRunId);
+  return withDerivedStatus(
+    db.people.filter((item) => item.leadGenRunId === leadGenRunId),
+    db.drafts
+  );
 }
 
 export async function upsertImportedLeadGenRun(input: {
@@ -532,10 +632,168 @@ export async function assignCampaign(personIds: string[], campaignId: string) {
   await writeDb(db);
 }
 
+export async function importPeopleFromCsv(
+  entries: Array<{
+    campaignId: string;
+    name: string;
+    companyName: string;
+    title?: string;
+    email?: string;
+    linkedinUrl?: string;
+    location?: string;
+    notes?: string;
+    source?: string;
+    companyWebsite?: string;
+  }>
+) {
+  const db = await readDb();
+  const timestamp = now();
+  const created: Person[] = [];
+  for (const entry of entries) {
+    const person: Person = {
+      id: id(),
+      campaignId: entry.campaignId,
+      status: "new",
+      name: entry.name,
+      title: entry.title,
+      email: entry.email,
+      emailVerified: false,
+      linkedinUrl: entry.linkedinUrl,
+      location: entry.location,
+      source: entry.source || "CSV import",
+      notes: entry.notes,
+      confidenceScore: 50,
+      companyName: entry.companyName,
+      companyWebsite: entry.companyWebsite,
+      companyPainPoints: [],
+      companyFitScore: 0,
+      createdAt: timestamp,
+      updatedAt: timestamp
+    };
+    db.people.push(person);
+    db.activities.push({
+      id: id(),
+      personId: person.id,
+      type: "created",
+      message: `Imported ${person.name} at ${person.companyName} via CSV.`,
+      createdAt: timestamp
+    });
+    created.push(person);
+  }
+
+  // deduplicate within this campaign (existing + newly imported) in one write
+  const campaignId = entries[0].campaignId;
+  const campaignScope = new Set(db.people.filter((p) => p.campaignId === campaignId).map((p) => p.id));
+  deduplicateInDb(db, campaignScope);
+
+  await writeDb(db);
+  return created;
+}
+
+// ---- deduplication helpers (used during CSV import) ----
+
+function normLinkedin(url?: string | null): string | null {
+  if (!url) return null;
+  const s = url.toLowerCase().replace(/^https?:\/\/(www\.)?linkedin\.com/, "").replace(/\/$/, "").trim();
+  return s || null;
+}
+
+function normName(s?: string | null): string {
+  return String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+}
+
+function uniqueStrings(arr: (string | undefined | null)[]): string[] {
+  return Array.from(new Set(arr.filter((x): x is string => Boolean(x))));
+}
+
+const STATUS_RANK: Record<string, number> = { contacted: 5, approved: 4, drafting: 3, new: 2, candidate: 1 };
+
+function personScoreInDb(p: Person, db: Database): number {
+  const drafts = db.drafts.filter((d) => d.personId === p.id);
+  const research = db.outreachResearch.filter((r) => r.personId === p.id);
+  const activities = db.activities.filter((a) => a.personId === p.id);
+  return (
+    (STATUS_RANK[p.status] || 0) * 1000 +
+    drafts.filter((d) => d.status === "approved").length * 800 +
+    drafts.length * 400 +
+    research.length * 200 +
+    activities.length * 10 +
+    (p.email ? 50 : 0) +
+    p.confidenceScore
+  );
+}
+
+function deduplicateInDb(db: Database, scope: Set<string>): number {
+  const people = db.people.filter((p) => scope.has(p.id));
+
+  const byLinkedin = new Map<string, Person[]>();
+  const byNameCompany = new Map<string, Person[]>();
+  const inLinkedinGroup = new Set<string>();
+
+  for (const p of people) {
+    const li = normLinkedin(p.linkedinUrl);
+    if (li) {
+      if (!byLinkedin.has(li)) byLinkedin.set(li, []);
+      byLinkedin.get(li)!.push(p);
+      inLinkedinGroup.add(p.id);
+    }
+  }
+  for (const p of people) {
+    if (inLinkedinGroup.has(p.id)) continue;
+    const key = normName(p.name) + "|" + normName(p.companyName);
+    if (!byNameCompany.has(key)) byNameCompany.set(key, []);
+    byNameCompany.get(key)!.push(p);
+  }
+
+  const dupGroups = [
+    ...Array.from(byLinkedin.values()),
+    ...Array.from(byNameCompany.values()),
+  ].filter((g) => g.length > 1);
+
+  const removedIds = new Set<string>();
+  const remapId = new Map<string, string>();
+
+  for (const group of dupGroups) {
+    const scored = group
+      .map((p) => ({ p, s: personScoreInDb(p, db) }))
+      .sort((a, b) => b.s - a.s || a.p.createdAt.localeCompare(b.p.createdAt));
+    const winner = scored[0].p;
+    const losers = scored.slice(1).map((x) => x.p);
+
+    for (const loser of losers) {
+      remapId.set(loser.id, winner.id);
+      removedIds.add(loser.id);
+    }
+
+    winner.linkedinUrl = winner.linkedinUrl || losers.map((l) => l.linkedinUrl).find(Boolean);
+    winner.email = winner.email || losers.map((l) => l.email).find(Boolean);
+    winner.location = winner.location || losers.map((l) => l.location).find(Boolean);
+    winner.title = winner.title || losers.map((l) => l.title).find(Boolean);
+    winner.sourceQueryIds = uniqueStrings([...(winner.sourceQueryIds || []), ...losers.flatMap((l) => l.sourceQueryIds || [])]);
+    winner.sourceQueryNames = uniqueStrings([...(winner.sourceQueryNames || []), ...losers.flatMap((l) => l.sourceQueryNames || [])]);
+    winner.sourceBuckets = uniqueStrings([...(winner.sourceBuckets || []), ...losers.flatMap((l) => l.sourceBuckets || [])]);
+    winner.overlapCount = Math.max(winner.overlapCount || 0, winner.sourceQueryIds.length);
+    winner.updatedAt = now();
+  }
+
+  for (const record of [...db.drafts, ...db.outreachResearch, ...db.activities, ...db.personas]) {
+    const newId = remapId.get(record.personId);
+    if (newId) record.personId = newId;
+  }
+
+  db.people = db.people.filter((p) => !removedIds.has(p.id));
+  return removedIds.size;
+}
+
+// ---- end deduplication helpers ----
+
 export async function getPersonsForCampaigns(campaignIds: string[]) {
   const db = await readDb();
   const idSet = new Set(campaignIds);
-  const people = db.people.filter((p) => idSet.has(p.campaignId)).slice().sort(sortUpdated);
+  const people = withDerivedStatus(
+    db.people.filter((p) => idSet.has(p.campaignId)).slice().sort(sortUpdated),
+    db.drafts
+  );
   return people.map((person) => ({
     person,
     drafts: db.drafts.filter((d) => d.personId === person.id)

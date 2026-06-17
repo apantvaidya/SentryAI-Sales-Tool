@@ -1,5 +1,43 @@
 import type { OutreachDraft, Person } from "./data/types";
 
+function parseCsvRow(line: string): string[] {
+  const fields: string[] = [];
+  let field = "";
+  let inQuotes = false;
+  for (let i = 0; i < line.length; i++) {
+    const ch = line[i];
+    if (ch === '"') {
+      if (inQuotes && line[i + 1] === '"') { field += '"'; i++; }
+      else inQuotes = !inQuotes;
+    } else if (ch === "," && !inQuotes) {
+      fields.push(field); field = "";
+    } else {
+      field += ch;
+    }
+  }
+  fields.push(field);
+  return fields;
+}
+
+export type ParsedCsvRow = Record<string, string>;
+
+export function parsePeopleCsv(csvText: string): ParsedCsvRow[] {
+  const lines = csvText.replace(/^﻿/, "").trim().split(/\r?\n/);
+  if (lines.length < 2) return [];
+  const headers = parseCsvRow(lines[0]).map((h) => h.toLowerCase().trim());
+  const rows: ParsedCsvRow[] = [];
+  for (let i = 1; i < lines.length; i++) {
+    if (!lines[i].trim()) continue;
+    const values = parseCsvRow(lines[i]);
+    const row: ParsedCsvRow = {};
+    headers.forEach((header, j) => { row[header] = (values[j] ?? "").trim(); });
+    // skip draft rows from our own export format
+    if (row["recordtype"] === "draft") continue;
+    rows.push(row);
+  }
+  return rows;
+}
+
 function escape(value: unknown) {
   const text = Array.isArray(value) ? value.join("; ") : String(value ?? "");
   return `"${text.replaceAll('"', '""')}"`;

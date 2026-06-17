@@ -6,6 +6,8 @@ import Link from "next/link";
 import { CheckCircle2, Loader2, XCircle } from "lucide-react";
 import type { OutreachJob } from "@/lib/data/types";
 
+export const EMAIL_JOB_STORAGE_KEY = "sentry_email_job_id";
+
 function ItemIcon({ status }: { status: OutreachJob["items"][number]["status"] }) {
   if (status === "completed") return <CheckCircle2 size={15} className="text-emerald-600" />;
   if (status === "failed") return <XCircle size={15} className="text-red-600" />;
@@ -13,10 +15,14 @@ function ItemIcon({ status }: { status: OutreachJob["items"][number]["status"] }
   return <span className="inline-block h-3.5 w-3.5 rounded-full border border-slate-300" />;
 }
 
-export function BatchJobStatus({ jobId }: { jobId: string }) {
+export function BatchJobStatus({ jobId, onHide }: { jobId: string; onHide?: () => void }) {
   const router = useRouter();
   const [job, setJob] = useState<OutreachJob | null>(null);
   const refreshedOnComplete = useRef(false);
+
+  useEffect(() => {
+    try { localStorage.setItem(EMAIL_JOB_STORAGE_KEY, jobId); } catch {}
+  }, [jobId]);
 
   useEffect(() => {
     let cancelled = false;
@@ -32,6 +38,7 @@ export function BatchJobStatus({ jobId }: { jobId: string }) {
         const done = data.items.every((item) => item.status === "completed" || item.status === "failed");
         if (done && !refreshedOnComplete.current) {
           refreshedOnComplete.current = true;
+          try { localStorage.removeItem(EMAIL_JOB_STORAGE_KEY); } catch {}
           router.refresh();
         }
       } catch {
@@ -46,6 +53,15 @@ export function BatchJobStatus({ jobId }: { jobId: string }) {
       clearInterval(interval);
     };
   }, [jobId, router]);
+
+  function handleDismiss() {
+    try { localStorage.removeItem(EMAIL_JOB_STORAGE_KEY); } catch {}
+    if (onHide) {
+      onHide();
+    } else {
+      router.push("/people");
+    }
+  }
 
   if (!job) {
     return (
@@ -65,9 +81,13 @@ export function BatchJobStatus({ jobId }: { jobId: string }) {
             {allDone ? "Done." : "Running in the background — you can keep browsing."} {doneCount} of {job.items.length} complete.
           </p>
         </div>
-        <Link href="/people" className="text-sm font-semibold text-sentry-700">
+        <button
+          type="button"
+          onClick={handleDismiss}
+          className="text-sm font-semibold text-sentry-700 hover:underline"
+        >
           Dismiss
-        </Link>
+        </button>
       </div>
       <div className="mt-4 grid gap-1.5 sm:grid-cols-2">
         {job.items.map((item) => (
@@ -76,7 +96,14 @@ export function BatchJobStatus({ jobId }: { jobId: string }) {
             <Link href={`/people/${item.personId}`} className="truncate font-medium text-ink hover:underline">
               {item.name}
             </Link>
-            {item.status === "failed" ? <span className="ml-auto shrink-0 text-xs text-red-600">Failed</span> : null}
+            {item.status === "failed" ? (
+              <span
+                className="ml-auto max-w-[45%] shrink-0 truncate text-xs text-red-600"
+                title={item.errorMessage || "Failed"}
+              >
+                {item.errorMessage || "Failed"}
+              </span>
+            ) : null}
           </div>
         ))}
       </div>
