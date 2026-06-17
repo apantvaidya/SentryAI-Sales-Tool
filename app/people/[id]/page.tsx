@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, FileDown, Link2, Mail, RefreshCw } from "lucide-react";
 import { deletePerson, findEmailForPerson, generateOutreachDraft, scorePerson, updatePerson } from "@/app/actions";
 import { AppShell } from "@/components/AppShell";
+import { PendingButton } from "@/components/PendingButton";
 import { ActivityTimeline } from "@/components/ActivityTimeline";
 import { CompanyContextCard } from "@/components/CompanyContextCard";
 import { CrimeResearchFeed } from "@/components/CrimeResearchFeed";
@@ -62,16 +63,19 @@ export default async function PersonDetailPage({ params }: { params: Promise<{ i
           </div>
           <div className="mt-5 flex flex-wrap gap-2">
             <form action={scorePersonAction}>
-              <button className="button-secondary" type="submit">
+              <PendingButton className="button-secondary" pendingText="Scoring…">
                 <RefreshCw size={16} />
                 Score Person
-              </button>
+              </PendingButton>
             </form>
             <form action={findEmailAction}>
-              <button className="button-secondary" type="submit" title={person.email ? `Current: ${person.email}` : undefined}>
+              <PendingButton
+                className="button-secondary"
+                pendingText="Finding email…"
+              >
                 <Mail size={16} />
                 {person.email ? (person.emailVerified ? "Email Verified" : "Re-find Email") : "Find Email"}
-              </button>
+              </PendingButton>
             </form>
             <a href={`/people/${id}/export`} className="button-secondary">
               <FileDown size={16} />

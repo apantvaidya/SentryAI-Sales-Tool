@@ -29,7 +29,10 @@ import {
   upsertImportedLeadGenRun
 } from "@/lib/data/store";
 import { parsePeopleCsv } from "@/lib/csv";
-import { extractDomain, findEmailWithHunter, parseName } from "@/lib/hunter/client";
+import { extractDomain, findCompanyDomain, findEmailWithHunter, parseName } from "@/lib/hunter/client";
+import { findEmailWithApollo } from "@/lib/apollo/client";
+import { findEmailWithLemlist } from "@/lib/lemlist/client";
+import { findEmailByPermutation } from "@/lib/permutation";
 import { enrichPersonFromLinkedIn } from "@/lib/leadgen/enrich";
 import { importLeadGenArtifacts } from "@/lib/leadgen/import";
 import { createQueryTemplate, deleteQueryTemplate, saveQueryTemplate } from "@/lib/leadgen/queryTemplates";
@@ -144,28 +147,67 @@ export async function scorePerson(personId: string) {
 export async function findEmailForPerson(personId: string) {
   const person = await getPerson(personId);
   if (!person) throw new Error("Person not found");
-  if (!person.companyWebsite) throw new Error("No company website set — add one to enable email lookup");
-
-  const domain = extractDomain(person.companyWebsite);
-  if (!domain) throw new Error("Could not extract a domain from the company website");
 
   const { firstName, lastName } = parseName(person.name);
   if (!firstName || !lastName) throw new Error("Need both a first and last name to look up email");
 
   if (!process.env.HUNTER_API_KEY) throw new Error("HUNTER_API_KEY is not configured");
 
-  const result = await findEmailWithHunter({ firstName, lastName, domain });
-  if (!result) throw new Error("Hunter.io could not find an email for this person");
+  const linkedinUrl = person.linkedinUrl;
+
+  let domain: string | null = null;
+  let discoveredWebsite: string | undefined;
+
+  if (person.companyWebsite) {
+    domain = extractDomain(person.companyWebsite);
+  } else {
+    domain = await findCompanyDomain(person.companyName);
+    if (domain) discoveredWebsite = `https://${domain}`;
+  }
+
+  let email: string | undefined;
+  let emailVerified = false;
+  let source = "";
+
+  if (domain) {
+    const hunterResult = await findEmailWithHunter({ firstName, lastName, domain });
+    if (hunterResult) {
+      email = hunterResult.email;
+      emailVerified = hunterResult.score >= 90;
+      source = `Hunter.io (confidence: ${hunterResult.score}%)`;
+    }
+  }
+
+  if (!email && (domain || linkedinUrl)) {
+    const apolloEmail = await findEmailWithApollo({ firstName, lastName, domain: domain ?? "", linkedinUrl });
+    if (apolloEmail) { email = apolloEmail; source = "Apollo"; }
+  }
+
+  if (!email && (domain || linkedinUrl)) {
+    const lemlistEmail = await findEmailWithLemlist({ firstName, lastName, domain: domain ?? "", linkedinUrl });
+    if (lemlistEmail) { email = lemlistEmail; source = "Lemlist"; }
+  }
+
+  if (!email && domain) {
+    const permResult = await findEmailByPermutation({ firstName, lastName, domain });
+    if (permResult) {
+      email = permResult.email;
+      emailVerified = permResult.verified;
+      const patternLabel = permResult.source === "pattern" && permResult.pattern
+        ? ` using ${permResult.pattern} pattern`
+        : "";
+      source = `Email permutation${patternLabel}`;
+    }
+  }
+
+  if (!email) throw new Error("Could not find an email via Hunter.io, Apollo, Lemlist, or email permutation");
 
   await storeUpdatePerson(personId, {
-    email: result.email,
-    emailVerified: result.score >= 90,
+    email,
+    emailVerified,
+    ...(discoveredWebsite ? { companyWebsite: discoveredWebsite } : {}),
   });
-  await addActivity(
-    personId,
-    "email_found",
-    `Email found via Hunter.io: ${result.email} (confidence: ${result.score}%)`
-  );
+  await addActivity(personId, "email_found", `Email found via ${source}: ${email}`);
   revalidatePath(`/people/${personId}`);
 }
 
@@ -502,6 +544,94 @@ export type EnrichResult = {
   skipped: number;
   failed: Array<{ id: string; name: string; reason: string }>;
 };
+
+export async function findEmailsForPeople(personIds: string[]): Promise<EnrichResult> {
+  const result: EnrichResult = { enriched: 0, skipped: 0, failed: [] };
+
+  for (const personId of personIds) {
+    const person = await getPerson(personId);
+    if (!person) continue;
+
+    if (person.email && person.emailVerified) {
+      result.skipped++;
+      continue;
+    }
+
+    const { firstName, lastName } = parseName(person.name);
+    if (!firstName || !lastName) {
+      result.failed.push({ id: personId, name: person.name, reason: "Need first and last name" });
+      continue;
+    }
+
+    const linkedinUrl = person.linkedinUrl;
+
+    let domain: string | null = null;
+    let discoveredWebsite: string | undefined;
+
+    if (person.companyWebsite) {
+      domain = extractDomain(person.companyWebsite);
+    } else {
+      domain = await findCompanyDomain(person.companyName);
+      if (domain) discoveredWebsite = `https://${domain}`;
+    }
+
+    if (!domain && !linkedinUrl) {
+      result.failed.push({ id: personId, name: person.name, reason: "Could not determine company domain" });
+      continue;
+    }
+
+    let foundEmail: string | undefined;
+    let emailVerified = false;
+    let source = "";
+
+    if (domain) {
+      const hunterResult = await findEmailWithHunter({ firstName, lastName, domain });
+      if (hunterResult) {
+        foundEmail = hunterResult.email;
+        emailVerified = hunterResult.score >= 90;
+        source = `Hunter.io (confidence: ${hunterResult.score}%)`;
+      }
+    }
+
+    if (!foundEmail && (domain || linkedinUrl)) {
+      const apolloEmail = await findEmailWithApollo({ firstName, lastName, domain: domain ?? "", linkedinUrl });
+      if (apolloEmail) { foundEmail = apolloEmail; source = "Apollo"; }
+    }
+
+    if (!foundEmail && (domain || linkedinUrl)) {
+      const lemlistEmail = await findEmailWithLemlist({ firstName, lastName, domain: domain ?? "", linkedinUrl });
+      if (lemlistEmail) { foundEmail = lemlistEmail; source = "Lemlist"; }
+    }
+
+    if (!foundEmail && domain) {
+      const permResult = await findEmailByPermutation({ firstName, lastName, domain });
+      if (permResult) {
+        foundEmail = permResult.email;
+        emailVerified = permResult.verified;
+        const patternLabel = permResult.source === "pattern" && permResult.pattern
+          ? ` using ${permResult.pattern} pattern`
+          : "";
+        source = `Email permutation${patternLabel}`;
+      }
+    }
+
+    if (!foundEmail) {
+      result.failed.push({ id: personId, name: person.name, reason: "Not found by Hunter.io, Apollo, Lemlist, or email permutation" });
+      continue;
+    }
+
+    await storeUpdatePerson(personId, {
+      email: foundEmail,
+      emailVerified,
+      ...(discoveredWebsite ? { companyWebsite: discoveredWebsite } : {}),
+    });
+    await addActivity(personId, "email_found", `Email found via ${source}: ${foundEmail}`);
+    result.enriched++;
+  }
+
+  revalidatePath("/people");
+  return result;
+}
 
 export async function enrichSelectedPeople(personIds: string[]): Promise<EnrichResult> {
   const result: EnrichResult = { enriched: 0, skipped: 0, failed: [] };

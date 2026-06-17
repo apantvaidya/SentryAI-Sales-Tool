@@ -6,18 +6,18 @@ import { useVirtualizer } from "@tanstack/react-virtual";
 import Link from "next/link";
 import { ChevronDown, ChevronUp, ChevronsUpDown, FileDown, Mail, Megaphone, Search, Sparkles, Trash2, X } from "lucide-react";
 import type { Campaign, Person, PersonStatus } from "@/lib/data/types";
-import { assignCampaign, deleteSelectedPeople, enrichSelectedPeople, runPeopleBatchOutreach } from "@/app/actions";
+import { assignCampaign, deleteSelectedPeople, enrichSelectedPeople, findEmailsForPeople, runPeopleBatchOutreach } from "@/app/actions";
 import type { EnrichResult } from "@/app/actions";
 import { EnrichResultDialog } from "./EnrichResultDialog";
 
-type SortKey = "name" | "title" | "companyName" | "campaignId" | "location" | "status" | "confidenceScore";
+type SortKey = "name" | "title" | "companyName" | "campaignId" | "location" | "status";
 type SortDirection = "asc" | "desc";
 
 const PERSON_STATUSES: PersonStatus[] = ["candidate", "new", "drafting", "failed", "approved", "contacted"];
 
 // Shared between the header, filter, and virtualized body rows so columns stay aligned.
 const GRID_TEMPLATE_COLUMNS =
-  "40px minmax(150px,1.2fr) minmax(160px,1.3fr) minmax(130px,1fr) minmax(120px,0.9fr) minmax(130px,1fr) 110px 70px";
+  "40px minmax(150px,1.2fr) minmax(160px,1.3fr) minmax(130px,1fr) minmax(120px,0.9fr) minmax(130px,1fr) 110px 110px";
 const ROW_HEIGHT = 49;
 const VIEWPORT_HEIGHT = 560;
 
@@ -28,8 +28,7 @@ type ColumnFilters = {
   campaignId: string;
   location: string;
   status: PersonStatus | "";
-  scoreMin: string;
-  scoreMax: string;
+  email: "has" | "missing" | "";
 };
 
 const emptyColumnFilters: ColumnFilters = {
@@ -39,8 +38,7 @@ const emptyColumnFilters: ColumnFilters = {
   campaignId: "",
   location: "",
   status: "",
-  scoreMin: "",
-  scoreMax: ""
+  email: ""
 };
 
 function StatusBadge({ status }: { status: PersonStatus }) {
@@ -126,7 +124,6 @@ function ColumnFilterInput({
 }
 
 function compareValues(a: Person, b: Person, key: SortKey, campaignNameById: Map<string, string>) {
-  if (key === "confidenceScore") return a.confidenceScore - b.confidenceScore;
   if (key === "campaignId") {
     const aName = campaignNameById.get(a.campaignId) || "";
     const bName = campaignNameById.get(b.campaignId) || "";
@@ -147,7 +144,9 @@ export function PeopleTable({ people, campaigns }: { people: Person[]; campaigns
   const scrollParentRef = useRef<HTMLDivElement>(null);
   const [isDeleting, startDeleteTransition] = useTransition();
   const [isEnriching, startEnrichTransition] = useTransition();
+  const [isFindingEmails, startFindEmailsTransition] = useTransition();
   const [enrichResult, setEnrichResult] = useState<EnrichResult | null>(null);
+  const [findEmailResult, setFindEmailResult] = useState<EnrichResult | null>(null);
 
   const handleDelete = useCallback(() => {
     const ids = Array.from(selected);
@@ -163,6 +162,15 @@ export function PeopleTable({ people, campaigns }: { people: Person[]; campaigns
     startEnrichTransition(async () => {
       const result = await enrichSelectedPeople(ids);
       setEnrichResult(result);
+      setSelected(new Set());
+    });
+  }, [selected]);
+
+  const handleFindEmails = useCallback(() => {
+    const ids = Array.from(selected);
+    startFindEmailsTransition(async () => {
+      const result = await findEmailsForPeople(ids);
+      setFindEmailResult(result);
       setSelected(new Set());
     });
   }, [selected]);
@@ -193,8 +201,8 @@ export function PeopleTable({ people, campaigns }: { people: Person[]; campaigns
       if (columnFilters.campaignId && person.campaignId !== columnFilters.campaignId) return false;
       if (columnFilters.location && !(person.location || "").toLowerCase().includes(columnFilters.location.toLowerCase())) return false;
       if (columnFilters.status && person.status !== columnFilters.status) return false;
-      if (columnFilters.scoreMin !== "" && person.confidenceScore < Number(columnFilters.scoreMin)) return false;
-      if (columnFilters.scoreMax !== "" && person.confidenceScore > Number(columnFilters.scoreMax)) return false;
+      if (columnFilters.email === "has" && !person.email) return false;
+      if (columnFilters.email === "missing" && person.email) return false;
       return true;
     });
   }, [people, searchTerm, columnFilters]);
@@ -299,11 +307,22 @@ export function PeopleTable({ people, campaigns }: { people: Person[]; campaigns
             <button
               type="button"
               onClick={handleEnrich}
-              disabled={isEnriching || isDeleting}
+              disabled={isEnriching || isDeleting || isFindingEmails}
               className="button-secondary"
             >
               <Sparkles size={14} />
               {isEnriching ? "Searching LinkedIn…" : "Find missing info"}
+            </button>
+          ) : null}
+          {selected.size > 0 ? (
+            <button
+              type="button"
+              onClick={handleFindEmails}
+              disabled={isFindingEmails || isEnriching || isDeleting}
+              className="button-secondary"
+            >
+              <Mail size={14} />
+              {isFindingEmails ? "Finding emails…" : "Find emails"}
             </button>
           ) : null}
           {selected.size > 0 ? (
@@ -372,7 +391,7 @@ export function PeopleTable({ people, campaigns }: { people: Person[]; campaigns
                 <SortableHeader label="Campaign" sortKeyName="campaignId" activeSortKey={sortKey} direction={sortDirection} onSort={handleSort} />
                 <SortableHeader label="Location" sortKeyName="location" activeSortKey={sortKey} direction={sortDirection} onSort={handleSort} />
                 <SortableHeader label="Status" sortKeyName="status" activeSortKey={sortKey} direction={sortDirection} onSort={handleSort} />
-                <SortableHeader label="Score" sortKeyName="confidenceScore" activeSortKey={sortKey} direction={sortDirection} onSort={handleSort} />
+                <div role="columnheader" className="px-4 py-3 font-semibold text-slate-700">Email</div>
               </div>
               <div role="row" style={{ display: "grid", gridTemplateColumns: GRID_TEMPLATE_COLUMNS }} className="border-b border-slate-200 bg-slate-50/60">
                 <div className="px-4 py-2" />
@@ -425,26 +444,15 @@ export function PeopleTable({ people, campaigns }: { people: Person[]; campaigns
                   </select>
                 </div>
                 <div className="px-2 py-2">
-                  <div className="flex gap-1">
-                    <input
-                      type="number"
-                      min={0}
-                      max={100}
-                      value={columnFilters.scoreMin}
-                      onChange={(event) => updateColumnFilter("scoreMin", event.target.value)}
-                      placeholder="Min"
-                      className="field w-full px-2 py-1.5 text-xs font-normal"
-                    />
-                    <input
-                      type="number"
-                      min={0}
-                      max={100}
-                      value={columnFilters.scoreMax}
-                      onChange={(event) => updateColumnFilter("scoreMax", event.target.value)}
-                      placeholder="Max"
-                      className="field w-full px-2 py-1.5 text-xs font-normal"
-                    />
-                  </div>
+                  <select
+                    value={columnFilters.email}
+                    onChange={(event) => updateColumnFilter("email", event.target.value as ColumnFilters["email"])}
+                    className="field w-full px-2 py-1.5 text-xs font-normal"
+                  >
+                    <option value="">All</option>
+                    <option value="has">Has email</option>
+                    <option value="missing">No email</option>
+                  </select>
                 </div>
               </div>
             </div>
@@ -508,8 +516,16 @@ export function PeopleTable({ people, campaigns }: { people: Person[]; campaigns
                         <div role="cell" className="px-4">
                           <StatusBadge status={person.status} />
                         </div>
-                        <div role="cell" className="px-4 font-semibold text-slate-700">
-                          {person.confidenceScore}
+                        <div role="cell" className="px-4">
+                          {person.email ? (
+                            <span className={`rounded-md px-2 py-0.5 text-xs font-semibold ${person.emailVerified ? "bg-emerald-50 text-emerald-700" : "bg-amber-50 text-amber-700"}`}>
+                              {person.emailVerified ? "Verified" : "Has Email"}
+                            </span>
+                          ) : (
+                            <span className="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-semibold text-slate-500">
+                              No Email
+                            </span>
+                          )}
                         </div>
                       </div>
                     );
@@ -526,6 +542,17 @@ export function PeopleTable({ people, campaigns }: { people: Person[]; campaigns
           result={enrichResult}
           campaigns={campaigns}
           onClose={() => setEnrichResult(null)}
+        />
+      ) : null}
+      {findEmailResult ? (
+        <EnrichResultDialog
+          result={findEmailResult}
+          campaigns={campaigns}
+          onClose={() => setFindEmailResult(null)}
+          title="Email Lookup Complete"
+          enrichedLabel="found"
+          skippedLabel="already verified"
+          failedLabel="not found"
         />
       ) : null}
     </div>

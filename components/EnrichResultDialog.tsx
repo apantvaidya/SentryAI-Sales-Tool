@@ -11,10 +11,18 @@ export function EnrichResultDialog({
   result,
   campaigns,
   onClose,
+  title = "Enrichment Complete",
+  enrichedLabel = "updated",
+  skippedLabel = "already complete",
+  failedLabel = "could not be enriched",
 }: {
   result: EnrichResult;
   campaigns: Campaign[];
   onClose: () => void;
+  title?: string;
+  enrichedLabel?: string;
+  skippedLabel?: string;
+  failedLabel?: string;
 }) {
   const [selected, setSelected] = useState<Set<string>>(
     new Set(result.failed.map((f) => f.id))
@@ -62,10 +70,10 @@ export function EnrichResultDialog({
       <div className="surface w-full max-w-lg overflow-hidden shadow-xl">
         <div className="flex items-center justify-between border-b border-slate-200 px-5 py-4">
           <div>
-            <h2 className="section-title">Enrichment Complete</h2>
+            <h2 className="section-title">{title}</h2>
             <p className="muted-copy mt-0.5">
-              {result.enriched} updated · {result.skipped} already complete
-              {result.failed.length > 0 ? ` · ${result.failed.length} could not be enriched` : ""}
+              {result.enriched} {enrichedLabel} · {result.skipped} {skippedLabel}
+              {result.failed.length > 0 ? ` · ${result.failed.length} ${failedLabel}` : ""}
             </p>
           </div>
           <button type="button" onClick={onClose} className="text-slate-400 hover:text-ink">
