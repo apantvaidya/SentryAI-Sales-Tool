@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "dev",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev"],
+      "runtimeExecutable": "/Users/apantvaidya/sentry/.claude/dev-server.sh",
+      "runtimeArgs": [],
       "port": 5173,
       "autoPort": false
     }
