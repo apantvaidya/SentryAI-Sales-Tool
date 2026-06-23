@@ -9,18 +9,19 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-inter)", "Inter", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"]
+        sans: ["var(--font-inter)", "Geist", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
+        mono: ["var(--font-mono)", "Geist Mono", "ui-monospace", "SFMono-Regular", "Menlo", "monospace"]
       },
       colors: {
         // Primary text / near-black, tuned to Blueprint's cool dark gray.
-        ink: "#1c2127",
-        slatepanel: "#f6f7f9",
-        // Blueprint-style dark navigation rail.
+        ink: "#0f1115",
+        slatepanel: "#f5f6f8",
+        // Deep near-black navigation rail (Foundry template).
         rail: {
-          DEFAULT: "#1c2127",
-          raised: "#252a31",
-          hover: "#2f343c",
-          border: "#383e47"
+          DEFAULT: "#0b0e14",
+          raised: "#12161f",
+          hover: "#1b212c",
+          border: "#1f2530"
         },
         // Brand accent — Palantir Blueprint "intent primary" blue scale.
         brand: {
