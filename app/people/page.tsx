@@ -21,8 +21,11 @@ export default async function PeoplePage({ searchParams }: { searchParams?: Prom
   return (
     <AppShell>
       <div className="mb-6">
-        <h1 className="mt-2 text-3xl font-bold text-ink">People</h1>
-
+        <p className="page-kicker">Prospecting</p>
+        <h1 className="mt-1.5 text-2xl font-semibold tracking-tight text-ink">People</h1>
+        <p className="muted-copy mt-2 max-w-3xl">
+          Generate, import, and manage prospects, then enrich and queue reviewed outreach from a single workspace.
+        </p>
       </div>
 
       {query.jobId ? <BatchJobStatus jobId={query.jobId} /> : null}
