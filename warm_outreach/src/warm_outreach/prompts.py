@@ -72,7 +72,7 @@ Rules:
 - Make the second local crime/public safety query target a recent relevant incident or pattern in the same area.
 - Recent incident queries must search for specific public incidents from the last few months that match the lead's role and likely sites.
 - For construction/facilities roles, recent incident queries should target construction site theft, equipment theft, copper theft, trespass, burglary, vandalism, or after-hours site access.
-- For asset protection/loss prevention/retail roles, recent incident queries should target retail theft, shoplifting, organized retail theft, robbery, burglary, or store safety incidents.
+- For asset protection/loss prevention/retail roles, recent incident queries should target retail theft, organized retail theft, robbery, burglary, or store safety incidents. Do not target shoplifting incidents.
 - For physical security/operations roles, recent incident queries should target trespass, burglary, vandalism, lot activity, theft, robbery, or public-safety incidents relevant to multi-site operations.
 - Include recency language such as "recent", "last month", "2026", or "past few months" in recent incident queries.
 - If location is missing, use company + role-specific risk queries and set local crime queries to broader company footprint or industry risk.
@@ -210,7 +210,7 @@ Best,
 
 - Role-to-stat matching:
   - Asset Protection / Loss Prevention:
-    Use retail theft, shoplifting, organized retail crime, commercial burglary, shrink, repeat theft, robbery, or store safety stats.
+    Use retail theft, organized retail crime, commercial burglary, shrink, repeat theft, robbery, or store safety stats. Do not mention shoplifting.
   - Construction:
     Use construction site theft, equipment theft, copper theft, material theft, trespass, burglary, vandalism, after-hours property crime, or commercial theft incidents/stats.
   - Facilities:
