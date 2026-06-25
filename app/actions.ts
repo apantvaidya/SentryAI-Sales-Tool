@@ -269,6 +269,7 @@ function toUpsertCandidates(candidates: ArtifactCandidate[]) {
       currentCompany: candidate.currentCompany,
       resolvedLocation: candidate.resolvedLocation,
       yearsAtCurrentRole: candidate.yearsAtCurrentRole,
+      currentRoleDescription: candidate.currentRoleDescription,
       sourceQueryIds: candidate.sourceQueryIds,
       sourceQueryNames: candidate.sourceQueryNames,
       sourceBuckets: candidate.sourceBuckets,
@@ -657,9 +658,10 @@ export async function enrichSelectedPeople(personIds: string[]): Promise<EnrichR
       continue;
     }
 
-    const update: Partial<{ title: string; location: string }> = {};
+    const update: Partial<{ title: string; location: string; currentRoleDescription: string }> = {};
     if (!person.title && data.title) update.title = data.title;
     if (!person.location && data.location) update.location = data.location;
+    if (!person.currentRoleDescription && data.currentRoleDescription) update.currentRoleDescription = data.currentRoleDescription;
 
     if (Object.keys(update).length === 0) {
       result.failed.push({ id: personId, name: person.name, reason: "No new info found" });

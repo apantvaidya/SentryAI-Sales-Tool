@@ -119,6 +119,7 @@ def map_result_node(result_node: dict[str, Any], rendered_query: RenderedQuery) 
         resolved_location=resolved_location,
         linkedin_url=result_node.get("url"),
         public_business_email=None,
+        current_role_description=current_job.get("description") or None,
         source_vector_id=rendered_query.vector_id,
         source_vector_name=rendered_query.vector_name,
         source_bucket=rendered_query.target_bucket,

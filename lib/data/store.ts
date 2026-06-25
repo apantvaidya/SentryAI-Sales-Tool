@@ -504,6 +504,7 @@ export async function upsertImportedLeadGenRun(input: {
     currentCompany?: string;
     resolvedLocation?: string;
     yearsAtCurrentRole?: number;
+    currentRoleDescription?: string;
     sourceQueryIds: string[];
     sourceQueryNames?: string[];
     sourceBuckets?: string[];
@@ -545,6 +546,7 @@ export async function upsertImportedLeadGenRun(input: {
         linkedinUrl: candidateInput.linkedinUrl,
         location: candidateInput.resolvedLocation,
         yearsAtCurrentRole: candidateInput.yearsAtCurrentRole,
+        currentRoleDescription: candidateInput.currentRoleDescription,
         source: "Lead generation",
         notes: candidateInput.notes,
         confidenceScore: 50,
@@ -572,6 +574,7 @@ export async function upsertImportedLeadGenRun(input: {
       companyName: candidateInput.currentCompany || existing.companyName,
       location: candidateInput.resolvedLocation ?? existing.location,
       yearsAtCurrentRole: candidateInput.yearsAtCurrentRole ?? existing.yearsAtCurrentRole,
+      currentRoleDescription: candidateInput.currentRoleDescription ?? existing.currentRoleDescription,
       sourceQueryIds: candidateInput.sourceQueryIds,
       sourceQueryNames: candidateInput.sourceQueryNames,
       sourceBuckets: candidateInput.sourceBuckets,

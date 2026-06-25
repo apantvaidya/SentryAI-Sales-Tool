@@ -18,6 +18,7 @@ export type ArtifactCandidate = {
   currentCompany?: string;
   resolvedLocation?: string;
   yearsAtCurrentRole?: number;
+  currentRoleDescription?: string;
   sourceQueryIds: string[];
   sourceQueryNames?: string[];
   sourceBuckets?: string[];
@@ -42,6 +43,7 @@ type FilterDecisionArtifact = {
     years_at_current_role?: number;
     resolved_location?: string;
     linkedin_url?: string;
+    current_role_description?: string;
     source_vector_id: string;
     source_vector_name: string;
     source_bucket?: string;
@@ -168,6 +170,7 @@ export async function importLeadGenArtifacts(artifactRunId: string) {
           currentCompany,
           resolvedLocation: clean(candidate.resolved_location),
           yearsAtCurrentRole: candidate.years_at_current_role,
+          currentRoleDescription: clean(candidate.current_role_description),
           sourceQueryIds: [],
           sourceQueryNames: [],
           sourceBuckets: [],

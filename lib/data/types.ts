@@ -23,6 +23,7 @@ export type Person = {
   linkedinUrl?: string;
   location?: string;
   yearsAtCurrentRole?: number;
+  currentRoleDescription?: string;
   source?: string;
   notes?: string;
   confidenceScore: number;

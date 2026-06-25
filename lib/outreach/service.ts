@@ -26,6 +26,7 @@ export type WarmOutreachPipelineOutput = {
     linkedin?: string | null;
     role: string;
     years_at_role?: string | null;
+    current_role_description?: string | null;
   };
   persona: {
     persona_type?: string;
@@ -111,7 +112,8 @@ export function personToWarmOutreachLead(person: Person) {
     location: person.location || person.companySegment || null,
     linkedin: person.linkedinUrl || null,
     role: person.title || "Unknown role",
-    years_at_role: yearsAtRole(person) || null
+    years_at_role: yearsAtRole(person) || null,
+    current_role_description: person.currentRoleDescription || null
   };
 }
 

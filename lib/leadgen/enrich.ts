@@ -3,6 +3,7 @@ import { getQueryTargeting } from "./queryTargeting";
 type WorkHistoryJob = {
   title?: string;
   location?: string;
+  description?: string;
   company?: { name?: string };
   dates?: { from?: string; to?: string };
 };
@@ -36,7 +37,7 @@ export async function enrichPersonFromLinkedIn(person: {
   name: string;
   companyName: string;
   linkedinUrl?: string;
-}): Promise<{ location?: string; title?: string } | null> {
+}): Promise<{ location?: string; title?: string; currentRoleDescription?: string } | null> {
   const apiKey = process.env.EXA_API_KEY;
   if (!apiKey) return null;
 
@@ -96,8 +97,10 @@ export async function enrichPersonFromLinkedIn(person: {
     // Title: current/most-recent job title
     const title = currentJob?.title || undefined;
 
-    if (!location && !title) return null;
-    return { location, title };
+    const currentRoleDescription = currentJob?.description || undefined;
+
+    if (!location && !title && !currentRoleDescription) return null;
+    return { location, title, currentRoleDescription };
   } catch {
     return null;
   }

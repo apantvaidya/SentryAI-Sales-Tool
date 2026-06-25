@@ -89,6 +89,7 @@ class PersonaLeadRecord:
     resolved_location: str | None
     linkedin_url: str | None
     public_business_email: str | None = None
+    current_role_description: str | None = None
     query_hit_count: int = 1
 
     def __post_init__(self) -> None:
@@ -102,6 +103,7 @@ class PersonaLeadRecord:
             "public_business_email",
             clean_string(self.public_business_email),
         )
+        object.__setattr__(self, "current_role_description", clean_string(self.current_role_description))
 
     @classmethod
     def from_dict(cls, payload: dict[str, Any]) -> "PersonaLeadRecord":
@@ -113,6 +115,7 @@ class PersonaLeadRecord:
             resolved_location=payload.get("resolved_location"),
             linkedin_url=payload.get("linkedin_url"),
             public_business_email=payload.get("public_business_email"),
+            current_role_description=payload.get("current_role_description"),
             query_hit_count=int(payload.get("query_hit_count", 1) or 1),
         )
 
@@ -129,6 +132,7 @@ class MappedCandidate:
     resolved_location: str | None
     linkedin_url: str | None
     public_business_email: str | None = None
+    current_role_description: str | None = None
     source_vector_id: str = ""
     source_vector_name: str = ""
     source_bucket: str = ""
@@ -148,6 +152,7 @@ class MappedCandidate:
         self.resolved_location = clean_string(self.resolved_location)
         self.linkedin_url = clean_string(self.linkedin_url)
         self.public_business_email = clean_string(self.public_business_email)
+        self.current_role_description = clean_string(self.current_role_description)
         self.exa_result_id = clean_string(self.exa_result_id)
         self.exa_result_url = clean_string(self.exa_result_url)
         self.exa_entity_id = clean_string(self.exa_entity_id)
@@ -165,6 +170,7 @@ class MappedCandidate:
             resolved_location=self.resolved_location,
             linkedin_url=self.linkedin_url,
             public_business_email=None,
+            current_role_description=self.current_role_description,
             query_hit_count=self.query_hit_count,
         )
 
