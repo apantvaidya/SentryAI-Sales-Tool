@@ -3,6 +3,7 @@ from warm_outreach.schemas import (
     EmailDraft,
     EvidenceSummary,
     Lead,
+    LinkedInActivity,
     PersonaClassification,
     ResearchQueries,
     SearchResult,
@@ -34,15 +35,16 @@ def test_pipeline_output_contains_all_sections(monkeypatch):
             "Tesla service centers charging sites facilities construction operations",
             "Tesla physical locations service centers facilities operations",
         ],
-        role_specific_risk_queries=[
-            "construction site after hours security monitoring equipment protection",
-            "auto service center lot security vehicle monitoring after hours",
+        professional_interest_queries=[
+            "construction leaders physical security site visibility incident review",
+            "multi-site operations leaders safety asset protection monitoring",
         ],
     )
     evidence = EvidenceSummary(
         safe_claims=["Large distributed facilities often care about after-hours visibility and incident review."],
         unsafe_claims_to_avoid=["Do not claim Tesla experienced incidents."],
-        best_email_angle="Tie SmartSentryAI to site visibility and response workflows.",
+        best_email_angle="Reference the lead's interest in site visibility and incident review.",
+        personalization_anchor="A recent LinkedIn discussion about site visibility and operational discipline.",
         geographic_confidence="medium",
         source_urls=["https://www.tesla.com/findus"],
         confidence="medium",
@@ -50,12 +52,19 @@ def test_pipeline_output_contains_all_sections(monkeypatch):
     email = EmailDraft(
         subject="Quick idea for Tesla site visibility",
         body=(
-            "Hi Diego, I saw you're Staff Construction Manager at Tesla. "
-            "Teams overseeing active sites and facilities often want clearer after-hours visibility and faster incident review. "
-            "SmartSentryAI helps physical site teams use existing cameras to improve visibility, review, and response workflows. "
-            "Open to a quick compare on whether that is relevant for your environment?"
+            "Hi Diego, I came across your work as Staff Construction Manager at Tesla. "
+            "Your perspective on site visibility and operational discipline really stood out to us. "
+            "Given your experience in construction operations, we'd love to sit down and chat with you to discuss this field and share insights. "
+            "Would you be open to a quick conversation next week?"
         ),
     )
+    linkedin_activity = [
+        LinkedInActivity(
+            url="https://www.linkedin.com/posts/sample",
+            title="Post about site visibility",
+            text="Thoughts on improving site visibility and operational discipline across active projects.",
+        )
+    ]
     search_results = [
         SearchResult(
             query=queries.company_context_queries[0],
@@ -79,6 +88,7 @@ def test_pipeline_output_contains_all_sections(monkeypatch):
 
     monkeypatch.setattr("warm_outreach.pipeline.call_json", fake_call_json)
     monkeypatch.setattr("warm_outreach.pipeline.run_searches", lambda *args, **kwargs: search_results)
+    monkeypatch.setattr("warm_outreach.pipeline.fetch_linkedin_activity_via_exa", lambda *args, **kwargs: linkedin_activity)
 
     result = run_pipeline_for_lead(lead)
 
@@ -86,6 +96,7 @@ def test_pipeline_output_contains_all_sections(monkeypatch):
     assert result.persona == persona
     assert result.queries == queries
     assert result.search_results == search_results
+    assert result.linkedin_activity == linkedin_activity
     assert result.evidence_summary == evidence
     assert result.email == email
     assert result.validation.recommendation in {"approve", "human_review"}

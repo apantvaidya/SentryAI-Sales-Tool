@@ -1,11 +1,13 @@
 from __future__ import annotations
 
+import json
+from urllib import request
 from urllib.parse import urlparse
 
 import httpx
 
 from .config import settings
-from .schemas import ResearchQueries, SearchResult
+from .schemas import Lead, LinkedInActivity, ResearchQueries, SearchResult
 
 NEWS_DOMAINS = {
     "reuters.com",
@@ -73,6 +75,19 @@ GENERIC_QUERY_TOKENS = {
     "hours",
     "monitoring",
 }
+LINKEDIN_PRIORITY_TERMS = (
+    "loss prevention",
+    "asset protection",
+    "organized retail crime",
+    "orc",
+    "physical security",
+    "security",
+    "shrink",
+    "safety",
+    "investigation",
+    "compliance",
+    "operations",
+)
 
 
 class SearchError(RuntimeError):
@@ -182,23 +197,88 @@ def search_tavily(
     return search_results
 
 
+def _linkedin_activity_priority(activity: LinkedInActivity) -> tuple[int, int, int]:
+    text = f"{activity.title or ''} {activity.text}".lower()
+    keyword_rank = 0 if any(term in text for term in LINKEDIN_PRIORITY_TERMS) else 1
+    url = (activity.url or "").lower()
+    post_rank = 0 if any(part in url for part in ("/posts/", "/feed/update/", "/pulse/")) else 1
+    length_rank = 0 if len(activity.text) >= 160 else 1
+    return keyword_rank, post_rank, length_rank
+
+
+def fetch_linkedin_activity_via_exa(lead: Lead, max_items: int = 5) -> list[LinkedInActivity]:
+    """Return a list of LinkedIn activity/profile snippets for the lead, or [] if unavailable."""
+    if not settings.exa_api_key:
+        return []
+
+    query_parts = [f'"{lead.name}"', lead.company, lead.role, "site:linkedin.com"]
+    if lead.linkedin:
+        query_parts.insert(0, f'"{lead.linkedin}"')
+    query = " ".join(part for part in query_parts if part)
+    payload = {
+        "query": query,
+        "type": "neural",
+        "numResults": max_items * 2,
+        "includeDomains": ["linkedin.com"],
+        "contents": {"text": {"maxCharacters": 1200}},
+    }
+    encoded = json.dumps(payload).encode("utf-8")
+    req = request.Request(
+        settings.exa_api_url,
+        data=encoded,
+        headers={"Content-Type": "application/json", "x-api-key": settings.exa_api_key},
+        method="POST",
+    )
+    try:
+        with request.urlopen(req, timeout=settings.exa_timeout_seconds) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except Exception:
+        return []
+
+    activities: list[LinkedInActivity] = []
+    seen_urls: set[str] = set()
+    for result in data.get("results", []):
+        text = (result.get("text") or "").strip()
+        url = result.get("url")
+        if not text:
+            continue
+        if url and url in seen_urls:
+            continue
+        if url:
+            seen_urls.add(url)
+        activities.append(
+            LinkedInActivity(
+                url=url,
+                title=result.get("title"),
+                text=text,
+            )
+        )
+    activities.sort(key=_linkedin_activity_priority)
+    return activities[:max_items]
+
+
 def run_searches(
     queries: ResearchQueries,
     max_results: int = 5,
     include_raw_content: bool = False,
 ) -> list[SearchResult]:
+    import sys
+
     ordered_queries = (
         list(queries.company_context_queries)
-        + list(queries.role_specific_risk_queries)
+        + list(queries.professional_interest_queries)
     )
 
     deduped: dict[str, SearchResult] = {}
     for query in ordered_queries:
-        for result in search_tavily(
-            query=query,
-            max_results=max_results,
-            include_raw_content=include_raw_content,
-        ):
-            deduped.setdefault(result.url, result)
+        try:
+            for result in search_tavily(
+                query=query,
+                max_results=max_results,
+                include_raw_content=include_raw_content,
+            ):
+                deduped.setdefault(result.url, result)
+        except SearchError as exc:
+            print(f"[warn] Tavily search skipped: {exc}", file=sys.stderr)
 
     return sorted(deduped.values(), key=_result_priority)

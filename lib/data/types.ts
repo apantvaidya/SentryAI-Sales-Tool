@@ -184,7 +184,7 @@ export type OutreachResearch = {
   personaType?: string;
   status: PipelineStatus;
   model?: string;
-  pipelineVersion: "warm-outreach-v1";
+  pipelineVersion: "warm-outreach-v1" | "warm-outreach-v2";
   querySet: unknown;
   searchResults: unknown;
   evidenceSummary: string;

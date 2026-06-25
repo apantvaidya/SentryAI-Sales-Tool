@@ -9,6 +9,7 @@ from .schemas import (
     EmailDraft,
     EvidenceSummary,
     Lead,
+    LinkedInActivity,
     PersonaClassification,
     ResearchQueries,
     SearchResult,
@@ -59,14 +60,16 @@ You are generating public web research queries for SmartSentryAI warm outreach.
 
 Generate exactly:
 - 2 company context queries
-- 2 role-specific risk queries
+- 2 professional interest queries
 
 Rules:
-- Do not generate people or profile searches.
+- Do not generate personal-info or contact-info searches.
+- Do not generate crime-stat or police-blotter queries.
 - Do not search for personal info.
 - Do not search for contact information.
 - Company context queries should target the company's operations, locations, facilities, and industry footprint.
-- Role-specific risk queries should target operational challenges relevant to the lead's persona and likely site types.
+- Professional interest queries should target the themes this lead is likely to care about in their function, such as loss prevention, physical security, investigations, site operations, safety, or related leadership topics.
+- These queries are for public context only. LinkedIn activity is gathered separately by the pipeline.
 - Return strict JSON only matching the schema.
 
 Lead:
@@ -81,9 +84,9 @@ Example for Tesla + Staff Construction Manager + Bay Area:
     "Tesla service centers charging sites facilities construction operations",
     "Tesla physical locations service centers facilities operations"
   ],
-  "role_specific_risk_queries": [
-    "construction site after hours security monitoring equipment protection",
-    "auto service center lot security vehicle monitoring after hours"
+  "professional_interest_queries": [
+    "construction leaders physical security site visibility incident review",
+    "multi-site operations leaders safety asset protection monitoring"
   ]
 }, indent=2)}
 
@@ -96,6 +99,7 @@ def summarize_evidence_prompt(
     lead: Lead,
     persona: PersonaClassification,
     search_results: list[SearchResult],
+    linkedin_activity: list[LinkedInActivity],
 ) -> str:
     serialized_results = [
         {
@@ -109,16 +113,28 @@ def summarize_evidence_prompt(
         }
         for result in search_results[:18]
     ]
+    serialized_linkedin_activity = [
+        {
+            "title": activity.title,
+            "url": activity.url,
+            "text": _trim_text(activity.text, 1000),
+        }
+        for activity in linkedin_activity[:5]
+    ]
     return f"""
 You are summarizing retrieved public evidence for SmartSentryAI warm outreach.
 
 Rules:
 - Only include claims supported by retrieved snippets or raw_content.
+- You may also use the LinkedIn activity snippets below as public evidence of what the lead talks about, works on, or appears to care about.
 - Prefer operational language over sensational language.
 - Mark whether geography is broad or specific through the geographic_confidence field.
 - If evidence is weak, use cautious language.
 - Preserve source URLs in source_urls.
-- Focus safe_claims on company operational context and role-relevant challenges.
+- Focus safe_claims on what this person appears to care about professionally, especially anything tied to loss prevention, asset protection, investigations, safety, physical security, or site operations.
+- Set personalization_anchor to the single best concrete thing to reference in the email.
+- Only use a LinkedIn item as the personalization_anchor if it looks like a real, specific, mention-worthy post or activity item.
+- If the LinkedIn material is generic, thin, boilerplate, or not clearly worth citing in outreach, leave personalization_anchor as null or use a safer non-post anchor from the lead's role/description.
 - Do not fabricate numbers, dates, or comparisons.
 - Return strict JSON only matching the schema.
 
@@ -131,6 +147,9 @@ Persona classification:
 Retrieved search results:
 {_json_block(serialized_results)}
 
+LinkedIn activity:
+{_json_block(serialized_linkedin_activity)}
+
 Target schema:
 {_schema_block(EvidenceSummary)}
 """.strip()
@@ -140,28 +159,70 @@ def write_email_prompt(
     lead: Lead,
     persona: PersonaClassification,
     evidence: EvidenceSummary,
+    linkedin_activity: list[LinkedInActivity] | None = None,
 ) -> str:
+    activity = linkedin_activity or []
+    if activity:
+        def is_post_candidate(item: LinkedInActivity) -> bool:
+            url = (item.url or "").lower()
+            return any(part in url for part in ("/posts/", "/feed/update/", "/pulse/"))
+
+        post_candidates = [item for item in activity if is_post_candidate(item)]
+        non_post_activity = [item for item in activity if not is_post_candidate(item)]
+
+        posts_block = "\n\n".join(
+            (
+                f"Post candidate {i + 1}:\n"
+                f"Title: {item.title or 'N/A'}\n"
+                f"URL: {item.url or 'N/A'}\n"
+                f"Text: {item.text}"
+            )
+            for i, item in enumerate(post_candidates[:3])
+        ) or "None"
+        other_activity_block = "\n\n".join(
+            (
+                f"Other activity {i + 1}:\n"
+                f"Title: {item.title or 'N/A'}\n"
+                f"URL: {item.url or 'N/A'}\n"
+                f"Text: {item.text}"
+            )
+            for i, item in enumerate(non_post_activity[:2])
+        ) or "None"
+
+        linkedin_section = f"""
+LinkedIn post candidates (prefer these if one is concrete and worth mentioning):
+{posts_block}
+
+Other LinkedIn activity (use only if there is no good specific post to mention):
+{other_activity_block}
+"""
+    else:
+        linkedin_section = ""
+
     return f"""
 You are writing a short, grounded warm outreach email for SmartSentryAI.
 
 Rules:
 - Under 110 words.
 - Warm, direct, natural.
+- Make it feel personal and handwritten, not corporate or templated.
 - Do not imply their company has suffered incidents.
-- Tie the message to the person's role.
+- Do not mention crime stats, police data, or neighborhood crime levels.
+- Tie the message to the person's role and what they have shared or seem to care about.
 - Use tenure only if provided and natural.
-- Be specific and personalized using the lead's actual role, company, tenure, and location or operating scope when available.
-- Use "we" voice.
+- Be specific and personalized using the lead's actual role, company, tenure, and LinkedIn activity when available.
+- Use first-person singular voice: "I", "me", and "my".
+- Do not use "we", "our", or "us" unless they appear inside a company name.
 - Follow this structure closely, while keeping the final email natural and under 120 words:
 
 Hi {{{{first_name}}}},
-I saw you're {{{{current_title}}}} at {{{{company}}}}{{{{years_phrase}}}}.
+I came across your work as {{{{current_title}}}} at {{{{company}}}}{{{{years_phrase}}}}.
 
-{{{{experience_praise_sentence}}}}
+{{{{linkedin_reference_sentence}}}}
 
-SmartSentryAI is a computer vision physical security company with a simple mission: make solving crime cheaper and easier for organizations with real-world locations. We're trying to better understand how leaders like you think about {{{{relevant_issue_1}}}}, {{{{relevant_issue_2}}}}, and {{{{relevant_issue_3}}}} both at companies like {{{{company}}}} and in the broader {{{{area}}}} area.
+Given your experience in {{{{role_relevance}}}}, I'd love to chat and share notes. I'm building computer vision tools for teams responsible for real-world locations, and I'd be interested to hear how you think about {{{{relevant_focus_1}}}} and {{{{relevant_focus_2}}}}.
 
-Given your role in {{{{role_relevance}}}}, I thought your perspective would be especially valuable. Would you be open to a quick chat next week? I'd mainly love to hear how you're thinking about these problems and see if what we're building could be useful.
+Would you be open to a quick conversation next week?
 
 Best,
 {{{{sender_name}}}}
@@ -169,20 +230,22 @@ Best,
 - Fill the placeholders with concrete details from the lead and evidence. Do not leave placeholders in the output.
 - `years_phrase` should be blank if tenure is missing, otherwise something natural like " and have been in the role for 1 yr 6 m".
 - `role_relevance` should be a human phrase like "district asset protection", "construction operations", "physical security", or "regional operations", not the raw enum.
-- `relevant_issue_1`, `relevant_issue_2`, and `relevant_issue_3` must be grounded in the persona and evidence.
+- `relevant_focus_1` and `relevant_focus_2` must be grounded in the persona and evidence.
 - If no sender name is provided, use "SmartSentryAI".
 
-- Generate `experience_praise_sentence` as a single sentence that acknowledges something specific and genuine about the lead's role or work.
-- Use `current_role_description` (from the lead) as the primary source. Extract the most concrete responsibility, initiative, or achievement from it and frame it as a brief, natural compliment or congratulation.
-- Good formats for `experience_praise_sentence` when `current_role_description` is present:
-  - "Congrats on leading the {{specific_program_or_initiative}} — that kind of scope takes real operational discipline."
-  - "Impressive work overseeing {{key_responsibility}} across {{company}} — the complexity there is no joke."
-  - "The {{specific_initiative_or_achievement}} work sounds like a meaningful undertaking."
-- Fallback when `current_role_description` is absent or empty: write a brief, role-appropriate professional acknowledgment such as:
-  - "Congrats on the continued work in {{role_relevance}} — it's a space with a lot of operational nuance."
-  - "Your background in {{role_relevance}} is exactly the kind of context we're trying to better understand."
-- Keep the sentence concise (one sentence). Do not invent facts not present in the description.
-
+- Generate `linkedin_reference_sentence` as a single sentence that acknowledges something specific and genuine about the lead's role, work, or professional interests.
+- Only reference a specific LinkedIn post if it is clearly good enough to mention.
+- A LinkedIn post is good enough to mention only when it contains a concrete topic, initiative, milestone, opinion, or project that a human sender would naturally cite in a cold email.
+- Do not force a post reference when the available LinkedIn text is generic profile copy, a repost without substance, vague leadership boilerplate, scraped navigation junk, or anything too thin to cite confidently.
+- If a good post exists, explicitly reference that specific post or topic in natural language. Example: "I saw your recent post about reducing shrink through better field execution, and it really stood out."
+- If no good post exists, do not mention LinkedIn posts at all. Fall back to the default acknowledgment text path instead.
+- Priority order for sourcing the sentence:
+  1. A good specific LinkedIn post candidate (if provided below) — pick one concrete project, milestone, opinion, initiative, or loss-prevention-related topic they shared and reference it naturally.
+  2. `current_role_description` (from the lead) — extract the most concrete responsibility or achievement. Example: "Congrats on leading the {{specific_program}} — that kind of scope takes real operational discipline."
+  3. `personalization_anchor` from the evidence summary if useful.
+  4. Fallback (no activity and no description): a brief role-appropriate acknowledgment. Example: "Your background in {{role_relevance}} really stood out to us."
+- Keep the sentence concise (one sentence). Do not invent facts.
+{linkedin_section}
 - Return strict JSON only matching the schema.
 
 Lead:

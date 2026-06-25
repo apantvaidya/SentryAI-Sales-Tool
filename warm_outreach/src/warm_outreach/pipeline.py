@@ -16,11 +16,12 @@ from .schemas import (
     EmailDraft,
     EvidenceSummary,
     Lead,
+    LinkedInActivity,
     PersonaClassification,
     PipelineOutput,
     ResearchQueries,
 )
-from .search import run_searches
+from .search import fetch_linkedin_activity_via_exa, run_searches
 from .validators import validate_email
 
 
@@ -47,9 +48,10 @@ def summarize_evidence(
     lead: Lead,
     persona: PersonaClassification,
     search_results,
+    linkedin_activity: list[LinkedInActivity] | None = None,
 ) -> EvidenceSummary:
     return call_json(
-        summarize_evidence_prompt(lead, persona, search_results),
+        summarize_evidence_prompt(lead, persona, search_results, linkedin_activity or []),
         EvidenceSummary,
     )
 
@@ -58,8 +60,29 @@ def write_email(
     lead: Lead,
     persona: PersonaClassification,
     evidence: EvidenceSummary,
+    linkedin_activity: list[LinkedInActivity] | None = None,
 ) -> EmailDraft:
-    return call_json(write_email_prompt(lead, persona, evidence), EmailDraft)
+    return call_json(write_email_prompt(lead, persona, evidence, linkedin_activity or []), EmailDraft)
+
+
+def _evidence_source_fallbacks(
+    lead: Lead,
+    search_results,
+    linkedin_activity: list[LinkedInActivity],
+) -> list[str]:
+    urls: list[str] = []
+    if lead.linkedin:
+        urls.append(lead.linkedin)
+    urls.extend(activity.url for activity in linkedin_activity if activity.url)
+    urls.extend(result.url for result in search_results if result.url)
+
+    deduped: list[str] = []
+    seen: set[str] = set()
+    for url in urls:
+        if url and url not in seen:
+            seen.add(url)
+            deduped.append(url)
+    return deduped
 
 
 def run_pipeline_for_lead(
@@ -75,8 +98,13 @@ def run_pipeline_for_lead(
         max_results=max_results or settings.tavily_max_results,
         include_raw_content=include_raw_content,
     )
-    evidence_summary = summarize_evidence(lead, persona, search_results)
-    email = write_email(lead, persona, evidence_summary)
+    linkedin_activity = fetch_linkedin_activity_via_exa(lead)
+    evidence_summary = summarize_evidence(lead, persona, search_results, linkedin_activity)
+    if not evidence_summary.source_urls:
+        evidence_summary = evidence_summary.model_copy(
+            update={"source_urls": _evidence_source_fallbacks(lead, search_results, linkedin_activity)}
+        )
+    email = write_email(lead, persona, evidence_summary, linkedin_activity)
     validation = validate_email(email, evidence_summary)
 
     return PipelineOutput(
@@ -84,6 +112,7 @@ def run_pipeline_for_lead(
         persona=persona,
         queries=queries,
         search_results=search_results,
+        linkedin_activity=linkedin_activity,
         evidence_summary=evidence_summary,
         email=email,
         validation=validation,

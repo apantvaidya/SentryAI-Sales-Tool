@@ -363,7 +363,7 @@ async function persistOutreachExecution(personId: string, execution: Awaited<Ret
     personaType: output?.persona.persona_type,
     status: output ? "completed" : "failed",
     model: process.env.OPENAI_MODEL || "gpt-4o-mini",
-    pipelineVersion: "warm-outreach-v1",
+    pipelineVersion: "warm-outreach-v2",
     querySet: output?.queries || {},
     searchResults: output?.search_results || [],
     evidenceSummary: output ? evidenceSummaryText(output) : "Warm outreach pipeline failed before producing evidence.",
@@ -389,7 +389,10 @@ async function persistOutreachExecution(personId: string, execution: Awaited<Ret
       personalizationNotes: [
         `Persona: ${output.persona.persona_type || "unknown"}`,
         `Validation: ${recommendation}`,
-        `Evidence sources: ${research.sourceUrls.length}`
+        `Evidence sources: ${research.sourceUrls.length}`,
+        ...(output.evidence_summary.personalization_anchor
+          ? [`Personalization anchor: ${output.evidence_summary.personalization_anchor}`]
+          : [])
       ],
       riskFlags: output.validation.notes || output.evidence_summary.unsafe_claims_to_avoid || [],
       sourceUrls: research.sourceUrls,

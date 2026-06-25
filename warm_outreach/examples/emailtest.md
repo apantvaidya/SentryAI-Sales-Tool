@@ -1,12 +1,12 @@
 Hi Luis,
 
-I saw you're the District Asset Protection Manager at Albertsons and have been in the role for 1 yr 6 m.
+I came across your work as District Asset Protection Manager at Albertsons and have been in the role for 1 yr 6 m.
 
-Public data shows that theft remains a key concern in San Diego County, making effective asset protection strategies essential for retail operations.
+Your perspective on loss prevention leadership and field execution really stood out to me.
 
-SmartSentryAI is a computer vision physical security company with a simple mission: make solving crime cheaper and easier for organizations with real-world locations. We're trying to better understand how leaders like you think about theft prevention, inventory management, and employee training both at companies like Albertsons and in the broader San Diego area.
+Given your experience in loss prevention, I'd love to chat and share notes. I'm building computer vision tools for teams responsible for real-world locations, and I'd be interested to hear how you think about theft prevention and field investigations.
 
-Given your role in asset protection, I thought your perspective would be especially valuable. Would you be open to a quick chat next week? I'd mainly love to hear how you're thinking about these problems and see if what we're building could be useful.
+Would you be open to a quick conversation next week?
 
 Best,
 SmartSentryAI
@@ -16,12 +16,13 @@ SmartSentryAI
 
 
 Hi {{first_name}},
-I saw that you’re {{current_title}} at {{company}} and have been in the role for {{years_in_role}}. Given your work across {{location_or_scope}}, I figured you may be involved in keeping physical sites running safely and efficiently.
+I came across your work as {{current_title}} at {{company}}{{years_phrase}}.
 
-We’ve been looking at businesses with locations in {{area}}, where teams are often dealing with issues like {{relevant_crime_or_risk}}. For companies with distributed sites, the hard part usually is not just having cameras but rather knowing when something is happening, responding quickly, and turning repeated incidents into something the operations team can actually act on.
+{{linkedin_reference_sentence}}
 
-We would love to hear about your perspective on this issue and see if we can help {{company}} in {location}. Would you have time next week to chat?
+Given your experience in {{role_relevance}}, I'd love to chat and share notes. I'm building computer vision tools for teams responsible for real-world locations, and I'd be interested to hear how you think about {{relevant_focus_1}} and {{relevant_focus_2}}.
 
-SmartSentryAI is deployed across 50+ Tesla locations just within the Bay Area to help solve these kinds of crime. Our mission is to make public and private spaces safer by helping organizations detect risks earlier, respond faster, and prevent recurring incidents around the United States.
+Would you be open to a quick conversation next week?
 
-Best,{{sender_name}}
+Best,
+{{sender_name}}

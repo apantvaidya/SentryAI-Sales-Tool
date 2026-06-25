@@ -34,15 +34,18 @@
       "Tesla service centers charging sites facilities construction operations",
       "Tesla physical locations service centers facilities operations"
     ],
-    "local_crime_queries": [
-      "Bay Area police crime data theft burglary vehicle theft",
-      "Santa Clara County crime dashboard property crime vehicle theft burglary"
-    ],
-    "role_specific_risk_queries": [
-      "construction site theft trespassing equipment theft after hours security",
-      "auto service center lot security vehicle break-ins after hours monitoring"
+    "professional_interest_queries": [
+      "construction leaders physical security site visibility incident review",
+      "multi-site operations leaders safety asset protection monitoring"
     ]
   },
+  "linkedin_activity": [
+    {
+      "url": "https://www.linkedin.com/posts/sample-diego-flores",
+      "title": "Improving site visibility across active projects",
+      "text": "We keep coming back to the importance of visibility, accountability, and disciplined incident review across active job sites."
+    }
+  ],
   "search_results": [
     {
       "query": "Tesla physical locations service centers facilities operations",
@@ -57,22 +60,25 @@
   "evidence_summary": {
     "safe_claims": [
       "Tesla publicly operates service centers and other physical locations.",
-      "Construction and distributed site teams often care about after-hours visibility and incident review."
+      "Construction and distributed site teams often care about after-hours visibility and incident review.",
+      "The lead's public LinkedIn activity suggests a real interest in site visibility and operational discipline."
     ],
     "unsafe_claims_to_avoid": [
       "Do not claim Tesla specifically experienced crime.",
       "Do not claim a Bay Area Tesla site is unsafe."
     ],
-    "best_email_angle": "Tie SmartSentryAI to site visibility, incident review, and response workflows across physical sites.",
+    "best_email_angle": "Reference the lead's interest in site visibility and operational discipline, then invite a peer conversation.",
+    "personalization_anchor": "A LinkedIn post about site visibility and disciplined incident review across active projects.",
     "geographic_confidence": "medium",
     "source_urls": [
+      "https://www.linkedin.com/posts/sample-diego-flores",
       "https://www.tesla.com/findus"
     ],
     "confidence": "medium"
   },
   "email": {
-    "subject": "Quick idea for Tesla site visibility",
-    "body": "Hi Diego, I saw you're Staff Construction Manager at Tesla. Teams managing active sites often want better after-hours visibility and faster incident review across facilities. SmartSentryAI helps teams use existing cameras to improve visibility, review, and response workflows across physical sites. Open to a quick compare on whether that's relevant for your environment?"
+    "subject": "Quick conversation about site visibility",
+    "body": "Hi Diego, I came across your work as Staff Construction Manager at Tesla. Your recent thoughts on site visibility and disciplined incident review really stood out to me. Given your experience in construction operations, I'd love to chat and share notes. I'm building computer vision tools for teams responsible for real-world locations, and I'd be interested to hear how you think about site visibility and incident review. Would you be open to a quick conversation next week?"
   },
   "validation": {
     "passes_word_count": true,

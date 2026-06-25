@@ -37,7 +37,7 @@ class PersonaClassification(BaseModel):
 
 class ResearchQueries(BaseModel):
     company_context_queries: list[str] = Field(default_factory=list)
-    role_specific_risk_queries: list[str] = Field(default_factory=list)
+    professional_interest_queries: list[str] = Field(default_factory=list)
 
 
 class SearchResult(BaseModel):
@@ -57,10 +57,17 @@ class SearchResult(BaseModel):
     confidence: Literal["high", "medium", "low"]
 
 
+class LinkedInActivity(BaseModel):
+    url: str | None = None
+    title: str | None = None
+    text: str
+
+
 class EvidenceSummary(BaseModel):
     safe_claims: list[str] = Field(default_factory=list)
     unsafe_claims_to_avoid: list[str] = Field(default_factory=list)
     best_email_angle: str
+    personalization_anchor: str | None = None
     geographic_confidence: Literal["high", "medium", "low"]
     source_urls: list[str] = Field(default_factory=list)
     confidence: Literal["high", "medium", "low"]
@@ -85,6 +92,7 @@ class PipelineOutput(BaseModel):
     persona: PersonaClassification
     queries: ResearchQueries
     search_results: list[SearchResult] = Field(default_factory=list)
+    linkedin_activity: list[LinkedInActivity] = Field(default_factory=list)
     evidence_summary: EvidenceSummary
     email: EmailDraft
     validation: ValidationResult

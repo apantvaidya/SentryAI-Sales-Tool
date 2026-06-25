@@ -34,10 +34,16 @@ export type WarmOutreachPipelineOutput = {
   };
   queries: unknown;
   search_results: Array<{ url?: string; title?: string; snippet?: string | null }>;
+  linkedin_activity?: Array<{
+    url?: string | null;
+    title?: string | null;
+    text: string;
+  }>;
   evidence_summary: {
     safe_claims?: string[];
     unsafe_claims_to_avoid?: string[];
     best_email_angle?: string;
+    personalization_anchor?: string | null;
     source_urls?: string[];
     confidence?: string;
   };
@@ -175,8 +181,12 @@ export function evidenceSummaryText(output: WarmOutreachPipelineOutput) {
 
 export function sourceUrls(output: WarmOutreachPipelineOutput) {
   const urls = new Set<string>();
+  if (output.lead.linkedin) urls.add(output.lead.linkedin);
   for (const url of output.evidence_summary.source_urls || []) {
     if (url) urls.add(url);
+  }
+  for (const item of output.linkedin_activity || []) {
+    if (item.url) urls.add(item.url);
   }
   for (const result of output.search_results || []) {
     if (result.url) urls.add(result.url);

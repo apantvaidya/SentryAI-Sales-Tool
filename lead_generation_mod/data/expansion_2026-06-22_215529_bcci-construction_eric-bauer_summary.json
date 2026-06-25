@@ -1,0 +1,23 @@
+{
+  "original_seed": {
+    "person_name": "Eric Bauer",
+    "company_name": "BCCI Construction",
+    "linkedin_url": "https://linkedin.com/in/eric-bauer-9330b116",
+    "role": "Sr. Director, Field Operations"
+  },
+  "target_count": 300,
+  "total_leads_collected": 1202,
+  "stopped_reason": "target_reached",
+  "hops": 1,
+  "pivot_trail": [
+    {
+      "person_name": "Eric Bauer",
+      "company_name": "BCCI Construction",
+      "linkedin_url": "https://linkedin.com/in/eric-bauer-9330b116",
+      "role": "Sr. Director, Field Operations"
+    }
+  ],
+  "hop_run_ids": [
+    "exa_2026-06-22_2155_bcci-construction_eric-bauer"
+  ]
+}

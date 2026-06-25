@@ -32,11 +32,11 @@ export function CrimeResearchFeed({ research, personId }: { research: OutreachRe
   return (
     <section className="grid gap-5">
       <div className="flex items-center justify-between gap-3">
-        <h2 className="section-title">Crime Research</h2>
+        <h2 className="section-title">Outreach Research</h2>
         <form action={runResearchAction}>
           <button className="button-secondary" type="submit">
             <RefreshCw size={15} />
-            Run Research
+            Generate Outreach
           </button>
         </form>
       </div>

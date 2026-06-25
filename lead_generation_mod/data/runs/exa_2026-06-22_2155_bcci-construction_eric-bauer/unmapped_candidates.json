@@ -1,0 +1,20 @@
+[
+  {
+    "vector_id": "06",
+    "vector_name": "linkedin_anchored_similarity",
+    "result_url": "https://linkedin.com/in/eric-reinhard",
+    "reason": "missing_entities_or_current_role"
+  },
+  {
+    "vector_id": "06",
+    "vector_name": "linkedin_anchored_similarity",
+    "result_url": "https://linkedin.com/in/erickou",
+    "reason": "missing_entities_or_current_role"
+  },
+  {
+    "vector_id": "06",
+    "vector_name": "linkedin_anchored_similarity",
+    "result_url": "https://linkedin.com/in/eric-bauer-7002b9",
+    "reason": "missing_entities_or_current_role"
+  }
+]
