@@ -189,8 +189,6 @@ def run_searches(
 ) -> list[SearchResult]:
     ordered_queries = (
         list(queries.company_context_queries)
-        + list(queries.local_crime_queries)
-        + list(queries.recent_incident_queries)
         + list(queries.role_specific_risk_queries)
     )
 

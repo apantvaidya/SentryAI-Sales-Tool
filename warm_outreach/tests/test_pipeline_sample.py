@@ -34,13 +34,9 @@ def test_pipeline_output_contains_all_sections(monkeypatch):
             "Tesla service centers charging sites facilities construction operations",
             "Tesla physical locations service centers facilities operations",
         ],
-        local_crime_queries=[
-            "Bay Area police crime data theft burglary vehicle theft",
-            "Santa Clara County crime dashboard property crime vehicle theft burglary",
-        ],
         role_specific_risk_queries=[
-            "construction site theft trespassing equipment theft after hours security",
-            "auto service center lot security vehicle break-ins after hours monitoring",
+            "construction site after hours security monitoring equipment protection",
+            "auto service center lot security vehicle monitoring after hours",
         ],
     )
     evidence = EvidenceSummary(

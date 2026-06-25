@@ -13,6 +13,7 @@ class Lead(BaseModel):
     linkedin: str | None = None
     role: str
     years_at_role: str | None = None
+    current_role_description: str | None = None
 
 
 class PersonaClassification(BaseModel):
@@ -36,8 +37,6 @@ class PersonaClassification(BaseModel):
 
 class ResearchQueries(BaseModel):
     company_context_queries: list[str] = Field(default_factory=list)
-    local_crime_queries: list[str] = Field(default_factory=list)
-    recent_incident_queries: list[str] = Field(default_factory=list)
     role_specific_risk_queries: list[str] = Field(default_factory=list)
 
 

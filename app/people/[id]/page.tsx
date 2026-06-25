@@ -6,7 +6,6 @@ import { AppShell } from "@/components/AppShell";
 import { PendingButton } from "@/components/PendingButton";
 import { ActivityTimeline } from "@/components/ActivityTimeline";
 import { CompanyContextCard } from "@/components/CompanyContextCard";
-import { CrimeResearchFeed } from "@/components/CrimeResearchFeed";
 import { DraftEditor } from "@/components/DraftEditor";
 import { FitScoreBadge } from "@/components/FitScoreBadge";
 import { LeadGenProvenance } from "@/components/LeadGenProvenance";
@@ -131,7 +130,6 @@ export default async function PersonDetailPage({ params }: { params: Promise<{ i
 
           <DraftEditor drafts={drafts} personId={id} />
 
-          <CrimeResearchFeed research={outreachResearch} personId={id} />
         </div>
 
         <aside className="grid content-start gap-5">
