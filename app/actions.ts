@@ -227,6 +227,7 @@ export async function generateOutreachDraft(personId: string, formData: FormData
     notes: value(formData, "notes")
   });
   await createOutreachDraft(personId, {
+    channel: "email",
     personaId: persona?.id,
     subject: draft.subject,
     body: draft.body,
@@ -382,6 +383,7 @@ async function persistOutreachExecution(personId: string, execution: Awaited<Ret
 
   if (output) {
     await createOutreachDraft(personId, {
+      channel: "email",
       outreachResearchId: research.id,
       subject: output.email.subject,
       body: output.email.body,
@@ -390,6 +392,24 @@ async function persistOutreachExecution(personId: string, execution: Awaited<Ret
         `Persona: ${output.persona.persona_type || "unknown"}`,
         `Validation: ${recommendation}`,
         `Evidence sources: ${research.sourceUrls.length}`,
+        ...(output.evidence_summary.personalization_anchor
+          ? [`Personalization anchor: ${output.evidence_summary.personalization_anchor}`]
+          : [])
+      ],
+      riskFlags: output.validation.notes || output.evidence_summary.unsafe_claims_to_avoid || [],
+      sourceUrls: research.sourceUrls,
+      validationRecommendation: recommendation,
+      evidenceSummarySnippet: research.evidenceSummary.slice(0, 500)
+    });
+    await createOutreachDraft(personId, {
+      channel: "linkedin",
+      outreachResearchId: research.id,
+      subject: "LinkedIn message draft",
+      body: output.linkedin_message.body,
+      tone: "warm",
+      personalizationNotes: [
+        `Persona: ${output.persona.persona_type || "unknown"}`,
+        "Channel: linkedin",
         ...(output.evidence_summary.personalization_anchor
           ? [`Personalization anchor: ${output.evidence_summary.personalization_anchor}`]
           : [])

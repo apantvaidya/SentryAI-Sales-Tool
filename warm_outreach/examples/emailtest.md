@@ -4,7 +4,7 @@ I came across your work as District Asset Protection Manager at Albertsons and h
 
 Your perspective on loss prevention leadership and field execution really stood out to me.
 
-Given your experience in loss prevention, I'd love to chat and share notes. I'm building computer vision tools for teams responsible for real-world locations, and I'd be interested to hear how you think about theft prevention and field investigations.
+Given your experience in loss prevention, I'd love to chat and share notes. We're building Agentic Security solutions to reduce pressure on security teams, and I'd be interested to hear how you think about theft prevention and field investigations.
 
 Would you be open to a quick conversation next week?
 
@@ -20,9 +20,16 @@ I came across your work as {{current_title}} at {{company}}{{years_phrase}}.
 
 {{linkedin_reference_sentence}}
 
-Given your experience in {{role_relevance}}, I'd love to chat and share notes. I'm building computer vision tools for teams responsible for real-world locations, and I'd be interested to hear how you think about {{relevant_focus_1}} and {{relevant_focus_2}}.
+Given your experience in {{role_relevance}}, I'd love to chat and share notes. We're building Agentic Security solutions to reduce pressure on security teams, and I'd be interested to hear how you think about {{relevant_focus_1}} and {{relevant_focus_2}}.
 
 Would you be open to a quick conversation next week?
 
 Best,
 {{sender_name}}
+
+LinkedIn message:
+Hi {{first_name}} - noticed your work in {{role_relevance}} at {{company}}.
+
+{{linkedin_reference_sentence}}
+
+I'm reaching out because we're building Agentic Security solutions to reduce pressure on security teams. Would love to compare notes sometime if you're open.

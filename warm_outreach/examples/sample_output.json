@@ -78,7 +78,10 @@
   },
   "email": {
     "subject": "Quick conversation about site visibility",
-    "body": "Hi Diego, I came across your work as Staff Construction Manager at Tesla. Your recent thoughts on site visibility and disciplined incident review really stood out to me. Given your experience in construction operations, I'd love to chat and share notes. I'm building computer vision tools for teams responsible for real-world locations, and I'd be interested to hear how you think about site visibility and incident review. Would you be open to a quick conversation next week?"
+    "body": "Hi Diego, I came across your work as Staff Construction Manager at Tesla. Your recent thoughts on site visibility and disciplined incident review really stood out to me. Given your experience in construction operations, I'd love to chat and share notes. We're building Agentic Security solutions to reduce pressure on security teams, and I'd be interested to hear how you think about site visibility and incident review. Would you be open to a quick conversation next week?"
+  },
+  "linkedin_message": {
+    "body": "Hi Diego - noticed your work in construction operations at Tesla. Your recent thoughts on site visibility and disciplined incident review stood out to me. I'm reaching out because we're building Agentic Security solutions to reduce pressure on security teams. Would love to compare notes sometime if you're open."
   },
   "validation": {
     "passes_word_count": true,

@@ -51,6 +51,9 @@ export type WarmOutreachPipelineOutput = {
     subject: string;
     body: string;
   };
+  linkedin_message: {
+    body: string;
+  };
   validation: {
     recommendation?: "approve" | "human_review" | "reject";
     notes?: string[];

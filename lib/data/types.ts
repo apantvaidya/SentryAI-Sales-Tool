@@ -1,6 +1,7 @@
 export type PersonStatus = "candidate" | "new" | "drafting" | "failed" | "approved" | "contacted";
 export type DraftTone = "concise" | "executive" | "technical" | "warm";
 export type DraftStatus = "draft" | "approved" | "sent_manually";
+export type OutreachDraftChannel = "email" | "linkedin";
 export type PipelineStatus = "queued" | "running" | "completed" | "failed";
 export type CandidateIdentityKeyType = "linkedinUrl" | "nameCompany";
 export type ValidationRecommendation = "approve" | "human_review" | "reject";
@@ -72,6 +73,7 @@ export type OutreachDraft = {
   personId: string;
   personaId?: string;
   outreachResearchId?: string;
+  channel: OutreachDraftChannel;
   subject: string;
   body: string;
   tone: DraftTone;

@@ -4,6 +4,7 @@ from warm_outreach.schemas import (
     EvidenceSummary,
     Lead,
     LinkedInActivity,
+    LinkedInMessageDraft,
     PersonaClassification,
     ResearchQueries,
     SearchResult,
@@ -54,9 +55,17 @@ def test_pipeline_output_contains_all_sections(monkeypatch):
         body=(
             "Hi Diego, I came across your work as Staff Construction Manager at Tesla. "
             "Your perspective on site visibility and operational discipline really stood out to us. "
-            "Given your experience in construction operations, we'd love to sit down and chat with you to discuss this field and share insights. "
+            "Given your experience in construction operations, I'd love to chat and share notes. We're building Agentic Security solutions to reduce pressure on security teams, and I'd be interested to hear how you think about site visibility and incident review. "
             "Would you be open to a quick conversation next week?"
         ),
+    )
+    linkedin_message = LinkedInMessageDraft(
+        body=(
+            "Hi Diego - noticed your work in construction operations at Tesla. "
+            "Your perspective on site visibility stood out to me. "
+            "I'm reaching out because we're building Agentic Security solutions to reduce pressure on security teams. "
+            "Would love to compare notes sometime if you're open."
+        )
     )
     linkedin_activity = [
         LinkedInActivity(
@@ -83,6 +92,7 @@ def test_pipeline_output_contains_all_sections(monkeypatch):
             "ResearchQueries": queries,
             "EvidenceSummary": evidence,
             "EmailDraft": email,
+            "LinkedInMessageDraft": linkedin_message,
         }
         return response_model.model_validate(mapping[response_model.__name__].model_dump(mode="json"))
 
@@ -99,4 +109,5 @@ def test_pipeline_output_contains_all_sections(monkeypatch):
     assert result.linkedin_activity == linkedin_activity
     assert result.evidence_summary == evidence
     assert result.email == email
+    assert result.linkedin_message == linkedin_message
     assert result.validation.recommendation in {"approve", "human_review"}

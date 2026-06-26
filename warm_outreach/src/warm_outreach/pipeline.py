@@ -11,12 +11,14 @@ from .prompts import (
     generate_research_queries_prompt,
     summarize_evidence_prompt,
     write_email_prompt,
+    write_linkedin_message_prompt,
 )
 from .schemas import (
     EmailDraft,
     EvidenceSummary,
     Lead,
     LinkedInActivity,
+    LinkedInMessageDraft,
     PersonaClassification,
     PipelineOutput,
     ResearchQueries,
@@ -65,6 +67,18 @@ def write_email(
     return call_json(write_email_prompt(lead, persona, evidence, linkedin_activity or []), EmailDraft)
 
 
+def write_linkedin_message(
+    lead: Lead,
+    persona: PersonaClassification,
+    evidence: EvidenceSummary,
+    linkedin_activity: list[LinkedInActivity] | None = None,
+) -> LinkedInMessageDraft:
+    return call_json(
+        write_linkedin_message_prompt(lead, persona, evidence, linkedin_activity or []),
+        LinkedInMessageDraft,
+    )
+
+
 def _evidence_source_fallbacks(
     lead: Lead,
     search_results,
@@ -105,6 +119,7 @@ def run_pipeline_for_lead(
             update={"source_urls": _evidence_source_fallbacks(lead, search_results, linkedin_activity)}
         )
     email = write_email(lead, persona, evidence_summary, linkedin_activity)
+    linkedin_message = write_linkedin_message(lead, persona, evidence_summary, linkedin_activity)
     validation = validate_email(email, evidence_summary)
 
     return PipelineOutput(
@@ -115,6 +130,7 @@ def run_pipeline_for_lead(
         linkedin_activity=linkedin_activity,
         evidence_summary=evidence_summary,
         email=email,
+        linkedin_message=linkedin_message,
         validation=validation,
     )
 

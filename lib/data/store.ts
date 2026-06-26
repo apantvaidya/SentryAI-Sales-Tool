@@ -353,6 +353,7 @@ export async function createOutreachDraft(
   input: {
     personaId?: string;
     outreachResearchId?: string;
+    channel?: OutreachDraft["channel"];
     subject: string;
     body: string;
     tone: DraftTone;
@@ -370,6 +371,7 @@ export async function createOutreachDraft(
       (item) =>
         item.personId === personId &&
         item.status !== "approved" &&
+        (item.channel || "email") === (input.channel || "email") &&
         (!input.outreachResearchId || item.outreachResearchId === input.outreachResearchId)
     )
     .sort((a, b) => new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime())[0];
@@ -377,6 +379,7 @@ export async function createOutreachDraft(
   if (existingDraft) {
     Object.assign(existingDraft, {
       ...input,
+      channel: input.channel || existingDraft.channel || "email",
       status: "draft" as const,
       updatedAt: timestamp
     });
@@ -396,6 +399,7 @@ export async function createOutreachDraft(
     personId,
     personaId: input.personaId,
     outreachResearchId: input.outreachResearchId,
+    channel: input.channel || "email",
     subject: input.subject,
     body: input.body,
     tone: input.tone,

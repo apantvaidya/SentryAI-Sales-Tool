@@ -9,7 +9,9 @@ export function DraftEditor({ drafts, personId }: { drafts: OutreachDraft[]; per
   const [copiedId, setCopiedId] = useState<string | null>(null);
 
   async function copyDraft(draft: OutreachDraft) {
-    await navigator.clipboard.writeText(`Subject: ${draft.subject}\n\n${draft.body}`);
+    const channel = draft.channel || "email";
+    const text = channel === "linkedin" ? draft.body : `Subject: ${draft.subject}\n\n${draft.body}`;
+    await navigator.clipboard.writeText(text);
     setCopiedId(draft.id);
     setTimeout(() => setCopiedId(null), 1500);
   }
@@ -26,6 +28,7 @@ export function DraftEditor({ drafts, personId }: { drafts: OutreachDraft[]; per
   return (
     <div className="grid gap-5">
       {drafts.map((draft) => {
+        const channel = draft.channel || "email";
         const needsHumanReview = draft.validationRecommendation === "human_review" || draft.validationRecommendation === "reject";
         return (
           <article key={draft.id} className="surface p-5">
@@ -34,6 +37,7 @@ export function DraftEditor({ drafts, personId }: { drafts: OutreachDraft[]; per
                 <h3 className="text-lg font-bold text-ink">{draft.subject}</h3>
               </div>
               <div className="flex flex-wrap gap-2">
+                <span className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-bold capitalize text-slate-700">{channel}</span>
                 {draft.validationRecommendation ? (
                   <span className="rounded-full bg-amber-50 px-2.5 py-1 text-xs font-bold capitalize text-amber-700">
                     {draft.validationRecommendation.replace("_", " ")}
@@ -97,7 +101,7 @@ export function DraftEditor({ drafts, personId }: { drafts: OutreachDraft[]; per
                 </button>
                 <button className="button-secondary" type="button" onClick={() => copyDraft(draft)} disabled={draft.status !== "approved"}>
                   {copiedId === draft.id ? <Check size={16} /> : <Clipboard size={16} />}
-                  Copy Email
+                  {channel === "linkedin" ? "Copy LinkedIn Message" : "Copy Email"}
                 </button>
                 <button className="button-primary" formAction={approveOutreachDraft.bind(null, draft.id, personId)}>
                   Approve Draft

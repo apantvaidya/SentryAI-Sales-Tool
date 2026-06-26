@@ -10,6 +10,7 @@ from .schemas import (
     EvidenceSummary,
     Lead,
     LinkedInActivity,
+    LinkedInMessageDraft,
     PersonaClassification,
     ResearchQueries,
     SearchResult,
@@ -211,8 +212,8 @@ Rules:
 - Tie the message to the person's role and what they have shared or seem to care about.
 - Use tenure only if provided and natural.
 - Be specific and personalized using the lead's actual role, company, tenure, and LinkedIn activity when available.
-- Use first-person singular voice: "I", "me", and "my".
-- Do not use "we", "our", or "us" unless they appear inside a company name.
+- Prefer first-person singular voice: "I", "me", and "my".
+- It is okay to use one brief "we're building..." sentence when describing the company.
 - Follow this structure closely, while keeping the final email natural and under 120 words:
 
 Hi {{{{first_name}}}},
@@ -220,7 +221,7 @@ I came across your work as {{{{current_title}}}} at {{{{company}}}}{{{{years_phr
 
 {{{{linkedin_reference_sentence}}}}
 
-Given your experience in {{{{role_relevance}}}}, I'd love to chat and share notes. I'm building computer vision tools for teams responsible for real-world locations, and I'd be interested to hear how you think about {{{{relevant_focus_1}}}} and {{{{relevant_focus_2}}}}.
+Given your experience in {{{{role_relevance}}}}, I'd love to chat and share notes. We're building Agentic Security solutions to reduce pressure on security teams, and I'd be interested to hear how you think about {{{{relevant_focus_1}}}} and {{{{relevant_focus_2}}}}.
 
 Would you be open to a quick conversation next week?
 
@@ -232,6 +233,8 @@ Best,
 - `role_relevance` should be a human phrase like "district asset protection", "construction operations", "physical security", or "regional operations", not the raw enum.
 - `relevant_focus_1` and `relevant_focus_2` must be grounded in the persona and evidence.
 - If no sender name is provided, use "SmartSentryAI".
+- Work in this positioning naturally: "We're building Agentic Security solutions to reduce pressure on security teams."
+- Keep that line concise and human. Do not let it sound like marketing copy.
 
 - Generate `linkedin_reference_sentence` as a single sentence that acknowledges something specific and genuine about the lead's role, work, or professional interests.
 - Only reference a specific LinkedIn post if it is clearly good enough to mention.
@@ -267,4 +270,63 @@ Grounded product context:
 
 Target schema:
 {_schema_block(EmailDraft)}
+""".strip()
+
+
+def write_linkedin_message_prompt(
+    lead: Lead,
+    persona: PersonaClassification,
+    evidence: EvidenceSummary,
+    linkedin_activity: list[LinkedInActivity] | None = None,
+) -> str:
+    activity = linkedin_activity or []
+    if activity:
+        activity_block = "\n\n".join(
+            (
+                f"LinkedIn item {i + 1}:\n"
+                f"Title: {item.title or 'N/A'}\n"
+                f"URL: {item.url or 'N/A'}\n"
+                f"Text: {item.text}"
+            )
+            for i, item in enumerate(activity[:3])
+        )
+    else:
+        activity_block = "None"
+
+    return f"""
+You are writing a short LinkedIn connection or follow-up message for SmartSentryAI.
+
+Rules:
+- Maximum 450 characters.
+- No subject line.
+- Personal, warm, handwritten, and concise.
+- Prefer first-person singular voice.
+- It is okay to use one brief "we're building..." sentence when describing the company.
+- Do not sound salesy, polished, or automated.
+- Do not mention crime stats, police data, or unsupported incidents.
+- If there is a genuinely mention-worthy LinkedIn post or activity item, reference it briefly and naturally.
+- If there is not, use a simple role-based acknowledgment instead.
+- Include this positioning naturally: "we're building Agentic Security solutions to reduce pressure on security teams."
+- End with a light ask, not a hard sell.
+
+Suggested structure:
+Hi {{{{first_name}}}} - noticed your work in {{{{role_relevance}}}} at {{{{company}}}}.
+{{{{linkedin_reference_or_acknowledgment}}}}
+I'm reaching out because we're building Agentic Security solutions to reduce pressure on security teams.
+Would love to compare notes sometime if you're open.
+
+Lead:
+{_json_block(lead)}
+
+Persona classification:
+{_json_block(persona)}
+
+Evidence summary:
+{_json_block(evidence)}
+
+LinkedIn activity:
+{activity_block}
+
+Target schema:
+{_schema_block(LinkedInMessageDraft)}
 """.strip()

@@ -78,6 +78,10 @@ class EmailDraft(BaseModel):
     body: str
 
 
+class LinkedInMessageDraft(BaseModel):
+    body: str
+
+
 class ValidationResult(BaseModel):
     passes_word_count: bool
     forbidden_phrases_found: list[str] = Field(default_factory=list)
@@ -95,4 +99,5 @@ class PipelineOutput(BaseModel):
     linkedin_activity: list[LinkedInActivity] = Field(default_factory=list)
     evidence_summary: EvidenceSummary
     email: EmailDraft
+    linkedin_message: LinkedInMessageDraft
     validation: ValidationResult
