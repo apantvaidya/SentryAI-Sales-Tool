@@ -79,6 +79,8 @@ def render_query_text(template: str, seed_persona: SeedPersona, query_suffix: st
         .replace("{{role}}", seed_persona.role or "")
         .replace("{{person_name}}", seed_persona.person_name)
         .replace("{{linkedin_url}}", seed_persona.linkedin_url or "")
+        .replace("{{target_industry}}", seed_persona.target_industry or "the same industry")
+        .replace("{{target_location}}", seed_persona.target_location or "the same target geography")
         .strip()
     )
     preference_parts: list[str] = []

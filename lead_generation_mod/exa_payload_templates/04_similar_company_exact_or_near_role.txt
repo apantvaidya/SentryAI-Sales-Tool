@@ -1,3 +1,3 @@
-people at companies similar to {{company_name}} with current roles similar to {{role}}, especially in grocery, supermarket, retail, or other multi-site physical operations businesses
+people at companies similar to {{company_name}} with current roles similar to {{role}}, especially at companies aligned with {{target_industry}} or a similar multi-site physical operations model
 
 Prefer profiles where the current role, company, tenure, and location are clearly visible.

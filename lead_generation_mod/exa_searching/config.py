@@ -5,6 +5,13 @@ from pathlib import Path
 import os
 
 
+def env_flag(name: str, default: bool) -> bool:
+    raw = os.getenv(name)
+    if raw is None:
+        return default
+    return raw.strip().lower() not in {"0", "false", "no", "off"}
+
+
 def load_dotenv(dotenv_path: Path) -> None:
     if not dotenv_path.exists():
         # Fall back to env vars already present in the process (e.g. forwarded
@@ -43,6 +50,11 @@ class Settings:
     num_results: int
     timeout_seconds: float
     user_location: str | None
+    openai_api_key: str | None
+    ai_filter_model: str
+    ai_filter_enabled: bool
+    ai_filter_timeout_seconds: float
+    ai_filter_batch_size: int
 
     @classmethod
     def load(cls, project_root: Path | None = None) -> "Settings":
@@ -60,6 +72,11 @@ class Settings:
             num_results=int(os.getenv("EXA_NUM_RESULTS", "20")),
             timeout_seconds=float(os.getenv("EXA_TIMEOUT_SECONDS", "30")),
             user_location=os.getenv("EXA_USER_LOCATION"),
+            openai_api_key=os.getenv("OPENAI_API_KEY"),
+            ai_filter_model=os.getenv("LEADGEN_AI_FILTER_MODEL", os.getenv("OPENAI_MODEL", "gpt-4o-mini")),
+            ai_filter_enabled=env_flag("LEADGEN_AI_FILTER_ENABLED", True),
+            ai_filter_timeout_seconds=float(os.getenv("LEADGEN_AI_FILTER_TIMEOUT_SECONDS", "45")),
+            ai_filter_batch_size=max(int(os.getenv("LEADGEN_AI_FILTER_BATCH_SIZE", "20")), 1),
         )
 
     def with_overrides(

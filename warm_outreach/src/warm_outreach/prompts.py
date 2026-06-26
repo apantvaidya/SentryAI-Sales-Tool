@@ -210,7 +210,7 @@ Rules:
 - Do not imply their company has suffered incidents.
 - Do not mention crime stats, police data, or neighborhood crime levels.
 - Tie the message to the person's role and what they have shared or seem to care about.
-- Use tenure only if provided and natural.
+- If `years_at_role` is provided, include it naturally in the opening line unless the raw value is clearly unusable.
 - Be specific and personalized using the lead's actual role, company, tenure, and LinkedIn activity when available.
 - Prefer first-person singular voice: "I", "me", and "my".
 - It is okay to use one brief "we're building..." sentence when describing the company.
@@ -229,7 +229,8 @@ Best,
 {{{{sender_name}}}}
 
 - Fill the placeholders with concrete details from the lead and evidence. Do not leave placeholders in the output.
-- `years_phrase` should be blank if tenure is missing, otherwise something natural like " and have been in the role for 1 yr 6 m".
+- `years_phrase` should be blank if tenure is missing, otherwise something natural like " and have been in the role for 1 yr 6 m" or " for the past 2 years".
+- Prefer to keep tenure in the final email when it is available.
 - `role_relevance` should be a human phrase like "district asset protection", "construction operations", "physical security", or "regional operations", not the raw enum.
 - `relevant_focus_1` and `relevant_focus_2` must be grounded in the persona and evidence.
 - If no sender name is provided, use "SmartSentryAI".
@@ -304,16 +305,19 @@ Rules:
 - It is okay to use one brief "we're building..." sentence when describing the company.
 - Do not sound salesy, polished, or automated.
 - Do not mention crime stats, police data, or unsupported incidents.
+- If `years_at_role` is provided, mention it briefly and naturally, usually in the opening sentence.
 - If there is a genuinely mention-worthy LinkedIn post or activity item, reference it briefly and naturally.
 - If there is not, use a simple role-based acknowledgment instead.
 - Include this positioning naturally: "we're building Agentic Security solutions to reduce pressure on security teams."
 - End with a light ask, not a hard sell.
 
 Suggested structure:
-Hi {{{{first_name}}}} - noticed your work in {{{{role_relevance}}}} at {{{{company}}}}.
+Hi {{{{first_name}}}} - noticed your work in {{{{role_relevance}}}} at {{{{company}}}}{{{{years_phrase}}}}.
 {{{{linkedin_reference_or_acknowledgment}}}}
 I'm reaching out because we're building Agentic Security solutions to reduce pressure on security teams.
 Would love to compare notes sometime if you're open.
+
+- `years_phrase` should be blank if tenure is missing. If present, keep it concise and natural, for example " for the past 2 years" or " and have been in the role for 1 yr 6 m".
 
 Lead:
 {_json_block(lead)}

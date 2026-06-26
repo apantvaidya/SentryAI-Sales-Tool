@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from .dedupe import is_same_company_name, normalize_text
 from .models import FilterDecision, MappedCandidate, SeedPersona
 
 
@@ -47,6 +48,16 @@ def is_borderline_title(title: str) -> bool:
     )
 
 
+def matches_seed_company_scope(candidate_company: str, seed_company: str) -> bool:
+    if is_same_company_name(candidate_company, seed_company):
+        return True
+    candidate_norm = normalize_text(candidate_company)
+    seed_norm = normalize_text(seed_company)
+    if not candidate_norm or not seed_norm:
+        return False
+    return seed_norm in candidate_norm or candidate_norm in seed_norm
+
+
 def filter_candidate(candidate: MappedCandidate, seed_persona: SeedPersona) -> FilterDecision:
     reasons: list[str] = []
 
@@ -76,6 +87,15 @@ def filter_candidate(candidate: MappedCandidate, seed_persona: SeedPersona) -> F
         return FilterDecision(
             status="dropped",
             reasons=["founder_class_mismatch"],
+            candidate=candidate,
+        )
+
+    if candidate.source_bucket == "same_company" and not matches_seed_company_scope(
+        candidate.current_company, seed_persona.company_name
+    ):
+        return FilterDecision(
+            status="dropped",
+            reasons=["same_company_mismatch"],
             candidate=candidate,
         )
 

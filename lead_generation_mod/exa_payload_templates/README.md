@@ -27,8 +27,10 @@ Names beginning with `same_company` are assigned to the `same_company` bucket. A
 - `{{role}}`
 - `{{person_name}}`
 - `{{linkedin_url}}`
+- `{{target_industry}}`
+- `{{target_location}}`
 
-The query builder replaces these placeholders with the current seed persona values and skips LinkedIn-based templates when no LinkedIn URL is available.
+The query builder replaces these placeholders with the current seed persona values and skips LinkedIn-based templates when no LinkedIn URL is available. `{{target_industry}}` falls back to `the same industry` when not provided, and `{{target_location}}` falls back to `the same target geography`.
 
 ## File Guide
 

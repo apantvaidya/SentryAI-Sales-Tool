@@ -143,6 +143,7 @@ class MappedCandidate:
     current_role_description: str | None = None
     source_vector_id: str = ""
     source_vector_name: str = ""
+    source_query_text: str = ""
     source_bucket: str = ""
     exa_result_id: str | None = None
     exa_result_url: str | None = None
@@ -166,6 +167,7 @@ class MappedCandidate:
         self.exa_entity_id = clean_string(self.exa_entity_id)
         self.source_vector_id = clean_string(self.source_vector_id) or ""
         self.source_vector_name = clean_string(self.source_vector_name) or ""
+        self.source_query_text = clean_string(self.source_query_text) or ""
         self.source_bucket = clean_string(self.source_bucket) or ""
         self.mapping_notes = [note for note in self.mapping_notes if clean_string(note)]
 
@@ -191,17 +193,21 @@ class FilterDecision:
     status: str
     reasons: list[str]
     candidate: MappedCandidate
+    metadata: dict[str, Any] = field(default_factory=dict)
 
     def __post_init__(self) -> None:
         if self.status not in {"accepted", "dropped"}:
             raise ValueError(f"Unsupported filter status: {self.status}")
 
     def to_dict(self) -> dict[str, Any]:
-        return {
+        payload = {
             "status": self.status,
             "reasons": list(self.reasons),
             "candidate": self.candidate.to_dict(),
         }
+        if self.metadata:
+            payload["metadata"] = self.metadata
+        return payload
 
 
 @dataclass(frozen=True)

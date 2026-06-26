@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 import re
 from typing import Any
 
+from .ai_filter import AIFilterError, ai_filter_is_enabled, evaluate_candidates
 from .config import Settings
 from .dedupe import dedupe_records, is_same_company_name, normalize_text
 from .exa import ExaClient
@@ -71,13 +72,20 @@ class LeadGenerationRunner:
                     continue
                 mapped_candidates.append(candidate)
 
-        filter_decisions = [filter_candidate(candidate, seed_persona) for candidate in mapped_candidates]
+        initial_decisions = [filter_candidate(candidate, seed_persona) for candidate in mapped_candidates]
+        filter_decisions = self._apply_ai_filter(initial_decisions, seed_persona)
 
         accepted_candidates = dedupe_records(
             [decision.candidate for decision in filter_decisions if decision.status == "accepted"]
         )
         dropped_decisions = [decision for decision in filter_decisions if decision.status == "dropped"]
         accepted_with_flags_count = sum(1 for decision in filter_decisions if decision.status == "accepted" and decision.reasons)
+        ai_kept_count = sum(
+            1 for decision in filter_decisions if decision.metadata.get("ai_status") == "accepted"
+        )
+        ai_dropped_count = sum(
+            1 for decision in filter_decisions if decision.metadata.get("ai_status") == "dropped"
+        )
 
         same_company_matches = []
         similar_company_matches = []
@@ -119,6 +127,9 @@ class LeadGenerationRunner:
             "dropped_count": len(dropped_decisions),
             "same_company_count": len(same_company_matches),
             "similar_company_count": len(similar_company_matches),
+            "ai_filter_enabled": ai_filter_is_enabled(self.settings),
+            "ai_kept_count": ai_kept_count,
+            "ai_dropped_count": ai_dropped_count,
             "storage": storage_summary,
         }
 
@@ -135,6 +146,47 @@ class LeadGenerationRunner:
             summary=summary,
             artifact_paths=artifact_paths,
         )
+
+    def _apply_ai_filter(self, decisions, seed_persona: SeedPersona):
+        accepted_indices: list[int] = []
+        accepted_candidates: list[MappedCandidate] = []
+        final_decisions = list(decisions)
+
+        for index, decision in enumerate(decisions):
+            if decision.status != "accepted":
+                continue
+            accepted_indices.append(index)
+            accepted_candidates.append(decision.candidate)
+
+        if not accepted_candidates:
+            return final_decisions
+
+        try:
+            ai_decisions = evaluate_candidates(self.settings, seed_persona, accepted_candidates)
+        except AIFilterError as exc:
+            for accepted_index in accepted_indices:
+                decision = final_decisions[accepted_index]
+                final_decisions[accepted_index] = type(decision)(
+                    status=decision.status,
+                    reasons=[*decision.reasons, "ai_filter_error"],
+                    candidate=decision.candidate,
+                    metadata={"ai_error": str(exc)},
+                )
+            return final_decisions
+
+        for accepted_index, ai_decision in zip(accepted_indices, ai_decisions):
+            decision = final_decisions[accepted_index]
+            merged_reasons = list(decision.reasons)
+            if ai_decision.reason_codes:
+                merged_reasons.extend(ai_decision.reason_codes)
+            final_decisions[accepted_index] = type(decision)(
+                status=ai_decision.status,
+                reasons=merged_reasons,
+                candidate=decision.candidate,
+                metadata=ai_decision.to_metadata(),
+            )
+
+        return final_decisions
 
     def run_expansion(
         self,

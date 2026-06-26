@@ -122,6 +122,7 @@ def map_result_node(result_node: dict[str, Any], rendered_query: RenderedQuery) 
         current_role_description=current_job.get("description") or None,
         source_vector_id=rendered_query.vector_id,
         source_vector_name=rendered_query.vector_name,
+        source_query_text=rendered_query.query_text,
         source_bucket=rendered_query.target_bucket,
         exa_result_id=result_node.get("id"),
         exa_result_url=result_node.get("url"),

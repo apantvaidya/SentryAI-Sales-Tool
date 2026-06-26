@@ -28,7 +28,7 @@ Best,
 {{sender_name}}
 
 LinkedIn message:
-Hi {{first_name}} - noticed your work in {{role_relevance}} at {{company}}.
+Hi {{first_name}} - noticed your work in {{role_relevance}} at {{company}}{{years_phrase}}.
 
 {{linkedin_reference_sentence}}
 
