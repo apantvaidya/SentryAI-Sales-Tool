@@ -1,0 +1,27 @@
+{
+  "original_seed": {
+    "person_name": "John Rolfe",
+    "company_name": "AT&T",
+    "linkedin_url": "https://linkedin.com/in/john-rolfe-cfi-b83730b4",
+    "role": "Lead Investigator- Global Security",
+    "target_industry": "Telecommunications",
+    "target_location": null
+  },
+  "target_count": 300,
+  "total_leads_collected": 1269,
+  "stopped_reason": "target_reached",
+  "hops": 1,
+  "pivot_trail": [
+    {
+      "person_name": "John Rolfe",
+      "company_name": "AT&T",
+      "linkedin_url": "https://linkedin.com/in/john-rolfe-cfi-b83730b4",
+      "role": "Lead Investigator- Global Security",
+      "target_industry": "Telecommunications",
+      "target_location": null
+    }
+  ],
+  "hop_run_ids": [
+    "exa_2026-06-25_1737_at-t_john-rolfe"
+  ]
+}

@@ -302,7 +302,9 @@ export async function createLeadGenRun(formData: FormData) {
     person_name: personName,
     role: value(formData, "seedRole"),
     company_name: companyName,
-    linkedin_url: value(formData, "seedLinkedinUrl")
+    linkedin_url: value(formData, "seedLinkedinUrl"),
+    target_industry: value(formData, "targetIndustry"),
+    target_location: value(formData, "targetLocation")
   };
 
   const recursive = value(formData, "recursiveExpansion") === "on";

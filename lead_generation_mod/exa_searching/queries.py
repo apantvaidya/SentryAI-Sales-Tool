@@ -81,7 +81,14 @@ def render_query_text(template: str, seed_persona: SeedPersona, query_suffix: st
         .replace("{{linkedin_url}}", seed_persona.linkedin_url or "")
         .strip()
     )
-    return f"{base} {query_suffix}".strip()
+    preference_parts: list[str] = []
+    if seed_persona.target_industry:
+        preference_parts.append(f"{seed_persona.target_industry} industry")
+    if seed_persona.target_location:
+        preference_parts.append(seed_persona.target_location)
+
+    focus = f"focus on {' and '.join(preference_parts)}" if preference_parts else ""
+    return " ".join(part for part in (base, focus, query_suffix) if part).strip()
 
 
 def build_queries(seed_persona: SeedPersona, template_dir: Path) -> list[RenderedQuery]:

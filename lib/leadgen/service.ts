@@ -15,6 +15,8 @@ export type LeadGenSeedPayload = {
   role?: string;
   company_name: string;
   linkedin_url?: string;
+  target_industry?: string;
+  target_location?: string;
 };
 
 export type LeadGenExecution = {

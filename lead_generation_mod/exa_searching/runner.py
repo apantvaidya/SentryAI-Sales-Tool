@@ -180,7 +180,11 @@ class LeadGenerationRunner:
                 break
 
             try:
-                next_seed = lead_record_to_seed(pivot)
+                next_seed = lead_record_to_seed(
+                    pivot,
+                    target_industry=original_seed.target_industry,
+                    target_location=original_seed.target_location,
+                )
             except ValueError:
                 # Malformed pivot candidate (e.g. missing name/title). Stop
                 # gracefully rather than sending a broken seed to Exa.

@@ -32,6 +32,8 @@ export default async function LeadDiscoveryPage() {
           <input className="field" name="seedRole" placeholder="Seed role" />
           <input className="field" name="seedCompanyName" placeholder="Seed company" required />
           <input className="field" name="seedLinkedinUrl" placeholder="Seed LinkedIn URL" />
+          <input className="field" name="targetIndustry" placeholder="Target industry (optional)" />
+          <input className="field" name="targetLocation" placeholder="Target location (optional)" />
           <select className="field" name="campaignId" defaultValue={campaigns[0]?.id || ""} required>
             {campaigns.length === 0 ? <option value="">No campaigns found</option> : null}
             {campaigns.map((campaign) => (

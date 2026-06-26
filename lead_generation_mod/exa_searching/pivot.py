@@ -88,7 +88,12 @@ def select_pivot(
     return max(scored, key=lambda item: item[0])[1]
 
 
-def lead_record_to_seed(record: PersonaLeadRecord) -> SeedPersona:
+def lead_record_to_seed(
+    record: PersonaLeadRecord,
+    *,
+    target_industry: str | None = None,
+    target_location: str | None = None,
+) -> SeedPersona:
     if not record.full_name:
         raise ValueError("Cannot pivot: candidate has no full_name")
     if not record.current_title:
@@ -101,4 +106,6 @@ def lead_record_to_seed(record: PersonaLeadRecord) -> SeedPersona:
         role=record.current_title,
         company_name=record.current_company,
         linkedin_url=record.linkedin_url,
+        target_industry=target_industry,
+        target_location=target_location,
     )

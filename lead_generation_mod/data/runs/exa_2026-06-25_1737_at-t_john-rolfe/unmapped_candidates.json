@@ -1,0 +1,32 @@
+[
+  {
+    "vector_id": "06",
+    "vector_name": "linkedin_anchored_similarity",
+    "result_url": "https://linkedin.com/in/foupfeiffer",
+    "reason": "missing_entities_or_current_role"
+  },
+  {
+    "vector_id": "06",
+    "vector_name": "linkedin_anchored_similarity",
+    "result_url": "https://linkedin.com/in/john-rolfe-0a4532",
+    "reason": "missing_entities_or_current_role"
+  },
+  {
+    "vector_id": "07",
+    "vector_name": "linkedin_anchored_similarity_with_company_expansion",
+    "result_url": "https://linkedin.com/in/brett-rolfe-17bb6856",
+    "reason": "missing_entities_or_current_role"
+  },
+  {
+    "vector_id": "07",
+    "vector_name": "linkedin_anchored_similarity_with_company_expansion",
+    "result_url": "https://linkedin.com/in/gregcarruthers",
+    "reason": "missing_entities_or_current_role"
+  },
+  {
+    "vector_id": "07",
+    "vector_name": "linkedin_anchored_similarity_with_company_expansion",
+    "result_url": "https://linkedin.com/in/patricia-salazar-23833a28",
+    "reason": "missing_entities_or_current_role"
+  }
+]

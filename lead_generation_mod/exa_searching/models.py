@@ -31,12 +31,16 @@ class SeedPersona:
     company_name: str
     linkedin_url: str | None = None
     role: str | None = None
+    target_industry: str | None = None
+    target_location: str | None = None
 
     def __post_init__(self) -> None:
         person_name = clean_string(self.person_name)
         company_name = clean_string(self.company_name)
         linkedin_url = clean_url(self.linkedin_url)
         role = clean_string(self.role)
+        target_industry = clean_string(self.target_industry)
+        target_location = clean_string(self.target_location)
 
         if not person_name:
             raise ValueError("seed_person.person_name is required")
@@ -47,6 +51,8 @@ class SeedPersona:
         object.__setattr__(self, "company_name", company_name)
         object.__setattr__(self, "linkedin_url", linkedin_url)
         object.__setattr__(self, "role", role)
+        object.__setattr__(self, "target_industry", target_industry)
+        object.__setattr__(self, "target_location", target_location)
 
     @classmethod
     def from_dict(cls, payload: dict[str, Any]) -> "SeedPersona":
@@ -55,6 +61,8 @@ class SeedPersona:
             role=payload.get("role"),
             company_name=payload.get("company_name"),
             linkedin_url=payload.get("linkedin_url"),
+            target_industry=payload.get("target_industry"),
+            target_location=payload.get("target_location"),
         )
 
     @classmethod
