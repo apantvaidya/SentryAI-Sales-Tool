@@ -280,44 +280,23 @@ def write_linkedin_message_prompt(
     evidence: EvidenceSummary,
     linkedin_activity: list[LinkedInActivity] | None = None,
 ) -> str:
-    activity = linkedin_activity or []
-    if activity:
-        activity_block = "\n\n".join(
-            (
-                f"LinkedIn item {i + 1}:\n"
-                f"Title: {item.title or 'N/A'}\n"
-                f"URL: {item.url or 'N/A'}\n"
-                f"Text: {item.text}"
-            )
-            for i, item in enumerate(activity[:3])
-        )
-    else:
-        activity_block = "None"
-
     return f"""
-You are writing a short LinkedIn connection or follow-up message for SmartSentryAI.
+You are writing a short LinkedIn connection request message for SmartSentryAI.
 
 Rules:
-- Maximum 450 characters.
+- HARD LIMIT: 300 characters total (including spaces and punctuation). Count carefully.
 - No subject line.
-- Personal, warm, handwritten, and concise.
-- Prefer first-person singular voice.
-- It is okay to use one brief "we're building..." sentence when describing the company.
-- Do not sound salesy, polished, or automated.
-- Do not mention crime stats, police data, or unsupported incidents.
-- If `years_at_role` is provided, mention it briefly and naturally, usually in the opening sentence.
-- If there is a genuinely mention-worthy LinkedIn post or activity item, reference it briefly and naturally.
-- If there is not, use a simple role-based acknowledgment instead.
-- Include this positioning naturally: "we're building Agentic Security solutions to reduce pressure on security teams."
-- End with a light ask, not a hard sell.
+- Warm, human, and concise — not salesy or automated.
+- Address the person by first name only.
+- Mention their experience in Loss Prevention (or relevant security/LP role).
+- If years of experience are available, include them naturally (e.g. "more than 10 years").
+- If notable employers are available, mention one or two by name.
+- End with: "I run a startup in the space and would love to connect to discuss your perspective on the industry so far."
+- Do NOT mention crime stats, police data, or unsupported incidents.
+- Do NOT use em-dashes or unusual punctuation — keep it plain text.
 
-Suggested structure:
-Hi {{{{first_name}}}} - noticed your work in {{{{role_relevance}}}} at {{{{company}}}}{{{{years_phrase}}}}.
-{{{{linkedin_reference_or_acknowledgment}}}}
-I'm reaching out because we're building Agentic Security solutions to reduce pressure on security teams.
-Would love to compare notes sometime if you're open.
-
-- `years_phrase` should be blank if tenure is missing. If present, keep it concise and natural, for example " for the past 2 years" or " and have been in the role for 1 yr 6 m".
+Example (210 characters):
+"Hey Joshua, I came across your profile and noticed you've spent more than 20 years leading Loss Prevention at Save Mart and Albertsons. I run a startup in the space and would love to connect to discuss your perspective on the industry so far."
 
 Lead:
 {_json_block(lead)}
@@ -327,9 +306,6 @@ Persona classification:
 
 Evidence summary:
 {_json_block(evidence)}
-
-LinkedIn activity:
-{activity_block}
 
 Target schema:
 {_schema_block(LinkedInMessageDraft)}
