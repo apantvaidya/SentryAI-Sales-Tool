@@ -6,6 +6,7 @@ from typing import Type
 from pydantic import BaseModel
 
 from .schemas import (
+    CareerHistory,
     EmailDraft,
     EvidenceSummary,
     Lead,
@@ -274,12 +275,51 @@ Target schema:
 """.strip()
 
 
+def extract_career_history_prompt(
+    lead: Lead,
+    linkedin_activity: list[LinkedInActivity],
+) -> str:
+    activity_block = "\n\n---\n\n".join(
+        f"Source {i + 1} ({item.url or 'no url'}):\n{item.text}"
+        for i, item in enumerate(linkedin_activity[:5])
+    )
+    return f"""
+You are extracting career history for {lead.name} from raw LinkedIn profile text fetched by a search engine.
+
+Extract:
+1. `total_years_experience` — a human-readable string for how many years they have worked in their field in total across all roles (e.g. "more than 20 years", "around 8 years"). Use null if you cannot determine this with reasonable confidence.
+2. `past_employers` — a list of company/employer names they have worked at, EXCLUDING their current employer ("{lead.company}"). Only include employers you can clearly identify from the text. Return an empty list if none are found.
+
+Rules:
+- Only extract facts that are clearly stated in the text below.
+- Do not invent or infer information that is not present.
+- Exclude the current employer from `past_employers`.
+- Keep employer names concise and as they appear in the text.
+
+LinkedIn profile text:
+{activity_block}
+
+Target schema:
+{_schema_block(CareerHistory)}
+""".strip()
+
+
 def write_linkedin_message_prompt(
     lead: Lead,
     persona: PersonaClassification,
     evidence: EvidenceSummary,
-    linkedin_activity: list[LinkedInActivity] | None = None,
+    career_history: CareerHistory | None = None,
 ) -> str:
+    years = career_history.total_years_experience if career_history else None
+    employers = career_history.past_employers if career_history else []
+
+    years_line = f"- Years of experience: {years}" if years else "- Years of experience: unknown"
+    employers_line = (
+        f"- Past employers (mention 1-2 by name): {', '.join(employers)}"
+        if employers
+        else "- Past employers: unknown"
+    )
+
     return f"""
 You are writing a short LinkedIn connection request message for SmartSentryAI.
 
@@ -289,23 +329,21 @@ Rules:
 - Warm, human, and concise — not salesy or automated.
 - Address the person by first name only.
 - Mention their experience in Loss Prevention (or relevant security/LP role).
-- If years of experience are available, include them naturally (e.g. "more than 10 years").
-- If notable employers are available, mention one or two by name.
+- If years of experience are known, include them naturally (e.g. "more than 10 years").
+- If past employers are known, mention 1-2 by name.
 - End with: "I run a startup in the space and would love to connect to discuss your perspective on the industry so far."
 - Do NOT mention crime stats, police data, or unsupported incidents.
 - Do NOT use em-dashes or unusual punctuation — keep it plain text.
 
-Example (210 characters):
+Career data for this lead:
+{years_line}
+{employers_line}
+- Current employer: {lead.company}
+- Current role: {lead.role}
+- First name: {lead.name.split()[0]}
+
+Example output (210 chars):
 "Hey Joshua, I came across your profile and noticed you've spent more than 20 years leading Loss Prevention at Save Mart and Albertsons. I run a startup in the space and would love to connect to discuss your perspective on the industry so far."
-
-Lead:
-{_json_block(lead)}
-
-Persona classification:
-{_json_block(persona)}
-
-Evidence summary:
-{_json_block(evidence)}
 
 Target schema:
 {_schema_block(LinkedInMessageDraft)}

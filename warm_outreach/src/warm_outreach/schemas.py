@@ -73,6 +73,11 @@ class EvidenceSummary(BaseModel):
     confidence: Literal["high", "medium", "low"]
 
 
+class CareerHistory(BaseModel):
+    total_years_experience: str | None = None
+    past_employers: list[str] = Field(default_factory=list)
+
+
 class EmailDraft(BaseModel):
     subject: str
     body: str
@@ -97,6 +102,7 @@ class PipelineOutput(BaseModel):
     queries: ResearchQueries
     search_results: list[SearchResult] = Field(default_factory=list)
     linkedin_activity: list[LinkedInActivity] = Field(default_factory=list)
+    career_history: CareerHistory = Field(default_factory=CareerHistory)
     evidence_summary: EvidenceSummary
     email: EmailDraft
     linkedin_message: LinkedInMessageDraft

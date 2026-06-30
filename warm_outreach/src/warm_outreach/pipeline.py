@@ -8,12 +8,14 @@ from .config import settings
 from .llm import call_json
 from .prompts import (
     classify_lead_prompt,
+    extract_career_history_prompt,
     generate_research_queries_prompt,
     summarize_evidence_prompt,
     write_email_prompt,
     write_linkedin_message_prompt,
 )
 from .schemas import (
+    CareerHistory,
     EmailDraft,
     EvidenceSummary,
     Lead,
@@ -67,14 +69,26 @@ def write_email(
     return call_json(write_email_prompt(lead, persona, evidence, linkedin_activity or []), EmailDraft)
 
 
+def extract_career_history(
+    lead: Lead,
+    linkedin_activity: list[LinkedInActivity],
+) -> CareerHistory:
+    if not linkedin_activity:
+        return CareerHistory()
+    return call_json(
+        extract_career_history_prompt(lead, linkedin_activity),
+        CareerHistory,
+    )
+
+
 def write_linkedin_message(
     lead: Lead,
     persona: PersonaClassification,
     evidence: EvidenceSummary,
-    linkedin_activity: list[LinkedInActivity] | None = None,
+    career_history: CareerHistory | None = None,
 ) -> LinkedInMessageDraft:
     return call_json(
-        write_linkedin_message_prompt(lead, persona, evidence, linkedin_activity or []),
+        write_linkedin_message_prompt(lead, persona, evidence, career_history),
         LinkedInMessageDraft,
     )
 
@@ -113,13 +127,14 @@ def run_pipeline_for_lead(
         include_raw_content=include_raw_content,
     )
     linkedin_activity = fetch_linkedin_activity_via_exa(lead)
+    career_history = extract_career_history(lead, linkedin_activity)
     evidence_summary = summarize_evidence(lead, persona, search_results, linkedin_activity)
     if not evidence_summary.source_urls:
         evidence_summary = evidence_summary.model_copy(
             update={"source_urls": _evidence_source_fallbacks(lead, search_results, linkedin_activity)}
         )
     email = write_email(lead, persona, evidence_summary, linkedin_activity)
-    linkedin_message = write_linkedin_message(lead, persona, evidence_summary, linkedin_activity)
+    linkedin_message = write_linkedin_message(lead, persona, evidence_summary, career_history)
     validation = validate_email(email, evidence_summary)
 
     return PipelineOutput(
@@ -128,6 +143,7 @@ def run_pipeline_for_lead(
         queries=queries,
         search_results=search_results,
         linkedin_activity=linkedin_activity,
+        career_history=career_history,
         evidence_summary=evidence_summary,
         email=email,
         linkedin_message=linkedin_message,
