@@ -1,0 +1,51 @@
+[
+  {
+    "vector_id": "01",
+    "vector_name": "same_company_exact_or_near_role",
+    "template_file": "01_same_company_exact_or_near_role.txt",
+    "target_bucket": "same_company",
+    "query_text": "people at Comcast with current roles similar to Manager, OSP Capacity Construction, including managers, directors, district, regional, and senior asset protection, loss prevention, physical security, operations, facilities, or field leadership roles\n\nPrefer profiles where the current role, company, tenure, and location are clearly visible. focus on Telecommunications industry Northern California"
+  },
+  {
+    "vector_id": "02",
+    "vector_name": "same_company_adjacent_leadership",
+    "template_file": "02_same_company_adjacent_leadership.txt",
+    "target_bucket": "same_company",
+    "query_text": "current employees at Comcast in asset protection, loss prevention, physical security, district or regional operations, facilities, or adjacent leadership roles related to Manager, OSP Capacity Construction\n\nPrefer profiles where the current role, company, tenure, and location are clearly visible. focus on Telecommunications industry Northern California"
+  },
+  {
+    "vector_id": "03",
+    "vector_name": "same_company_person_anchored_similarity",
+    "template_file": "03_same_company_person_anchored_similarity.txt",
+    "target_bucket": "same_company",
+    "query_text": "people at Comcast with responsibilities similar to Darin Rodriguez, especially in asset protection, loss prevention, physical security, operations, facilities, or regional leadership\n\nPrefer profiles where the current role, company, tenure, and location are clearly visible. focus on Telecommunications industry Northern California"
+  },
+  {
+    "vector_id": "04",
+    "vector_name": "similar_company_exact_or_near_role",
+    "template_file": "04_similar_company_exact_or_near_role.txt",
+    "target_bucket": "similar_company",
+    "query_text": "people at companies similar to Comcast with current roles similar to Manager, OSP Capacity Construction, especially at companies aligned with Telecommunications or a similar multi-site physical operations model\n\nPrefer profiles where the current role, company, tenure, and location are clearly visible. focus on Telecommunications industry Northern California"
+  },
+  {
+    "vector_id": "05",
+    "vector_name": "similar_company_adjacent_role_family",
+    "template_file": "05_similar_company_adjacent_role_family.txt",
+    "target_bucket": "similar_company",
+    "query_text": "current employees at companies similar to Comcast in asset protection, loss prevention, physical security, operations, facilities, or adjacent leadership roles related to Manager, OSP Capacity Construction\n\nPrefer profiles where the current role, company, tenure, and location are clearly visible. focus on Telecommunications industry Northern California"
+  },
+  {
+    "vector_id": "06",
+    "vector_name": "linkedin_anchored_similarity",
+    "template_file": "06_linkedin_anchored_similarity.txt",
+    "target_bucket": "similar_company",
+    "query_text": "people similar to this profile in current role, seniority, and responsibilities: https://www.linkedin.com/in/darin-rodriguez/\n\nPrefer profiles where the current role, company, tenure, and location are clearly visible. focus on Telecommunications industry Northern California"
+  },
+  {
+    "vector_id": "07",
+    "vector_name": "linkedin_anchored_similarity_with_company_expansion",
+    "template_file": "07_linkedin_anchored_similarity_with_company_expansion.txt",
+    "target_bucket": "similar_company",
+    "query_text": "people similar to this profile, including same-company peers and comparable leaders at companies aligned with Telecommunications or a similar multi-site physical operations model: https://www.linkedin.com/in/darin-rodriguez/\n\nPrefer profiles where the current role, company, tenure, and location are clearly visible. focus on Telecommunications industry Northern California"
+  }
+]

@@ -1,0 +1,267 @@
+{
+  "seed_person": {
+    "person_name": "Darin Rodriguez",
+    "company_name": "Comcast",
+    "linkedin_url": "https://www.linkedin.com/in/darin-rodriguez/",
+    "role": "Manager, OSP Capacity Construction",
+    "target_industry": "Telecommunications",
+    "target_location": null
+  },
+  "same_company_matches": [
+    {
+      "full_name": "Darin Rodriguez",
+      "current_title": "Manager, OSP Capacity Construction",
+      "current_company": "Comcast",
+      "years_at_current_role": 4.08,
+      "resolved_location": "San Jose, California, United States",
+      "linkedin_url": "https://linkedin.com/in/darin-rodriguez-22466875",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 5
+    },
+    {
+      "full_name": "Peter Hemingway",
+      "current_title": "Construction Manager",
+      "current_company": "Comcast",
+      "years_at_current_role": 1.16,
+      "resolved_location": "Livermore, California, United States",
+      "linkedin_url": "https://linkedin.com/in/peter-hemingway-8157b856",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Chad Stock",
+      "current_title": "Network Project Manager Of 'OSP' Outside Plant Construction",
+      "current_company": "Comcast",
+      "years_at_current_role": 4.33,
+      "resolved_location": "Stockton, California, United States",
+      "linkedin_url": "https://linkedin.com/in/chad-stock-685500163",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Chris Cranford",
+      "current_title": "Construction Project Manager - Metro-E. Smb",
+      "current_company": "Comcast",
+      "years_at_current_role": 2.91,
+      "resolved_location": "Salem, Oregon, United States",
+      "linkedin_url": "https://linkedin.com/in/chris-cranford",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Robert C. Valderrama",
+      "current_title": "Capacity Operations Engineer 2",
+      "current_company": "Comcast",
+      "years_at_current_role": 1.33,
+      "resolved_location": "Livermore, California, United States",
+      "linkedin_url": "https://linkedin.com/in/robert-c-valderrama-205a07b3",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Dan Connolly",
+      "current_title": "Sr. Director of Field Operations - California Region",
+      "current_company": "Comcast",
+      "years_at_current_role": 1.49,
+      "resolved_location": "California, United States",
+      "linkedin_url": "https://linkedin.com/in/dan-connolly-18640970",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Monique Payne",
+      "current_title": "Director Of Field Operations",
+      "current_company": "Comcast",
+      "years_at_current_role": 1.25,
+      "resolved_location": "San Francisco Bay Area",
+      "linkedin_url": "https://linkedin.com/in/moniquempayne",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "LaMeka Anderson",
+      "current_title": "Director - Regional Security Operations West",
+      "current_company": "Comcast",
+      "years_at_current_role": 0.58,
+      "resolved_location": "Houston, Texas, United States",
+      "linkedin_url": "https://linkedin.com/in/lameka-anderson-51a6a377",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Andrew Chanthalyxay",
+      "current_title": "Network Project Manager",
+      "current_company": "Comcast",
+      "years_at_current_role": 2.91,
+      "resolved_location": "Colorado Springs, Colorado, United States",
+      "linkedin_url": "https://linkedin.com/in/andrew-chan14",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Darin Rodriguez",
+      "current_title": "Manager, OSP Capacity Construction",
+      "current_company": "Comcast",
+      "years_at_current_role": 4.08,
+      "resolved_location": "San Jose, California, United States",
+      "linkedin_url": "https://linkedin.com/in/darin-rodriguez",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Nelson Duckett",
+      "current_title": "Regional Vice President of Operations",
+      "current_company": "Comcast",
+      "years_at_current_role": 1.66,
+      "resolved_location": "Berlin, Connecticut, United States",
+      "linkedin_url": "https://linkedin.com/in/nelson-duckett-01b397a8",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    }
+  ],
+  "similar_company_matches": [
+    {
+      "full_name": "Alan Leeka",
+      "current_title": "Technical Operations Supervisor",
+      "current_company": "Comcast Cable",
+      "years_at_current_role": 11.08,
+      "resolved_location": "Houston, Texas Area",
+      "linkedin_url": "https://linkedin.com/in/alan-leeka-35217351",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "James Neal",
+      "current_title": "West Division Corporate Security Manager - California",
+      "current_company": "Comcast Cable",
+      "years_at_current_role": 27.41,
+      "resolved_location": "Concord, California, United States",
+      "linkedin_url": "https://linkedin.com/in/james-neal-87a68018",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Julian Ruiz",
+      "current_title": "Area Manager - GigaPower OSP C&E",
+      "current_company": "AT&T",
+      "years_at_current_role": 12.33,
+      "resolved_location": "Milpitas, CA",
+      "linkedin_url": "https://linkedin.com/in/julian-ruiz-a65732106",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Jay Ferguson",
+      "current_title": "Sr. Engr Spec-Outside Plant (BAU)",
+      "current_company": "Verizon",
+      "years_at_current_role": 2.49,
+      "resolved_location": "Walnut Creek, California, United States",
+      "linkedin_url": "https://linkedin.com/in/jay-ferguson-53a118a4",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "George Alvarado",
+      "current_title": "Lead Construction & Engineering",
+      "current_company": "AT&T",
+      "years_at_current_role": 4.25,
+      "resolved_location": "Santa Clara, California, United States",
+      "linkedin_url": "https://linkedin.com/in/george-alvarado-186292101",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Michael Peric",
+      "current_title": "OSP Director West",
+      "current_company": "BIG Fiber",
+      "years_at_current_role": 1.58,
+      "resolved_location": "Sunnyvale, California, United States",
+      "linkedin_url": "https://linkedin.com/in/michael-peric-75626b117",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Paul Alabona",
+      "current_title": "New Build Manager",
+      "current_company": "Cablecom of California",
+      "years_at_current_role": 16.66,
+      "resolved_location": "825 Chadbourne Rd, Fairfield, Ca. 94534",
+      "linkedin_url": "https://linkedin.com/in/paul-alabona-815b8338",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Joaquin Velez",
+      "current_title": "Senior Fiber Construction Manager",
+      "current_company": "Astound Broadband",
+      "years_at_current_role": 8.16,
+      "resolved_location": "San Francisco Bay Area",
+      "linkedin_url": "https://linkedin.com/in/joaquin-velez-40381612",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Terry Porteous",
+      "current_title": "Engineer 1 - Capacity Operations",
+      "current_company": "Comcast/via SRI Telecom contract",
+      "years_at_current_role": 5.0,
+      "resolved_location": "Livermore, California, United States",
+      "linkedin_url": "https://linkedin.com/in/terry-porteous-bb517417",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Aftab Umar",
+      "current_title": "Program Manager",
+      "current_company": "AT&T",
+      "years_at_current_role": 2.75,
+      "resolved_location": "Dallas, TX, US",
+      "linkedin_url": "https://linkedin.com/in/aftab-umar-2a18a711",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Jeremy Vorpagel",
+      "current_title": "Network Build and Operations Manager Northern California",
+      "current_company": "Ericsson",
+      "years_at_current_role": 8.83,
+      "resolved_location": "Roseville, California, United States",
+      "linkedin_url": "https://linkedin.com/in/jeremy-vorpagel-07450b22",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Ricky Martin",
+      "current_title": "OSP Director - Construction (CA)",
+      "current_company": "Zayo Group",
+      "years_at_current_role": 3.41,
+      "resolved_location": "San Francisco Bay Area",
+      "linkedin_url": "https://linkedin.com/in/rickymartinjr",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    }
+  ]
+}

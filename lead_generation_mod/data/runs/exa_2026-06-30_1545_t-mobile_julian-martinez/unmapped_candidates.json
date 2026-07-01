@@ -1,0 +1,20 @@
+[
+  {
+    "vector_id": "06",
+    "vector_name": "linkedin_anchored_similarity",
+    "result_url": "https://linkedin.com/in/julian-r-martinez",
+    "reason": "missing_entities_or_current_role"
+  },
+  {
+    "vector_id": "06",
+    "vector_name": "linkedin_anchored_similarity",
+    "result_url": "https://linkedin.com/in/julian-martinez14",
+    "reason": "missing_entities_or_current_role"
+  },
+  {
+    "vector_id": "06",
+    "vector_name": "linkedin_anchored_similarity",
+    "result_url": "https://linkedin.com/in/julianeon",
+    "reason": "missing_entities_or_current_role"
+  }
+]

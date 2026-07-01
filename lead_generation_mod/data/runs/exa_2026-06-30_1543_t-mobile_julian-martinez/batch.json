@@ -1,0 +1,223 @@
+{
+  "seed_person": {
+    "person_name": "Julian Martinez",
+    "company_name": "T-Mobile",
+    "linkedin_url": "https://www.linkedin.com/in/julian-r-martinez/",
+    "role": "Enterprise Transmission Design Manager",
+    "target_industry": "Telecommunications",
+    "target_location": null
+  },
+  "same_company_matches": [
+    {
+      "full_name": "Julian Martinez",
+      "current_title": "Enterprise Transmission Design Manager",
+      "current_company": "T-Mobile",
+      "years_at_current_role": 7.49,
+      "resolved_location": "Bellevue, WA, US",
+      "linkedin_url": "https://linkedin.com/in/julian-martinez-64773bb7",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 4
+    },
+    {
+      "full_name": "Julian Martinez",
+      "current_title": "Enterprise Transmission Design Manager",
+      "current_company": "T-Mobile",
+      "years_at_current_role": 7.49,
+      "resolved_location": "Bellevue, WA, US",
+      "linkedin_url": "https://linkedin.com/in/julian-r-martinez",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Kandeel Patel",
+      "current_title": "Sr. Engineer - Overall Systems Design",
+      "current_company": "T-Mobile",
+      "years_at_current_role": 16.49,
+      "resolved_location": "San Ramon, California, United States",
+      "linkedin_url": "https://linkedin.com/in/kandeelpatel",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Tony Hentges",
+      "current_title": "Senior Director, Corporate Security",
+      "current_company": "T-Mobile",
+      "years_at_current_role": 11.75,
+      "resolved_location": "Bellevue, Washington, United States",
+      "linkedin_url": "https://linkedin.com/in/tony-hentges-1214428",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Shanna Ramirez",
+      "current_title": "Senior Manager, Asset Protection",
+      "current_company": "T-Mobile",
+      "years_at_current_role": 1.0,
+      "resolved_location": "Mission Viejo, California, United States",
+      "linkedin_url": "https://linkedin.com/in/shanna-ramirez-cfi-837a7532",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Matt Cussins",
+      "current_title": "Senior Field Asset Protection Manager",
+      "current_company": "T-Mobile",
+      "years_at_current_role": 7.75,
+      "resolved_location": "Castle Rock, CO",
+      "linkedin_url": "https://linkedin.com/in/mcussins",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Reck Staggs",
+      "current_title": "Sr Field Asset Protection Manager, LPC, CFI",
+      "current_company": "T-Mobile",
+      "years_at_current_role": 18.0,
+      "resolved_location": "Central United States",
+      "linkedin_url": "https://linkedin.com/in/reck-staggs-lpc-cfi-2502997",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Brett Pearson",
+      "current_title": "Retail Associate Manager",
+      "current_company": "T-Mobile",
+      "years_at_current_role": 15.0,
+      "resolved_location": "Hartselle, Alabama, United States",
+      "linkedin_url": "https://linkedin.com/in/brett-pearson-51502136",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    }
+  ],
+  "similar_company_matches": [
+    {
+      "full_name": "Gary Gravelyn",
+      "current_title": "Regional Asset Protection Manager",
+      "current_company": "Victra - Verizon Authorized Retailer",
+      "years_at_current_role": 4.08,
+      "resolved_location": "San Francisco Bay Area",
+      "linkedin_url": "https://linkedin.com/in/gary-gravelyn-77722331",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Ricky Martin",
+      "current_title": "OSP Director - Construction (CA)",
+      "current_company": "Zayo Group",
+      "years_at_current_role": 3.41,
+      "resolved_location": "San Francisco Bay Area",
+      "linkedin_url": "https://linkedin.com/in/rickymartinjr",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "Xio Linares",
+      "current_title": "6G Strategic Business Director - Emerging Technologies",
+      "current_company": "Keysight Technologies",
+      "years_at_current_role": 2.49,
+      "resolved_location": "California, United States",
+      "linkedin_url": "https://linkedin.com/in/xio-linares-ph-d-21bb2194",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Aftab Umar",
+      "current_title": "Program Manager",
+      "current_company": "AT&T",
+      "years_at_current_role": 2.75,
+      "resolved_location": "Dallas, TX, US",
+      "linkedin_url": "https://linkedin.com/in/aftab-umar-2a18a711",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 2
+    },
+    {
+      "full_name": "David Heard",
+      "current_title": "President, Network Infrastructure",
+      "current_company": "Nokia",
+      "years_at_current_role": 1.0,
+      "resolved_location": "San Francisco Bay Area",
+      "linkedin_url": "https://linkedin.com/in/davidheard1",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Jeremy Vorpagel",
+      "current_title": "Network Build and Operations Manager Northern California",
+      "current_company": "Ericsson",
+      "years_at_current_role": 8.83,
+      "resolved_location": "Roseville, California, United States",
+      "linkedin_url": "https://linkedin.com/in/jeremy-vorpagel-07450b22",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Julian Ruiz",
+      "current_title": "Area Manager - GigaPower OSP C&E",
+      "current_company": "AT&T",
+      "years_at_current_role": 12.33,
+      "resolved_location": "Milpitas, CA",
+      "linkedin_url": "https://linkedin.com/in/julian-ruiz-a65732106",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Victor H Diaz",
+      "current_title": "Manager Network Services - Air Pressure CA NV",
+      "current_company": "AT&T",
+      "years_at_current_role": 1.33,
+      "resolved_location": "United States",
+      "linkedin_url": "https://linkedin.com/in/victor-hugo-diaz",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Julian Joseph Altamiran",
+      "current_title": "Associate Director Network Services Sacramento, Folsom Markets)",
+      "current_company": "AT&T",
+      "years_at_current_role": 9.0,
+      "resolved_location": "Rocklin, California, United States",
+      "linkedin_url": "https://linkedin.com/in/julian-joseph-altamiran-a1b7a049",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Darin Rodriguez",
+      "current_title": "Manager, OSP Capacity Construction",
+      "current_company": "Comcast",
+      "years_at_current_role": 4.08,
+      "resolved_location": "San Jose, California, United States",
+      "linkedin_url": "https://linkedin.com/in/darin-rodriguez-22466875",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    },
+    {
+      "full_name": "Monique Payne",
+      "current_title": "Director Of Field Operations",
+      "current_company": "Comcast",
+      "years_at_current_role": 1.25,
+      "resolved_location": "San Francisco Bay Area",
+      "linkedin_url": "https://linkedin.com/in/moniquempayne",
+      "public_business_email": null,
+      "current_role_description": null,
+      "query_hit_count": 1
+    }
+  ]
+}

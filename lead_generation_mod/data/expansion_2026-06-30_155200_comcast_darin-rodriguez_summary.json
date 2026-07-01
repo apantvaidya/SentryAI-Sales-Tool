@@ -1,0 +1,27 @@
+{
+  "original_seed": {
+    "person_name": "Darin Rodriguez",
+    "company_name": "Comcast",
+    "linkedin_url": "https://www.linkedin.com/in/darin-rodriguez/",
+    "role": "Manager, OSP Capacity Construction",
+    "target_industry": "Telecommunications",
+    "target_location": null
+  },
+  "target_count": 300,
+  "total_leads_collected": 1316,
+  "stopped_reason": "target_reached",
+  "hops": 1,
+  "pivot_trail": [
+    {
+      "person_name": "Darin Rodriguez",
+      "company_name": "Comcast",
+      "linkedin_url": "https://www.linkedin.com/in/darin-rodriguez/",
+      "role": "Manager, OSP Capacity Construction",
+      "target_industry": "Telecommunications",
+      "target_location": null
+    }
+  ],
+  "hop_run_ids": [
+    "exa_2026-06-30_1550_comcast_darin-rodriguez"
+  ]
+}

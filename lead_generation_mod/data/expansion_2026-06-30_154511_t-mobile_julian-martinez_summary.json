@@ -1,0 +1,27 @@
+{
+  "original_seed": {
+    "person_name": "Julian Martinez",
+    "company_name": "T-Mobile",
+    "linkedin_url": "https://www.linkedin.com/in/julian-r-martinez/",
+    "role": "Enterprise Transmission Design Manager",
+    "target_industry": "Telecommunications",
+    "target_location": null
+  },
+  "target_count": 100,
+  "total_leads_collected": 1285,
+  "stopped_reason": "target_reached",
+  "hops": 1,
+  "pivot_trail": [
+    {
+      "person_name": "Julian Martinez",
+      "company_name": "T-Mobile",
+      "linkedin_url": "https://www.linkedin.com/in/julian-r-martinez/",
+      "role": "Enterprise Transmission Design Manager",
+      "target_industry": "Telecommunications",
+      "target_location": null
+    }
+  ],
+  "hop_run_ids": [
+    "exa_2026-06-30_1543_t-mobile_julian-martinez"
+  ]
+}
